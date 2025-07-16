@@ -1,0 +1,3 @@
+CLASS xv net/minecraft/world/item/FishingRodItem
+	FIELD a emptyIcon Lms;
+	METHOD g getEmptyIcon ()Lms;

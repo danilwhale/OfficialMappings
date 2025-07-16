@@ -30,15 +30,24 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 3 auxValue
 	METHOD A isFramed ()Z
 	METHOD B getFrame ()Lod;
+	METHOD C getRepairCost ()I
 	METHOD D getAttributeModifiers ()Lcom/google/common/collect/Multimap;
 	METHOD a split (I)Lye;
 		ARG 1 count
 	METHOD a enchant (Laau;I)V
 		ARG 1 enchantment
 		ARG 2 level
+	METHOD a inventoryTick (Labw;Lnn;IZ)V
+		ARG 1 level
+		ARG 2 entity
+	METHOD a use (Labw;Luf;)Lye;
+		ARG 1 level
+		ARG 2 player
 	METHOD a onCraftedBy (Labw;Luf;I)V
 		ARG 1 level
 		ARG 2 player
+	METHOD a getDestroySpeed (Laqz;)F
+		ARG 1 tile
 	METHOD a of (Lby;)Lye;
 		ARG 0 tag
 	METHOD a addTagElement (Ljava/lang/String;Lcl;)V
@@ -49,6 +58,12 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD a hurtEnemy (Lof;Luf;)V
 		ARG 1 enemy
 		ARG 2 attacker
+	METHOD a useOn (Luf;Labw;IIIIFFF)Z
+		ARG 1 player
+		ARG 2 level
+	METHOD a interactEnemy (Luf;Lof;)Z
+		ARG 1 player
+		ARG 2 enemy
 	METHOD a getTooltipLines (Luf;Z)Ljava/util/List;
 		ARG 1 player
 		ARG 2 advanced
@@ -58,10 +73,19 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 0 a
 		ARG 1 b
 	METHOD b getItem ()Lyc;
+	METHOD b useTimeDepleted (Labw;Luf;)Lye;
+		ARG 1 level
+		ARG 2 player
+	METHOD b releaseUsing (Labw;Luf;I)V
+		ARG 1 level
+		ARG 2 player
+	METHOD b canDestroySpecial (Laqz;)Z
+		ARG 1 tile
 	METHOD b save (Lby;)Lby;
 		ARG 1 tag
 	METHOD b clone (Lye;)Lye;
 		ARG 0 item
+	METHOD c getIcon ()Lms;
 	METHOD c setRepairCost (I)V
 		ARG 1 repairCost
 	METHOD c load (Lby;)V
@@ -72,12 +96,15 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 1 tag
 	METHOD d matches (Lye;)Z
 		ARG 1 other
+	METHOD e getMaxStackSize ()I
 	METHOD g isDamageableItem ()Z
+	METHOD h isStackedByData ()Z
 	METHOD i isDamaged ()Z
 	METHOD j getDamageValue ()I
 	METHOD k getAuxValue ()I
 	METHOD l getMaxDamage ()I
 	METHOD m copy ()Lye;
+	METHOD n getUseDuration ()I
 	METHOD o getUseAnimation ()Lzj;
 	METHOD p hasTag ()Z
 	METHOD q getTag ()Lby;

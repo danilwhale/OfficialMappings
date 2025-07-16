@@ -16,12 +16,21 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 id
 	METHOD A getIconName ()Ljava/lang/String;
 	METHOD a getDescriptionId ()Ljava/lang/String;
+	METHOD a getLevelDataForAuxValue (I)I
+		ARG 1 auxValue
 	METHOD a getIcon (II)Lms;
-		ARG 1 data
+		ARG 1 auxValue
+		ARG 2 layer
+	METHOD a fillItemCategory (ILww;Ljava/util/List;)V
+		ARG 1 item
+		ARG 2 category
+		ARG 3 items
 	METHOD a getPlayerPOVHitResult (Labw;Luf;Z)Lata;
 		ARG 1 level
 		ARG 2 player
 		ARG 3 allowLiquid
+	METHOD a canDestroySpecial (Laqz;)Z
+		ARG 1 tile
 	METHOD a registerIcons (Lmt;)V
 		ARG 1 icons
 	METHOD a setItemCategory (Lww;)Lyc;
@@ -39,21 +48,52 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 5 y
 		ARG 6 z
 		ARG 7 mob
+	METHOD a inventoryTick (Lye;Labw;Lnn;IZ)V
+		ARG 1 item
+		ARG 2 level
+		ARG 3 entity
+	METHOD a use (Lye;Labw;Luf;)Lye;
+		ARG 1 item
+		ARG 2 level
+		ARG 3 player
+	METHOD a releaseUsing (Lye;Labw;Luf;I)V
+		ARG 1 item
+		ARG 2 level
+		ARG 3 player
+	METHOD a getDestroySpeed (Lye;Laqz;)F
+		ARG 1 item
+		ARG 2 tile
 	METHOD a hurtEnemy (Lye;Lof;Lof;)Z
 		ARG 1 item
 		ARG 2 enemy
 		ARG 3 attacker
+	METHOD a useOn (Lye;Luf;Labw;IIIIFFF)Z
+		ARG 1 item
+		ARG 2 player
+		ARG 3 level
 	METHOD a appendHoverText (Lye;Luf;Ljava/util/List;Z)V
 		ARG 1 item
 		ARG 2 player
-		ARG 3 hoverText
+		ARG 3 lines
 		ARG 4 advanced
+	METHOD a interactEnemy (Lye;Luf;Lof;)Z
+		ARG 1 item
+		ARG 2 player
+		ARG 3 enemy
+	METHOD a isValidRepairItem (Lye;Lye;)Z
+		ARG 1 item
+		ARG 2 repairItem
 	METHOD a setStackedByData (Z)Lyc;
 		ARG 1 stackedByData
+	METHOD b hasMultipleSpriteLayers ()Z
 	METHOD b setDescriptionId (Ljava/lang/String;)Lyc;
 		ARG 1 descriptionId
+	METHOD b useTimeDepleted (Lye;Labw;Luf;)Lye;
+		ARG 1 item
+		ARG 2 level
+		ARG 3 player
 	METHOD b_ getIcon (I)Lms;
-		ARG 1 data
+		ARG 1 auxValue
 	METHOD c getEnchantmentValue ()I
 	METHOD c (Ljava/lang/String;)Lyc;
 		ARG 1 descriptionId
@@ -63,10 +103,14 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 maxStackSize
 	METHOD d setIconName (Ljava/lang/String;)Lyc;
 		ARG 1 iconName
-	METHOD d (Lye;Labw;Luf;)V
+	METHOD d getDescriptionId (Lye;)Ljava/lang/String;
+		ARG 1 item
+	METHOD d onCraftedBy (Lye;Labw;Luf;)V
 		ARG 1 item
 		ARG 2 level
 		ARG 3 player
+	METHOD d_ getUseDuration (Lye;)I
+		ARG 1 item
 	METHOD e setMaxDamage (I)Lyc;
 		ARG 1 maxDamage
 	METHOD e isFoil (Lye;)Z
@@ -76,18 +120,23 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD f isComplex ()Z
 	METHOD f getRarity (Lye;)Lyq;
 		ARG 1 item
+	METHOD h getDefaultAttributeModifiers ()Lcom/google/common/collect/Multimap;
 	METHOD h getIcon (Lye;)Lms;
 		ARG 1 item
 	METHOD i (Lye;)Ljava/lang/String;
 		ARG 1 item
-	METHOD l getName (Lye;)Ljava/lang/String;
+	METHOD k (Lye;)Ljava/lang/String;
+		ARG 1 item
+	METHOD l getHoverName (Lye;)Ljava/lang/String;
 		ARG 1 item
 	METHOD m getMaxStackSize ()I
 	METHOD n isStackedByData ()Z
 	METHOD n_ isHandEquipped ()Z
 	METHOD o getMaxDamage ()I
+	METHOD o_ isMirroredArt ()Z
 	METHOD p canBeDepleted ()Z
 	METHOD q handEquipped ()Lyc;
+	METHOD s shouldOverrideMultiplayerNBT ()Z
 	METHOD t getCraftingRemainingItem ()Lyc;
 	METHOD u hasCraftingRemainingItem ()Z
 	METHOD y getItemCategory ()Lww;
