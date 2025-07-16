@@ -1,0 +1,15 @@
+CLASS bih net/minecraft/client/renderer/texture/TextureHolder
+	FIELD a texture Lbil;
+	FIELD b width I
+	FIELD c height I
+	FIELD d rotated Z
+	FIELD e forcedScale F
+	METHOD <init> (Lbil;)V
+		ARG 1 texture
+	METHOD a getSprite ()Lbil;
+	METHOD a setForcedScale (I)V
+		ARG 1 forcedScale
+	METHOD b getWidth ()I
+	METHOD c getHeight ()I
+	METHOD d rotate ()V
+	METHOD e isRotated ()Z

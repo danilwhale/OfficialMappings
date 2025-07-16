@@ -1,0 +1,8 @@
+CLASS blm net/minecraft/client/sounds/Sound
+	FIELD a name Ljava/lang/String;
+	FIELD b url Ljava/net/URL;
+	METHOD <init> (Ljava/lang/String;Ljava/net/URL;)V
+		ARG 1 name
+		ARG 2 url
+	METHOD a getName ()Ljava/lang/String;
+	METHOD b getUrl ()Ljava/net/URL;

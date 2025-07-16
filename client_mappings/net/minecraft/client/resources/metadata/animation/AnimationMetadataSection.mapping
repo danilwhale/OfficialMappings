@@ -1,0 +1,23 @@
+CLASS bko net/minecraft/client/resources/metadata/animation/AnimationMetadataSection
+	FIELD a frames Ljava/util/List;
+	FIELD b frameWidth I
+	FIELD c frameHeight I
+	FIELD d defaultFrameTime I
+	METHOD <init> (Ljava/util/List;III)V
+		ARG 1 frames
+		ARG 2 frameWidth
+		ARG 3 frameHeight
+		ARG 4 defaultFrameTime
+	METHOD a getFrameHeight ()I
+	METHOD a getFrameTime (I)I
+		ARG 1 animationIndex
+	METHOD b getFrameWidth ()I
+	METHOD b (I)Z
+		ARG 1 animationIndex
+	METHOD c getFrameCount ()I
+	METHOD c getFrameIndex (I)I
+		ARG 1 animationIndex
+	METHOD d getDefaultFrameTime ()I
+	METHOD d getFrame (I)Lbkn;
+		ARG 1 animationIndex
+	METHOD e getUniqueFrameIndices ()Ljava/util/Set;

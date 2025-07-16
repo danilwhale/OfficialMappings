@@ -1,0 +1,23 @@
+CLASS mv net/minecraft/world/Snooper
+	FIELD a data Ljava/util/Map;
+	FIELD b token Ljava/lang/String;
+	FIELD c url Ljava/net/URL;
+	FIELD d populator Lmx;
+	FIELD e timer Ljava/util/Timer;
+	FIELD f lock Ljava/lang/Object;
+	FIELD g startupTime J
+	FIELD h started Z
+	FIELD i count I
+	METHOD <init> (Ljava/lang/String;Lmx;J)V
+		ARG 1 side
+		ARG 2 populator
+		ARG 3 startupTime
+	METHOD a start ()V
+	METHOD a setData (Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD b prepare ()V
+	METHOD d isStarted ()Z
+	METHOD e interrupt ()V
+	METHOD f getToken ()Ljava/lang/String;
+	METHOD g getStartupTime ()J

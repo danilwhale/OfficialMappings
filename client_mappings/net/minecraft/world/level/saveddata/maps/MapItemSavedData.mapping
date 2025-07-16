@@ -1,12 +1,25 @@
-CLASS iu net/minecraft/world/level/saveddata/maps/MapItemSavedData
-	FIELD b x I
-	FIELD c z I
-	FIELD d dimension B
-	FIELD e scale B
-	FIELD f colors [B
-	FIELD g step I
-	FIELD h carriedBy Ljava/util/List;
-	FIELD i decorations Ljava/util/List;
-	FIELD j carriedByPlayers Ljava/util/Map;
-	METHOD a tickCarriedBy (Lgs;Liz;)V
-	METHOD a setMapData ([B)V
+CLASS ali net/minecraft/world/level/saveddata/maps/MapItemSavedData
+	FIELD a x I
+	FIELD b z I
+	FIELD c dimension B
+	FIELD d scale B
+	FIELD e colors [B
+	FIELD f carriedBy Ljava/util/List;
+	FIELD g decorations Ljava/util/Map;
+	FIELD i carriedByPlayers Ljava/util/Map;
+	METHOD a addDecoration (ILabw;Ljava/lang/String;DDD)V
+		ARG 1 type
+		ARG 2 level
+		ARG 3 name
+		ARG 4 x
+		ARG 6 z
+		ARG 8 rot
+	METHOD a getHoldingPlayer (Luf;)Lalj;
+		ARG 1 player
+	METHOD a tickCarriedBy (Luf;Lye;)V
+		ARG 1 player
+		ARG 2 item
+	METHOD a getUpdatePacket (Lye;Labw;Luf;)[B
+		ARG 1 item
+		ARG 2 level
+		ARG 3 player

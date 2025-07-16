@@ -1,0 +1,18 @@
+CLASS uc net/minecraft/world/entity/player/Abilities
+	FIELD a invulnerable Z
+	FIELD b flying Z
+	FIELD c mayfly Z
+	FIELD d instabuild Z
+	FIELD e mayBuild Z
+	FIELD f flyingSpeed F
+	FIELD g walkingSpeed F
+	METHOD a getFlyingSpeed ()F
+	METHOD a setFlyingSpeed (F)V
+		ARG 1 flyingSpeed
+	METHOD a addSaveData (Lby;)V
+		ARG 1 data
+	METHOD b getWalkingSpeed ()F
+	METHOD b setWalkingSpeed (F)V
+		ARG 1 walkingSpeed
+	METHOD b loadSaveData (Lby;)V
+		ARG 1 data

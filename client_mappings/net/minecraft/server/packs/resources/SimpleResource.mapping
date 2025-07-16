@@ -1,0 +1,10 @@
+CLASS bjy net/minecraft/server/packs/resources/SimpleResource
+	FIELD b location Lbjo;
+	FIELD c resourceStream Ljava/io/InputStream;
+	FIELD d metadataStream Ljava/io/InputStream;
+	FIELD f triedMetadata Z
+	FIELD g metadata Lcom/google/gson/JsonObject;
+	METHOD <init> (Lbjo;Ljava/io/InputStream;Ljava/io/InputStream;Lbki;)V
+		ARG 1 location
+		ARG 2 resourceStream
+		ARG 3 metadataStream

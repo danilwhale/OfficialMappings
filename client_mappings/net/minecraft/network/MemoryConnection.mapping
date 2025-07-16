@@ -1,0 +1,11 @@
+CLASS cn net/minecraft/network/MemoryConnection
+	FIELD a ADDRESS Ljava/net/SocketAddress;
+	FIELD b outgoing Ljava/util/List;
+	FIELD c logger Llp;
+	FIELD e packetListener Lez;
+	FIELD f quitting Z
+	FIELD g disconnectReason Ljava/lang/String;
+	FIELD h disconnectReasonObjects [Ljava/lang/Object;
+	METHOD <init> (Llp;Lez;)V
+		ARG 1 logger
+		ARG 2 packetListener

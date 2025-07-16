@@ -1,0 +1,10 @@
+CLASS lc net/minecraft/util/SimpleLogger
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b filePath Ljava/lang/String;
+	FIELD c name Ljava/lang/String;
+	FIELD d messagePrefix Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 messagePrefix
+		ARG 3 filePath
+	METHOD b init ()V

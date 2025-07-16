@@ -1,0 +1,2 @@
+CLASS biq net/minecraft/client/renderer/texture/Tickable
+	METHOD d tick ()V

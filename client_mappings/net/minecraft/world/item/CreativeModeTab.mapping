@@ -1,0 +1,20 @@
+CLASS ww net/minecraft/world/item/CreativeModeTab
+	FIELD a TABS [Lww;
+	FIELD b TAB_BUILDING_BLOCKS Lww;
+	FIELD c TAB_DECORATIONS Lww;
+	FIELD d TAB_REDSTONE Lww;
+	FIELD e TAB_TRANSPORTATION Lww;
+	FIELD f TAB_MISC Lww;
+	FIELD g TAB_SEARCH Lww;
+	FIELD h TAB_FOOD Lww;
+	FIELD i TAB_TOOLS Lww;
+	FIELD j TAB_COMBAT Lww;
+	FIELD k TAB_BREWING Lww;
+	FIELD l TAB_MATERIALS Lww;
+	FIELD m TAB_HOTBAR Lww;
+	FIELD n id I
+	FIELD o langId Ljava/lang/String;
+	FIELD p backgroundSuffix Ljava/lang/String;
+	FIELD q canScroll Z
+	FIELD r showTitle Z
+	FIELD s enchantmentCategories [Laav;

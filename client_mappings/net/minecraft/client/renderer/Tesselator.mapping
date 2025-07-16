@@ -1,35 +1,38 @@
-CLASS nw net/minecraft/client/renderer/Tesselator
-	FIELD A vboCounts I
-	FIELD B size I
-	FIELD a instance Lnw;
+CLASS bfq net/minecraft/client/renderer/Tesselator
+	FIELD A vboMode Z
+	FIELD B vboIds Ljava/nio/IntBuffer;
+	FIELD C vboId I
+	FIELD D vboCounts I
+	FIELD E size I
+	FIELD a instance Lbfq;
 	FIELD b TRIANGLE_MODE Z
 	FIELD c USE_VBO Z
 	FIELD d buffer Ljava/nio/ByteBuffer;
 	FIELD e ib Ljava/nio/IntBuffer;
 	FIELD f fb Ljava/nio/FloatBuffer;
-	FIELD g array [I
-	FIELD h vertices I
-	FIELD i u D
-	FIELD j v D
-	FIELD k col I
-	FIELD l hasColor Z
-	FIELD m hasTexture Z
-	FIELD n hasNormal Z
-	FIELD o p I
-	FIELD p count I
-	FIELD q noColor Z
-	FIELD r mode I
-	FIELD s xo D
-	FIELD t yo D
-	FIELD u zo D
-	FIELD v normal I
-	FIELD w tesselating Z
-	FIELD x vboMode Z
-	FIELD y vboIds Ljava/nio/IntBuffer;
-	FIELD z vboId I
+	FIELD g sb Ljava/nio/ShortBuffer;
+	FIELD h array [I
+	FIELD i vertices I
+	FIELD j u D
+	FIELD k v D
+	FIELD l tex2 I
+	FIELD m col I
+	FIELD n hasColor Z
+	FIELD o hasTexture Z
+	FIELD p hasTexture2 Z
+	FIELD q hasNormal Z
+	FIELD r p I
+	FIELD s count I
+	FIELD t noColor Z
+	FIELD u mode I
+	FIELD v xo D
+	FIELD w yo D
+	FIELD x zo D
+	FIELD y normal I
+	FIELD z tesselating Z
 	METHOD <init> (I)V
 		ARG 1 size
-	METHOD a end ()V
+	METHOD a end ()I
 	METHOD a tex (DD)V
 		ARG 1 u
 		ARG 3 v
@@ -52,8 +55,6 @@ CLASS nw net/minecraft/client/renderer/Tesselator
 		ARG 2 g
 		ARG 3 b
 		ARG 4 a
-	METHOD a begin (I)V
-		ARG 1 mode
 	METHOD a color (II)V
 		ARG 1 c
 		ARG 2 alpha
@@ -67,7 +68,7 @@ CLASS nw net/minecraft/client/renderer/Tesselator
 		ARG 3 b
 		ARG 4 a
 	METHOD b begin ()V
-	METHOD b setOffset (DDD)V
+	METHOD b offset (DDD)V
 		ARG 1 xo
 		ARG 3 yo
 		ARG 5 zo
@@ -75,11 +76,15 @@ CLASS nw net/minecraft/client/renderer/Tesselator
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b color (I)V
-		ARG 1 c
+	METHOD b begin (I)V
+		ARG 1 mode
 	METHOD c noColor ()V
 	METHOD c addOffset (FFF)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD c tex2 (I)V
+		ARG 1 tex2
 	METHOD d clear ()V
+	METHOD d color (I)V
+		ARG 1 c

@@ -1,0 +1,6 @@
+CLASS bjt net/minecraft/server/packs/repository/ResourcePackRepository
+	FIELD a RESOURCEPACK_FILTER Ljava/io/FileFilter;
+	FIELD d folder Ljava/io/File;
+	METHOD <init> (Ljava/io/File;Lbjr;Lbki;Laul;)V
+		ARG 1 folder
+	METHOD e getFolder ()Ljava/io/File;

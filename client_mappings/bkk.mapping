@@ -1,0 +1,6 @@
+CLASS bkk
+	FIELD a serializer Lbkh;
+	FIELD b type Ljava/lang/Class;
+	METHOD <init> (Lbki;Lbkh;Ljava/lang/Class;)V
+		ARG 2 serializer
+		ARG 3 type

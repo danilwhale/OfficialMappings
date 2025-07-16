@@ -1,0 +1,6 @@
+CLASS bjw net/minecraft/server/packs/resources/SimpleReloadableResourceManager
+	FIELD b namespacedPacks Ljava/util/Map;
+	FIELD d namespaces Ljava/util/Set;
+	METHOD a add (Lbjr;)V
+		ARG 1 pack
+	METHOD b clear ()V

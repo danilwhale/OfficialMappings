@@ -1,0 +1,5 @@
+CLASS bji net/minecraft/server/packs/FileResourcePack
+	FIELD c SPLITTER Lcom/google/common/base/Splitter;
+	FIELD d zipFile Ljava/util/zip/ZipFile;
+	METHOD close close ()V
+	METHOD d getOrCreateZipFile ()Ljava/util/zip/ZipFile;

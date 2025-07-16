@@ -1,3 +1,18 @@
-CLASS vr net/minecraft/stats/Stat
-	FIELD b NUMBER_FORMAT Ljava/text/NumberFormat;
-	FIELD c DECIMAL_FORMAT Ljava/text/DecimalFormat;
+CLASS ku net/minecraft/stats/Stat
+	FIELD a name Ljava/lang/String;
+	FIELD b formatter Lkz;
+	FIELD c NUMBER_FORMAT Ljava/text/NumberFormat;
+	FIELD d DECIMAL_FORMAT Ljava/text/DecimalFormat;
+	FIELD e id I
+	FIELD h DEFAULT_FORMATTER Lkz;
+	FIELD i TIME_FORMATTER Lkz;
+	FIELD j DISTANCE_FORMATTER Lkz;
+	FIELD k DIVIDE_BY_TEN_FORMATTER Lkz;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD <init> (ILjava/lang/String;Lkz;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 formatter
+	METHOD i getName ()Ljava/lang/String;

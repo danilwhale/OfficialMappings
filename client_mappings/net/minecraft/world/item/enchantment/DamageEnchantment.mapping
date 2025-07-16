@@ -1,0 +1,10 @@
+CLASS aar net/minecraft/world/item/enchantment/DamageEnchantment
+	FIELD C NAMES [Ljava/lang/String;
+	FIELD D MIN_COST [I
+	FIELD E LEVEL_COST [I
+	FIELD F LEVEL_COST_SPAN [I
+	FIELD a type I
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 rarity
+		ARG 3 type

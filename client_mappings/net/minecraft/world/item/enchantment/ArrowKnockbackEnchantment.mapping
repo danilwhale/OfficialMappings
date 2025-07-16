@@ -1,0 +1,4 @@
+CLASS aaq net/minecraft/world/item/enchantment/ArrowKnockbackEnchantment
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 rarity

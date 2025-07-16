@@ -1,0 +1,5 @@
+CLASS nc net/minecraft/world/damagesource/EntityDamageSource
+	FIELD p entity Lnn;
+	METHOD <init> (Ljava/lang/String;Lnn;)V
+		ARG 1 msgId
+		ARG 2 entity

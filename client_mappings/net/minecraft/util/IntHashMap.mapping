@@ -1,10 +1,10 @@
-CLASS jx net/minecraft/util/IntHashMap
-	FIELD a table [Lwm;
+CLASS lm net/minecraft/util/IntHashMap
+	FIELD a table [Lln;
 	FIELD b size I
 	FIELD c threshold I
 	FIELD d loadFactor F
 	FIELD e modCount I
-	METHOD a clear ()V
+	FIELD f keys Ljava/util/Set;
 	METHOD a get (I)Ljava/lang/Object;
 		ARG 1 key
 	METHOD a indexFor (II)I
@@ -18,13 +18,18 @@ CLASS jx net/minecraft/util/IntHashMap
 	METHOD a put (ILjava/lang/Object;)V
 		ARG 1 key
 		ARG 2 value
-	METHOD a transfer ([Lwm;)V
+	METHOD a transfer ([Lln;)V
 		ARG 1 newTable
-	METHOD b remove (I)Ljava/lang/Object;
+	METHOD b containsKey (I)Z
 		ARG 1 key
-	METHOD c removeEntryForKey (I)Lwm;
+	METHOD c clear ()V
+	METHOD c getEntry (I)Lln;
 		ARG 1 key
-	METHOD e hash (I)I
+	METHOD d remove (I)Ljava/lang/Object;
+		ARG 1 key
+	METHOD e removeEntryForKey (I)Lln;
+		ARG 1 key
+	METHOD g hash (I)I
 		ARG 0 h
-	METHOD f resize (I)V
+	METHOD h resize (I)V
 		ARG 1 newCapacity

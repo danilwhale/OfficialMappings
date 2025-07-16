@@ -1,7 +1,17 @@
-CLASS nh net/minecraft/client/resources/language/Locale
-	FIELD a instance Lnh;
-	FIELD b properties Ljava/util/Properties;
-	METHOD a getLocale ()Lnh;
+CLASS bke net/minecraft/client/resources/language/Locale
+	FIELD a storage Ljava/util/Map;
+	FIELD c UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
+	METHOD a loadFrom (Lbjp;Ljava/util/List;)V
+		ARG 1 manager
+		ARG 2 languageInfos
+	METHOD a appendFrom (Ljava/io/InputStream;)V
+		ARG 1 stream
 	METHOD a get (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
 	METHOD a get (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-	METHOD b getDescriptionString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+		ARG 2 args
+	METHOD a appendFrom (Ljava/util/List;)V
+		ARG 1 resources
+	METHOD c getOrDefault (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key

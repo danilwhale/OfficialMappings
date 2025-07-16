@@ -1,0 +1,4 @@
+CLASS bjs net/minecraft/server/packs/ResourcePackFileNotFoundException
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;)V
+		ARG 1 resourcePackFile
+		ARG 2 file

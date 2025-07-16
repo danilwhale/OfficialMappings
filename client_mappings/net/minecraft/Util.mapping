@@ -1,0 +1,2 @@
+CLASS w net/minecraft/Util
+	METHOD a getPlatform ()Lx;

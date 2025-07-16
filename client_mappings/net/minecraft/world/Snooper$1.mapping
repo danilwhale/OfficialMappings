@@ -1,0 +1,2 @@
+CLASS mw net/minecraft/world/Snooper$1
+	METHOD run run ()V

@@ -1,0 +1,4 @@
+CLASS auu net/minecraft/client/gui/components/ChatComponent
+	METHOD a getWidth (F)I
+	METHOD b rescaleChat ()V
+	METHOD b getHeight (F)I

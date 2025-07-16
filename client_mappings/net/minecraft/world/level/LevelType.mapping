@@ -1,0 +1,31 @@
+CLASS acg net/minecraft/world/level/LevelType
+	FIELD a GENERATOR_TYPES [Lacg;
+	FIELD b NORMAL Lacg;
+	FIELD c FLAT Lacg;
+	FIELD d LARGE_BIOMES Lacg;
+	FIELD e NORMAL_1_1 Lacg;
+	FIELD f id I
+	FIELD g generatorName Ljava/lang/String;
+	FIELD h generatorSerialization I
+	FIELD i selectable Z
+	FIELD j replacement Z
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD <init> (ILjava/lang/String;I)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 serialization
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a getReplacementForVersion (I)Lacg;
+		ARG 1 version
+	METHOD a getGeneratorType (Ljava/lang/String;)Lacg;
+		ARG 0 name
+	METHOD a setSelectableByUser (Z)Lacg;
+		ARG 1 selectableByUser
+	METHOD b getDescriptionId ()Ljava/lang/String;
+	METHOD c getSerialization ()I
+	METHOD d isSelectable ()Z
+	METHOD e hasReplacement ()Z
+	METHOD f getId ()I
+	METHOD g setHasReplacement ()Lacg;

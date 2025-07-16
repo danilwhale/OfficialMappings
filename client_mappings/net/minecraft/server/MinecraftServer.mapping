@@ -1,0 +1,2 @@
+CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	METHOD aq getMillis ()J

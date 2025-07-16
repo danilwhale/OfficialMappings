@@ -1,5 +1,91 @@
-CLASS iz net/minecraft/world/item/ItemInstance
-	FIELD a count I
-	FIELD b popTime I
-	FIELD c id I
-	FIELD d damage I
+CLASS ye net/minecraft/world/item/ItemInstance
+	FIELD a ATTRIBUTE_DECIMAL_FORMAT Ljava/text/DecimalFormat;
+	FIELD b count I
+	FIELD c popTime I
+	FIELD d item I
+	FIELD e tag Lby;
+	FIELD f auxValue I
+	FIELD g frame Lod;
+	METHOD <init> (III)V
+		ARG 1 item
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD <init> (Laqz;)V
+		ARG 1 tile
+	METHOD <init> (Laqz;I)V
+		ARG 1 tile
+		ARG 2 count
+	METHOD <init> (Laqz;II)V
+		ARG 1 tile
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD <init> (Lyc;)V
+		ARG 1 item
+	METHOD <init> (Lyc;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD <init> (Lyc;II)V
+		ARG 1 item
+		ARG 2 count
+		ARG 3 auxValue
+	METHOD A isFramed ()Z
+	METHOD B getFrame ()Lod;
+	METHOD D getAttributeModifiers ()Lcom/google/common/collect/Multimap;
+	METHOD a split (I)Lye;
+		ARG 1 count
+	METHOD a enchant (Laau;I)V
+		ARG 1 enchantment
+		ARG 2 level
+	METHOD a onCraftedBy (Labw;Luf;I)V
+		ARG 1 level
+		ARG 2 player
+	METHOD a of (Lby;)Lye;
+		ARG 0 tag
+	METHOD a addTagElement (Ljava/lang/String;Lcl;)V
+		ARG 1 key
+		ARG 2 tag
+	METHOD a setFramed (Lod;)V
+		ARG 1 frame
+	METHOD a hurtEnemy (Lof;Luf;)V
+		ARG 1 enemy
+		ARG 2 attacker
+	METHOD a getTooltipLines (Luf;Z)Ljava/util/List;
+		ARG 1 player
+		ARG 2 advanced
+	METHOD a sameItem (Lye;)Z
+		ARG 1 other
+	METHOD a matches (Lye;Lye;)Z
+		ARG 0 a
+		ARG 1 b
+	METHOD b getItem ()Lyc;
+	METHOD b save (Lby;)Lby;
+		ARG 1 tag
+	METHOD b clone (Lye;)Lye;
+		ARG 0 item
+	METHOD c setRepairCost (I)V
+		ARG 1 repairCost
+	METHOD c load (Lby;)V
+		ARG 1 tag
+	METHOD c setHoverName (Ljava/lang/String;)V
+		ARG 1 hoverName
+	METHOD d setTag (Lby;)V
+		ARG 1 tag
+	METHOD d matches (Lye;)Z
+		ARG 1 other
+	METHOD g isDamageableItem ()Z
+	METHOD i isDamaged ()Z
+	METHOD j getDamageValue ()I
+	METHOD k getAuxValue ()I
+	METHOD l getMaxDamage ()I
+	METHOD m copy ()Lye;
+	METHOD o getUseAnimation ()Lzj;
+	METHOD p hasTag ()Z
+	METHOD q getTag ()Lby;
+	METHOD r getEnchantmentTags ()Lcg;
+	METHOD s getDisplayName ()Ljava/lang/String;
+	METHOD t resetHoverName ()V
+	METHOD u hasCustomHoverName ()Z
+	METHOD v hasFoil ()Z
+	METHOD w getRarity ()Lyq;
+	METHOD x isEnchantable ()Z
+	METHOD y isEnchanted ()Z

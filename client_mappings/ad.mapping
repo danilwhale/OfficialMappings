@@ -1,0 +1,2 @@
+CLASS ad
+	METHOD c_ getName ()Ljava/lang/String;

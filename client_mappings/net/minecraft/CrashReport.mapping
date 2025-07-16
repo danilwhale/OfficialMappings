@@ -1,3 +1,32 @@
-CLASS mh net/minecraft/CrashReport
+CLASS b net/minecraft/CrashReport
 	FIELD a title Ljava/lang/String;
 	FIELD b exception Ljava/lang/Throwable;
+	FIELD c systemDetails Lm;
+	FIELD d details Ljava/util/List;
+	FIELD e saveFile Ljava/io/File;
+	FIELD f trackingStackTrace Z
+	FIELD g uncategorizedStackTrace [Ljava/lang/StackTraceElement;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+		ARG 1 title
+		ARG 2 exception
+	METHOD a getTitle ()Ljava/lang/String;
+	METHOD a saveToFile (Ljava/io/File;Llp;)Z
+		ARG 1 file
+		ARG 2 logger
+	METHOD a addCategory (Ljava/lang/String;)Lm;
+		ARG 1 category
+	METHOD a addCategory (Ljava/lang/String;I)Lm;
+		ARG 1 category
+		ARG 2 stacktraceLength
+	METHOD a getDetails (Ljava/lang/StringBuilder;)V
+		ARG 1 builder
+	METHOD a forThrowable (Ljava/lang/Throwable;Ljava/lang/String;)Lb;
+		ARG 0 throwable
+		ARG 1 title
+	METHOD b getException ()Ljava/lang/Throwable;
+	METHOD d getExceptionMessage ()Ljava/lang/String;
+	METHOD e getFriendlyReport ()Ljava/lang/String;
+	METHOD f getSaveFile ()Ljava/io/File;
+	METHOD g getSystemDetails ()Lm;
+	METHOD h initDetails ()V
+	METHOD i getErrorComment ()Ljava/lang/String;

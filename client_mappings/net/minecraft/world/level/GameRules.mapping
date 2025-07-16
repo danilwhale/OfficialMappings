@@ -1,0 +1,18 @@
+CLASS abt net/minecraft/world/level/GameRules
+	FIELD a rules Ljava/util/TreeMap;
+	METHOD a setTagData ()Lby;
+	METHOD a getTagData (Lby;)V
+		ARG 1 tag
+	METHOD a getRule (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 rule
+	METHOD a registerRule (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 rule
+		ARG 2 value
+	METHOD b getRules ()[Ljava/lang/String;
+	METHOD b getBool (Ljava/lang/String;)Z
+		ARG 1 rule
+	METHOD b setRule (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 rule
+		ARG 2 value
+	METHOD e hasRule (Ljava/lang/String;)Z
+		ARG 1 rule

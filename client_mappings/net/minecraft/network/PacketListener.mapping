@@ -1,0 +1,9 @@
+CLASS ez net/minecraft/network/PacketListener
+	METHOD a canHandleAsyncPackets ()Z
+	METHOD a handleClientInformation (Ldp;)V
+	METHOD a handleDisconnect (Leb;)V
+	METHOD a onUnhandledPacket (Ley;)V
+		ARG 1 packet
+	METHOD a onDisconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 args

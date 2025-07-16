@@ -1,46 +1,61 @@
-CLASS net/minecraft/client/Minecraft
-	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
-	FIELD B soundEngine Lyo;
-	FIELD J running Z
-	FIELD K fpsString Ljava/lang/String;
-	FIELD R crashed Z
-	FIELD T timer Lpy;
-	FIELD W missTime I
-	FIELD a instance Lnet/minecraft/client/Minecraft;
-	FIELD c gamemode Lob;
+CLASS atv net/minecraft/client/Minecraft
+	FIELD K logger Llp;
+	FIELD L resourcePackDirectory Ljava/io/File;
+	FIELD N textures Lbim;
+	FIELD O instance Latv;
+	FIELD P fullscreen Z
+	FIELD Q hasCrashed Z
+	FIELD R delayedCrash Lb;
+	FIELD S timer Laur;
+	FIELD T snooper Lmv;
+	FIELD U user Laus;
+	FIELD V pause Z
+	FIELD X orgWidth I
+	FIELD Y orgHeight I
+	FIELD a ON_OSX Z
+	FIELD aa assetDirectory Ljava/io/File;
+	FIELD ab launchedVersion Ljava/lang/String;
+	FIELD ac proxy Ljava/net/Proxy;
+	FIELD ah connectToIp Ljava/lang/String;
+	FIELD ai connectToPort I
+	FIELD ak demo Z
+	FIELD ao resourceManager Lbjm;
+	FIELD ar vanillaPack Lbjg;
+	FIELD at languageManager Lbkd;
+	FIELD au debugPath Ljava/lang/String;
+	FIELD b reserve [B
 	FIELD d width I
 	FIELD e height I
-	FIELD f level Lfd;
-	FIELD g levelRenderer Ln;
-	FIELD h player Ldc;
-	FIELD i cameraEntity Lls;
-	FIELD j particleEngine Ldn;
-	FIELD k user Lgr;
-	FIELD m parent Ljava/awt/Canvas;
-	FIELD n appletMode Z
-	FIELD o pause Z
-	FIELD p textures Lji;
-	FIELD q font Lsj;
-	FIELD r screen Lda;
-	FIELD s loadingScreen Lmk;
-	FIELD t gameRenderer Lpx;
-	FIELD v gui Luq;
-	FIELD w noRender Z
-	FIELD z options Lkv;
-	METHOD a init ()V
-	METHOD a setScreen (Lda;)V
-	METHOD a setLevel (Lfd;Ljava/lang/String;Lgs;)V
-		ARG 1 level
-		ARG 2 name
-		ARG 3 localPlayer
-	METHOD a getWorkingDirectory (Ljava/lang/String;)Ljava/io/File;
-		ARG 0 applicationName
-	METHOD a play (Ljava/lang/String;Ljava/lang/String;)V
-	METHOD a play (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-	METHOD a displayCrashReport (Lmh;)V
-	METHOD b crash (Lmh;)V
-	METHOD f stop ()V
-	METHOD k tickInput ()V
-	METHOD main ([Ljava/lang/String;)V
-		ARG 0 args
-	METHOD y getPlatform ()Lpd;
+	FIELD g levelRenderer Lbfl;
+	FIELD h player Lbdi;
+	FIELD r gui Lavj;
+	FIELD u options Laul;
+	FIELD v soundEngine Lbln;
+	FIELD x gameDirectory Ljava/io/File;
+	METHOD <init> (Laus;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;)V
+		ARG 1 user
+		ARG 2 width
+		ARG 3 height
+		ARG 4 fullscreen
+		ARG 5 demo
+		ARG 6 gameDirectory
+		ARG 7 assetDirectory
+		ARG 8 resourcePackDirectory
+		ARG 9 proxy
+		ARG 10 launchVersion
+	METHOD F getMillis ()J
+	METHOD G fullscreen ()Z
+	METHOD N startTimerHackThread ()V
+	METHOD O init ()V
+	METHOD a delayCrash (Lb;)V
+		ARG 1 crash
+	METHOD a connectTo (Ljava/lang/String;I)V
+		ARG 1 ip
+		ARG 2 port
+	METHOD c crash (Lb;)V
+		ARG 1 report
+	METHOD c checkGlError (Ljava/lang/String;)V
+		ARG 1 at
+	METHOD d run ()V
+	METHOD j toggleFullscreen ()V
+	METHOD w getInstance ()Latv;

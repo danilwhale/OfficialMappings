@@ -1,0 +1,70 @@
+CLASS ls net/minecraft/util/Mth
+	FIELD a SIN [F
+	METHOD a sqrt (D)F
+		ARG 0 value
+	METHOD a absMax (DD)D
+		ARG 0 x
+		ARG 2 y
+	METHOD a sin (F)F
+		ARG 0 x
+	METHOD a clamp (FFF)F
+		ARG 0 value
+		ARG 1 min
+		ARG 2 max
+	METHOD a abs (I)I
+		ARG 0 value
+	METHOD a intFloorDiv (II)I
+		ARG 0 x
+		ARG 1 y
+	METHOD a clamp (III)I
+		ARG 0 value
+		ARG 1 min
+		ARG 2 max
+	METHOD a (Ljava/lang/String;)Z
+		ARG 0 str
+	METHOD a getDouble (Ljava/lang/String;D)D
+		ARG 0 str
+		ARG 1 defaultValue
+	METHOD a getDouble (Ljava/lang/String;DD)D
+		ARG 0 str
+		ARG 1 defaultValue
+		ARG 3 minValue
+	METHOD a getInt (Ljava/lang/String;I)I
+		ARG 0 str
+		ARG 1 defaultValue
+	METHOD a getInt (Ljava/lang/String;II)I
+		ARG 0 str
+		ARG 1 defaultValue
+		ARG 2 minValue
+	METHOD a nextDouble (Ljava/util/Random;DD)D
+		ARG 0 random
+		ARG 1 min
+		ARG 3 max
+	METHOD a nextInt (Ljava/util/Random;II)I
+		ARG 0 random
+		ARG 1 min
+		ARG 2 max
+	METHOD a average ([J)D
+		ARG 0 values
+	METHOD b fastFloor (D)I
+		ARG 0 value
+	METHOD b cos (F)F
+		ARG 0 x
+	METHOD c floor (D)I
+		ARG 0 value
+	METHOD c sqrt (F)F
+		ARG 0 value
+	METHOD d lfloor (D)J
+		ARG 0 value
+	METHOD d floor (F)I
+		ARG 0 value
+	METHOD e abs (F)F
+		ARG 0 value
+	METHOD f ceil (D)I
+		ARG 0 value
+	METHOD f ceil (F)I
+		ARG 0 value
+	METHOD g wrapDegrees (D)D
+		ARG 0 angle
+	METHOD g wrapDegrees (F)F
+		ARG 0 angle

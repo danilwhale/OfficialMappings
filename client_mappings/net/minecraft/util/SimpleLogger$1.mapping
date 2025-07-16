@@ -1,0 +1,4 @@
+CLASS le net/minecraft/util/SimpleLogger$1
+	FIELD b dateFormat Ljava/text/SimpleDateFormat;
+	METHOD format format (Ljava/util/logging/LogRecord;)Ljava/lang/String;
+		ARG 1 record

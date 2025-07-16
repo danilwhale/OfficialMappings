@@ -1,0 +1,65 @@
+CLASS asx net/minecraft/world/phys/AABB
+	FIELD a x0 D
+	FIELD b y0 D
+	FIELD c z0 D
+	FIELD d x1 D
+	FIELD e y1 D
+	FIELD f z1 D
+	METHOD <init> (DDDDDD)V
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD a contract (DDD)Lasx;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD a of (DDDDDD)Lasx;
+		ARG 0 x0
+		ARG 2 y0
+		ARG 4 z0
+		ARG 6 x1
+		ARG 8 y1
+		ARG 10 z1
+	METHOD a intersect (Lasx;)Lasx;
+		ARG 1 other
+	METHOD a clipXCollide (Lasx;D)D
+		ARG 1 other
+		ARG 2 x
+	METHOD a contains (Latc;)Z
+		ARG 1 other
+	METHOD b getSize ()D
+	METHOD b grow (DDD)Lasx;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD b set (DDDDDD)Lasx;
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD b intersects (Lasx;)Z
+		ARG 1 other
+	METHOD b clipYCollide (Lasx;D)D
+		ARG 1 other
+		ARG 2 y
+	METHOD c copy ()Lasx;
+	METHOD c cloneMove (DDD)Lasx;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD c clipZCollide (Lasx;D)D
+		ARG 1 other
+		ARG 2 z
+	METHOD d move (DDD)Lasx;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD e shrink (DDD)Lasx;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za

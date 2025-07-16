@@ -1,0 +1,2 @@
+CLASS bid net/minecraft/client/renderer/texture/HttpTexture$1
+	METHOD run run ()V

@@ -1,0 +1,4 @@
+CLASS abc net/minecraft/world/item/enchantment/FireAspectEnchantment
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 rarity

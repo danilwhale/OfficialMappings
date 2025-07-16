@@ -1,0 +1,63 @@
+CLASS aaw net/minecraft/world/item/enchantment/EnchantmentHelper
+	FIELD a RANDOM Ljava/util/Random;
+	FIELD b DAMAGE_PROTECTION_VISITOR Laba;
+	FIELD c DAMAGE_BONUS_VISITOR Laaz;
+	METHOD a getItemEnchantmentLevel (ILye;)I
+		ARG 0 enchantment
+		ARG 1 item
+	METHOD a getEnchantmentLevel (I[Lye;)I
+		ARG 0 enchantment
+		ARG 1 items
+	METHOD a (Laau;Lof;)Lye;
+		ARG 0 enchantment
+		ARG 1 mob
+	METHOD a runIterationOnItem (Laay;Lye;)V
+		ARG 0 visitor
+		ARG 1 item
+	METHOD a runIterationOnInventory (Laay;[Lye;)V
+		ARG 0 visitor
+		ARG 1 inventory
+	METHOD a setEnchantments (Ljava/util/Map;Lye;)V
+		ARG 0 enchantments
+		ARG 1 item
+	METHOD a getEnchantmentCost (Ljava/util/Random;IILye;)I
+		ARG 0 random
+		ARG 3 item
+	METHOD a enchantItem (Ljava/util/Random;Lye;I)Lye;
+		ARG 0 random
+		ARG 1 item
+		ARG 2 level
+	METHOD a getFireAspect (Lof;)I
+		ARG 0 mob
+	METHOD a getDamageBonus (Lof;Lof;)F
+		ARG 0 attacker
+		ARG 1 mob
+	METHOD a getEnchantments (Lye;)Ljava/util/Map;
+		ARG 0 item
+	METHOD a getDamageProtection ([Lye;Lnb;)I
+		ARG 0 inventory
+		ARG 1 source
+	METHOD b getAvailbleEnchantmentResults (ILye;)Ljava/util/Map;
+		ARG 0 xpLevel
+		ARG 1 item
+	METHOD b selectEnchantment (Ljava/util/Random;Lye;I)Ljava/util/List;
+		ARG 0 random
+		ARG 1 item
+		ARG 2 level
+	METHOD b getRespiration (Lof;)I
+		ARG 0 mob
+	METHOD b getKnockbackBonus (Lof;Lof;)I
+		ARG 0 mob
+		ARG 1 target
+	METHOD c getBlockEfficiency (Lof;)I
+		ARG 0 mob
+	METHOD e hasSilkTouch (Lof;)Z
+		ARG 0 mob
+	METHOD f getBlockFortune (Lof;)I
+		ARG 0 mob
+	METHOD g getMobLooting (Lof;)I
+		ARG 0 mob
+	METHOD h hasAquaAffinity (Lof;)Z
+		ARG 0 mob
+	METHOD i getThorns (Lof;)I
+		ARG 0 mob

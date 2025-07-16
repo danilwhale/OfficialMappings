@@ -1,0 +1,4 @@
+CLASS aay net/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor
+	METHOD a doEnchantment (Laau;I)V
+		ARG 1 enchantment
+		ARG 2 level

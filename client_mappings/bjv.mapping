@@ -1,0 +1,3 @@
+CLASS bjv
+	METHOD a bindIcon (Lbim;)V
+		ARG 1 textures

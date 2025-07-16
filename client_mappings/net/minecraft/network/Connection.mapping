@@ -1,2 +1,12 @@
-CLASS pf net/minecraft/network/Connection
-	FIELD h socket Ljava/net/Socket;
+CLASS cm net/minecraft/network/Connection
+	METHOD a send (Ley;)V
+		ARG 1 packet
+	METHOD a setListener (Lez;)V
+		ARG 1 listener
+	METHOD a close (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 args
+	METHOD b tick ()V
+	METHOD c getAddress ()Ljava/net/SocketAddress;
+	METHOD d sendAndQuit ()V
+	METHOD e countDelayedPackets ()I

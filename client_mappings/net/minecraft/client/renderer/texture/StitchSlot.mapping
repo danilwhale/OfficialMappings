@@ -1,0 +1,19 @@
+CLASS bii net/minecraft/client/renderer/texture/StitchSlot
+	FIELD a x I
+	FIELD b y I
+	FIELD c width I
+	FIELD d height I
+	FIELD e subSlots Ljava/util/List;
+	FIELD f holder Lbih;
+	METHOD <init> (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD a getHolder ()Lbih;
+	METHOD a add (Lbih;)Z
+		ARG 1 holder
+	METHOD a collectAssignments (Ljava/util/List;)V
+		ARG 1 slots
+	METHOD b getX ()I
+	METHOD c getY ()I

@@ -1,0 +1,8 @@
+CLASS bkw net/minecraft/client/resources/metadata/texture/TextureMetadataSection
+	FIELD a blur Z
+	FIELD b clamp Z
+	METHOD <init> (ZZ)V
+		ARG 1 blur
+		ARG 2 clamp
+	METHOD a isBlur ()Z
+	METHOD b isClamp ()Z

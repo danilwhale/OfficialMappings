@@ -1,0 +1,21 @@
+CLASS a net/minecraft/ChatFormatting
+	FIELD A isFormat Z
+	FIELD B toString Ljava/lang/String;
+	FIELD w FORMATTING_BY_CODE Ljava/util/Map;
+	FIELD x FORMATTING_BY_NAME Ljava/util/Map;
+	FIELD y STRIP_FORMATTING_PATTERN Ljava/util/regex/Pattern;
+	FIELD z code C
+	METHOD <init> (Ljava/lang/String;IC)V
+		ARG 3 code
+	METHOD <init> (Ljava/lang/String;ICZ)V
+		ARG 3 code
+		ARG 4 isFormat
+	METHOD a getCode ()C
+	METHOD a stripFormatting (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 text
+	METHOD a getNames (ZZ)Ljava/util/Collection;
+	METHOD b isFormat ()Z
+	METHOD b getByName (Ljava/lang/String;)La;
+		ARG 0 name
+	METHOD c isColor ()Z
+	METHOD d getName ()Ljava/lang/String;
