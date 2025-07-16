@@ -38,10 +38,10 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD a setCraftingRemainingItem (Lyc;)Lyc;
 		ARG 1 item
 	METHOD a getColor (Lye;I)I
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 data
 	METHOD a mineBlock (Lye;Labw;IIIILof;)Z
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 tile
 		ARG 4 x
@@ -49,47 +49,47 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 6 z
 		ARG 7 mob
 	METHOD a inventoryTick (Lye;Labw;Lnn;IZ)V
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 entity
 	METHOD a use (Lye;Labw;Luf;)Lye;
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 player
 	METHOD a releaseUsing (Lye;Labw;Luf;I)V
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 player
 	METHOD a getDestroySpeed (Lye;Laqz;)F
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 tile
 	METHOD a hurtEnemy (Lye;Lof;Lof;)Z
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 enemy
 		ARG 3 attacker
 	METHOD a useOn (Lye;Luf;Labw;IIIIFFF)Z
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 player
 		ARG 3 level
 	METHOD a appendHoverText (Lye;Luf;Ljava/util/List;Z)V
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 player
 		ARG 3 lines
 		ARG 4 advanced
 	METHOD a interactEnemy (Lye;Luf;Lof;)Z
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 player
 		ARG 3 enemy
 	METHOD a isValidRepairItem (Lye;Lye;)Z
-		ARG 1 item
-		ARG 2 repairItem
+		ARG 1 instance
+		ARG 2 repairInstance
 	METHOD a setStackedByData (Z)Lyc;
 		ARG 1 stackedByData
 	METHOD b hasMultipleSpriteLayers ()Z
 	METHOD b setDescriptionId (Ljava/lang/String;)Lyc;
 		ARG 1 descriptionId
 	METHOD b useTimeDepleted (Lye;Labw;Luf;)Lye;
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 player
 	METHOD b_ getIcon (I)Lms;
@@ -98,37 +98,39 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD c (Ljava/lang/String;)Lyc;
 		ARG 1 descriptionId
 	METHOD c_ getUseAnimation (Lye;)Lzj;
-		ARG 1 item
+		ARG 1 instance
 	METHOD d setMaxStackSize (I)Lyc;
 		ARG 1 maxStackSize
 	METHOD d setIconName (Ljava/lang/String;)Lyc;
 		ARG 1 iconName
 	METHOD d getDescriptionId (Lye;)Ljava/lang/String;
-		ARG 1 item
+		ARG 1 instance
 	METHOD d onCraftedBy (Lye;Labw;Luf;)V
-		ARG 1 item
+		ARG 1 instance
 		ARG 2 level
 		ARG 3 player
 	METHOD d_ getUseDuration (Lye;)I
-		ARG 1 item
+		ARG 1 instance
 	METHOD e setMaxDamage (I)Lyc;
 		ARG 1 maxDamage
 	METHOD e isFoil (Lye;)Z
-		ARG 1 item
+		ARG 1 instance
 	METHOD e_ isEnchantable (Lye;)Z
-		ARG 1 item
+		ARG 1 instance
 	METHOD f isComplex ()Z
 	METHOD f getRarity (Lye;)Lyq;
-		ARG 1 item
+		ARG 1 instance
 	METHOD h getDefaultAttributeModifiers ()Lcom/google/common/collect/Multimap;
 	METHOD h getIcon (Lye;)Lms;
-		ARG 1 item
+		ARG 1 instance
 	METHOD i (Lye;)Ljava/lang/String;
-		ARG 1 item
+		ARG 1 instance
+	METHOD j (Lye;)Z
+		ARG 1 instance
 	METHOD k (Lye;)Ljava/lang/String;
 		ARG 1 item
 	METHOD l getHoverName (Lye;)Ljava/lang/String;
-		ARG 1 item
+		ARG 1 instance
 	METHOD m getMaxStackSize ()I
 	METHOD n isStackedByData ()Z
 	METHOD n_ isHandEquipped ()Z
