@@ -1,0 +1,2 @@
+CLASS tc net/minecraft/world/entity/item/PrimedTnt
+	METHOD c getOwner ()Lof;

@@ -3,10 +3,17 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD B yRot F
 	FIELD C xRotO F
 	FIELD D yRotO F
+	FIELD E bb Lasx;
 	FIELD M removed Z
 	FIELD ar dimension I
 	FIELD q level Labw;
 	FIELD r xo D
 	FIELD s yo D
 	FIELD t zo D
+	FIELD x xd D
+	FIELD y yd D
+	FIELD z zd D
+	METHOD a hurt (Lnb;F)Z
 	METHOD ay getDisplayName ()Ljava/lang/String;
+	METHOD f getEyeHeight ()F
+	METHOD f distanceTo (DDD)D

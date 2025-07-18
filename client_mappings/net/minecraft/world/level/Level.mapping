@@ -1,4 +1,11 @@
 CLASS abw net/minecraft/world/level/Level
 	FIELD c cloudColor J
+	FIELD s random Ljava/util/Random;
 	METHOD N getLevelData ()Lals;
+	METHOD a playSound (DDDLjava/lang/String;FF)V
+	METHOD a getSeenPercent (Latc;Lasx;)F
 	METHOD a clip (Latc;Latc;ZZ)Lata;
+	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD b getEntities (Lnn;Lasx;)Ljava/util/List;
+	METHOD c setTileAndUpdate (IIII)Z
+	METHOD f setTile (IIIIII)Z

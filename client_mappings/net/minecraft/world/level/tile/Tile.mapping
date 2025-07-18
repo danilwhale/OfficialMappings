@@ -1,4 +1,5 @@
 CLASS aqz net/minecraft/world/level/tile/Tile
+	FIELD aw fire Laoi;
 	FIELD cF id I
 	FIELD cH explosionResistance F
 	FIELD cS soundType Lard;
@@ -25,6 +26,9 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 material
 	METHOD a setLightEmission (F)Laqz;
 		ARG 1 lightEmission
+	METHOD a dropFromExplosion (Labr;)Z
+	METHOD a spawnResources (Labw;IIIIFI)V
+	METHOD a wasExploded (Labw;IIILabr;)V
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
 	METHOD a registerIcons (Lmt;)V

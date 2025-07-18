@@ -1,2 +1,22 @@
 CLASS abr net/minecraft/world/level/Explosion
+	FIELD a fire Z
+	FIELD c x D
+	FIELD d y D
+	FIELD e z D
+	FIELD f source Lnn;
+	FIELD g radius F
+	FIELD h toBlow Ljava/util/List;
+	FIELD j random Ljava/util/Random;
+	FIELD k level Labw;
+	FIELD l hitPlayers Ljava/util/Map;
+	METHOD <init> (Labw;Lnn;DDDF)V
+		ARG 1 level
+		ARG 2 source
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 radius
+	METHOD a explode ()V
+	METHOD a finalizeExplosion (Z)V
+	METHOD b getHitPlayers ()Ljava/util/Map;
 	METHOD c getSourceMob ()Lof;
