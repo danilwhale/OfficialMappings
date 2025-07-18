@@ -1,6 +1,10 @@
 CLASS abw net/minecraft/world/level/Level
+	FIELD O delayUntilNextMoodSound I
 	FIELD c cloudColor J
+	FIELD l addend I
 	FIELD s random Ljava/util/Random;
+	FIELD t dimension Laei;
+	METHOD H getSeed ()J
 	METHOD N getLevelData ()Lals;
 	METHOD a playSound (DDDLjava/lang/String;FF)V
 	METHOD a getSeenPercent (Latc;Lasx;)F
@@ -9,3 +13,4 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD b getEntities (Lnn;Lasx;)Ljava/util/List;
 	METHOD c setTileAndUpdate (IIII)Z
 	METHOD f setTile (IIIIII)Z
+	METHOD u getBiomeSource ()Lacv;

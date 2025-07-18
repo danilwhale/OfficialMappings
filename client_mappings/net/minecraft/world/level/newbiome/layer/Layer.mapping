@@ -1,0 +1,18 @@
+CLASS akq net/minecraft/world/level/newbiome/layer/Layer
+	FIELD b seed J
+	FIELD c rval J
+	FIELD d seedMixup J
+	METHOD <init> (J)V
+		ARG 1 seed
+	METHOD a nextRandom (I)I
+		ARG 1 modulus
+	METHOD a getArea (IIII)[I
+		ARG 1 x
+		ARG 2 z
+		ARG 3 w
+		ARG 4 d
+	METHOD a init (J)V
+		ARG 1 seed
+	METHOD a initRandom (JJ)V
+	METHOD a getDefaultLayers (JLacg;)[Lakq;
+		ARG 0 seed

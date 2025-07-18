@@ -1,0 +1,10 @@
+CLASS aei net/minecraft/world/level/dimension/Dimension
+	FIELD b level Labw;
+	FIELD e biomeSource Lacv;
+	FIELD h brightnessRamp [F
+	FIELD j sunriseCol [F
+	METHOD a updateLightRamp ()V
+	METHOD a init (Labw;)V
+		ARG 1 level
+	METHOD b init ()V
+	METHOD c createRandomLevelSource ()Lado;

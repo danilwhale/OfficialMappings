@@ -1,0 +1,3 @@
+CLASS akh net/minecraft/world/level/newbiome/layer/AddMushroomIslandLayer
+	METHOD <init> (JLakq;)V
+		ARG 1 seed

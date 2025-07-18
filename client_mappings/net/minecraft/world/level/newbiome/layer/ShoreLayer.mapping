@@ -1,0 +1,3 @@
+CLASS akv net/minecraft/world/level/newbiome/layer/ShoreLayer
+	METHOD <init> (JLakq;)V
+		ARG 1 seed

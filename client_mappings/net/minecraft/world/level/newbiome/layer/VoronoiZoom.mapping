@@ -1,0 +1,3 @@
+CLASS alb net/minecraft/world/level/newbiome/layer/VoronoiZoom
+	METHOD <init> (JLakq;)V
+		ARG 1 seed

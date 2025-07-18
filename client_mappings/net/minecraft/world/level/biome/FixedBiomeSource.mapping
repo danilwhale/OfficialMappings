@@ -1,0 +1,4 @@
+CLASS acy net/minecraft/world/level/biome/FixedBiomeSource
+	FIELD d biome Lacq;
+	METHOD <init> (Lacq;FF)V
+		ARG 1 biome

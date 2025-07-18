@@ -1,0 +1,6 @@
+CLASS acu net/minecraft/world/level/levelgen/BiomeDecorator
+	METHOD <init> (Lacq;)V
+		ARG 1 biome
+	METHOD a decorate (Labw;Ljava/util/Random;II)V
+		ARG 1 level
+		ARG 2 random

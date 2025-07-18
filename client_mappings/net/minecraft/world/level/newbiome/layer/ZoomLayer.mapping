@@ -1,0 +1,4 @@
+CLASS alc net/minecraft/world/level/newbiome/layer/ZoomLayer
+	METHOD <init> (JLakq;)V
+		ARG 1 seed
+	METHOD a zoom (JLakq;I)Lakq;

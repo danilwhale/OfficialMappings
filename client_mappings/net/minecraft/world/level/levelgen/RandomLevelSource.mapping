@@ -1,0 +1,39 @@
+CLASS aet net/minecraft/world/level/levelgen/RandomLevelSource
+	FIELD a scaleNoise Lajt;
+	FIELD b depthNoise Lajt;
+	FIELD c forestNoise Lajt;
+	FIELD d pnr [D
+	FIELD e ar [D
+	FIELD f br [D
+	FIELD g sr [D
+	FIELD h dr [D
+	FIELD j waterDepths [[I
+	FIELD k random Ljava/util/Random;
+	FIELD l lperlinNoise1 Lajt;
+	FIELD m lperlinNoise2 Lajt;
+	FIELD n perlinNoise1 Lajt;
+	FIELD o perlinNoise2 Lajt;
+	FIELD p level Labw;
+	FIELD r buffer [D
+	FIELD s depthBuffer [D
+	FIELD z biomes [Lacq;
+	METHOD <init> (Labw;JZ)V
+		ARG 1 level
+		ARG 2 seed
+	METHOD a prepareHeights (II[B)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 blocks
+	METHOD a buildSurfaces (II[B[Lacq;)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 blocks
+		ARG 4 biomes
+	METHOD a getHeights ([DIIIIII)[D
+		ARG 1 heights
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 w
+		ARG 6 h
+		ARG 7 d

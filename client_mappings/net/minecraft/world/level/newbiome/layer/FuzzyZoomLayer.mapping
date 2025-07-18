@@ -1,0 +1,8 @@
+CLASS akn net/minecraft/world/level/newbiome/layer/FuzzyZoomLayer
+	METHOD <init> (JLakq;)V
+		ARG 1 seed
+	METHOD b modeOrRandom (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w

@@ -1,0 +1,23 @@
+CLASS acv net/minecraft/world/level/biome/BiomeSource
+	FIELD d noiseBiomeLayer Lakq;
+	FIELD e blockBiomeLayer Lakq;
+	METHOD a getBiome (II)Lacq;
+		ARG 1 x
+		ARG 2 z
+	METHOD a containsOnly (IIILjava/util/List;)Z
+		ARG 1 x
+		ARG 2 z
+		ARG 4 biomes
+	METHOD a findBiome (IIILjava/util/List;Ljava/util/Random;)Laco;
+		ARG 1 x
+		ARG 2 z
+		ARG 4 biomes
+		ARG 5 random
+	METHOD a ([Lacq;IIII)[Lacq;
+		ARG 1 biomes
+		ARG 2 x
+		ARG 3 z
+		ARG 4 w
+		ARG 5 d
+	METHOD b update ()V
+	METHOD b getBiomeBlock ([Lacq;IIII)[Lacq;

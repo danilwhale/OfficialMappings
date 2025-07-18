@@ -1,0 +1,3 @@
+CLASS akr net/minecraft/world/level/newbiome/layer/RegionHillsLayer
+	METHOD <init> (JLakq;)V
+		ARG 1 seed

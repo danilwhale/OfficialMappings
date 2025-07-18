@@ -1,3 +1,4 @@
 CLASS acf net/minecraft/world/level/LevelSource
+	METHOD a getBiome (II)Lacq;
 	METHOD a getTile (III)I
 	METHOD h getData (III)I
