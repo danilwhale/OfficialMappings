@@ -1,9 +1,17 @@
 CLASS abw net/minecraft/world/level/Level
+	FIELD D scoreboard Latj;
+	FIELD E spawnEnemies Z
+	FIELD F spawnFriendlies Z
+	FIELD G chunksToPoll Ljava/util/Set;
+	FIELD I isOnline Z
 	FIELD O delayUntilNextMoodSound I
 	FIELD c cloudColor J
+	FIELD k randValue I
 	FIELD l addend I
 	FIELD s random Ljava/util/Random;
 	FIELD t dimension Laei;
+	FIELD v chunkSource Lado;
+	FIELD x levelData Lals;
 	METHOD H getSeed ()J
 	METHOD N getLevelData ()Lals;
 	METHOD a playSound (DDDLjava/lang/String;FF)V

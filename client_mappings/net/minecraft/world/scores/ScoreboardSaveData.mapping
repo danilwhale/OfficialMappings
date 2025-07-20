@@ -1,0 +1,20 @@
+CLASS atk net/minecraft/world/scores/ScoreboardSaveData
+	FIELD a scoreboard Latj;
+	FIELD b delayLoad Lby;
+	METHOD a saveTeams ()Lcg;
+	METHOD a loadTeamPlayers (Latf;Lcg;)V
+		ARG 1 team
+		ARG 2 players
+	METHOD a setScoreboard (Latj;)V
+		ARG 1 scoreboard
+	METHOD a loadTeams (Lcg;)V
+		ARG 1 teams
+	METHOD b saveObjectives ()Lcg;
+	METHOD b loadObjectives (Lcg;)V
+		ARG 1 objectives
+	METHOD c loadDisplaySlots (Lby;)V
+		ARG 1 slots
+	METHOD c (Lcg;)V
+		ARG 1 list
+	METHOD d saveDisplaySlots (Lby;)V
+		ARG 1 slots

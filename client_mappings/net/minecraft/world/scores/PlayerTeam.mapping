@@ -1,0 +1,32 @@
+CLASS atf net/minecraft/world/scores/PlayerTeam
+	FIELD a scoreboard Latj;
+	FIELD b name Ljava/lang/String;
+	FIELD c players Ljava/util/Set;
+	FIELD d displayName Ljava/lang/String;
+	FIELD e playerPrefix Ljava/lang/String;
+	FIELD f playerSuffix Ljava/lang/String;
+	FIELD g allowFriendlyFire Z
+	FIELD h seeFriendlyInvisibles Z
+	METHOD <init> (Latj;Ljava/lang/String;)V
+		ARG 1 scoreboard
+		ARG 2 name
+	METHOD a unpackOptions (I)V
+		ARG 1 options
+	METHOD a formatNameForTeam (Latl;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 team
+		ARG 1 name
+	METHOD a setDisplayName (Ljava/lang/String;)V
+		ARG 1 displayName
+	METHOD a setAllowFriendlyFire (Z)V
+		ARG 1 allowFriendlyFire
+	METHOD b setPlayerPrefix (Ljava/lang/String;)V
+		ARG 1 playerPrefix
+	METHOD b setSeeFriendlyInvisibles (Z)V
+		ARG 1 seeFriendlyInvisibles
+	METHOD c getDisplayName ()Ljava/lang/String;
+	METHOD c setPlayerSuffix (Ljava/lang/String;)V
+		ARG 1 playerSuffix
+	METHOD d getPlayers ()Ljava/util/Collection;
+	METHOD e getPlayerPrefix ()Ljava/lang/String;
+	METHOD f getPlayerSuffix ()Ljava/lang/String;
+	METHOD i packOptions ()I

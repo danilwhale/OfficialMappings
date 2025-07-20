@@ -1,0 +1,8 @@
+CLASS atl net/minecraft/world/scores/Team
+	METHOD a isAppliedTo (Latl;)Z
+		ARG 1 other
+	METHOD b getName ()Ljava/lang/String;
+	METHOD d getFormattedName (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 name
+	METHOD g isAllowFriendlyFire ()Z
+	METHOD h canSeeFriendlyInvisibles ()Z

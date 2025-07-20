@@ -1,0 +1,16 @@
+CLASS hp net/minecraft/server/ServerScoreboard
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	FIELD b trackedObjectives Ljava/util/Set;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD b setDirty ()V
+	METHOD d getStartTrackingPackets (Late;)Ljava/util/List;
+		ARG 1 objective
+	METHOD e startTrackingObjective (Late;)V
+		ARG 1 objective
+	METHOD f getStopTrackingPackets (Late;)Ljava/util/List;
+		ARG 1 objective
+	METHOD g stopTrackingObjecetive (Late;)V
+		ARG 1 objective
+	METHOD h getObjectiveDisplaySlotCount (Late;)I
+		ARG 1 objective

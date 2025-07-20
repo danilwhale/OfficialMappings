@@ -1,0 +1,3 @@
+CLASS hn
+	FIELD a players Ljava/util/List;
+	METHOD a broadcastAll (Ley;)V

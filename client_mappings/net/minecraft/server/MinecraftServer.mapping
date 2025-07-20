@@ -1,2 +1,3 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	METHOD af getPlayerList ()Lhn;
 	METHOD aq getMillis ()J
