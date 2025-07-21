@@ -1,0 +1,7 @@
+CLASS acb net/minecraft/world/level/LevelListener
+	METHOD a setTilesDirty (IIIIII)V
+	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD a playSound (Ljava/lang/String;DDDFF)V
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+	METHOD a entityAdded (Lnn;)V
+	METHOD b entityRemoved (Lnn;)V

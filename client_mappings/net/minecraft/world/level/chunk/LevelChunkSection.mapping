@@ -1,0 +1,8 @@
+CLASS ads net/minecraft/world/level/chunk/LevelChunkSection
+	FIELD a bottomBlockY I
+	METHOD <init> (IZ)V
+		ARG 1 y
+	METHOD a (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

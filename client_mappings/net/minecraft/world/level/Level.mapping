@@ -1,24 +1,288 @@
 CLASS abw net/minecraft/world/level/Level
+	FIELD C profiler Llv;
 	FIELD D scoreboard Latj;
 	FIELD E spawnEnemies Z
 	FIELD F spawnFriendlies Z
 	FIELD G chunksToPoll Ljava/util/Set;
 	FIELD I isOnline Z
+	FIELD L logger Llp;
+	FIELD M boxes Ljava/util/ArrayList;
 	FIELD O delayUntilNextMoodSound I
 	FIELD c cloudColor J
+	FIELD e entities Ljava/util/List;
+	FIELD g tileEntityList Ljava/util/List;
+	FIELD h players Ljava/util/List;
+	FIELD j skyDarken I
 	FIELD k randValue I
 	FIELD l addend I
+	FIELD q skyFlashTime I
+	FIELD r difficulty I
 	FIELD s random Ljava/util/Random;
 	FIELD t dimension Laei;
+	FIELD u listeners Ljava/util/List;
 	FIELD v chunkSource Lado;
+	FIELD w levelStorage Lamc;
 	FIELD x levelData Lals;
+	METHOD <init> (Lamc;Ljava/lang/String;Lacd;Laei;Llv;Llp;)V
+		ARG 1 storage
+		ARG 2 name
+		ARG 3 settings
+		ARG 4 dimension
+		ARG 5 profiler
+		ARG 6 logger
+	METHOD <init> (Lamc;Ljava/lang/String;Laei;Lacd;Llv;Llp;)V
+		ARG 1 storage
+		ARG 2 name
+		ARG 3 dimension
+		ARG 4 settings
+		ARG 5 profiler
+		ARG 6 logger
+	METHOD E setSpawnPos (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD H getSeed ()J
+	METHOD H getRandomFor (III)Ljava/util/Random;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD I getCurrentDifficultyAt (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD L getChunkSource ()Lado;
+	METHOD M getLevelStorage ()Lamc;
 	METHOD N getLevelData ()Lals;
+	METHOD O getGameRules ()Labt;
+	METHOD S getHeight ()I
+	METHOD X getScoreboard ()Latj;
+	METHOD Y getLogger ()Llp;
 	METHOD a playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 name
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD a (F)I
+		ARG 1 a
+	METHOD a setBlockEntity (IIILasp;)V
+	METHOD a (IIIZ)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a addListener (Lacb;)V
+		ARG 1 listener
+	METHOD a getBrightness (Lach;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a getCubes (Lasx;)Ljava/util/List;
+		ARG 1 bb
 	METHOD a getSeenPercent (Latc;Lasx;)F
+	METHOD a clip (Latc;Latc;)Lata;
+		ARG 1 origin
+		ARG 2 end
+	METHOD a clip (Latc;Latc;Z)Lata;
+		ARG 1 origin
+		ARG 2 end
 	METHOD a clip (Latc;Latc;ZZ)Lata;
+		ARG 1 origin
+		ARG 2 end
 	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 type
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xa
+		ARG 10 ya
+		ARG 12 za
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a addEntities (Ljava/util/List;)V
+	METHOD a entityAdded (Lnn;)V
+		ARG 1 entity
+	METHOD a getSkyColor (Lnn;F)Latc;
+		ARG 1 entity
+		ARG 2 a
+	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 bb
+	METHOD a playSound (Lnn;Ljava/lang/String;FF)V
+		ARG 1 entity
+		ARG 2 name
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD a makeSoundUpdater (Lst;)Lhr;
+		ARG 1 minecart
+	METHOD a (Luf;Ljava/lang/String;FF)V
+		ARG 1 player
+		ARG 2 name
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD b (DDD)F
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b getSkyDarken (F)F
+		ARG 1 a
+	METHOD b getTopTile (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD b hasChunksAt (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 r
+	METHOD b (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 5 flags
+	METHOD b getRawBrightness (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b removeListener (Lacb;)V
+		ARG 1 listener
+	METHOD b (Lach;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b setBrightness (Lach;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 br
+	METHOD b findNearestMapFeature (Ljava/lang/String;III)Laco;
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b removeEntities (Ljava/util/List;)V
+	METHOD b entityRemoved (Lnn;)V
+		ARG 1 entity
 	METHOD b getEntities (Lnn;Lasx;)Ljava/util/List;
+	METHOD c getTimeOfDay (F)F
+		ARG 1 a
+	METHOD c hasChunk (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD c setTileAndUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD c updateNeighborsAtExceptFromFacing (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 facing
+	METHOD d getSunAngle (F)F
+		ARG 1 a
+	METHOD d getChunkAt (II)Ladr;
+		ARG 1 x
+		ARG 2 z
+	METHOD d (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d tileUpdated (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD d addEntity (Lnn;)Z
+		ARG 1 entity
+	METHOD e getCloudColor (F)Latc;
+		ARG 1 a
+	METHOD e getChunk (II)Ladr;
+		ARG 1 x
+		ARG 2 z
+	METHOD e getTileRenderShape (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e lightColumnChanged (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y0
+		ARG 4 y1
+	METHOD e globalLevelEvent (IIIII)V
+	METHOD e hasChunksAt (IIIIII)Z
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD e removeEntity (Lnn;)V
+		ARG 1 entity
+	METHOD f getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD f hasChunkAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f updateNeighborsAt (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD f setTile (IIIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+		ARG 6 flags
+	METHOD f removeEntityImmediately (Lnn;)V
+		ARG 1 entity
+	METHOD g (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD g neighborChanged (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD g setTilesDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD h getThunderLevel (F)F
+	METHOD h ensureAdded (Lnn;)V
+		ARG 1 entity
+	METHOD i getRainLevel (F)F
+	METHOD i removeTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD j createChunkSource ()Lado;
+	METHOD l canSeeSky (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD m (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD n getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD u getBiomeSource ()Lacv;
+	METHOD v isDay ()Z
+	METHOD w getMoonPhase ()I
+	METHOD x getMoonBrightness ()F

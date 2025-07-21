@@ -5,15 +5,28 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD D yRotO F
 	FIELD E bb Lasx;
 	FIELD M removed Z
+	FIELD N heightOffset F
+	FIELD ai inChunk Z
+	FIELD aj xChunk I
+	FIELD ak yChunk I
+	FIELD al zChunk I
 	FIELD ar dimension I
+	FIELD n rider Lnn;
+	FIELD o riding Lnn;
 	FIELD q level Labw;
 	FIELD r xo D
 	FIELD s yo D
 	FIELD t zo D
+	FIELD u x D
+	FIELD v y D
+	FIELD w z D
 	FIELD x xd D
 	FIELD y yd D
 	FIELD z zd D
+	METHOD E getCollideBox ()Lasx;
 	METHOD a hurt (Lnb;F)Z
+	METHOD a ride (Lnn;)V
 	METHOD ay getDisplayName ()Ljava/lang/String;
 	METHOD f getEyeHeight ()F
 	METHOD f distanceTo (DDD)D
+	METHOD x remove ()V

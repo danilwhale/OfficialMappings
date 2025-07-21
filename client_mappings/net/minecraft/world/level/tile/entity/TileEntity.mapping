@@ -1,1 +1,7 @@
 CLASS asp net/minecraft/world/level/tile/entity/TileEntity
+	FIELD k level Labw;
+	FIELD l x I
+	FIELD m y I
+	FIELD n z I
+	METHOD b setLevel (Labw;)V
+	METHOD i clearCache ()V

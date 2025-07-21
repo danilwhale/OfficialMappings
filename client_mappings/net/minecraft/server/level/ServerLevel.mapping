@@ -1,0 +1,11 @@
+CLASS js net/minecraft/server/level/ServerLevel
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lamc;Ljava/lang/String;ILacd;Llv;Llp;)V
+		ARG 1 server
+		ARG 2 storage
+		ARG 3 name
+		ARG 4 dimension
+		ARG 5 settings
+		ARG 6 profiler
+		ARG 7 logger
+	METHOD a tickTime ()V

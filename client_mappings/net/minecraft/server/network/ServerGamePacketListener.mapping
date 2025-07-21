@@ -1,2 +1,0 @@
-CLASS ka net/minecraft/server/network/ServerGamePacketListener
-	METHOD b send (Ley;)V

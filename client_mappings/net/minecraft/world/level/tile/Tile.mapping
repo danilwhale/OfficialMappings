@@ -29,8 +29,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD a setLightEmission (F)Laqz;
 		ARG 1 lightEmission
 	METHOD a dropFromExplosion (Labr;)Z
+	METHOD a onPlace (Labw;III)V
+	METHOD a neighborChanged (Labw;IIII)V
 	METHOD a spawnResources (Labw;IIIIFI)V
 	METHOD a wasExploded (Labw;IIILabr;)V
+	METHOD a addAABBs (Labw;IIILasx;Ljava/util/List;Lnn;)V
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
 	METHOD a registerIcons (Lmt;)V
@@ -51,3 +54,4 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 1 lightBlock
 	METHOD l (I)Z
 		ARG 0 id
+	METHOD l onRemove (Labw;IIII)V

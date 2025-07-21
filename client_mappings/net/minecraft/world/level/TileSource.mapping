@@ -1,0 +1,34 @@
+CLASS acf net/minecraft/world/level/TileSource
+	METHOD R getMaxBuildHeight ()I
+	METHOD a getBiome (II)Lacq;
+		ARG 1 x
+		ARG 2 z
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c isEmptyTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD g getMaterial (III)Lakc;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD h getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i (IIII)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 min
+	METHOD q getBrightness (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD r getTileEntity (III)Lasp;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

@@ -1,0 +1,3 @@
+CLASS bdd net/minecraft/client/multiplayer/MultiPlayerLevel
+	METHOD <init> (Lbcw;Lacd;IILlv;Llp;)V
+		ARG 1 listener

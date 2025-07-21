@@ -1,10 +1,17 @@
 CLASS aei net/minecraft/world/level/dimension/Dimension
+	FIELD a MOON_BRIGHTNESS_PER_PHASE [F
 	FIELD b level Labw;
 	FIELD e biomeSource Lacv;
 	FIELD h brightnessRamp [F
 	FIELD j sunriseCol [F
 	METHOD a updateLightRamp ()V
+	METHOD a getMoonPhase (J)I
+		ARG 1 time
+	METHOD a getTimeOfDay (JF)F
+		ARG 1 time
+		ARG 3 a
 	METHOD a init (Labw;)V
 		ARG 1 level
 	METHOD b init ()V
+	METHOD b getFogColor (FF)Latc;
 	METHOD c createRandomLevelSource ()Lado;

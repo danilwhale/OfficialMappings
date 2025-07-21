@@ -1,0 +1,19 @@
+CLASS adp net/minecraft/world/level/chunk/DataLayer
+	FIELD a data [B
+	FIELD b depthBits I
+	FIELD c depthBitsPlusFour I
+	METHOD <init> (II)V
+		ARG 1 length
+		ARG 2 depthBits
+	METHOD <init> ([BI)V
+		ARG 1 data
+		ARG 2 depthBits
+	METHOD a get (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a set (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 val

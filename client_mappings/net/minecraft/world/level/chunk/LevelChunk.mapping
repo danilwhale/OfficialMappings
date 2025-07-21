@@ -1,8 +1,18 @@
 CLASS adr net/minecraft/world/level/chunk/LevelChunk
+	FIELD a touchedSky Z
+	FIELD d loaded Z
 	FIELD e level Labw;
 	FIELD f heightmap [I
 	FIELD g x I
 	FIELD h z I
+	FIELD i tileEntities Ljava/util/Map;
+	FIELD j entitySections [Ljava/util/List;
+	FIELD k terrainPopulated Z
+	FIELD l unsaved Z
+	FIELD m lastSaveHadEntities Z
+	FIELD n lastSaveTime J
+	FIELD p minHeight I
+	FIELD r sections [Lads;
 	METHOD <init> (Labw;II)V
 		ARG 1 level
 		ARG 2 x
@@ -12,4 +22,95 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 2 blocks
 		ARG 3 x
 		ARG 4 z
+	METHOD a isAt (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD a setTileEntity (IIILasp;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 te
+	METHOD a getRandom (J)Ljava/util/Random;
+		ARG 1 seed
+	METHOD a getBrightness (Lach;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setBrightness (Lach;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 br
+	METHOD a addTileEntity (Lasp;)V
+		ARG 1 te
+	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;Ljava/util/List;Lnw;)V
+		ARG 1 clazz
+		ARG 2 bb
+		ARG 3 list
+	METHOD a addEntity (Lnn;)V
+		ARG 1 entity
+	METHOD a removeEntity (Lnn;I)V
+		ARG 1 entity
+		ARG 2 section
+	METHOD a getEntities (Lnn;Lasx;Ljava/util/List;Lnw;)V
+		ARG 1 entity
+		ARG 2 bb
+		ARG 3 list
+	METHOD a shouldSave (Z)Z
 	METHOD b recalcHeightmap ()V
+	METHOD b getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD b (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD b removeEntity (Lnn;)V
+		ARG 1 entity
+	METHOD c load ()V
+	METHOD c (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getRawBrightness (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 br
+	METHOD d unload ()V
+	METHOD d isSkyLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e markUnsaved ()V
+	METHOD e lightGaps (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD e getTileEntity (III)Lasp;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD g isEmpty ()Z
+	METHOD i getSections ()[Lads;
+	METHOD q recheckGaps ()V
