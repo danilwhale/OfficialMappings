@@ -21,7 +21,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD T lapisBlock Laqz;
 	FIELD U dispenser Laqz;
 	FIELD V sandStone Laqz;
-	FIELD W musicBlock Laqz;
+	FIELD W note Laqz;
 	FIELD X bed Laqz;
 	FIELD Y goldenRail Laqz;
 	FIELD Z detectorRail Laqz;
@@ -56,7 +56,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD ac tallgrass Laqv;
 	FIELD ad deadbush Lant;
 	FIELD ae pistonBase Last;
-	FIELD af pistonTop Lasu;
+	FIELD af pistonArm Lasu;
 	FIELD ag cloth Laqz;
 	FIELD ah pistonExtension Lasv;
 	FIELD ai flower Lane;
@@ -180,6 +180,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD a getSpawnResourcesAuxValue (I)I
+		ARG 1 data
 	METHOD a getTexture (II)Lms;
 		ARG 1 face
 		ARG 2 data
@@ -222,6 +224,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
+	METHOD b getColor (I)I
+		ARG 1 data
 	METHOD b getAABB (Labw;III)Lasx;
 		ARG 1 level
 		ARG 2 x
@@ -243,6 +247,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD c setDestroyTime (F)Laqz;
 		ARG 1 destroyTime
 	METHOD c spawnResources (Labw;IIIII)V
+	METHOD c getColor (Lacf;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD c_ getTileAABB (Labw;III)Lasx;
 		ARG 1 level
 		ARG 2 x
@@ -258,4 +267,5 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD l onRemove (Labw;IIII)V
 	METHOD m getTexture (I)Lms;
 		ARG 1 face
+	METHOD o getColor ()I
 	METHOD r setIndestrucible ()Laqz;

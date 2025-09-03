@@ -1,17 +1,31 @@
 CLASS akc net/minecraft/world/level/material/Material
 	FIELD H color Lake;
+	FIELD I flammable Z
 	FIELD K liquid Z
+	FIELD L alwaysDestroyable Z
 	FIELD M pushReaction I
 	FIELD a air Lakc;
+	FIELD b grass Lakc;
 	FIELD d wood Lakc;
+	FIELD e stone Lakc;
 	FIELD f metal Lakc;
 	FIELD h water Lakc;
+	FIELD i lava Lakc;
+	FIELD j leaves Lakc;
+	FIELD k plant Lakc;
+	FIELD s glass Lakc;
 	METHOD <init> (Lake;)V
 		ARG 1 color
-	METHOD c isSolid ()Z
+	METHOD a isSolid ()Z
+	METHOD b blocksLight ()Z
+	METHOD c blocksMotion ()Z
 	METHOD d isLiquid ()Z
+	METHOD f notAlwaysDestroyable ()Lakc;
+	METHOD g flammable ()Lakc;
+	METHOD h isFlammable ()Z
 	METHOD k letsWaterThrough ()Z
+	METHOD l isAlwaysDestroyable ()Z
 	METHOD m getPushReaction ()I
-	METHOD n destroyOnPush ()Lakc;
+	METHOD n replaceable ()Lakc;
 	METHOD o notPushable ()Lakc;
 	METHOD r liquid ()Lakc;
