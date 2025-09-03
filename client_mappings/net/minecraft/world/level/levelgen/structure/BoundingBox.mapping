@@ -1,0 +1,60 @@
+CLASS agf net/minecraft/world/level/levelgen/structure/BoundingBox
+	FIELD a x0 I
+	FIELD b y0 I
+	FIELD c z0 I
+	FIELD d x1 I
+	FIELD e y1 I
+	FIELD f z1 I
+	METHOD <init> (IIII)V
+		ARG 1 x0
+		ARG 2 z0
+		ARG 3 x1
+		ARG 4 z1
+	METHOD <init> (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD <init> (Lagf;)V
+		ARG 1 box
+	METHOD <init> ([I)V
+		ARG 1 a
+	METHOD a getUnknownBox ()Lagf;
+	METHOD a move (III)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD a intersects (IIII)Z
+		ARG 1 x1
+		ARG 2 z1
+		ARG 3 x0
+		ARG 4 z0
+	METHOD a orientBox (IIIIIIIIII)Lagf;
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 z0
+		ARG 3 x1
+		ARG 4 y1
+		ARG 5 z1
+		ARG 6 x2
+		ARG 7 y2
+		ARG 8 z2
+		ARG 9 dir
+	METHOD a intersects (Lagf;)Z
+		ARG 1 box
+	METHOD a createTag (Ljava/lang/String;)Lce;
+		ARG 1 name
+	METHOD b getXSpan ()I
+	METHOD b isInside (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b expand (Lagf;)V
+		ARG 1 box
+	METHOD c getYSpan ()I
+	METHOD d getZSpan ()I
+	METHOD e getXCenter ()I
+	METHOD f getYCenter ()I
+	METHOD g getZCenter ()I

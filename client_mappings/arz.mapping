@@ -1,0 +1,4 @@
+CLASS arz
+	FIELD a successCount I
+	FIELD b command Ljava/lang/String;
+	FIELD c customName Ljava/lang/String;

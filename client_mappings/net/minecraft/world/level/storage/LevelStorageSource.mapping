@@ -1,0 +1,9 @@
+CLASS amf net/minecraft/world/level/storage/LevelStorageSource
+	METHOD a renameLevel (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a convertLevel (Ljava/lang/String;Llx;)Z
+	METHOD a selectLevel (Ljava/lang/String;Z)Lamc;
+	METHOD b getLevelList ()Ljava/util/List;
+	METHOD c getTagDataFor (Ljava/lang/String;)Lals;
+	METHOD d clearAll ()V
+	METHOD e deleteLevel (Ljava/lang/String;)Z
+		ARG 1 levelName

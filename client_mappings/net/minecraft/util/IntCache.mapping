@@ -1,0 +1,5 @@
+CLASS ako net/minecraft/util/IntCache
+	METHOD a releaseAll ()V
+	METHOD a allocate (I)[I
+		ARG 0 size
+	METHOD b gatherStats ()Ljava/lang/String;

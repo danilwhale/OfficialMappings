@@ -1,1 +1,3 @@
 CLASS atb net/minecraft/world/phys/HitResult$Type
+	FIELD a TILE Latb;
+	FIELD b ENTITY Latb;

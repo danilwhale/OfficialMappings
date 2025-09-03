@@ -1,0 +1,8 @@
+CLASS nu net/minecraft/world/entity/EntityIO$SpawnableMobInfo
+	FIELD a id I
+	FIELD b color1 I
+	FIELD c color2 I
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 color1
+		ARG 3 color2

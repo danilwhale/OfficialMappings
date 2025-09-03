@@ -1,0 +1,4 @@
+CLASS ad net/minecraft/commands/CommandSource
+	METHOD a sendMessage (Lcv;)V
+		ARG 1 message
+	METHOD c_ getName ()Ljava/lang/String;

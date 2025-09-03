@@ -1,1 +1,5 @@
 CLASS oc net/minecraft/world/entity/decoration/HangingEntity
+	FIELD a dir I
+	FIELD b xTile I
+	FIELD c yTile I
+	FIELD d zTile I

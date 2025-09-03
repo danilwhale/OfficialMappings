@@ -1,7 +1,7 @@
 CLASS azt net/minecraft/client/main/Main$1
-	FIELD a proxyUser Ljava/lang/String;
-	FIELD b proxyPw Ljava/lang/String;
+	FIELD a val$proxyUser Ljava/lang/String;
+	FIELD b val$proxyPw Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 proxyUser
-		ARG 2 proxyPw
+		ARG 1 val$proxyUser
+		ARG 2 val$proxyPw
 	METHOD getPasswordAuthentication getPasswordAuthentication ()Ljava/net/PasswordAuthentication;

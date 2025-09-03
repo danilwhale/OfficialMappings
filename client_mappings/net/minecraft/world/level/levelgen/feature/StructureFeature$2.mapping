@@ -1,0 +1,8 @@
+CLASS aip net/minecraft/world/level/levelgen/feature/StructureFeature$2
+	FIELD a val$x I
+	FIELD b val$z I
+	FIELD c this$0 Lain;
+	METHOD <init> (Lain;II)V
+		ARG 1 this$0
+		ARG 2 val$x
+		ARG 3 val$z

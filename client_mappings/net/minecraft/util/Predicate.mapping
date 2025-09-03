@@ -1,0 +1,3 @@
+CLASS nw net/minecraft/util/Predicate
+	METHOD a apply (Lnn;)Z
+		ARG 1 e

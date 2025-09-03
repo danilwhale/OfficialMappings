@@ -1,5 +1,6 @@
 CLASS acf net/minecraft/world/level/TileSource
 	METHOD R getMaxBuildHeight ()I
+	METHOD V getVec3Pool ()Latd;
 	METHOD a getBiome (II)Lacq;
 		ARG 1 x
 		ARG 2 z

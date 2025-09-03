@@ -1,1 +1,6 @@
 CLASS x net/minecraft/Util$OS
+	FIELD a LINUX Lx;
+	FIELD b SOLARIS Lx;
+	FIELD c WINDOWS Lx;
+	FIELD d MACOS Lx;
+	FIELD e UNKNOWN Lx;

@@ -1,0 +1,5 @@
+CLASS agp net/minecraft/world/level/levelgen/structure/NetherBridgePieces
+	METHOD a loadStatic ()V
+	METHOD a access$000 (Lahd;Ljava/util/List;Ljava/util/Random;IIIII)Lahc;
+	METHOD b access$100 ()[Lahd;
+	METHOD c access$200 ()[Lahd;

@@ -1,0 +1,20 @@
+CLASS dp net/minecraft/network/protocol/game/ClientInformationPacket
+	FIELD a language Ljava/lang/String;
+	FIELD b viewDistance I
+	FIELD c chatVisibility I
+	FIELD d chatColors Z
+	FIELD e modelCustomisation I
+	FIELD f mainHand Z
+	METHOD <init> (Ljava/lang/String;IIZIZ)V
+		ARG 1 language
+		ARG 2 viewDistance
+		ARG 3 chatVisibility
+		ARG 4 chatColors
+		ARG 5 modelCustomisation
+		ARG 6 mainHand
+	METHOD d getLanguage ()Ljava/lang/String;
+	METHOD f getViewDistance ()I
+	METHOD g getChatVisibility ()I
+	METHOD h getChatColors ()Z
+	METHOD i getModelCustomisation ()I
+	METHOD j getMainHand ()Z

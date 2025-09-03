@@ -1,0 +1,7 @@
+CLASS wj net/minecraft/world/item/ArmorItem$ArmorMaterial
+	FIELD a CLOTH Lwj;
+	FIELD b CHAIN Lwj;
+	FIELD c IRON Lwj;
+	FIELD d GOLD Lwj;
+	FIELD e DIAMOND Lwj;
+	METHOD b getTierItemId ()I

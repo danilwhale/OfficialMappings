@@ -1,2 +1,6 @@
 CLASS ka net/minecraft/server/network/ServerConnection
+	FIELD a connection Lcm;
+	FIELD c player Ljv;
+	FIELD d server Lnet/minecraft/server/MinecraftServer;
+	FIELD j random Ljava/util/Random;
 	METHOD b send (Ley;)V

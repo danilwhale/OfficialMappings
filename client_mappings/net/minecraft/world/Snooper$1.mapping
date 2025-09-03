@@ -1,2 +1,5 @@
 CLASS mw net/minecraft/world/Snooper$1
+	FIELD a this$0 Lmv;
+	METHOD <init> (Lmv;)V
+		ARG 1 this$0
 	METHOD run run ()V

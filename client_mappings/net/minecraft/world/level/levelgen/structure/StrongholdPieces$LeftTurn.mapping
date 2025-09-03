@@ -1,0 +1,2 @@
+CLASS ahz net/minecraft/world/level/levelgen/structure/StrongholdPieces$LeftTurn
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahz;

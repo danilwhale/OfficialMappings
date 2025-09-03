@@ -1,0 +1,16 @@
+CLASS amr net/minecraft/world/level/saveddata/SavedDataStorage
+	FIELD a levelStorage Lamc;
+	METHOD <init> (Lamc;)V
+		ARG 1 levelStorage
+	METHOD a save ()V
+	METHOD a save (Lall;)V
+		ARG 1 sd
+	METHOD a get (Ljava/lang/Class;Ljava/lang/String;)Lall;
+		ARG 1 klass
+		ARG 2 name
+	METHOD a getFreeAuxValueFor (Ljava/lang/String;)I
+		ARG 1 name
+	METHOD a set (Ljava/lang/String;Lall;)V
+		ARG 1 name
+		ARG 2 data
+	METHOD b loadAuxValues ()V

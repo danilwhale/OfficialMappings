@@ -1,0 +1,14 @@
+CLASS agd net/minecraft/world/level/levelgen/FlatLayerInfo
+	FIELD a height I
+	FIELD b tile I
+	FIELD c data I
+	METHOD <init> (II)V
+		ARG 1 height
+		ARG 2 tile
+	METHOD <init> (III)V
+		ARG 1 height
+		ARG 2 tile
+		ARG 3 data
+	METHOD a getHeight ()I
+	METHOD b getTile ()I
+	METHOD c getData ()I

@@ -1,7 +1,43 @@
 CLASS asp net/minecraft/world/level/tile/entity/TileEntity
+	FIELD a idClassMap Ljava/util/Map;
+	FIELD b classIdMap Ljava/util/Map;
 	FIELD k level Labw;
 	FIELD l x I
 	FIELD m y I
 	FIELD n z I
+	FIELD o removed Z
+	FIELD p data I
+	FIELD q tile Laqz;
+	METHOD a distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a load (Lby;)V
+		ARG 1 tag
+	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 klass
+		ARG 1 id
+	METHOD a fillCrashReportCategory (Lm;)V
+		ARG 1 crc
+	METHOD az getLevel ()Labw;
+	METHOD b triggerEvent (II)Z
+		ARG 1 a
+		ARG 2 b
 	METHOD b setLevel (Labw;)V
+		ARG 1 level
+	METHOD b save (Lby;)V
+		ARG 1 tag
+	METHOD c loadStatic (Lby;)Lasp;
+		ARG 0 tag
+	METHOD e setChanged ()V
+	METHOD h tick ()V
 	METHOD i clearCache ()V
+	METHOD m getUpdatePacket ()Ley;
+	METHOD n getViewDistance ()D
+	METHOD o hasLevel ()Z
+	METHOD p getData ()I
+	METHOD q getTile ()Laqz;
+	METHOD r isRemoved ()Z
+	METHOD s clearRemoved ()V
+	METHOD t access$000 ()Ljava/util/Map;
+	METHOD w_ setRemoved ()V

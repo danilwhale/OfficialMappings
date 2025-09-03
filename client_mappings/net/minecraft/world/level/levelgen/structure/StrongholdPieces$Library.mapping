@@ -1,0 +1,2 @@
+CLASS aia net/minecraft/world/level/levelgen/structure/StrongholdPieces$Library
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laia;

@@ -1,0 +1,2 @@
+CLASS ahw net/minecraft/world/level/levelgen/structure/StrongholdPieces$ChestCorridor
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahw;

@@ -1,4 +1,8 @@
 CLASS oh net/minecraft/world/entity/MobCategory
+	FIELD a monster Loh;
+	FIELD b creature Loh;
+	FIELD c ambient Loh;
+	FIELD d waterCreature Loh;
 	FIELD e base Ljava/lang/Class;
 	FIELD f max I
 	FIELD g spawnPositionMaterial Lakc;

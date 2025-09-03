@@ -1,0 +1,3 @@
+CLASS aaf net/minecraft/world/item/crafting/Recipes
+	FIELD a instance Laaf;
+	FIELD b recipies Ljava/util/List;

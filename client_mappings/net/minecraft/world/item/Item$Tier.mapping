@@ -1,4 +1,9 @@
 CLASS yd net/minecraft/world/item/Item$Tier
+	FIELD a WOOD Lyd;
+	FIELD b STONE Lyd;
+	FIELD c IRON Lyd;
+	FIELD d EMERALD Lyd;
+	FIELD e GOLD Lyd;
 	FIELD f level I
 	FIELD g uses I
 	FIELD h speed F
@@ -15,4 +20,4 @@ CLASS yd net/minecraft/world/item/Item$Tier
 	METHOD c getEnchantmentValue ()F
 	METHOD d getLevel ()I
 	METHOD e getAttackDamageBonus ()I
-	METHOD f getTierItem ()I
+	METHOD f getTierItemId ()I

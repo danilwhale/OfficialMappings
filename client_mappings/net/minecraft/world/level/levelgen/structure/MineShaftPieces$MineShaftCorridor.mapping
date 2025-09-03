@@ -1,0 +1,17 @@
+CLASS agi net/minecraft/world/level/levelgen/structure/MineShaftPieces$MineShaftCorridor
+	FIELD a hasRails Z
+	FIELD b spiderCorridor Z
+	FIELD c hasPlacedSpider Z
+	FIELD d numSections I
+	METHOD <init> (ILjava/util/Random;Lagf;I)V
+		ARG 1 genDepth
+		ARG 2 random
+		ARG 3 box
+		ARG 4 orientation
+	METHOD a findCorridorSize (Ljava/util/List;Ljava/util/Random;IIII)Lagf;
+		ARG 0 pieces
+		ARG 1 random
+		ARG 2 x0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 z1

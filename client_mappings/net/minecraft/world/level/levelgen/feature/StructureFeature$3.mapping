@@ -1,0 +1,4 @@
+CLASS aiq net/minecraft/world/level/levelgen/feature/StructureFeature$3
+	FIELD a this$0 Lain;
+	METHOD <init> (Lain;)V
+		ARG 1 this$0

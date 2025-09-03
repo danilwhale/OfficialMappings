@@ -1,0 +1,8 @@
+CLASS r net/minecraft/core/Direction
+	FIELD c DIRECTION_NAMES [Ljava/lang/String;
+	FIELD d DIRECTION_FACING [I
+	FIELD f FACING_DIRECTION [I
+	FIELD i RELATIVE_DIRECTION_FACING [[I
+	METHOD a getDirection (DD)I
+		ARG 0 x
+		ARG 2 y

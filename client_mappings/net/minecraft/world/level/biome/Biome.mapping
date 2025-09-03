@@ -31,6 +31,7 @@ CLASS acq net/minecraft/world/level/biome/Biome
 	FIELD s desertHills Lacq;
 	FIELD t forestHills Lacq;
 	FIELD u taigaHills Lacq;
+	FIELD v extremeHillsEdge Lacq;
 	FIELD w jungle Lacq;
 	FIELD x jungleHills Lacq;
 	FIELD y name Ljava/lang/String;
@@ -47,6 +48,8 @@ CLASS acq net/minecraft/world/level/biome/Biome
 	METHOD a decorate (Labw;Ljava/util/Random;II)V
 		ARG 1 level
 		ARG 2 random
+		ARG 3 x
+		ARG 4 z
 	METHOD a setName (Ljava/lang/String;)Lacq;
 		ARG 1 name
 	METHOD a getTreeFeature (Ljava/util/Random;)Lafe;
@@ -54,7 +57,8 @@ CLASS acq net/minecraft/world/level/biome/Biome
 	METHOD a getMobs (Loh;)Ljava/util/List;
 		ARG 1 category
 	METHOD b setSnowCovered ()Lacq;
-	METHOD b (FF)Lacq;
+	METHOD b setDepthAndScale (FF)Lacq;
+		COMMENT not sure, just guessed this name
 		ARG 1 depth
 		ARG 2 scale
 	METHOD b setColor (I)Lacq;

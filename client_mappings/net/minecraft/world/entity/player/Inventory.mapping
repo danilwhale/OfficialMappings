@@ -1,0 +1,2 @@
+CLASS ud net/minecraft/world/entity/player/Inventory
+	METHOD c contains (Lye;)Z

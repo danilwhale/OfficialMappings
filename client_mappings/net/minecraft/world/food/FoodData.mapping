@@ -1,0 +1,27 @@
+CLASS ux net/minecraft/world/food/FoodData
+	FIELD a foodLevel I
+	FIELD b saturationLevel F
+	FIELD c exhaustionLevel F
+	FIELD d tickTimer I
+	FIELD e lastFoodLevel I
+	METHOD a getFoodLevel ()I
+	METHOD a addExhaustion (F)V
+		ARG 1 e
+	METHOD a setFoodLevel (I)V
+		ARG 1 fl
+	METHOD a eat (IF)V
+		ARG 1 i
+		ARG 2 f
+	METHOD a readAdditionalSaveData (Lby;)V
+		ARG 1 tag
+	METHOD a tick (Luf;)V
+		ARG 1 player
+	METHOD a eat (Lxx;)V
+		ARG 1 fi
+	METHOD b getLastFoodLevel ()I
+	METHOD b setSaturationLevel (F)V
+		ARG 1 sl
+	METHOD b addAdditionalSaveData (Lby;)V
+		ARG 1 tag
+	METHOD c needsFood ()Z
+	METHOD e getSaturationLevel ()F

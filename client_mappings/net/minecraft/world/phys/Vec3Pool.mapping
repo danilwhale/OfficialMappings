@@ -1,0 +1,2 @@
+CLASS atd net/minecraft/world/phys/Vec3Pool
+	METHOD a set (DDD)Latc;

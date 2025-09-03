@@ -1,0 +1,2 @@
+CLASS pt net/minecraft/world/entity/ai/goal/GoalSelector
+	METHOD a addGoal (ILps;)V

@@ -1,0 +1,2 @@
+CLASS wp net/minecraft/world/item/BowItem
+	METHOD c getDrawnIcon (I)Lms;

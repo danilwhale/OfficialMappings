@@ -1,0 +1,20 @@
+CLASS acs net/minecraft/world/level/biome/BiomeCache
+	COMMENT class name from bukkit or whatever but seems fitting
+	FIELD a biomeSource Lacv;
+	FIELD b lastMs J
+	FIELD c areaMap Llq;
+	FIELD d areas Ljava/util/List;
+	METHOD <init> (Lacv;)V
+		ARG 1 biomeSource
+	METHOD a update ()V
+	METHOD a getBlockAt (II)Lact;
+		ARG 1 x
+		ARG 2 z
+	METHOD a access$000 (Lacs;)Lacv;
+		ARG 0 this$0
+	METHOD b getBiome (II)Lacq;
+		ARG 1 x
+		ARG 2 z
+	METHOD e getBiomeBlock (II)[Lacq;
+		ARG 1 x
+		ARG 2 z

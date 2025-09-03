@@ -24,5 +24,7 @@ CLASS cl net/minecraft/nbt/Tag
 		ARG 0 input
 		ARG 1 depth
 	METHOD e getName ()Ljava/lang/String;
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
 	METHOD p setName (Ljava/lang/String;)Lcl;
 		ARG 1 name

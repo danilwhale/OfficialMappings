@@ -1,8 +1,13 @@
 CLASS hp net/minecraft/server/ServerScoreboard
 	FIELD a server Lnet/minecraft/server/MinecraftServer;
 	FIELD b trackedObjectives Ljava/util/Set;
+	FIELD c saveData Latk;
+		COMMENT guessed
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
+	METHOD a setSaveData (Latk;)V
+		COMMENT guessed
+		ARG 1 saveData
 	METHOD b setDirty ()V
 	METHOD d getStartTrackingPackets (Late;)Ljava/util/List;
 		ARG 1 objective

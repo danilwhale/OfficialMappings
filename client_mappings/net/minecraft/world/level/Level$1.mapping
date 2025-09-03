@@ -1,0 +1,4 @@
+CLASS aby net/minecraft/world/level/Level$1
+	FIELD a this$0 Labw;
+	METHOD <init> (Labw;)V
+		ARG 1 this$0

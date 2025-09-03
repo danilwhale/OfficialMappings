@@ -1,0 +1,16 @@
+CLASS em net/minecraft/network/packet/LevelEventPacket
+	FIELD a event I
+	FIELD b data I
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f globalEvent Z
+	METHOD <init> (IIIIIZ)V
+		ARG 1 event
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 globalEvent
+	METHOD d isGlobalEvent ()Z
+		COMMENT again with the bean methods? why? you were using public fields no problem before!?!???

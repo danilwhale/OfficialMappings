@@ -1,0 +1,22 @@
+CLASS air net/minecraft/world/level/levelgen/structure/StructureFeatureIO
+	COMMENT knockoff EntityIO
+	FIELD a startIdClassMap Ljava/util/Map;
+	FIELD b startClassIdMap Ljava/util/Map;
+	FIELD c pieceIdClassMap Ljava/util/Map;
+	FIELD d pieceClassIdMap Ljava/util/Map;
+	METHOD a getEncodeID (Lait;)Ljava/lang/String;
+		ARG 0 structurePiece
+	METHOD a getEncodeId (Laiv;)Ljava/lang/String;
+		ARG 0 structureStart
+	METHOD a loadStaticStart (Lby;Labw;)Laiv;
+		ARG 0 tag
+		ARG 1 level
+	METHOD a setPieceId (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 klass
+		ARG 1 id
+	METHOD b loadStaticPiece (Lby;Labw;)Lait;
+		ARG 0 tag
+		ARG 1 level
+	METHOD b setStartId (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 klass
+		ARG 1 id

@@ -1,2 +1,8 @@
 CLASS uf net/minecraft/world/entity/player/Player
+	FIELD bG abilities Luc;
 	FIELD bn inventory Lud;
+	METHOD a awardStat (Lku;)V
+		ARG 1 stat
+	METHOD a awardStat (Lku;I)V
+		ARG 1 stat
+		ARG 2 amount

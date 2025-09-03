@@ -1,0 +1,6 @@
+CLASS ahq net/minecraft/world/level/levelgen/feature/StrongholdFeature
+	FIELD e validStartBiomes [Lacq;
+	FIELD f isSpotSelected Z
+	FIELD g strongholdPos [Labp;
+	FIELD h distance D
+	FIELD i spread I

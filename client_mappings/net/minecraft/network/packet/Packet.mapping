@@ -1,0 +1,56 @@
+CLASS ey net/minecraft/network/packet/Packet
+	FIELD a classToIdMap Ljava/util/Map;
+	FIELD b clientboundPackets Ljava/util/Set;
+	FIELD c serverboundPackets Ljava/util/Set;
+	FIELD l idToClassMap Llm;
+	FIELD m logger Llp;
+	FIELD n createTime J
+	METHOD a getEstimatedSize ()I
+	METHOD a map (IZZLjava/lang/Class;)V
+		ARG 0 id
+		ARG 1 clientbound
+		ARG 2 serverbound
+		ARG 3 clazz
+	METHOD a writeNbt (Lby;Ljava/io/DataOutput;)V
+		ARG 0 tag
+		ARG 1 dos
+	METHOD a isInvalidatedBy (Ley;)Z
+		ARG 1 packet
+	METHOD a writePacket (Ley;Ljava/io/DataOutput;)V
+		ARG 0 packet
+		ARG 1 output
+	METHOD a handle (Lez;)V
+		ARG 1 listener
+	METHOD a read (Ljava/io/DataInput;)V
+		ARG 1 dis
+	METHOD a readUtf (Ljava/io/DataInput;I)Ljava/lang/String;
+		ARG 0 input
+		ARG 1 maxLength
+	METHOD a write (Ljava/io/DataOutput;)V
+		ARG 1 dos
+	METHOD a writeKey (Ljava/io/DataOutput;[B)V
+		ARG 0 output
+		ARG 1 key
+	METHOD a writeUtf (Ljava/lang/String;Ljava/io/DataOutput;)V
+		ARG 0 str
+		ARG 1 output
+	METHOD a getPacket (Llp;I)Ley;
+		ARG 0 logger
+		ARG 1 id
+	METHOD a readPacket (Llp;Ljava/io/DataInput;ZLjava/net/Socket;)Ley;
+		ARG 0 logger
+		ARG 1 input
+		ARG 2 async
+		ARG 3 socket
+	METHOD a writeItem (Lye;Ljava/io/DataOutput;)V
+		ARG 0 item
+		ARG 1 dos
+	METHOD a_ isAync ()Z
+	METHOD b readKey (Ljava/io/DataInput;)[B
+		ARG 0 input
+	METHOD c readItem (Ljava/io/DataInput;)Lye;
+		ARG 0 dis
+	METHOD d readNbt (Ljava/io/DataInput;)Lby;
+		ARG 0 dis
+	METHOD e canBeInvalidated ()Z
+	METHOD n getId ()I

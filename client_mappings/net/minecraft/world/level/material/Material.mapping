@@ -7,6 +7,7 @@ CLASS akc net/minecraft/world/level/material/Material
 	METHOD <init> (Lake;)V
 		ARG 1 color
 	METHOD c isSolid ()Z
+	METHOD d isLiquid ()Z
 	METHOD k letsWaterThrough ()Z
 	METHOD m getPushReaction ()I
 	METHOD n destroyOnPush ()Lakc;

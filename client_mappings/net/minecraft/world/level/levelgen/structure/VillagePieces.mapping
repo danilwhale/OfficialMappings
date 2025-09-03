@@ -1,0 +1,8 @@
+CLASS aiy net/minecraft/world/level/levelgen/structure/VillagePieces
+	METHOD a loadStatic ()V
+	METHOD a findAndCreatePieceFactory (Lajj;Lajd;Ljava/util/List;Ljava/util/Random;IIIII)Lajm;
+	METHOD a access$000 (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+	METHOD a createPieceSet (Ljava/util/Random;I)Ljava/util/List;
+		ARG 0 random
+		ARG 1 i
+	METHOD b access$100 (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;

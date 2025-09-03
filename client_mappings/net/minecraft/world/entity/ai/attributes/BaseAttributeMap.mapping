@@ -1,0 +1,7 @@
+CLASS ov net/minecraft/world/entity/ai/attributes/BaseAttributeMap
+	FIELD a attributesByObject Ljava/util/Map;
+	FIELD b attributesByName Ljava/util/Map;
+	METHOD a getAttributes ()Ljava/util/Collection;
+	METHOD a getInstance (Ljava/lang/String;)Los;
+	METHOD a getInstance (Lor;)Los;
+	METHOD b createAttribute (Lor;)Los;

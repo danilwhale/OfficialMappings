@@ -9,6 +9,7 @@ CLASS yc net/minecraft/world/item/Item
 	FIELD cx handEquipped Z
 	FIELD cy isStackedByData Z
 	FIELD cz icon Lms;
+	FIELD d potionBrewingFormula Ljava/lang/String;
 	FIELD e BASE_ATTACK_DAMAGE_UUID Ljava/util/UUID;
 	FIELD f random Ljava/util/Random;
 	FIELD g items [Lyc;
@@ -95,8 +96,8 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD b_ getIcon (I)Lms;
 		ARG 1 auxValue
 	METHOD c getEnchantmentValue ()I
-	METHOD c (Ljava/lang/String;)Lyc;
-		ARG 1 descriptionId
+	METHOD c setPotionBrewingFormula (Ljava/lang/String;)Lyc;
+		ARG 1 f
 	METHOD c_ getUseAnimation (Lye;)Lzj;
 		ARG 1 instance
 	METHOD d setMaxStackSize (I)Lyc;
@@ -141,4 +142,6 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD s shouldOverrideMultiplayerNBT ()Z
 	METHOD t getCraftingRemainingItem ()Lyc;
 	METHOD u hasCraftingRemainingItem ()Z
+	METHOD w getPotionBrewingFormula ()Ljava/lang/String;
+	METHOD x hasPotionBrewingFormula ()Z
 	METHOD y getItemCategory ()Lww;

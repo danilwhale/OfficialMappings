@@ -1,0 +1,3 @@
+CLASS aeo net/minecraft/world/level/levelgen/FlatLevelSource
+	FIELD a level Labw;
+	FIELD b random Ljava/util/Random;

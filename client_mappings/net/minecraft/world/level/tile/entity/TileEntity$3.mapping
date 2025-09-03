@@ -1,0 +1,4 @@
+CLASS ass net/minecraft/world/level/tile/entity/TileEntity$3
+	FIELD a this$0 Lasp;
+	METHOD <init> (Lasp;)V
+		ARG 1 this$0

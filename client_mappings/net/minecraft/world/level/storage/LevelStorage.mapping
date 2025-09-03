@@ -1,1 +1,15 @@
 CLASS amc net/minecraft/world/level/storage/LevelStorage
+	METHOD a closeAll ()V
+	METHOD a createChunkStorage (Laei;)Ladw;
+		ARG 1 dimension
+	METHOD a saveLevelData (Lals;)V
+		ARG 1 levelData
+	METHOD a saveLevelData (Lals;Lby;)V
+		ARG 1 levelData
+		ARG 2 playerTag
+	METHOD b getDataFile (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 name
+	METHOD c checkSession ()V
+	METHOD d prepareLevel ()Lals;
+	METHOD e getPlayerIO ()Lamq;
+	METHOD g getLevelId ()Ljava/lang/String;

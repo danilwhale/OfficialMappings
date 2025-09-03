@@ -1,0 +1,17 @@
+CLASS ahs net/minecraft/world/level/levelgen/structure/StrongholdPieces
+	FIELD a totalWeight I
+	FIELD b STRONGHOLD_PIECE_WEIGHTS [Laib;
+	FIELD c curretnPieces Ljava/util/List;
+	FIELD d imposedPiece Ljava/lang/Class;
+	FIELD e SMOOTH_STONE_SELECTOR Laig;
+	METHOD a loadStatic ()V
+	METHOD a access$000 (Laii;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+	METHOD a access$100 (Ljava/lang/Class;)Ljava/lang/Class;
+	METHOD a findAndCreatePieceFactory (Ljava/lang/Class;Ljava/util/List;Ljava/util/Random;IIIII)Lail;
+		ARG 0 factory
+		ARG 1 pieces
+		ARG 2 random
+		ARG 6 dir
+	METHOD b resetPieces ()V
+	METHOD c access$200 ()Laig;
+	METHOD d updatePieceWeight ()Z

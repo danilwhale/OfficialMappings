@@ -1,0 +1,2 @@
+CLASS aij net/minecraft/world/level/levelgen/structure/StrongholdPieces$Straight
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laij;

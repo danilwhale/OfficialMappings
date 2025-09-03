@@ -1,0 +1,2 @@
+CLASS aid net/minecraft/world/level/levelgen/structure/StrongholdPieces$PrisonHall
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laid;

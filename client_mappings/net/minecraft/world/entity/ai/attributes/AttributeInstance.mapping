@@ -1,0 +1,2 @@
+CLASS os net/minecraft/world/entity/ai/attributes/AttributeInstance
+	METHOD b removeModifier (Lot;)V

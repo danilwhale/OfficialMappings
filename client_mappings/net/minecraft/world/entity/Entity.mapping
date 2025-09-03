@@ -4,13 +4,30 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD C xRotO F
 	FIELD D yRotO F
 	FIELD E bb Lasx;
+	FIELD F onGround Z
+	FIELD K inWeb Z
 	FIELD M removed Z
 	FIELD N heightOffset F
+	FIELD O bbWidth F
+	FIELD T fallDistance F
+	FIELD U xOld D
+	FIELD V yOld D
+	FIELD W zOld D
+	FIELD ab random Ljava/util/Random;
+	FIELD ah entityData Loo;
 	FIELD ai inChunk Z
 	FIELD aj xChunk I
 	FIELD ak yChunk I
 	FIELD al zChunk I
+	FIELD ao changingDimensionDelay I
 	FIELD ar dimension I
+	FIELD b entityCounter I
+	FIELD d remainingFireTicks I
+	FIELD h invulnerable Z
+	FIELD i uuid Ljava/util/UUID;
+	FIELD k entityId I
+	FIELD l viewScale D
+	FIELD m blocksBuilding Z
 	FIELD n rider Lnn;
 	FIELD o riding Lnn;
 	FIELD q level Labw;
@@ -24,9 +41,38 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD y yd D
 	FIELD z zd D
 	METHOD E getCollideBox ()Lasx;
+	METHOD Q getEncodeId ()Ljava/lang/String;
+	METHOD a spawnAtLocation (IIF)Lss;
+	METHOD a readAdditionalSaveData (Lby;)V
+		ARG 1 entityTag
+	METHOD a fillCrashReportCategory (Lm;)V
+		ARG 1 crc
 	METHOD a hurt (Lnb;F)Z
 	METHOD a ride (Lnn;)V
+	METHOD a spawnAtLocation (Lye;F)Lss;
+		ARG 1 item
+	METHOD a newDoubleList ([D)Lcg;
+		ARG 1 doubles
+	METHOD a newFloatList ([F)Lcg;
+		ARG 1 floats
+	METHOD al getAirSupply ()I
+	METHOD aw getUUID ()Ljava/util/UUID;
 	METHOD ay getDisplayName ()Ljava/lang/String;
+	METHOD b setPos (DDD)V
+	METHOD b setRot (FF)V
+	METHOD b spawnAtLocation (II)Lss;
+	METHOD b addAdditionalSaveData (Lby;)V
+		ARG 1 entityTag
+	METHOD b_ playerTouch (Luf;)V
+		ARG 1 player
+	METHOD d distanceTo (Lnn;)F
+	METHOD e distanceToSqr (DDD)D
+	METHOD e saveWithoutId (Lby;)V
+		ARG 1 entityTag
+	METHOD e distanceToSqr (Lnn;)D
 	METHOD f getEyeHeight ()F
 	METHOD f distanceTo (DDD)D
+	METHOD f load (Lby;)V
+		ARG 1 entityTag
+	METHOD g setAirSupply (I)V
 	METHOD x remove ()V

@@ -1,0 +1,2 @@
+CLASS ald net/minecraft/world/level/pathfinder/BinaryHeap
+	FIELD a heap [Lale;

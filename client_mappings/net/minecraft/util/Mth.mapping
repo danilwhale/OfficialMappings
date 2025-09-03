@@ -20,7 +20,7 @@ CLASS ls net/minecraft/util/Mth
 		ARG 0 value
 		ARG 1 min
 		ARG 2 max
-	METHOD a (Ljava/lang/String;)Z
+	METHOD a isEmpty (Ljava/lang/String;)Z
 		ARG 0 str
 	METHOD a getDouble (Ljava/lang/String;D)D
 		ARG 0 str

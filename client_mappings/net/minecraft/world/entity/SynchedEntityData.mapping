@@ -1,0 +1,25 @@
+CLASS oo net/minecraft/world/entity/SynchedEntityData
+	FIELD b typeToConstant Ljava/util/HashMap;
+	FIELD c itemsById Ljava/util/Map;
+	FIELD e lock Ljava/util/concurrent/locks/ReadWriteLock;
+	METHOD a getByte (I)B
+		ARG 1 id
+	METHOD a define (ILjava/lang/Object;)V
+		ARG 1 id
+		ARG 2 type
+	METHOD a writeDataItem (Ljava/io/DataOutput;Lop;)V
+	METHOD a (Ljava/util/List;Ljava/io/DataOutput;)V
+		ARG 0 dataItems
+		ARG 1 dos
+	METHOD b getShort (I)S
+		ARG 1 id
+	METHOD c getInteger (I)I
+		ARG 1 id
+	METHOD d getFloat (I)F
+		ARG 1 id
+	METHOD e getString (I)Ljava/lang/String;
+		ARG 1 id
+	METHOD f getItemInstance (I)Lye;
+		ARG 1 id
+	METHOD i getDataItem (I)Lop;
+		ARG 1 id

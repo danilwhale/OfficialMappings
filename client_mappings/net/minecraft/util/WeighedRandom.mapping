@@ -1,0 +1,19 @@
+CLASS mi net/minecraft/util/WeighedRandom
+	METHOD a getTotalWeight (Ljava/util/Collection;)I
+		ARG 0 list
+	METHOD a getWeightedItem (Ljava/util/Random;Ljava/util/Collection;)Lmj;
+		ARG 0 random
+		ARG 1 list
+	METHOD a getRandomItem (Ljava/util/Random;Ljava/util/Collection;I)Lmj;
+		ARG 0 random
+		ARG 1 list
+		ARG 2 bound
+	METHOD a getWeightedItem (Ljava/util/Random;[Lmj;)Lmj;
+		ARG 0 random
+		ARG 1 items
+	METHOD a getRandomItem (Ljava/util/Random;[Lmj;I)Lmj;
+		ARG 0 random
+		ARG 1 items
+		ARG 2 bound
+	METHOD a getTotalWeight ([Lmj;)I
+		ARG 0 items

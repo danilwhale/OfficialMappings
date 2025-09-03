@@ -1,10 +1,141 @@
 CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD A dirt Laqz;
+	FIELD B stoneBrick Laqz;
+	FIELD C wood Laqz;
+	FIELD D sapling Laqz;
+	FIELD E unbreakable Laqz;
+	FIELD F water Lapc;
+	FIELD G calmWater Laqz;
+	FIELD H lava Lapc;
+	FIELD I calmLava Laqz;
+	FIELD J sand Laqz;
+	FIELD K gravel Laqz;
+	FIELD L goldOre Laqz;
+	FIELD M ironOre Laqz;
+	FIELD N coalOre Laqz;
+	FIELD O treeTrunk Laqz;
+	FIELD P leaves Laoz;
+	FIELD Q sponge Laqz;
+	FIELD R glass Laqz;
+	FIELD S lapisOre Laqz;
+	FIELD T lapisBlock Laqz;
+	FIELD U dispenser Laqz;
+	FIELD V sandStone Laqz;
+	FIELD W musicBlock Laqz;
+	FIELD X bed Laqz;
+	FIELD Y goldenRail Laqz;
+	FIELD Z detectorRail Laqz;
+	FIELD aA redStoneDust Laqb;
+	FIELD aD workBench Laqz;
+	FIELD aE crops Laqz;
+	FIELD aF farmland Laqz;
+	FIELD aG furnace Laqz;
+	FIELD aH furnace_lit Laqz;
+	FIELD aI sign Laqz;
+	FIELD aJ door_wood Laqz;
+	FIELD aK ladder Laqz;
+	FIELD aL rail Laqz;
+	FIELD aM stairs_stone Laqz;
+	FIELD aN wallSign Laqz;
+	FIELD aO lever Laqz;
+	FIELD aP pressurePlate_stone Laqz;
+	FIELD aQ door_iron Laqz;
+	FIELD aR pressurePlate_wood Laqz;
+	FIELD aS redStoneOre Laqz;
+	FIELD aT redStoneOre_lit Laqz;
+	FIELD aU notGate_off Laqz;
+	FIELD aV notGate_on Laqz;
+	FIELD aW button Laqz;
+	FIELD aX snow Laqz;
+	FIELD aY ice Laqz;
+	FIELD aZ topSnow Laqz;
+	FIELD aa pistonStickyBase Last;
+	FIELD ab web Laqz;
+	FIELD ac tallgrass Laqv;
+	FIELD ad deadbush Lant;
+	FIELD ae pistonBase Last;
+	FIELD af pistonTop Lasu;
+	FIELD ag cloth Laqz;
+	FIELD ah pistonExtension Lasv;
+	FIELD ai flower Lane;
+	FIELD aj rose Lane;
+	FIELD ak mushroom1 Lane;
+	FIELD al mushroom2 Lane;
+	FIELD am goldBlock Laqz;
+	FIELD an ironBlock Laqz;
+	FIELD ao stoneSlab Laop;
+	FIELD ap stoneSlabHalf Laop;
+	FIELD aq redBrick Laqz;
+	FIELD ar tnt Laqz;
+	FIELD as bookshelf Laqz;
+	FIELD at mossStone Laqz;
+	FIELD au obsidian Laqz;
+	FIELD av torch Laqz;
 	FIELD aw fire Laoi;
+	FIELD ax mobSpawner Laqz;
+	FIELD ay stairs_wood Laqz;
+	FIELD az chest Lank;
+	FIELD bA fenceGate Laqz;
+	FIELD bO whiteStone Laqz;
+	FIELD bP dragonEgg Laqz;
+	FIELD bU cocoa Laqz;
+	FIELD bY tripWireSource Lark;
+	FIELD bZ tripWire Laqz;
+	FIELD ba cactus Laqz;
+	FIELD bb clay Laqz;
+	FIELD bc reeds Laqz;
+	FIELD bd recordPlayer Laqz;
+	FIELD be fence Laqz;
+	FIELD bf pumpkin Laqz;
+	FIELD bg hellRock Laqz;
+	FIELD bh hellSand Laqz;
+	FIELD bi lightGem Laqz;
+	FIELD bj portalTile Laps;
+	FIELD bk litPumpkin Laqz;
+	FIELD bl cake Laqz;
+	FIELD bm diode_off Laqf;
+	FIELD bn diode_on Laqf;
+	FIELD bo lockedchest Laqz;
+	FIELD bp trapdoor Laqz;
+	FIELD bq monsterStoneEgg Laqz;
+	FIELD br stoneBrickSmooth Laqz;
+		COMMENT what notch calls "stoneBrick" is cobblestone, this is the actual "stone brick"
+	FIELD bu ironFence Laqz;
+	FIELD bv thinGlass Laqz;
+	FIELD bw melon Laqz;
+	FIELD bx pumpkinStem Laqz;
+	FIELD by melonStem Laqz;
+	FIELD bz vine Laqz;
+	FIELD cA hardenedClayStained Laqz;
+	FIELD cB hayBlock Laqz;
+	FIELD cC woolCarpet Laqz;
+	FIELD cD hardenedClay Laqz;
+	FIELD cE coalBlock Laqz;
 	FIELD cF id I
 	FIELD cH explosionResistance F
 	FIELD cS soundType Lard;
 	FIELD cU material Lakc;
+	FIELD cW icon Lms;
+	FIELD ce commandBlock Laqz;
+	FIELD cf beacon Lana;
+	FIELD ch flowerPot Laqz;
+	FIELD ci carrots Laqz;
+	FIELD cj potatoes Laqz;
+	FIELD cl skull Laqz;
+	FIELD cm anvil Laqz;
+	FIELD cn trapChest Laqz;
+	FIELD co weightedPlate_light Laqz;
+	FIELD cp weightedPlate_heavy Laqz;
+	FIELD cq comparator_off Lanp;
+	FIELD cr comparator_on Lanp;
+	FIELD cs daylightDetector Lans;
+	FIELD ct redstoneBlock Laqz;
+	FIELD cu quartzOre Laqz;
+	FIELD cv hopper Laot;
+	FIELD cw quartzBlock Laqz;
+	FIELD cx stairs_quartz Laqz;
+	FIELD cy activatorRail Laqz;
+	FIELD cz dropper Laqz;
 	FIELD g SOUND_NORMAL Lard;
 	FIELD h SOUND_WOOD Lard;
 	FIELD i SOUND_GRAVEL Lard;
@@ -22,6 +153,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD u lightBlock [I
 	FIELD v transculent [Z
 	FIELD w lightEmission [I
+	FIELD y rock Laqz;
 	FIELD z grass Laon;
 	METHOD <init> (ILakc;)V
 		ARG 1 id
@@ -34,6 +166,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD a spawnResources (Labw;IIIIFI)V
 	METHOD a wasExploded (Labw;IIILabr;)V
 	METHOD a addAABBs (Labw;IIILasx;Ljava/util/List;Lnn;)V
+	METHOD a clip (Labw;IIILatc;Latc;)Lata;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
 	METHOD a registerIcons (Lmt;)V
@@ -41,6 +178,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
+	METHOD b tileEvent (Labw;IIIII)Z
 	METHOD b (Lacf;III)Z
 		ARG 1 level
 		ARG 2 x

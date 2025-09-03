@@ -1,0 +1,2 @@
+CLASS acr net/minecraft/world/level/biome/Biome$MobSpawnerData
+	FIELD b base Ljava/lang/Class;

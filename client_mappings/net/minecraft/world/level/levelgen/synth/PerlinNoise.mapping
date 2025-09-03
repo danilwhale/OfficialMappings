@@ -12,6 +12,7 @@ CLASS ajt net/minecraft/world/level/levelgen/synth/PerlinNoise
 		ARG 5 h
 		ARG 6 xf
 		ARG 8 yf
+		ARG 10 a
 	METHOD a getRegion ([DIIIIIIDDD)[D
 		ARG 1 map
 		ARG 2 xo

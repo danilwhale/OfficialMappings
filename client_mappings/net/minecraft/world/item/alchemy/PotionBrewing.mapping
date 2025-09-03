@@ -1,0 +1,3 @@
+CLASS zp net/minecraft/world/item/alchemy/PotionBrewing
+	METHOD a getColor (Ljava/util/Collection;)I
+		ARG 0 list

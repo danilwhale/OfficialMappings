@@ -32,11 +32,19 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD B getFrame ()Lod;
 	METHOD C getRepairCost ()I
 	METHOD D getAttributeModifiers ()Lcom/google/common/collect/Multimap;
+	METHOD a getDescriptionId ()Ljava/lang/String;
 	METHOD a split (I)Lye;
 		ARG 1 count
 	METHOD a enchant (Laau;I)V
 		ARG 1 enchantment
 		ARG 2 level
+	METHOD a mineBlock (Labw;IIIILuf;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
+		ARG 6 player
 	METHOD a inventoryTick (Labw;Lnn;IZ)V
 		ARG 1 level
 		ARG 2 entity

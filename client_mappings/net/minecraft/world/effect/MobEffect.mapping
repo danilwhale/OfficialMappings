@@ -1,0 +1,32 @@
+CLASS ni net/minecraft/world/effect/MobEffect
+	FIELD I attributeModifiers Ljava/util/Map;
+	FIELD K color I
+	FIELD L descriptionId Ljava/lang/String;
+	FIELD a mobEffects [Lni;
+	METHOD <init> (IZI)V
+		ARG 1 id
+		ARG 2 a
+		ARG 3 color
+	METHOD a getDescriptionId ()Ljava/lang/String;
+	METHOD a formatDuration (Lnj;)Ljava/lang/String;
+		ARG 0 effect
+	METHOD a applyEffectTick (Lof;I)V
+		ARG 1 mob
+		ARG 2 i
+	METHOD a removeAttributeModifiers (Lof;Lov;I)V
+		ARG 1 mob
+		ARG 2 map
+		ARG 3 i
+	METHOD a addAttributeModifier (Lor;Ljava/lang/String;DI)Lni;
+		ARG 1 attrib
+		ARG 2 uuid
+		ARG 3 d
+		ARG 5 i
+	METHOD b setDescriptionId (Ljava/lang/String;)Lni;
+		ARG 1 id
+	METHOD b addAttributeModifiers (Lof;Lov;I)V
+		ARG 1 mob
+		ARG 2 map
+		ARG 3 i
+	METHOD j getColor ()I
+	METHOD k getAttributeModifiers ()Ljava/util/Map;

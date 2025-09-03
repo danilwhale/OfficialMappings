@@ -1,0 +1,3 @@
+CLASS asj net/minecraft/world/level/tile/entity/MobSpawnerTileEntity
+	FIELD a spawner Labn;
+	METHOD a getSpawner ()Labn;

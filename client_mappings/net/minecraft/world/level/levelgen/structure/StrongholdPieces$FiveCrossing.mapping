@@ -1,0 +1,2 @@
+CLASS ahy net/minecraft/world/level/levelgen/structure/StrongholdPieces$FiveCrossing
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahy;

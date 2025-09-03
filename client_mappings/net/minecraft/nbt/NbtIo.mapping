@@ -1,0 +1,23 @@
+CLASS ci net/minecraft/nbt/NbtIo
+	METHOD a compress (Lby;)[B
+		ARG 0 tag
+	METHOD a write (Lby;Ljava/io/DataOutput;)V
+		ARG 0 tag
+		ARG 1 dos
+	METHOD a safeWrite (Lby;Ljava/io/File;)V
+		ARG 0 tag
+		ARG 1 file
+	METHOD a writeCompressed (Lby;Ljava/io/OutputStream;)V
+		ARG 0 tag
+		ARG 1 out
+	METHOD a read (Ljava/io/DataInput;)Lby;
+		ARG 0 dis
+	METHOD a read (Ljava/io/File;)Lby;
+		ARG 0 file
+	METHOD a readCompressed (Ljava/io/InputStream;)Lby;
+		ARG 0 in
+	METHOD a decompress ([B)Lby;
+		ARG 0 buffer
+	METHOD b write (Lby;Ljava/io/File;)V
+		ARG 0 tag
+		ARG 1 file

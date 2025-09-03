@@ -1,0 +1,4 @@
+CLASS ail net/minecraft/world/level/levelgen/structure/StrongholdPieces$StrongholdPiece
+	FIELD d entryDoor Laim;
+	METHOD a generateSmallDoor (Labw;Ljava/util/Random;Lagf;Laim;III)V
+	METHOD a randomSmallDoor (Ljava/util/Random;)Laim;

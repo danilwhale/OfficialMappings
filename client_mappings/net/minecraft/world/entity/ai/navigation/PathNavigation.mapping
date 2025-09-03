@@ -1,0 +1,6 @@
+CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
+	FIELD a mob Log;
+	FIELD b level Labw;
+	FIELD c path Lalf;
+	FIELD d speedModifier D
+	FIELD e dist Los;

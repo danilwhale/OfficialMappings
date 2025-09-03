@@ -1,0 +1,2 @@
+CLASS s net/minecraft/core/Facing
+	FIELD e FACING_NAMES [Ljava/lang/String;

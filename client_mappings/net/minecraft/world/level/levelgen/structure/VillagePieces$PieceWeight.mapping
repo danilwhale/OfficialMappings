@@ -1,0 +1,8 @@
+CLASS ajd net/minecraft/world/level/levelgen/structure/VillagePieces$PieceWeight
+	FIELD a base Ljava/lang/Class;
+	FIELD b min I
+	FIELD d max I
+	METHOD <init> (Ljava/lang/Class;II)V
+		ARG 1 base
+		ARG 2 min
+		ARG 3 max

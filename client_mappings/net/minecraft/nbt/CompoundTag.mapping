@@ -1,5 +1,7 @@
 CLASS by net/minecraft/nbt/CompoundTag
 	FIELD a tags Ljava/util/Map;
+	METHOD a access$000 (Lby;)Ljava/util/Map;
+		ARG 0 this$0
 	METHOD a get (Ljava/lang/String;)Lcl;
 		ARG 1 key
 	METHOD a putByte (Ljava/lang/String;B)V

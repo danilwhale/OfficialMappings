@@ -1,6 +1,8 @@
 CLASS aei net/minecraft/world/level/dimension/Dimension
 	FIELD a MOON_BRIGHTNESS_PER_PHASE [F
 	FIELD b level Labw;
+	FIELD c generatorType Lacg;
+	FIELD d generatorOptions Ljava/lang/String;
 	FIELD e biomeSource Lacv;
 	FIELD h brightnessRamp [F
 	FIELD j sunriseCol [F

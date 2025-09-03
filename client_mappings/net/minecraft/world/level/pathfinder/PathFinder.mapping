@@ -1,0 +1,6 @@
+CLASS alg net/minecraft/world/level/pathfinder/PathFinder
+	FIELD a level Lacf;
+	FIELD b openSet Lald;
+	FIELD c nodes Llm;
+	FIELD d neighbors [Lale;
+	METHOD a findPath (Lnn;Lnn;F)Lalf;

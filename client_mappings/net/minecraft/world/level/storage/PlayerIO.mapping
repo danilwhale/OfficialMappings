@@ -1,0 +1,6 @@
+CLASS amq net/minecraft/world/level/storage/PlayerIO
+	METHOD a save (Luf;)V
+		ARG 1 player
+	METHOD b load (Luf;)Lby;
+		ARG 1 player
+	METHOD f getSeenPlayers ()[Ljava/lang/String;

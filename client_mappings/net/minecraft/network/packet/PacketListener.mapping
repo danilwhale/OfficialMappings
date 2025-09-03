@@ -1,0 +1,124 @@
+CLASS ez net/minecraft/network/packet/PacketListener
+	METHOD a isServerPacketListener ()Z
+	METHOD a handleAddEntity (Ldd;)V
+		ARG 1 packet
+	METHOD a handleAddExperienceOrb (Lde;)V
+		ARG 1 packet
+	METHOD a handleAddGlobalEntity (Ldf;)V
+		ARG 1 packet
+	METHOD a handleAddMob (Ldg;)V
+		ARG 1 packet
+	METHOD a handleAddPainting (Ldh;)V
+		ARG 1 packet
+	METHOD a handleAddPlayer (Ldi;)V
+		ARG 1 packet
+	METHOD a handleAnimate (Ldj;)V
+		ARG 1 packet
+	METHOD a handleAwardStat (Ldk;)V
+		ARG 1 packet
+	METHOD a handleChat (Ldm;)V
+		ARG 1 packet
+	METHOD a handleChunkTilesUpdate (Ldn;)V
+		ARG 1 packet
+	METHOD a handleClientInformation (Ldp;)V
+	METHOD a handlePreLogin (Ldq;)V
+		ARG 1 packet
+	METHOD a handleComplexItemData (Ldr;)V
+		ARG 1 packet
+	METHOD a handleContainerAck (Lds;)V
+		ARG 1 packet
+	METHOD a handleContainerButtonClick (Ldt;)V
+		ARG 1 packet
+	METHOD a handleContainerClick (Ldu;)V
+		ARG 1 packet
+	METHOD a handleContainerClose (Ldv;)V
+		ARG 1 packet
+	METHOD a handleContainerOpen (Ldw;)V
+		ARG 1 packet
+	METHOD a handleContainerContent (Ldx;)V
+		ARG 1 packet
+	METHOD a handleContainerSetData (Ldy;)V
+		ARG 1 packet
+	METHOD a handleContainerSetSlot (Ldz;)V
+		ARG 1 packet
+	METHOD a handleCustomPayload (Lea;)V
+		ARG 1 packet
+	METHOD a handleDisconnect (Leb;)V
+		ARG 1 packet
+	METHOD a handleEntityActionAtPosition (Lec;)V
+		ARG 1 packet
+	METHOD a (Led;)V
+		ARG 1 packet
+	METHOD a handleExplosion (Lee;)V
+		ARG 1 packet
+	METHOD a handleGameEvent (Lef;)V
+		ARG 1 packet
+	METHOD a handleGetInfo (Leg;)V
+		ARG 1 packet
+	METHOD a handleInteract (Leh;)V
+		ARG 1 packet
+	METHOD a handleKeepAlive (Lei;)V
+		ARG 1 packet
+	METHOD a handleBlockRegionUpdate (Lej;)V
+		ARG 1 packet
+	METHOD a handleLevelEvent (Lem;)V
+		ARG 1 packet
+	METHOD a handleLogin (Lep;)V
+		ARG 1 packet
+	METHOD a handleMovePlayer (Leu;)V
+		ARG 1 packet
+	METHOD a onUnhandledPacket (Ley;)V
+		ARG 1 packet
+	METHOD a handlePlayerCommand (Lfc;)V
+		ARG 1 packet
+	METHOD a handlePlayerInfo (Lfd;)V
+		ARG 1 packet
+	METHOD a handlePlayerInput (Lfe;)V
+		ARG 1 packet
+	METHOD a handleRemoveMobEffect (Lfg;)V
+		ARG 1 packet
+	METHOD a handleRespawn (Lfh;)V
+		ARG 1 packet
+	METHOD a handleRotateMob (Lfi;)V
+		ARG 1 packet
+	METHOD a (Lfj;)V
+		ARG 1 packet
+	METHOD a handleSetCarriedItem (Lfk;)V
+		ARG 1 packet
+	METHOD a handleSetCreativeModeSlot (Lfl;)V
+		ARG 1 packet
+	METHOD a (Lfn;)V
+		ARG 1 packet
+	METHOD a (Lfo;)V
+		ARG 1 packet
+	METHOD a (Lfp;)V
+		ARG 1 packet
+	METHOD a handleSetEquippedItem (Lfq;)V
+		ARG 1 packet
+	METHOD a handleSetExperience (Lfr;)V
+		ARG 1 packet
+	METHOD a handleSetHealth (Lfs;)V
+		ARG 1 packet
+	METHOD a handleSetSpawn (Lfw;)V
+		ARG 1 packet
+	METHOD a handleSetTime (Lfx;)V
+		ARG 1 packet
+	METHOD a (Lfy;)V
+		ARG 1 packet
+	METHOD a handleSignUpdate (Lfz;)V
+		ARG 1 packet
+	METHOD a handleTakeItemEntity (Lga;)V
+		ARG 1 packet
+	METHOD a (Lge;)V
+		ARG 1 packet
+	METHOD a handleTileEvent (Lgf;)V
+		ARG 1 packet
+	METHOD a handleUpdateMobEffect (Lgj;)V
+		ARG 1 packet
+	METHOD a handleUseItem (Lgk;)V
+		ARG 1 packet
+	METHOD a onDisconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 args
+	METHOD b canHandleAsyncPackets ()Z
+	METHOD c isDisconnected ()Z

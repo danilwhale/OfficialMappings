@@ -1,0 +1,6 @@
+CLASS ss net/minecraft/world/entity/item/ItemEntity
+	FIELD a age I
+	FIELD b throwTime I
+	FIELD c bobOffs F
+	FIELD d health I
+	METHOD d getItem ()Lye;

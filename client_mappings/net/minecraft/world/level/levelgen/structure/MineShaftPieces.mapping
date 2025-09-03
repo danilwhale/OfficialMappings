@@ -1,0 +1,4 @@
+CLASS agh net/minecraft/world/level/levelgen/structure/MineShaftPieces
+	METHOD a loadStatic ()V
+	METHOD a access$000 (Lait;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+	METHOD b access$100 ()[Lmk;

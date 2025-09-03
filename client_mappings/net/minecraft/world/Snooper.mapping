@@ -16,8 +16,18 @@ CLASS mv net/minecraft/world/Snooper
 	METHOD a setData (Ljava/lang/String;Ljava/lang/Object;)V
 		ARG 1 key
 		ARG 2 value
+	METHOD a access$000 (Lmv;)Lmx;
+		ARG 0 this$0
 	METHOD b prepare ()V
+	METHOD b access$100 (Lmv;)Ljava/lang/Object;
+		ARG 0 this$0
+	METHOD c access$200 (Lmv;)Ljava/util/Map;
+		ARG 0 this$0
 	METHOD d isStarted ()Z
+	METHOD d access$300 (Lmv;)I
+		ARG 0 this$0
 	METHOD e interrupt ()V
+	METHOD e access$400 (Lmv;)Ljava/net/URL;
+		ARG 0 this$0
 	METHOD f getToken ()Ljava/lang/String;
 	METHOD g getStartupTime ()J

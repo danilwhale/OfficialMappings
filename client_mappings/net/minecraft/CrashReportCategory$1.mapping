@@ -1,1 +1,4 @@
 CLASS n net/minecraft/CrashReportCategory$1
+	FIELD a val$id I
+	METHOD <init> (I)V
+		ARG 1 val$id

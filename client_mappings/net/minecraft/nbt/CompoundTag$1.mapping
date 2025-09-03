@@ -1,1 +1,6 @@
 CLASS bz net/minecraft/nbt/CompoundTag$1
+	FIELD a val$str Ljava/lang/String;
+	FIELD b this$0 Lby;
+	METHOD <init> (Lby;Ljava/lang/String;)V
+		ARG 1 this$0
+		ARG 2 val$str

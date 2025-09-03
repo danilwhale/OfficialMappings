@@ -5,6 +5,7 @@ CLASS abw net/minecraft/world/level/Level
 	FIELD F spawnFriendlies Z
 	FIELD G chunksToPoll Ljava/util/Set;
 	FIELD I isOnline Z
+	FIELD J vec3Pool Latd;
 	FIELD L logger Llp;
 	FIELD M boxes Ljava/util/ArrayList;
 	FIELD O delayUntilNextMoodSound I
@@ -15,6 +16,10 @@ CLASS abw net/minecraft/world/level/Level
 	FIELD j skyDarken I
 	FIELD k randValue I
 	FIELD l addend I
+	FIELD m oRainLevel F
+	FIELD n rainLevel F
+	FIELD o oThunderLevel F
+	FIELD p thunderLevel F
 	FIELD q skyFlashTime I
 	FIELD r difficulty I
 	FIELD s random Ljava/util/Random;
@@ -23,6 +28,7 @@ CLASS abw net/minecraft/world/level/Level
 	FIELD v chunkSource Lado;
 	FIELD w levelStorage Lamc;
 	FIELD x levelData Lals;
+	FIELD z savedDataStorage Lamr;
 	METHOD <init> (Lamc;Ljava/lang/String;Lacd;Laei;Llv;Llp;)V
 		ARG 1 storage
 		ARG 2 name
@@ -41,22 +47,38 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD F disconnect ()V
+	METHOD F isRainingAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD G checkSession ()V
+	METHOD G isHumidAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD H getSeed ()J
 	METHOD H getRandomFor (III)Ljava/util/Random;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD I getGameTime ()J
 	METHOD I getCurrentDifficultyAt (III)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD J getDayTime ()J
+	METHOD K getSharedSpawnPos ()Lt;
 	METHOD L getChunkSource ()Lado;
 	METHOD M getLevelStorage ()Lamc;
 	METHOD N getLevelData ()Lals;
 	METHOD O getGameRules ()Labt;
+	METHOD P isThundering ()Z
+	METHOD Q isRaining ()Z
 	METHOD S getHeight ()I
 	METHOD X getScoreboard ()Latj;
 	METHOD Y getLogger ()Llp;
+	METHOD a getNearestPlayer (DDDD)Luf;
 	METHOD a playSound (DDDLjava/lang/String;FF)V
 		ARG 1 x
 		ARG 3 y
@@ -71,6 +93,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a setGameTime (J)V
+		ARG 1 gt
 	METHOD a addListener (Lacb;)V
 		ARG 1 listener
 	METHOD a getBrightness (Lach;III)I
@@ -90,6 +114,13 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a clip (Latc;Latc;ZZ)Lata;
 		ARG 1 origin
 		ARG 2 end
+	METHOD a fillReportDetails (Lb;)Lm;
+		ARG 1 cr
+	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lall;
+		ARG 1 klass
+		ARG 2 name
+	METHOD a getPlayer (Ljava/lang/String;)Luf;
+		ARG 1 name
 	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
 		ARG 1 type
 		ARG 2 x
@@ -103,12 +134,35 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a setSavedData (Ljava/lang/String;Lall;)V
+		ARG 1 name
+		ARG 2 data
 	METHOD a addEntities (Ljava/util/List;)V
 	METHOD a entityAdded (Lnn;)V
 		ARG 1 entity
+	METHOD a broadcastEntityEvent (Lnn;B)V
+		ARG 1 entity
+		ARG 2 event
+	METHOD a getNearestPlayer (Lnn;D)Luf;
+	METHOD a explode (Lnn;DDDFZ)Labr;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 particles
+	METHOD a explode (Lnn;DDDFZZ)Labr;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 fire
+		ARG 10 particles
 	METHOD a getSkyColor (Lnn;F)Latc;
 		ARG 1 entity
 		ARG 2 a
+	METHOD a findPath (Lnn;IIIFZZZZ)Lalf;
 	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 bb
@@ -117,8 +171,21 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD a findPath (Lnn;Lnn;FZZZZ)Lalf;
 	METHOD a makeSoundUpdater (Lst;)Lhr;
 		ARG 1 minecart
+	METHOD a mayInteract (Luf;III)Z
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a levelEvent (Luf;IIIII)V
+		ARG 1 source
+		ARG 2 event
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
 	METHOD a (Luf;Ljava/lang/String;FF)V
 		ARG 1 player
 		ARG 2 name
@@ -143,13 +210,16 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 5 flags
+	METHOD b tileEntityChanged (IIILasp;)V
 	METHOD b getRawBrightness (IIIZ)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD b setDayTime (J)V
+		ARG 1 dt
 	METHOD b removeListener (Lacb;)V
 		ARG 1 listener
-	METHOD b (Lach;III)I
+	METHOD b getRawBrightness (Lach;III)I
 		ARG 1 layer
 		ARG 2 x
 		ARG 3 y
@@ -160,6 +230,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 y
 		ARG 4 z
 		ARG 5 br
+	METHOD b getFreeAuxValueFor (Ljava/lang/String;)I
+		ARG 1 name
 	METHOD b findNearestMapFeature (Ljava/lang/String;III)Laco;
 		ARG 1 name
 		ARG 2 x
@@ -199,6 +271,19 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
+	METHOD d globalLevelEvent (IIIII)V
+		ARG 1 event
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD d tileEvent (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+		ARG 5 id0
+		ARG 6 id1
 	METHOD d addEntity (Lnn;)Z
 		ARG 1 entity
 	METHOD e getCloudColor (F)Latc;
@@ -215,7 +300,12 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 z
 		ARG 3 y0
 		ARG 4 y1
-	METHOD e globalLevelEvent (IIIII)V
+	METHOD e levelEvent (IIIII)V
+		ARG 1 event
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD e hasChunksAt (IIIIII)Z
 		ARG 1 x0
 		ARG 2 y0
@@ -262,14 +352,21 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 5 y1
 		ARG 6 z1
 	METHOD h getThunderLevel (F)F
+		ARG 1 f
+	METHOD h getHeightmapPos (II)I
+		COMMENT TODO TODO TODO!!!
 	METHOD h ensureAdded (Lnn;)V
 		ARG 1 entity
 	METHOD i getRainLevel (F)F
+		ARG 1 f
 	METHOD i removeTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD j createChunkSource ()Lado;
+	METHOD j setRainLevel (F)V
+		ARG 1 rl
+	METHOD j sendTileUpdated (III)V
 	METHOD l canSeeSky (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -286,3 +383,5 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD v isDay ()Z
 	METHOD w getMoonPhase ()I
 	METHOD x getMoonBrightness ()F
+	METHOD y gatherStats ()Ljava/lang/String;
+	METHOD z gatherChunkSourceStats ()Ljava/lang/String;

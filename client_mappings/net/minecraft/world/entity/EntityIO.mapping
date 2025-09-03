@@ -1,0 +1,12 @@
+CLASS nt net/minecraft/world/entity/EntityIO
+	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;I)V
+		ARG 0 klass
+		ARG 1 encodeId
+		ARG 2 id
+	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;III)V
+		ARG 0 klass
+		ARG 1 encodeId
+		ARG 2 id
+		ARG 3 color1
+		ARG 4 color2
+	METHOD b getEncodeId (Lnn;)Ljava/lang/String;

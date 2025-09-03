@@ -5,6 +5,7 @@ CLASS asx net/minecraft/world/phys/AABB
 	FIELD d x1 D
 	FIELD e y1 D
 	FIELD f z1 D
+	FIELD g pool Ljava/lang/ThreadLocal;
 	METHOD <init> (DDDDDD)V
 		ARG 1 x0
 		ARG 3 y0
@@ -12,6 +13,7 @@ CLASS asx net/minecraft/world/phys/AABB
 		ARG 7 x1
 		ARG 9 y1
 		ARG 11 z1
+	METHOD a getPool ()Lasz;
 	METHOD a contract (DDD)Lasx;
 		ARG 1 xa
 		ARG 3 ya

@@ -1,0 +1,2 @@
+CLASS aik net/minecraft/world/level/levelgen/structure/StrongholdPieces$StraightStairsDown
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laik;

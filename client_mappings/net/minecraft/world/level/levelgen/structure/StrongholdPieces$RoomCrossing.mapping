@@ -1,0 +1,2 @@
+CLASS aif net/minecraft/world/level/levelgen/structure/StrongholdPieces$RoomCrossing
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laif;

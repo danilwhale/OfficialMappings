@@ -1,0 +1,2 @@
+CLASS asz net/minecraft/world/phys/AABBPool
+	METHOD a set (DDDDDD)Lasx;

@@ -1,0 +1,179 @@
+CLASS ait net/minecraft/world/level/levelgen/structure/StructurePiece
+	FIELD f boundingBox Lagf;
+	FIELD g orientation I
+	FIELD h genDepth I
+	METHOD <init> (I)V
+		ARG 1 genDepth
+	METHOD a getCenter ()Laco;
+	METHOD a getWorldY (I)I
+		ARG 1 y
+	METHOD a getWorldX (II)I
+		ARG 1 a
+		ARG 2 b
+	METHOD a placeBlock (Labw;IIIIILagf;)V
+		ARG 1 level
+		ARG 2 id
+		ARG 3 data
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 box
+	METHOD a getBlock (Labw;IIILagf;)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+	METHOD a edgesLiquid (Labw;Lagf;)Z
+		ARG 1 level
+		ARG 2 box
+	METHOD a generateAirBox (Labw;Lagf;IIIIII)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x0
+		ARG 4 y0
+		ARG 5 z0
+		ARG 6 x1
+		ARG 7 y1
+		ARG 8 z1
+	METHOD a generateBox (Labw;Lagf;IIIIIIIIIIZ)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x0
+		ARG 4 y0
+		ARG 5 z0
+		ARG 6 x1
+		ARG 7 y1
+		ARG 8 z1
+		ARG 9 id2
+		ARG 10 data2
+		ARG 11 id1
+		ARG 12 data1
+		ARG 13 b
+	METHOD a generateBox (Labw;Lagf;IIIIIIIIZ)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x0
+		ARG 4 y0
+		ARG 5 z0
+		ARG 6 x1
+		ARG 7 y1
+		ARG 8 z1
+		ARG 9 id1
+		ARG 10 id2
+		ARG 11 b
+	METHOD a generateUpperHalfSphere (Labw;Lagf;IIIIIIIZ)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x0
+		ARG 4 y0
+		ARG 5 z0
+		ARG 6 x1
+		ARG 7 y1
+		ARG 8 z1
+		ARG 9 id
+		ARG 10 b
+	METHOD a generateBox (Labw;Lagf;IIIIIIZLjava/util/Random;Laiu;)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x0
+		ARG 4 y0
+		ARG 5 z0
+		ARG 6 x1
+		ARG 7 y1
+		ARG 8 z1
+		ARG 9 b
+		ARG 10 random
+		ARG 11 selector
+	METHOD a maybeGenerateBlock (Labw;Lagf;Ljava/util/Random;FIIIII)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 random
+		ARG 4 chance
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+		ARG 8 id
+		ARG 9 data
+	METHOD a generateMaybeBox (Labw;Lagf;Ljava/util/Random;FIIIIIIIIZ)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 random
+		ARG 4 chance
+		ARG 5 x0
+		ARG 6 y0
+		ARG 7 z0
+		ARG 8 x1
+		ARG 9 y1
+		ARG 10 z1
+		ARG 11 id1
+		ARG 12 id2
+		ARG 13 b
+	METHOD a createDoor (Labw;Lagf;Ljava/util/Random;IIII)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 random
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 i
+	METHOD a createDispenser (Labw;Lagf;Ljava/util/Random;IIII[Lmk;I)Z
+		ARG 1 level
+		ARG 2 box
+		ARG 3 random
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 i
+		ARG 8 lootTable
+		ARG 9 j
+	METHOD a createChest (Labw;Lagf;Ljava/util/Random;III[Lmk;I)Z
+		ARG 1 level
+		ARG 2 box
+		ARG 3 random
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 lootTable
+		ARG 8 i
+	METHOD a load (Labw;Lby;)V
+		ARG 1 level
+		ARG 2 tag
+	METHOD a postProcess (Labw;Ljava/util/Random;Lagf;)Z
+		ARG 1 level
+		ARG 2 random
+		ARG 3 box
+	METHOD a addChildren (Lait;Ljava/util/List;Ljava/util/Random;)V
+		ARG 1 piece
+		ARG 2 pieces
+		ARG 3 random
+	METHOD a addAdditionalSaveData (Lby;)V
+		ARG 1 tag
+	METHOD a findCollisionPiece (Ljava/util/List;Lagf;)Lait;
+		ARG 0 pieces
+		ARG 1 boundingBox
+	METHOD b createTag ()Lby;
+	METHOD b getWorldZ (II)I
+		ARG 1 a
+		ARG 2 b
+	METHOD b fillColumnDown (Labw;IIIIILagf;)V
+		ARG 1 level
+		ARG 2 id
+		ARG 3 data
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 box
+	METHOD b fillColumnDown (Labw;IIILagf;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+	METHOD b readAdditionalSaveData (Lby;)V
+		ARG 1 tag
+	METHOD c getBoundingBox ()Lagf;
+	METHOD c getOrientationData (II)I
+		ARG 1 id
+		ARG 2 data
+	METHOD d getGenDepth ()I

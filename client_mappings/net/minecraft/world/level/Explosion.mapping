@@ -1,5 +1,6 @@
 CLASS abr net/minecraft/world/level/Explosion
 	FIELD a fire Z
+	FIELD b particles Z
 	FIELD c x D
 	FIELD d y D
 	FIELD e z D
