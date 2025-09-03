@@ -2,7 +2,7 @@ CLASS yd net/minecraft/world/item/Item$Tier
 	FIELD a WOOD Lyd;
 	FIELD b STONE Lyd;
 	FIELD c IRON Lyd;
-	FIELD d EMERALD Lyd;
+	FIELD d DIAMOND Lyd;
 	FIELD e GOLD Lyd;
 	FIELD f level I
 	FIELD g uses I

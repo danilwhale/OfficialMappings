@@ -3,6 +3,8 @@ CLASS akc net/minecraft/world/level/material/Material
 	FIELD K liquid Z
 	FIELD M pushReaction I
 	FIELD a air Lakc;
+	FIELD d wood Lakc;
+	FIELD f metal Lakc;
 	FIELD h water Lakc;
 	METHOD <init> (Lake;)V
 		ARG 1 color

@@ -1,0 +1,4 @@
+CLASS xz net/minecraft/world/item/HangingEntityItem
+	METHOD <init> (ILjava/lang/Class;)V
+		ARG 1 id
+	METHOD a createEntity (Labw;IIII)Loc;

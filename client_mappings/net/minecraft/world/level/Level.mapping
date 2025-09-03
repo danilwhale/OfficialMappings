@@ -88,6 +88,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 9 pitch
 	METHOD a (F)I
 		ARG 1 a
+	METHOD a mayPlace (IIIIZILnn;Lye;)Z
 	METHOD a setBlockEntity (IIILasp;)V
 	METHOD a (IIIZ)Z
 		ARG 1 x

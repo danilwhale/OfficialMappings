@@ -1,3 +1,9 @@
 CLASS xx net/minecraft/world/item/FoodItem
+	METHOD <init> (IIFZ)V
+		ARG 1 id
+	METHOD c addEatEffect (Lye;Labw;Luf;)V
+		ARG 1 instance
+		ARG 2 level
+		ARG 3 player
 	METHOD g getNutrition ()I
 	METHOD i getSaturationModifier ()F

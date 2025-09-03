@@ -1,0 +1,5 @@
+CLASS yw net/minecraft/world/item/SeedItem
+	FIELD a resultId I
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 resultId
