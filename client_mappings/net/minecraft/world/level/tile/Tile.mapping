@@ -13,7 +13,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD L goldOre Laqz;
 	FIELD M ironOre Laqz;
 	FIELD N coalOre Laqz;
-	FIELD O treeTrunk Laqz;
+	FIELD O log Laqz;
 	FIELD P leaves Laoz;
 	FIELD Q sponge Laqz;
 	FIELD R glass Laqz;
@@ -26,6 +26,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD Y goldenRail Laqz;
 	FIELD Z detectorRail Laqz;
 	FIELD aA redStoneDust Laqb;
+	FIELD aB diamondOre Laqz;
+	FIELD aC diamondBlock Laqz;
 	FIELD aD workBench Laqz;
 	FIELD aE crops Laqz;
 	FIELD aF farmland Laqz;
@@ -59,8 +61,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD ah pistonExtension Lasv;
 	FIELD ai flower Lane;
 	FIELD aj rose Lane;
-	FIELD ak mushroom1 Lane;
-	FIELD al mushroom2 Lane;
+	FIELD ak brownMushroom Lane;
+	FIELD al redMushroom Lane;
 	FIELD am goldBlock Laqz;
 	FIELD an ironBlock Laqz;
 	FIELD ao stoneSlab Laop;
@@ -90,7 +92,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD bg hellRock Laqz;
 	FIELD bh hellSand Laqz;
 	FIELD bi lightGem Laqz;
-	FIELD bj portalTile Laps;
+	FIELD bj portal Laps;
 	FIELD bk litPumpkin Laqz;
 	FIELD bl cake Laqz;
 	FIELD bm diode_off Laqf;
@@ -100,6 +102,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD bq monsterStoneEgg Laqz;
 	FIELD br stoneBrickSmooth Laqz;
 		COMMENT what notch calls "stoneBrick" is cobblestone, this is the actual "stone brick"
+	FIELD bs brownMushroomBlock Laqz;
+	FIELD bt redMushroomBlock Laqz;
 	FIELD bu ironFence Laqz;
 	FIELD bv thinGlass Laqz;
 	FIELD bw melon Laqz;
