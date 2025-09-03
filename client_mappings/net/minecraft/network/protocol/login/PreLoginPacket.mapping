@@ -1,5 +1,0 @@
-CLASS dq net/minecraft/network/protocol/login/PreLoginPacket
-	FIELD b userName Ljava/lang/String;
-	METHOD <init> (ILjava/lang/String;Ljava/lang/String;I)V
-		ARG 2 userName
-	METHOD f getUserName ()Ljava/lang/String;

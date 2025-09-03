@@ -1,2 +1,0 @@
-CLASS wp
-	METHOD c getDrawnIcon (I)Lms;

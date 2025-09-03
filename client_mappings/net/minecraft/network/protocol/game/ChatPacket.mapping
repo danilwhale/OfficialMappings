@@ -1,2 +1,0 @@
-CLASS dm net/minecraft/network/protocol/game/ChatPacket
-	FIELD a message Ljava/lang/String;

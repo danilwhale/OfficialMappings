@@ -1,3 +1,0 @@
-CLASS lv
-	METHOD a push (Ljava/lang/String;)V
-	METHOD b pop ()V
