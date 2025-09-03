@@ -33,3 +33,4 @@ CLASS acf net/minecraft/world/level/TileSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD t isSolidTile (III)Z

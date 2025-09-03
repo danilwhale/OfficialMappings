@@ -116,9 +116,18 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD cD hardenedClay Laqz;
 	FIELD cE coalBlock Laqz;
 	FIELD cF id I
+	FIELD cG destroySpeed F
 	FIELD cH explosionResistance F
+	FIELD cM xx0 D
+	FIELD cN yy0 D
+	FIELD cO zz0 D
+	FIELD cP xx1 D
+	FIELD cQ yy1 D
+	FIELD cR zz1 D
 	FIELD cS soundType Lard;
+	FIELD cT gravity F
 	FIELD cU material Lakc;
+	FIELD cV friction F
 	FIELD cW icon Lms;
 	FIELD ce commandBlock Laqz;
 	FIELD cf beacon Lana;
@@ -164,17 +173,48 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 material
 	METHOD a setLightEmission (F)Laqz;
 		ARG 1 lightEmission
+	METHOD a setShape (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a getTexture (II)Lms;
+		ARG 1 face
+		ARG 2 data
+	METHOD a getResource (ILjava/util/Random;I)I
+		ARG 2 random
 	METHOD a dropFromExplosion (Labr;)Z
 	METHOD a onPlace (Labw;III)V
 	METHOD a neighborChanged (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD a spawnResources (Labw;IIIIFI)V
 	METHOD a wasExploded (Labw;IIILabr;)V
 	METHOD a addAABBs (Labw;IIILasx;Ljava/util/List;Lnn;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD a clip (Labw;IIILatc;Latc;)Lata;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a updateShape (Lacf;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a shouldRenderFace (Lacf;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
 	METHOD a registerIcons (Lmt;)V
@@ -182,13 +222,32 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
+	METHOD b getAABB (Labw;III)Lasx;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD b tileEvent (Labw;IIIII)Z
 	METHOD b (Lacf;III)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD b_ getTexture (Lacf;IIII)Lms;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD c isSolidRender ()Z
+	METHOD c setDestroyTime (F)Laqz;
+		ARG 1 destroyTime
+	METHOD c spawnResources (Labw;IIIII)V
+	METHOD c_ getTileAABB (Labw;III)Lasx;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD d getRenderShape ()I
 	METHOD d_ getSilkTouchItemInstance (I)Lye;
 		ARG 1 data
@@ -197,3 +256,6 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD l (I)Z
 		ARG 0 id
 	METHOD l onRemove (Labw;IIII)V
+	METHOD m getTexture (I)Lms;
+		ARG 1 face
+	METHOD r setIndestrucible ()Laqz;
