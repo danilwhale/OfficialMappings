@@ -188,6 +188,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD a getResource (ILjava/util/Random;I)I
 		ARG 2 random
 	METHOD a dropFromExplosion (Labr;)Z
+	METHOD a getTickDelay (Labw;)I
+		ARG 1 level
 	METHOD a onPlace (Labw;III)V
 	METHOD a neighborChanged (Labw;IIII)V
 		ARG 1 level
@@ -206,6 +208,29 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a tick (Labw;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD a setPlacedBy (Labw;IIILof;Lye;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 instance
+	METHOD a use (Labw;IIILuf;IFFF)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+		ARG 6 face
+		ARG 7 xa
+		ARG 8 ya
+		ARG 9 za
 	METHOD a updateShape (Lacf;III)V
 		ARG 1 level
 		ARG 2 x
@@ -219,6 +244,8 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 face
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
+	METHOD a getResourceCount (Ljava/util/Random;)I
+		ARG 1 random
 	METHOD a registerIcons (Lmt;)V
 		ARG 1 icons
 	METHOD b isCubeShaped ()Z
@@ -233,6 +260,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 	METHOD b tileEvent (Labw;IIIII)Z
 	METHOD b (Lacf;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b_ getAnalogOutputSignal (Labw;IIII)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -268,4 +300,5 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD m getTexture (I)Lms;
 		ARG 1 face
 	METHOD o getColor ()I
+	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
