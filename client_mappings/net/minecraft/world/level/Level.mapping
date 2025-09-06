@@ -180,6 +180,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a extinguishFire (Luf;IIII)Z
 	METHOD a levelEvent (Luf;IIIII)V
 		ARG 1 source
 		ARG 2 event
@@ -330,6 +331,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
+	METHOD f destroyBlockProgress (IIIII)V
 	METHOD f setTileAndData (IIIIII)Z
 		ARG 1 x
 		ARG 2 y

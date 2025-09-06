@@ -81,6 +81,8 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 0 a
 		ARG 1 b
 	METHOD b getItem ()Lyc;
+	METHOD b setAuxValue (I)V
+		ARG 1 auxValue
 	METHOD b useTimeDepleted (Labw;Luf;)Lye;
 		ARG 1 level
 		ARG 2 player

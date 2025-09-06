@@ -1,0 +1,95 @@
+CLASS bdc net/minecraft/client/multiplayer/MultiPlayerGameMode
+	FIELD a minecraft Latv;
+	FIELD b connection Lbcw;
+	FIELD c xDestroyBlock I
+	FIELD d yDestroyBlock I
+	FIELD e zDestroyBlock I
+	FIELD f destroyingItem Lye;
+	FIELD g destroyProgress F
+	FIELD h destroyTicks F
+	FIELD i destroyDelay I
+	FIELD j isDestroying Z
+	FIELD k localPlayerMode Lace;
+	FIELD l carriedIndex I
+	METHOD <init> (Latv;Lbcw;)V
+		ARG 1 minecraft
+		ARG 2 connection
+	METHOD a handleInventoryButtonClick (II)V
+		ARG 1 containerId
+		ARG 2 buttonId
+	METHOD a sameDestroyTarget (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a destroyBlock (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+	METHOD a handleInventoryMouseClick (IIIILuf;)Lye;
+		ARG 1 containerId
+		ARG 2 slotNum
+		ARG 3 buttonNum
+		ARG 4 clickType
+		ARG 5 player
+	METHOD a createPlayer (Labw;)Lbdi;
+		ARG 1 level
+	METHOD a setLocalMode (Lace;)V
+		ARG 1 localMode
+	METHOD a creativeDestroyBlock (Latv;Lbdc;IIII)V
+		ARG 0 minecraft
+		ARG 1 gameMode
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD a adjustPlayer (Luf;)V
+		ARG 1 player
+	METHOD a useItem (Luf;Labw;Lye;)Z
+		ARG 1 player
+		ARG 2 level
+		ARG 3 item
+	METHOD a useItemOn (Luf;Labw;Lye;IIIILatc;)Z
+		ARG 1 player
+		ARG 2 level
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 face
+		ARG 8 pos
+	METHOD a attack (Luf;Lnn;)V
+		ARG 1 player
+		ARG 2 entity
+	METHOD a handleCreativeModeItemDrop (Lye;)V
+		ARG 1 item
+	METHOD a handleCreativeModeItemAdd (Lye;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD b canHurtPlayer ()Z
+	METHOD b startDestroyBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+	METHOD b initPlayer (Luf;)V
+		ARG 1 player
+	METHOD b interact (Luf;Lnn;)Z
+		ARG 1 player
+		ARG 2 entity
+	METHOD c stopDestroyBlock ()V
+	METHOD c continueDestroyBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+	METHOD c releaseUsingItem (Luf;)V
+		ARG 1 player
+	METHOD d getPickRange ()F
+	METHOD e tick ()V
+	METHOD f hasExperience ()Z
+	METHOD g hasMissTime ()Z
+	METHOD h hasInfiniteItems ()Z
+	METHOD i hasFarPickRange ()Z
+	METHOD j isServerControlledInventory ()Z
+	METHOD k ensureHasSentCarriedItem ()V

@@ -1,6 +1,7 @@
 CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bG abilities Luc;
 	FIELD bn inventory Lud;
+	FIELD bp containerMenu Luy;
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
@@ -8,3 +9,8 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 2 amount
 	METHOD a drop (Z)Lss;
 	METHOD br isUsingItem ()Z
+	METHOD bt releaseUsingItem ()V
+	METHOD by getSelectedItem ()Lye;
+	METHOD bz removeSelectedItem ()V
+	METHOD p interact (Lnn;)Z
+	METHOD q attack (Lnn;)V
