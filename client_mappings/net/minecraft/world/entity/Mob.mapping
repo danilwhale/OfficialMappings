@@ -17,6 +17,19 @@ CLASS og net/minecraft/world/entity/Mob
 	FIELD h lookControl Lpe;
 	FIELD i moveControl Lpf;
 	FIELD j jumpControl Lpd;
+	METHOD a setCustomName (Ljava/lang/String;)V
+		ARG 1 customName
+	METHOD a finalizeMobSpawn (Loi;)Loi;
+		ARG 1 data
+	METHOD a mobInteract (Luf;)Z
+		ARG 1 player
 	METHOD bA getCustomName ()Ljava/lang/String;
+	METHOD bB hasCustomName ()Z
 	METHOD bC isCustomNameVisible ()Z
 	METHOD bD canPickUpLoot ()Z
+	METHOD bG canBeLeashed ()Z
+	METHOD bs canSpawn ()Z
+	METHOD bv getMaxSpawnClusterSize ()I
+	METHOD o getAmbientSoundInterval ()I
+	METHOD r getAmbientSound ()Ljava/lang/String;
+	METHOD s getDeathLoot ()I

@@ -1,0 +1,12 @@
+CLASS nk net/minecraft/world/entity/AgableMob
+	METHOD a internalSetSize (F)V
+		ARG 1 size
+	METHOD a ageUp (I)V
+		ARG 1 age
+	METHOD a getBreedOffspring (Lnk;)Lnk;
+		ARG 1 mob
+	METHOD a updateSize (Z)V
+		ARG 1 baby
+	METHOD b getAge ()I
+	METHOD c setAge (I)V
+		ARG 1 age

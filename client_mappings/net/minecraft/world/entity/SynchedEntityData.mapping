@@ -13,6 +13,7 @@ CLASS oo net/minecraft/world/entity/SynchedEntityData
 		ARG 1 dos
 	METHOD b getShort (I)S
 		ARG 1 id
+	METHOD b set (ILjava/lang/Object;)V
 	METHOD c getInteger (I)I
 		ARG 1 id
 	METHOD d getFloat (I)F

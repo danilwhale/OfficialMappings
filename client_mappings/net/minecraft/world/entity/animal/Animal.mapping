@@ -1,1 +1,5 @@
 CLASS rp net/minecraft/world/entity/animal/Animal
+	METHOD a canMate (Lrp;)Z
+		ARG 1 animal
+	METHOD c isFood (Lye;)Z
+		ARG 1 item

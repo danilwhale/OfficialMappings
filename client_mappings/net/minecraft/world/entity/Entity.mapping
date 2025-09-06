@@ -40,14 +40,29 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD x xd D
 	FIELD y yd D
 	FIELD z zd D
+	METHOD <init> (Labw;)V
+		ARG 1 level
 	METHOD E getCollideBox ()Lasx;
+	METHOD M isPushable ()Z
 	METHOD Q getEncodeId ()Ljava/lang/String;
+	METHOD W positionRider ()V
+	METHOD a defineSynchedData ()V
+	METHOD a handleEntityEvent (B)V
+		ARG 1 event
+	METHOD a setSize (FF)V
 	METHOD a spawnAtLocation (IIF)Lss;
+	METHOD a playStepSound (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD a readAdditionalSaveData (Lby;)V
 		ARG 1 entityTag
 	METHOD a fillCrashReportCategory (Lm;)V
 		ARG 1 crc
 	METHOD a hurt (Lnb;F)Z
+		ARG 1 source
+		ARG 2 damage
 	METHOD a ride (Lnn;)V
 	METHOD a spawnAtLocation (Lye;F)Lss;
 		ARG 1 item
@@ -57,9 +72,12 @@ CLASS nn net/minecraft/world/entity/Entity
 		ARG 1 floats
 	METHOD ag isPassenger ()Z
 	METHOD al getAirSupply ()I
+	METHOD an getAName ()Ljava/lang/String;
 	METHOD aw getUUID ()Ljava/util/UUID;
 	METHOD ay getDisplayName ()Ljava/lang/String;
 	METHOD b setPos (DDD)V
+	METHOD b causeFallDamage (F)V
+		ARG 1 distance
 	METHOD b setRot (FF)V
 	METHOD b spawnAtLocation (II)Lss;
 	METHOD b addAdditionalSaveData (Lby;)V
@@ -71,9 +89,12 @@ CLASS nn net/minecraft/world/entity/Entity
 	METHOD e saveWithoutId (Lby;)V
 		ARG 1 entityTag
 	METHOD e distanceToSqr (Lnn;)D
+	METHOD e setUsingItemFlag (Z)V
+		ARG 1 usingItemFlag
 	METHOD f getEyeHeight ()F
 	METHOD f distanceTo (DDD)D
 	METHOD f load (Lby;)V
 		ARG 1 entityTag
 	METHOD g setAirSupply (I)V
+	METHOD l_ tick ()V
 	METHOD x remove ()V

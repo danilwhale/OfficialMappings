@@ -1,6 +1,21 @@
 CLASS of net/minecraft/world/entity/LivingEntity
+	METHOD a die (Lnb;)V
+		ARG 1 source
+	METHOD a getAttribute (Lor;)Los;
+		ARG 1 attribute
 	METHOD aN getHealth ()F
+	METHOD aO getHurtSound ()Ljava/lang/String;
+	METHOD aP getDeathSound ()Ljava/lang/String;
+	METHOD aQ getArmorValue ()I
 	METHOD aS getKillCredit ()Lof;
 	METHOD aV swing ()V
+	METHOD aX getAttributes ()Lov;
 	METHOD aZ getCarriedItem ()Lye;
+	METHOD az registerAttributes ()V
+	METHOD ba getSoundVolume ()F
+	METHOD bc isImmobile ()Z
+	METHOD bf useNewAi ()Z
 	METHOD bh isSleeping ()Z
+	METHOD c aiStep ()V
+	METHOD e onLadder ()Z
+	METHOD g_ isBaby ()Z
