@@ -35,6 +35,7 @@ CLASS aul net/minecraft/client/Options
 	FIELD an languageCode Ljava/lang/String;
 	FIELD ao RENDER_DISTANCE_NAMES [Ljava/lang/String;
 	FIELD ap DIFFICULTY_NAMES [Ljava/lang/String;
+	FIELD aq GUI_SCALE [Ljava/lang/String;
 	FIELD av optionsFile Ljava/io/File;
 	FIELD b sound F
 	FIELD c sensitivity F
