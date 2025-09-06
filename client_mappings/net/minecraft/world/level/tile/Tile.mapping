@@ -302,3 +302,4 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD o getColor ()I
 	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
+	METHOD s_ init ()V

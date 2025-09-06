@@ -63,6 +63,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleLevelEvent (Lem;)V
 		ARG 1 packet
+	METHOD a handleParticleEvent (Len;)V
+		ARG 1 packet
 	METHOD a handleLogin (Lep;)V
 		ARG 1 packet
 	METHOD a handleMovePlayer (Leu;)V
@@ -99,6 +101,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetHealth (Lfs;)V
 		ARG 1 packet
+	METHOD a handleSetPlayerTeamPacket (Lfu;)V
+		ARG 1 packet
 	METHOD a handleSetSpawn (Lfw;)V
 		ARG 1 packet
 	METHOD a handleSetTime (Lfx;)V
@@ -109,9 +113,12 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleTakeItemEntity (Lga;)V
 		ARG 1 packet
+	METHOD a handleTileEditorOpen (Lgd;)V
 	METHOD a (Lge;)V
 		ARG 1 packet
 	METHOD a handleTileEvent (Lgf;)V
+		ARG 1 packet
+	METHOD a handleUpdateAttributes (Lgh;)V
 		ARG 1 packet
 	METHOD a handleUpdateMobEffect (Lgj;)V
 		ARG 1 packet

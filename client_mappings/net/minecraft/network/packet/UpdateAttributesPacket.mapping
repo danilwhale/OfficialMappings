@@ -1,0 +1,8 @@
+CLASS gh net/minecraft/network/packet/UpdateAttributesPacket
+	FIELD a entityId I
+	FIELD b values Ljava/util/List;
+	METHOD <init> (ILjava/util/Collection;)V
+		ARG 1 entityId
+		ARG 2 values
+	METHOD d getEntityId ()I
+	METHOD f getValues ()Ljava/util/List;

@@ -1,0 +1,20 @@
+CLASS en net/minecraft/network/packet/LevelParticlesPacket
+	FIELD a name Ljava/lang/String;
+	FIELD b x F
+		COMMENT idk if these are in the correct order lets just hope they are...
+	FIELD c y F
+	FIELD d z F
+	FIELD e xDist F
+	FIELD f yDist F
+	FIELD g zDist F
+	FIELD h maxSpeed F
+	FIELD i count I
+	METHOD d getName ()Ljava/lang/String;
+	METHOD f getX ()D
+	METHOD g getY ()D
+	METHOD h getZ ()D
+	METHOD i getXDist ()F
+	METHOD j getYDist ()F
+	METHOD k getZDist ()F
+	METHOD l getMaxSpeed ()F
+	METHOD m getCount ()I

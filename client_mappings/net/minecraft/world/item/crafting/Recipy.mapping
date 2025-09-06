@@ -1,0 +1,8 @@
+CLASS aah net/minecraft/world/item/crafting/Recipy
+	METHOD a size ()I
+	METHOD a assemble (Lvk;)Lye;
+		ARG 1 container
+	METHOD a matches (Lvk;Labw;)Z
+		ARG 1 container
+		ARG 2 level
+	METHOD b getResultItem ()Lye;

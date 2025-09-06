@@ -5,6 +5,11 @@ CLASS ey net/minecraft/network/packet/Packet
 	FIELD l idToClassMap Llm;
 	FIELD m logger Llp;
 	FIELD n createTime J
+	FIELD o packetsRead J
+		COMMENT these field names are guessed, couldnt find any references to them in other game editions
+	FIELD p estimatedRead J
+	FIELD q packetsWritten J
+	FIELD r estimatedWritten J
 	METHOD a getEstimatedSize ()I
 	METHOD a map (IZZLjava/lang/Class;)V
 		ARG 0 id

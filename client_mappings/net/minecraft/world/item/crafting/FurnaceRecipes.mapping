@@ -1,0 +1,14 @@
+CLASS aab net/minecraft/world/item/crafting/FurnaceRecipes
+	FIELD a instance Laab;
+	FIELD b recipies Ljava/util/Map;
+	FIELD c values Ljava/util/Map;
+	METHOD a getInstance ()Laab;
+	METHOD a addFurnaceRecipy (ILye;F)V
+		ARG 1 id
+		ARG 2 result
+		ARG 3 value
+	METHOD b getRecipies ()Ljava/util/Map;
+	METHOD b getResult (I)Lye;
+		ARG 1 id
+	METHOD c getRecipeValue (I)F
+		ARG 1 id

@@ -1,1 +1,16 @@
 CLASS fu net/minecraft/network/packet/SetPlayerTeamPacket
+	FIELD a name Ljava/lang/String;
+	FIELD b displayName Ljava/lang/String;
+	FIELD c prefix Ljava/lang/String;
+	FIELD d suffix Ljava/lang/String;
+	FIELD e players Ljava/util/Collection;
+	FIELD f mode I
+		COMMENT idfk what this is
+	FIELD g packOptions I
+	METHOD <init> (Latf;I)V
+		ARG 1 team
+		ARG 2 i
+	METHOD <init> (Latf;Ljava/util/Collection;I)V
+		ARG 1 team
+		ARG 2 players
+		ARG 3 i
