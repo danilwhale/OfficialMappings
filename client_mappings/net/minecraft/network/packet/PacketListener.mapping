@@ -21,6 +21,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleChunkTilesUpdate (Ldn;)V
 		ARG 1 packet
 	METHOD a handleClientInformation (Ldp;)V
+		ARG 1 packet
 	METHOD a handlePreLogin (Ldq;)V
 		ARG 1 packet
 	METHOD a handleComplexItemData (Ldr;)V
@@ -65,6 +66,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleParticleEvent (Len;)V
 		ARG 1 packet
+	METHOD a handleSoundEvent (Leo;)V
 	METHOD a handleLogin (Lep;)V
 		ARG 1 packet
 	METHOD a handleMovePlayer (Leu;)V
@@ -112,6 +114,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleSignUpdate (Lfz;)V
 		ARG 1 packet
 	METHOD a handleTakeItemEntity (Lga;)V
+		ARG 1 packet
+	METHOD a handleTileDestruction (Lgc;)V
 		ARG 1 packet
 	METHOD a handleTileEditorOpen (Lgd;)V
 	METHOD a (Lge;)V

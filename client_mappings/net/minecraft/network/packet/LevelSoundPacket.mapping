@@ -1,0 +1,20 @@
+CLASS eo net/minecraft/network/packet/LevelSoundPacket
+	FIELD a sound Ljava/lang/String;
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e volume F
+	FIELD f pitch I
+	METHOD <init> (Ljava/lang/String;DDDFF)V
+		ARG 1 sound
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD d getSound ()Ljava/lang/String;
+	METHOD f getX ()D
+	METHOD g getY ()D
+	METHOD h getZ ()D
+	METHOD i getVolume ()F
+	METHOD j getPitch ()F

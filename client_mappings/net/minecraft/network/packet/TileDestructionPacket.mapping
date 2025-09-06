@@ -1,0 +1,11 @@
+CLASS gc net/minecraft/network/packet/TileDestructionPacket
+	FIELD a entityId I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e state I
+	METHOD d getEntityId ()I
+	METHOD f getX ()I
+	METHOD g getY ()I
+	METHOD h getZ ()I
+	METHOD i getState ()I
