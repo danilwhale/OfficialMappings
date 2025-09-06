@@ -5,15 +5,27 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD D yRotO F
 	FIELD E bb Lasx;
 	FIELD F onGround Z
+	FIELD G horizontalCollision Z
+	FIELD H verticalCollision Z
+	FIELD I collision Z
 	FIELD K inWeb Z
+	FIELD L slide Z
 	FIELD M removed Z
 	FIELD N heightOffset F
 	FIELD O bbWidth F
+	FIELD P bbHeight F
+	FIELD R walkDist F
+	FIELD S moveDist F
 	FIELD T fallDistance F
 	FIELD U xOld D
 	FIELD V yOld D
 	FIELD W zOld D
+	FIELD X ySlideOffset F
+	FIELD Y footSize F
+	FIELD Z noPhysics Z
 	FIELD ab random Ljava/util/Random;
+	FIELD ad flameTime I
+	FIELD ag fireImmune Z
 	FIELD ah entityData Loo;
 	FIELD ai inChunk Z
 	FIELD aj xChunk I
@@ -22,7 +34,11 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD ao changingDimensionDelay I
 	FIELD ar dimension I
 	FIELD b entityCounter I
-	FIELD d remainingFireTicks I
+	FIELD bZ xp I
+	FIELD c nextStep I
+	FIELD ca yp I
+	FIELD cb zp I
+	FIELD d onFire I
 	FIELD h invulnerable Z
 	FIELD i uuid Ljava/util/UUID;
 	FIELD k entityId I
@@ -42,14 +58,21 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD z zd D
 	METHOD <init> (Labw;)V
 		ARG 1 level
+	METHOD A lavaHurt ()V
+	METHOD B clearFire ()V
+	METHOD C outOfWorld ()V
 	METHOD E getCollideBox ()Lasx;
+	METHOD H isInWater ()Z
 	METHOD M isPushable ()Z
 	METHOD Q getEncodeId ()Ljava/lang/String;
 	METHOD W positionRider ()V
 	METHOD a defineSynchedData ()V
 	METHOD a handleEntityEvent (B)V
 		ARG 1 event
+	METHOD a checkFallDamage (DZ)V
 	METHOD a setSize (FF)V
+		ARG 1 width
+		ARG 2 height
 	METHOD a spawnAtLocation (IIF)Lss;
 	METHOD a playStepSound (IIII)V
 		ARG 1 x
@@ -76,14 +99,32 @@ CLASS nn net/minecraft/world/entity/Entity
 	METHOD aw getUUID ()Ljava/util/UUID;
 	METHOD ay getDisplayName ()Ljava/lang/String;
 	METHOD b setPos (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD b causeFallDamage (F)V
 		ARG 1 distance
 	METHOD b setRot (FF)V
+		ARG 1 x
+		ARG 2 y
 	METHOD b spawnAtLocation (II)Lss;
 	METHOD b addAdditionalSaveData (Lby;)V
 		ARG 1 entityTag
 	METHOD b_ playerTouch (Luf;)V
 		ARG 1 player
+	METHOD c isFree (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD c turn (FF)V
+		ARG 1 x
+		ARG 2 y
+	METHOD d move (DDD)V
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD d setOnFire (I)V
+		ARG 1 seconds
 	METHOD d distanceTo (Lnn;)F
 	METHOD e distanceToSqr (DDD)D
 	METHOD e saveWithoutId (Lby;)V
@@ -91,10 +132,16 @@ CLASS nn net/minecraft/world/entity/Entity
 	METHOD e distanceToSqr (Lnn;)D
 	METHOD e setUsingItemFlag (Z)V
 		ARG 1 usingItemFlag
+	METHOD e_ makeStepSound ()Z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
 	METHOD f getEyeHeight ()F
 	METHOD f distanceTo (DDD)D
 	METHOD f load (Lby;)V
 		ARG 1 entityTag
 	METHOD g setAirSupply (I)V
 	METHOD l_ tick ()V
+	METHOD v getEntityData ()Loo;
+	METHOD w resetPos ()V
 	METHOD x remove ()V
+	METHOD y baseTick ()V
