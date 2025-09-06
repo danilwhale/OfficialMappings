@@ -221,6 +221,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 entity
 		ARG 6 instance
+	METHOD a attack (Labw;IIILuf;)V
 	METHOD a use (Labw;IIILuf;IFFF)Z
 		ARG 1 level
 		ARG 2 x
@@ -248,6 +249,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 1 random
 	METHOD a registerIcons (Lmt;)V
 		ARG 1 icons
+	METHOD a getDestroyProgress (Luf;Labw;III)F
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable

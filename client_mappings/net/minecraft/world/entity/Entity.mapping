@@ -55,6 +55,7 @@ CLASS nn net/minecraft/world/entity/Entity
 		ARG 1 doubles
 	METHOD a newFloatList ([F)Lcg;
 		ARG 1 floats
+	METHOD ag isPassenger ()Z
 	METHOD al getAirSupply ()I
 	METHOD aw getUUID ()Ljava/util/UUID;
 	METHOD ay getDisplayName ()Ljava/lang/String;
