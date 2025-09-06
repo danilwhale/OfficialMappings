@@ -9,6 +9,7 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD H lastTimer J
 	FIELD K logger Llp;
 	FIELD L resourcePackDirectory Ljava/io/File;
+	FIELD M currentServer Lbdm;
 	FIELD N textures Lbim;
 	FIELD O instance Latv;
 	FIELD P fullscreen Z
