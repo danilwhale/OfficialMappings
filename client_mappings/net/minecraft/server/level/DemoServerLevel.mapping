@@ -1,0 +1,3 @@
+CLASS jj net/minecraft/server/level/DemoServerLevel
+	FIELD J seed J
+	FIELD a settings Lacd;

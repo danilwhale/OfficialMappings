@@ -1,4 +1,5 @@
 CLASS ka net/minecraft/server/network/ServerConnection
+	COMMENT i think this is PlayerConnection, ServerConnection should listen for incoming, PendingConnection is for connections being authenticated, and PlayerConnection is for fully connected players
 	FIELD a connection Lcm;
 	FIELD c player Ljv;
 	FIELD d server Lnet/minecraft/server/MinecraftServer;
