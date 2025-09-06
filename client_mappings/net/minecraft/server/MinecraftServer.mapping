@@ -1,5 +1,7 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD F getInstance ()Lnet/minecraft/server/MinecraftServer;
 	METHOD af getPlayerList ()Lhn;
+	METHOD ah isReady ()Z
 	METHOD ap getProxy ()Ljava/net/Proxy;
 	METHOD aq getMillis ()J
+	METHOD v forkAndRun ()V

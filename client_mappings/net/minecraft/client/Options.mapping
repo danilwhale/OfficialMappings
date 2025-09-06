@@ -27,6 +27,8 @@ CLASS aul net/minecraft/client/Options
 	FIELD Z hideGui Z
 	FIELD a music F
 	FIELD aa thirdPersonView I
+	FIELD ab renderDebug Z
+	FIELD ac renderDebugCharts Z
 	FIELD ad lastMpIp Ljava/lang/String;
 	FIELD aj fov F
 	FIELD ak gamma F

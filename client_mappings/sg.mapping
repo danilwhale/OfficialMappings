@@ -1,0 +1,2 @@
+CLASS sg
+	METHOD aN getHealth ()F

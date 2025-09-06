@@ -1,2 +1,4 @@
 CLASS bfl net/minecraft/client/renderer/LevelRenderer
 	METHOD a allChanged ()V
+	METHOD e tick ()V
+	METHOD f clear ()V

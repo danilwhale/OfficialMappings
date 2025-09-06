@@ -1,0 +1,3 @@
+CLASS beh net/minecraft/client/particle/ParticleEngine
+	METHOD a tick ()V
+	METHOD a crack (IIII)V

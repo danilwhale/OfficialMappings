@@ -1,4 +1,12 @@
 CLASS atv net/minecraft/client/Minecraft
+	FIELD A mouseGrabbed Z
+	FIELD B lastTickTime J
+	FIELD C profiler Llv;
+	FIELD D running Z
+	FIELD E fpsString Ljava/lang/String;
+	FIELD F lastTime J
+	FIELD G frames I
+	FIELD H lastTimer J
 	FIELD K logger Llp;
 	FIELD L resourcePackDirectory Ljava/io/File;
 	FIELD N textures Lbim;
@@ -10,27 +18,49 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD T snooper Lmv;
 	FIELD U user Laus;
 	FIELD V pause Z
+	FIELD W missTime I
 	FIELD X orgWidth I
 	FIELD Y orgHeight I
+	FIELD Z singeplayerServer Lbkz;
 	FIELD a ON_OSX Z
 	FIELD aa assetDirectory Ljava/io/File;
 	FIELD ab launchedVersion Ljava/lang/String;
 	FIELD ac proxy Ljava/net/Proxy;
+	FIELD ad levelSource Lamf;
+	FIELD ae fps I
+	FIELD af rightClickDelay I
 	FIELD ah connectToIp Ljava/lang/String;
 	FIELD ai connectToPort I
+	FIELD aj recheckPlayerIn I
 	FIELD ak demo Z
+	FIELD al pendingConnection Lcm;
+	FIELD am isLocalServer Z
+	FIELD an debugCrashKeyReportedTime J
 	FIELD ao resourceManager Lbjm;
 	FIELD ar vanillaPack Lbjg;
+	FIELD as resourcePackRepository Lbjt;
 	FIELD at languageManager Lbkd;
 	FIELD au debugPath Ljava/lang/String;
 	FIELD b reserve [B
+	FIELD c gameMode Lbdc;
 	FIELD d width I
 	FIELD e height I
+	FIELD f level Lbdd;
 	FIELD g levelRenderer Lbfl;
 	FIELD h player Lbdi;
+	FIELD i cameraEntity Lof;
+	FIELD j crosshairPickEntity Lof;
+	FIELD k particleEngine Lbeh;
+	FIELD l font Lavi;
+	FIELD n screen Lawe;
+	FIELD o progressRenderer Lauo;
+	FIELD p gameRenderer Lbfe;
 	FIELD r gui Lavj;
+	FIELD s noRender Z
+	FIELD t hitResult Lata;
 	FIELD u options Laul;
 	FIELD v soundEngine Lbln;
+	FIELD w mouseHandler Lauj;
 	FIELD x gameDirectory Ljava/io/File;
 	METHOD <init> (Laus;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;)V
 		ARG 1 user
@@ -47,15 +77,42 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD G fullscreen ()Z
 	METHOD N startTimerHackThread ()V
 	METHOD O init ()V
+	METHOD R renderLoadingScreen ()V
+	METHOD U getFramerateLimit ()I
+	METHOD W pickBlock ()V
+	METHOD a reloadResourcePacks ()V
+	METHOD a resize (II)V
+		ARG 1 w
+		ARG 2 h
+	METHOD a blit (IIIIII)V
+	METHOD a handleMouseDown (IZ)V
+		ARG 1 button
+	METHOD a renderFpsMeter (J)V
+	METHOD a setScreen (Lawe;)V
 	METHOD a delayCrash (Lb;)V
 		ARG 1 crash
+	METHOD a setLevel (Lbdd;)V
+		ARG 1 level
+	METHOD a setLevel (Lbdd;Ljava/lang/String;)V
+		ARG 1 level
 	METHOD a connectTo (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port
+	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;Lacd;)V
+		ARG 3 settings
+	METHOD b debugFpsMeterKeyPress (I)V
+	METHOD c handleMouseClick (I)V
+		ARG 1 button
 	METHOD c crash (Lb;)V
 		ARG 1 report
 	METHOD c checkGlError (Ljava/lang/String;)V
 		ARG 1 at
 	METHOD d run ()V
+	METHOD e emergencySave ()V
+	METHOD f stop ()V
+	METHOD g grabMouse ()V
+	METHOD h releaseMouse ()V
+	METHOD i pauseGame ()V
 	METHOD j toggleFullscreen ()V
+	METHOD k tick ()V
 	METHOD w getInstance ()Latv;

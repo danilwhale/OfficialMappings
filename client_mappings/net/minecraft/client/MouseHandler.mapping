@@ -1,0 +1,6 @@
+CLASS auj net/minecraft/client/MouseHandler
+	FIELD a xd I
+	FIELD b yd I
+	METHOD a grab ()V
+	METHOD b release ()V
+	METHOD c poll ()V

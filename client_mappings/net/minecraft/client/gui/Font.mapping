@@ -1,3 +1,4 @@
 CLASS avi net/minecraft/client/gui/Font
 	METHOD <init> (Laul;Lbjo;Lbim;Z)V
 		ARG 1 options
+	METHOD a drawShadow (Ljava/lang/String;III)I

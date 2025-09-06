@@ -6,3 +6,5 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD a awardStat (Lku;I)V
 		ARG 1 stat
 		ARG 2 amount
+	METHOD a drop (Z)Lss;
+	METHOD br isUsingItem ()Z

@@ -192,6 +192,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD a setSpawnSettings (ZZ)V
+	METHOD b tick ()V
 	METHOD b (DDD)F
 		ARG 1 x
 		ARG 3 y
@@ -352,6 +354,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD h tickEntities ()V
 	METHOD h getThunderLevel (F)F
 		ARG 1 f
 	METHOD h getHeightmapPos (II)I

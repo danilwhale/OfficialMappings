@@ -1,2 +1,4 @@
 CLASS bfj
 	FIELD i tileRenderer Lbfr;
+	METHOD b itemPlaced ()V
+	METHOD c itemUsed ()V

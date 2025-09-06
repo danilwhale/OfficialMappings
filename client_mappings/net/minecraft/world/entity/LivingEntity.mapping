@@ -1,3 +1,6 @@
 CLASS of net/minecraft/world/entity/LivingEntity
+	METHOD aN getHealth ()F
 	METHOD aS getKillCredit ()Lof;
+	METHOD aV swing ()V
 	METHOD aZ getCarriedItem ()Lye;
+	METHOD bh isSleeping ()Z

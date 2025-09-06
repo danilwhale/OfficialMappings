@@ -1,0 +1,12 @@
+CLASS bdc
+	METHOD a useItem (Luf;Labw;Lye;)Z
+	METHOD a useItemOn (Luf;Labw;Lye;IIIILatc;)Z
+	METHOD a attack (Luf;Lnn;)V
+	METHOD b startDestroyBlock (IIII)V
+	METHOD b interact (Luf;Lnn;)Z
+	METHOD c stopDestroyBlock ()V
+	METHOD c continueDestroyBlock (IIII)V
+	METHOD c releaseUsingItem (Luf;)V
+	METHOD e tick ()V
+	METHOD g hasMissTime ()Z
+	METHOD j isServerControlledInventory ()Z

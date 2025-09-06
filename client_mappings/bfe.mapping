@@ -1,0 +1,4 @@
+CLASS bfe
+	FIELD c itemInHandRenderer Lbfj;
+	METHOD a tick ()V
+	METHOD a pick (F)V

@@ -1,0 +1,4 @@
+CLASS avk net/minecraft/client/gui/GuiComponent
+	FIELD k BACKGROUND_LOCATION Lbjo;
+	FIELD l STATS_ICON_LOCATION Lbjo;
+	FIELD m GUI_ICONS_LOCATION Lbjo;
