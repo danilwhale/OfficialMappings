@@ -1,0 +1,9 @@
+CLASS bfv net/minecraft/client/renderer/culling/FrustumCuller
+	FIELD a frustum Lbfw;
+	FIELD b xOff D
+	FIELD c yOff D
+	FIELD d zOff D
+	METHOD b cubeInFrustum (DDDDDD)Z
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0

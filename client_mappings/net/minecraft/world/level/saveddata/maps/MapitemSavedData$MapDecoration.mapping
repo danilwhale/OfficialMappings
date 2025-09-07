@@ -1,0 +1,12 @@
+CLASS alk net/minecraft/world/level/saveddata/maps/MapitemSavedData$MapDecoration
+	FIELD a type B
+	FIELD b x B
+	FIELD c y B
+	FIELD d rot B
+	FIELD e this$0 Lali;
+	METHOD <init> (Lali;BBBB)V
+		ARG 1 this$0
+		ARG 2 type
+		ARG 3 x
+		ARG 4 y
+		ARG 5 rot

@@ -1,0 +1,81 @@
+CLASS bfe net/minecraft/client/renderer/GameRenderer
+	FIELD P lightTexture Lbib;
+	FIELD Q lightPixels [I
+	FIELD R lightTextureLocation Lbjo;
+	FIELD S fov F
+	FIELD T oldFov F
+	FIELD Y zoom D
+	FIELD Z zoom_x D
+	FIELD aa zoom_y D
+	FIELD ab lastActiveTime J
+	FIELD ad updateLightTexture Z
+	FIELD ae random Ljava/util/Random;
+	FIELD ag fogBrO F
+	FIELD ah fogBr F
+	FIELD c itemInHandRenderer Lbfj;
+	FIELD h rainSizeX [F
+	FIELD i rainSizeZ [F
+	FIELD j lb Ljava/nio/FloatBuffer;
+	FIELD k fr F
+	FIELD l fg F
+	FIELD m fb F
+	FIELD o RAIN_LOCATION Lbjo;
+	FIELD p SNOW_LOCATION Lbjo;
+	FIELD q mc Latv;
+	FIELD r renderDistance F
+	FIELD s tick I
+	FIELD t hovered Lnn;
+	METHOD <init> (Latv;)V
+		ARG 1 mc
+	METHOD a tick ()V
+	METHOD a turnOffLightLayer (D)V
+		ARG 1 a
+	METHOD a pick (F)V
+		ARG 1 a
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
+	METHOD a setupCamera (FI)V
+		ARG 1 a
+		ARG 2 eye
+	METHOD a renderLevel (FJ)V
+		ARG 1 a
+	METHOD a getFov (FZ)F
+		ARG 1 a
+		ARG 2 lerp
+	METHOD a setupFog (IF)V
+		ARG 1 i
+		ARG 2 a
+	METHOD a access$000 (Lbfe;)Latv;
+		ARG 0 this$0
+	METHOD a prepareAndRenderClouds (Lbfl;F)V
+		ARG 1 level
+		ARG 2 a
+	METHOD a getNightVisionScale (Luf;F)F
+		ARG 1 player
+		ARG 2 a
+	METHOD b turnOnLightLayer (D)V
+		ARG 1 a
+	METHOD b render (F)V
+		ARG 1 a
+	METHOD b renderItemInHand (FI)V
+		ARG 1 a
+		ARG 2 eye
+	METHOD c setupGuiScreen ()V
+	METHOD d renderSnowAndRain (F)V
+		ARG 1 a
+	METHOD e tickFov ()V
+	METHOD e bobHurt (F)V
+		ARG 1 a
+	METHOD f tickLightTexture ()V
+	METHOD f bobView (F)V
+		ARG 1 a
+	METHOD g tickRain ()V
+	METHOD g moveCameraToPlayer (F)V
+		ARG 1 a
+	METHOD h updateLightTexture (F)V
+		ARG 1 a
+	METHOD i setupClearColor (F)V
+		ARG 1 a

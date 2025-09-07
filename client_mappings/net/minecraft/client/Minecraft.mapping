@@ -76,6 +76,7 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 10 launchVersion
 	METHOD F getMillis ()J
 	METHOD G fullscreen ()Z
+	METHOD J getTextures ()Lbim;
 	METHOD N startTimerHackThread ()V
 	METHOD O init ()V
 	METHOD R renderLoadingScreen ()V
@@ -117,3 +118,4 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD j toggleFullscreen ()V
 	METHOD k tick ()V
 	METHOD w getInstance ()Latv;
+	METHOD y maxSupportedTextureSize ()I

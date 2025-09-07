@@ -1,0 +1,8 @@
+CLASS bfg net/minecraft/client/renderer/GameRenderer$2
+	FIELD a val$x I
+	FIELD b val$y I
+	FIELD c this$0 Lbfe;
+	METHOD <init> (Lbfe;II)V
+		ARG 1 this$0
+		ARG 2 val$x
+		ARG 3 val$y

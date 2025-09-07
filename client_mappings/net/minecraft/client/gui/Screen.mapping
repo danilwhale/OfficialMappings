@@ -1,5 +1,6 @@
 CLASS awe net/minecraft/client/gui/Screen
 	FIELD j passEvents Z
+	METHOD a render (IIF)V
 	METHOD a init (Latv;II)V
 	METHOD c tick ()V
 	METHOD d mouseEvent ()V

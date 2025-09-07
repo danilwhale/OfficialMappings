@@ -1,3 +1,4 @@
-CLASS bdi net/minecraft/client/player/LocalPlayer
-	FIELD a connection Lbcw;
-	METHOD j sendOpenInventory ()V
+CLASS bex net/minecraft/client/player/LocalPlayer
+	FIELD bN portalTime F
+	FIELD bO oPortalTime F
+	METHOD t getFieldOfViewModifier ()F

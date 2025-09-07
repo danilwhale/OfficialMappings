@@ -1,0 +1,4 @@
+CLASS bff net/minecraft/client/renderer/GameRenderer$1
+	FIELD a this$0 Lbfe;
+	METHOD <init> (Lbfe;)V
+		ARG 1 this$0

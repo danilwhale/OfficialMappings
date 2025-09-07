@@ -1,0 +1,11 @@
+CLASS ber net/minecraft/client/particle/TakeAnimationParticle
+	FIELD aB target Lnn;
+	FIELD aC life I
+	FIELD aD lifeTime I
+	FIELD aE yOffs F
+	FIELD a item Lnn;
+	METHOD <init> (Labw;Lnn;Lnn;F)V
+		ARG 1 level
+		ARG 2 item
+		ARG 3 target
+		ARG 4 yOffs

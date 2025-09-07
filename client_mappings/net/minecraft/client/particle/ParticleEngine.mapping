@@ -1,3 +1,31 @@
 CLASS beh net/minecraft/client/particle/ParticleEngine
+	FIELD a level Labw;
+	FIELD c particles [Ljava/util/List;
+	FIELD d textures Lbim;
+	FIELD e random Ljava/util/Random;
+	METHOD <init> (Labw;Lbim;)V
+		ARG 1 level
+		ARG 2 textures
 	METHOD a tick ()V
 	METHOD a crack (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+	METHOD a destroy (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tid
+		ARG 5 data
+	METHOD a setLevel (Labw;)V
+		ARG 1 level
+	METHOD a add (Lbeg;)V
+		ARG 1 p
+	METHOD a render (Lnn;F)V
+		ARG 1 player
+		ARG 2 a
+	METHOD b countParticles ()Ljava/lang/String;
+	METHOD b renderLit (Lnn;F)V
+		ARG 1 player
+		ARG 2 a

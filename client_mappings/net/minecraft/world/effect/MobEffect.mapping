@@ -3,6 +3,8 @@ CLASS ni net/minecraft/world/effect/MobEffect
 	FIELD K color I
 	FIELD L descriptionId Ljava/lang/String;
 	FIELD a mobEffects [Lni;
+	FIELD k CONFUSION Lni;
+	FIELD r NIGHT_VISION Lni;
 	METHOD <init> (IZI)V
 		ARG 1 id
 		ARG 2 a

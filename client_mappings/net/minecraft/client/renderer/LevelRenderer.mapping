@@ -1,4 +1,11 @@
 CLASS bfl net/minecraft/client/renderer/LevelRenderer
 	METHOD a allChanged ()V
+	METHOD a renderSky (F)V
+	METHOD a renderEntities (Latc;Lbft;F)V
+	METHOD a renderHit (Lbfq;Luf;F)V
+	METHOD a setupRender (Lbft;F)V
+	METHOD a render (Lof;ID)I
+	METHOD a renderHitOutline (Luf;Lata;IF)V
+	METHOD b renderClouds (F)V
 	METHOD e tick ()V
 	METHOD f clear ()V

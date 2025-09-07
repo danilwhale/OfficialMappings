@@ -1,0 +1,7 @@
+CLASS bft net/minecraft/client/renderer/culling/Culler
+	METHOD a (DDD)V
+		ARG 1 xOff
+		ARG 3 yOff
+		ARG 5 zOff
+	METHOD a isVisible (Lasx;)Z
+		ARG 1 bb

@@ -30,6 +30,7 @@ CLASS aul net/minecraft/client/Options
 	FIELD ab renderDebug Z
 	FIELD ac renderDebugCharts Z
 	FIELD ad lastMpIp Ljava/lang/String;
+	FIELD af smoothCamera Z
 	FIELD aj fov F
 	FIELD ak gamma F
 	FIELD al guiScale I

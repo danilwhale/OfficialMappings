@@ -305,3 +305,9 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
 	METHOD s_ init ()V
+	METHOD u getShapeX0 ()D
+	METHOD v getShapeX1 ()D
+	METHOD w getShapeY0 ()D
+	METHOD x getShapeY1 ()D
+	METHOD y getShapeZ0 ()D
+	METHOD z getShapeZ1 ()D

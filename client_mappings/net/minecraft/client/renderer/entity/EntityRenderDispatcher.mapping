@@ -1,0 +1,3 @@
+CLASS bgl net/minecraft/client/renderer/entity/EntityRenderDispatcher
+	FIELD a instance Lbgl;
+	METHOD a render (Lnn;DDDFF)V

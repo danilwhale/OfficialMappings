@@ -1,6 +1,14 @@
 CLASS of net/minecraft/world/entity/LivingEntity
+	FIELD aA hurtDir F
+	FIELD aB deathTime I
+	FIELD aJ oTilt F
+	FIELD aK tilt F
+	FIELD ay hurtTime I
+	FIELD az hurtDuration I
+	METHOD a pick (DF)Lata;
 	METHOD a die (Lnb;)V
 		ARG 1 source
+	METHOD a hasEffect (Lni;)Z
 	METHOD a getAttribute (Lor;)Los;
 		ARG 1 attribute
 	METHOD aN getHealth ()F
@@ -12,6 +20,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD aX getAttributes ()Lov;
 	METHOD aZ getCarriedItem ()Lye;
 	METHOD az registerAttributes ()V
+	METHOD b getEffect (Lni;)Lnj;
 	METHOD ba getSoundVolume ()F
 	METHOD bc isImmobile ()Z
 	METHOD bf useNewAi ()Z
@@ -19,3 +28,5 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD c aiStep ()V
 	METHOD e onLadder ()Z
 	METHOD g_ isBaby ()Z
+	METHOD j getViewVector (F)Latc;
+	METHOD l getPos (F)Latc;

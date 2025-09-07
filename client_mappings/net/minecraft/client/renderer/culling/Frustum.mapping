@@ -1,0 +1,10 @@
+CLASS bfu net/minecraft/client/renderer/culling/Frustum
+	FIELD e frustum Lbfu;
+	FIELD f _proj Ljava/nio/FloatBuffer;
+	FIELD g _modl Ljava/nio/FloatBuffer;
+	FIELD h _clip Ljava/nio/FloatBuffer;
+	METHOD a getFrustum ()Lbfw;
+	METHOD a normalizePlane ([[FI)V
+		ARG 1 frustum
+		ARG 2 side
+	METHOD b calculateFrustum ()V
