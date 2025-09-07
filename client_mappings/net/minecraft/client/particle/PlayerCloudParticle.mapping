@@ -1,0 +1,2 @@
+CLASS bei net/minecraft/client/particle/PlayerCloudParticle
+	FIELD a oSize F

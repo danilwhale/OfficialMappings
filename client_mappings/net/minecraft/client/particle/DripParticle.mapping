@@ -1,0 +1,8 @@
+CLASS bds net/minecraft/client/particle/DripParticle
+	FIELD a type Lakc;
+	METHOD <init> (Labw;DDDLakc;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 type

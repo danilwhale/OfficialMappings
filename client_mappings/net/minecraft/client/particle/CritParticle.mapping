@@ -1,0 +1,10 @@
+CLASS bdq net/minecraft/client/particle/CritParticle
+	FIELD aB life I
+	FIELD aC lifeTime I
+	METHOD <init> (Labw;Lnn;)V
+		ARG 1 level
+		ARG 2 target
+	METHOD <init> (Labw;Lnn;Ljava/lang/String;)V
+		ARG 1 level
+		ARG 2 target
+		ARG 3 name
