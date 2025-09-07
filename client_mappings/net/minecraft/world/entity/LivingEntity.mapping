@@ -3,14 +3,34 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD aB deathTime I
 	FIELD aJ oTilt F
 	FIELD aK tilt F
+	FIELD aL timeOffs F
+	FIELD aM RotA F
+	FIELD aN yBodyRot F
+	FIELD aO yBodyRotO F
+	FIELD aP yHeadRot F
+	FIELD aQ yHeadRotO F
+	FIELD aR flyingSpeed F
+	FIELD aS lastHurtByPlayer Luf;
 	FIELD ay hurtTime I
 	FIELD az hurtDuration I
+	FIELD b SPEED_MODIFIER_SPRINTING_UUID Ljava/util/UUID;
+	FIELD bn lastHurtMob Lof;
+	FIELD bo lastHurtMobTimestamp I
+	FIELD c SPEED_MODIFIER_SPRINTING Lot;
+	FIELD d attributes Lov;
+	FIELD e combatTracker Lna;
+	FIELD f activeEffects Ljava/util/HashMap;
+	FIELD i lastHurtByMob Lof;
+	FIELD j lastHurtByMobTimestamp I
 	METHOD a pick (DF)Lata;
 	METHOD a die (Lnb;)V
 		ARG 1 source
 	METHOD a hasEffect (Lni;)Z
 	METHOD a getAttribute (Lor;)Los;
 		ARG 1 attribute
+	METHOD aD getRandom ()Ljava/util/Random;
+	METHOD aE getLastHurtByMob ()Lof;
+	METHOD aI getNoActionTime ()I
 	METHOD aN getHealth ()F
 	METHOD aO getHurtSound ()Ljava/lang/String;
 	METHOD aP getDeathSound ()Ljava/lang/String;
@@ -28,5 +48,6 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD c aiStep ()V
 	METHOD e onLadder ()Z
 	METHOD g_ isBaby ()Z
+	METHOD i setSpeed (F)V
 	METHOD j getViewVector (F)Latc;
 	METHOD l getPos (F)Latc;

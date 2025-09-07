@@ -21,6 +21,10 @@ CLASS rs net/minecraft/world/entity/animal/horse/EntityHorse
 	FIELD bs temper I
 	FIELD bu MOMMY_TARGETTING Lnw;
 	FIELD bv JUMP_STRENGTH Lor;
+	FIELD bw ARMOR_TEXTURES [Ljava/lang/String;
+		COMMENT guessed
+	FIELD by ARMOR_VALUES [I
+		COMMENT guessed
 	FIELD bz VARIANT_TEXTURES [Ljava/lang/String;
 	METHOD a getClosestMommy (Lnn;D)Lrs;
 		ARG 1 entity

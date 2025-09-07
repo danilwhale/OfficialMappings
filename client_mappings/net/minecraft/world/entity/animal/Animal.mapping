@@ -1,5 +1,7 @@
 CLASS rp net/minecraft/world/entity/animal/Animal
 	METHOD a canMate (Lrp;)Z
 		ARG 1 animal
+	METHOD bY isInLove ()Z
+	METHOD bZ resetLove ()V
 	METHOD c isFood (Lye;)Z
 		ARG 1 item

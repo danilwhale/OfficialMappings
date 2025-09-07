@@ -1,1 +1,7 @@
 CLASS rg net/minecraft/world/entity/ai/sensing/Sensing
+	FIELD a mob Log;
+	METHOD <init> (Log;)V
+		ARG 1 mob
+	METHOD a tick ()V
+	METHOD a canSee (Lnn;)Z
+		ARG 1 entity

@@ -1,0 +1,2 @@
+CLASS rh net/minecraft/world/entity/ai/util/RandomPos
+	METHOD a getPos (Lon;II)Latc;

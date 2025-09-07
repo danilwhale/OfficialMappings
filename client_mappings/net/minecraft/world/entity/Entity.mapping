@@ -1,8 +1,8 @@
 CLASS nn net/minecraft/world/entity/Entity
-	FIELD A xRot F
-	FIELD B yRot F
-	FIELD C xRotO F
-	FIELD D yRotO F
+	FIELD A yRot F
+	FIELD B xRot F
+	FIELD C yRotO F
+	FIELD D xRotO F
 	FIELD E bb Lasx;
 	FIELD F onGround Z
 	FIELD G horizontalCollision Z
@@ -40,6 +40,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD aq portalTime I
 	FIELD ar dimension I
 	FIELD as portalEntranceDir I
+	FIELD at size Lnr;
 	FIELD b entityCounter I
 	FIELD bZ xp I
 	FIELD c nextStep I

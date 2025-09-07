@@ -1,2 +1,15 @@
 CLASS pt net/minecraft/world/entity/ai/goal/GoalSelector
+	FIELD a availableGoals Ljava/util/List;
+	FIELD b lockedFlags Ljava/util/List;
+		COMMENT unsure
+	FIELD c profiler Llv;
+	FIELD d disabledFlags I
+	FIELD e newGoalRate I
+	METHOD <init> (Llv;)V
+		ARG 1 profiler
+	METHOD a tick ()V
 	METHOD a addGoal (ILps;)V
+		ARG 1 priority
+		ARG 2 goal
+	METHOD a removeGoal (Lps;)V
+		ARG 1 goal

@@ -1,0 +1,10 @@
+CLASS pu net/minecraft/world/entity/ai/goal/GoalSelector$InternalGoal
+	COMMENT this was later renamed to WrappedGoal but exists in LCE/Bedrock as InternalGoal.
+	COMMENT also Mojang seems to not know how to use internal classes properly knowing they probably should be static to not generate fake this$0 field
+	FIELD a goal Lps;
+	FIELD b priority I
+	FIELD c this$0 Lpt;
+	METHOD <init> (Lpt;ILps;)V
+		ARG 1 this$0
+		ARG 2 priority
+		ARG 3 goal

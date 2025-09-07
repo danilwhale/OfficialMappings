@@ -117,6 +117,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 end
 	METHOD a fillReportDetails (Lb;)Lm;
 		ARG 1 cr
+	METHOD a getNearbyEntities (Ljava/lang/Class;Lasx;)Ljava/util/List;
+	METHOD a getNearestLoadedEntity (Ljava/lang/Class;Lasx;Lnn;)Lnn;
 	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lall;
 		ARG 1 klass
 		ARG 2 name

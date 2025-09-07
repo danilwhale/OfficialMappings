@@ -1,0 +1,12 @@
+CLASS pk net/minecraft/world/entity/ai/goal/BreedGoal
+	FIELD a level Labw;
+	FIELD b loveTime I
+	FIELD c speedModifier D
+	FIELD d animal Lrp;
+	FIELD e partner Lrp;
+		COMMENT avaya partner remote access pc card
+	METHOD <init> (Lrp;D)V
+		ARG 1 animal
+		ARG 2 speedModifier
+	METHOD f getFreePartner ()Lrp;
+	METHOD g breed ()V

@@ -1,0 +1,16 @@
+CLASS px net/minecraft/world/entity/ai/goal/LookAtPlayerGoal
+	FIELD a lookAt Lnn;
+	FIELD b mob Log;
+	FIELD c lookDistance F
+	FIELD d lookTime I
+	FIELD e probability F
+	FIELD f lookAtType Ljava/lang/Class;
+	METHOD <init> (Log;Ljava/lang/Class;F)V
+		ARG 1 mob
+		ARG 2 lookAtType
+		ARG 3 lookDistance
+	METHOD <init> (Log;Ljava/lang/Class;FF)V
+		ARG 1 mob
+		ARG 2 lookAtType
+		ARG 3 lookDistance
+		ARG 4 probability

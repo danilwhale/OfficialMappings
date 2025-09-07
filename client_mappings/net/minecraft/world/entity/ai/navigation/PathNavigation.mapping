@@ -4,3 +4,8 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 	FIELD c path Lalf;
 	FIELD d speedModifier D
 	FIELD e dist Los;
+	METHOD a moveTo (DDDD)Z
+	METHOD a moveTo (Lnn;D)Z
+	METHOD e setCanFloat (Z)V
+	METHOD g isDone ()Z
+	METHOD h stop ()V

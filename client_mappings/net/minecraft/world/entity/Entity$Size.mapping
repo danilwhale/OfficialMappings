@@ -1,0 +1,8 @@
+CLASS nr net/minecraft/world/entity/Entity$Size
+	COMMENT WHAT THE ACTUAL FUCK IS THIS
+	FIELD a SIZE_1 Lnr;
+	FIELD b SIZE_2 Lnr;
+	FIELD c SIZE_3 Lnr;
+	FIELD d SIZE_4 Lnr;
+	FIELD e SIZE_5 Lnr;
+	FIELD f SIZE_6 Lnr;

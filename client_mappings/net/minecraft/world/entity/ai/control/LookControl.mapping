@@ -1,1 +1,25 @@
 CLASS pe net/minecraft/world/entity/ai/control/LookControl
+	FIELD a mob Log;
+	FIELD b yMaxRotSpeed F
+	FIELD c xMaxRotAngle F
+	FIELD d hasWanted Z
+	FIELD e wantedX D
+	FIELD f wantedY D
+	FIELD g wantedZ D
+	METHOD <init> (Log;)V
+		ARG 1 mob
+	METHOD a tick ()V
+	METHOD a setLookAt (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yMaxRotSpeed
+		ARG 8 xMaxRotAngle
+	METHOD a rotateTowards (FFF)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setLookAt (Lnn;FF)V
+		ARG 1 entity
+		ARG 2 yMaxRotSpeed
+		ARG 3 xMaxRotAngle

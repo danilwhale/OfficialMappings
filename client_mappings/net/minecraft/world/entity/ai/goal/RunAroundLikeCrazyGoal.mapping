@@ -1,0 +1,9 @@
+CLASS qq net/minecraft/world/entity/ai/goal/RunAroundLikeCrazyGoal
+	FIELD a horse Lrs;
+	FIELD b speedModifier D
+	FIELD c posX D
+	FIELD d posY D
+	FIELD e posZ D
+	METHOD <init> (Lrs;D)V
+		ARG 1 horse
+		ARG 2 speedModifier

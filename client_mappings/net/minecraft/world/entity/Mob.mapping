@@ -28,8 +28,14 @@ CLASS og net/minecraft/world/entity/Mob
 	METHOD bC isCustomNameVisible ()Z
 	METHOD bD canPickUpLoot ()Z
 	METHOD bG canBeLeashed ()Z
+	METHOD bp getMaxHeadXRot ()I
+		COMMENT ah yes the wolf function, this was initially added for wolf related crap in b1.4
 	METHOD bs canSpawn ()Z
 	METHOD bv getMaxSpawnClusterSize ()I
+	METHOD h getLookControl ()Lpe;
+	METHOD j getJumpControl ()Lpd;
+	METHOD k getNavigation ()Lrf;
+	METHOD m getTarget ()Lof;
 	METHOD o getAmbientSoundInterval ()I
 	METHOD r getAmbientSound ()Ljava/lang/String;
 	METHOD s getDeathLoot ()I
