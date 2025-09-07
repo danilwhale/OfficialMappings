@@ -1,4 +1,5 @@
-CLASS bv net/minecraft/locale/Language
+CLASS bv
+	COMMENT LanguageRepository???
 	FIELD a UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
 	FIELD c singleton Lbv;
 	FIELD d storage Ljava/util/Map;
