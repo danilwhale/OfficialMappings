@@ -1,6 +1,7 @@
 CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD aA hurtDir F
 	FIELD aB deathTime I
+	FIELD aC attackTime I
 	FIELD aJ oTilt F
 	FIELD aK tilt F
 	FIELD aL timeOffs F
@@ -11,6 +12,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD aQ yHeadRotO F
 	FIELD aR flyingSpeed F
 	FIELD aS lastHurtByPlayer Luf;
+	FIELD aV noActionTime I
 	FIELD ay hurtTime I
 	FIELD az hurtDuration I
 	FIELD b SPEED_MODIFIER_SPRINTING_UUID Ljava/util/UUID;
@@ -20,34 +22,76 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD d attributes Lov;
 	FIELD e combatTracker Lna;
 	FIELD f activeEffects Ljava/util/HashMap;
+	FIELD h effectsDirty Z
 	FIELD i lastHurtByMob Lof;
 	FIELD j lastHurtByMobTimestamp I
 	METHOD a pick (DF)Lata;
 	METHOD a die (Lnb;)V
 		ARG 1 source
 	METHOD a hasEffect (Lni;)Z
+		ARG 1 effect
+	METHOD a onEffectAdded (Lnj;)V
+	METHOD a onEffectUpdated (Lnj;Z)V
+	METHOD a take (Lnn;I)V
 	METHOD a getAttribute (Lor;)Los;
 		ARG 1 attribute
+	METHOD aB tickDeath ()V
+	METHOD aC isAlwaysExperienceDropper ()Z
 	METHOD aD getRandom ()Ljava/util/Random;
 	METHOD aE getLastHurtByMob ()Lof;
+	METHOD aF getLastHurtByMobTimestamp ()I
+	METHOD aG getLastHurtMob ()Lof;
+	METHOD aH getLastHurtMobTimestamp ()I
 	METHOD aI getNoActionTime ()I
+	METHOD aJ tickEffects ()V
+	METHOD aL getActiveEffects ()Ljava/util/Collection;
+	METHOD aM isInvertedHealAndHarm ()Z
 	METHOD aN getHealth ()F
 	METHOD aO getHurtSound ()Ljava/lang/String;
 	METHOD aP getDeathSound ()Ljava/lang/String;
 	METHOD aQ getArmorValue ()I
 	METHOD aS getKillCredit ()Lof;
+	METHOD aT getMaxHealth ()F
 	METHOD aV swing ()V
 	METHOD aX getAttributes ()Lov;
+	METHOD aY getMobType ()Loj;
 	METHOD aZ getCarriedItem ()Lye;
 	METHOD az registerAttributes ()V
 	METHOD b getEffect (Lni;)Lnj;
+		ARG 1 effect
+	METHOD b onEffectRemoved (Lnj;)V
+	METHOD b setLastHurtByMob (Lof;)V
+		ARG 1 mb
 	METHOD ba getSoundVolume ()F
 	METHOD bc isImmobile ()Z
 	METHOD bf useNewAi ()Z
 	METHOD bh isSleeping ()Z
+	METHOD bn getAbsorptionAmount ()F
 	METHOD c aiStep ()V
+	METHOD c addEffect (Lnj;)V
+		ARG 1 effect
+	METHOD d canBeAffected (Lnj;)Z
+		ARG 1 effect
 	METHOD e onLadder ()Z
+	METHOD e getExperienceReward (Luf;)I
+		ARG 1 player
+	METHOD f heal (F)V
+		ARG 1 health
+	METHOD g setHealth (F)V
+		ARG 1 health
 	METHOD g_ isBaby ()Z
+	METHOD h decreaseAirSupply (I)I
+		ARG 1 supply
 	METHOD i setSpeed (F)V
+	METHOD i hasEffect (I)Z
+		ARG 1 id
 	METHOD j getViewVector (F)Latc;
+	METHOD j removeEffectNoUpdate (I)V
+		ARG 1 id
+	METHOD k removeEffect (I)V
+		ARG 1 id
+	METHOD k setLastHurtMob (Lnn;)V
+		ARG 1 mob
 	METHOD l getPos (F)Latc;
+	METHOD m setAbsorptionAmount (F)V
+	METHOD o canSee (Lnn;)Z

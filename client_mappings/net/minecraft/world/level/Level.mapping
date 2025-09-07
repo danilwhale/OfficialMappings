@@ -90,10 +90,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 a
 	METHOD a mayPlace (IIIIZILnn;Lye;)Z
 	METHOD a setBlockEntity (IIILasp;)V
-	METHOD a (IIIZ)Z
+	METHOD a destroyTile (IIIZ)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 spawnResources
 	METHOD a setGameTime (J)V
 		ARG 1 gt
 	METHOD a addListener (Lacb;)V
@@ -105,6 +106,13 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 z
 	METHOD a getCubes (Lasx;)Ljava/util/List;
 		ARG 1 bb
+	METHOD a containsMaterial (Lasx;Lakc;)Z
+		ARG 1 bb
+		ARG 2 material
+	METHOD a checkAndHandleWater (Lasx;Lakc;Lnn;)Z
+		ARG 1 bb
+		ARG 2 material
+		ARG 3 entity
 	METHOD a getSeenPercent (Latc;Lasx;)F
 	METHOD a clip (Latc;Latc;)Lata;
 		ARG 1 origin
@@ -183,6 +191,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 y
 		ARG 4 z
 	METHOD a extinguishFire (Luf;IIII)Z
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 f
 	METHOD a levelEvent (Luf;IIIII)V
 		ARG 1 source
 		ARG 2 event
@@ -236,6 +249,9 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 y
 		ARG 4 z
 		ARG 5 br
+	METHOD b containsLiquid (Lasx;Lakc;)Z
+		ARG 1 bb
+		ARG 2 material
 	METHOD b getFreeAuxValueFor (Ljava/lang/String;)I
 		ARG 1 name
 	METHOD b findNearestMapFeature (Ljava/lang/String;III)Laco;
@@ -290,6 +306,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 id
 		ARG 5 id0
 		ARG 6 id1
+	METHOD d containsAnyLiquid (Lasx;)Z
+		ARG 1 bb
 	METHOD d addEntity (Lnn;)Z
 		ARG 1 entity
 	METHOD e getCloudColor (F)Latc;
@@ -319,6 +337,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD e containsFireTile (Lasx;)Z
+		ARG 1 bb
 	METHOD e removeEntity (Lnn;)V
 		ARG 1 entity
 	METHOD f getFogColor (F)Latc;

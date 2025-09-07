@@ -4,6 +4,7 @@ CLASS nk net/minecraft/world/entity/AgableMob
 	METHOD a ageUp (I)V
 		ARG 1 age
 	METHOD a getBreedOffspring (Lnk;)Lnk;
+		COMMENT NOTE: this was a generic method probably <? extends AgableMob>
 		ARG 1 mob
 	METHOD a updateSize (Z)V
 		ARG 1 baby

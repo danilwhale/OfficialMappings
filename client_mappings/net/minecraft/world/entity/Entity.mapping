@@ -26,6 +26,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD Y footSize F
 	FIELD Z noPhysics Z
 	FIELD ab random Ljava/util/Random;
+	FIELD ac tickCount I
 	FIELD ad flameTime I
 	FIELD ae wasInWater Z
 	FIELD ag fireImmune Z

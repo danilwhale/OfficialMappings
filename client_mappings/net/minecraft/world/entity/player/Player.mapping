@@ -4,6 +4,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bp containerMenu Luy;
 	FIELD bs oBob F
 	FIELD bt bob F
+	FIELD bv takeXpDelay I
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
@@ -16,3 +17,4 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD bz removeSelectedItem ()V
 	METHOD p interact (Lnn;)Z
 	METHOD q attack (Lnn;)V
+	METHOD s giveExperiencePoints (I)V

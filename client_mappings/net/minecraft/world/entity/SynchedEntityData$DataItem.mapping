@@ -10,6 +10,9 @@ CLASS op net/minecraft/world/entity/SynchedEntityData$DataItem
 	METHOD a getId ()I
 	METHOD a setValue (Ljava/lang/Object;)V
 		ARG 1 value
+	METHOD a access$000 (Lop;Z)Z
+		ARG 0 this$0
+		ARG 1 val$dirty
 	METHOD a setDirty (Z)V
 		ARG 1 dirty
 	METHOD b getValue ()Ljava/lang/Object;

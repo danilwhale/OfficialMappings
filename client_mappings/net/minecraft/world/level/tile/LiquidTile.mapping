@@ -1,1 +1,2 @@
 CLASS apc net/minecraft/world/level/tile/LiquidTile
+	METHOD d getHeight (I)F

@@ -1,0 +1,5 @@
+CLASS uy net/minecraft/world/inventory/AbstractContainerMenu
+	METHOD a clicked (IIILuf;)Lye;
+	METHOD a backup (Lud;)S
+	METHOD a stillValid (Luf;)Z
+		ARG 1 player

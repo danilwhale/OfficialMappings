@@ -36,6 +36,7 @@ CLASS og net/minecraft/world/entity/Mob
 	METHOD j getJumpControl ()Lpd;
 	METHOD k getNavigation ()Lrf;
 	METHOD m getTarget ()Lof;
+	METHOD n ate ()V
 	METHOD o getAmbientSoundInterval ()I
 	METHOD r getAmbientSound ()Ljava/lang/String;
 	METHOD s getDeathLoot ()I

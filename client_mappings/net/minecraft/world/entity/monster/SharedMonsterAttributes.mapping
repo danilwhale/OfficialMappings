@@ -9,3 +9,4 @@ CLASS tp net/minecraft/world/entity/monster/SharedMonsterAttributes
 		ARG 0 instance
 	METHOD a saveAttributes (Lov;)Lcg;
 		ARG 0 map
+	METHOD a loadAttributes (Lov;Lcg;Llp;)V
