@@ -8,12 +8,14 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD G horizontalCollision Z
 	FIELD H verticalCollision Z
 	FIELD I collision Z
+	FIELD J hurtMarked Z
 	FIELD K inWeb Z
 	FIELD L slide Z
 	FIELD M removed Z
 	FIELD N heightOffset F
 	FIELD O bbWidth F
 	FIELD P bbHeight F
+	FIELD Q walkDistO F
 	FIELD R walkDist F
 	FIELD S moveDist F
 	FIELD T fallDistance F
@@ -25,20 +27,27 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD Z noPhysics Z
 	FIELD ab random Ljava/util/Random;
 	FIELD ad flameTime I
+	FIELD ae wasInWater Z
 	FIELD ag fireImmune Z
 	FIELD ah entityData Loo;
 	FIELD ai inChunk Z
 	FIELD aj xChunk I
 	FIELD ak yChunk I
 	FIELD al zChunk I
+	FIELD an hasImpulse Z
 	FIELD ao changingDimensionDelay I
+	FIELD ap isInsidePortal Z
+	FIELD aq portalTime I
 	FIELD ar dimension I
+	FIELD as portalEntranceDir I
 	FIELD b entityCounter I
 	FIELD bZ xp I
 	FIELD c nextStep I
 	FIELD ca yp I
 	FIELD cb zp I
 	FIELD d onFire I
+	FIELD f xRideRotX D
+	FIELD g yRideRotA D
 	FIELD h invulnerable Z
 	FIELD i uuid Ljava/util/UUID;
 	FIELD k entityId I
@@ -61,87 +70,255 @@ CLASS nn net/minecraft/world/entity/Entity
 	METHOD A lavaHurt ()V
 	METHOD B clearFire ()V
 	METHOD C outOfWorld ()V
+	METHOD D checkInsideTiles ()V
 	METHOD E getCollideBox ()Lasx;
+	METHOD F isFireImmune ()Z
+	METHOD G isInWaterOrRain ()Z
 	METHOD H isInWater ()Z
+	METHOD I updateInWaterState ()Z
+	METHOD J isInLava ()Z
+	METHOD K markHurt ()V
+	METHOD L isPickable ()Z
 	METHOD M isPushable ()Z
+	METHOD P repositionEntityAfterLoad ()Z
 	METHOD Q getEncodeId ()Ljava/lang/String;
+	METHOD R onLoadedFromSave ()V
+	METHOD S getShadowHeightOffs ()F
+	METHOD T isAlive ()Z
+	METHOD U isInWall ()Z
+	METHOD V rideTick ()V
 	METHOD W positionRider ()V
+	METHOD X getRidingHeight ()D
+	METHOD Y getRideHeight ()D
+	METHOD Z getPickRadius ()F
 	METHOD a defineSynchedData ()V
 	METHOD a handleEntityEvent (B)V
 		ARG 1 event
+	METHOD a shouldRenderAtSqrDistance (D)Z
+		ARG 1 d
+	METHOD a absMoveTo (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 xRot
+		ARG 8 yRot
+	METHOD a lerpTo (DDDFFI)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 xRot
+		ARG 8 yRot
+		ARG 9 steps
 	METHOD a checkFallDamage (DZ)V
+		ARG 1 distance
+		ARG 3 onGround
 	METHOD a setSize (FF)V
 		ARG 1 width
 		ARG 2 height
+	METHOD a moveRelative (FFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 speed
 	METHOD a spawnAtLocation (IIF)Lss;
+		ARG 1 item
+		ARG 2 count
+		ARG 3 yo
 	METHOD a playStepSound (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
+	METHOD a setSharedFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	METHOD a shouldTileExplode (Labr;Labw;IIIIF)Z
+		ARG 1 explosion
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
+		ARG 7 power
+	METHOD a getTileExplosionResistance (Labr;Labw;IIILaqz;)F
+		ARG 1 explosion
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 tile
+	METHOD a setLevel (Labw;)V
+		ARG 1 level
+	METHOD a isUnderLiquid (Lakc;)Z
+		ARG 1 liquid
+	METHOD a shouldRender (Latc;)Z
+		ARG 1 pos
 	METHOD a readAdditionalSaveData (Lby;)V
 		ARG 1 entityTag
+	METHOD a playSound (Ljava/lang/String;FF)V
+		ARG 1 name
+		ARG 2 volume
+		ARG 3 pitch
 	METHOD a fillCrashReportCategory (Lm;)V
 		ARG 1 crc
 	METHOD a hurt (Lnb;F)Z
 		ARG 1 source
 		ARG 2 damage
 	METHOD a ride (Lnn;)V
+		ARG 1 entity
+	METHOD a restoreFrom (Lnn;Z)V
+		ARG 1 entity
+	METHOD a killed (Lof;)V
+		ARG 1 entity
+	METHOD a thunderHit (Lsp;)V
+		ARG 1 bolt
 	METHOD a spawnAtLocation (Lye;F)Lss;
 		ARG 1 item
+		ARG 2 yo
 	METHOD a newDoubleList ([D)Lcg;
 		ARG 1 doubles
 	METHOD a newFloatList ([F)Lcg;
 		ARG 1 floats
-	METHOD ag isPassenger ()Z
+	METHOD aa getLookAngle ()Latc;
+	METHOD ab handleInsidePortal ()V
+	METHOD ac getDimensionChangingDelay ()I
+	METHOD ad animateHurt ()V
+	METHOD ae getEquipmentSlots ()[Lye;
+	METHOD af isOnFire ()Z
+	METHOD ag isRiding ()Z
+	METHOD ah isSneaking ()Z
+	METHOD ai isSprinting ()Z
+	METHOD aj isInvisible ()Z
+	METHOD ak isUsingItemFlag ()Z
 	METHOD al getAirSupply ()I
+	METHOD am makeStuckInWeb ()V
 	METHOD an getAName ()Ljava/lang/String;
+	METHOD ao getSubEntities ()[Lnn;
+	METHOD ap getYHeadRot ()F
+	METHOD aq isAttackable ()Z
+	METHOD ar isInvulnerable ()Z
+	METHOD as getMaxFallDistance ()I
+	METHOD at getPortalEntranceDir ()I
+	METHOD au isIgnoringTileTriggers ()Z
+	METHOD av displayFireAnimation ()Z
 	METHOD aw getUUID ()Ljava/util/UUID;
+	METHOD ax isPushedByWater ()Z
 	METHOD ay getDisplayName ()Ljava/lang/String;
 	METHOD b setPos (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD b moveTo (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 xRot
+		ARG 8 yRot
 	METHOD b causeFallDamage (F)V
 		ARG 1 distance
 	METHOD b setRot (FF)V
 		ARG 1 x
 		ARG 2 y
+	METHOD b changeDimension (I)V
+		ARG 1 dimension
 	METHOD b spawnAtLocation (II)Lss;
+		ARG 1 item
+		ARG 2 count
 	METHOD b addAdditionalSaveData (Lby;)V
 		ARG 1 entityTag
+	METHOD b awardKillScore (Lnn;I)V
+		ARG 1 entity
+		ARG 2 score
+	METHOD b setSneaking (Z)V
+		ARG 1 sneaking
 	METHOD b_ playerTouch (Luf;)V
 		ARG 1 player
 	METHOD c isFree (DDD)Z
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD c getLightColor (F)I
+		ARG 1 a
 	METHOD c turn (FF)V
 		ARG 1 x
 		ARG 2 y
+	METHOD c setEquippedSlot (ILye;)V
+		ARG 1 slot
+		ARG 2 item
+	METHOD c save (Lby;)Z
+		ARG 1 tag
+	METHOD c interact (Luf;)Z
+		ARG 1 player
+	METHOD c setSprinting (Z)V
+		ARG 1 sprinting
 	METHOD d move (DDD)V
 		ARG 1 xa
 		ARG 3 ya
 		ARG 5 za
+	METHOD d getBrightness (F)F
+		ARG 1 a
 	METHOD d setOnFire (I)V
 		ARG 1 seconds
+	METHOD d saveAsMount (Lby;)Z
+		ARG 1 tag
 	METHOD d distanceTo (Lnn;)F
+		ARG 1 entity
+	METHOD d isInvisibleTo (Luf;)Z
+		ARG 1 player
+	METHOD d setInvisible (Z)V
+		ARG 1 invisible
 	METHOD e distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD e setYHeadRot (F)V
+		ARG 1 yHeadRot
+	METHOD e burn (I)V
+		ARG 1 damage
 	METHOD e saveWithoutId (Lby;)V
 		ARG 1 entityTag
 	METHOD e distanceToSqr (Lnn;)D
+		ARG 1 entity
 	METHOD e setUsingItemFlag (Z)V
 		ARG 1 usingItemFlag
 	METHOD e_ makeStepSound ()Z
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD f getEyeHeight ()F
+	METHOD f getHeadHeight ()F
 	METHOD f distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD f getSharedFlag (I)Z
+		ARG 1 flag
 	METHOD f load (Lby;)V
 		ARG 1 entityTag
+	METHOD f push (Lnn;)V
+		ARG 1 entity
+	METHOD g push (DDD)V
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
 	METHOD g setAirSupply (I)V
+		ARG 1 airSupply
+	METHOD g getCollideAgainstBox (Lnn;)Lasx;
+		ARG 1 entity
+	METHOD h lerpMotion (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD h is (Lnn;)Z
+		ARG 1 entity
+	METHOD i checkInTile (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD i skipAttackInteraction (Lnn;)Z
+		ARG 1 entity
+	METHOD j copyPosition (Lnn;)V
+		ARG 1 entity
 	METHOD l_ tick ()V
 	METHOD v getEntityData ()Loo;
 	METHOD w resetPos ()V
 	METHOD x remove ()V
 	METHOD y baseTick ()V
+	METHOD z getPortalWaitTime ()I

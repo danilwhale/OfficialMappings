@@ -4,4 +4,5 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD ah isReady ()Z
 	METHOD ap getProxy ()Ljava/net/Proxy;
 	METHOD aq getMillis ()J
+	METHOD u isNetherEnabled ()Z
 	METHOD v forkAndRun ()V
