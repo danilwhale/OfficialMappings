@@ -32,6 +32,9 @@ CLASS asx net/minecraft/world/phys/AABB
 		ARG 2 x
 	METHOD a contains (Latc;)Z
 		ARG 1 other
+	METHOD a clip (Latc;Latc;)Lata;
+		ARG 1 a
+		ARG 2 b
 	METHOD b getSize ()D
 	METHOD b grow (DDD)Lasx;
 		ARG 1 xa
@@ -49,6 +52,8 @@ CLASS asx net/minecraft/world/phys/AABB
 	METHOD b clipYCollide (Lasx;D)D
 		ARG 1 other
 		ARG 2 y
+	METHOD b containsX (Latc;)Z
+		ARG 1 v
 	METHOD c copy ()Lasx;
 	METHOD c cloneMove (DDD)Lasx;
 		ARG 1 xa
@@ -57,10 +62,16 @@ CLASS asx net/minecraft/world/phys/AABB
 	METHOD c clipZCollide (Lasx;D)D
 		ARG 1 other
 		ARG 2 z
+	METHOD c containsY (Latc;)Z
+		ARG 1 v
 	METHOD d move (DDD)Lasx;
 		ARG 1 xa
 		ARG 3 ya
 		ARG 5 za
+	METHOD d set (Lasx;)V
+		ARG 1 o
+	METHOD d containsZ (Latc;)Z
+		ARG 1 v
 	METHOD e shrink (DDD)Lasx;
 		ARG 1 xa
 		ARG 3 ya
