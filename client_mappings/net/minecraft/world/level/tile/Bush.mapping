@@ -1,1 +1,10 @@
-CLASS aqi net/minecraft/world/level/tile/Bush
+CLASS ane net/minecraft/world/level/tile/Bush
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD e checkAlive (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g_ mayPlaceOn (I)Z
+		ARG 1 tid

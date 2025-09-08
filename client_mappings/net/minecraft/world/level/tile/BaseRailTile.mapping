@@ -1,1 +1,23 @@
 CLASS amy net/minecraft/world/level/tile/BaseRailTile
+	FIELD a isStraight Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 isStraight
+	METHOD a updateState (Labw;IIIIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a updateDir (Labw;IIIZ)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD d_ isRail (Labw;III)Z
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e isStraight ()Z
+	METHOD e_ isRail (I)Z
+		ARG 0 tile

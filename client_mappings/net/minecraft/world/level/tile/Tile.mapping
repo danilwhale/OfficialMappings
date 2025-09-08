@@ -51,14 +51,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD aX snow Laqz;
 	FIELD aY ice Laqz;
 	FIELD aZ topSnow Laqz;
-	FIELD aa pistonStickyBase Last;
+	FIELD aa stickyPiston Last;
 	FIELD ab web Laqz;
 	FIELD ac tallgrass Laqv;
 	FIELD ad deadbush Lant;
-	FIELD ae pistonBase Last;
+	FIELD ae piston Last;
 	FIELD af pistonArm Lasu;
 	FIELD ag cloth Laqz;
-	FIELD ah pistonExtension Lasv;
 	FIELD ai flower Lane;
 	FIELD aj rose Lane;
 	FIELD ak brownMushroom Lane;
@@ -185,44 +184,101 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD a getTexture (II)Lms;
 		ARG 1 face
 		ARG 2 data
-	METHOD a getResource (ILjava/util/Random;I)I
+	METHOD a getResourceCount (ILjava/util/Random;)I
 		ARG 2 random
+	METHOD a getResource (ILjava/util/Random;I)I
+		ARG 1 data
+		ARG 2 random
+	METHOD a mayPick (IZ)Z
+		ARG 1 data
+		ARG 2 allowLiquid
 	METHOD a dropFromExplosion (Labr;)Z
 	METHOD a getTickDelay (Labw;)I
 		ARG 1 level
 	METHOD a onPlace (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD a neighborChanged (Labw;IIII)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD a spawnResources (Labw;IIIIFI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 luck
+	METHOD a onRemove (Labw;IIIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+		ARG 6 data
+	METHOD a playerWillDestroy (Labw;IIIILuf;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 player
 	METHOD a wasExploded (Labw;IIILabr;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 explosion
 	METHOD a addAABBs (Labw;IIILasx;Ljava/util/List;Lnn;)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 bb
+		ARG 6 boxes
+		ARG 7 entity
 	METHOD a clip (Labw;IIILatc;Latc;)Lata;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 a
+		ARG 6 b
 	METHOD a tick (Labw;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 random
+	METHOD a entityInside (Labw;IIILnn;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD a handleEntityInside (Labw;IIILnn;Latc;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 pos
 	METHOD a setPlacedBy (Labw;IIILof;Lye;)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
-		ARG 6 instance
+		ARG 6 item
 	METHOD a attack (Labw;IIILuf;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
 	METHOD a use (Labw;IIILuf;IFFF)Z
 		ARG 1 level
 		ARG 2 x
@@ -246,11 +302,20 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 face
 	METHOD a setSoundType (Lard;)Laqz;
 		ARG 1 soundType
+	METHOD a containsX (Latc;)Z
+		ARG 1 v
 	METHOD a getResourceCount (Ljava/util/Random;)I
 		ARG 1 random
 	METHOD a registerIcons (Lmt;)V
 		ARG 1 icons
+	METHOD a getExplosionResistance (Lnn;)F
+		ARG 1 entity
 	METHOD a getDestroyProgress (Luf;Labw;III)F
+		ARG 1 player
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
@@ -262,11 +327,39 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 	METHOD b tileEvent (Labw;IIIII)Z
-	METHOD b (Lacf;III)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 event
+		ARG 6 data
+	METHOD b stepOn (Labw;IIILnn;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD b popResource (Labw;IIILye;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 item
+	METHOD b isPathfindable (Lacf;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b getSignal (Lacf;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD b containsY (Latc;)Z
+		ARG 1 v
+	METHOD b setTicking (Z)Laqz;
+		ARG 1 ticking
 	METHOD b_ getAnalogOutputSignal (Labw;IIII)I
 		ARG 1 level
 		ARG 2 x
@@ -281,12 +374,36 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD c isSolidRender ()Z
 	METHOD c setDestroyTime (F)Laqz;
 		ARG 1 destroyTime
+	METHOD c mayPlace (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c mayPlace (Labw;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD c spawnResources (Labw;IIIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD c getColor (Lacf;III)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD c getDirectSignal (Lacf;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD c containsZ (Latc;)Z
+		ARG 1 v
 	METHOD c_ getTileAABB (Labw;III)Lasx;
 		ARG 1 level
 		ARG 2 x
@@ -295,17 +412,39 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD d getRenderShape ()I
 	METHOD d_ getSilkTouchItemInstance (I)Lye;
 		ARG 1 data
+	METHOD f isSignalSource ()Z
+	METHOD f canSurvive (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g updateDefaultShape ()V
+	METHOD h getPistonPushReaction ()I
+	METHOD j popExperience (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 value
 	METHOD k setLightBlock (I)Laqz;
 		ARG 1 lightBlock
 	METHOD l (I)Z
 		ARG 0 id
-	METHOD l onRemove (Labw;IIII)V
+	METHOD l getDestroySpeed (Labw;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD m mayPick ()Z
 	METHOD m getTexture (I)Lms;
 		ARG 1 face
+	METHOD n getRenderLayer ()I
 	METHOD o getColor ()I
 	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
+	METHOD s isTicking ()Z
 	METHOD s_ init ()V
+	METHOD t isEntityTile ()Z
 	METHOD u getShapeX0 ()D
 	METHOD v getShapeX1 ()D
 	METHOD w getShapeY0 ()D

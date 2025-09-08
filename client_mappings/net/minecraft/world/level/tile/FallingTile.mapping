@@ -1,0 +1,4 @@
+CLASS aos net/minecraft/world/level/tile/FallingTile
+	FIELD c instaFall Z
+	METHOD <init> (I)V
+		ARG 1 d
