@@ -32,5 +32,6 @@ CLASS aiv net/minecraft/world/level/levelgen/structure/StructureStart
 	METHOD b readAdditionalSaveData (Lby;)V
 		ARG 1 tag
 	METHOD c calculateBoundingBox ()V
+	METHOD d isValid ()Z
 	METHOD e getChunkX ()I
 	METHOD f getChunkZ ()I

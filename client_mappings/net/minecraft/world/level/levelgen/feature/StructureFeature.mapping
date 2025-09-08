@@ -8,9 +8,9 @@ CLASS ain net/minecraft/world/level/levelgen/feature/StructureFeature
 		ARG 1 x
 		ARG 2 z
 		ARG 3 start
-	METHOD a (Labw;)V
+	METHOD a restoreSavedData (Labw;)V
 		ARG 1 level
-	METHOD a (Labw;III)Laco;
+	METHOD a getNearestGeneratedFeature (Labw;III)Laco;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -23,15 +23,15 @@ CLASS ain net/minecraft/world/level/levelgen/feature/StructureFeature
 	METHOD b createStructureStart (II)Laiv;
 		ARG 1 x
 		ARG 2 z
-	METHOD b (III)Z
+	METHOD b hasStructureAt (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD c (III)Laiv;
+	METHOD c getStructureAt (III)Laiv;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD d (III)Z
+	METHOD d isInsideFeature (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

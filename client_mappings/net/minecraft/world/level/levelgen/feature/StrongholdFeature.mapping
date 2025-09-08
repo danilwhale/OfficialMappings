@@ -4,3 +4,5 @@ CLASS ahq net/minecraft/world/level/levelgen/feature/StrongholdFeature
 	FIELD g strongholdPos [Labp;
 	FIELD h distance D
 	FIELD i spread I
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 config

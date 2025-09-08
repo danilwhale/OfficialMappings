@@ -1,1 +1,2 @@
 CLASS aix net/minecraft/world/level/levelgen/feature/VillageFeature$VillageStart
+	FIELD c valid Z
