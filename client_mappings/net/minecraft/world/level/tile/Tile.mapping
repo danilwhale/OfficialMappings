@@ -205,6 +205,17 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 newTile
+	METHOD a getStateForPlacement (Labw;IIIIFFFI)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+		ARG 6 xa
+		ARG 7 ya
+		ARG 8 za
+		ARG 9 data
 	METHOD a spawnResources (Labw;IIIIFI)V
 		ARG 1 level
 		ARG 2 x
@@ -333,6 +344,12 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 event
 		ARG 6 data
+	METHOD b animateTick (Labw;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
 	METHOD b stepOn (Labw;IIILnn;)V
 		ARG 1 level
 		ARG 2 x

@@ -8,6 +8,9 @@ CLASS amy net/minecraft/world/level/tile/BaseRailTile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 data
+		ARG 6 shape
+		ARG 7 newTile
 	METHOD a updateDir (Labw;IIIZ)V
 		ARG 1 level
 		ARG 2 x

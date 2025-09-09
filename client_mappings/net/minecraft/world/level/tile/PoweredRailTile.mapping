@@ -1,1 +1,14 @@
 CLASS apv net/minecraft/world/level/tile/PoweredRailTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a findPoweredRailSignal (Labw;IIIIZI)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD a isSameRailWithPower (Labw;IIIZII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

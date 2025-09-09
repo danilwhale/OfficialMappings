@@ -1,1 +1,20 @@
 CLASS anb net/minecraft/world/level/tile/BedTile
+	FIELD a HEAD_DIRECTION_OFFSETS [[I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a setOccupied (Labw;IIIZ)V
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 occupied
+	METHOD b findStandUpPosition (Labw;IIII)Lt;
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 steps
+	METHOD c isOccupied (I)Z
+		ARG 0 data
+	METHOD f_ isHeadPiece (I)Z
+		ARG 0 data

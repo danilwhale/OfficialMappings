@@ -43,6 +43,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 settings
 		ARG 5 profiler
 		ARG 6 logger
+	METHOD C hasNeighborSignal (III)Z
 	METHOD E setSpawnPos (III)V
 		ARG 1 x
 		ARG 2 y
@@ -224,7 +225,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 r
-	METHOD b (IIIII)Z
+	METHOD b setData (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

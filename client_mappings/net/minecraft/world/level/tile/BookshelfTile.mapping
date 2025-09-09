@@ -1,1 +1,3 @@
 CLASS anc net/minecraft/world/level/tile/BookshelfTile
+	METHOD <init> (I)V
+		ARG 1 id

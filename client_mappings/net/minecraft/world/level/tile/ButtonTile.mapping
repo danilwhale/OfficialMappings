@@ -1,1 +1,23 @@
 CLASS anf net/minecraft/world/level/tile/ButtonTile
+	FIELD a sensitive Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 sensitive
+	METHOD d updateShape (I)V
+		ARG 1 data
+	METHOD d updateNeighbours (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD m checkCanSurvive (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD n checkPressed (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

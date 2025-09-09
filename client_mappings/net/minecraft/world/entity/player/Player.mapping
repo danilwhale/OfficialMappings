@@ -5,16 +5,20 @@ CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bs oBob F
 	FIELD bt bob F
 	FIELD bv takeXpDelay I
+	METHOD a openBeacon (Larw;)V
+	METHOD a openBrewingStand (Larx;)V
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
 		ARG 1 stat
 		ARG 2 amount
 	METHOD a drop (Z)Lss;
+	METHOD bI getFoodData ()Lux;
 	METHOD br isUsingItem ()Z
 	METHOD bt releaseUsingItem ()V
 	METHOD by getSelectedItem ()Lye;
 	METHOD bz removeSelectedItem ()V
+	METHOD g canEat (Z)Z
 	METHOD p interact (Lnn;)Z
 	METHOD q attack (Lnn;)V
 	METHOD s giveExperiencePoints (I)V
