@@ -1,5 +1,6 @@
 CLASS acf net/minecraft/world/level/LevelSource
 	METHOD R getMaxBuildHeight ()I
+	METHOD T isAllEmpty ()Z
 	METHOD V getVec3Pool ()Latd;
 	METHOD a getBiome (II)Lacq;
 		ARG 1 x
@@ -20,11 +21,21 @@ CLASS acf net/minecraft/world/level/LevelSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD i (IIII)F
+	METHOD h getLightColor (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 minBrightness
+	METHOD i getBrightness (IIII)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 min
+	METHOD j getDirectSignal (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dir
 	METHOD q getBrightness (III)F
 		ARG 1 x
 		ARG 2 y
@@ -33,4 +44,15 @@ CLASS acf net/minecraft/world/level/LevelSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD w isSolidTile (III)Z
+	METHOD t isSolidRenderTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD u isSolidBlockingCubeAndNotSignalSource (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD w isSolidBlockingTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

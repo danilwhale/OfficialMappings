@@ -43,6 +43,10 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 settings
 		ARG 5 profiler
 		ARG 6 logger
+	METHOD B getDirectSignalTo (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD C hasNeighborSignal (III)Z
 	METHOD E setSpawnPos (III)V
 		ARG 1 x
@@ -105,6 +109,9 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a isTopSolidBlocking (Laqz;I)Z
+		ARG 1 tile
+		ARG 2 data
 	METHOD a getCubes (Lasx;)Ljava/util/List;
 		ARG 1 bb
 	METHOD a containsMaterial (Lasx;Lakc;)Z

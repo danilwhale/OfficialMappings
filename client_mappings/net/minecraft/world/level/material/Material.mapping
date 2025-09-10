@@ -23,7 +23,7 @@ CLASS akc net/minecraft/world/level/material/Material
 	METHOD f notAlwaysDestroyable ()Lakc;
 	METHOD g flammable ()Lakc;
 	METHOD h isFlammable ()Z
-	METHOD k letsWaterThrough ()Z
+	METHOD k isSolidBlocking ()Z
 	METHOD l isAlwaysDestroyable ()Z
 	METHOD m getPushReaction ()I
 	METHOD n replaceable ()Lakc;

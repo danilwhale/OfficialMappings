@@ -457,7 +457,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 value
 	METHOD k setLightBlock (I)Laqz;
 		ARG 1 lightBlock
-	METHOD l (I)Z
+	METHOD l isSolidBlockingCubeAndNotSignalSource (I)Z
 		ARG 0 id
 	METHOD l getDestroySpeed (Labw;III)F
 		ARG 1 level
