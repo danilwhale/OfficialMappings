@@ -1,1 +1,2 @@
 CLASS any net/minecraft/world/level/tile/DispenserTile
+	METHOD a getDispensePosition (Lbf;)Lbo;

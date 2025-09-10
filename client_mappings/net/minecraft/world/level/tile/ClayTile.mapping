@@ -1,1 +1,3 @@
 CLASS anl net/minecraft/world/level/tile/ClayTile
+	METHOD <init> (I)V
+		ARG 1 id

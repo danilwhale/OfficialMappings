@@ -1,0 +1,3 @@
+CLASS aqf net/minecraft/world/level/tile/RepeaterTile
+	FIELD b DELAY_RENDER_OFFSETS [D
+	FIELD c DELAYS [I

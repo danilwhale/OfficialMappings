@@ -1,1 +1,13 @@
 CLASS anr net/minecraft/world/level/tile/CropTile
+	METHOD e_ onFertilized (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD j getBaseSeedId ()I
+	METHOD k getBasePlantId ()I
+	METHOD k getGrowthSpeed (Labw;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

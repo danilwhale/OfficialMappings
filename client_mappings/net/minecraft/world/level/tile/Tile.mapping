@@ -206,7 +206,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 newTile
-	METHOD a getStateForPlacement (Labw;IIIIFFFI)I
+	METHOD a getPlacementDataValue (Labw;IIIIFFFI)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -300,6 +300,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 7 xa
 		ARG 8 ya
 		ARG 9 za
+	METHOD a playerDestroy (Labw;Luf;IIII)V
+		ARG 1 level
+		ARG 2 player
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
 	METHOD a updateShape (Lacf;III)V
 		ARG 1 level
 		ARG 2 x
@@ -427,6 +434,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 	METHOD d getRenderShape ()I
+	METHOD d asItemInstance (Labw;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD d_ getSilkTouchItemInstance (I)Lye;
 		ARG 1 data
 	METHOD f isSignalSource ()Z

@@ -1,3 +1,3 @@
 CLASS aoe net/minecraft/world/level/tile/EntityTile
-	METHOD b createTileEntity (Labw;)Lasp;
+	METHOD b newTileEntity (Labw;)Lasp;
 		ARG 1 level

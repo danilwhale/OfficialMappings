@@ -1,1 +1,8 @@
 CLASS ans net/minecraft/world/level/tile/DaylightDetectorTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD i_ updateSignalStrength (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -1,0 +1,6 @@
+CLASS gl net/minecraft/core/dispenser/AbstractProjectileDispenseBehavior
+	METHOD a getUncertainity ()F
+	METHOD a getProjectile (Labw;Lbo;)Lun;
+		ARG 1 level
+		ARG 2 position
+	METHOD b getPower ()F

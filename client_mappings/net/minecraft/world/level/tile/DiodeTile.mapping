@@ -1,1 +1,67 @@
-CLASS aqf net/minecraft/world/level/tile/DiodeTile
+CLASS anv net/minecraft/world/level/tile/DiodeTile
+	FIELD a isOn Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 isOn
+	METHOD c isOn (I)Z
+		ARG 1 data
+	METHOD d shouldTurnOn (Labw;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD d getOutputSignal (Lacf;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD e isAlternateInput (I)Z
+		ARG 1 data
+	METHOD e getInputSignal (Labw;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD e isLocked (Lacf;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD f isDiode (I)Z
+		ARG 0 tile
+	METHOD f checkTickOnNeighbor (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 newTile
+	METHOD f getAlternateSignalAt (Lacf;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD g isSameDiode (I)Z
+		ARG 1 tile
+	METHOD g getAlternateSignal (Lacf;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD h getTurnOffDelay (I)I
+		ARG 1 data
+	METHOD h shouldPrioritize (Labw;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD i getOnTile ()Lanv;
+	METHOD j getOffTile ()Lanv;
+	METHOD k_ getTurnOnDelay (I)I
+		ARG 1 data
