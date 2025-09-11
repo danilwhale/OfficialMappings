@@ -2,6 +2,14 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD aA hurtDir F
 	FIELD aB deathTime I
 	FIELD aC attackTime I
+	FIELD aD oAttackAnim F
+	FIELD aE attackAnim F
+	FIELD aF walkAnimSpeedO F
+		COMMENT animationSpeedOld
+	FIELD aG walkAnimSpeed F
+		COMMENT animationSpeed
+	FIELD aH walkAnimSpeedPos F
+		COMMENT animationSpeedPos
 	FIELD aJ oTilt F
 	FIELD aK tilt F
 	FIELD aL timeOffs F
@@ -12,16 +20,28 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD aQ yHeadRotO F
 	FIELD aR flyingSpeed F
 	FIELD aS lastHurtByPlayer Luf;
+	FIELD aT lastHurtByPlayerTime I
+	FIELD aU dead Z
 	FIELD aV noActionTime I
+	FIELD aW oRun F
+	FIELD aX run F
+	FIELD aY animStep F
+	FIELD aZ animStepO F
+	FIELD au swinging Z
+	FIELD av swingTime I
+	FIELD aw removeArrowTime I
 	FIELD ay hurtTime I
 	FIELD az hurtDuration I
 	FIELD b SPEED_MODIFIER_SPRINTING_UUID Ljava/util/UUID;
+	FIELD bb deathScore I
+	FIELD bc lastHurt F
 	FIELD bn lastHurtMob Lof;
 	FIELD bo lastHurtMobTimestamp I
 	FIELD c SPEED_MODIFIER_SPRINTING Lot;
 	FIELD d attributes Lov;
 	FIELD e combatTracker Lna;
 	FIELD f activeEffects Ljava/util/HashMap;
+	FIELD g equipmentSlots [Lye;
 	FIELD h effectsDirty Z
 	FIELD i lastHurtByMob Lof;
 	FIELD j lastHurtByMobTimestamp I
@@ -31,10 +51,23 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD a hasEffect (Lni;)Z
 		ARG 1 effect
 	METHOD a onEffectAdded (Lnj;)V
+		ARG 1 effect
 	METHOD a onEffectUpdated (Lnj;Z)V
+		ARG 1 effect
+		ARG 2 a
+	METHOD a knockback (Lnn;FDD)V
+		ARG 1 e
+		ARG 2 x
+		ARG 3 y
+		ARG 5 z
 	METHOD a take (Lnn;I)V
 	METHOD a getAttribute (Lor;)Los;
 		ARG 1 attribute
+	METHOD a breakItem (Lye;)V
+		ARG 1 item
+	METHOD a (ZI)V
+		COMMENT drops deaht loot but idkf which one
+	METHOD aA canBreatheUnderwater ()Z
 	METHOD aB tickDeath ()V
 	METHOD aC isAlwaysExperienceDropper ()Z
 	METHOD aD getRandom ()Ljava/util/Random;
@@ -44,15 +77,19 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD aH getLastHurtMobTimestamp ()I
 	METHOD aI getNoActionTime ()I
 	METHOD aJ tickEffects ()V
+	METHOD aK removeAllEffects ()V
 	METHOD aL getActiveEffects ()Ljava/util/Collection;
 	METHOD aM isInvertedHealAndHarm ()Z
 	METHOD aN getHealth ()F
 	METHOD aO getHurtSound ()Ljava/lang/String;
 	METHOD aP getDeathSound ()Ljava/lang/String;
 	METHOD aQ getArmorValue ()I
+	METHOD aR getCombatTracker ()Lna;
 	METHOD aS getKillCredit ()Lof;
 	METHOD aT getMaxHealth ()F
+	METHOD aU getArrowCount ()I
 	METHOD aV swing ()V
+	METHOD aW updateSwingTime ()V
 	METHOD aX getAttributes ()Lov;
 	METHOD aY getMobType ()Loj;
 	METHOD aZ getCarriedItem ()Lye;
@@ -60,11 +97,15 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD b getEffect (Lni;)Lnj;
 		ARG 1 effect
 	METHOD b onEffectRemoved (Lnj;)V
+		ARG 1 effect
 	METHOD b setLastHurtByMob (Lof;)V
 		ARG 1 mb
+	METHOD b (ZI)V
+		COMMENT drops deaht loot but idkf which one
 	METHOD ba getSoundVolume ()F
 	METHOD bb getVoicePitch ()F
 	METHOD bc isImmobile ()Z
+	METHOD be jumpFromGround ()V
 	METHOD bf useNewAi ()Z
 	METHOD bh isSleeping ()Z
 	METHOD bk serverAiMobStep ()V
@@ -72,9 +113,13 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD c aiStep ()V
 	METHOD c addEffect (Lnj;)V
 		ARG 1 effect
+	METHOD d actuallyHurt (Lnb;F)V
 	METHOD d canBeAffected (Lnj;)Z
 		ARG 1 effect
 	METHOD e onLadder ()Z
+	METHOD e travel (FF)V
+		ARG 1 xxa
+		ARG 2 yya
 	METHOD e getExperienceReward (Luf;)I
 		ARG 1 player
 	METHOD f heal (F)V
@@ -82,6 +127,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD g setHealth (F)V
 		ARG 1 health
 	METHOD g_ isBaby ()Z
+	METHOD h getCurrentSwingDuration ()I
 	METHOD h decreaseAirSupply (I)I
 		ARG 1 supply
 	METHOD i setSpeed (F)V
@@ -96,4 +142,6 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		ARG 1 mob
 	METHOD l getPos (F)Latc;
 	METHOD m setAbsorptionAmount (F)V
+	METHOD m setArrowCount (I)V
+		ARG 1 count
 	METHOD o canSee (Lnn;)Z

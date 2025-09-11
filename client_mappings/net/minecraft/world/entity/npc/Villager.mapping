@@ -24,6 +24,7 @@ CLASS ub net/minecraft/world/entity/npc/Villager
 		ARG 1 name
 	METHOD bT getProfession ()I
 	METHOD bW isTrading ()Z
+	METHOD h getCurrentSwingDuration ()I
 	METHOD p getRecipeChance (F)F
 		ARG 1 luck
 	METHOD p setProfession (I)V

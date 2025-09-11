@@ -13,3 +13,7 @@ CLASS pt net/minecraft/world/entity/ai/goal/GoalSelector
 		ARG 2 goal
 	METHOD a removeGoal (Lps;)V
 		ARG 1 goal
+	METHOD a canContinueToUse (Lpu;)Z
+		ARG 1 goal
+	METHOD b canUse (Lpu;)Z
+		ARG 1 goal

@@ -1,1 +1,2 @@
 CLASS na net/minecraft/world/damagesource/CombatTracker
+	METHOD c getKiller ()Lof;

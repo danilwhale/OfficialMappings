@@ -22,6 +22,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD by getSelectedItem ()Lye;
 	METHOD bz removeSelectedItem ()V
 	METHOD g canEat (Z)Z
+	METHOD h getCurrentSwingDuration ()I
 	METHOD p interact (Lnn;)Z
 	METHOD q attack (Lnn;)V
 	METHOD s giveExperiencePoints (I)V

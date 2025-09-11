@@ -1,1 +1,2 @@
 CLASS tv net/minecraft/world/entity/monster/Witch
+	METHOD h getCurrentSwingDuration ()I

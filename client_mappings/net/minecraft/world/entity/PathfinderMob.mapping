@@ -1,3 +1,6 @@
 CLASS on net/minecraft/world/entity/PathfinderMob
+	METHOD bP getRestrictCenter ()Lt;
+	METHOD bQ getRestrictRadius ()F
+	METHOD bS hasRestriction ()Z
 	METHOD o onLeashDistance (F)V
 		ARG 1 d

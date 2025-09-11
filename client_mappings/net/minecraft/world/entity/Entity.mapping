@@ -29,6 +29,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD ac tickCount I
 	FIELD ad flameTime I
 	FIELD ae wasInWater Z
+	FIELD af invulnerableTime I
 	FIELD ag fireImmune Z
 	FIELD ah entityData Loo;
 	FIELD ai inChunk Z

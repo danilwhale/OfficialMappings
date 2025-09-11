@@ -1,2 +1,7 @@
 CLASS rh net/minecraft/world/entity/ai/util/RandomPos
+	FIELD a ZERO Latc;
 	METHOD a getPos (Lon;II)Latc;
+		ARG 0 mob
+	METHOD c generateRandomPos (Lon;IILatc;)Latc;
+		ARG 0 mob
+		ARG 1 a

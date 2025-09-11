@@ -86,6 +86,7 @@ CLASS rs net/minecraft/world/entity/animal/horse/EntityHorse
 		ARG 1 player
 	METHOD g tameWithName (Luf;)Z
 		ARG 1 player
+	METHOD h getCurrentSwingDuration ()I
 	METHOD h doPlayerRide (Luf;)V
 		ARG 1 player
 	METHOD i setTamed (Z)V

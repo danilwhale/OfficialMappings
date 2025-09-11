@@ -1,1 +1,6 @@
 CLASS pb net/minecraft/world/entity/ai/control/BodyRotationControl
+	FIELD a mob Lof;
+	FIELD b headStableTime I
+	FIELD c lastStableYHeadRot F
+	METHOD <init> (Lof;)V
+		ARG 1 mob

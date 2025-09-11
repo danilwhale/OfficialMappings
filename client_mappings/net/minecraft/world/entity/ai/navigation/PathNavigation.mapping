@@ -4,8 +4,17 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 	FIELD c path Lalf;
 	FIELD d speedModifier D
 	FIELD e dist Los;
+	FIELD g tick I
+	METHOD <init> (Log;Labw;)V
+		ARG 1 mob
+		ARG 2 level
 	METHOD a moveTo (DDDD)Z
 	METHOD a moveTo (Lnn;D)Z
+	METHOD e getPath ()Lalf;
 	METHOD e setCanFloat (Z)V
+	METHOD f tick ()V
 	METHOD g isDone ()Z
 	METHOD h stop ()V
+	METHOD i recomputePath ()V
+	METHOD j getTempMobPos ()Latc;
+	METHOD k getSurfaceY ()I

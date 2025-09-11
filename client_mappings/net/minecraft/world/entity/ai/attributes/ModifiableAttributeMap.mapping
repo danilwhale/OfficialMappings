@@ -1,0 +1,3 @@
+CLASS pa net/minecraft/world/entity/ai/attributes/ModifiableAttributeMap
+	FIELD c attributesByLegacy Ljava/util/Map;
+	FIELD d dirtyAttributes Ljava/util/Set;

@@ -1,1 +1,2 @@
 CLASS rv net/minecraft/world/entity/animal/AbstractGolem
+	METHOD h getCurrentSwingDuration ()I

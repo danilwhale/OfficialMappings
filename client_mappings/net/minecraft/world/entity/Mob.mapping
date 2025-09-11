@@ -33,6 +33,7 @@ CLASS og net/minecraft/world/entity/Mob
 	METHOD bs canSpawn ()Z
 	METHOD bv getMaxSpawnClusterSize ()I
 	METHOD h getLookControl ()Lpe;
+	METHOD i getMoveControl ()Lpf;
 	METHOD j getJumpControl ()Lpd;
 	METHOD k getNavigation ()Lrf;
 	METHOD m getTarget ()Lof;
