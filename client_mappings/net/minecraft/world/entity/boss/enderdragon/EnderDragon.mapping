@@ -1,2 +1,14 @@
 CLASS sk net/minecraft/world/entity/boss/enderdragon/EnderDragon
+	FIELD bn positions [[D
+	FIELD bo posPointer I
+	FIELD bp subEntities [Lsi;
+	FIELD bq head Lsi;
+	FIELD br body Lsi;
+	FIELD bs tail1 Lsi;
+	FIELD bt tail2 Lsi;
+	FIELD bu tail3 Lsi;
+	FIELD bv wing1 Lsi;
+	FIELD bw wing2 Lsi;
+	FIELD bx oFlapTime F
+	FIELD by flapTime F
 	METHOD h getCurrentSwingDuration ()I

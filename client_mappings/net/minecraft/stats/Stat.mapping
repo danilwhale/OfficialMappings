@@ -16,3 +16,5 @@ CLASS ku net/minecraft/stats/Stat
 		ARG 2 name
 		ARG 3 formatter
 	METHOD i getName ()Ljava/lang/String;
+	METHOD j access$000 ()Ljava/text/NumberFormat;
+	METHOD k access$100 ()Ljava/text/DecimalFormat;

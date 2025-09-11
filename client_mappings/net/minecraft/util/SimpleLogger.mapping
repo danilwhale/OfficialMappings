@@ -7,4 +7,6 @@ CLASS lc net/minecraft/util/SimpleLogger
 		ARG 1 name
 		ARG 2 messagePrefix
 		ARG 3 filePath
+	METHOD a access$000 (Llc;)Ljava/lang/String;
+		ARG 0 this$0
 	METHOD b init ()V

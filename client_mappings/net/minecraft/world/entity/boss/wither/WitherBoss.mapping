@@ -1,1 +1,2 @@
 CLASS sm net/minecraft/world/entity/boss/wither/WitherBoss
+	FIELD bw LIVING_ENTITY_SELECTOR Lnw;
