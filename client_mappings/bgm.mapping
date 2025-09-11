@@ -1,0 +1,2 @@
+CLASS bgm
+	METHOD a renderFlat (Lasx;)V
