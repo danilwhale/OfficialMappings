@@ -1,3 +1,0 @@
-CLASS bjd TileEntityRenderDispatcher
-	FIELD a instance Lbjd;
-	METHOD a hasRenderer (Lasp;)Z
