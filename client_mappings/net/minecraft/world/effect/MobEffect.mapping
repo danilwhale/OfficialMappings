@@ -5,6 +5,7 @@ CLASS ni net/minecraft/world/effect/MobEffect
 	FIELD L descriptionId Ljava/lang/String;
 	FIELD a mobEffects [Lni;
 	FIELD k CONFUSION Lni;
+	FIELD l REGENERATION Lni;
 	FIELD r NIGHT_VISION Lni;
 	METHOD <init> (IZI)V
 		ARG 1 id

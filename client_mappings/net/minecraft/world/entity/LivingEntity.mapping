@@ -63,9 +63,11 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD b setLastHurtByMob (Lof;)V
 		ARG 1 mb
 	METHOD ba getSoundVolume ()F
+	METHOD bb getVoicePitch ()F
 	METHOD bc isImmobile ()Z
 	METHOD bf useNewAi ()Z
 	METHOD bh isSleeping ()Z
+	METHOD bk serverAiMobStep ()V
 	METHOD bn getAbsorptionAmount ()F
 	METHOD c aiStep ()V
 	METHOD c addEffect (Lnj;)V

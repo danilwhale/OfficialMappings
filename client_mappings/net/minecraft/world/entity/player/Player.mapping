@@ -5,6 +5,9 @@ CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bs oBob F
 	FIELD bt bob F
 	FIELD bv takeXpDelay I
+	METHOD a openTrading (Labk;Ljava/lang/String;)V
+		ARG 1 mechant
+		ARG 2 name
 	METHOD a openBeacon (Larw;)V
 	METHOD a openBrewingStand (Larx;)V
 	METHOD a awardStat (Lku;)V

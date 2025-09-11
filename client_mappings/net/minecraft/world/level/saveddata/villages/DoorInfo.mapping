@@ -1,0 +1,25 @@
+CLASS ri net/minecraft/world/level/saveddata/villages/DoorInfo
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d idx I
+	FIELD e idz I
+	FIELD f ts I
+	FIELD h bookingCount I
+	METHOD a getIndoorX ()I
+	METHOD a isInsideSide (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD b getIndoorY ()I
+	METHOD b distanceToSqr (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getIndoorZ ()I
+	METHOD c distanceToInsideSqr (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d resetBookingCount ()V
+	METHOD e incBookingCount ()V
+	METHOD f getBookingCount ()I
