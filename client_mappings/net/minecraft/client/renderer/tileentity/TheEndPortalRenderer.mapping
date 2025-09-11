@@ -1,0 +1,10 @@
+CLASS bjc net/minecraft/client/renderer/tileentity/TheEndPortalRenderer
+	FIELD a buffer Ljava/nio/FloatBuffer;
+	FIELD c END_SKY_LOCATION Lbjo;
+	FIELD d END_PORTAL_LOCATION Lbjo;
+	FIELD e RANDOM Ljava/util/Random;
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d

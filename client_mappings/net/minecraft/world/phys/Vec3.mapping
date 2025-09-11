@@ -13,7 +13,7 @@ CLASS atc net/minecraft/world/phys/Vec3
 		ARG 4 z
 	METHOD a xRot (F)V
 		ARG 1 angle
-	METHOD a subtract (Latc;)Latc;
+	METHOD a vectorTo (Latc;)Latc;
 		ARG 1 from
 	METHOD b length ()D
 	METHOD b set (DDD)Latc;

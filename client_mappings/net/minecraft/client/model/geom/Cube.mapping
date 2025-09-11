@@ -1,0 +1,26 @@
+CLASS bcp net/minecraft/client/model/geom/Cube
+	FIELD a minX F
+	FIELD b minY F
+	FIELD c minZ F
+	FIELD d maxX F
+	FIELD e maxY F
+	FIELD f maxZ F
+	FIELD g id Ljava/lang/String;
+	FIELD h vertices [Lbcf;
+	FIELD i polygon [Lbbs;
+	METHOD <init> (Lbcu;IIFFFIIIF)V
+		ARG 1 part
+		ARG 2 xTexOffs
+		ARG 3 yTexOffs
+		ARG 4 x0
+		ARG 5 y0
+		ARG 6 z0
+		ARG 7 w
+		ARG 8 h
+		ARG 9 d
+		ARG 10 g
+	METHOD a compile (Lbfq;F)V
+		ARG 1 t
+		ARG 2 scale
+	METHOD a setId (Ljava/lang/String;)Lbcp;
+		ARG 1 id

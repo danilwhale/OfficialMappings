@@ -1,0 +1,39 @@
+CLASS bjd net/minecraft/client/renderer/tileentity/TileEntityRenderDispatcher
+	FIELD a instance Lbjd;
+	FIELD b xOff D
+	FIELD c yOff D
+	FIELD d zOff D
+	FIELD e textures Lbim;
+	FIELD f level Labw;
+	FIELD g player Lof;
+	FIELD h playerRotX F
+	FIELD i playerRotY F
+	FIELD j xPlayer D
+	FIELD k yPlayer D
+	FIELD l zPlayer D
+	FIELD m renderers Ljava/util/Map;
+	FIELD n font Lavi;
+	METHOD a getFont ()Lavi;
+	METHOD a setLevel (Labw;)V
+		ARG 1 level
+	METHOD a prepare (Labw;Lbim;Lavi;Lof;F)V
+		ARG 1 level
+		ARG 2 textures
+		ARG 3 font
+		ARG 4 player
+		ARG 5 a
+	METHOD a hasRenderer (Lasp;)Z
+		ARG 1 e
+	METHOD a render (Lasp;DDDF)V
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 a
+	METHOD a render (Lasp;F)V
+		ARG 1 e
+		ARG 2 a
+	METHOD a getRenderer (Ljava/lang/Class;)Lbje;
+		ARG 1 e
+	METHOD b getRenderer (Lasp;)Lbje;
+		ARG 1 e

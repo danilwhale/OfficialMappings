@@ -1,0 +1,3 @@
+CLASS biw net/minecraft/client/renderer/tileentity/EnchantTableRenderer
+	FIELD a BOOK_LOCATION Lbjo;
+	FIELD c bookModel Lbbc;

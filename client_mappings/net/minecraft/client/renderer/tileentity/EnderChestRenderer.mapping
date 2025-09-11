@@ -1,0 +1,3 @@
+CLASS bix net/minecraft/client/renderer/tileentity/EnderChestRenderer
+	FIELD a ENDER_CHEST_LOCATION Lbjo;
+	FIELD c chestModel Lbbd;

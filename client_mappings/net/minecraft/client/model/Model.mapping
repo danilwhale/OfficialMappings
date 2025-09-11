@@ -1,0 +1,33 @@
+CLASS bbo net/minecraft/client/model/Model
+	FIELD r cubes Ljava/util/List;
+	FIELD t texWidth I
+	FIELD u texHeight I
+	METHOD a setupAnim (FFFFFFLnn;)V
+		ARG 1 time
+		ARG 2 r
+		ARG 3 bob
+		ARG 4 yRot
+		ARG 5 xRot
+		ARG 6 scale
+		ARG 7 entity
+	METHOD a getMapTex (Ljava/lang/String;)Lbcv;
+		ARG 1 id
+	METHOD a setMapTex (Ljava/lang/String;II)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+	METHOD a getRandomModelPart (Ljava/util/Random;)Lbcu;
+		ARG 1 random
+	METHOD a render (Lnn;FFFFFF)V
+		ARG 1 entity
+		ARG 2 time
+		ARG 3 r
+		ARG 4 bob
+		ARG 5 yRot
+		ARG 6 xRot
+		ARG 7 scale
+	METHOD a prepareMobModel (Lof;FFF)V
+		ARG 1 mob
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

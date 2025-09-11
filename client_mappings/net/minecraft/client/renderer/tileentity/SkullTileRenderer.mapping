@@ -1,0 +1,10 @@
+CLASS bjb net/minecraft/client/renderer/tileentity/SkullTileRenderer
+	FIELD a instance Lbjb;
+	METHOD a renderSkull (FFFIFILjava/lang/String;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+		ARG 5 rot
+		ARG 6 type
+		ARG 7 name
