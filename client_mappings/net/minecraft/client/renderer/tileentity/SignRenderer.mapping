@@ -1,0 +1,2 @@
+CLASS bja net/minecraft/client/renderer/tileentity/SignRenderer
+	FIELD c signModel Lbbw;

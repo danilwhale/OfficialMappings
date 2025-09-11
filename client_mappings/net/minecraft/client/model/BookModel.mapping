@@ -1,0 +1,8 @@
+CLASS bbc net/minecraft/client/model/BookModel
+	FIELD a leftLid Lbcu;
+	FIELD b rightLid Lbcu;
+	FIELD c leftPages Lbcu;
+	FIELD d rightPages Lbcu;
+	FIELD e flipPage1 Lbcu;
+	FIELD f flipPage2 Lbcu;
+	FIELD g seam Lbcu;
