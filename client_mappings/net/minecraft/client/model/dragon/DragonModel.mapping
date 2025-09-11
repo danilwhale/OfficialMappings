@@ -1,0 +1,18 @@
+CLASS bcn net/minecraft/client/model/dragon/DragonModel
+	FIELD a head Lbcu;
+	FIELD b neck Lbcu;
+	FIELD c jaw Lbcu;
+	FIELD d body Lbcu;
+	FIELD e rearLeg Lbcu;
+	FIELD f frontLeg Lbcu;
+	FIELD g rearLegTip Lbcu;
+	FIELD h frontLegTip Lbcu;
+	FIELD i rearFoot Lbcu;
+	FIELD j frontFoot Lbcu;
+	FIELD k wing Lbcu;
+	FIELD l wingTip Lbcu;
+	FIELD m a F
+	METHOD <init> (F)V
+		ARG 1 g
+	METHOD a rotWrap (D)F
+		ARG 1 x

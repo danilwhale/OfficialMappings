@@ -1,0 +1,14 @@
+CLASS bch net/minecraft/client/model/VillagerModel
+	FIELD a head Lbcu;
+	FIELD b body Lbcu;
+	FIELD c arms Lbcu;
+	FIELD d leg0 Lbcu;
+	FIELD e leg1 Lbcu;
+	FIELD f nose Lbcu;
+	METHOD <init> (F)V
+		ARG 1 g
+	METHOD <init> (FFII)V
+		ARG 1 g
+		ARG 2 yOffset
+		ARG 3 texWidth
+		ARG 4 texHeight

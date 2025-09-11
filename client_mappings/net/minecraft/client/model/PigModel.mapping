@@ -1,0 +1,4 @@
+CLASS bbr net/minecraft/client/model/PigModel
+	COMMENT swine model
+	METHOD <init> (F)V
+		ARG 1 scale

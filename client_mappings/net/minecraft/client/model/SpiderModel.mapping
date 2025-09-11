@@ -1,0 +1,12 @@
+CLASS bcd net/minecraft/client/model/SpiderModel
+	FIELD a head Lbcu;
+	FIELD b body0 Lbcu;
+	FIELD c body1 Lbcu;
+	FIELD d leg0 Lbcu;
+	FIELD e leg1 Lbcu;
+	FIELD f leg2 Lbcu;
+	FIELD g leg3 Lbcu;
+	FIELD h leg4 Lbcu;
+	FIELD i leg5 Lbcu;
+	FIELD j leg6 Lbcu;
+	FIELD k leg7 Lbcu;

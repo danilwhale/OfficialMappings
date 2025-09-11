@@ -1,5 +1,8 @@
 CLASS bbo net/minecraft/client/model/Model
+	FIELD p attackTime F
+	FIELD q riding Z
 	FIELD r cubes Ljava/util/List;
+	FIELD s young Z
 	FIELD t texWidth I
 	FIELD u texHeight I
 	METHOD a setupAnim (FFFFFFLnn;)V
@@ -28,6 +31,6 @@ CLASS bbo net/minecraft/client/model/Model
 		ARG 7 scale
 	METHOD a prepareMobModel (Lof;FFF)V
 		ARG 1 mob
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
+		ARG 2 time
+		ARG 3 r
+		ARG 4 a

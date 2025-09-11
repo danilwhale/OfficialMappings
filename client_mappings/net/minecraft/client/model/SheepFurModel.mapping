@@ -1,0 +1,2 @@
+CLASS bbu net/minecraft/client/model/SheepFurModel
+	FIELD i headXRot F

@@ -1,0 +1,3 @@
+CLASS bcm net/minecraft/client/model/ZombieModel
+	METHOD <init> (FZ)V
+		ARG 1 g

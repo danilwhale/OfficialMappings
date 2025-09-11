@@ -1,0 +1,3 @@
+CLASS bbi net/minecraft/client/model/GhastModel
+	FIELD a body Lbcu;
+	FIELD b tentacles [Lbcu;

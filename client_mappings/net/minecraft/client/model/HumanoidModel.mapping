@@ -1,0 +1,26 @@
+CLASS bbj net/minecraft/client/model/HumanoidModel
+	FIELD c head Lbcu;
+	FIELD d hair Lbcu;
+	FIELD e body Lbcu;
+	FIELD f arm0 Lbcu;
+	FIELD g arm1 Lbcu;
+	FIELD h leg0 Lbcu;
+	FIELD i leg1 Lbcu;
+	FIELD j ear Lbcu;
+	FIELD k cloak Lbcu;
+	FIELD l leftArmPose I
+	FIELD m rightArmPose I
+	FIELD n sneaking Z
+	FIELD o Z
+		COMMENT seems to indicate whether mob is shooting with a bow
+	METHOD <init> (F)V
+		ARG 1 g
+	METHOD <init> (FFII)V
+		ARG 1 g
+		ARG 2 yOffset
+		ARG 3 texWidth
+		ARG 4 texHeight
+	METHOD b render (F)V
+		ARG 1 scale
+	METHOD c renderCloak (F)V
+		ARG 1 scale

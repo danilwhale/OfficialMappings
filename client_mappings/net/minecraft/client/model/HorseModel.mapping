@@ -1,0 +1,49 @@
+CLASS bbp net/minecraft/client/model/HorseModel
+	FIELD A Leg3A Lbcu;
+	FIELD B Leg3B Lbcu;
+	FIELD C Leg3C Lbcu;
+	FIELD D Leg4A Lbcu;
+	FIELD E Leg4B Lbcu;
+	FIELD F Leg4C Lbcu;
+	FIELD G Bag1 Lbcu;
+	FIELD H Bag2 Lbcu;
+	FIELD I Saddle Lbcu;
+	FIELD J SaddleB Lbcu;
+	FIELD K SaddleC Lbcu;
+	FIELD L SaddleL Lbcu;
+	FIELD M SaddleL2 Lbcu;
+	FIELD N SaddleR Lbcu;
+	FIELD O SaddleR2 Lbcu;
+	FIELD P SaddleMouthL Lbcu;
+	FIELD Q SaddleMouthR Lbcu;
+	FIELD R SaddleMouthLine Lbcu;
+	FIELD S SaddleMouthLineR Lbcu;
+	FIELD a Head Lbcu;
+	FIELD b UMouth Lbcu;
+	FIELD c LMouth Lbcu;
+	FIELD d Ear1 Lbcu;
+	FIELD e Ear2 Lbcu;
+	FIELD f MuleEarL Lbcu;
+	FIELD g MuleEarR Lbcu;
+	FIELD h Neck Lbcu;
+	FIELD i HeadSaddle Lbcu;
+	FIELD j Mane Lbcu;
+	FIELD k Body Lbcu;
+	FIELD l TailA Lbcu;
+	FIELD m TailB Lbcu;
+	FIELD n TailC Lbcu;
+	FIELD o Leg1A Lbcu;
+	FIELD v Leg1B Lbcu;
+	FIELD w Leg1C Lbcu;
+	FIELD x Leg2A Lbcu;
+	FIELD y Leg2B Lbcu;
+	FIELD z Leg2C Lbcu;
+	METHOD a rotlerp (FFF)F
+		ARG 1 a
+		ARG 2 b
+		ARG 3 t
+	METHOD a setRotation (Lbcu;FFF)V
+		ARG 1 model
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -1,0 +1,3 @@
+CLASS bbl net/minecraft/client/model/LavaSlimeModel
+	FIELD a bodyCubes [Lbcu;
+	FIELD b insideCube Lbcu;

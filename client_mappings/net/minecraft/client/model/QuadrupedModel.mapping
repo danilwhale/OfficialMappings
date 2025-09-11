@@ -1,0 +1,12 @@
+CLASS bbt net/minecraft/client/model/QuadrupedModel
+	FIELD a head Lbcu;
+	FIELD b body Lbcu;
+	FIELD c leg0 Lbcu;
+	FIELD d leg1 Lbcu;
+	FIELD e leg2 Lbcu;
+	FIELD f leg3 Lbcu;
+	FIELD g yHeadOffs F
+	FIELD h zHeadOffs F
+	METHOD <init> (IF)V
+		ARG 1 legSize
+		ARG 2 g

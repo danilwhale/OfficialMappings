@@ -1,0 +1,2 @@
+CLASS bbn net/minecraft/client/model/MinecartModel
+	FIELD a cubes [Lbcu;

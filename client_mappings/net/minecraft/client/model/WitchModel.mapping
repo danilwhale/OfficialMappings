@@ -1,0 +1,4 @@
+CLASS bcj net/minecraft/client/model/WitchModel
+	FIELD g holdingItem Z
+	FIELD h mole Lbcu;
+	FIELD i hat Lbcu;

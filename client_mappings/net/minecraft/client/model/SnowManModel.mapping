@@ -1,0 +1,6 @@
+CLASS bcc net/minecraft/client/model/SnowManModel
+	FIELD a piece1 Lbcu;
+	FIELD b piece2 Lbcu;
+	FIELD c head Lbcu;
+	FIELD d arm1 Lbcu;
+	FIELD e arm2 Lbcu;

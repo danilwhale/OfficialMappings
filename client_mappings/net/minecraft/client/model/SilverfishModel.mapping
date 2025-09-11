@@ -1,0 +1,6 @@
+CLASS bbx net/minecraft/client/model/SilverfishModel
+	FIELD a bodyParts [Lbcu;
+	FIELD b bodyLayers [Lbcu;
+	FIELD c zPlacement [F
+	FIELD d BODY_SIZES [[I
+	FIELD e BODY_TEXS [[I

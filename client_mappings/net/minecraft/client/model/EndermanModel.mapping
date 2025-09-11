@@ -1,0 +1,3 @@
+CLASS bbh net/minecraft/client/model/EndermanModel
+	FIELD a carrying Z
+	FIELD b creepy Z

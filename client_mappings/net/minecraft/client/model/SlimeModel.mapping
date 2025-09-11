@@ -1,0 +1,7 @@
+CLASS bcb net/minecraft/client/model/SlimeModel
+	FIELD a cube Lbcu;
+	FIELD b eye0 Lbcu;
+	FIELD c eye1 Lbcu;
+	FIELD d mouth Lbcu;
+	METHOD <init> (I)V
+		ARG 1 vOffs

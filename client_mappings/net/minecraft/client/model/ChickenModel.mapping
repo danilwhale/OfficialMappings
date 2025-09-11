@@ -1,0 +1,9 @@
+CLASS bbe net/minecraft/client/model/ChickenModel
+	FIELD a head Lbcu;
+	FIELD b body Lbcu;
+	FIELD c leg0 Lbcu;
+	FIELD d leg1 Lbcu;
+	FIELD e wing0 Lbcu;
+	FIELD f wing1 Lbcu;
+	FIELD g beak Lbcu;
+	FIELD h redThing Lbcu;

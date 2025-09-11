@@ -1,0 +1,7 @@
+CLASS bco net/minecraft/client/model/EnderCrystalModel
+	FIELD a cube Lbcu;
+	FIELD b glass Lbcu;
+	FIELD c base Lbcu;
+	METHOD <init> (FZ)V
+		ARG 1 g
+		ARG 2 hasBase
