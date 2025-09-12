@@ -74,9 +74,17 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 8 resourcePackDirectory
 		ARG 9 proxy
 		ARG 10 launchVersion
+	METHOD A isLocalServer ()Z
+	METHOD C getSingleplayerServer ()Lbkz;
+	METHOD E getSnooper ()Lmv;
 	METHOD F getMillis ()J
 	METHOD G fullscreen ()Z
+	METHOD H getUser ()Laus;
+	METHOD I getProxy ()Ljava/net/Proxy;
 	METHOD J getTextures ()Lbim;
+	METHOD K getResourceManager ()Lbjp;
+	METHOD L getResourcePackRepository ()Lbjt;
+	METHOD M getLanguageManager ()Lbkd;
 	METHOD N startTimerHackThread ()V
 	METHOD O init ()V
 	METHOD R renderLoadingScreen ()V
@@ -90,6 +98,8 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD a handleMouseDown (IZ)V
 		ARG 1 button
 	METHOD a renderFpsMeter (J)V
+	METHOD a access$000 (Latv;)Ljava/lang/String;
+		ARG 0 this$0
 	METHOD a setScreen (Lawe;)V
 	METHOD a delayCrash (Lb;)V
 		ARG 1 crash
@@ -97,12 +107,16 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 1 level
 	METHOD a setLevel (Lbdd;Ljava/lang/String;)V
 		ARG 1 level
+	METHOD a setCurrentServer (Lbdm;)V
+		ARG 1 currentServer
 	METHOD a connectTo (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port
 	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;Lacd;)V
 		ARG 3 settings
 	METHOD b debugFpsMeterKeyPress (I)V
+	METHOD b access$001 (Latv;)Lbkd;
+		ARG 0 this$0
 	METHOD c handleMouseClick (I)V
 		ARG 1 button
 	METHOD c crash (Lb;)V
