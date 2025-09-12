@@ -1,1 +1,29 @@
 CLASS uj net/minecraft/world/entity/projectile/AbstractHurtingProjectile
+	FIELD a owner Lof;
+	FIELD au flightTime I
+	FIELD b xPower D
+	FIELD c yPower D
+	FIELD d zPower D
+	FIELD e xTile I
+	FIELD f yTile I
+	FIELD g zTile I
+	FIELD h lastTile I
+	FIELD i inGround Z
+	FIELD j life I
+	METHOD <init> (Labw;DDDDDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
+	METHOD <init> (Labw;Lof;DDD)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 xd
+		ARG 5 yd
+		ARG 7 zd
+	METHOD a onHit (Lata;)V
+		ARG 1 hit
+	METHOD c getGravity ()F

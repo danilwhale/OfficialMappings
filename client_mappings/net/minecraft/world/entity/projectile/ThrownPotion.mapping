@@ -1,0 +1,25 @@
+CLASS uu net/minecraft/world/entity/projectile/ThrownPotion
+	FIELD c potion Lye;
+	METHOD <init> (Labw;DDDI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 potionValue
+	METHOD <init> (Labw;DDDLye;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 potion
+	METHOD <init> (Labw;Lof;I)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 potionValue
+	METHOD <init> (Labw;Lof;Lye;)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 potion
+	METHOD a setPotionValue (I)V
+		ARG 1 potionValue
+	METHOD i getPotionValue ()I

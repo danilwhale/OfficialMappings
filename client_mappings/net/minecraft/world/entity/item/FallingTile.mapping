@@ -1,0 +1,26 @@
+CLASS sr net/minecraft/world/entity/item/FallingTile
+	FIELD a tile I
+	FIELD b data I
+	FIELD c time I
+	FIELD d dropItem Z
+	FIELD e tileData Lby;
+	FIELD f cancelDrop Z
+	FIELD g hurtEntities Z
+	FIELD h fallHurtMax I
+	FIELD i fallHurtAmount F
+	METHOD <init> (Labw;DDDI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tile
+	METHOD <init> (Labw;DDDII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 tile
+		ARG 9 data
+	METHOD a setHurtsEntities (Z)V
+		ARG 1 hurtsEntities
+	METHOD c getLevel ()Labw;

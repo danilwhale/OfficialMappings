@@ -1,1 +1,4 @@
 CLASS uv net/minecraft/world/entity/projectile/WitherSkull
+	METHOD a setDangerous (Z)V
+		ARG 1 dangerous
+	METHOD d isDangerous ()Z

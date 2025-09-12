@@ -1,1 +1,37 @@
 CLASS uh net/minecraft/world/entity/projectile/Arrow
+	FIELD a pickup I
+	FIELD au flightTime I
+	FIELD av baseDamage D
+	FIELD aw knockback I
+	FIELD b shakeTime I
+	FIELD c owner Lnn;
+	FIELD d xTile I
+	FIELD e yTile I
+	FIELD f zTile I
+	FIELD g lastTile I
+	FIELD h lastData I
+	FIELD i inGround Z
+	FIELD j life I
+	METHOD <init> (Labw;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Labw;Lof;F)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 power
+	METHOD <init> (Labw;Lof;Lof;FF)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 target
+		ARG 4 power
+		ARG 5 uncertainity
+	METHOD a setKnockback (I)V
+		ARG 1 knockback
+	METHOD a setCritArrow (Z)V
+		ARG 1 critArrow
+	METHOD b setBaseDamage (D)V
+		ARG 1 baseDamage
+	METHOD c getBaseDamage ()D
+	METHOD d isCritArrow ()Z

@@ -37,6 +37,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD aj xChunk I
 	FIELD ak yChunk I
 	FIELD al zChunk I
+	FIELD am noCulling Z
 	FIELD an hasImpulse Z
 	FIELD ao changingDimensionDelay I
 	FIELD ap isInsidePortal Z

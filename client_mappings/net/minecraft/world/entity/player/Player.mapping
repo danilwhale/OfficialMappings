@@ -1,5 +1,6 @@
 CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bG abilities Luc;
+	FIELD bM fishing Lul;
 	FIELD bn inventory Lud;
 	FIELD bp containerMenu Luy;
 	FIELD bs oBob F

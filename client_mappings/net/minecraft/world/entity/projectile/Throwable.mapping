@@ -1,0 +1,25 @@
+CLASS uq net/minecraft/world/entity/projectile/Throwable
+	FIELD a inGround Z
+	FIELD b shakeTime I
+	FIELD c xTile I
+	FIELD d yTile I
+	FIELD e zTile I
+	FIELD f lastTile I
+	FIELD g owner Lof;
+	FIELD h ownerName Ljava/lang/String;
+	FIELD i life I
+	FIELD j flightTime I
+	METHOD <init> (Labw;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Labw;Lof;)V
+		ARG 1 level
+		ARG 2 entity
+	METHOD a onHit (Lata;)V
+		ARG 1 hit
+	METHOD c getThrowPower ()F
+	METHOD d getThrowUpAngleOffset ()F
+	METHOD e getGravity ()F
+	METHOD h getOwner ()Lof;

@@ -1,0 +1,6 @@
+CLASS aos net/minecraft/world/level/tile/SandTile
+	FIELD c instaFall Z
+	METHOD <init> (I)V
+		ARG 1 d
+	METHOD a_ isFree (Labw;III)Z
+	METHOD k checkSlide (Labw;III)V
