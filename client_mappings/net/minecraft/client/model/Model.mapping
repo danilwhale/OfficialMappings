@@ -17,8 +17,8 @@ CLASS bbo net/minecraft/client/model/Model
 		ARG 1 id
 	METHOD a setMapTex (Ljava/lang/String;II)V
 		ARG 1 id
-		ARG 2 x
-		ARG 3 y
+		ARG 2 u
+		ARG 3 v
 	METHOD a getRandomModelPart (Ljava/util/Random;)Lbcu;
 		ARG 1 random
 	METHOD a render (Lnn;FFFFFF)V

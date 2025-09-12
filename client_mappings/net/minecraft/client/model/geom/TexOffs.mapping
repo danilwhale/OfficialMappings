@@ -1,0 +1,8 @@
+CLASS bcv net/minecraft/client/model/geom/TexOffs
+	FIELD a I
+		COMMENT u coordinate
+	FIELD b I
+		COMMENT v coordinate
+	METHOD <init> (II)V
+		ARG 1 u
+		ARG 2 v
