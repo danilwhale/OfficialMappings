@@ -22,4 +22,4 @@ CLASS t net/minecraft/world/Pos
 	METHOD e distanceToSqr (Lt;)F
 		ARG 1 pos
 	METHOD equals (Ljava/lang/Object;)Z
-		ARG 1 obj
+		ARG 1 o
