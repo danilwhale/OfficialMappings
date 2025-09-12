@@ -11,4 +11,5 @@ CLASS sk net/minecraft/world/entity/boss/enderdragon/EnderDragon
 	FIELD bw wing2 Lsi;
 	FIELD bx oFlapTime F
 	FIELD by flapTime F
+	METHOD bJ restoreLeashFromSave ()V
 	METHOD h getCurrentSwingDuration ()I

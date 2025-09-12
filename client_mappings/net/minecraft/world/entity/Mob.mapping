@@ -8,12 +8,15 @@ CLASS og net/minecraft/world/entity/Mob
 	FIELD br equipment [Lye;
 	FIELD bs canPickUpLoot Z
 	FIELD bt persistenceRequired Z
+	FIELD bu lookingAt Lnn;
 	FIELD bv leashed Z
 	FIELD bw leashHolder Lnn;
 	FIELD bx leashInfoTag Lby;
 	FIELD c goalSelector Lpt;
 	FIELD d targetSelector Lpt;
 	FIELD e equipmentDropChances [F
+	FIELD f defaultLookAngle F
+	FIELD g yRotA I
 	FIELD h lookControl Lpe;
 	FIELD i moveControl Lpf;
 	FIELD j jumpControl Lpd;
@@ -35,21 +38,28 @@ CLASS og net/minecraft/world/entity/Mob
 		ARG 1 data
 	METHOD a mobInteract (Luf;)Z
 		ARG 1 player
+	METHOD a dropLeash (ZZ)V
+		ARG 1 sendRider
+		ARG 2 dropItem
 	METHOD b rotlerp (FFF)F
 		ARG 1 a
 		ARG 2 b
 		ARG 3 t
+	METHOD b setLeashedTo (Lnn;Z)V
+		ARG 1 holder
+		ARG 2 sendRider
 	METHOD b getEquipmentSlotForItem (Lye;)I
 		ARG 0 item
-	METHOD a dropLeash (ZZ)V
-	METHOD b setLeashedTo (Lnn;Z)V
 	METHOD bA getCustomName ()Ljava/lang/String;
 	METHOD bB hasCustomName ()Z
 	METHOD bC isCustomNameVisible ()Z
 	METHOD bD canPickUpLoot ()Z
+	METHOD bE isPersistenceRequired ()Z
+	METHOD bF tickLeash ()V
 	METHOD bG canBeLeashed ()Z
 	METHOD bH isLeashed ()Z
 	METHOD bI getLeashHolder ()Lnn;
+	METHOD bJ restoreLeashFromSave ()V
 	METHOD bp getMaxHeadXRot ()I
 		COMMENT ah yes the wolf function, this was initially added for wolf related crap in b1.4
 	METHOD bs canSpawn ()Z
