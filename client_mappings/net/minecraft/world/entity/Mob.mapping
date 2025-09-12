@@ -23,11 +23,15 @@ CLASS og net/minecraft/world/entity/Mob
 		ARG 1 data
 	METHOD a mobInteract (Luf;)Z
 		ARG 1 player
+	METHOD a dropLeash (ZZ)V
+	METHOD b setLeashedTo (Lnn;Z)V
 	METHOD bA getCustomName ()Ljava/lang/String;
 	METHOD bB hasCustomName ()Z
 	METHOD bC isCustomNameVisible ()Z
 	METHOD bD canPickUpLoot ()Z
 	METHOD bG canBeLeashed ()Z
+	METHOD bH isLeashed ()Z
+	METHOD bI getLeashHolder ()Lnn;
 	METHOD bp getMaxHeadXRot ()I
 		COMMENT ah yes the wolf function, this was initially added for wolf related crap in b1.4
 	METHOD bs canSpawn ()Z

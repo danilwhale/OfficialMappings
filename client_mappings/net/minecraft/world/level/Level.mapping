@@ -134,6 +134,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a fillReportDetails (Lb;)Lm;
 		ARG 1 cr
 	METHOD a getNearbyEntities (Ljava/lang/Class;Lasx;)Ljava/util/List;
+		COMMENT probably just an overload for getEntitiesOfClass because leash knot from 1.14
 	METHOD a getNearestLoadedEntity (Ljava/lang/Class;Lasx;Lnn;)Lnn;
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;Lnw;)Ljava/util/List;
 	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lall;

@@ -25,6 +25,7 @@ CLASS nj net/minecraft/world/effect/MobEffectInstance
 	METHOD a update (Lnj;)V
 		ARG 1 effect
 	METHOD a tick (Lof;)Z
+		ARG 1 mob
 	METHOD a setSplash (Z)V
 		ARG 1 b
 	METHOD b getDuration ()I

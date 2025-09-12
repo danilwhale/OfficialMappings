@@ -1,2 +1,21 @@
 CLASS na net/minecraft/world/damagesource/CombatTracker
+	FIELD a entries Ljava/util/List;
+	FIELD b mob Lof;
+	FIELD c lastDamageTime I
+	FIELD d inCombat Z
+	FIELD e takingDamage Z
+	FIELD f nextLocation Ljava/lang/String;
+	METHOD <init> (Lof;)V
+		ARG 1 mob
+	METHOD a prepareForDamage ()V
+	METHOD a getFallLocation (Lmz;)Ljava/lang/String;
+		ARG 1 entry
+	METHOD a recordDamage (Lnb;FF)V
+		ARG 1 source
+		ARG 2 helth
+		ARG 3 damage
+	METHOD b getDeathMessage ()Lcv;
 	METHOD c getKiller ()Lof;
+	METHOD f getMostSignificantFall ()Lmz;
+	METHOD g resetPreparedStatus ()V
+	METHOD h recheckStatus ()V
