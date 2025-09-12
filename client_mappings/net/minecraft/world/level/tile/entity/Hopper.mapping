@@ -1,0 +1,5 @@
+CLASS ash net/minecraft/world/level/tile/entity/Hopper
+	METHOD aA getLevelX ()D
+	METHOD aB getLevelY ()D
+	METHOD aC getLevelZ ()D
+	METHOD az getLevel ()Labw;

@@ -10,11 +10,17 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 2 name
 	METHOD a openBeacon (Larw;)V
 	METHOD a openBrewingStand (Larx;)V
+	METHOD a openHopper (Lasi;)V
+		ARG 1 hopper
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
 		ARG 1 stat
 		ARG 2 amount
+	METHOD a openMenu (Lmo;)V
+		ARG 1 container
+	METHOD a openHopper (Lsx;)V
+		ARG 1 hopper
 	METHOD a drop (Z)Lss;
 	METHOD bI getFoodData ()Lux;
 	METHOD br isUsingItem ()Z

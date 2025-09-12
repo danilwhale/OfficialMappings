@@ -25,6 +25,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD X ySlideOffset F
 	FIELD Y footSize F
 	FIELD Z noPhysics Z
+	FIELD aa pushthrough F
 	FIELD ab random Ljava/util/Random;
 	FIELD ac tickCount I
 	FIELD ad flameTime I

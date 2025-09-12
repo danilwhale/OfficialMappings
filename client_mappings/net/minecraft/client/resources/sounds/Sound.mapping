@@ -1,4 +1,4 @@
-CLASS blm net/minecraft/client/sounds/Sound
+CLASS blm net/minecraft/client/resources/sounds/Sound
 	FIELD a name Ljava/lang/String;
 	FIELD b url Ljava/net/URL;
 	METHOD <init> (Ljava/lang/String;Ljava/net/URL;)V

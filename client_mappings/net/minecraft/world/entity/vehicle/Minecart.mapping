@@ -1,6 +1,0 @@
-CLASS st net/minecraft/world/entity/vehicle/Minecart
-	FIELD d EXITS [[[I
-	METHOD a destroy (Lnb;)V
-	METHOD l getType ()I
-	METHOD n getDefaultDisplayTile ()Laqz;
-	METHOD r getDefaultDisplayOffset ()I

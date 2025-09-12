@@ -1,1 +1,2 @@
 CLASS sv net/minecraft/world/entity/vehicle/AbstractMinecartContainer
+	FIELD b dropEquipment Z
