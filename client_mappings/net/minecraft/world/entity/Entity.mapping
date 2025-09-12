@@ -51,6 +51,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD ca yp I
 	FIELD cb zp I
 	FIELD d onFire I
+	FIELD e firstTick Z
 	FIELD f xRideRotX D
 	FIELD g yRideRotA D
 	FIELD h invulnerable Z
@@ -60,6 +61,8 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD m blocksBuilding Z
 	FIELD n rider Lnn;
 	FIELD o riding Lnn;
+	FIELD p Z
+		COMMENT whether to load entity regardless of its chunk being loaded or not
 	FIELD q level Labw;
 	FIELD r xo D
 	FIELD s yo D
