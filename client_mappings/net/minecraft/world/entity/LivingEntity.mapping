@@ -10,6 +10,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		COMMENT animationSpeed
 	FIELD aH walkAnimSpeedPos F
 		COMMENT animationSpeedPos
+	FIELD aI invulnerableDuration I
 	FIELD aJ oTilt F
 	FIELD aK tilt F
 	FIELD aL timeOffs F
@@ -30,13 +31,28 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD au swinging Z
 	FIELD av swingTime I
 	FIELD aw removeArrowTime I
+	FIELD ax lastHealth F
 	FIELD ay hurtTime I
 	FIELD az hurtDuration I
 	FIELD b SPEED_MODIFIER_SPRINTING_UUID Ljava/util/UUID;
+	FIELD ba rotOffs F
 	FIELD bb deathScore I
 	FIELD bc lastHurt F
+	FIELD bd jumping Z
+	FIELD be xxa F
+	FIELD bf yya F
+	FIELD bg yRotA F
+	FIELD bh lerpSteps I
+	FIELD bi lerpX D
+	FIELD bj lerpY D
+	FIELD bk lerpZ D
+	FIELD bl lerpYRot D
+	FIELD bm lerpXRot D
 	FIELD bn lastHurtMob Lof;
 	FIELD bo lastHurtMobTimestamp I
+	FIELD bp speed F
+	FIELD bq noJumpDelay I
+	FIELD br absorptionAmount F
 	FIELD c SPEED_MODIFIER_SPRINTING Lot;
 	FIELD d attributes Lov;
 	FIELD e combatTracker Lna;
@@ -45,7 +61,15 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD h effectsDirty Z
 	FIELD i lastHurtByMob Lof;
 	FIELD j lastHurtByMobTimestamp I
+	METHOD a teleportTo (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD a pick (DF)Lata;
+		ARG 1 d
+		ARG 3 a
+	METHOD a isAlliedTo (Latl;)Z
+		ARG 1 team
 	METHOD a die (Lnb;)V
 		ARG 1 source
 	METHOD a hasEffect (Lni;)Z
@@ -61,12 +85,15 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		ARG 3 y
 		ARG 5 z
 	METHOD a take (Lnn;I)V
+		ARG 1 entity
+		ARG 2 count
 	METHOD a getAttribute (Lor;)Los;
 		ARG 1 attribute
 	METHOD a breakItem (Lye;)V
 		ARG 1 item
-	METHOD a (ZI)V
-		COMMENT drops deaht loot but idkf which one
+	METHOD a dropEquipment (ZI)V
+		ARG 1 alwaysDrop
+		ARG 2 luck
 	METHOD aA canBreatheUnderwater ()Z
 	METHOD aB tickDeath ()V
 	METHOD aC isAlwaysExperienceDropper ()Z
@@ -94,26 +121,47 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD aY getMobType ()Loj;
 	METHOD aZ getCarriedItem ()Lye;
 	METHOD az registerAttributes ()V
+	METHOD b getDamageAfterArmorAbsorb (Lnb;F)F
+		ARG 1 source
+		ARG 2 damage
 	METHOD b getEffect (Lni;)Lnj;
 		ARG 1 effect
 	METHOD b onEffectRemoved (Lnj;)V
 		ARG 1 effect
 	METHOD b setLastHurtByMob (Lof;)V
 		ARG 1 mb
-	METHOD b (ZI)V
-		COMMENT drops deaht loot but idkf which one
+	METHOD b getItemInHandIcon (Lye;I)Lms;
+		ARG 1 item
+		ARG 2 layer
+	METHOD b dropDeathLoot (ZI)V
+		ARG 1 diedToPlayer
+		ARG 2 luck
 	METHOD ba getSoundVolume ()F
 	METHOD bb getVoicePitch ()F
 	METHOD bc isImmobile ()Z
+	METHOD bd shouldShowName ()Z
 	METHOD be jumpFromGround ()V
 	METHOD bf useNewAi ()Z
+	METHOD bg getSpeed ()F
 	METHOD bh isSleeping ()Z
+	METHOD bi newServerAiStep ()V
+	METHOD bj pushEntities ()V
 	METHOD bk serverAiMobStep ()V
+	METHOD bl serverAiStep ()V
+	METHOD bm isEffectiveAi ()Z
 	METHOD bn getAbsorptionAmount ()F
+	METHOD bo getTeam ()Latl;
 	METHOD c aiStep ()V
+	METHOD c getDamageAfterMagicAbsorb (Lnb;F)F
+		ARG 1 source
+		ARG 2 damage
 	METHOD c addEffect (Lnj;)V
 		ARG 1 effect
+	METHOD c isAlliedTo (Lof;)Z
+		ARG 1 entity
 	METHOD d actuallyHurt (Lnb;F)V
+		ARG 1 source
+		ARG 2 damage
 	METHOD d canBeAffected (Lnj;)Z
 		ARG 1 effect
 	METHOD e onLadder ()Z
@@ -124,24 +172,48 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		ARG 1 player
 	METHOD f heal (F)V
 		ARG 1 health
+	METHOD f tickHeadTurn (FF)F
+		ARG 1 target
+		ARG 2 time
+	METHOD f setJumping (Z)V
+		ARG 1 jumping
 	METHOD g setHealth (F)V
 		ARG 1 health
 	METHOD g_ isBaby ()Z
 	METHOD h getCurrentSwingDuration ()I
+	METHOD h hurtArmor (F)V
+		ARG 1 damagee
 	METHOD h decreaseAirSupply (I)I
 		ARG 1 supply
 	METHOD i setSpeed (F)V
+		ARG 1 speed
 	METHOD i hasEffect (I)Z
 		ARG 1 id
 	METHOD j getViewVector (F)Latc;
+		ARG 1 a
 	METHOD j removeEffectNoUpdate (I)V
 		ARG 1 id
+	METHOD k getAttackAnim (F)F
+		ARG 1 a
 	METHOD k removeEffect (I)V
 		ARG 1 id
 	METHOD k setLastHurtMob (Lnn;)V
 		ARG 1 mob
 	METHOD l getPos (F)Latc;
+		ARG 1 a
+	METHOD l dropRareDeathLoot (I)V
+		ARG 1 luck
+	METHOD l findStandUpPosition (Lnn;)V
+		ARG 1 entity
 	METHOD m setAbsorptionAmount (F)V
+		ARG 1 absorptionAmount
 	METHOD m setArrowCount (I)V
 		ARG 1 count
+	METHOD m doHurtTarget (Lnn;)Z
+		ARG 1 target
+	METHOD n getCarriedItem (I)Lye;
+		ARG 1 slot
+	METHOD n doPush (Lnn;)V
+		ARG 1 entity
 	METHOD o canSee (Lnn;)Z
+		ARG 1 entity
