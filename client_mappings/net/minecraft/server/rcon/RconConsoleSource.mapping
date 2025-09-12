@@ -1,4 +1,5 @@
 CLASS kh net/minecraft/server/rcon/RconConsoleSource
+	FIELD a instance Lkh;
 	FIELD b buffer Ljava/lang/StringBuffer;
 	METHOD d prepareForCommand ()V
 	METHOD e getCommandResponse ()Ljava/lang/String;

@@ -1,5 +1,7 @@
 CLASS ad net/minecraft/commands/CommandSource
 	METHOD a hasPermission (ILjava/lang/String;)Z
+		ARG 1 i
+		ARG 2 s
 	METHOD a sendMessage (Lcv;)V
 		ARG 1 message
 	METHOD b getCommandSenderBlockPosition ()Lt;
