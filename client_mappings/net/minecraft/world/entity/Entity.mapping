@@ -61,8 +61,7 @@ CLASS nn net/minecraft/world/entity/Entity
 	FIELD m blocksBuilding Z
 	FIELD n rider Lnn;
 	FIELD o riding Lnn;
-	FIELD p Z
-		COMMENT whether to load entity regardless of its chunk being loaded or not
+	FIELD p forcedLoading Z
 	FIELD q level Labw;
 	FIELD r xo D
 	FIELD s yo D
