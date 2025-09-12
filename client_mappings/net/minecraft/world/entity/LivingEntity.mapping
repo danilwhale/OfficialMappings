@@ -35,6 +35,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	FIELD b SPEED_MODIFIER_SPRINTING_UUID Ljava/util/UUID;
 	FIELD bb deathScore I
 	FIELD bc lastHurt F
+	FIELD bf yya F
 	FIELD bn lastHurtMob Lof;
 	FIELD bo lastHurtMobTimestamp I
 	FIELD c SPEED_MODIFIER_SPRINTING Lot;
@@ -65,8 +66,9 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		ARG 1 attribute
 	METHOD a breakItem (Lye;)V
 		ARG 1 item
-	METHOD a (ZI)V
-		COMMENT drops deaht loot but idkf which one
+	METHOD a dropEquipment (ZI)V
+		ARG 1 alwaysDrop
+		ARG 2 luck
 	METHOD aA canBreatheUnderwater ()Z
 	METHOD aB tickDeath ()V
 	METHOD aC isAlwaysExperienceDropper ()Z
@@ -100,15 +102,18 @@ CLASS of net/minecraft/world/entity/LivingEntity
 		ARG 1 effect
 	METHOD b setLastHurtByMob (Lof;)V
 		ARG 1 mb
-	METHOD b (ZI)V
-		COMMENT drops deaht loot but idkf which one
+	METHOD b dropDeathLoot (ZI)V
+		ARG 2 count
 	METHOD ba getSoundVolume ()F
 	METHOD bb getVoicePitch ()F
 	METHOD bc isImmobile ()Z
+	METHOD bd shouldShowName ()Z
 	METHOD be jumpFromGround ()V
 	METHOD bf useNewAi ()Z
 	METHOD bh isSleeping ()Z
+	METHOD bi newServerAiStep ()V
 	METHOD bk serverAiMobStep ()V
+	METHOD bl serverAiStep ()V
 	METHOD bn getAbsorptionAmount ()F
 	METHOD c aiStep ()V
 	METHOD c addEffect (Lnj;)V
@@ -131,6 +136,7 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD h decreaseAirSupply (I)I
 		ARG 1 supply
 	METHOD i setSpeed (F)V
+		ARG 1 speed
 	METHOD i hasEffect (I)Z
 		ARG 1 id
 	METHOD j getViewVector (F)Latc;
@@ -144,4 +150,6 @@ CLASS of net/minecraft/world/entity/LivingEntity
 	METHOD m setAbsorptionAmount (F)V
 	METHOD m setArrowCount (I)V
 		ARG 1 count
+	METHOD n getCarriedItem (I)Lye;
+		ARG 1 slot
 	METHOD o canSee (Lnn;)Z
