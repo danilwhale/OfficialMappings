@@ -1,4 +1,6 @@
 CLASS js net/minecraft/server/level/ServerLevel
+	FIELD L tickNextTickSet Ljava/util/Set;
+	FIELD M tickNextTickList Ljava/util/TreeSet;
 	FIELD a server Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lamc;Ljava/lang/String;ILacd;Llv;Llp;)V
 		ARG 1 server

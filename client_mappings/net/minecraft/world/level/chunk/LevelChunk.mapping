@@ -59,6 +59,7 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 1 clazz
 		ARG 2 bb
 		ARG 3 list
+		ARG 4 predicate
 	METHOD a addEntity (Lnn;)V
 		ARG 1 entity
 	METHOD a removeEntity (Lnn;I)V
@@ -68,7 +69,9 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 1 entity
 		ARG 2 bb
 		ARG 3 list
+		ARG 4 predicate
 	METHOD a shouldSave (Z)Z
+		ARG 1 force
 	METHOD b recalcHeightmap ()V
 	METHOD b getHeightmap (II)I
 		ARG 1 x
@@ -93,8 +96,11 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 br
+		ARG 4 darken
 	METHOD d unload ()V
+	METHOD d getTopRainTilePos (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD d isSkyLit (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -113,4 +119,5 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 3 z
 	METHOD g isEmpty ()Z
 	METHOD i getSections ()[Lads;
+	METHOD l getPos ()Labp;
 	METHOD q recheckGaps ()V

@@ -1,4 +1,5 @@
 CLASS abw net/minecraft/world/level/Level
+	FIELD A villages Lrm;
 	FIELD C profiler Llv;
 	FIELD D scoreboard Latj;
 	FIELD E spawnEnemies Z
@@ -8,11 +9,14 @@ CLASS abw net/minecraft/world/level/Level
 	FIELD J vec3Pool Latd;
 	FIELD L logger Llp;
 	FIELD M boxes Ljava/util/ArrayList;
+	FIELD N updatingTileEntities Z
 	FIELD O delayUntilNextMoodSound I
+	FIELD a pendingTileEntities Ljava/util/List;
 	FIELD c cloudColor J
 	FIELD e entities Ljava/util/List;
 	FIELD g tileEntityList Ljava/util/List;
 	FIELD h players Ljava/util/List;
+	FIELD i globalEntities Ljava/util/List;
 	FIELD j skyDarken I
 	FIELD k randValue I
 	FIELD l addend I
@@ -43,11 +47,15 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 settings
 		ARG 5 profiler
 		ARG 6 logger
+	METHOD A updateSkyBrightness ()V
 	METHOD B getDirectSignalTo (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD C hasNeighborSignal (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD E setSpawnPos (III)V
 		ARG 1 x
 		ARG 2 y
@@ -81,20 +89,50 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD P isThundering ()Z
 	METHOD Q isRaining ()Z
 	METHOD S getHeight ()I
+	METHOD U getHorizonHeight ()D
 	METHOD X getScoreboard ()Latj;
 	METHOD Y getLogger ()Llp;
 	METHOD a getNearestPlayer (DDDD)Luf;
-	METHOD a playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 d
+	METHOD a createFireworks (DDDDDDLby;)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 xa
+		ARG 9 ya
+		ARG 11 za
+		ARG 13 data
+	METHOD a playSoundToAllPlayers (DDDLjava/lang/String;FF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 name
 		ARG 8 volume
 		ARG 9 pitch
-	METHOD a (F)I
+	METHOD a getOldSkyDarken (F)I
 		ARG 1 a
+	METHOD a addToTickNextTick (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 delay
+	METHOD a addToTickNextTick (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 delay
+		ARG 6 priorityTilt
 	METHOD a mayPlace (IIIIZILnn;Lye;)Z
-	METHOD a setBlockEntity (IIILasp;)V
+	METHOD a setTileEntity (IIILasp;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 e
 	METHOD a destroyTile (IIIZ)Z
 		ARG 1 x
 		ARG 2 y
@@ -104,7 +142,9 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 gt
 	METHOD a addListener (Lacb;)V
 		ARG 1 listener
-	METHOD a getBrightness (Lach;III)I
+	METHOD a initializeLevel (Lacd;)V
+		ARG 1 settings
+	METHOD a (Lach;III)I
 		ARG 1 layer
 		ARG 2 x
 		ARG 3 y
@@ -128,9 +168,11 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a clip (Latc;Latc;Z)Lata;
 		ARG 1 origin
 		ARG 2 end
+		ARG 3 allowLiquid
 	METHOD a clip (Latc;Latc;ZZ)Lata;
 		ARG 1 origin
 		ARG 2 end
+		ARG 3 allowLiquid
 	METHOD a fillReportDetails (Lb;)Lm;
 		ARG 1 cr
 	METHOD a getNearbyEntities (Ljava/lang/Class;Lasx;)Ljava/util/List;
@@ -165,6 +207,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 entity
 		ARG 2 event
 	METHOD a getNearestPlayer (Lnn;D)Luf;
+		ARG 1 entity
+		ARG 2 d
 	METHOD a explode (Lnn;DDDFZ)Labr;
 		ARG 1 source
 		ARG 2 x
@@ -187,7 +231,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 bb
-	METHOD a playSound (Lnn;Ljava/lang/String;FF)V
+	METHOD a playSoundToAllPlayers (Lnn;Ljava/lang/String;FF)V
 		ARG 1 entity
 		ARG 2 name
 		ARG 3 volume
@@ -213,12 +257,14 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 y
 		ARG 5 z
 		ARG 6 data
-	METHOD a (Luf;Ljava/lang/String;FF)V
+	METHOD a playSound (Luf;Ljava/lang/String;FF)V
 		ARG 1 player
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
 	METHOD a setSpawnSettings (ZZ)V
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
 	METHOD b tick ()V
 	METHOD b (DDD)F
 		ARG 1 x
@@ -238,6 +284,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 data
 		ARG 5 flags
 	METHOD b tileEntityChanged (IIILasp;)V
 	METHOD b getRawBrightness (IIIZ)I
@@ -248,7 +295,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 dt
 	METHOD b removeListener (Lacb;)V
 		ARG 1 listener
-	METHOD b getRawBrightness (Lach;III)I
+	METHOD b getBrightness (Lach;III)I
 		ARG 1 layer
 		ARG 2 x
 		ARG 3 y
@@ -273,6 +320,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD b entityRemoved (Lnn;)V
 		ARG 1 entity
 	METHOD b getEntities (Lnn;Lasx;)Ljava/util/List;
+	METHOD c updateSleepingPlayerList ()V
 	METHOD c getTimeOfDay (F)F
 		ARG 1 a
 	METHOD c hasChunk (II)Z
@@ -289,6 +337,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 tile
 		ARG 5 facing
+	METHOD c addGlobalEntity (Lnn;)Z
+		ARG 1 entity
 	METHOD d getSunAngle (F)F
 		ARG 1 a
 	METHOD d getChunkAt (II)Ladr;
@@ -351,7 +401,9 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 bb
 	METHOD e removeEntity (Lnn;)V
 		ARG 1 entity
+	METHOD f validateSpawn ()V
 	METHOD f getFogColor (F)Latc;
+		ARG 1 a
 	METHOD f getHeightmap (II)I
 		ARG 1 x
 		ARG 2 z
@@ -365,6 +417,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 tile
 	METHOD f destroyBlockProgress (IIIII)V
+		ARG 1 entityId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 progress
 	METHOD f setTileAndData (IIIIII)Z
 		ARG 1 x
 		ARG 2 y
@@ -374,6 +431,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 6 flags
 	METHOD f removeEntityImmediately (Lnn;)V
 		ARG 1 entity
+	METHOD g getStarBrightness (F)F
+		ARG 1 a
 	METHOD g (II)I
 		ARG 1 x
 		ARG 2 z
@@ -392,12 +451,16 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD h tickEntities ()V
 	METHOD h getThunderLevel (F)F
 		ARG 1 f
-	METHOD h getHeightmapPos (II)I
-		COMMENT TODO TODO TODO!!!
+	METHOD h getTopRainTilePos (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD h ensureAdded (Lnn;)V
 		ARG 1 entity
 	METHOD i getRainLevel (F)F
 		ARG 1 f
+	METHOD i getTopSolidBlock (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD i removeTile (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -406,15 +469,36 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD j setRainLevel (F)V
 		ARG 1 rl
 	METHOD j sendTileUpdated (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD l canSeeSky (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD l getSignal (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 dir
 	METHOD m (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD m updateNeighbourForOutputSignal (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 newTile
 	METHOD n getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD p fireBrightnessChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD s removeTileEntity (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

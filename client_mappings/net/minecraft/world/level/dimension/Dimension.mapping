@@ -5,9 +5,17 @@ CLASS aei net/minecraft/world/level/dimension/Dimension
 	FIELD d generatorOptions Ljava/lang/String;
 	FIELD e biomeSource Lacv;
 	FIELD f ultraWarm Z
+	FIELD g hasCeiling Z
 	FIELD h brightnessRamp [F
+	FIELD i id I
 	FIELD j sunriseCol [F
 	METHOD a updateLightRamp ()V
+	METHOD a getSunriseCol (FF)[F
+	METHOD a gewNew (I)Laei;
+		ARG 0 id
+	METHOD a isValidSpawn (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD a getMoonPhase (J)I
 		ARG 1 time
 	METHOD a getTimeOfDay (JF)F
@@ -17,4 +25,16 @@ CLASS aei net/minecraft/world/level/dimension/Dimension
 		ARG 1 level
 	METHOD b init ()V
 	METHOD b getFogColor (FF)Latc;
+	METHOD b isFoggyAt (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD c createRandomLevelSource ()Lado;
+	METHOD d isNaturalDimension ()Z
+	METHOD e mayRespawn ()Z
+	METHOD f getCloudHeight ()F
+	METHOD g hasGround ()Z
+	METHOD h getSpawnPos ()Lt;
+	METHOD i getSpawnYPosition ()I
+	METHOD j hasBedrockFog ()Z
+	METHOD k getClearColorScale ()D
+	METHOD l getName ()Ljava/lang/String;

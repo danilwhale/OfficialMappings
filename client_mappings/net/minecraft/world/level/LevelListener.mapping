@@ -1,4 +1,8 @@
 CLASS acb net/minecraft/world/level/LevelListener
+	METHOD a tileChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD a globalLevelEvent (IIIII)V
 		ARG 1 event
 		ARG 2 x
@@ -20,7 +24,7 @@ CLASS acb net/minecraft/world/level/LevelListener
 		ARG 8 xa
 		ARG 10 ya
 		ARG 12 za
-	METHOD a playSound (Ljava/lang/String;DDDFF)V
+	METHOD a playSoundToAllPlayers (Ljava/lang/String;DDDFF)V
 		ARG 1 name
 		ARG 2 x
 		ARG 4 y
@@ -41,5 +45,23 @@ CLASS acb net/minecraft/world/level/LevelListener
 		ARG 4 y
 		ARG 5 z
 		ARG 6 data
+	METHOD a playSound (Luf;Ljava/lang/String;DDDFF)V
+		ARG 1 player
+		ARG 2 name
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 volume
+		ARG 10 pitch
+	METHOD b brightnessChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b destroyBlockProgress (IIIII)V
+		ARG 1 entityId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 progress
 	METHOD b entityRemoved (Lnn;)V
 		ARG 1 e
