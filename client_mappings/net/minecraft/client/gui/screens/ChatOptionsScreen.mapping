@@ -1,0 +1,7 @@
+CLASS auv net/minecraft/client/gui/screens/ChatOptionsScreen
+	FIELD a CHAT_OPTIONS [Laun;
+	FIELD c lastScreen Lawe;
+	FIELD d options Laul;
+	METHOD <init> (Lawe;Laul;)V
+		ARG 1 screen
+		ARG 2 options

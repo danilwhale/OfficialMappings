@@ -1,0 +1,4 @@
+CLASS awi net/minecraft/client/gui/screens/SelectWorldScreen$WorldSelectionList
+	FIELD a this$0 Lawh;
+	METHOD <init> (Lawh;)V
+		ARG 1 this$0
