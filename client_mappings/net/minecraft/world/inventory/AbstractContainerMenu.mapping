@@ -1,5 +1,12 @@
 CLASS uy net/minecraft/world/inventory/AbstractContainerMenu
+	FIELD c slots Ljava/util/List;
+	FIELD d containerId I
 	METHOD a clicked (IIILuf;)Lye;
+	METHOD a getQuickCraftSlotCount (Ljava/util/Set;ILye;I)V
 	METHOD a backup (Lud;)S
 	METHOD a stillValid (Luf;)Z
 		ARG 1 player
+	METHOD a canItemQuickReplace (Lwe;Lye;Z)Z
+	METHOD b removed (Luf;)V
+	METHOD b canDragTo (Lwe;)Z
+	METHOD d getQuickcraftMask (II)I

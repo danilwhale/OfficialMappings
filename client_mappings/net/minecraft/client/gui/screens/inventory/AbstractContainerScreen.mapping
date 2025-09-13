@@ -1,0 +1,80 @@
+CLASS awy net/minecraft/client/gui/screens/inventory/AbstractContainerScreen
+	FIELD A snapbackTime J
+	FIELD B snapbackItem Lye;
+	FIELD C quickdropSlot Lwe;
+	FIELD D quickdropTime J
+	FIELD E quickCraftingType I
+	FIELD F quickCraftingButton I
+	FIELD G skipNextRelease Z
+	FIELD H quickCraftingRemainder I
+	FIELD I lastClickTime J
+	FIELD J lastClickSlot Lwe;
+	FIELD K lastClickButton I
+	FIELD L doubleclick Z
+	FIELD M lastQuickMoved Lye;
+	FIELD a INVENTORY_LOCATION Lbjo;
+	FIELD b itemRenderer Lbgw;
+	FIELD c imageWidth I
+	FIELD d imageHeight I
+	FIELD e menu Luy;
+	FIELD p leftPos I
+	FIELD q topPos I
+	FIELD r quickCraftSlots Ljava/util/Set;
+	FIELD s isQuickCrafting Z
+	FIELD t hoveredSlot Lwe;
+	FIELD u clickedSlot Lwe;
+	FIELD v isSplittingStack Z
+	FIELD w draggingItem Lye;
+	FIELD x snapbackStartX I
+	FIELD y snapbackStartY I
+	FIELD z snapbackEnd Lwe;
+	METHOD <init> (Luy;)V
+		ARG 1 menu
+	METHOD a renderBg (FII)V
+		ARG 1 a
+		ARG 2 xm
+		ARG 3 ym
+	METHOD a checkNumkeyPressed (I)Z
+		ARG 1 eventKey
+	METHOD a renderTooltip (Ljava/lang/String;II)V
+		ARG 1 line
+		ARG 2 x
+		ARG 3 y
+	METHOD a renderTooltip (Ljava/util/List;II)V
+		ARG 1 lines
+		ARG 2 x
+		ARG 3 y
+	METHOD a renderSlot (Lwe;)V
+		ARG 1 slot
+	METHOD a isHovering (Lwe;II)Z
+		ARG 1 slot
+		ARG 2 xm
+		ARG 3 ym
+	METHOD a slotClicked (Lwe;III)V
+		ARG 1 slot
+		ARG 2 i
+		ARG 3 x
+		ARG 4 y
+	METHOD a renderTooltip (Lye;II)V
+		ARG 1 item
+		ARG 2 x
+		ARG 3 y
+	METHOD a renderFloatingItem (Lye;IILjava/lang/String;)V
+		ARG 1 item
+		ARG 2 x
+		ARG 3 y
+		ARG 4 countStr
+	METHOD b renderLabels (II)V
+		ARG 1 xm
+		ARG 2 ym
+	METHOD c findSlot (II)Lwe;
+		ARG 1 xm
+		ARG 2 ym
+	METHOD c isHovering (IIIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 w
+		ARG 4 h
+		ARG 5 xm
+		ARG 6 ym
+	METHOD g recalculateQuickCraftRemaining ()V

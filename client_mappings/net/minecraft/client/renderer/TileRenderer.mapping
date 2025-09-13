@@ -1,3 +1,5 @@
 CLASS bfr net/minecraft/client/renderer/TileRenderer
 	COMMENT close enough, welcome back Main.cs
+	METHOD a canRender (I)Z
+	METHOD a renderTile (Laqz;IF)V
 	METHOD b tesselateInWorld (Laqz;III)Z

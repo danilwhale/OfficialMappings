@@ -1,0 +1,57 @@
+CLASS bgw net/minecraft/client/renderer/entity/ItemRenderer
+	FIELD f blitOffset F
+	FIELD h ENCHANT_GLINT_LOCATION Lbjo;
+	FIELD i tileRenderer Lbfr;
+	FIELD j random Ljava/util/Random;
+	METHOD a renderFoilLayer (IIIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 w
+		ARG 5 h
+	METHOD a blit (IILms;II)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 icon
+		ARG 4 w
+		ARG 5 h
+	METHOD a renderGuiItem (Lavi;Lbim;Lye;II)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y
+	METHOD a renderGuiItemDecorations (Lavi;Lbim;Lye;IILjava/lang/String;)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y
+		ARG 6 countStr
+	METHOD a fillRect (Lbfq;IIIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 w
+		ARG 5 h
+		ARG 6 c
+	METHOD a renderItemBillboard (Lss;Lms;IFFFF)V
+		ARG 1 itemEntity
+		ARG 2 icon
+		ARG 3 count
+		ARG 4 a
+		ARG 5 red
+		ARG 6 green
+		ARG 7 blue
+	METHOD b renderAndDecorateItem (Lavi;Lbim;Lye;II)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y
+	METHOD c renderGuiItemDecorations (Lavi;Lbim;Lye;II)V
+		ARG 1 font
+		ARG 2 textures
+		ARG 3 item
+		ARG 4 x
+		ARG 5 y

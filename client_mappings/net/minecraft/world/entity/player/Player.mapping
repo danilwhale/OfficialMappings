@@ -30,6 +30,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD bz removeSelectedItem ()V
 	METHOD g canEat (Z)Z
 	METHOD h getCurrentSwingDuration ()I
+	METHOD i closeContainer ()V
 	METHOD p interact (Lnn;)Z
 	METHOD q attack (Lnn;)V
 	METHOD s giveExperiencePoints (I)V

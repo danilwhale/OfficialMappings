@@ -1,2 +1,3 @@
 CLASS avj net/minecraft/client/gui/Gui
 	METHOD b getChat ()Lauu;
+	METHOD c getGuiTicks ()I

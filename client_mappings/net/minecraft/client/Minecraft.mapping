@@ -75,6 +75,7 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 9 proxy
 		ARG 10 launchVersion
 	METHOD A isLocalServer ()Z
+	METHOD B hasSingleplayerServer ()Z
 	METHOD C getSingleplayerServer ()Lbkz;
 	METHOD E getSnooper ()Lmv;
 	METHOD F getMillis ()J

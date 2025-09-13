@@ -1,1 +1,2 @@
 CLASS bkz net/minecraft/client/server/IntegratedServer
+	METHOD c isPublished ()Z

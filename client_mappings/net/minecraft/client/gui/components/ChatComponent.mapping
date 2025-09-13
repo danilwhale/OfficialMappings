@@ -1,4 +1,41 @@
 CLASS auu net/minecraft/client/gui/components/ChatComponent
+	FIELD a minecraft Latv;
+	FIELD b recentChat Ljava/util/List;
+	FIELD c allMessages Ljava/util/List;
+	FIELD d trimmedMessages Ljava/util/List;
+	FIELD e chatScrollbarPos I
+	FIELD f newMessageSinceScroll Z
+	METHOD <init> (Latv;)V
+		ARG 1 minecraft
+	METHOD a clearMessages ()V
 	METHOD a getWidth (F)I
+		ARG 0 scale
+	METHOD a render (I)V
+	METHOD a getClickedComponentAt (II)Lavl;
+		ARG 1 x
+		ARG 2 y
+	METHOD a addMessage (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD a addMessage (Ljava/lang/String;I)V
+		ARG 1 message
+		ARG 2 id
+	METHOD a addMessage (Ljava/lang/String;IIZ)V
+		ARG 1 message
+		ARG 2 id
+		ARG 3 addedTime
 	METHOD b rescaleChat ()V
 	METHOD b getHeight (F)I
+		ARG 0 scale
+	METHOD b scrollChat (I)V
+		ARG 1 lines
+	METHOD b addRecentChat (Ljava/lang/String;)V
+		ARG 1 item
+	METHOD c getRecentChat ()Ljava/util/List;
+	METHOD c removeById (I)V
+		ARG 1 id
+	METHOD d resetChatScroll ()V
+	METHOD e isChatFocused ()Z
+	METHOD f getWidth ()I
+	METHOD g getHeight ()I
+	METHOD h getScale ()F
+	METHOD i getLinesPerPage ()I

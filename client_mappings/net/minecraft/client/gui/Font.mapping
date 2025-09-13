@@ -5,4 +5,5 @@ CLASS avi net/minecraft/client/gui/Font
 	METHOD a (IZ)F
 		ARG 1 id
 	METHOD a drawShadow (Ljava/lang/String;)I
+	METHOD a substrByWidth (Ljava/lang/String;I)Ljava/lang/String;
 	METHOD a drawShadow (Ljava/lang/String;III)I
