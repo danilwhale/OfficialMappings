@@ -1,1 +1,4 @@
 CLASS afp net/minecraft/world/level/levelgen/feature/MonsterRoomFeature
+	FIELD a lootTable [Lmk;
+	METHOD a randomEntityId (Ljava/util/Random;)Ljava/lang/String;
+		ARG 1 random

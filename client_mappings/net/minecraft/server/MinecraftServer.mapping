@@ -1,5 +1,9 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD b levels [Ljs;
+	FIELD f sentPacketCount [J
+	FIELD g sentPacketSize [J
+	FIELD h receivedPacketCount [J
+	FIELD i receivedPacketSize [J
 	FIELD p tickables Ljava/util/List;
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 f

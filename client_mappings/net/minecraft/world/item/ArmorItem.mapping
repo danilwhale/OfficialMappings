@@ -1,1 +1,2 @@
 CLASS wh net/minecraft/world/item/ArmorItem
+	FIELD cD DISPENSE_ITEM_BEHAVIOR Lbj;

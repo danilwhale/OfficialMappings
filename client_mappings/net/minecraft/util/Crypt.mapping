@@ -21,6 +21,12 @@ CLASS lg net/minecraft/util/Crypt
 	METHOD a decryptByteToSecretKey (Ljava/security/PrivateKey;[B)Ljavax/crypto/SecretKey;
 		ARG 0 privateKey
 		ARG 1 input
+	METHOD a setupCipherInputStream (Ljavax/crypto/SecretKey;Ljava/io/InputStream;)Ljava/io/InputStream;
+		ARG 0 key
+		ARG 1 dis
+	METHOD a setupChipherOutputStream (Ljavax/crypto/SecretKey;Ljava/io/OutputStream;)Ljava/io/OutputStream;
+		ARG 0 key
+		ARG 1 dos
 	METHOD a setupBlockCipher (ZLjava/security/Key;)Lorg/bouncycastle/crypto/BufferedBlockCipher;
 		ARG 0 a
 		ARG 1 key

@@ -1,1 +1,2 @@
 CLASS th net/minecraft/world/entity/monster/Enemy
+	FIELD a ENTITY_PREDICATE Lnw;

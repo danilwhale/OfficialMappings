@@ -1,6 +1,7 @@
 CLASS aep net/minecraft/world/level/levelgen/HellRandomLevelSource
 	FIELD a scaleNoise Lajt;
 	FIELD b depthNoise Lajt;
+	FIELD c netherBridgeFeature Lagn;
 	FIELD d pnr [D
 	FIELD e ar [D
 	FIELD f br [D
@@ -17,6 +18,7 @@ CLASS aep net/minecraft/world/level/levelgen/HellRandomLevelSource
 	FIELD q sandBuffer [D
 	FIELD r gravelBuffer [D
 	FIELD s depthBuffer [D
+	FIELD t caveFeature Laer;
 	METHOD <init> (Labw;J)V
 		ARG 1 level
 		ARG 2 seed
