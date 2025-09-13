@@ -1,0 +1,10 @@
+CLASS awh net/minecraft/client/gui/screens/SelectWorldScreen
+	FIELD a lastScreen Lawe;
+	FIELD b title Ljava/lang/String;
+	FIELD v deleteButton Laut;
+	FIELD w selectButton Laut;
+	FIELD x renameButton Laut;
+	FIELD y copyButton Laut;
+	METHOD <init> (Lawe;)V
+		ARG 1 lastScreen
+	METHOD g postInit ()V

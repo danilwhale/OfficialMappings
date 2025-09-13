@@ -115,6 +115,7 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 2 port
 	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;Lacd;)V
 		ARG 3 settings
+	METHOD b getLevelSource ()Lamf;
 	METHOD b debugFpsMeterKeyPress (I)V
 	METHOD b access$001 (Latv;)Lbkd;
 		ARG 0 this$0
@@ -132,5 +133,6 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD i pauseGame ()V
 	METHOD j toggleFullscreen ()V
 	METHOD k tick ()V
+	METHOD p isDemo ()Z
 	METHOD w getInstance ()Latv;
 	METHOD y maxSupportedTextureSize ()I
