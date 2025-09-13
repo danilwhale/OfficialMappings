@@ -1,0 +1,2 @@
+CLASS ahj net/minecraft/world/level/levelgen/structure/ScatteredFeaturePieces
+	METHOD a loadStatic ()V

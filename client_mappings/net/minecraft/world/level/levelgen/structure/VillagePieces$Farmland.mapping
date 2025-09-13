@@ -1,0 +1,5 @@
+CLASS ajb net/minecraft/world/level/levelgen/structure/VillagePieces$Farmland
+	FIELD a cropsA I
+	FIELD b cropsB I
+	METHOD a selectCrops (Ljava/util/Random;)I
+		ARG 1 random

@@ -1,0 +1,3 @@
+CLASS ahn net/minecraft/world/level/levelgen/structure/ScatteredFeaturePieces$JunglePyramidPiece$MossStoneSelector
+	METHOD <init> (Lahk;)V
+		ARG 1 fjsdklfl

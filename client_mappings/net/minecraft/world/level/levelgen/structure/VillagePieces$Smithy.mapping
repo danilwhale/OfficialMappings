@@ -1,0 +1,3 @@
+CLASS aji net/minecraft/world/level/levelgen/structure/VillagePieces$Smithy
+	FIELD a lootTable [Lmk;
+	FIELD b placedChest Z

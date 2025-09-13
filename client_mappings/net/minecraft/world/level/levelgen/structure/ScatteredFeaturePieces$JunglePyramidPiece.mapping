@@ -1,0 +1,12 @@
+CLASS ahm net/minecraft/world/level/levelgen/structure/ScatteredFeaturePieces$JunglePyramidPiece
+	FIELD e placedMainChest Z
+	FIELD i placedHiddenChest Z
+	FIELD j placedTrap1 Z
+	FIELD k placedTrap2 Z
+	FIELD l chestLootTable [Lmk;
+	FIELD m dispenserLootTable [Lmk;
+	FIELD n STONE_SELECTOR Lahn;
+	METHOD <init> (Ljava/util/Random;II)V
+		ARG 1 random
+		ARG 2 x
+		ARG 3 z

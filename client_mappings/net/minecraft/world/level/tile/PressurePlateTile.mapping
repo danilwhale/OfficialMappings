@@ -1,1 +1,2 @@
 CLASS apw net/minecraft/world/level/tile/PressurePlateTile
+	FIELD a sensitivity Lapx;

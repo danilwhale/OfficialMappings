@@ -175,8 +175,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 allowLiquid
 	METHOD a fillReportDetails (Lb;)Lm;
 		ARG 1 cr
-	METHOD a getNearbyEntities (Ljava/lang/Class;Lasx;)Ljava/util/List;
-		COMMENT probably just an overload for getEntitiesOfClass because leash knot from 1.14
+	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;)Ljava/util/List;
 	METHOD a getNearestLoadedEntity (Ljava/lang/Class;Lasx;Lnn;)Lnn;
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;Lnw;)Ljava/util/List;
 	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lall;
@@ -231,6 +230,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 bb
+	METHOD a getEntities (Lnn;Lasx;Lnw;)Ljava/util/List;
 	METHOD a playSoundToAllPlayers (Lnn;Ljava/lang/String;FF)V
 		ARG 1 entity
 		ARG 2 name

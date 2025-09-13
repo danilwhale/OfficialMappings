@@ -1,0 +1,8 @@
+CLASS ajk net/minecraft/world/level/levelgen/structure/VillagePieces$StraightRoad
+	FIELD a length I
+	METHOD <init> (Lajj;ILjava/util/Random;Lagf;I)V
+		ARG 1 p
+		ARG 2 i
+		ARG 3 random
+		ARG 4 bb
+		ARG 5 orientation

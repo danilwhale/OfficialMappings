@@ -1,3 +1,6 @@
 CLASS ajm net/minecraft/world/level/levelgen/structure/VillagePieces$VillagePiece
 	FIELD b isDesert Z
 	FIELD k heightPosition I
+	METHOD <init> (Lajj;I)V
+		ARG 1 p
+		ARG 2 i

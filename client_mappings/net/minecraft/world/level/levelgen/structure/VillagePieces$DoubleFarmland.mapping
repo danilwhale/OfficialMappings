@@ -1,0 +1,7 @@
+CLASS aja net/minecraft/world/level/levelgen/structure/VillagePieces$DoubleFarmland
+	FIELD a cropsA I
+	FIELD b cropsB I
+	FIELD c cropsC I
+	FIELD d cropsD I
+	METHOD a selectCrops (Ljava/util/Random;)I
+		ARG 1 random
