@@ -1,0 +1,2 @@
+CLASS ahe net/minecraft/world/level/levelgen/structure/NetherBridgePieces$RoomCrossing
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahe;

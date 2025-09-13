@@ -1,0 +1,5 @@
+CLASS ahg net/minecraft/world/level/levelgen/structure/NetherBridgePieces$StartPiece
+	FIELD b previousPiece Lahd;
+	FIELD c availableBridgePieces Ljava/util/List;
+	FIELD d availableCastlePieces Ljava/util/List;
+	FIELD e pendingChildren Ljava/util/ArrayList;

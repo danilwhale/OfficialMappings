@@ -13,8 +13,8 @@ CLASS aut net/minecraft/client/gui/components/Button
 		ARG 1 id
 		ARG 2 x
 		ARG 3 y
-		ARG 4 w
-		ARG 5 h
+		ARG 4 width
+		ARG 5 height
 		ARG 6 msg
 	METHOD <init> (IIILjava/lang/String;)V
 		ARG 1 id

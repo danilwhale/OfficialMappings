@@ -1,0 +1,2 @@
+CLASS ahf net/minecraft/world/level/levelgen/structure/NetherBridgePieces$StairsRoom
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahf;

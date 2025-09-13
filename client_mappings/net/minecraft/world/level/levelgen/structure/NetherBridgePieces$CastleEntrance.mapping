@@ -1,0 +1,2 @@
+CLASS agv net/minecraft/world/level/levelgen/structure/NetherBridgePieces$CastleEntrance
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagv;

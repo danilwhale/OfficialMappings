@@ -1,0 +1,19 @@
+CLASS aux net/minecraft/client/gui/screens/ConfirmScreen
+	FIELD a parent Lawe;
+	FIELD b title1 Ljava/lang/String;
+	FIELD c yesButton Ljava/lang/String;
+	FIELD d noButton Ljava/lang/String;
+	FIELD e id I
+	FIELD p title2 Ljava/lang/String;
+	METHOD <init> (Lawe;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 1 parent
+		ARG 2 title1
+		ARG 3 title2
+		ARG 4 id
+	METHOD <init> (Lawe;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 1 parent
+		ARG 2 title1
+		ARG 3 title2
+		ARG 4 yesButton
+		ARG 5 noButton
+		ARG 6 id

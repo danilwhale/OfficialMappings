@@ -1,0 +1,2 @@
+CLASS aha net/minecraft/world/level/levelgen/structure/NetherBridgePieces$CastleStalkRoom
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Laha;

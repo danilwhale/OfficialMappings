@@ -1,0 +1,2 @@
+CLASS agx net/minecraft/world/level/levelgen/structure/NetherBridgePieces$CastleSmallCorridorLeftTurnPiece
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagx;

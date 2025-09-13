@@ -1,0 +1,13 @@
+CLASS agq net/minecraft/world/level/levelgen/structure/NetherBridgePieces$BridgeCrossing
+	METHOD <init> (ILjava/util/Random;Lagf;I)V
+		ARG 1 f
+		ARG 2 random
+		ARG 3 bb
+		ARG 4 orientation
+	METHOD <init> (Ljava/util/Random;II)V
+		ARG 1 random
+		ARG 2 x
+		ARG 3 z
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagq;
+		ARG 0 pieces
+		ARG 1 random

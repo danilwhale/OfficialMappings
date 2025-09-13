@@ -1,0 +1,2 @@
+CLASS agr net/minecraft/world/level/levelgen/structure/NetherBridgePieces$BridgeEndFiller
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagr;

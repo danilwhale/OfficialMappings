@@ -1,0 +1,2 @@
+CLASS ahb net/minecraft/world/level/levelgen/structure/NetherBridgePieces$MonsterThrone
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lahb;

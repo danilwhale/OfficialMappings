@@ -1,0 +1,2 @@
+CLASS agt net/minecraft/world/level/levelgen/structure/NetherBridgePieces$CastleCorridorStairsPiece
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagt;

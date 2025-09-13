@@ -1,5 +1,9 @@
 CLASS agp net/minecraft/world/level/levelgen/structure/NetherBridgePieces
+	FIELD a BRIDGE_PIECE_WEIGHTS [Lahd;
+	FIELD b CASTLE_PIECE_WEIGHTS [Lahd;
 	METHOD a loadStatic ()V
 	METHOD a access$000 (Lahd;Ljava/util/List;Ljava/util/Random;IIIII)Lahc;
 	METHOD b access$100 ()[Lahd;
+	METHOD b findAndCreateBridgePieceFactory (Lahd;Ljava/util/List;Ljava/util/Random;IIIII)Lahc;
+		ARG 0 weight
 	METHOD c access$200 ()[Lahd;

@@ -13,6 +13,7 @@ CLASS abw net/minecraft/world/level/Level
 	FIELD O delayUntilNextMoodSound I
 	FIELD a pendingTileEntities Ljava/util/List;
 	FIELD c cloudColor J
+	FIELD d instaTick Z
 	FIELD e entities Ljava/util/List;
 	FIELD g tileEntityList Ljava/util/List;
 	FIELD h players Ljava/util/List;

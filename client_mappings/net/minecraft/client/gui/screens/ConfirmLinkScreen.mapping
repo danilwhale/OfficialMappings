@@ -1,0 +1,11 @@
+CLASS bcx net/minecraft/client/gui/screens/ConfirmLinkScreen
+	FIELD p warning Ljava/lang/String;
+	FIELD q copyButton Ljava/lang/String;
+	FIELD r url Ljava/lang/String;
+	FIELD s showWarning Z
+	METHOD <init> (Lawe;Ljava/lang/String;IZ)V
+		ARG 1 parent
+		ARG 2 url
+		ARG 3 id
+		ARG 4 trusted
+	METHOD g copyToClipboard ()V

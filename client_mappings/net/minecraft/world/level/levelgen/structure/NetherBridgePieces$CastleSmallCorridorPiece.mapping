@@ -1,0 +1,2 @@
+CLASS agy net/minecraft/world/level/levelgen/structure/NetherBridgePieces$CastleSmallCorridorPiece
+	METHOD a createPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lagy;

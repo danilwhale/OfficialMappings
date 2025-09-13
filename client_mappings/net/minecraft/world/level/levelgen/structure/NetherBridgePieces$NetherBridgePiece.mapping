@@ -1,0 +1,10 @@
+CLASS ahc net/minecraft/world/level/levelgen/structure/NetherBridgePieces$NetherBridgePiece
+	METHOD a isOkBox (Lagf;)Z
+		ARG 0 box
+	METHOD a generatePiece (Lahg;Ljava/util/List;Ljava/util/List;Ljava/util/Random;IIIII)Lahc;
+	METHOD a generateAndAddPiece (Lahg;Ljava/util/List;Ljava/util/Random;IIIIIZ)Lait;
+	METHOD a generateChildForward (Lahg;Ljava/util/List;Ljava/util/Random;IIZ)Lait;
+	METHOD a updatePieceWeight (Ljava/util/List;)I
+		ARG 1 weights
+	METHOD b generateChildLeft (Lahg;Ljava/util/List;Ljava/util/Random;IIZ)Lait;
+	METHOD c generateChildRight (Lahg;Ljava/util/List;Ljava/util/Random;IIZ)Lait;
