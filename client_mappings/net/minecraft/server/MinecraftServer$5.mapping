@@ -1,0 +1,2 @@
+CLASS hl net/minecraft/server/MinecraftServer$5
+	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;

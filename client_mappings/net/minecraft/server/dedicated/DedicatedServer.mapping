@@ -1,0 +1,7 @@
+CLASS is net/minecraft/server/dedicated/DedicatedServer
+	FIELD l consoleInput Ljava/util/List;
+	FIELD m logger Llp;
+	FIELD n queryThreadGs4 Lkj;
+	FIELD p settings Lhq;
+	FIELD r gameType Lace;
+	METHOD a handleConsoleInput (Ljava/lang/String;Lad;)V

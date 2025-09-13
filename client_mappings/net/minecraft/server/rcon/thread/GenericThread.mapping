@@ -1,0 +1,33 @@
+CLASS ki net/minecraft/server/rcon/thread/GenericThread
+	FIELD a running Z
+	FIELD b serverInterface Lho;
+	FIELD c thread Ljava/lang/Thread;
+	FIELD d maxStopWait I
+	FIELD e datagramSockets Ljava/util/List;
+	FIELD f serverSockets Ljava/util/List;
+	METHOD <init> (Lho;)V
+		ARG 1 ho
+	METHOD a start ()V
+	METHOD a debug (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD a registerSocket (Ljava/net/DatagramSocket;)V
+		ARG 1 ds
+	METHOD a closeSocket (Ljava/net/DatagramSocket;Z)Z
+		ARG 1 ds
+		ARG 2 b
+	METHOD a closeSocket (Ljava/net/ServerSocket;Z)Z
+		ARG 1 ss
+		ARG 2 b
+	METHOD a closeSockets (Z)V
+		ARG 1 b
+	METHOD b info (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD b closeSocket (Ljava/net/ServerSocket;)Z
+		ARG 1 ss
+	METHOD c isRunning ()Z
+	METHOD c warn (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD d currentPlayerCount ()I
+	METHOD d error (Ljava/lang/String;)V
+		ARG 1 s
+	METHOD e closeSockets ()V

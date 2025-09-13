@@ -1,0 +1,7 @@
+CLASS hq net/minecraft/server/Settings
+	FIELD a properties Ljava/util/Properties;
+	FIELD b logger Llp;
+	FIELD c source Ljava/io/File;
+	METHOD <init> (Ljava/io/File;Llp;)V
+		ARG 1 so
+		ARG 2 lo

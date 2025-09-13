@@ -1,3 +1,0 @@
-CLASS hr net/minecraft/client/resources/sounds/SoundInstance
-	COMMENT maybe TickableSoundInstance?
-	METHOD a tick ()V

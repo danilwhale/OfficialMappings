@@ -1,0 +1,5 @@
+CLASS it net/minecraft/server/dedicated/DedicatedServer$1
+	FIELD a this$0 Lis;
+	METHOD <init> (Lis;)V
+		ARG 1 this$0
+	METHOD run run ()V

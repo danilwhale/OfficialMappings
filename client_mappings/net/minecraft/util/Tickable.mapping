@@ -1,0 +1,3 @@
+CLASS hr net/minecraft/util/Tickable
+	COMMENT this is tickable as its also refered by server
+	METHOD a tick ()V

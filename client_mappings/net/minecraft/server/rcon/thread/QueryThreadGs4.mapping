@@ -1,0 +1,35 @@
+CLASS kj net/minecraft/server/rcon/thread/QueryThreadGs4
+	FIELD g lastChallengeCheck J
+	FIELD h port I
+	FIELD i serverPort I
+	FIELD j maxPlayers I
+	FIELD k serverName Ljava/lang/String;
+	FIELD l worldName Ljava/lang/String;
+	FIELD m socket Ljava/net/DatagramSocket;
+	FIELD n buffer [B
+	FIELD o request Ljava/net/DatagramPacket;
+	FIELD p idents Ljava/util/Map;
+	FIELD q hostIp Ljava/lang/String;
+	FIELD r serverIp Ljava/lang/String;
+	FIELD s validChallenges Ljava/util/Map;
+	FIELD t lastChallengeClean J
+	FIELD u rulesResponse Lkf;
+	FIELD v lastRulesResponse J
+	METHOD a recoverSocketError (Ljava/lang/Exception;)V
+		ARG 1 e
+	METHOD a processPacket (Ljava/net/DatagramPacket;)Z
+		ARG 1 dp
+	METHOD a getIdentBytes (Ljava/net/SocketAddress;)[B
+		ARG 1 sa
+	METHOD a sendTo ([BLjava/net/DatagramPacket;)V
+		ARG 1 b
+		ARG 2 dp
+	METHOD b buildRulesResponse (Ljava/net/DatagramPacket;)[B
+		ARG 1 dp
+	METHOD c validChallenge (Ljava/net/DatagramPacket;)Ljava/lang/Boolean;
+		ARG 1 dp
+	METHOD d sendChallenge (Ljava/net/DatagramPacket;)V
+		ARG 1 dp
+	METHOD f pruneChallenges ()V
+	METHOD g initSocket ()Z
+	METHOD run run ()V

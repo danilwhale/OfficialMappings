@@ -1,9 +1,34 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD b levels [Ljs;
+	FIELD p tickables Ljava/util/List;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 f
+	METHOD A getPlayerCount ()I
+	METHOD B getMaxPlayers ()I
+	METHOD C getPlayerNames ()[Ljava/lang/String;
+	METHOD D getPluginNames ()Ljava/lang/String;
+	METHOD E isDebugging ()Z
 	METHOD F getInstance ()Lnet/minecraft/server/MinecraftServer;
 	METHOD H getKeyPair ()Ljava/security/KeyPair;
+	METHOD L getLevelIdName ()Ljava/lang/String;
+	METHOD a access$000 (Lnet/minecraft/server/MinecraftServer;)Lhn;
+	METHOD ae isStopped ()Z
 	METHOD af getPlayerList ()Lhn;
 	METHOD ah isReady ()Z
 	METHOD ap getProxy ()Ljava/net/Proxy;
 	METHOD aq getMillis ()J
+	METHOD b (Lb;)Lb;
+		ARG 1 bx
+	METHOD d initServer ()Z
+	METHOD e info (Ljava/lang/String;)V
+	METHOD f warn (Ljava/lang/String;)V
+	METHOD getServerModName getServerModName ()Ljava/lang/String;
+	METHOD h error (Ljava/lang/String;)V
+	METHOD i debug (Ljava/lang/String;)V
+	METHOD o isRunning ()Z
 	METHOD u isNetherEnabled ()Z
 	METHOD v forkAndRun ()V
+	METHOD w getServerIp ()Ljava/lang/String;
+	METHOD x getServerPort ()I
+	METHOD y getServerName ()Ljava/lang/String;
+	METHOD z getServerVersion ()Ljava/lang/String;
