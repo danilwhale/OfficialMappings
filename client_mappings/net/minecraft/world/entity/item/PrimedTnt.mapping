@@ -1,2 +1,3 @@
 CLASS tc net/minecraft/world/entity/item/PrimedTnt
+	FIELD a life I
 	METHOD c getOwner ()Lof;

@@ -1,0 +1,2 @@
+CLASS bhg net/minecraft/client/renderer/entity/OcelotRenderer
+	FIELD f CAT_OCELOT_LOCATION Lbjo;

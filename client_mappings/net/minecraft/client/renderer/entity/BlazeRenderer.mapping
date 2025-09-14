@@ -1,0 +1,2 @@
+CLASS bgb net/minecraft/client/renderer/entity/BlazeRenderer
+	FIELD a BLAZE_LOCATION Lbjo;

@@ -1,0 +1,2 @@
+CLASS bgc net/minecraft/client/renderer/entity/BoatRenderer
+	FIELD a model Lbbo;

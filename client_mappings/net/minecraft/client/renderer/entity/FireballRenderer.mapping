@@ -1,0 +1,5 @@
+CLASS bgp net/minecraft/client/renderer/entity/FireballRenderer
+	FIELD a F
+		COMMENT fireball scale
+	METHOD <init> (F)V
+		ARG 1 scale

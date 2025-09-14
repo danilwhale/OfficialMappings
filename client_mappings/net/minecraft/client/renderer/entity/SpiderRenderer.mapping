@@ -1,0 +1,3 @@
+CLASS bhp net/minecraft/client/renderer/entity/SpiderRenderer
+	FIELD a SPIDER_EYES_LOCATION Lbjo;
+	FIELD f SPIDER_LOCATION Lbjo;

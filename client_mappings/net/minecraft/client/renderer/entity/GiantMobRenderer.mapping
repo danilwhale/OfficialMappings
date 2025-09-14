@@ -1,0 +1,7 @@
+CLASS bgs net/minecraft/client/renderer/entity/GiantMobRenderer
+	FIELD a ZOMBIE_LOCATION Lbjo;
+	FIELD f scale F
+	METHOD <init> (Lbbo;FF)V
+		ARG 1 model
+		ARG 2 shadow
+		ARG 3 scale

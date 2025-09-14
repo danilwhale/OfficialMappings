@@ -1,0 +1,7 @@
+CLASS bhn net/minecraft/client/renderer/entity/SlimeRenderer
+	FIELD a SLIME_LOCATION Lbjo;
+	FIELD f armor Lbbo;
+	METHOD <init> (Lbbo;Lbbo;F)V
+		ARG 1 model
+		ARG 2 armor
+		ARG 3 shadow

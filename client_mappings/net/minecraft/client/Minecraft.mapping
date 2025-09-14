@@ -134,5 +134,6 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD j toggleFullscreen ()V
 	METHOD k tick ()V
 	METHOD p isDemo ()Z
+	METHOD r renderNames ()Z
 	METHOD w getInstance ()Latv;
 	METHOD y maxSupportedTextureSize ()I

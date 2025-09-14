@@ -1,0 +1,2 @@
+CLASS bhu net/minecraft/client/renderer/entity/VillagerRenderer
+	FIELD f VILLAGER_BASE_SKIN Lbjo;

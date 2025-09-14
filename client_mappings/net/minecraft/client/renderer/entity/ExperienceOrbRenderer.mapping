@@ -1,0 +1,2 @@
+CLASS bgn net/minecraft/client/renderer/entity/ExperienceOrbRenderer
+	FIELD a EXPERIENCE_ORB_LOCATION Lbjo;

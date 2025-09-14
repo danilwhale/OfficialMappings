@@ -1,0 +1,9 @@
+CLASS bgx net/minecraft/client/renderer/entity/ItemSpriteRenderer
+	METHOD <init> (Lyc;)V
+		ARG 1 item
+	METHOD <init> (Lyc;I)V
+		ARG 1 item
+		ARG 2 auxValue
+	METHOD a renderIcon (Lbfq;Lms;)V
+		ARG 1 t
+		ARG 2 icon

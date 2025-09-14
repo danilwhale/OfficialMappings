@@ -1,0 +1,74 @@
+CLASS bhb net/minecraft/client/renderer/entity/LivingEntityRenderer
+	FIELD i model Lbbo;
+	FIELD j armor Lbbo;
+	METHOD <init> (Lbbo;F)V
+		ARG 1 model
+		ARG 2 shadow
+	METHOD a rotlerp (FFF)F
+		ARG 1 a
+		ARG 2 b
+		ARG 3 t
+	METHOD a setArmor (Lbbo;)V
+		ARG 1 armor
+	METHOD a getFlipDegrees (Lof;)F
+		ARG 1 mob
+	METHOD a setupPosition (Lof;DDD)V
+		ARG 1 mob
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD a renderNameTags (Lof;DDDLjava/lang/String;FD)V
+		ARG 1 mob
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 name
+		ARG 9 s
+		ARG 10 dist
+	METHOD a scale (Lof;F)V
+		ARG 1 mob
+		ARG 2 a
+	METHOD a getOverlayColor (Lof;FF)I
+		ARG 1 mob
+		ARG 2 br
+		ARG 3 a
+	METHOD a setupRotations (Lof;FFF)V
+		ARG 1 mob
+		ARG 2 bob
+		ARG 3 bodyRot
+		ARG 4 a
+	METHOD a renderModel (Lof;FFFFFF)V
+		ARG 1 mob
+		ARG 2 time
+		ARG 3 r
+		ARG 4 bob
+		ARG 5 yRot
+		ARG 6 xRot
+		ARG 7 scale
+	METHOD a prepareArmor (Lof;IF)I
+		ARG 1 mob
+		ARG 2 layer
+		ARG 3 a
+	METHOD a renderNameTag (Lof;Ljava/lang/String;DDDI)V
+		ARG 1 mob
+		ARG 2 name
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 maxDist
+	METHOD b shouldShowName (Lof;)Z
+		ARG 1 mob
+	METHOD b renderName (Lof;DDD)V
+		ARG 1 mob
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD b getBob (Lof;F)F
+		ARG 1 mob
+		ARG 2 a
+	METHOD c additionalRendering (Lof;F)V
+		ARG 1 mob
+		ARG 2 a
+	METHOD d getAttackAnim (Lof;F)F
+		ARG 1 mob
+		ARG 2 a

@@ -1,0 +1,7 @@
+CLASS bhi net/minecraft/client/renderer/entity/PigRenderer
+	FIELD a SADDLE_LOCATION Lbjo;
+	FIELD f PIG_LOCATION Lbjo;
+	METHOD <init> (Lbbo;Lbbo;F)V
+		ARG 1 model
+		ARG 2 armor
+		ARG 3 shadow

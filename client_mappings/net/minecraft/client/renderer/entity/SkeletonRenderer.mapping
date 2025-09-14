@@ -1,0 +1,3 @@
+CLASS bhm net/minecraft/client/renderer/entity/SkeletonRenderer
+	FIELD k SKELETON_LOCATION Lbjo;
+	FIELD l WITHER_SKELETON_LOCATION Lbjo;

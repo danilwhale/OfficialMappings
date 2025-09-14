@@ -1,0 +1,5 @@
+CLASS bgj net/minecraft/client/renderer/entity/EnderDragonRenderer
+	FIELD f DRAGON_EXPLODING_LOCATION Lbjo;
+	FIELD g CRYSTAL_BEAM_LOCATION Lbjo;
+	FIELD h DRAGON_EYES_LOCATION Lbjo;
+	FIELD k DRAGON_LOCATION Lbjo;

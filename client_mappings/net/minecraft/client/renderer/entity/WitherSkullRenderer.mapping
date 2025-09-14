@@ -1,0 +1,8 @@
+CLASS bhx net/minecraft/client/renderer/entity/WitherSkullRenderer
+	FIELD a WITHER_INVULNERABLE_LOCATION Lbjo;
+	FIELD f WITHER_LOCATION Lbjo;
+	FIELD g model Lbby;
+	METHOD a rotlerp (FFF)F
+		ARG 1 a
+		ARG 2 b
+		ARG 3 t

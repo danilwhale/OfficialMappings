@@ -1,1 +1,4 @@
 CLASS sq net/minecraft/world/entity/item/Boat
+	METHOD d getDamage ()F
+	METHOD e getHurtTime ()I
+	METHOD h getHurtDir ()I

@@ -1,0 +1,3 @@
+CLASS bfz net/minecraft/client/renderer/entity/ArrowRenderer
+	FIELD a ARROW_LOCATION Lbjo;
+		COMMENT TippedArrowRenderer.NORMAL_ARROW_LOCATION

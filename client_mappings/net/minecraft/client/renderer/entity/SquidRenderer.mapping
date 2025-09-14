@@ -1,0 +1,2 @@
+CLASS bhq net/minecraft/client/renderer/entity/SquidRenderer
+	FIELD a SQUID_LOCATION Lbjo;

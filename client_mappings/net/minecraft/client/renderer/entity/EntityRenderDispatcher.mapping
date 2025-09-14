@@ -1,3 +1,55 @@
 CLASS bgl net/minecraft/client/renderer/entity/EntityRenderDispatcher
 	FIELD a instance Lbgl;
+	FIELD b xOff D
+	FIELD c yOff D
+	FIELD d zOff D
+	FIELD e textures Lbim;
+	FIELD f itemInHandRenderer Lbfj;
+	FIELD g level Labw;
+	FIELD h camera Lof;
+	FIELD i crosshairPickEntity Lof;
+	FIELD j playerRotY F
+	FIELD k playerRotX F
+	FIELD l options Laul;
+	FIELD m xPlayer D
+	FIELD n yPlater D
+	FIELD o zPlayer D
+	FIELD p renderHitBoxes Z
+	FIELD q renderers Ljava/util/Map;
+	FIELD r font Lavi;
+	METHOD a getFont ()Lavi;
+	METHOD a distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a setLevel (Labw;)V
+		ARG 1 level
+	METHOD a prepare (Labw;Lbim;Lavi;Lof;Lof;Laul;F)V
+		ARG 1 level
+		ARG 2 textures
+		ARG 3 font
+		ARG 4 camera
+		ARG 5 crosshairPickEntity
+		ARG 6 options
+		ARG 7 a
+	METHOD a getRenderer (Ljava/lang/Class;)Lbgm;
+		ARG 1 e
+	METHOD a getRenderer (Lnn;)Lbgm;
+		ARG 1 e
 	METHOD a render (Lnn;DDDFF)V
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rot
+		ARG 9 a
+	METHOD a render (Lnn;F)V
+		ARG 1 e
+		ARG 2 a
+	METHOD b renderHitbox (Lnn;DDDFF)V
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 rot
+		ARG 9 a

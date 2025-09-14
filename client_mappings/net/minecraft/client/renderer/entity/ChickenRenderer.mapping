@@ -1,0 +1,2 @@
+CLASS bge net/minecraft/client/renderer/entity/ChickenRenderer
+	FIELD a CHICKEN_LOCATION Lbjo;

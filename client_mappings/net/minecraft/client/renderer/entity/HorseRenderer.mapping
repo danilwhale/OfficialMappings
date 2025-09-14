@@ -1,0 +1,4 @@
+CLASS bgt net/minecraft/client/renderer/entity/HorseRenderer
+	FIELD a LAYERED_LOCATION_CACHE Ljava/util/Map;
+	METHOD b getOrCreateLayeredTextureLocation (Lrs;)Lbjo;
+		ARG 1 honse
