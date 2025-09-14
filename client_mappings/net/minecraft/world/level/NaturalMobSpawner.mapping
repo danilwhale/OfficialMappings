@@ -1,0 +1,25 @@
+CLASS aci net/minecraft/world/level/NaturalMobSpawner
+	FIELD a chunksToPoll Ljava/util/HashMap;
+	METHOD a getRandomPosWithin (Labw;II)Laco;
+		ARG 0 level
+		ARG 1 x
+		ARG 2 z
+	METHOD a spawnMobsForChunkGeneration (Labw;Lacq;IIIILjava/util/Random;)V
+		ARG 0 level
+		ARG 1 biome
+		ARG 2 x0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 random
+	METHOD a tick (Ljs;ZZZ)I
+		ARG 1 level
+		ARG 2 spawnEnemies
+		ARG 3 spawnFriendlies
+		ARG 4 a
+	METHOD a isSpawnPositionOk (Loh;Labw;III)Z
+		ARG 0 category
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

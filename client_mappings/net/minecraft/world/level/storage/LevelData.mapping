@@ -27,7 +27,7 @@ CLASS als net/minecraft/world/level/storage/LevelData
 		ARG 1 settings
 		ARG 2 name
 	METHOD <init> (Lals;)V
-		ARG 1 other
+		ARG 1 wrapped
 	METHOD <init> (Lby;)V
 		ARG 1 tag
 	METHOD a createTag ()Lby;

@@ -2,6 +2,7 @@ CLASS rm net/minecraft/world/level/saveddata/villages/Villages
 	FIELD a level Labw;
 	METHOD <init> (Labw;)V
 		ARG 1 level
+	METHOD a tick ()V
 	METHOD a getClosestVillage (IIII)Lrj;
 		ARG 1 x
 		ARG 2 y

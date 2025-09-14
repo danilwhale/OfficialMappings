@@ -1,0 +1,6 @@
+CLASS rl net/minecraft/world/entity/ai/village/VillageSiege
+	FIELD a level Labw;
+	FIELD f village Lrj;
+	METHOD <init> (Labw;)V
+		ARG 1 level
+	METHOD a tick ()V

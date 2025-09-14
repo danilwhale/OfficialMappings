@@ -12,6 +12,7 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 	FIELD m lastSaveHadEntities Z
 	FIELD n lastSaveTime J
 	FIELD p minHeight I
+	FIELD q inhabitedTime J
 	FIELD r sections [Lads;
 	METHOD <init> (Labw;II)V
 		ARG 1 level

@@ -1,0 +1,6 @@
+CLASS acj net/minecraft/world/level/PortalForcer
+	FIELD a level Ljs;
+	FIELD b random Ljava/util/Random;
+	METHOD <init> (Ljs;)V
+		ARG 1 level
+	METHOD a tick (J)V

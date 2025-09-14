@@ -23,6 +23,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD a openHopper (Lsx;)V
 		ARG 1 hopper
 	METHOD a drop (Z)Lss;
+	METHOD a stopSleepInBed (ZZZ)V
 	METHOD bI getFoodData ()Lux;
 	METHOD br isUsingItem ()Z
 	METHOD bt releaseUsingItem ()V

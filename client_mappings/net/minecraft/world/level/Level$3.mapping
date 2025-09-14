@@ -1,0 +1,6 @@
+CLASS abx net/minecraft/world/level/Level$3
+	FIELD a val$tile I
+	FIELD b this$0 Labw;
+	METHOD <init> (Labw;I)V
+		ARG 1 this$0
+		ARG 2 val$tile

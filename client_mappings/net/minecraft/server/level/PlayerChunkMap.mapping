@@ -1,0 +1,29 @@
+CLASS jp net/minecraft/server/level/PlayerChunkMap
+	FIELD a level Ljs;
+	FIELD f viewRadius I
+	FIELD h facing [[I
+	METHOD <init> (Ljs;I)V
+		ARG 1 level
+		ARG 2 viewRadius
+	METHOD a getLevel ()Ljs;
+	METHOD a chunkInRange (IIIII)Z
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
+		ARG 5 e
+	METHOD a access$000 (Ljp;)Ljs;
+		ARG 0 this$0
+	METHOD a add (Ljv;)V
+		ARG 1 player
+	METHOD b tick ()V
+	METHOD b access$100 (Ljp;)Llq;
+		ARG 0 this$0
+	METHOD b (Ljv;)V
+		ARG 1 player
+	METHOD c access$200 (Ljp;)Ljava/util/List;
+		ARG 0 this$0
+	METHOD c (Ljv;)V
+		ARG 1 player
+	METHOD d access$300 (Ljp;)Ljava/util/List;
+		ARG 0 this$0

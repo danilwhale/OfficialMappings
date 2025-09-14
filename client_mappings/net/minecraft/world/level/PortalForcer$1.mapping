@@ -1,0 +1,2 @@
+CLASS ack net/minecraft/world/level/PortalForcer$1
+	FIELD e this$0 Lacj;

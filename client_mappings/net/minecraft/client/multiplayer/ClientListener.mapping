@@ -1,4 +1,5 @@
 CLASS bcw net/minecraft/client/multiplayer/ClientListener
 	FIELD h minecraft Latv;
 	METHOD c send (Ley;)V
+	METHOD e tick ()V
 	METHOD g getConnection ()Lcm;
