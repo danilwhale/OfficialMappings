@@ -1,0 +1,40 @@
+CLASS bab net/minecraft/realmsclient/client/Request
+	FIELD a connection Ljava/net/HttpURLConnection;
+	FIELD b url Ljava/lang/String;
+	FIELD c connected Z
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 1 url
+		ARG 2 connectTimeout
+		ARG 3 readTimeout
+	METHOD a responseCode ()I
+	METHOD a read (Ljava/io/InputStream;)Ljava/lang/String;
+		ARG 1 stream
+	METHOD a get (Ljava/lang/String;)Lbab;
+		ARG 0 a
+	METHOD a cookie (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a post (Ljava/lang/String;Ljava/lang/String;II)Lbab;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+	METHOD b retryAfterHeader ()I
+	METHOD b delete (Ljava/lang/String;)Lbab;
+		ARG 0 a
+	METHOD b put (Ljava/lang/String;Ljava/lang/String;II)Lbab;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+	METHOD c post (Ljava/lang/String;Ljava/lang/String;)Lbab;
+		ARG 0 a
+		ARG 1 b
+	METHOD d text ()Ljava/lang/String;
+	METHOD d put (Ljava/lang/String;Ljava/lang/String;)Lbab;
+		ARG 0 a
+		ARG 1 b
+	METHOD e connect ()Lbab;
+	METHOD f doConnect ()Lbab;
+	METHOD g getErrorCode ()I
+	METHOD h dispose ()V

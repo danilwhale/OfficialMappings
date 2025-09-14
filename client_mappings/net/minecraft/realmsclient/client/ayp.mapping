@@ -1,4 +1,4 @@
-CLASS ayp
+CLASS ayp net/minecraft/realmsclient/client/ayp
 	FIELD a Warning Layp;
 	FIELD b Info Layp;
 	FIELD c color I
