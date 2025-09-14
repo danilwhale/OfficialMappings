@@ -1,3 +1,8 @@
 CLASS asi net/minecraft/world/level/tile/entity/HopperTileEntity
+	FIELD a items [Lye;
+	FIELD b customName Ljava/lang/String;
+	FIELD c cooldownTime I
 	METHOD a suckInItems (Lash;)Z
+	METHOD a setCustomName (Ljava/lang/String;)V
+		ARG 1 customName
 	METHOD a addItem (Lmo;Lss;)Z

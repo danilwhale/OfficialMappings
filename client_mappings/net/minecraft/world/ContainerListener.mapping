@@ -1,4 +1,4 @@
 CLASS mp net/minecraft/world/ContainerListener
-	COMMENT cocainer listener
+	COMMENT fake cocainer listener
 	METHOD a containerChanged (Lmu;)V
 		ARG 1 container

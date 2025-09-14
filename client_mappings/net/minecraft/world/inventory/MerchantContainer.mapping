@@ -1,0 +1,14 @@
+CLASS vy net/minecraft/world/inventory/MerchantContainer
+	FIELD a merchant Labk;
+	FIELD b items [Lye;
+	FIELD d activeRecipe Labl;
+	FIELD e selectionHint I
+	METHOD <init> (Luf;Labk;)V
+		ARG 1 player
+		ARG 2 merchant
+	METHOD c setSelectionHint (I)V
+		ARG 1 selectionHint
+	METHOD d isPaymentSlot (I)Z
+		ARG 1 i
+	METHOD h updateSellItem ()V
+	METHOD i getActiveRecipe ()Labl;

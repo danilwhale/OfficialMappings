@@ -1,0 +1,7 @@
+CLASS wb net/minecraft/world/inventory/PlayerEnderChestContainer
+	FIELD a activeChest Lasf;
+	METHOD a setActiveChest (Lasf;)V
+		ARG 1 activeChest
+	METHOD a setItemsByTag (Lcg;)V
+		ARG 1 tag
+	METHOD h createTag ()Lcg;

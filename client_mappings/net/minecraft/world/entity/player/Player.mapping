@@ -22,6 +22,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 1 container
 	METHOD a openHopper (Lsx;)V
 		ARG 1 hopper
+	METHOD a drop (Lye;Z)Lss;
 	METHOD a drop (Z)Lss;
 	METHOD a stopSleepInBed (ZZZ)V
 	METHOD bI getFoodData ()Lux;
