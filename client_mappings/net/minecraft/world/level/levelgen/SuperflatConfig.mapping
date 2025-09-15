@@ -3,3 +3,6 @@ CLASS agc net/minecraft/world/level/levelgen/SuperflatConfig
 	METHOD a getBiome ()I
 	METHOD a setBiome (I)V
 		ARG 1 biome
+	METHOD a fromString (Ljava/lang/String;)Lagc;
+	METHOD c getLayersInfo ()Ljava/util/List;
+	METHOD d updateLayers ()V

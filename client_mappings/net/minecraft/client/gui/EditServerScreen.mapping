@@ -1,0 +1,6 @@
+CLASS avg net/minecraft/client/gui/EditServerScreen
+	FIELD b ipEdit Lavf;
+	FIELD c nameEdit Lavf;
+	FIELD d serverData Lbdm;
+	METHOD <init> (Lawe;Lbdm;)V
+		ARG 2 serverData

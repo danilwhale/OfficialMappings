@@ -1,4 +1,5 @@
 CLASS avi net/minecraft/client/gui/Font
+	FIELD b random Ljava/util/Random;
 	METHOD <init> (Laul;Lbjo;Lbim;Z)V
 	METHOD a (I)Lbjo;
 		ARG 1 page
@@ -7,3 +8,5 @@ CLASS avi net/minecraft/client/gui/Font
 	METHOD a drawShadow (Ljava/lang/String;)I
 	METHOD a substrByWidth (Ljava/lang/String;I)Ljava/lang/String;
 	METHOD a drawShadow (Ljava/lang/String;III)I
+	METHOD a drawWordWrap (Ljava/lang/String;IIII)V
+	METHOD b draw (Ljava/lang/String;III)I

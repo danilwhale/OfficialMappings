@@ -1,0 +1,7 @@
+CLASS axg net/minecraft/client/gui/inventory/BookViewScreen$PageButton
+	FIELD o isForward Z
+	METHOD <init> (IIIZ)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 isForward

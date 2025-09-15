@@ -25,6 +25,10 @@ CLASS awg net/minecraft/client/gui/AbstractSelectionList
 		ARG 2 height
 		ARG 3 y0
 		ARG 4 y1
+	METHOD a (IIIILbfq;)V
+		COMMENT renders an item in the list
+	METHOD a moveSelection (IZ)V
+		ARG 1 selected
 	METHOD a buttonClicked (Laut;)V
 		ARG 1 button
 	METHOD b renderHoleBackground (IIII)V
@@ -32,3 +36,4 @@ CLASS awg net/minecraft/client/gui/AbstractSelectionList
 		ARG 2 y1
 		ARG 3 a0
 		ARG 4 a1
+	METHOD c getScrollbarPosition ()I

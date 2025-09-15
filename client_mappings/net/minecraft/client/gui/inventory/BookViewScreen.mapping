@@ -1,0 +1,13 @@
+CLASS axf net/minecraft/client/gui/inventory/BookViewScreen
+	FIELD a BOOK_LOCATION Lbjo;
+	FIELD b author Luf;
+	FIELD t pageCount I
+	FIELD u currentPage I
+	FIELD v pages Lcg;
+	FIELD w title Ljava/lang/String;
+	FIELD x forwardButton Laxg;
+	FIELD y backButton Laxg;
+	METHOD <init> (Luf;Lye;Z)V
+		ARG 1 player
+		ARG 2 item
+	METHOD g access$000 ()Lbjo;

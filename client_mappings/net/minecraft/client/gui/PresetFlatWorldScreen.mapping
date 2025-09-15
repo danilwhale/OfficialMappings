@@ -1,4 +1,4 @@
-CLASS avz
+CLASS avz net/minecraft/client/gui/PresetFlatWorldScreen
 	METHOD a access$200 (Lavz;)Lawb;
 	METHOD b access$300 (Lavz;)Lavf;
 	METHOD h access$000 ()Lbgw;

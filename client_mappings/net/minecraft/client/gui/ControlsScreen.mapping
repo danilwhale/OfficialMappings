@@ -1,0 +1,9 @@
+CLASS auy net/minecraft/client/gui/ControlsScreen
+	FIELD a title Ljava/lang/String;
+	FIELD b lastScreen Lawe;
+	FIELD c options Laul;
+	FIELD d selectedKey I
+	METHOD <init> (Lawe;Laul;)V
+		ARG 1 lastScreen
+		ARG 2 options
+	METHOD g getLeftScreenPosition ()I
