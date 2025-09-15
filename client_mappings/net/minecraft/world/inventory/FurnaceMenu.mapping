@@ -1,0 +1,8 @@
+CLASS vp net/minecraft/world/inventory/FurnaceMenu
+	FIELD a furnace Lasg;
+	FIELD f tc I
+	FIELD g lt I
+	FIELD h ld I
+	METHOD <init> (Lud;Lasg;)V
+		ARG 1 inventory
+		ARG 2 furnace

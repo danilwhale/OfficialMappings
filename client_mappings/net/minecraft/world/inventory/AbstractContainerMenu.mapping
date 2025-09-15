@@ -63,12 +63,15 @@ CLASS uy net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD b getQuickcraftType (I)I
 		ARG 0 status
 	METHOD b setData (II)V
-		ARG 1 slot
+		ARG 1 id
 		ARG 2 data
 	METHOD b getRedstoneSignalFromContainer (Lmo;)I
 		ARG 0 container
 	METHOD b removed (Luf;)V
 		ARG 1 player
+	METHOD b quickMoveStack (Luf;I)Lye;
+		ARG 1 player
+		ARG 2 slot
 	METHOD b removeSlotListener (Lvi;)V
 		ARG 1 listener
 	METHOD b canDragTo (Lwe;)Z

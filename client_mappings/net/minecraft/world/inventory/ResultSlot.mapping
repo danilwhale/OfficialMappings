@@ -1,0 +1,11 @@
+CLASS wd net/minecraft/world/inventory/ResultSlot
+	FIELD a craftSlots Lmo;
+	FIELD b player Luf;
+	FIELD c removeCount I
+	METHOD <init> (Luf;Lmo;Lmo;III)V
+		ARG 1 player
+		ARG 2 craftSlots
+		ARG 3 inventory
+		ARG 4 slot
+		ARG 5 x
+		ARG 6 y

@@ -1,0 +1,10 @@
+CLASS vz net/minecraft/world/inventory/MerchantMenu
+	FIELD a trader Labk;
+	FIELD f tradeContainer Lvy;
+	METHOD <init> (Lud;Labk;Labw;)V
+		ARG 1 inventory
+		ARG 2 trader
+		ARG 3 level
+	METHOD e getTradeContainer ()Lvy;
+	METHOD e setSelectionHint (I)V
+		ARG 1 selectionHint

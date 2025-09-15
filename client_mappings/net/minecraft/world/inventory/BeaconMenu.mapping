@@ -1,0 +1,7 @@
+CLASS vd net/minecraft/world/inventory/BeaconMenu
+	FIELD a beacon Larw;
+	FIELD f paymentSlot Lve;
+	METHOD <init> (Lud;Larw;)V
+		ARG 1 inventory
+		ARG 2 beacon
+	METHOD e getBeacon ()Larw;

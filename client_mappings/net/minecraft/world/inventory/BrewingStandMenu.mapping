@@ -1,0 +1,7 @@
+CLASS vf net/minecraft/world/inventory/BrewingStandMenu
+	FIELD a brewingStand Larx;
+	FIELD f ingredientSlot Lwe;
+	FIELD g brewingStandData I
+	METHOD <init> (Lud;Larx;)V
+		ARG 1 inventory
+		ARG 2 brewingStand

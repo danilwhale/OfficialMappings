@@ -1,0 +1,7 @@
+CLASS vs net/minecraft/world/inventory/HorseInventoryMenu
+	FIELD a horseContainer Lmo;
+	FIELD f horse Lrs;
+	METHOD <init> (Lmo;Lmo;Lrs;)V
+		ARG 1 container
+		ARG 2 horseContainer
+		ARG 3 horse

@@ -1,0 +1,7 @@
+CLASS vj net/minecraft/world/inventory/ContainerMenu
+	FIELD a container Lmo;
+	FIELD f containerRows I
+	METHOD <init> (Lmo;Lmo;)V
+		ARG 1 inventory
+		ARG 2 container
+	METHOD e getContainer ()Lmo;

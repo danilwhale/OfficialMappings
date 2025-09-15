@@ -1,0 +1,8 @@
+CLASS vg net/minecraft/world/inventory/BrewingStandMenu$IngredientsSlot
+	FIELD a this$0 Lvf;
+	METHOD <init> (Lvf;Lmo;III)V
+		ARG 1 this$0
+		ARG 2 container
+		ARG 3 slot
+		ARG 4 x
+		ARG 5 y

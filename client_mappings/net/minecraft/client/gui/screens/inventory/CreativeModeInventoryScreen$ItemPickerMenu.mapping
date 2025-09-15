@@ -1,0 +1,7 @@
+CLASS axn net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen$ItemPickerMenu
+	FIELD a items Ljava/util/List;
+	METHOD <init> (Luf;)V
+		ARG 1 player
+	METHOD a scrollTo (F)V
+		ARG 1 page
+	METHOD e canScroll ()Z
