@@ -1,0 +1,12 @@
+CLASS asn net/minecraft/world/level/tile/entity/SkullTileEntity
+	FIELD a skullType I
+	FIELD b rotation I
+	FIELD c extraType Ljava/lang/String;
+	METHOD a getSkullType ()I
+	METHOD a setRotation (I)V
+		ARG 1 rotation
+	METHOD a setSkullType (ILjava/lang/String;)V
+		ARG 1 skullType
+		ARG 2 extraType
+	METHOD b getRotation ()I
+	METHOD c getExtraType ()Ljava/lang/String;

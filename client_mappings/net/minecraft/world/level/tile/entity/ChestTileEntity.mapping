@@ -1,3 +1,21 @@
 CLASS ary net/minecraft/world/level/tile/entity/ChestTileEntity
+	FIELD f openness F
+	FIELD g oOpenness F
+	FIELD h openCount I
+	FIELD i items [Lye;
+	FIELD j tickInterval I
+	FIELD r type I
+	FIELD s customName Ljava/lang/String;
+	METHOD <init> (I)V
+		ARG 1 type
+	METHOD a isSameChest (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a heyImYourNeighbor (Lary;I)V
+		ARG 1 neighbor
+		ARG 2 dir
 	METHOD a setCustomName (Ljava/lang/String;)V
 		ARG 1 customName
+	METHOD j checkNeighbors ()V
+	METHOD l getType ()I

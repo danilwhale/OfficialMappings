@@ -1,1 +1,11 @@
 CLASS asm net/minecraft/world/level/tile/entity/SignTileEntity
+	FIELD a messages [Ljava/lang/String;
+	FIELD b selectedLine I
+	FIELD c isEditable Z
+	FIELD d playerWhoMayEdit Luf;
+	METHOD a isEditable ()Z
+	METHOD a setAllowedPlayerEditor (Luf;)V
+		ARG 1 allowedPlayerEditor
+	METHOD a setEditable (Z)V
+		ARG 1 editable
+	METHOD b getPlayerWhoMayEdit ()Luf;

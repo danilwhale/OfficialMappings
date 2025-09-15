@@ -1,1 +1,2 @@
 CLASS aok net/minecraft/world/level/tile/FurnaceTile
+	METHOD a setLit (ZLabw;III)V

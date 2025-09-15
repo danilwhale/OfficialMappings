@@ -1,1 +1,19 @@
 CLASS arx net/minecraft/world/level/tile/entity/BrewingStandTileEntity
+	FIELD a SLOTS_FOR_UP [I
+	FIELD b SLOTS_FOR_SIDES [I
+	FIELD c items [Lye;
+	FIELD d brewTime I
+	FIELD e lastPotionCount I
+	FIELD f ingredient I
+	FIELD g customName Ljava/lang/String;
+	METHOD a setCustomName (Ljava/lang/String;)V
+		ARG 1 customName
+	METHOD c applyIngredient (ILye;)I
+		ARG 1 potionValue
+		ARG 2 item
+	METHOD d setBrewTime (I)V
+		ARG 1 brewTime
+	METHOD j getPotionBits ()I
+	METHOD l isBrewable ()Z
+	METHOD u doBrew ()V
+	METHOD x_ getBrewTime ()I

@@ -1,0 +1,9 @@
+CLASS asf net/minecraft/world/level/tile/entity/EnderChestTileEntity
+	FIELD a openness F
+	FIELD b oOpenness F
+	FIELD c openCount I
+	FIELD d tickInterval I
+	METHOD a startOpen ()V
+	METHOD a stillValid (Luf;)Z
+		ARG 1 player
+	METHOD b stopOpen ()V
