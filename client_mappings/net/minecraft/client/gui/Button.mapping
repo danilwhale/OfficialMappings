@@ -1,4 +1,4 @@
-CLASS aut net/minecraft/client/gui/components/Button
+CLASS aut net/minecraft/client/gui/Button
 	FIELD a WIDGETS_LOCATION Lbjo;
 	FIELD b w I
 	FIELD c h I

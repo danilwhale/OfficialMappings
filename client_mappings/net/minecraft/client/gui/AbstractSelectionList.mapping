@@ -1,4 +1,4 @@
-CLASS awg net/minecraft/client/gui/components/AbstractSelectionList
+CLASS awg net/minecraft/client/gui/AbstractSelectionList
 	FIELD a minecraft Latv;
 	FIELD b width I
 	FIELD c y0 I

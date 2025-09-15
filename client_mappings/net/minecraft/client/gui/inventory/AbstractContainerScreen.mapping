@@ -1,4 +1,4 @@
-CLASS awy net/minecraft/client/gui/screens/inventory/AbstractContainerScreen
+CLASS awy net/minecraft/client/gui/inventory/AbstractContainerScreen
 	FIELD A snapbackTime J
 	FIELD B snapbackItem Lye;
 	FIELD C quickdropSlot Lwe;

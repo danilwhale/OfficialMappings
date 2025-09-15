@@ -1,4 +1,4 @@
-CLASS awk net/minecraft/client/gui/components/SlideButton
+CLASS awk net/minecraft/client/gui/SlideButton
 	FIELD o value F
 	FIELD p sliding Z
 	FIELD q option Laun;

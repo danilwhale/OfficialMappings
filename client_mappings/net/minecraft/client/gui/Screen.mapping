@@ -1,4 +1,4 @@
-CLASS awe net/minecraft/client/gui/screens/Screen
+CLASS awe net/minecraft/client/gui/Screen
 	FIELD a clickedButton Laut;
 	FIELD b activeButton I
 	FIELD c mousePressedTime J

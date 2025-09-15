@@ -1,4 +1,4 @@
-CLASS axn net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen$ItemPickerMenu
+CLASS axn net/minecraft/client/gui/inventory/CreativeModeInventoryScreen$ItemPickerMenu
 	FIELD a items Ljava/util/List;
 	METHOD <init> (Luf;)V
 		ARG 1 player

@@ -1,4 +1,4 @@
-CLASS auv net/minecraft/client/gui/screens/ChatOptionsScreen
+CLASS auv net/minecraft/client/gui/ChatOptionsScreen
 	FIELD a CHAT_OPTIONS [Laun;
 	FIELD c lastScreen Lawe;
 	FIELD d options Laul;

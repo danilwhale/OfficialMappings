@@ -1,4 +1,4 @@
-CLASS aux net/minecraft/client/gui/screens/ConfirmScreen
+CLASS aux net/minecraft/client/gui/ConfirmScreen
 	FIELD a parent Lawe;
 	FIELD b title1 Ljava/lang/String;
 	FIELD c yesButton Ljava/lang/String;

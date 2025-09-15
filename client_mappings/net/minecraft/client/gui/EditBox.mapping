@@ -1,4 +1,4 @@
-CLASS avf net/minecraft/client/gui/components/EditBox
+CLASS avf net/minecraft/client/gui/EditBox
 	FIELD a font Lavi;
 	FIELD b x I
 	FIELD c y I

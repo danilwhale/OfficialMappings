@@ -1,4 +1,4 @@
-CLASS blt net/minecraft/client/gui/screens/TitleScreen
+CLASS blt net/minecraft/client/gui/TitleScreen
 	FIELD A warningClickWidth I
 	FIELD C warningx0 I
 	FIELD D warningy0 I

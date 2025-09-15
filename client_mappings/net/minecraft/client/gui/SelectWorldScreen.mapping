@@ -1,4 +1,4 @@
-CLASS awh net/minecraft/client/gui/screens/SelectWorldScreen
+CLASS awh net/minecraft/client/gui/SelectWorldScreen
 	FIELD a lastScreen Lawe;
 	FIELD b title Ljava/lang/String;
 	FIELD v deleteButton Laut;

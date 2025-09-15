@@ -1,4 +1,4 @@
-CLASS auw net/minecraft/client/gui/screens/ChatScreen
+CLASS auw net/minecraft/client/gui/ChatScreen
 	FIELD a input Lavf;
 	FIELD b historyBuffer Ljava/lang/String;
 	FIELD c historyPos I

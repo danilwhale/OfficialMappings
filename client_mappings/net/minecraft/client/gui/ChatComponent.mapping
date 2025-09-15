@@ -1,4 +1,4 @@
-CLASS auu net/minecraft/client/gui/components/ChatComponent
+CLASS auu net/minecraft/client/gui/ChatComponent
 	FIELD a minecraft Latv;
 	FIELD b recentChat Ljava/util/List;
 	FIELD c allMessages Ljava/util/List;
