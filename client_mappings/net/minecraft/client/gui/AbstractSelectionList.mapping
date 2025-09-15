@@ -25,12 +25,12 @@ CLASS awg net/minecraft/client/gui/AbstractSelectionList
 		ARG 2 height
 		ARG 3 y0
 		ARG 4 y1
-	METHOD a (IIIILbfq;)V
-		COMMENT renders an item in the list
+	METHOD a render (IIIILbfq;)V
 	METHOD a moveSelection (IZ)V
 		ARG 1 selected
 	METHOD a buttonClicked (Laut;)V
 		ARG 1 button
+	METHOD b renderBackground ()V
 	METHOD b renderHoleBackground (IIII)V
 		ARG 1 y0
 		ARG 2 y1

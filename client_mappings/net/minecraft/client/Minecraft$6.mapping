@@ -1,0 +1,2 @@
+CLASS aug net/minecraft/client/Minecraft$6
+	FIELD a this$0 Latv;

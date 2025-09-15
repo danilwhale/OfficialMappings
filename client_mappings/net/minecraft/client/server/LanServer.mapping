@@ -1,0 +1,7 @@
+CLASS ble net/minecraft/client/server/LanServer
+	FIELD a motd Ljava/lang/String;
+	FIELD b address Ljava/lang/String;
+	FIELD c pingTime J
+	METHOD a getMotd ()Ljava/lang/String;
+	METHOD b getAddress ()Ljava/lang/String;
+	METHOD c updatePingTime ()V

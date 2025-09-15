@@ -1,4 +1,9 @@
 CLASS ard net/minecraft/world/level/tile/Tile$SoundType
-	METHOD b getStepSound ()Ljava/lang/String;
+	FIELD a name Ljava/lang/String;
+	FIELD b volume F
+	FIELD c pitch F
+	METHOD a getBreakSound ()Ljava/lang/String;
+	METHOD b getPlaceSound ()Ljava/lang/String;
 	METHOD c getVolume ()F
 	METHOD d getPitch ()F
+	METHOD e getStepSound ()Ljava/lang/String;

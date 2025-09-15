@@ -7,6 +7,7 @@ CLASS aet net/minecraft/world/level/levelgen/RandomLevelSource
 	FIELD f br [D
 	FIELD g sr [D
 	FIELD h dr [D
+	FIELD i biomeWeights [F
 	FIELD j waterDepths [[I
 	FIELD k random Ljava/util/Random;
 	FIELD l lperlinNoise1 Lajt;
@@ -16,6 +17,7 @@ CLASS aet net/minecraft/world/level/levelgen/RandomLevelSource
 	FIELD p level Labw;
 	FIELD r buffer [D
 	FIELD s depthBuffer [D
+	FIELD t caveFeature Laer;
 	FIELD z biomes [Lacq;
 	METHOD <init> (Labw;JZ)V
 		ARG 1 level

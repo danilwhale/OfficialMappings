@@ -1,0 +1,5 @@
+CLASS bjz net/minecraft/client/gui/ResourcePackSelectScreen
+	FIELD a lastScreen Lawe;
+	FIELD b updateIn I
+	METHOD <init> (Lawe;Laul;)V
+		ARG 1 lastScreen

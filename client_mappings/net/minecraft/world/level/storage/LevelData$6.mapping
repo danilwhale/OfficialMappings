@@ -1,1 +1,2 @@
 CLASS aly net/minecraft/world/level/storage/LevelData$6
+	FIELD a this$0 Lals;

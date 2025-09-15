@@ -1,2 +1,10 @@
 CLASS ald net/minecraft/world/level/pathfinder/BinaryHeap
 	FIELD a heap [Lale;
+	FIELD b size I
+	METHOD a clear ()V
+	METHOD a upHeap (I)V
+	METHOD a insert (Lale;)Lale;
+	METHOD a changeCost (Lale;F)V
+	METHOD b downHeap (I)V
+	METHOD c pop ()Lale;
+	METHOD e isEmpty ()Z

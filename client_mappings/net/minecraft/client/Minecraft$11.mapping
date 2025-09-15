@@ -1,0 +1,2 @@
+CLASS atz net/minecraft/client/Minecraft$11
+	FIELD a this$0 Latv;

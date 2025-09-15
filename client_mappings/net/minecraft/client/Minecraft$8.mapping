@@ -1,0 +1,2 @@
+CLASS aui net/minecraft/client/Minecraft$8
+	FIELD a this$0 Latv;

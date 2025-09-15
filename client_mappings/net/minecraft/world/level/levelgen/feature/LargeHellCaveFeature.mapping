@@ -1,3 +1,0 @@
-CLASS aes net/minecraft/world/level/levelgen/feature/LargeHellCaveFeature
-	METHOD a addRoom (JII[BDDD)V
-	METHOD a addTunnel (JII[BDDDFFFIID)V

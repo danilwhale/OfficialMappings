@@ -1,5 +1,14 @@
 CLASS avz net/minecraft/client/gui/PresetFlatWorldScreen
+	FIELD b presets Ljava/util/List;
+	FIELD c parent Lauz;
+	FIELD e shareText Ljava/lang/String;
+	FIELD p listText Ljava/lang/String;
+	FIELD q list Lawb;
+	FIELD r selectButton Laut;
+	FIELD s export Lavf;
 	METHOD a access$200 (Lavz;)Lawb;
+	METHOD a preset (Ljava/lang/String;ILacq;Ljava/util/List;[Lagd;)V
+	METHOD a preset (Ljava/lang/String;ILacq;[Lagd;)V
 	METHOD b access$300 (Lavz;)Lavf;
 	METHOD h access$000 ()Lbgw;
 	METHOD i access$100 ()Ljava/util/List;

@@ -1,0 +1,11 @@
+CLASS avn net/minecraft/client/gui/JoinMultiplayerScreen
+	FIELD A lanServerDetector Lblf;
+	FIELD C initedOnce Z
+	FIELD c lastScreen Lawe;
+	FIELD d serverSelectionList Lavo;
+	FIELD e servers Lbdn;
+	FIELD x toolTip Ljava/lang/String;
+	FIELD y editingServer Lbdm;
+	FIELD z lanServerList Lblg;
+	METHOD a renderTooltip (Ljava/lang/String;II)V
+	METHOD c pingServer (Lbdm;)V

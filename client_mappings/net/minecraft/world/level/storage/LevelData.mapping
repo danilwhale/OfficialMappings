@@ -41,6 +41,7 @@ CLASS als net/minecraft/world/level/storage/LevelData
 		ARG 1 gameType
 	METHOD a setGenerator (Lacg;)V
 		ARG 1 generator
+	METHOD a access$100 (Lals;)Lacg;
 	METHOD a createTag (Lby;)Lby;
 		ARG 1 loadedPlayerTag
 	METHOD a setTagData (Lby;Lby;)V
@@ -57,6 +58,7 @@ CLASS als net/minecraft/world/level/storage/LevelData
 		ARG 1 ySpawn
 	METHOD b setGameTime (J)V
 		ARG 1 gameTime
+	METHOD b access$200 (Lals;)Z
 	METHOD b setRaining (Z)V
 		ARG 1 raining
 	METHOD c getXSpawn ()I
@@ -64,28 +66,43 @@ CLASS als net/minecraft/world/level/storage/LevelData
 		ARG 1 zSpawn
 	METHOD c setDayTime (J)V
 		ARG 1 dayTime
+	METHOD c access$300 (Lals;)Ljava/lang/String;
 	METHOD d getYSpawn ()I
+	METHOD d access$400 (Lals;)I
 	METHOD d setInitialized (Z)V
 		ARG 1 initialized
 	METHOD e getZSpawn ()I
 	METHOD e setVersion (I)V
 		ARG 1 version
+	METHOD e access$500 (Lals;)I
 	METHOD f getGameTime ()J
 	METHOD f setThunderTime (I)V
 		ARG 1 thunderTime
+	METHOD f access$600 (Lals;)I
 	METHOD g getDayTime ()J
 	METHOD g setRainTime (I)V
 		ARG 1 rainTime
+	METHOD g access$700 (Lals;)J
 	METHOD h getSizeOnDisk ()J
+	METHOD h access$800 (Lals;)J
 	METHOD i getLoadedPlayerTag ()Lby;
+	METHOD i access$900 (Lals;)I
 	METHOD j getDimension ()I
+	METHOD j access$1000 (Lals;)I
 	METHOD k getLevelName ()Ljava/lang/String;
+	METHOD k access$1100 (Lals;)I
 	METHOD l getVersion ()I
+	METHOD l access$1200 (Lals;)Z
 	METHOD m getLastPlayed ()J
+	METHOD m access$1300 (Lals;)I
 	METHOD n isThundering ()Z
+	METHOD n access$1400 (Lals;)Z
 	METHOD o getThunderTime ()I
+	METHOD o access$1500 (Lals;)Lace;
 	METHOD p isRaining ()Z
+	METHOD p access$1600 (Lals;)Z
 	METHOD q getRainTime ()I
+	METHOD q access$1700 (Lals;)Z
 	METHOD r getGameType ()Lace;
 	METHOD s isGenerateMapFeatures ()Z
 	METHOD t isHardcore ()Z

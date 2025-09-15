@@ -1,1 +1,2 @@
 CLASS aud net/minecraft/client/Minecraft$3
+	FIELD a this$0 Latv;

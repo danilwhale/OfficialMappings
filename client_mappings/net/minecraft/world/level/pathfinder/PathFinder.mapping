@@ -3,4 +3,12 @@ CLASS alg net/minecraft/world/level/pathfinder/PathFinder
 	FIELD b openSet Lald;
 	FIELD c nodes Llm;
 	FIELD d neighbors [Lale;
+	METHOD a getNode (III)Lale;
+	METHOD a reconstruct_path (Lale;Lale;)Lalf;
+	METHOD a findPath (Lnn;DDDF)Lalf;
+	METHOD a findPath (Lnn;IIIF)Lalf;
+	METHOD a isFree (Lnn;IIILale;)I
+	METHOD a getNode (Lnn;IIILale;I)Lale;
+	METHOD a findPath (Lnn;Lale;Lale;Lale;F)Lalf;
 	METHOD a findPath (Lnn;Lnn;F)Lalf;
+	METHOD b getNeighbors (Lnn;Lale;Lale;Lale;F)I

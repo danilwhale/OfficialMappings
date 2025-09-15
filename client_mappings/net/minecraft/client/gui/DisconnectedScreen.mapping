@@ -1,0 +1,3 @@
+CLASS bda net/minecraft/client/gui/DisconnectedScreen
+	FIELD a title Ljava/lang/String;
+	FIELD b reason Ljava/lang/String;

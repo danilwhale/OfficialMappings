@@ -1,1 +1,3 @@
 CLASS blh net/minecraft/client/server/LanServerPinger
+	METHOD a parseMotd (Ljava/lang/String;)Ljava/lang/String;
+	METHOD b parseAddress (Ljava/lang/String;)Ljava/lang/String;

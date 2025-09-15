@@ -1,0 +1,6 @@
+CLASS bcy net/minecraft/client/gui/ConnectScreen
+	FIELD b aborted Z
+	FIELD c parent Lawe;
+	METHOD a connect (Ljava/lang/String;I)V
+		ARG 1 ip
+		ARG 2 port

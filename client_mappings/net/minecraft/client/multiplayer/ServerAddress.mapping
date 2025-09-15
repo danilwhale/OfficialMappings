@@ -1,0 +1,8 @@
+CLASS bdl net/minecraft/client/multiplayer/ServerAddress
+	FIELD a host Ljava/lang/String;
+	FIELD b port I
+	METHOD a getHost ()Ljava/lang/String;
+	METHOD a parseString (Ljava/lang/String;)Lbdl;
+	METHOD a parseInt (Ljava/lang/String;I)I
+	METHOD b getPort ()I
+	METHOD b lookupSrv (Ljava/lang/String;)[Ljava/lang/String;

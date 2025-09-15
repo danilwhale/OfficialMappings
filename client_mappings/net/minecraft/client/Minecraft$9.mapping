@@ -1,0 +1,2 @@
+CLASS atx net/minecraft/client/Minecraft$9
+	FIELD a this$0 Latv;
