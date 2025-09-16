@@ -1,0 +1,24 @@
+CLASS bl net/minecraft/core/FacingEnum
+	FIELD a DOWN Lbl;
+	FIELD b UP Lbl;
+	FIELD c NORTH Lbl;
+	FIELD d SOUTH Lbl;
+	FIELD e EAST Lbl;
+	FIELD f WEST Lbl;
+	FIELD g data3d I
+	FIELD h data2d I
+	FIELD i stepX I
+	FIELD j stepY I
+	FIELD k stepZ I
+	FIELD l VALUES [Lbl;
+	METHOD <init> (Ljava/lang/String;IIIIII)V
+		ARG 3 data3d
+		ARG 4 data2d
+		ARG 5 stepX
+		ARG 6 stepY
+		ARG 7 stepZ
+	METHOD a get (I)Lbl;
+		ARG 0 index
+	METHOD c getStepX ()I
+	METHOD d getStepY ()I
+	METHOD e getStepZ ()I

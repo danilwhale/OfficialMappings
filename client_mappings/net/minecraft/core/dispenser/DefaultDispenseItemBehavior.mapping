@@ -3,15 +3,15 @@ CLASS bh net/minecraft/core/dispenser/DefaultDispenseItemBehavior
 		ARG 0 level
 		ARG 1 item
 		ARG 2 power
-		ARG 3 direction
+		ARG 3 facing
 		ARG 4 position
 	METHOD a playSound (Lbf;)V
 		ARG 1 block
 	METHOD a playAnimation (Lbf;Lbl;)V
 		ARG 1 block
-		ARG 2 direction
+		ARG 2 facing
 	METHOD a getLevelEventDataFrom (Lbl;)I
-		ARG 1 direction
+		ARG 1 facing
 	METHOD b execute (Lbf;Lye;)Lye;
 		ARG 1 block
 		ARG 2 item
