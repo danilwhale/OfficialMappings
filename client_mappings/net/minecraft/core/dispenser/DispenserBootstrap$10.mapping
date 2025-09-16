@@ -1,0 +1,2 @@
+CLASS gs net/minecraft/core/dispenser/DispenserBootstrap$10
+	FIELD b defaultDispenseItemBehavior Lbh;
