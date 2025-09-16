@@ -1,0 +1,8 @@
+CLASS axy net/minecraft/client/gui/inventory/TextEditSrceen
+	FIELD a title Ljava/lang/String;
+	FIELD b allowedChars Ljava/lang/String;
+	FIELD c sign Lasm;
+	FIELD d frame I
+	FIELD e line I
+	METHOD <init> (Lasm;)V
+		ARG 1 sign
