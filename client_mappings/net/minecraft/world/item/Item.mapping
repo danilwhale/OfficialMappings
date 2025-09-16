@@ -242,6 +242,13 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 instance
 		ARG 2 player
 		ARG 3 level
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 face
+		ARG 8 xa
+		ARG 9 ya
+		ARG 10 za
 	METHOD a appendHoverText (Lye;Luf;Ljava/util/List;Z)V
 		ARG 1 instance
 		ARG 2 player
@@ -300,6 +307,7 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 instance
 	METHOD k (Lye;)Ljava/lang/String;
 		ARG 1 item
+	METHOD l getIconType ()I
 	METHOD l getHoverName (Lye;)Ljava/lang/String;
 		ARG 1 instance
 	METHOD m getMaxStackSize ()I
