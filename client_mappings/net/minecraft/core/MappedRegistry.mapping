@@ -1,0 +1,2 @@
+CLASS br net/minecraft/core/MappedRegistry
+	FIELD a map Ljava/util/Map;

@@ -1,1 +1,2 @@
 CLASS yj net/minecraft/world/item/MinecartItem
+	FIELD b DISPENSE_ITEM_BEHAVIOR Lbj;

@@ -1,0 +1,6 @@
+CLASS hb net/minecraft/core/DispenserBootstrap$5$1
+	FIELD b val$item Lye;
+	FIELD c this$0 Lha;
+	METHOD <init> (Lha;Lye;)V
+		ARG 1 this$0
+		ARG 2 val$item

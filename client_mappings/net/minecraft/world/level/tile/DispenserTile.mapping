@@ -1,2 +1,3 @@
 CLASS any net/minecraft/world/level/tile/DispenserTile
+	FIELD a DISPENSER_REGISTRY Lbq;
 	METHOD a getDispensePosition (Lbf;)Lbo;
