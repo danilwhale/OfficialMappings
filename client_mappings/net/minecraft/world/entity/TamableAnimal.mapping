@@ -1,0 +1,17 @@
+CLASS oq net/minecraft/world/entity/TamableAnimal
+	FIELD bp sitGoal Lqr;
+	METHOD a wantsToAttack (Lof;Lof;)Z
+		ARG 1 entity
+		ARG 2 owner
+	METHOD b setOwnerUUID (Ljava/lang/String;)V
+		ARG 1 ownerUUID
+	METHOD bT isTame ()Z
+	METHOD bU isSitting ()Z
+	METHOD bW getSitGoal ()Lqr;
+	METHOD h getCurrentSwingDuration ()I
+	METHOD i spawnTamingParticle (Z)V
+		ARG 1 success
+	METHOD j setTame (Z)V
+		ARG 1 tame
+	METHOD k setSitting (Z)V
+		ARG 1 sitting

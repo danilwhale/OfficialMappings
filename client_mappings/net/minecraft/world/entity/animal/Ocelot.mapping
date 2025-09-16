@@ -1,0 +1,5 @@
+CLASS rx net/minecraft/world/entity/animal/Ocelot
+	FIELD bq temptGoal Lqu;
+	METHOD ca getCatType ()I
+	METHOD p setCatType (I)V
+		ARG 1 catType

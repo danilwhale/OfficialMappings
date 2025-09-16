@@ -1,3 +1,0 @@
-CLASS oq
-	METHOD bT isTame ()Z
-	METHOD h getCurrentSwingDuration ()I
