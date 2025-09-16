@@ -53,9 +53,12 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD j crosshairPickEntity Lof;
 	FIELD k particleEngine Lbeh;
 	FIELD l font Lavi;
+	FIELD m Lavi;
+		COMMENT standard galactic alphabet font, 1.14 uses ALT_FONT static for it
 	FIELD n screen Lawe;
 	FIELD o progressRenderer Lauo;
 	FIELD p gameRenderer Lbfe;
+	FIELD q toast Lawp;
 	FIELD r gui Lavj;
 	FIELD s noRender Z
 	FIELD t hitResult Lata;
@@ -63,6 +66,7 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD v soundEngine Lbln;
 	FIELD w mouseHandler Lauj;
 	FIELD x gameDirectory Ljava/io/File;
+	FIELD z wasDown Z
 	METHOD <init> (Laus;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;)V
 		ARG 1 user
 		ARG 2 width
@@ -89,7 +93,9 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD N startTimerHackThread ()V
 	METHOD O init ()V
 	METHOD R renderLoadingScreen ()V
+	METHOD S runTick ()V
 	METHOD U getFramerateLimit ()I
+	METHOD V checkScreenshot ()V
 	METHOD W pickBlock ()V
 	METHOD a reloadResourcePacks ()V
 	METHOD a resize (II)V
@@ -119,6 +125,8 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD b debugFpsMeterKeyPress (I)V
 	METHOD b access$001 (Latv;)Lbkd;
 		ARG 0 this$0
+	METHOD b fillReport (Lb;)Lb;
+	METHOD c destroy ()V
 	METHOD c handleMouseClick (I)V
 		ARG 1 button
 	METHOD c crash (Lb;)V

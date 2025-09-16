@@ -1,0 +1,23 @@
+CLASS awp net/minecraft/client/gui/ToastComponent
+	COMMENT dunno if this is correct name though.
+	COMMENT tried my best to rebuild it from fragments of toast code from 1.14
+	FIELD a TEXTURE Lbjo;
+		COMMENT Toast.TEXTURE
+	FIELD b minecraft Latv;
+	FIELD e title Ljava/lang/String;
+		COMMENT SystemToast.title
+	FIELD f message Ljava/lang/String;
+		COMMENT SystemToast.message
+	FIELD g achievement Lko;
+		COMMENT AdvancementToast.advancement
+	FIELD h animationTime J
+		COMMENT ToastInstance.animationTime
+	METHOD <init> (Latv;)V
+		ARG 1 minecraft
+	METHOD a render ()V
+	METHOD a (Lko;)V
+		COMMENT shows an achievement toast for 3 seconds
+		ARG 1 achievement
+	METHOD b (Lko;)V
+		COMMENT shows achievement's message in a toast until normal achievement is given
+		ARG 1 achievement
