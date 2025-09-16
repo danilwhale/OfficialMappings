@@ -77,7 +77,7 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 2 advanced
 	METHOD a sameItem (Lye;)Z
 		ARG 1 other
-	METHOD a matches (Lye;Lye;)Z
+	METHOD a tagMatches (Lye;Lye;)Z
 		ARG 0 a
 		ARG 1 b
 	METHOD b getItem ()Lyc;
@@ -95,6 +95,9 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 1 tag
 	METHOD b clone (Lye;)Lye;
 		ARG 0 item
+	METHOD b matches (Lye;Lye;)Z
+		ARG 0 a
+		ARG 1 b
 	METHOD c getIcon ()Lms;
 	METHOD c setRepairCost (I)V
 		ARG 1 repairCost

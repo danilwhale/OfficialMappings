@@ -1,0 +1,13 @@
+CLASS axe net/minecraft/client/gui/inventory/BeaconScreen$BeaconScreenButton
+	FIELD p iconX I
+	FIELD q iconY I
+	FIELD r selected Z
+	METHOD <init> (IIILbjo;II)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 5 iconX
+		ARG 6 iconY
+	METHOD b isSelected ()Z
+	METHOD b setSelected (Z)V
+		ARG 1 selected

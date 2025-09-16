@@ -1,4 +1,0 @@
-CLASS awz
-	FIELD t ANVIL_LOCATION Lbjo;
-	FIELD v name Lavf;
-	METHOD g recalculateQuickCraftRemaining ()V

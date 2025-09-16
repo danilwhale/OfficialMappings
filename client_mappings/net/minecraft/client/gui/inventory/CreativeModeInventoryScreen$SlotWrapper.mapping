@@ -1,0 +1,9 @@
+CLASS axo net/minecraft/client/gui/inventory/CreativeModeInventoryScreen$SlotWrapper
+	FIELD a this$0 Laxm;
+	FIELD b target Lwe;
+	METHOD <init> (Laxm;Lwe;I)V
+		ARG 1 this$0
+		ARG 2 target
+		ARG 3 id
+	METHOD a access$000 (Laxo;)Lwe;
+		ARG 0 this$0

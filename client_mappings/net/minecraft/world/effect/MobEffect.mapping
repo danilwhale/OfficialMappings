@@ -32,5 +32,6 @@ CLASS ni net/minecraft/world/effect/MobEffect
 		ARG 1 mob
 		ARG 2 map
 		ARG 3 i
+	METHOD e getIcon ()I
 	METHOD j getColor ()I
 	METHOD k getAttributeModifiers ()Ljava/util/Map;

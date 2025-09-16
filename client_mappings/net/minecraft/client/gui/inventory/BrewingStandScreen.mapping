@@ -1,0 +1,5 @@
+CLASS axh net/minecraft/client/gui/inventory/BrewingStandScreen
+	FIELD t BREWING_STAND_LOCATION Lbjo;
+	METHOD <init> (Lud;Larx;)V
+		ARG 1 inventory
+		ARG 2 brewingStand

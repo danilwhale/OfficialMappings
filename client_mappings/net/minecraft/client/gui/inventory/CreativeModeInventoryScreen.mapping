@@ -1,0 +1,28 @@
+CLASS axm net/minecraft/client/gui/inventory/CreativeModeInventoryScreen
+	FIELD A originalSlots Ljava/util/List;
+	FIELD B destroyItemSlot Lwe;
+	FIELD D listener Laxl;
+	FIELD t CREATIVE_TABS_LOCATION Lbjo;
+	FIELD u CONTAINER Lmu;
+	FIELD v selectedTab I
+	FIELD w scrollOffs F
+	FIELD x scrolling Z
+	FIELD z searchBox Lavf;
+	METHOD <init> (Luf;)V
+		ARG 1 player
+	METHOD a renderTabButton (Lww;)V
+		ARG 1 tab
+	METHOD a checkTabClicked (Lww;II)Z
+		ARG 1 tab
+		ARG 2 xm
+		ARG 3 ym
+	METHOD b selectTab (Lww;)V
+		ARG 1 tab
+	METHOD b checkTabHovering (Lww;II)Z
+		ARG 1 tab
+		ARG 2 xm
+		ARG 3 ym
+	METHOD g getSelectedTab ()I
+	METHOD h access$000 ()Lmu;
+	METHOD i refreshSearchResults ()V
+	METHOD j canScroll ()Z

@@ -1,0 +1,9 @@
+CLASS axw net/minecraft/client/gui/inventory/MerchantScreen
+	FIELD t VILLAGER_LOCATION Lbjo;
+	FIELD y title Ljava/lang/String;
+	METHOD <init> (Lud;Labk;Labw;Ljava/lang/String;)V
+		ARG 1 inventory
+		ARG 2 merchant
+		ARG 3 level
+		ARG 4 customName
+	METHOD h access$000 ()Lbjo;

@@ -3,6 +3,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bH experienceLevel I
 	FIELD bM fishing Lul;
 	FIELD bn inventory Lud;
+	FIELD bo inventoryMenu Luy;
 	FIELD bp containerMenu Luy;
 	FIELD bs oBob F
 	FIELD bt bob F

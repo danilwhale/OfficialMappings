@@ -1,0 +1,7 @@
+CLASS axq net/minecraft/client/gui/inventory/EnchantmentNames
+	FIELD a INSTANCE Laxq;
+	FIELD b random Ljava/util/Random;
+	FIELD c words [Ljava/lang/String;
+	METHOD a getRandomName ()Ljava/lang/String;
+	METHOD a initSeed (J)V
+		ARG 1 seed

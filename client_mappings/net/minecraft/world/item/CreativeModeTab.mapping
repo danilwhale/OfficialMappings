@@ -18,3 +18,5 @@ CLASS ww net/minecraft/world/item/CreativeModeTab
 	FIELD q canScroll Z
 	FIELD r showTitle Z
 	FIELD s enchantmentCategories [Laav;
+	METHOD a getId ()I
+	METHOD i canScroll ()Z

@@ -1,0 +1,4 @@
+CLASS axl net/minecraft/client/gui/inventory/CreativeInventoryListener
+	FIELD a minecraft Latv;
+	METHOD <init> (Latv;)V
+		ARG 1 minecraft
