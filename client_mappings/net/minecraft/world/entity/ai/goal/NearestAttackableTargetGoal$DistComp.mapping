@@ -1,0 +1,6 @@
+CLASS ra net/minecraft/world/entity/ai/goal/NearestAttackableTargetGoal$DistComp
+	METHOD <init> (Lnn;)V
+		ARG 1 mob
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 o1
+		ARG 2 o2

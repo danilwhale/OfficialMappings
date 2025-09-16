@@ -1,0 +1,11 @@
+CLASS pm net/minecraft/world/entity/ai/goal/DoorInteractGoal
+	FIELD a mob Log;
+	FIELD f passed Z
+	FIELD g doorOpenDirX F
+	FIELD h doorOpenDirZ F
+	METHOD <init> (Log;)V
+		ARG 1 mob
+	METHOD a getDoorTile (III)Lanz;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

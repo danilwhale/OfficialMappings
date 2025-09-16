@@ -1,0 +1,6 @@
+CLASS rd net/minecraft/world/entity/ai/goal/target/OwnerHurtTargetGoal
+	FIELD a tameAnimal Loq;
+	FIELD b ownerLastHurt Lof;
+	FIELD e timestamp I
+	METHOD <init> (Loq;)V
+		ARG 1 tameAnimal

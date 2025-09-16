@@ -1,0 +1,5 @@
+CLASS qs net/minecraft/world/entity/ai/goal/SwellGoal
+	FIELD a creeper Ltf;
+	FIELD b target Lof;
+	METHOD <init> (Ltf;)V
+		ARG 1 creeper

@@ -1,0 +1,6 @@
+CLASS pl net/minecraft/world/entity/ai/goal/ControlledByPlayerGoal
+	METHOD <init> (Log;F)V
+		ARG 1 mob
+	METHOD b isJumpTile (I)Z
+	METHOD g boost ()V
+	METHOD h canBoost ()Z

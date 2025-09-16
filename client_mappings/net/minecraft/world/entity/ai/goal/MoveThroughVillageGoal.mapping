@@ -1,0 +1,15 @@
+CLASS qc net/minecraft/world/entity/ai/goal/MoveThroughVillageGoal
+	FIELD a mob Lon;
+	FIELD b speedModifier D
+	FIELD c path Lalf;
+	FIELD e onlyAtNight Z
+	FIELD f visited Ljava/util/List;
+	METHOD <init> (Lon;DZ)V
+		ARG 1 mob
+		ARG 2 speedModifier
+		ARG 4 onlyAtNight
+	METHOD a hasVisited (Lri;)Z
+		ARG 1 door
+	METHOD a getNextDoorInfo (Lrj;)Lri;
+		ARG 1 village
+	METHOD f updateVisited ()V

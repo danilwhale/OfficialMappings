@@ -1,0 +1,3 @@
+CLASS qt net/minecraft/world/entity/ai/goal/TakeFlowerGoal
+	METHOD <init> (Lub;)V
+		ARG 1 villager

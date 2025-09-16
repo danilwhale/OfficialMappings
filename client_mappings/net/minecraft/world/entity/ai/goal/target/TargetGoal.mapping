@@ -1,1 +1,19 @@
 CLASS re net/minecraft/world/entity/ai/goal/target/TargetGoal
+	FIELD a mustReach Z
+	FIELD b reachCache I
+	FIELD c mob Lon;
+	FIELD d mustSee Z
+	FIELD e reachCacheTime I
+	FIELD f unseenTicks I
+	METHOD <init> (Lon;Z)V
+		ARG 1 mob
+		ARG 2 mustSee
+	METHOD <init> (Lon;ZZ)V
+		ARG 1 mob
+		ARG 2 mustSee
+		ARG 3 mustReach
+	METHOD a canReach (Lof;)Z
+		ARG 1 target
+	METHOD a canAttack (Lof;Z)Z
+		ARG 1 target
+	METHOD f getFollowDistance ()D

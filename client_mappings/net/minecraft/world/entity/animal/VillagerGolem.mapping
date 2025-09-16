@@ -1,1 +1,2 @@
 CLASS sd net/minecraft/world/entity/animal/VillagerGolem
+	METHOD a offerFlower (Z)V

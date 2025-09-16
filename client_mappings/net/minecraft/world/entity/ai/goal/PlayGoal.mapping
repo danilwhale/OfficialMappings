@@ -1,0 +1,4 @@
+CLASS qk net/minecraft/world/entity/ai/goal/PlayGoal
+	METHOD <init> (Lub;D)V
+		ARG 1 villager
+		ARG 2 goal

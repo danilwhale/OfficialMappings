@@ -1,4 +1,5 @@
 CLASS on net/minecraft/world/entity/PathfinderMob
+	METHOD a getWalkTargetValue (III)F
 	METHOD bP getRestrictCenter ()Lt;
 	METHOD bQ getRestrictRadius ()F
 	METHOD bS hasRestriction ()Z

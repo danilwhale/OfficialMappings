@@ -15,5 +15,8 @@ CLASS pt net/minecraft/world/entity/ai/goal/GoalSelector
 		ARG 1 goal
 	METHOD a canContinueToUse (Lpu;)Z
 		ARG 1 goal
+	METHOD a canCoExist (Lpu;Lpu;)Z
+		ARG 1 a
+		ARG 2 b
 	METHOD b canUse (Lpu;)Z
 		ARG 1 goal

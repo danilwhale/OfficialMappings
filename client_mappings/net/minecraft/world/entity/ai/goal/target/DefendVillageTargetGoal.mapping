@@ -1,0 +1,5 @@
+CLASS qw net/minecraft/world/entity/ai/goal/target/DefendVillageTargetGoal
+	FIELD a golem Lsd;
+	FIELD b potentialTarget Lof;
+	METHOD <init> (Lsd;)V
+		ARG 1 golem

@@ -1,0 +1,7 @@
+CLASS pw net/minecraft/world/entity/ai/goal/LeapAtTargetGoal
+	FIELD a mob Log;
+	FIELD b target Lof;
+	FIELD c yd F
+	METHOD <init> (Log;F)V
+		ARG 1 mob
+		ARG 2 yd

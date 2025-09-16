@@ -8,8 +8,16 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 	METHOD <init> (Log;Labw;)V
 		ARG 1 mob
 		ARG 2 level
+	METHOD a getAvoidWater ()Z
 	METHOD a moveTo (DDDD)Z
+	METHOD a moveTo (Lalf;D)Z
+	METHOD a createPath (Lnn;)Lalf;
 	METHOD a moveTo (Lnn;D)Z
+	METHOD a setAvoidWater (Z)V
+	METHOD b setCanOpenDoors (Z)V
+	METHOD c canOpenDoors ()Z
+	METHOD c setCanPassDoors (Z)V
+	METHOD d setAvoidSun (Z)V
 	METHOD e getPath ()Lalf;
 	METHOD e setCanFloat (Z)V
 	METHOD f tick ()V

@@ -1,0 +1,14 @@
+CLASS qg net/minecraft/world/entity/ai/goal/OcelotSitOnTileGoal
+	FIELD a ocelot Lrx;
+	FIELD b speedModifier D
+	FIELD d tryTicks I
+	FIELD e maxStayTicks I
+	METHOD <init> (Lrx;D)V
+		ARG 1 ocelot
+		ARG 2 speedModifier
+	METHOD a isValidTarget (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD f findNearestTile ()Z

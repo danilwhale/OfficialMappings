@@ -1,7 +1,7 @@
 CLASS ps net/minecraft/world/entity/ai/goal/Goal
 	FIELD a flags I
 	METHOD a canUse ()Z
-	METHOD a setFlags (I)V
+	METHOD a setRequiredControlFlags (I)V
 		ARG 1 flags
 	METHOD b canContinueToUse ()Z
 	METHOD c start ()V

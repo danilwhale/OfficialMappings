@@ -1,0 +1,3 @@
+CLASS qo net/minecraft/world/entity/ai/goal/RestrictOpenDoorGoal
+	METHOD <init> (Lon;)V
+		ARG 1 mob

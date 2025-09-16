@@ -1,1 +1,3 @@
 CLASS tf net/minecraft/world/entity/monster/Creeper
+	METHOD a setSwellDir (I)V
+	METHOD bV getSwellDir ()I

@@ -1,0 +1,4 @@
+CLASS py net/minecraft/world/entity/ai/goal/LookAtTradingPlayerGoal
+	FIELD b villager Lub;
+	METHOD <init> (Lub;)V
+		ARG 1 villager

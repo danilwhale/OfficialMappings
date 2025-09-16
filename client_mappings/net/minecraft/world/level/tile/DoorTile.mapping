@@ -1,1 +1,2 @@
 CLASS anz net/minecraft/world/level/tile/DoorTile
+	METHOD a setOpen (Labw;IIIZ)V
