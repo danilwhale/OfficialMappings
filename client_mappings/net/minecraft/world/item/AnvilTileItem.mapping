@@ -1,0 +1,3 @@
+CLASS wg net/minecraft/world/item/AnvilTileItem
+	METHOD <init> (Laqz;)V
+		ARG 1 tile

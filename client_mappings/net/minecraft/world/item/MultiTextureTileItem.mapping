@@ -1,0 +1,5 @@
+CLASS yl net/minecraft/world/item/MultiTextureTileItem
+	METHOD <init> (ILaqz;[Ljava/lang/String;)V
+		ARG 1 id
+		ARG 2 tile
+		ARG 3 textures

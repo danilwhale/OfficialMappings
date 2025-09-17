@@ -1,0 +1,4 @@
+CLASS wk net/minecraft/world/item/AuxDataTileItem
+	METHOD <init> (ILaqz;)V
+		ARG 1 id
+		ARG 2 tile
