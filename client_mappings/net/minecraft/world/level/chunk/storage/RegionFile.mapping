@@ -1,0 +1,5 @@
+CLASS aeb net/minecraft/world/level/chunk/storage/RegionFile
+	METHOD a getChunkDataInputStream (II)Ljava/io/DataInputStream;
+	METHOD b getChunkDataOutputStream (II)Ljava/io/DataOutputStream;
+	METHOD c close ()V
+	METHOD c hasChunk (II)Z

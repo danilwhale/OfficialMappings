@@ -1,0 +1,2 @@
+CLASS ams net/minecraft/world/level/storage/FileIOThread
+	FIELD a instance Lams;

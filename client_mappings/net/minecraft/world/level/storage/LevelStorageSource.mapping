@@ -1,6 +1,8 @@
 CLASS amf net/minecraft/world/level/storage/LevelStorageSource
 	METHOD a renameLevel (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD a convertLevel (Ljava/lang/String;Llx;)Z
+		ARG 1 levelId
+		ARG 2 progress
 	METHOD a selectLevel (Ljava/lang/String;Z)Lamc;
 	METHOD b getLevelList ()Ljava/util/List;
 	METHOD c getTagDataFor (Ljava/lang/String;)Lals;

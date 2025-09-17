@@ -1,0 +1,3 @@
+CLASS adz net/minecraft/world/level/chunk/storage/OldChunkStorage
+	METHOD a convertToAnvilFormat (Laea;Lby;Lacv;)V
+	METHOD a load (Lby;)Laea;

@@ -1,0 +1,16 @@
+CLASS aea net/minecraft/world/level/chunk/storage/OldChunkStorage$OldLevelChunk
+	FIELD a lastUpdated J
+	FIELD b lastSaveHadEntities Z
+	FIELD c heightmap [B
+	FIELD d blockLight Ladt;
+	FIELD e skyLight Ladt;
+	FIELD f data Ladt;
+	FIELD g blocks [B
+	FIELD h entities Lcg;
+	FIELD i tileEntities Lcg;
+	FIELD j tileTicks Lcg;
+	FIELD k x I
+	FIELD l z I
+	METHOD <init> (II)V
+		ARG 1 x
+		ARG 2 z

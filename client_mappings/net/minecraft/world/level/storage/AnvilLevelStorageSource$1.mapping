@@ -1,0 +1,7 @@
+CLASS alo net/minecraft/world/level/storage/AnvilLevelStorageSource$1
+	FIELD a this$0 Laln;
+	METHOD <init> (Laln;)V
+		ARG 1 this$0
+	METHOD accept accept (Ljava/io/File;Ljava/lang/String;)Z
+		ARG 1 file
+		ARG 2 tring
