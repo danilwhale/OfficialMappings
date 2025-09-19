@@ -1,1 +1,2 @@
 CLASS ac net/minecraft/commands/ac
+	METHOD a performCommand (Lad;Ljava/lang/String;)I

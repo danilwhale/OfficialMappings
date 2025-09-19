@@ -1,1 +1,2 @@
 CLASS ab net/minecraft/commands/ab
+	METHOD c getId ()Ljava/lang/String;

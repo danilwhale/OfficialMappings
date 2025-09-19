@@ -1,10 +1,19 @@
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD a profiler Llv;
 	FIELD b levels [Ljs;
 	FIELD f sentPacketCount [J
 	FIELD g sentPacketSize [J
 	FIELD h receivedPacketCount [J
 	FIELD i receivedPacketSize [J
+	FIELD m storageSource Lamf;
+	FIELD n snooper Lmv;
 	FIELD p tickables Ljava/util/List;
+	FIELD r localIp Ljava/lang/String;
+	FIELD s port I
+	FIELD t playerList Lhn;
+	FIELD u running Z
+	FIELD v stopped Z
+	FIELD w tickCount I
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 f
 	METHOD A getPlayerCount ()I
@@ -15,6 +24,10 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD F getInstance ()Lnet/minecraft/server/MinecraftServer;
 	METHOD H getKeyPair ()Ljava/security/KeyPair;
 	METHOD L getLevelIdName ()Ljava/lang/String;
+	METHOD O isDemo ()Z
+	METHOD S getResourcePack ()Ljava/lang/String;
+	METHOD U getResourcePackHash ()I
+	METHOD a getLevel (I)Ljs;
 	METHOD a access$000 (Lnet/minecraft/server/MinecraftServer;)Lhn;
 	METHOD ae isStopped ()Z
 	METHOD af getPlayerList ()Lhn;

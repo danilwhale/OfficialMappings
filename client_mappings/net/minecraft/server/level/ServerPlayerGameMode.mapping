@@ -1,0 +1,4 @@
+CLASS jw net/minecraft/server/level/ServerPlayerGameMode
+	METHOD a setGameModeForPlayer (Lace;)V
+	METHOD b getGameModeForPlayer ()Lace;
+	METHOD b updateGameMode (Lace;)V

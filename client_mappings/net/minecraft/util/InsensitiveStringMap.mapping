@@ -11,7 +11,7 @@ CLASS ll net/minecraft/util/InsensitiveStringMap
 		ARG 1 o
 	METHOD isEmpty isEmpty ()Z
 	METHOD keySet keySet ()Ljava/util/Set;
-	METHOD put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD put put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 s
 		ARG 2 o
 	METHOD putAll putAll (Ljava/util/Map;)V

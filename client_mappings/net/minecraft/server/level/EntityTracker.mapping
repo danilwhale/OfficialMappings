@@ -1,1 +1,3 @@
 CLASS jm net/minecraft/server/level/EntityTracker
+	METHOD a removePlayer (Ljv;)V
+	METHOD b removeEntity (Lnn;)V

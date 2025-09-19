@@ -1,3 +1,13 @@
 CLASS jv net/minecraft/server/level/ServerPlayer
 	FIELD a connection Lka;
+	FIELD c gameMode Ljw;
+	FIELD d xChunk D
+	FIELD e zChunk D
+	FIELD f chunks Ljava/util/List;
+	METHOD a sendTexturePack (Ljava/lang/String;I)V
+	METHOD a refreshContainer (Luy;)V
+	METHOD d initMenu ()V
 	METHOD h getCurrentSwingDuration ()I
+	METHOD m resetSentInfo ()V
+	METHOD p getLevel ()Ljs;
+	METHOD q getIpAddress ()Ljava/lang/String;

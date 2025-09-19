@@ -4,4 +4,6 @@ CLASS ka net/minecraft/server/network/ServerConnection
 	FIELD c player Ljv;
 	FIELD d server Lnet/minecraft/server/MinecraftServer;
 	FIELD j random Ljava/util/Random;
+	METHOD a teleport (DDDFF)V
 	METHOD b send (Ley;)V
+	METHOD c disconnect (Ljava/lang/String;)V

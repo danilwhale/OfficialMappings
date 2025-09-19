@@ -1,0 +1,2 @@
+CLASS aa net/minecraft/commands/CommandDispatcher
+	METHOD a addCommnd (Lab;)Lab;

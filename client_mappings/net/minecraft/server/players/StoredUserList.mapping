@@ -1,0 +1,19 @@
+CLASS gn net/minecraft/server/players/StoredUserList
+	FIELD a map Lll;
+	FIELD b file Ljava/io/File;
+	FIELD c enabled Z
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD a add (Lgm;)V
+		ARG 1 entry
+	METHOD a contains (Ljava/lang/String;)Z
+		ARG 1 user
+	METHOD a setEnabled (Z)V
+		ARG 1 enabled
+	METHOD b isEnabled ()Z
+	METHOD b remove (Ljava/lang/String;)V
+		ARG 1 user
+	METHOD b save (Z)V
+	METHOD d removeExpired ()V
+	METHOD e load ()V
+	METHOD f save ()V

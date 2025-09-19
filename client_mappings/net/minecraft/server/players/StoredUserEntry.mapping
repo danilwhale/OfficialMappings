@@ -1,0 +1,24 @@
+CLASS gm net/minecraft/server/players/StoredUserEntry
+	FIELD a DATE_FORMAT Ljava/text/SimpleDateFormat;
+	FIELD b user Ljava/lang/String;
+	FIELD c created Ljava/util/Date;
+	FIELD d source Ljava/lang/String;
+	FIELD e expires Ljava/util/Date;
+	FIELD f reason Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 user
+	METHOD a getUser ()Ljava/lang/String;
+	METHOD a setSource (Ljava/lang/String;)V
+		ARG 1 source
+	METHOD a setCreated (Ljava/util/Date;)V
+		ARG 1 created
+	METHOD b getCreated ()Ljava/util/Date;
+	METHOD b setReason (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD b setExpires (Ljava/util/Date;)V
+		ARG 1 expires
+	METHOD c getSource ()Ljava/lang/String;
+	METHOD d getExpires ()Ljava/util/Date;
+	METHOD e hasExpired ()Z
+	METHOD f getReason ()Ljava/lang/String;
+	METHOD g serialize ()Ljava/lang/String;

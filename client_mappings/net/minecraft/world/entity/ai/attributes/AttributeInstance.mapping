@@ -1,5 +1,14 @@
 CLASS os net/minecraft/world/entity/ai/attributes/AttributeInstance
+	METHOD a getAttribute ()Lor;
+	METHOD a setBaseValue (D)V
+		ARG 1 baseValue
 	METHOD a getModifier (Ljava/util/UUID;)Lot;
+		ARG 1 uuid
 	METHOD a addModifier (Lot;)V
+		ARG 1 modifier
+	METHOD b getBaseValue ()D
 	METHOD b removeModifier (Lot;)V
+		ARG 1 modifier
+	METHOD c getModifiers ()Ljava/util/Collection;
+	METHOD d removeModifiers ()V
 	METHOD e getValue ()D

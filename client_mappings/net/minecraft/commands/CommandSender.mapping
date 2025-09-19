@@ -1,4 +1,4 @@
-CLASS ad net/minecraft/commands/CommandSource
+CLASS ad net/minecraft/commands/CommandSender
 	METHOD a hasPermission (ILjava/lang/String;)Z
 		ARG 1 i
 		ARG 2 s

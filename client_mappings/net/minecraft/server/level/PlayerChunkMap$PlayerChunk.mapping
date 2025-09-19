@@ -1,10 +1,27 @@
 CLASS jq net/minecraft/server/level/PlayerChunkMap$PlayerChunk
 	FIELD a this$0 Ljp;
+	FIELD b players Ljava/util/List;
+	FIELD c pos Labp;
+	FIELD d positions [S
+	FIELD e count I
 	METHOD <init> (Ljp;II)V
 		ARG 1 this$0
+		ARG 2 x
+		ARG 3 z
+	METHOD a tileChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a broadcast (Lasp;)V
+		ARG 1 te
+	METHOD a broadcast (Ley;)V
+		ARG 1 packet
 	METHOD a access$000 (Ljq;)Labp;
+		ARG 0 this$0
 	METHOD a add (Ljv;)V
 		ARG 1 player
+	METHOD b tick ()V
 	METHOD b access$100 (Ljq;)Ljava/util/List;
+		ARG 0 this$0
 	METHOD b remove (Ljv;)V
 		ARG 1 player

@@ -1,6 +1,8 @@
 CLASS uf net/minecraft/world/entity/player/Player
 	FIELD bG abilities Luc;
 	FIELD bH experienceLevel I
+	FIELD bI totalExperience I
+	FIELD bJ experienceProgress F
 	FIELD bM fishing Lul;
 	FIELD bn inventory Lud;
 	FIELD bo inventoryMenu Luy;
@@ -12,6 +14,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD a openTrading (Labk;Ljava/lang/String;)V
 		ARG 1 mechant
 		ARG 2 name
+	METHOD a checkBedValidRespawnPosition (Labw;Lt;Z)Lt;
 	METHOD a openBeacon (Larw;)V
 	METHOD a openBrewingStand (Larx;)V
 	METHOD a openHopper (Lasi;)V
@@ -25,6 +28,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 1 container
 	METHOD a openHopper (Lsx;)V
 		ARG 1 hopper
+	METHOD a restoreFrom (Luf;Z)V
 	METHOD a drop (Lye;Z)Lss;
 	METHOD a drop (Z)Lss;
 	METHOD a stopSleepInBed (ZZZ)V

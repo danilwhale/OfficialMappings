@@ -1,4 +1,14 @@
 CLASS nt net/minecraft/world/entity/EntityIO
+	FIELD b idClassMap Ljava/util/Map;
+	FIELD c classIdMap Ljava/util/Map;
+	FIELD d numClassMap Ljava/util/Map;
+	FIELD e classNumMap Ljava/util/Map;
+	METHOD a newById (ILabw;)Lnn;
+		ARG 0 id
+		ARG 1 level
+	METHOD a loadStatic (Lby;Labw;)Lnn;
+		ARG 0 tag
+		ARG 1 level
 	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;I)V
 		ARG 0 klass
 		ARG 1 encodeId
@@ -9,4 +19,12 @@ CLASS nt net/minecraft/world/entity/EntityIO
 		ARG 2 id
 		ARG 3 color1
 		ARG 4 color2
+	METHOD a newEntity (Ljava/lang/String;Labw;)Lnn;
+		ARG 0 id
+		ARG 1 level
+	METHOD a getId (Lnn;)I
+		ARG 0 entity
+	METHOD b getEncodeId (I)Ljava/lang/String;
+		ARG 0 id
 	METHOD b getEncodeId (Lnn;)Ljava/lang/String;
+		ARG 0 entity
