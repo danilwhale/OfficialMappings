@@ -1,4 +1,4 @@
-CLASS ast net/minecraft/world/level/tile/PistonBaseTile
+CLASS ast net/minecraft/world/level/tile/piston/PistonBaseTile
 	FIELD a isSticky Z
 	METHOD <init> (IZ)V
 		ARG 1 id

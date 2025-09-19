@@ -1,4 +1,4 @@
-CLASS asu net/minecraft/world/level/tile/PistonExtensionTile
+CLASS asu net/minecraft/world/level/tile/piston/PistonExtensionTile
 	FIELD a overrideTopTexture Lms;
 	METHOD <init> (I)V
 		ARG 1 id

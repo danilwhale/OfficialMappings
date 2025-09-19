@@ -1,4 +1,4 @@
-CLASS awp net/minecraft/client/gui/ToastComponent
+CLASS awp net/minecraft/client/gui/achievement/ToastComponent
 	COMMENT dunno if this is correct name though.
 	COMMENT tried my best to rebuild it from fragments of toast code from 1.14
 	FIELD a TEXTURE Lbjo;

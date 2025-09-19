@@ -11,7 +11,7 @@ CLASS ww net/minecraft/world/item/CreativeModeTab
 	FIELD j TAB_COMBAT Lww;
 	FIELD k TAB_BREWING Lww;
 	FIELD l TAB_MATERIALS Lww;
-	FIELD m TAB_HOTBAR Lww;
+	FIELD m TAB_INVENTORY Lww;
 	FIELD n id I
 	FIELD o langId Ljava/lang/String;
 	FIELD p backgroundSuffix Ljava/lang/String;
@@ -19,4 +19,5 @@ CLASS ww net/minecraft/world/item/CreativeModeTab
 	FIELD r showTitle Z
 	FIELD s enchantmentCategories [Laav;
 	METHOD a getId ()I
+	METHOD a fillItemList (Ljava/util/List;)V
 	METHOD i canScroll ()Z

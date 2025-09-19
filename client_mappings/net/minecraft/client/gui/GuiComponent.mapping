@@ -14,7 +14,7 @@ CLASS avk net/minecraft/client/gui/GuiComponent
 		ARG 2 x1
 		ARG 3 y1
 		ARG 4 col
-	METHOD a fiillGradient (IIIIII)V
+	METHOD a fillGradient (IIIIII)V
 		ARG 1 x0
 		ARG 2 y0
 		ARG 3 x1

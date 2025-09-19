@@ -1,4 +1,4 @@
-CLASS asv net/minecraft/world/level/tile/PistonMovingPiece
+CLASS asv net/minecraft/world/level/tile/piston/PistonMovingPiece
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD a newMovingTileEntity (IIIZZ)Lasp;

@@ -1,4 +1,4 @@
-CLASS r net/minecraft/core/Direction
+CLASS r net/minecraft/Direction
 	FIELD a STEP_X [I
 	FIELD b STEP_Z [I
 	FIELD c DIRECTION_NAMES [Ljava/lang/String;
