@@ -1,4 +1,4 @@
-CLASS at net/minecraft/commands/SpreadplayersCommand$Vec2
+CLASS at net/minecraft/commands/SpreadplayersCommand$Position
 	COMMENT WHY IS THIS A PRIVATE CLASS
 	FIELD a x D
 	FIELD b y D

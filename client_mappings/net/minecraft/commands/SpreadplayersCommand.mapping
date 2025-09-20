@@ -1,1 +1,2 @@
 CLASS as net/minecraft/commands/SpreadplayersCommand
+	METHOD a spreadPositions (Lat;DLabw;Ljava/util/Random;DDDD[Lat;Z)I
