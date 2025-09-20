@@ -1,0 +1,7 @@
+CLASS ab
+	METHOD a canExecute (Lad;)Z
+		ARG 1 sender
+	METHOD b execute (Lad;[Ljava/lang/String;)V
+		ARG 1 sender
+		ARG 2 args
+	METHOD c getId ()Ljava/lang/String;

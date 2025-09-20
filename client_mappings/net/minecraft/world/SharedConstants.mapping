@@ -1,8 +1,0 @@
-CLASS v net/minecraft/world/SharedConstants
-	FIELD a acceptableLetters Ljava/lang/String;
-	FIELD b ILLEGAL_FILE_CHARACTERS [C
-	METHOD a readAcceptableLetters ()Ljava/lang/String;
-	METHOD a isAllowedChatCharacter (C)Z
-		ARG 0 character
-	METHOD a filterText (Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 text
