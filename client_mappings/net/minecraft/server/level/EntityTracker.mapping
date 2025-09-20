@@ -1,3 +1,11 @@
 CLASS jm net/minecraft/server/level/EntityTracker
 	METHOD a removePlayer (Ljv;)V
+	METHOD a trackEntity (Lnn;II)V
+		ARG 1 entity
+		ARG 2 range
+		ARG 3 interval
+	METHOD a trackEntity (Lnn;IIZ)V
+		ARG 1 entity
+		ARG 2 range
+		ARG 3 interval
 	METHOD b removeEntity (Lnn;)V

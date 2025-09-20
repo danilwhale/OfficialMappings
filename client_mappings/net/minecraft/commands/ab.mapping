@@ -1,4 +1,4 @@
-CLASS ab
+CLASS ab net/minecraft/commands/ab
 	METHOD a canExecute (Lad;)Z
 		ARG 1 sender
 	METHOD b execute (Lad;[Ljava/lang/String;)V

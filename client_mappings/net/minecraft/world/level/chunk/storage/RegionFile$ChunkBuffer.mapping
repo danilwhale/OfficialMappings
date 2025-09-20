@@ -1,0 +1,5 @@
+CLASS aec net/minecraft/world/level/chunk/storage/RegionFile$ChunkBuffer
+	FIELD a this$0 Laeb;
+	FIELD b x I
+	FIELD c z I
+	METHOD close close ()V

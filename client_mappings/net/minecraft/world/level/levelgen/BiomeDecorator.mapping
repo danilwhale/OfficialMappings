@@ -10,8 +10,20 @@ CLASS acu net/minecraft/world/level/levelgen/BiomeDecorator
 	FIELD z ___z I
 	METHOD <init> (Lacq;)V
 		ARG 1 biome
+	METHOD a decorate ()V
+	METHOD a decorateDepthAverage (ILafe;II)V
+		ARG 1 count
+		ARG 2 feature
+		ARG 3 a
+		ARG 4 b
 	METHOD a decorate (Labw;Ljava/util/Random;II)V
 		ARG 1 level
 		ARG 2 random
 		ARG 3 x
 		ARG 4 z
+	METHOD b decorateOres ()V
+	METHOD b decorateDepthSpan (ILafe;II)V
+		ARG 1 count
+		ARG 2 feature
+		ARG 3 a
+		ARG 4 b

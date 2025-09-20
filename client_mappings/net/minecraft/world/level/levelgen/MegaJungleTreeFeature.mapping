@@ -1,2 +1,2 @@
-CLASS aga net/minecraft/world/level/levelgen/MegaJungleTreeFeature
-	METHOD b placeVine (Labw;IIII)V
+CLASS afo net/minecraft/world/level/levelgen/MegaJungleTreeFeature
+	METHOD a createCrown (Labw;IIIILjava/util/Random;)V

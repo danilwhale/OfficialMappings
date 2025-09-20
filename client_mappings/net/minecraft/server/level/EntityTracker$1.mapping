@@ -1,0 +1,6 @@
+CLASS jn net/minecraft/server/level/EntityTracker$1
+	FIELD a val$interval I
+	FIELD b this$0 Ljm;
+	METHOD <init> (Ljm;I)V
+		ARG 1 this$0
+		ARG 2 val$interval

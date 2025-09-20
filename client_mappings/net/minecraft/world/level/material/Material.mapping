@@ -13,6 +13,7 @@ CLASS akc net/minecraft/world/level/material/Material
 	FIELD i lava Lakc;
 	FIELD j leaves Lakc;
 	FIELD k plant Lakc;
+	FIELD o fire Lakc;
 	FIELD p sand Lakc;
 	FIELD s glass Lakc;
 	METHOD <init> (Lake;)V
