@@ -1,0 +1,7 @@
+CLASS at net/minecraft/commands/SpreadplayersCommand$Vec2
+	COMMENT WHY IS THIS A PRIVATE CLASS
+	FIELD a x D
+	FIELD b y D
+	METHOD <init> (DD)V
+		ARG 1 x
+		ARG 3 y
