@@ -1,0 +1,2 @@
+CLASS sv net/minecraft/world/entity/item/MinecartContainer
+	FIELD b dropEquipment Z

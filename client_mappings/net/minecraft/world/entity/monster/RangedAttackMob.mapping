@@ -1,0 +1,4 @@
+CLASS to net/minecraft/world/entity/monster/RangedAttackMob
+	METHOD a performRangedAttack (Lof;F)V
+		ARG 1 target
+		ARG 2 dist

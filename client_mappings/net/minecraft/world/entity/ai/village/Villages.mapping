@@ -1,0 +1,12 @@
+CLASS rm net/minecraft/world/entity/ai/village/Villages
+	FIELD a level Labw;
+	METHOD <init> (Labw;)V
+		ARG 1 level
+	METHOD a tick ()V
+	METHOD a getClosestVillage (IIII)Lrj;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 distance
+	METHOD a setLevel (Labw;)V
+		ARG 1 level

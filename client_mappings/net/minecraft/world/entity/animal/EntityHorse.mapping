@@ -1,0 +1,127 @@
+CLASS rs net/minecraft/world/entity/animal/EntityHorse
+	FIELD bA VARIANT_HASHES [Ljava/lang/String;
+	FIELD bB MARKING_TEXTURES [Ljava/lang/String;
+	FIELD bC MARKING_HASHES [Ljava/lang/String;
+	FIELD bD eatingCounter I
+	FIELD bE mouthCounter I
+	FIELD bF standCounter I
+	FIELD bG inventory Luz;
+	FIELD bH hasReproduced Z
+	FIELD bJ eatAnim F
+	FIELD bK eatAnimO F
+	FIELD bL standAnim F
+	FIELD bM standAnimO F
+	FIELD bN mouthAnim F
+	FIELD bO mouthAnimO F
+	FIELD bQ layerTextureHashName Ljava/lang/String;
+	FIELD bR layerTextureLayers [Ljava/lang/String;
+	FIELD bp tailCounter I
+	FIELD bq sprintCounter I
+	FIELD br isJumping Z
+	FIELD bs temper I
+	FIELD bu PARENT_HORSE_SELECTOR Lnw;
+	FIELD bv JUMP_STRENGTH Lor;
+	FIELD bw ARMOR_TEXTURES [Ljava/lang/String;
+		COMMENT guessed
+	FIELD by ARMOR_VALUES [I
+		COMMENT guessed
+	FIELD bz VARIANT_TEXTURES [Ljava/lang/String;
+	METHOD a getClosestMommy (Lnn;D)Lrs;
+		ARG 1 entity
+		ARG 2 d
+	METHOD a dropInventory (Lnn;Luz;)V
+		ARG 1 entity
+		ARG 2 chest
+	METHOD b setHorseFlag (IZ)V
+		ARG 1 flag
+		ARG 2 value
+	METHOD b setOwner (Ljava/lang/String;)V
+		ARG 1 owner
+	METHOD bT getType ()I
+	METHOD bU getVariant ()I
+	METHOD bV isAdult ()Z
+	METHOD bW isTamed ()Z
+	METHOD cD makeMad ()V
+	METHOD cE dropMyStuff ()V
+	METHOD cF eatingHorse ()V
+	METHOD cG getInventorySize ()I
+	METHOD cH createInventory ()V
+	METHOD cI updateEquipment ()V
+	METHOD cJ clearLayeredTextureInfo ()V
+	METHOD cK rebuildLayeredTextureInfo ()V
+	METHOD cL moveTail ()V
+	METHOD cM openMouth ()V
+	METHOD cN rideableEntity ()Z
+	METHOD cO stand ()V
+	METHOD cP generateRandomMaxHealth ()F
+	METHOD cQ generateRandomJumpStrength ()D
+	METHOD cR generateRandomSpeed ()D
+	METHOD ca isRidable ()Z
+	METHOD cb getOwnerName ()Ljava/lang/String;
+	METHOD cc getFoalScale ()F
+	METHOD cd getIsJumping ()Z
+	METHOD ce isChestedHorse ()Z
+	METHOD cf getArmorType ()I
+	METHOD cg isEating ()Z
+	METHOD ch isStanding ()Z
+	METHOD ci isBred ()Z
+	METHOD cj getHasReproduced ()Z
+	METHOD ck getTemper ()I
+	METHOD cl checkSpawningBiome ()Z
+	METHOD cm dropBags ()V
+	METHOD cn getCustomJump ()D
+	METHOD co isSaddled ()Z
+	METHOD cp getMadSound ()Ljava/lang/String;
+	METHOD cq getMaxTemper ()I
+	METHOD cr hasLayeredTextures ()Z
+	METHOD cs getLayeredTextureHashName ()Ljava/lang/String;
+	METHOD ct getLayeredTextureLayers ()[Ljava/lang/String;
+	METHOD cv canWearArmor ()Z
+	METHOD cw canWearBags ()Z
+	METHOD cy isPureBreed ()Z
+	METHOD cz isUndead ()Z
+	METHOD d setArmorTypeForItem (Lye;)I
+		ARG 1 item
+	METHOD f openInventory (Luf;)V
+		ARG 1 player
+	METHOD g tameWithName (Luf;)Z
+		ARG 1 player
+	METHOD h getCurrentSwingDuration ()I
+	METHOD h doPlayerRide (Luf;)V
+		ARG 1 player
+	METHOD i setTamed (Z)V
+		ARG 1 tamed
+	METHOD j setIsJumping (Z)V
+		ARG 1 isJumping
+	METHOD k setBred (Z)V
+		ARG 1 bred
+	METHOD l setChestedHorse (Z)V
+		ARG 1 chestedHorse
+	METHOD m setReproduced (Z)V
+		ARG 1 reproduced
+	METHOD n setSaddled (Z)V
+		ARG 1 saddled
+	METHOD o setEating (Z)V
+		ARG 1 eating
+	METHOD p getEatAnim (F)F
+		ARG 1 a
+	METHOD p setType (I)V
+		ARG 1 type
+	METHOD p setStanding (Z)V
+		ARG 1 standing
+	METHOD q getStandAnim (F)F
+		ARG 1 a
+	METHOD q setVariant (I)V
+		ARG 1 variant
+	METHOD q spawnTamingParticles (Z)V
+	METHOD r getMouthAnim (F)F
+		ARG 1 a
+	METHOD r setArmorType (I)V
+		ARG 1 armorType
+	METHOD s setTemper (I)V
+		ARG 1 temper
+	METHOD t modifyTemper (I)I
+		ARG 1 temper
+	METHOD u onPlayerJump (I)V
+	METHOD w getHorseFlag (I)Z
+		ARG 1 flag

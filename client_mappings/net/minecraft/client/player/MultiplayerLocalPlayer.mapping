@@ -1,3 +1,0 @@
-CLASS bdi net/minecraft/client/player/MultiplayerLocalPlayer
-	FIELD a connection Lbcw;
-	METHOD j sendOpenInventory ()V

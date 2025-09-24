@@ -1,0 +1,74 @@
+CLASS rj net/minecraft/world/entity/ai/village/Village
+	FIELD a level Labw;
+	FIELD b doors Ljava/util/List;
+	FIELD d center Lt;
+	FIELD e radius I
+	FIELD f stable I
+	FIELD g tick I
+	FIELD h popSize I
+	FIELD i mTick I
+	FIELD j players Ljava/util/TreeMap;
+	FIELD k aggressors Ljava/util/List;
+	FIELD l golems I
+	METHOD <init> (Labw;)V
+		ARG 1 level
+	METHOD a getCenter ()Lt;
+	METHOD a tick (I)V
+	METHOD a isInside (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a findRandomSpawnPos (IIIIII)Latc;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+		ARG 6 d
+	METHOD a setLevel (Labw;)V
+		ARG 1 level
+	METHOD a readAdditionalSaveData (Lby;)V
+		ARG 1 nbt
+	METHOD a getStanding (Ljava/lang/String;)I
+		ARG 1 name
+	METHOD a modifyStanding (Ljava/lang/String;I)I
+		ARG 1 name
+		ARG 2 standing
+	METHOD a addAggressor (Lof;)V
+		ARG 1 aggressor
+	METHOD a addDoorInfo (Lri;)V
+		ARG 1 doorInfo
+	METHOD b getRadius ()I
+	METHOD b rewardAllPlayers (I)V
+	METHOD b getClosestDoorInfo (III)Lri;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b canSpawnAt (IIIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+		ARG 6 d
+	METHOD b addAdditionalSaveData (Lby;)V
+		ARG 1 nbt
+	METHOD b getClosestAggressor (Lof;)Lof;
+		ARG 1 entity
+	METHOD c getDoorCount ()I
+	METHOD c getClosestBadStandingPlayer (Lof;)Luf;
+		ARG 1 entity
+	METHOD d getStableAge ()I
+	METHOD d (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD e getPopulationSize ()I
+	METHOD f getDoorInfos ()Ljava/util/List;
+	METHOD f isDoor (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD g canRemove ()Z
+	METHOD h resetNoBreedTimer ()V
+	METHOD i isBreedTimerOk ()Z
+	METHOD j countGolem ()V
+	METHOD k countPopulation ()V

@@ -1,0 +1,80 @@
+CLASS st net/minecraft/world/entity/item/Minecart
+	FIELD a flipped Z
+	FIELD au lxd D
+	FIELD av lyd D
+	FIELD aw lzd D
+	FIELD c customName Ljava/lang/String;
+	FIELD d EXITS [[[I
+	FIELD e lSteps I
+	FIELD f lx D
+	FIELD g ly D
+	FIELD h lz D
+	FIELD i lyr D
+	FIELD j lxr D
+	METHOD <init> (Labw;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD a getPos (DDD)Latc;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a getPosOffs (DDDD)Latc;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 speed
+	METHOD a setDamage (F)V
+		ARG 1 damage
+	METHOD a moveAlongTrack (IIIDDII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 maxSpeed
+		ARG 6 speed
+		ARG 8 tile
+		ARG 9 dir
+	METHOD a activateMinecart (IIIZ)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 flipped
+	METHOD a createMinecart (Labw;DDDI)Lst;
+		ARG 0 level
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 type
+	METHOD a setCustomName (Ljava/lang/String;)V
+		ARG 1 customName
+	METHOD a destroy (Lnb;)V
+		ARG 1 source
+	METHOD a setCustomDisplay (Z)V
+		ARG 1 customDisplay
+	METHOD b comeOffTrack (D)V
+		ARG 1 maxSpeed
+	METHOD c hasCustomName ()Z
+	METHOD c setHurtTime (I)V
+		ARG 1 hurtTime
+	METHOD h applyNaturalSlowdown ()V
+	METHOD h setHurtDir (I)V
+		ARG 1 hurtDir
+	METHOD i getDamage ()F
+	METHOD i setDisplayTile (I)V
+		ARG 1 displayTile
+	METHOD j getHurtTime ()I
+	METHOD j setDisplayData (I)V
+		ARG 1 displayData
+	METHOD k getHurtDir ()I
+	METHOD k setDisplayOffset (I)V
+		ARG 1 displayOffset
+	METHOD l getType ()I
+	METHOD m getDisplayTile ()Laqz;
+	METHOD n getDefaultDisplayTile ()Laqz;
+	METHOD o getDisplayData ()I
+	METHOD p getDefaultDisplayData ()I
+	METHOD q getDisplayOffset ()I
+	METHOD r getDefaultDisplayOffset ()I
+	METHOD s hasCustomDisplay ()Z
+	METHOD t getCustomName ()Ljava/lang/String;

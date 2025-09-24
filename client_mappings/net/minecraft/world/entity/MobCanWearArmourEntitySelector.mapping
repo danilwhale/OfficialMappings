@@ -1,4 +1,0 @@
-CLASS nz net/minecraft/world/entity/MobCanWearArmourEntitySelector
-	FIELD c item Lye;
-	METHOD <init> (Lye;)V
-		ARG 1 item

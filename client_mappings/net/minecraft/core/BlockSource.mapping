@@ -1,0 +1,6 @@
+CLASS bf net/minecraft/core/BlockSource
+	METHOD d getBlockX ()I
+	METHOD e getBlockY ()I
+	METHOD f getBlockZ ()I
+	METHOD h getData ()I
+	METHOD j getEntity ()Lasp;

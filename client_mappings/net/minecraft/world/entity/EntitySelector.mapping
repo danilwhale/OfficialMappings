@@ -1,0 +1,5 @@
+CLASS nw net/minecraft/world/entity/EntitySelector
+	FIELD a ENTITY_STILL_ALIVE Lnw;
+	FIELD b CONTAINER_ENTITY_SELECTOR Lnw;
+	METHOD a matches (Lnn;)Z
+		ARG 1 e

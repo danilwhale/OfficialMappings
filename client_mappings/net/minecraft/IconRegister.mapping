@@ -1,0 +1,3 @@
+CLASS mt net/minecraft/IconRegister
+	METHOD a registerIcon (Ljava/lang/String;)Lms;
+		ARG 1 name

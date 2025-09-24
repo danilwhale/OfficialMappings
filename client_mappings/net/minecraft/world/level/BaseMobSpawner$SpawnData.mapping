@@ -1,0 +1,13 @@
+CLASS abo net/minecraft/world/level/BaseMobSpawner$SpawnData
+	COMMENT note the unused {@code this$0} field, probably unintentional as the devs forgot to put {@code static} for the inner class
+	FIELD b tag Lby;
+	FIELD c type Ljava/lang/String;
+	FIELD d this$0 Labn;
+	METHOD <init> (Labn;Lby;)V
+		ARG 1 this$0
+		ARG 2 tag
+	METHOD <init> (Labn;Lby;Ljava/lang/String;)V
+		ARG 1 this$0
+		ARG 2 tag
+		ARG 3 type
+	METHOD a save ()Lby;

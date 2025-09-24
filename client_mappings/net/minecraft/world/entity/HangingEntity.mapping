@@ -1,0 +1,22 @@
+CLASS oc net/minecraft/world/entity/HangingEntity
+	FIELD a dir I
+	FIELD b xTile I
+	FIELD c yTile I
+	FIELD d zTile I
+	FIELD e checkInterval I
+	METHOD <init> (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dir
+	METHOD a setDir (I)V
+		ARG 1 dir
+	METHOD b dropItem (Lnn;)V
+		COMMENT dorp()
+		ARG 1 e
+	METHOD c survives ()Z
+	METHOD c offs (I)F
+		ARG 1 width
+	METHOD d getWidth ()I
+	METHOD e getHeight ()I

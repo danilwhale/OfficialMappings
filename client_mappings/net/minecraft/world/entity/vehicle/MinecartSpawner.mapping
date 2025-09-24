@@ -1,3 +1,0 @@
-CLASS sz net/minecraft/world/entity/vehicle/MinecartSpawner
-	FIELD a spawner Labn;
-	METHOD d getSpawner ()Labn;

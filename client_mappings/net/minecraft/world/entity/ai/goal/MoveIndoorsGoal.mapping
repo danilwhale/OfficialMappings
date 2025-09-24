@@ -1,0 +1,3 @@
+CLASS qb net/minecraft/world/entity/ai/goal/MoveIndoorsGoal
+	METHOD <init> (Lon;)V
+		ARG 1 mob

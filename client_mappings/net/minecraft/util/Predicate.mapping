@@ -1,5 +1,0 @@
-CLASS nw net/minecraft/util/Predicate
-	FIELD a ENTITY_STILL_ALIVE Lnw;
-	FIELD b CONTAINER_ENTITY_SELECTOR Lnw;
-	METHOD a apply (Lnn;)Z
-		ARG 1 e

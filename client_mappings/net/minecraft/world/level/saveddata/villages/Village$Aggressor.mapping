@@ -1,4 +1,0 @@
-CLASS rk net/minecraft/world/level/saveddata/villages/Village$Aggressor
-	FIELD c this$0 Lrj;
-	METHOD <init> (Lrj;Lof;I)V
-		ARG 1 this$0

@@ -1,0 +1,6 @@
+CLASS lt net/minecraft/util/PacketCount
+	COMMENT why does this exist? Also guessed name.
+	FIELD d lock Ljava/lang/Object;
+	METHOD a add (IJ)V
+		ARG 0 id
+		ARG 1 estimatedSize

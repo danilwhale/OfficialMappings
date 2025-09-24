@@ -1,0 +1,10 @@
+CLASS ako net/minecraft/world/level/newbiome/layer/IntCache
+	FIELD a threshold I
+	FIELD b tcache Ljava/util/List;
+	FIELD c tallocated Ljava/util/List;
+	FIELD d cache Ljava/util/List;
+	FIELD e allocated Ljava/util/List;
+	METHOD a releaseAll ()V
+	METHOD a allocate (I)[I
+		ARG 0 size
+	METHOD b gatherStats ()Ljava/lang/String;

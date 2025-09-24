@@ -1,0 +1,4 @@
+CLASS ru net/minecraft/world/entity/animal/EntityHorse$HorseGroupData
+	FIELD b variant I
+	METHOD <init> (II)V
+		ARG 2 variant

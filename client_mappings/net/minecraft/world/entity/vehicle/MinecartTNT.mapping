@@ -1,7 +1,0 @@
-CLASS tb net/minecraft/world/entity/vehicle/MinecartTNT
-	FIELD a fuse I
-	METHOD c explode (D)V
-		ARG 1 velocity
-	METHOD d primeFuse ()V
-	METHOD e getFuse ()I
-	METHOD u isPrimed ()Z

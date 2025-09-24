@@ -1,0 +1,7 @@
+CLASS sw net/minecraft/world/entity/item/MinecartFurnace
+	FIELD a xPush D
+	FIELD b zPush D
+	FIELD c fuel I
+	METHOD d hasFuel ()Z
+	METHOD f setHasFuel (Z)V
+		ARG 1 hasFuel

@@ -1,5 +1,0 @@
-CLASS lb net/minecraft/stats/achievements/AchievementIDs
-	COMMENT TODO PLACEHOLDER CLASS NAME!
-	FIELD a instance Llb;
-	FIELD b idMap Ljava/util/Map;
-	METHOD a getId (I)Ljava/lang/String;
