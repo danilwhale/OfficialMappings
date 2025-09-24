@@ -1,3 +1,12 @@
 CLASS aav net/minecraft/world/item/enchantment/EnchantmentCategory
+	FIELD a all Laav;
+	FIELD b armor Laav;
+	FIELD c armor_feet Laav;
+	FIELD d armor_legs Laav;
+	FIELD e armor_torso Laav;
+	FIELD f armor_head Laav;
+	FIELD g weapon Laav;
+	FIELD h digger Laav;
+	FIELD i bow Laav;
 	METHOD a canEnchant (Lyc;)Z
 		ARG 1 item
