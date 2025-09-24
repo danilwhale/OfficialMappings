@@ -1,3 +1,14 @@
 CLASS aaf net/minecraft/world/item/crafting/Recipes
 	FIELD a instance Laaf;
 	FIELD b recipies Ljava/util/List;
+	METHOD a getInstance ()Laaf;
+	METHOD a getItemFor (Lvk;Labw;)Lye;
+		ARG 1 crafting
+		ARG 2 level
+	METHOD a addShapedRecipy (Lye;[Ljava/lang/Object;)Laai;
+		ARG 1 result
+		ARG 2 objects
+	METHOD b getRecipies ()Ljava/util/List;
+	METHOD b addShapelessRecipy (Lye;[Ljava/lang/Object;)V
+		ARG 1 result
+		ARG 2 objects

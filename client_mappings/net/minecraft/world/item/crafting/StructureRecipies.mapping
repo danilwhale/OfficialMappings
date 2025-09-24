@@ -1,0 +1,3 @@
+CLASS aak net/minecraft/world/item/crafting/StructureRecipies
+	METHOD a addRecipes (Laaf;)V
+		ARG 1 recipes

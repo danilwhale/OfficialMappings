@@ -1,0 +1,18 @@
+CLASS aai net/minecraft/world/item/crafting/ShapedRecipy
+	FIELD a resultId I
+	FIELD b width I
+	FIELD c height I
+	FIELD d recipeItems [Lye;
+	FIELD e result Lye;
+	FIELD f keepTag Z
+	METHOD <init> (II[Lye;Lye;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 recipeItems
+		ARG 4 result
+	METHOD a matches (Lvk;IIZ)Z
+		ARG 1 container
+		ARG 2 x
+		ARG 3 y
+		ARG 4 flip
+	METHOD c keepTag ()Laai;
