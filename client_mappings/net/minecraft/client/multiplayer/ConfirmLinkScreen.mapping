@@ -1,4 +1,4 @@
-CLASS bcx net/minecraft/client/gui/ConfirmLinkScreen
+CLASS bcx net/minecraft/client/multiplayer/ConfirmLinkScreen
 	FIELD p warning Ljava/lang/String;
 	FIELD q copyButton Ljava/lang/String;
 	FIELD r url Ljava/lang/String;

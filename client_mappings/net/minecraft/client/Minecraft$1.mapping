@@ -1,2 +1,6 @@
 CLASS atw net/minecraft/client/Minecraft$1
 	FIELD a this$0 Latv;
+	METHOD <init> (Latv;Ljava/lang/String;)V
+		ARG 1 this$0
+		ARG 2 name
+	METHOD run run ()V

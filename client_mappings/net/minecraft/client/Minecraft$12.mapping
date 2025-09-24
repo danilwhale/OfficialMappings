@@ -1,2 +1,5 @@
-CLASS aua net/minecraft/client/Minecraft$12
+CLASS atz net/minecraft/client/Minecraft$12
 	FIELD a this$0 Latv;
+	METHOD <init> (Latv;)V
+		ARG 1 this$0
+	METHOD call call ()Ljava/lang/Object;

@@ -1,5 +1,6 @@
 CLASS bcw net/minecraft/client/multiplayer/ClientListener
 	FIELD h minecraft Latv;
+	FIELD k playerInfoMap Ljava/util/Map;
 	METHOD c send (Ley;)V
 	METHOD e tick ()V
 	METHOD g getConnection ()Lcm;

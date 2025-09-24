@@ -1,0 +1,2 @@
+CLASS auk net/minecraft/client/OpenGLCapabilities
+	METHOD a hasOcclusionChecks ()Z

@@ -1,0 +1,11 @@
+CLASS atp net/minecraft/client/Camera
+	METHOD a getBlockAt (Labw;Lof;F)I
+		ARG 0 level
+		ARG 1 mob
+		ARG 2 a
+	METHOD a prepare (Luf;Z)V
+		ARG 0 player
+		ARG 1 reverseForward
+	METHOD b getCameraPos (Lof;D)Latc;
+		ARG 0 player
+		ARG 1 a

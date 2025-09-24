@@ -1,0 +1,9 @@
+CLASS bcz net/minecraft/client/multiplayer/ConnectScreen$1
+	FIELD a val$ip Ljava/lang/String;
+	FIELD b val$port I
+	FIELD c this$0 Lbcy;
+	METHOD <init> (Lbcy;Ljava/lang/String;I)V
+		ARG 1 this$0
+		ARG 2 val$ip
+		ARG 3 val$port
+	METHOD run run ()V
