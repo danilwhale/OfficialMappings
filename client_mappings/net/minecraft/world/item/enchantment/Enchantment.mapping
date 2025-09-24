@@ -2,6 +2,7 @@ CLASS aau net/minecraft/world/item/enchantment/Enchantment
 	FIELD A category Laav;
 	FIELD B descriptionId Ljava/lang/String;
 	FIELD a rarity I
+	FIELD b enchantments [Laau;
 	FIELD d ALL_DAMAGE_PROTECTION Laau;
 	FIELD e FIRE_PROTECTION Laau;
 	FIELD f FALL_PROTECTION Laau;

@@ -1,3 +1,0 @@
-CLASS aaz net/minecraft/world/item/enchantment/EnchantmentHelper$2
-	FIELD a bonus F
-	FIELD b mob Lof;
