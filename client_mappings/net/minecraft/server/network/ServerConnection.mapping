@@ -1,9 +1,1 @@
-CLASS ka net/minecraft/server/network/ServerConnection
-	COMMENT i think this is PlayerConnection, ServerConnection should listen for incoming, PendingConnection is for connections being authenticated, and PlayerConnection is for fully connected players
-	FIELD a connection Lcm;
-	FIELD c player Ljv;
-	FIELD d server Lnet/minecraft/server/MinecraftServer;
-	FIELD j random Ljava/util/Random;
-	METHOD a teleport (DDDFF)V
-	METHOD b send (Ley;)V
-	METHOD c disconnect (Ljava/lang/String;)V
+CLASS kd net/minecraft/server/network/ServerConnection
