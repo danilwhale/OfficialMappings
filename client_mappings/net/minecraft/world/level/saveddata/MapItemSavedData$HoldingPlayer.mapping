@@ -1,4 +1,4 @@
-CLASS alj net/minecraft/world/level/saveddata/maps/MapItemSavedData$HoldingPlayer
+CLASS alj net/minecraft/world/level/saveddata/MapItemSavedData$HoldingPlayer
 	FIELD a player Luf;
 	METHOD <init> (Lali;Luf;)V
 		ARG 2 player

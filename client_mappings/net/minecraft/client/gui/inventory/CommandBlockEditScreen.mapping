@@ -1,0 +1,7 @@
+CLASS axi net/minecraft/client/gui/inventory/CommandBlockEditScreen
+	FIELD a commandEdit Lavf;
+	FIELD b autoCommandBlock Larz;
+	FIELD c doneButton Laut;
+	FIELD d cancelButton Laut;
+	METHOD <init> (Larz;)V
+		ARG 1 commandBlock

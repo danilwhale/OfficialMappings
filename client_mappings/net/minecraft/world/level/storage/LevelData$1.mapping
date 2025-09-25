@@ -1,2 +1,5 @@
 CLASS alt net/minecraft/world/level/storage/LevelData$1
 	FIELD a this$0 Lals;
+	METHOD <init> (Lals;)V
+		ARG 1 this$0
+	METHOD call call ()Ljava/lang/Object;

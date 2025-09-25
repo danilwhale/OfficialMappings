@@ -1,4 +1,4 @@
-CLASS alk net/minecraft/world/level/saveddata/maps/MapitemSavedData$MapDecoration
+CLASS alk net/minecraft/world/level/saveddata/MapitemSavedData$MapDecoration
 	FIELD a type B
 	FIELD b x B
 	FIELD c y B

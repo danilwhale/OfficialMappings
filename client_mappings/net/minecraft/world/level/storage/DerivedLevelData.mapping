@@ -1,0 +1,2 @@
+CLASS alp net/minecraft/world/level/storage/DerivedLevelData
+	FIELD a wrapped Lals;

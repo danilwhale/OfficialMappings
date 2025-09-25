@@ -1,2 +1,4 @@
 CLASS ams net/minecraft/world/level/storage/FileIOThread
+	COMMENT TODO incorrect name
 	FIELD a instance Lams;
+	METHOD run run ()V

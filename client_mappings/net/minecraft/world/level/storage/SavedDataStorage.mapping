@@ -1,4 +1,4 @@
-CLASS amr net/minecraft/world/level/saveddata/SavedDataStorage
+CLASS amr net/minecraft/world/level/storage/SavedDataStorage
 	FIELD a levelStorage Lamc;
 	METHOD <init> (Lamc;)V
 		ARG 1 levelStorage

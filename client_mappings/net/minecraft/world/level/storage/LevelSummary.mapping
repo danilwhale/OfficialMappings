@@ -5,6 +5,8 @@ CLASS amg net/minecraft/world/level/storage/LevelSummary
 	FIELD d sizeOnDisk J
 	FIELD e requiresConversion Z
 	FIELD f gameType Lace;
+	FIELD g hardcore Z
+	FIELD h hasCheats Z
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;JJLace;ZZZ)V
 		ARG 1 levelId
 		ARG 2 levelName
@@ -12,10 +14,14 @@ CLASS amg net/minecraft/world/level/storage/LevelSummary
 		ARG 5 sizeOnDisk
 		ARG 7 gameType
 		ARG 8 requiresConversion
+		ARG 9 hardcore
+		ARG 10 hasCheats
 	METHOD a getLevelId ()Ljava/lang/String;
 	METHOD b getLevelName ()Ljava/lang/String;
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 		ARG 1 o
 	METHOD d isRequiresConversion ()Z
 	METHOD e getLastPlayed ()J
 	METHOD f getGameType ()Lace;
+	METHOD g isHardcore ()Z
+	METHOD h hasCheats ()Z
