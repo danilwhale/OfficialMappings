@@ -1,4 +1,8 @@
 CLASS atp net/minecraft/client/Camera
+	FIELD i viewport Ljava/nio/IntBuffer;
+	FIELD j modelview Ljava/nio/FloatBuffer;
+	FIELD k projection Ljava/nio/FloatBuffer;
+	FIELD l objpos Ljava/nio/FloatBuffer;
 	METHOD a getBlockAt (Labw;Lof;F)I
 		ARG 0 level
 		ARG 1 mob

@@ -1,5 +1,5 @@
 CLASS bft net/minecraft/client/renderer/culling/Culler
-	METHOD a (DDD)V
+	METHOD a prepare (DDD)V
 		ARG 1 xOff
 		ARG 3 yOff
 		ARG 5 zOff

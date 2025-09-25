@@ -1,6 +1,15 @@
 CLASS bcy net/minecraft/client/multiplayer/ConnectScreen
 	FIELD b aborted Z
 	FIELD c parent Lawe;
+	METHOD a access$100 (Lbcy;)Latv;
+	METHOD a access$000 (Lbcy;Lbcw;)Lbcw;
 	METHOD a connect (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port
+	METHOD b access$200 (Lbcy;)Z
+	METHOD c access$300 (Lbcy;)Latv;
+	METHOD d access$400 (Lbcy;)Lbcw;
+	METHOD e access$500 (Lbcy;)Lawe;
+	METHOD f access$600 (Lbcy;)Latv;
+	METHOD g access$700 (Lbcy;)Latv;
+	METHOD h access$800 (Lbcy;)Latv;

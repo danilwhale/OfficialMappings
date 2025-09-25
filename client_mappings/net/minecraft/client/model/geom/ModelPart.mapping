@@ -20,6 +20,7 @@ CLASS bcu net/minecraft/client/model/geom/ModelPart
 	FIELD s yTexOffs I
 	FIELD t compiled Z
 	FIELD u list I
+	FIELD v model Lbbo;
 	METHOD <init> (Lbbo;)V
 		ARG 1 model
 	METHOD <init> (Lbbo;II)V
