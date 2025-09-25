@@ -1,8 +1,0 @@
-CLASS bap net/minecraft/realmsclient/exception/RealmsServiceException
-	FIELD a httpResultCode I
-	FIELD b httpResponseContent Ljava/lang/String;
-	FIELD c errorCode I
-	METHOD <init> (ILjava/lang/String;I)V
-		ARG 1 hrc
-		ARG 2 hrco
-		ARG 3 ec

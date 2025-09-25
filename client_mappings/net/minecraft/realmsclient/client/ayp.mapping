@@ -1,8 +1,0 @@
-CLASS ayp net/minecraft/realmsclient/client/ayp
-	FIELD a Warning Layp;
-	FIELD b Info Layp;
-	FIELD c color I
-	FIELD d warning Ljava/lang/String;
-	METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
-		ARG 3 w
-		ARG 4 c

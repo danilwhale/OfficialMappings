@@ -1,5 +1,0 @@
-CLASS ayu net/minecraft/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen$1
-	FIELD a this$0 Layt;
-	METHOD <init> (Layt;)V
-		ARG 1 this$0
-	METHOD run run ()V

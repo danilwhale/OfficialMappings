@@ -1,0 +1,22 @@
+CLASS ayq net/minecraft/client/mco/RealmsLongRunningMcoTaskScreen
+	FIELD a symbols [Ljava/lang/String;
+	FIELD b BUTTON_CANCEL_ID I
+	FIELD c lastScreen Lawe;
+	FIELD d taskThread Ljava/lang/Thread;
+	FIELD e title Ljava/lang/String;
+	FIELD p error Z
+	FIELD q errorMessage Ljava/lang/String;
+	FIELD r aborted Z
+	FIELD s animTicks I
+	FIELD t task Layr;
+	METHOD <init> (Latv;Lawe;Layr;)V
+		ARG 1 minecraft
+		ARG 2 screen
+		ARG 3 task
+	METHOD a error (Ljava/lang/String;)V
+		ARG 1 error
+	METHOD b setTitle (Ljava/lang/String;)V
+		ARG 1 title
+	METHOD g start ()V
+	METHOD h getMinecraft ()Latv;
+	METHOD i aborted ()Z

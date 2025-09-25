@@ -1,5 +1,0 @@
-CLASS ayz net/minecraft/realmsclient/gui/screens/RealmsMainScreen
-	FIELD b lastScreen Lawe;
-	FIELD q configureButton Laut;
-	FIELD r createRealmButton Laut;
-	FIELD t playButton Laut;

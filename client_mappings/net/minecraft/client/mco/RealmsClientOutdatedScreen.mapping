@@ -1,0 +1,4 @@
+CLASS aye net/minecraft/client/mco/RealmsClientOutdatedScreen
+	FIELD a lastScreen Lawe;
+	METHOD <init> (Lawe;)V
+		ARG 1 lastScreen
