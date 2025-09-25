@@ -1,7 +1,7 @@
 CLASS akc net/minecraft/world/level/material/Material
+	FIELD B vegetable Lakc;
 	FIELD H color Lake;
 	FIELD I flammable Z
-	FIELD K liquid Z
 	FIELD L alwaysDestroyable Z
 	FIELD M pushReaction I
 	FIELD a air Lakc;
@@ -16,6 +16,7 @@ CLASS akc net/minecraft/world/level/material/Material
 	FIELD o fire Lakc;
 	FIELD p sand Lakc;
 	FIELD s glass Lakc;
+	FIELD w ice Lakc;
 	METHOD <init> (Lake;)V
 		ARG 1 color
 	METHOD a isSolid ()Z
@@ -30,4 +31,3 @@ CLASS akc net/minecraft/world/level/material/Material
 	METHOD m getPushReaction ()I
 	METHOD n replaceable ()Lakc;
 	METHOD o notPushable ()Lakc;
-	METHOD r liquid ()Lakc;

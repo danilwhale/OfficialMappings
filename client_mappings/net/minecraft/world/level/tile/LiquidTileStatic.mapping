@@ -1,1 +1,11 @@
 CLASS ape net/minecraft/world/level/tile/LiquidTileStatic
+	METHOD k setDynamic (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD m isFlammable (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

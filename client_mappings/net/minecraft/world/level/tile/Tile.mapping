@@ -186,14 +186,21 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 1 face
 		ARG 2 data
 	METHOD a getResourceCount (ILjava/util/Random;)I
+		ARG 1 fortune
 		ARG 2 random
 	METHOD a getResource (ILjava/util/Random;I)I
 		ARG 1 data
 		ARG 2 random
+		ARG 3 fortune
+	METHOD a fillItemCategory (ILww;Ljava/util/List;)V
+		ARG 1 tile
+		ARG 2 category
+		ARG 3 items
 	METHOD a mayPick (IZ)Z
 		ARG 1 data
 		ARG 2 allowLiquid
 	METHOD a dropFromExplosion (Labr;)Z
+		ARG 1 explosion
 	METHOD a getTickDelay (Labw;)I
 		ARG 1 level
 	METHOD a onPlace (Labw;III)V
@@ -224,6 +231,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 data
 		ARG 6 luck
+		ARG 7 fortune
 	METHOD a onRemove (Labw;IIIII)V
 		ARG 1 level
 		ARG 2 x
@@ -271,6 +279,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
+	METHOD a fallOn (Labw;IIILnn;F)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 distance
 	METHOD a handleEntityInside (Labw;IIILnn;Latc;)V
 		ARG 1 level
 		ARG 2 x
@@ -335,6 +350,12 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+	METHOD a_ isSolidFace (Lacf;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
@@ -416,6 +437,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 data
+		ARG 6 fortune
 	METHOD c getColor (Lacf;III)I
 		ARG 1 level
 		ARG 2 x
@@ -435,21 +457,33 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 	METHOD d getRenderShape ()I
-	METHOD d asItemInstance (Labw;III)I
+	METHOD d getCloneItemInstance (Labw;III)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD d_ getSilkTouchItemInstance (I)Lye;
 		ARG 1 data
+	METHOD e getLightColor (Lacf;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD f isSignalSource ()Z
 	METHOD f canSurvive (Labw;III)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD f getShadeBrightness (Lacf;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD g updateDefaultShape ()V
 	METHOD h getPistonPushReaction ()I
+	METHOD i isMatching (I)Z
+		ARG 1 tile
 	METHOD j popExperience (Labw;IIII)V
 		ARG 1 level
 		ARG 2 x
@@ -458,6 +492,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 value
 	METHOD k setLightBlock (I)Laqz;
 		ARG 1 lightBlock
+	METHOD l canInstantlyTick ()Z
 	METHOD l isSolidBlockingCubeAndNotSignalSource (I)Z
 		ARG 0 id
 	METHOD l getDestroySpeed (Labw;III)F
@@ -472,10 +507,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD o getColor ()I
 	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
+	METHOD r_ isSilkTouchable ()Z
 	METHOD s isTicking ()Z
 	METHOD s_ init ()V
 	METHOD t isEntityTile ()Z
+	METHOD t_ useOwnCloneData ()Z
 	METHOD u getShapeX0 ()D
+	METHOD u_ getTileItemIconName ()Ljava/lang/String;
 	METHOD v getShapeX1 ()D
 	METHOD w getShapeY0 ()D
 	METHOD x getShapeY1 ()D

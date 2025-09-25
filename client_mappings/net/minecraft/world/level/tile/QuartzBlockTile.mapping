@@ -1,1 +1,3 @@
 CLASS apz net/minecraft/world/level/tile/QuartzBlockTile
+	METHOD <init> (I)V
+		ARG 1 id

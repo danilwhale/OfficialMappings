@@ -1,1 +1,11 @@
 CLASS aoh net/minecraft/world/level/tile/FenceTile
+	METHOD <init> (ILjava/lang/String;Lakc;)V
+		ARG 1 id
+		ARG 3 material
+	METHOD d connectsTo (Lacf;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD n_ isFenceTile (I)Z
+		ARG 0 tile

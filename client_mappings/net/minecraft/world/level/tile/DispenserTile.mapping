@@ -1,3 +1,20 @@
 CLASS any net/minecraft/world/level/tile/DispenserTile
 	FIELD a DISPENSER_REGISTRY Lbq;
+	METHOD <init> (I)V
+		ARG 1 id
 	METHOD a getDispensePosition (Lbf;)Lbo;
+		ARG 0 block
+	METHOD a getDispenseMethod (Lye;)Lbj;
+		ARG 1 item
+	METHOD j_ dispenseFrom (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD k recalcLockDir (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD l_ getFacing (I)Lbl;
+		ARG 0 data

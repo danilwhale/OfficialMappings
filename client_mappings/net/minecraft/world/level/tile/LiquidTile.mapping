@@ -1,2 +1,30 @@
 CLASS apc net/minecraft/world/level/tile/LiquidTile
+	METHOD b getTexture (Ljava/lang/String;)Lms;
+		ARG 0 name
 	METHOD d getHeight (I)F
+		ARG 0 data
+	METHOD d getRenderedDepth (Lacf;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g getFlow (Lacf;III)Latc;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD j fizz (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD k updateLiquid (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD l_ getDepth (Labw;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

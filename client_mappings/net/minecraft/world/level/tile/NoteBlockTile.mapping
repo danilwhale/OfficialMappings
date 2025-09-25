@@ -1,1 +1,3 @@
 CLASS app net/minecraft/world/level/tile/NoteBlockTile
+	METHOD <init> (I)V
+		ARG 1 id

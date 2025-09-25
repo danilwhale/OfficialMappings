@@ -1,1 +1,17 @@
 CLASS apn net/minecraft/world/level/tile/NotGateTile
+	FIELD a on Z
+	FIELD b recentToggles Ljava/util/Map;
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 on
+	METHOD a isToggledTooFrequently (Labw;IIIZ)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 on
+	METHOD m hasNeighborSignal (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

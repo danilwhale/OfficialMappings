@@ -1,1 +1,10 @@
 CLASS aop net/minecraft/world/level/tile/HalfSlabTile
+	FIELD a fullSize Z
+	METHOD <init> (IZLakc;)V
+		ARG 1 id
+		ARG 2 fullSize
+		ARG 3 material
+	METHOD c getAuxName (I)Ljava/lang/String;
+		ARG 1 data
+	METHOD d isHalfSlab (I)Z
+		ARG 0 tile

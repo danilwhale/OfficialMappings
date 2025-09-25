@@ -1,4 +1,4 @@
-CLASS asw net/minecraft/world/level/tile/entity/PistonPieceEntity
+CLASS asw net/minecraft/world/level/tile/piston/PistonPieceEntity
 	FIELD a id I
 	FIELD b data I
 	FIELD c facing I

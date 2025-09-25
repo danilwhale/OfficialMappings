@@ -1,1 +1,19 @@
 CLASS aot net/minecraft/world/level/tile/HopperTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD b getTexture (Ljava/lang/String;)Lms;
+		ARG 0 name
+	METHOD c getAttachedFace (I)I
+		ARG 0 data
+	METHOD d isTurnedOn (I)Z
+		ARG 0 data
+	METHOD d getHopperTileEntity (Lacf;III)Lasi;
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD k checkPoweredState (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

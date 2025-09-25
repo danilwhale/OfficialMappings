@@ -1,1 +1,7 @@
 CLASS aoz net/minecraft/world/level/tile/LeafTile
+	FIELD c checkBuffer [I
+	FIELD e oTex I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a setFancy (Z)V
+		ARG 1 fancy

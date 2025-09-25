@@ -1,1 +1,2 @@
 CLASS arh net/minecraft/world/level/tile/TransparentTile
+	FIELD d fancy Z

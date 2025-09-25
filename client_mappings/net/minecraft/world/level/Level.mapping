@@ -117,6 +117,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 7 name
 		ARG 8 volume
 		ARG 9 pitch
+	METHOD a playSound (DDDLjava/lang/String;FFZ)V
 	METHOD a getOldSkyDarken (F)I
 		ARG 1 a
 	METHOD a getEntity (I)Lnn;
