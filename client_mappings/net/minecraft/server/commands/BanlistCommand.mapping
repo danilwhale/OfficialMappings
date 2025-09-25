@@ -1,1 +1,1 @@
-CLASS ia net/minecraft/server/commands/BanlistCommand
+CLASS ia net/minecraft/server/commands/BanListCommand

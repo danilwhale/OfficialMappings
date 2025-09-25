@@ -1,4 +1,4 @@
-CLASS hn net/minecraft/server/players/PlayerList
+CLASS hn net/minecraft/server/PlayerList
 	FIELD a players Ljava/util/List;
 	FIELD b maxPlayers I
 	FIELD c viewDistance I
