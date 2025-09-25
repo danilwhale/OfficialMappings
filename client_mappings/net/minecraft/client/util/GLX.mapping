@@ -1,4 +1,4 @@
-CLASS bma net/minecraft/client/renderer/GLX
+CLASS bma net/minecraft/client/util/GLX
 	FIELD a GL_TEXTURE0 I
 	FIELD b GL_TEXTURE1 I
 	FIELD c useMultitextureArb Z
