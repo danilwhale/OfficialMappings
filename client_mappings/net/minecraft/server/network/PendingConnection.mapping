@@ -1,4 +1,6 @@
 CLASS jy net/minecraft/server/network/PendingConnection
+	FIELD b done Z
+	METHOD a disconnect (Ljava/lang/String;)V
 	METHOD a access$000 (Ljy;)Ljava/lang/String;
 		ARG 0 this$0
 	METHOD a access$400 (Ljy;Z)Z
@@ -8,5 +10,6 @@ CLASS jy net/minecraft/server/network/PendingConnection
 		ARG 0 this$0
 	METHOD c access$200 (Ljy;)Ljavax/crypto/SecretKey;
 		ARG 0 this$0
+	METHOD d login ()V
 	METHOD d access$300 (Ljy;)Ljava/lang/String;
 		ARG 0 this$0

@@ -1,1 +1,8 @@
 CLASS iy net/minecraft/server/dedicated/iy
+	COMMENT ServerConnection listen thread
+	FIELD a pendingConnections Ljava/util/List;
+	FIELD d socket Ljava/net/ServerSocket;
+	METHOD a tick ()V
+	METHOD a addPendingConnection (Ljy;)V
+		ARG 1 pendingconnection
+	METHOD run run ()V
