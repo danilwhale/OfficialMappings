@@ -1,0 +1,6 @@
+CLASS bin net/minecraft/client/renderer/texture/TextureManager$1
+	FIELD a texture Lbio;
+	FIELD b this$0 Lbim;
+	METHOD <init> (Lbim;Lbio;)V
+		ARG 1 this$0
+		ARG 2 texture

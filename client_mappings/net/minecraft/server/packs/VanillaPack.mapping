@@ -1,4 +1,0 @@
-CLASS bjg net/minecraft/server/packs/VanillaPack
-	FIELD a namespaces Ljava/util/Set;
-	METHOD c getResourceAsStream (Lbjo;)Ljava/io/InputStream;
-		ARG 1 location

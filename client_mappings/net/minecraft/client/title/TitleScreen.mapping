@@ -1,0 +1,20 @@
+CLASS blt net/minecraft/client/title/TitleScreen
+	FIELD A warningClickWidth I
+	FIELD C warningx0 I
+	FIELD D warningy0 I
+	FIELD E warningx1 I
+	FIELD F warningy1 I
+	FIELD a warningMessageBottom Ljava/lang/String;
+	FIELD b random Ljava/util/Random;
+	FIELD d splash Ljava/lang/String;
+	FIELD e resetDemoButton Laut;
+	FIELD v warningMessageTop Ljava/lang/String;
+	FIELD w warningMessageUrl Ljava/lang/String;
+	FIELD y MINECRAFT_LOGO Lbjo;
+	METHOD b createNormalMenuOptions (II)V
+		ARG 1 y
+		ARG 2 spacing
+	METHOD c createDemoMenuOptions (II)V
+		ARG 1 y
+		ARG 2 spacing
+	METHOD i realmsButtonClicked ()V

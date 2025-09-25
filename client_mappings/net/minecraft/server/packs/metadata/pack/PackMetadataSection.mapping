@@ -1,8 +1,0 @@
-CLASS bku net/minecraft/server/packs/metadata/pack/PackMetadataSection
-	FIELD a description Ljava/lang/String;
-	FIELD b packFormat I
-	METHOD <init> (Ljava/lang/String;I)V
-		ARG 1 description
-		ARG 2 packFormat
-	METHOD a getDescription ()Ljava/lang/String;
-	METHOD b getPackFormat ()I

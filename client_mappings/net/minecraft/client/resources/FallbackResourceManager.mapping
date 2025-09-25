@@ -1,0 +1,6 @@
+CLASS bjh net/minecraft/client/resources/FallbackResourceManager
+	FIELD a fallbacks Ljava/util/List;
+	METHOD a add (Lbjr;)V
+		ARG 1 pack
+	METHOD c getMetadataLocation (Lbjo;)Lbjo;
+		ARG 0 location

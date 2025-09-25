@@ -1,3 +1,0 @@
-CLASS bis net/minecraft/client/renderer/ptexture/ClockTexture
-	FIELD i rot D
-	FIELD j rota D

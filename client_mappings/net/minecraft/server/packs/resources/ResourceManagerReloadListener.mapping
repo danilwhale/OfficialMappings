@@ -1,3 +1,0 @@
-CLASS bjq net/minecraft/server/packs/resources/ResourceManagerReloadListener
-	METHOD a onResourceManagerReload (Lbjp;)V
-		ARG 1 manager
