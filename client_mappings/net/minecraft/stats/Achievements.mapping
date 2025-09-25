@@ -1,0 +1,2 @@
+CLASS kp net/minecraft/stats/Achievements
+	METHOD a init ()V

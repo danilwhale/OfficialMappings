@@ -1,0 +1,35 @@
+CLASS ko net/minecraft/stats/Achievement
+	COMMENT used getter/setters, net.minecraft.advancements.Advancement and net.minecraft.advancements.DisplayInfo for field names
+	FIELD a x I
+	FIELD b y I
+	FIELD c parent Lko;
+	FIELD d icon Lye;
+	FIELD l description Ljava/lang/String;
+	FIELD m descFormatter Lkq;
+	FIELD n golden Z
+	METHOD <init> (ILjava/lang/String;IILaqz;Lko;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 tile
+		ARG 6 parent
+	METHOD <init> (ILjava/lang/String;IILyc;Lko;)V
+		ARG 1 id
+		ARG 2 nmae
+		ARG 3 x
+		ARG 4 y
+		ARG 5 item
+		ARG 6 parent
+	METHOD <init> (ILjava/lang/String;IILye;Lko;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 x
+		ARG 4 y
+		ARG 5 item
+		ARG 6 parent
+	METHOD a setDescFormatter (Lkq;)Lko;
+		ARG 1 descFormatter
+	METHOD b setGolden ()Lko;
+	METHOD e getDescription ()Ljava/lang/String;
+	METHOD f isGolden ()Z

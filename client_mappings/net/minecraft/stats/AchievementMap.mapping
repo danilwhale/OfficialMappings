@@ -1,4 +1,4 @@
-CLASS lb net/minecraft/stats/AchievementIDs
+CLASS lb net/minecraft/stats/AchievementMap
 	COMMENT TODO PLACEHOLDER CLASS NAME!
 	FIELD a instance Llb;
 	FIELD b idMap Ljava/util/Map;

@@ -1,8 +1,0 @@
-CLASS ko net/minecraft/stats/achievements/Achievement
-	FIELD m descFormatter Lkq;
-	FIELD n golden Z
-	METHOD a setDescFormatter (Lkq;)Lko;
-		ARG 1 descFormatter
-	METHOD b setGolden ()Lko;
-	METHOD e getDescription ()Ljava/lang/String;
-	METHOD f isGolden ()Z
