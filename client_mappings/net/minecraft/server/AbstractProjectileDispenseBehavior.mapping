@@ -1,4 +1,4 @@
-CLASS gl net/minecraft/core/dispenser/AbstractProjectileDispenseBehavior
+CLASS gl net/minecraft/server/AbstractProjectileDispenseBehavior
 	METHOD a getUncertainity ()F
 	METHOD a getProjectile (Labw;Lbo;)Lun;
 		ARG 1 level

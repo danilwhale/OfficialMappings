@@ -1,0 +1,2 @@
+CLASS gu net/minecraft/server/DispenserBootstrap$12
+	FIELD b success Z

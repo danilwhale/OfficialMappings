@@ -1,4 +1,4 @@
-CLASS hb net/minecraft/core/dispenser/DispenserBootstrap$5$1
+CLASS hb net/minecraft/server/DispenserBootstrap$5$1
 	FIELD b val$item Lye;
 	FIELD c this$0 Lha;
 	METHOD <init> (Lha;Lye;)V
