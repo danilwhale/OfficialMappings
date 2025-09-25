@@ -1,4 +1,4 @@
-CLASS ayt net/minecraft/client/mco/RealmsSelectWorldTemplateScreen
+CLASS ayt net/minecraft/client/gui/mco/RealmsSelectWorldTemplateScreen
 	FIELD e selectedTemplate I
 	METHOD a access$000 (Layt;)Latv;
 	METHOD a access$500 (Layt;I)I

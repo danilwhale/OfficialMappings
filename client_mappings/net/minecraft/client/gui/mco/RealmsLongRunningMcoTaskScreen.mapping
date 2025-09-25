@@ -1,4 +1,4 @@
-CLASS ayq net/minecraft/client/mco/RealmsLongRunningMcoTaskScreen
+CLASS ayq net/minecraft/client/gui/mco/RealmsLongRunningMcoTaskScreen
 	FIELD a symbols [Ljava/lang/String;
 	FIELD b BUTTON_CANCEL_ID I
 	FIELD c lastScreen Lawe;

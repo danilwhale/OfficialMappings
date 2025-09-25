@@ -1,4 +1,4 @@
-CLASS ayz net/minecraft/client/mco/RealmsMainScreen
+CLASS ayz net/minecraft/client/gui/mco/RealmsMainScreen
 	FIELD b lastScreen Lawe;
 	FIELD q configureButton Laut;
 	FIELD r createRealmButton Laut;

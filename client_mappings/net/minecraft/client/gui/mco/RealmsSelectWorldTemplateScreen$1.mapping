@@ -1,4 +1,4 @@
-CLASS ayu net/minecraft/client/mco/RealmsSelectWorldTemplateScreen$1
+CLASS ayu net/minecraft/client/gui/mco/RealmsSelectWorldTemplateScreen$1
 	FIELD a this$0 Layt;
 	METHOD <init> (Layt;)V
 		ARG 1 this$0
