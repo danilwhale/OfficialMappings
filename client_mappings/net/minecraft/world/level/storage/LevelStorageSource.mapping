@@ -5,6 +5,8 @@ CLASS amf net/minecraft/world/level/storage/LevelStorageSource
 		ARG 2 progress
 	METHOD a selectLevel (Ljava/lang/String;Z)Lamc;
 	METHOD b getLevelList ()Ljava/util/List;
+	METHOD b requiresConversion (Ljava/lang/String;)Z
+		ARG 1 levelId
 	METHOD c getTagDataFor (Ljava/lang/String;)Lals;
 	METHOD d clearAll ()V
 	METHOD e deleteLevel (Ljava/lang/String;)Z

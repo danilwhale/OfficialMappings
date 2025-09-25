@@ -3,5 +3,16 @@ CLASS hq net/minecraft/server/Settings
 	FIELD b logger Llp;
 	FIELD c source Ljava/io/File;
 	METHOD <init> (Ljava/io/File;Llp;)V
-		ARG 1 so
-		ARG 2 lo
+		ARG 1 file
+		ARG 2 logger
+	METHOD a recreate ()V
+	METHOD a getInt (Ljava/lang/String;I)I
+		ARG 1 str
+		ARG 2 def
+	METHOD a getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 str
+		ARG 2 def
+	METHOD a getBoolean (Ljava/lang/String;Z)Z
+		ARG 1 str
+		ARG 2 def
+	METHOD b save ()V

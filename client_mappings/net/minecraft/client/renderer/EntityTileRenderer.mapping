@@ -1,0 +1,9 @@
+CLASS bfd net/minecraft/client/renderer/EntityTileRenderer
+	FIELD a instance Lbfd;
+	FIELD b chest Lary;
+	FIELD c trappedChest Lary;
+	FIELD d enderChest Lasf;
+	METHOD a render (Laqz;IF)V
+		ARG 1 tile
+		ARG 2 data
+		ARG 3 br

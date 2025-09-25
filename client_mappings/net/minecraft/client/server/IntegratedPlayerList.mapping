@@ -1,0 +1,4 @@
+CLASS bky net/minecraft/client/server/IntegratedPlayerList
+	FIELD d playerData Lby;
+	METHOD <init> (Lbkz;)V
+		ARG 1 server

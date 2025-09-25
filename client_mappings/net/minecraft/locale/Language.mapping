@@ -1,4 +1,4 @@
-CLASS bu net/minecraft/core/Language
+CLASS bu net/minecraft/locale/Language
 	COMMENT yet fucking another language wrapper. hoooly shit, how many of them do you need, mojang????
 	FIELD a singleton Lbv;
 	METHOD a getElement (Ljava/lang/String;)Ljava/lang/String;

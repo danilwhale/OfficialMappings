@@ -29,3 +29,4 @@ CLASS ado net/minecraft/world/level/chunk/ChunkSource
 		ARG 1 x
 		ARG 2 z
 	METHOD e gatherStats ()Ljava/lang/String;
+	METHOD f getLoadedChunksCount ()I

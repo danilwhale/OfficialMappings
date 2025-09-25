@@ -1,1 +1,2 @@
 CLASS kd net/minecraft/server/network/ServerConnection
+	METHOD b tick ()V

@@ -4,6 +4,7 @@ CLASS ku net/minecraft/stats/Stat
 	FIELD c NUMBER_FORMAT Ljava/text/NumberFormat;
 	FIELD d DECIMAL_FORMAT Ljava/text/DecimalFormat;
 	FIELD e id I
+	FIELD f awardLocallyOnly Z
 	FIELD h DEFAULT_FORMATTER Lkz;
 	FIELD i TIME_FORMATTER Lkz;
 	FIELD j DISTANCE_FORMATTER Lkz;
@@ -15,6 +16,11 @@ CLASS ku net/minecraft/stats/Stat
 		ARG 1 id
 		ARG 2 name
 		ARG 3 formatter
+	METHOD a format (I)Ljava/lang/String;
+		ARG 1 value
+	METHOD d isAchievement ()Z
+	METHOD g postConstruct ()Lku;
+	METHOD h setAwardLocallyOnly ()Lku;
 	METHOD i getName ()Ljava/lang/String;
 	METHOD j access$000 ()Ljava/text/NumberFormat;
 	METHOD k access$100 ()Ljava/text/DecimalFormat;

@@ -1,2 +1,4 @@
 CLASS atd net/minecraft/world/phys/Vec3Pool
+	METHOD a reset ()V
+		COMMENT Vec3.resetPool
 	METHOD a set (DDD)Latc;

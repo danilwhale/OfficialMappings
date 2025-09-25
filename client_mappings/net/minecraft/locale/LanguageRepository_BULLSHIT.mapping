@@ -1,4 +1,4 @@
-CLASS bv
+CLASS bv net/minecraft/locale/LanguageRepository_BULLSHIT
 	COMMENT LanguageRepository???
 	FIELD a UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
 	FIELD c singleton Lbv;

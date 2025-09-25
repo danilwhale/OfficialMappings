@@ -6,9 +6,12 @@ CLASS ho net/minecraft/server/ServerInterface
 	METHOD E isDebugging ()Z
 	METHOD L getLevelIdName ()Ljava/lang/String;
 	METHOD a getProperty (Ljava/lang/String;I)I
+		ARG 1 str
+		ARG 2 def
 	METHOD b_ getSettingsFile ()Ljava/lang/String;
 	METHOD e info (Ljava/lang/String;)V
 	METHOD f warn (Ljava/lang/String;)V
+	METHOD g runCommand (Ljava/lang/String;)Ljava/lang/String;
 	METHOD h error (Ljava/lang/String;)V
 	METHOD i debug (Ljava/lang/String;)V
 	METHOD w getServerIp ()Ljava/lang/String;

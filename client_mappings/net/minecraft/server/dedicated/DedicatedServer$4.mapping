@@ -1,4 +1,4 @@
-CLASS iv net/minecraft/server/dedicated/DedicatedServer$4
+CLASS iw net/minecraft/server/dedicated/DedicatedServer$4
 	FIELD a this$0 Lis;
 	METHOD <init> (Lis;)V
 		ARG 1 this$0
