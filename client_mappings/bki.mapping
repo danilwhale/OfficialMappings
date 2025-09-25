@@ -1,4 +1,5 @@
 CLASS bki
+	FIELD a registry Lbq;
 	FIELD b builder Lcom/google/gson/GsonBuilder;
 	FIELD c gson Lcom/google/gson/Gson;
 	METHOD a register (Lbkh;Ljava/lang/Class;)V

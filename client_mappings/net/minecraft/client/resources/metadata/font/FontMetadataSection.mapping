@@ -1,0 +1,8 @@
+CLASS bkq net/minecraft/client/resources/metadata/font/FontMetadataSection
+	FIELD a width [F
+	FIELD b spacing [F
+	FIELD c left [F
+	METHOD <init> ([F[F[F)V
+		ARG 1 width
+		ARG 2 spacing
+		ARG 3 left
