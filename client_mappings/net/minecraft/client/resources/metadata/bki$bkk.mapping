@@ -1,6 +1,7 @@
-CLASS bkk
+CLASS bkk net/minecraft/client/resources/metadata/bki$bkk
 	FIELD a serializer Lbkh;
 	FIELD b type Ljava/lang/Class;
+	FIELD c this$0 Lbki;
 	METHOD <init> (Lbki;Lbkh;Ljava/lang/Class;)V
 		ARG 2 serializer
 		ARG 3 type

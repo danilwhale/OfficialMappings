@@ -1,4 +1,4 @@
-CLASS bki
+CLASS bki net/minecraft/client/resources/metadata/bki
 	FIELD a registry Lbq;
 	FIELD b builder Lcom/google/gson/GsonBuilder;
 	FIELD c gson Lcom/google/gson/Gson;
