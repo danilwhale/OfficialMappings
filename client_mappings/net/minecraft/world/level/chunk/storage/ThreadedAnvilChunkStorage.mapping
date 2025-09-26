@@ -1,4 +1,4 @@
-CLASS aee net/minecraft/world/level/chunk/storage/RegionFileStorage
+CLASS aee net/minecraft/world/level/chunk/storage/ThreadedAnvilChunkStorage
 	FIELD d folder Ljava/io/File;
 	METHOD <init> (Ljava/io/File;)V
 		ARG 1 folder

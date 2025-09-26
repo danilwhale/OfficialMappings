@@ -1,0 +1,3 @@
+CLASS amt net/minecraft/world/level/storage/ThreadedFileIO$Task
+	COMMENT also guessed name
+	METHOD c write ()Z

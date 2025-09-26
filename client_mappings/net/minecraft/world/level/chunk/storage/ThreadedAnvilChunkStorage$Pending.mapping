@@ -1,0 +1,4 @@
+CLASS aef net/minecraft/world/level/chunk/storage/ThreadedAnvilChunkStorage$Pending
+	COMMENT please help i am going insane
+	FIELD a pos Labp;
+	FIELD b chunkTag Lby;
