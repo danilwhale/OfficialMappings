@@ -1,7 +1,0 @@
-CLASS oe net/minecraft/world/entity/LeashKnot
-	COMMENT prob rename to LeashFenceKnotEntity because patch1 syms also refer to this class
-	METHOD <init> (Labw;III)V
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

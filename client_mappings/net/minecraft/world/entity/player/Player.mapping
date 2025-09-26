@@ -1,47 +1,169 @@
 CLASS uf net/minecraft/world/entity/player/Player
+	FIELD a enderChestInventory Lwb;
+	FIELD bA yCloak D
+	FIELD bB zCloak D
+	FIELD bC isSleeping Z
+	FIELD bD sleepingPos Lt;
 	FIELD bG abilities Luc;
 	FIELD bH experienceLevel I
+	FIELD b sleepCounter I
 	FIELD bI totalExperience I
 	FIELD bJ experienceProgress F
+	FIELD bL defaultFlySpeed F
 	FIELD bM fishing Lul;
 	FIELD bn inventory Lud;
 	FIELD bo inventoryMenu Luy;
 	FIELD bp containerMenu Luy;
+	FIELD bq foodData Lux;
+	FIELD br jumpTriggerTime I
 	FIELD bs oBob F
 	FIELD bt bob F
+	FIELD bu name Ljava/lang/String;
 	FIELD bv takeXpDelay I
+	FIELD bw xCloakO D
+	FIELD bx yCloakO D
+	FIELD by zCloakO D
+	FIELD bz xCloak D
+	FIELD c respawnPosition Lt;
+	FIELD d respawnForced Z
+	FIELD f useItem Lye;
+	FIELD g useItemDuration I
+	FIELD h lastLevelUpTime I
+	METHOD <init> (Labw;Ljava/lang/String;)V
+		ARG 1 level
+		ARG 2 name
+	METHOD a causeFoodExhaustion (F)V
+		ARG 1 exhaustion
 	METHOD a giveExperienceLevels (I)V
+		ARG 1 levels
+	METHOD a startSleepInBed (III)Lug;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a mayUseItemAt (IIIILye;)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+		ARG 5 item
 	METHOD a openTrading (Labk;Ljava/lang/String;)V
 		ARG 1 mechant
 		ARG 2 name
 	METHOD a checkBedValidRespawnPosition (Labw;Lt;Z)Lt;
+	METHOD a setGameMode (Lace;)V
+		ARG 1 gameMode
+	METHOD a canDestroy (Laqz;)Z
+		ARG 1 tile
+	METHOD a getDestroySpeed (Laqz;Z)F
+		ARG 1 tile
 	METHOD a openBeacon (Larw;)V
+		ARG 1 beacon
 	METHOD a openBrewingStand (Larx;)V
+		ARG 1 brewingStand
+	METHOD a openTrap (Lasc;)V
+		ARG 1 trap
+	METHOD a openFurnace (Lasg;)V
+		ARG 1 furnace
 	METHOD a openHopper (Lasi;)V
 		ARG 1 hopper
+	METHOD a openTextEdit (Lasp;)V
+		ARG 1 sign
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
 		ARG 1 stat
 		ARG 2 amount
-	METHOD a openMenu (Lmo;)V
+	METHOD a openContainer (Lmo;)V
 		ARG 1 container
+	METHOD a openHorseInventory (Lrs;Lmo;)V
+		ARG 1 horse
+		ARG 2 horseInventory
+	METHOD a reallyDrop (Lss;)V
+		ARG 1 itemEntity
 	METHOD a openHopper (Lsx;)V
 		ARG 1 hopper
+	METHOD a setRespawnPosition (Lt;Z)V
+		ARG 1 pos
+		ARG 2 forced
+	METHOD a canHarmPlayer (Luf;)Z
+		ARG 1 player
 	METHOD a restoreFrom (Luf;Z)V
+		ARG 1 player
+		ARG 2 login
+	METHOD a startUsingItem (Lye;I)V
+		ARG 1 item
+		ARG 2 duration
 	METHOD a drop (Lye;Z)Lss;
+		ARG 1 item
+		ARG 2 randomDir
 	METHOD a drop (Z)Lss;
+		ARG 1 dropAll
 	METHOD a stopSleepInBed (ZZZ)V
+	METHOD b crit (Lnn;)V
+		ARG 1 entity
 	METHOD b drop (Lye;)Lss;
+		ARG 1 item
 	METHOD bA respawn ()V
+	METHOD bC getSleepRotation ()F
+	METHOD bD isSleepingLongEnough ()Z
+	METHOD bE getSleepTimer ()I
+	METHOD bF getRespawnPosition ()Lt;
+	METHOD bG isRespawnForced ()Z
+	METHOD bH getXpNeededForNextLevel ()I
 	METHOD bI getFoodData ()Lux;
+	METHOD bJ isHurt ()Z
+	METHOD bK getEnderChestInventory ()Lwb;
+	METHOD bL isCapeHidden ()Z
+	METHOD bM getScoreboard ()Latj;
+	METHOD bp getUseItem ()Lye;
+	METHOD bq getUseItemDuration ()I
 	METHOD br isUsingItem ()Z
+	METHOD bs getTicksUsingItem ()I
 	METHOD bt releaseUsingItem ()V
+	METHOD bu stopUsingItem ()V
+	METHOD bv isBlocking ()Z
+	METHOD bw getScore ()I
+	METHOD bx getArmorCoverPercentage ()F
 	METHOD by getSelectedItem ()Lye;
 	METHOD bz removeSelectedItem ()V
+	METHOD c setScore (I)V
+		ARG 1 score
+	METHOD c magicCrit (Lnn;)V
+		ARG 1 entity
+	METHOD c openItemInstanceGui (Lye;)V
+		ARG 1 item
+	METHOD c spawnEatParticles (Lye;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD d (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD g canEat (Z)Z
+		ARG 1 canAlwaysEat
 	METHOD h getCurrentSwingDuration ()I
 	METHOD i closeContainer ()V
+	METHOD j checkMovementStatistiscs (DDD)V
+		ARG 1 xd
+		ARG 3 yd
+		ARG 5 zd
+	METHOD k checkRidingStatistiscs (DDD)V
+		ARG 1 xd
+		ARG 3 yd
+		ARG 5 zd
+	METHOD n completeUsingItem ()V
+	METHOD o onUpdateAbilities ()V
+	METHOD o getArmor (I)Lye;
+		ARG 1 i
+	METHOD p increaseScore (I)V
+		ARG 1 score
 	METHOD p interact (Lnn;)Z
+		ARG 1 entity
 	METHOD q attack (Lnn;)V
+		ARG 1 entity
+	METHOD r touch (Lnn;)V
+		ARG 1 entity
 	METHOD s giveExperiencePoints (I)V
+		ARG 1 points
+	METHOD t setBedOffset (I)V
+		ARG 1 dir

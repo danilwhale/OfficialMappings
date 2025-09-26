@@ -1,4 +1,8 @@
 CLASS sk net/minecraft/world/entity/boss/enderdragon/EnderDragon
+	FIELD bA inWall Z
+	FIELD bB dragonDeathTime I
+	FIELD bC nearestCrystal Lsj;
+	FIELD bD attackTarget Lnn;
 	FIELD bn positions [[D
 	FIELD bo posPointer I
 	FIELD bp subEntities [Lsi;
@@ -11,5 +15,20 @@ CLASS sk net/minecraft/world/entity/boss/enderdragon/EnderDragon
 	FIELD bw wing2 Lsi;
 	FIELD bx oFlapTime F
 	FIELD by flapTime F
+	METHOD a checkWalls (Lasx;)Z
+		ARG 1 bb
+	METHOD a knockBack (Ljava/util/List;)V
+		ARG 1 entities
+	METHOD b rotWrap (D)F
+		ARG 1 x
+	METHOD b getLatencyPos (IF)[D
+		ARG 1 pos
+		ARG 2 a
+	METHOD b hurt (Ljava/util/List;)V
+		ARG 1 entities
 	METHOD bJ restoreLeashFromSave ()V
+	METHOD bK findNewTarget ()V
+	METHOD e reallyHurt (Lnb;F)Z
+		ARG 1 source
+		ARG 2 damage
 	METHOD h getCurrentSwingDuration ()I

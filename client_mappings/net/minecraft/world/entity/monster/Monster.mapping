@@ -1,1 +1,2 @@
 CLASS tm net/minecraft/world/entity/monster/Monster
+	METHOD i_ isDarkEnoughToSpawn ()Z

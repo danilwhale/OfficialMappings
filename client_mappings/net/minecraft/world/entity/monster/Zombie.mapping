@@ -1,1 +1,15 @@
 CLASS tw net/minecraft/world/entity/monster/Zombie
+	FIELD bp SPAWN_REINFORCEMENTS_CHANCE Lor;
+	FIELD bq SPEED_MODIFIER_BABY_UUID Ljava/util/UUID;
+	FIELD br SPEED_MODIFIER_BABY Lot;
+	FIELD bs conversionTime I
+	METHOD a startConverting (I)V
+		ARG 1 time
+	METHOD a setBaby (Z)V
+		ARG 1 baby
+	METHOD bT isVillager ()Z
+	METHOD bV isConverting ()Z
+	METHOD bW finishConversion ()V
+	METHOD bX getConversionProgress ()I
+	METHOD i setVillager (Z)V
+		ARG 1 villager

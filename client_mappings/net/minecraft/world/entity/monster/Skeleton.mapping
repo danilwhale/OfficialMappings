@@ -1,1 +1,7 @@
 CLASS tr net/minecraft/world/entity/monster/Skeleton
+	FIELD bp bowGoal Lqn;
+	FIELD bq meleeGoal Lqa;
+	METHOD a setSkeletonType (I)V
+		ARG 1 skeletonType
+	METHOD bT reassessWeaponGoal ()V
+	METHOD bV getSkeletonType ()I

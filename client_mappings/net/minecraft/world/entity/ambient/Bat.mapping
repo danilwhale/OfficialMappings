@@ -1,1 +1,5 @@
 CLASS ro net/minecraft/world/entity/ambient/Bat
+	FIELD h targetPosition Lt;
+	METHOD a setResting (Z)V
+		ARG 1 resting
+	METHOD bJ isResting ()Z

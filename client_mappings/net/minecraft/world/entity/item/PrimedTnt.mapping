@@ -1,3 +1,11 @@
 CLASS tc net/minecraft/world/entity/item/PrimedTnt
 	FIELD a life I
+	FIELD b owner Lof;
+	METHOD <init> (Labw;DDDLof;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 owner
 	METHOD c getOwner ()Lof;
+	METHOD d explode ()V

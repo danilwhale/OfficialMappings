@@ -1,7 +1,38 @@
 CLASS on net/minecraft/world/entity/PathfinderMob
+	FIELD bn holdGround Z
+	FIELD bp path Lalf;
+	FIELD bq restrictCenter Lt;
+	FIELD br restrictRadius F
+	FIELD j attackTarget Lnn;
 	METHOD a getWalkTargetValue (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setPath (Lalf;)V
+		ARG 1 path
+	METHOD a checkHurtTarget (Lnn;F)V
+		ARG 1 target
+		ARG 2 distance
+	METHOD b isWithinRestriction (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b restrictTo (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 radius
+	METHOD b setAttackTarget (Lnn;)V
+		ARG 1 attackTarget
+	METHOD bJ shouldHoldGround ()Z
+	METHOD bK findRandomStrollLocation ()V
+	METHOD bL findAttackTarget ()Lnn;
+	METHOD bM isPathFinding ()Z
+	METHOD bN getAttackTarget ()Lnn;
+	METHOD bO isWithinRestriction ()Z
 	METHOD bP getRestrictCenter ()Lt;
 	METHOD bQ getRestrictRadius ()F
+	METHOD bR clearRestriction ()V
 	METHOD bS hasRestriction ()Z
 	METHOD o onLeashDistance (F)V
 		ARG 1 d

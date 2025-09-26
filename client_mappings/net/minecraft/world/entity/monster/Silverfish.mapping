@@ -1,1 +1,2 @@
 CLASS tq net/minecraft/world/entity/monster/Silverfish
+	FIELD bp lookForFriends I

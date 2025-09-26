@@ -1,2 +1,4 @@
 CLASS tu net/minecraft/world/entity/monster/Spider$SpiderEffectsGroupData
+	FIELD a effect I
 	METHOD a setRandomEffect (Ljava/util/Random;)V
+		ARG 1 random

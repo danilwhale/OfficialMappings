@@ -1,1 +1,7 @@
 CLASS rq net/minecraft/world/entity/animal/Chicken
+	FIELD bp flap F
+	FIELD bq flapSpeed F
+	FIELD br oFlapSpeed F
+	FIELD bs oFlap F
+	FIELD bt flapping F
+	FIELD bu eggTime I

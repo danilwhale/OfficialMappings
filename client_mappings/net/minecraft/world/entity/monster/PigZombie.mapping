@@ -1,1 +1,8 @@
 CLASS tn net/minecraft/world/entity/monster/PigZombie
+	FIELD bq SPEED_MODIFIER_ATTACKING_UUID Ljava/util/UUID;
+	FIELD br SPEED_MODIFIER_ATTACKING Lot;
+	FIELD bs angerTime I
+	FIELD bt playAngrySoundIn I
+	FIELD bu lastHurtBy Lnn;
+	METHOD c alert (Lnn;)V
+		ARG 1 target

@@ -1,1 +1,6 @@
 CLASS ry net/minecraft/world/entity/animal/Pig
+	FIELD bp controlGoal Lpl;
+	METHOD bT hasSaddle ()Z
+	METHOD bU getControlGoal ()Lpl;
+	METHOD i setSaddle (Z)V
+		ARG 1 saddle

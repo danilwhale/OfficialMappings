@@ -1,2 +1,42 @@
 CLASS sm net/minecraft/world/entity/boss/wither/WitherBoss
+	FIELD bp xRotHeads [F
+	FIELD bq yRotHeads [F
+	FIELD br xRotOHeads [F
+	FIELD bs yRotOHeads [F
+	FIELD bt nextHeadUpdate [I
+	FIELD bu idleHeadUpdates [I
+	FIELD bv destroyBlocksTick I
 	FIELD bw LIVING_ENTITY_SELECTOR Lnw;
+	METHOD a getHeadYRot (I)F
+		ARG 1 head
+	METHOD a performRangedAttack (IDDDZ)V
+		ARG 1 head
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 dangerous
+	METHOD a performRangedAttack (ILof;)V
+		ARG 1 head
+		ARG 2 target
+	METHOD b rotlerp (FFF)F
+		ARG 1 a
+		ARG 2 b
+		ARG 3 t
+	METHOD bT makeInvulnerable ()V
+	METHOD bU getInvulnerableTicks ()I
+	METHOD bV isPowered ()Z
+	METHOD c getHeadXRot (I)F
+		ARG 1 head
+	METHOD c setAlternativeTarget (II)V
+		ARG 1 head
+		ARG 2 alternativeTarget
+	METHOD p setInvulnerableTicks (I)V
+		ARG 1 invulnerableTicks
+	METHOD q getAlternativeTarget (I)I
+		ARG 1 head
+	METHOD r getHeadX (I)D
+		ARG 1 head
+	METHOD s getHeadY (I)D
+		ARG 1 head
+	METHOD t getHeadZ (I)D
+		ARG 1 head
