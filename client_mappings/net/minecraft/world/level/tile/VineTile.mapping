@@ -1,1 +1,10 @@
 CLASS arm net/minecraft/world/level/tile/VineTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD d isAcceptableNeighbor (I)Z
+		ARG 1 tile
+	METHOD k updateSurvival (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

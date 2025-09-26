@@ -1,1 +1,4 @@
 CLASS ars net/minecraft/world/level/tile/WoodSlabTile
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 fullSize

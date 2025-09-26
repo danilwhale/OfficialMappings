@@ -1,1 +1,8 @@
 CLASS aru net/minecraft/world/level/tile/WoolCarpetTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD k checkCanSurvive (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

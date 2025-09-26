@@ -119,6 +119,7 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 2 y
 		ARG 3 z
 	METHOD g isEmpty ()Z
+	METHOD h recalcHeight (III)V
 	METHOD i getSections ()[Lads;
 	METHOD l getPos ()Labp;
 	METHOD q recheckGaps ()V

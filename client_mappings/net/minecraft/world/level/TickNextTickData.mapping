@@ -17,7 +17,7 @@ CLASS acm net/minecraft/world/level/TickNextTickData
 	METHOD a delay (J)Lacm;
 		ARG 1 delay
 	METHOD a compareTo (Lacm;)I
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 		ARG 1 o
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o

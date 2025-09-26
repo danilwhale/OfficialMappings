@@ -13,19 +13,23 @@ CLASS akc net/minecraft/world/level/material/Material
 	FIELD i lava Lakc;
 	FIELD j leaves Lakc;
 	FIELD k plant Lakc;
+	FIELD l replaceable_plant Lakc;
 	FIELD o fire Lakc;
 	FIELD p sand Lakc;
 	FIELD s glass Lakc;
+	FIELD u explosive Lakc;
 	FIELD w ice Lakc;
+	FIELD x topSnow Lakc;
+	FIELD y snow Lakc;
 	METHOD <init> (Lake;)V
 		ARG 1 color
 	METHOD a isSolid ()Z
 	METHOD b blocksLight ()Z
 	METHOD c blocksMotion ()Z
-	METHOD d isLiquid ()Z
 	METHOD f notAlwaysDestroyable ()Lakc;
 	METHOD g flammable ()Lakc;
 	METHOD h isFlammable ()Z
+	METHOD j isLiquid ()Z
 	METHOD k isSolidBlocking ()Z
 	METHOD l isAlwaysDestroyable ()Z
 	METHOD m getPushReaction ()I

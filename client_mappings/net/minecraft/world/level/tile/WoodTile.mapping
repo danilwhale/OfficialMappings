@@ -1,2 +1,4 @@
 CLASS art net/minecraft/world/level/tile/WoodTile
 	FIELD a WOOD_NAMES [Ljava/lang/String;
+	METHOD <init> (I)V
+		ARG 1 id
