@@ -1,4 +1,5 @@
 CLASS azz net/minecraft/client/mco/RealmsClient
+	COMMENT they had more crap that got trimmed in "main" pkg since this starts with azz and main pkg ends in azu
 	FIELD a sessionId Ljava/lang/String;
 	FIELD b username Ljava/lang/String;
 	FIELD c currentEnvironment Ljava/lang/String;

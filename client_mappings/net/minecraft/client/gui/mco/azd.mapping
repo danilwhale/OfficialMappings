@@ -1,0 +1,2 @@
+CLASS azd net/minecraft/client/gui/mco/azd
+	COMMENT mojang lazy i think they copied this from the select world screen
