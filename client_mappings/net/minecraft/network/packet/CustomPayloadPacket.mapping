@@ -1,1 +1,7 @@
 CLASS ea net/minecraft/network/packet/CustomPayloadPacket
+	FIELD a identifier Ljava/lang/String;
+	FIELD b length I
+	FIELD c data [B
+	METHOD <init> (Ljava/lang/String;[B)V
+		ARG 1 identifier
+		ARG 2 data

@@ -1,4 +1,4 @@
-CLASS iy net/minecraft/server/dedicated/iy
+CLASS iy net/minecraft/server/dedicated/ListenThread
 	COMMENT ServerConnection listen thread
 	FIELD a pendingConnections Ljava/util/List;
 	FIELD d socket Ljava/net/ServerSocket;

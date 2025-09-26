@@ -1,0 +1,7 @@
+CLASS lb net/minecraft/stats/StatsMap
+	COMMENT TODO PLACEHOLDER CLASS NAME!
+	COMMENT this has to be statsmap or something like that because it comes after Stats in a-z order
+	FIELD a instance Llb;
+	FIELD b idMap Ljava/util/Map;
+	METHOD a getId (I)Ljava/lang/String;
+		ARG 0 key

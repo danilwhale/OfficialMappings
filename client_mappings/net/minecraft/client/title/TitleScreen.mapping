@@ -11,10 +11,15 @@ CLASS blt net/minecraft/client/title/TitleScreen
 	FIELD v warningMessageTop Ljava/lang/String;
 	FIELD w warningMessageUrl Ljava/lang/String;
 	FIELD y MINECRAFT_LOGO Lbjo;
+	METHOD a access$000 (Lblt;)Latv;
+	METHOD a access$200 (Z)Z
 	METHOD b createNormalMenuOptions (II)V
 		ARG 1 y
 		ARG 2 spacing
+	METHOD b access$100 (Lblt;)V
 	METHOD c createDemoMenuOptions (II)V
 		ARG 1 y
 		ARG 2 spacing
+	METHOD c access$300 (Lblt;)Latv;
+	METHOD d access$400 (Lblt;)Latv;
 	METHOD i realmsButtonClicked ()V

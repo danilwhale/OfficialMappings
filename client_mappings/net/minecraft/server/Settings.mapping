@@ -9,6 +9,9 @@ CLASS hq net/minecraft/server/Settings
 	METHOD a getInt (Ljava/lang/String;I)I
 		ARG 1 str
 		ARG 2 def
+	METHOD a setProperty (Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 a
+		ARG 2 b
 	METHOD a getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 str
 		ARG 2 def
@@ -16,3 +19,4 @@ CLASS hq net/minecraft/server/Settings
 		ARG 1 str
 		ARG 2 def
 	METHOD b save ()V
+	METHOD c getSource ()Ljava/io/File;
