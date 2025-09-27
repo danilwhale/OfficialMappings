@@ -3,6 +3,9 @@ CLASS bdd net/minecraft/client/multiplayer/MultiPlayerLevel
 	METHOD <init> (Lbcw;Lacd;IILlv;Llp;)V
 		ARG 1 listener
 	METHOD J animateTick (III)V
+	METHOD a putEntity (ILnn;)V
 	METHOD a access$000 (Lbdd;)Ljava/util/Set;
+	METHOD b removeEntity (I)Lnn;
 	METHOD b access$100 (Lbdd;)Ljava/util/Set;
 	METHOD c access$200 (Lbdd;)Latv;
+	METHOD g doSetTileAndData (IIIII)Z

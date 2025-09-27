@@ -1,1 +1,5 @@
 CLASS gb net/minecraft/network/packet/TeleportEntityPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I

@@ -1,1 +1,2 @@
 CLASS fk net/minecraft/network/packet/SetCarriedItemPacket
+	FIELD a slot I

@@ -113,8 +113,8 @@ CLASS nn net/minecraft/world/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-		ARG 7 xRot
-		ARG 8 yRot
+		ARG 7 yRot
+		ARG 8 xRot
 		ARG 9 steps
 	METHOD a checkFallDamage (DZ)V
 		ARG 1 distance

@@ -69,6 +69,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleSoundEvent (Leo;)V
 	METHOD a handleLogin (Lep;)V
 		ARG 1 packet
+	METHOD a handleMoveEntity (Leq;)V
+		ARG 1 packet
 	METHOD a handleMovePlayer (Leu;)V
 		ARG 1 packet
 	METHOD a onUnhandledPacket (Ley;)V
@@ -78,6 +80,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handlePlayerInfo (Lfd;)V
 		ARG 1 packet
 	METHOD a handlePlayerInput (Lfe;)V
+		ARG 1 packet
+	METHOD a handleRemoveEntity (Lff;)V
 		ARG 1 packet
 	METHOD a handleRemoveMobEffect (Lfg;)V
 		ARG 1 packet
@@ -91,11 +95,11 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetCreativeModeSlot (Lfl;)V
 		ARG 1 packet
-	METHOD a (Lfn;)V
+	METHOD a handleSetEntityData (Lfn;)V
 		ARG 1 packet
 	METHOD a (Lfo;)V
 		ARG 1 packet
-	METHOD a (Lfp;)V
+	METHOD a handleSetEntityMotion (Lfp;)V
 		ARG 1 packet
 	METHOD a handleSetEquippedItem (Lfq;)V
 		ARG 1 packet
@@ -115,12 +119,16 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleTakeItemEntity (Lga;)V
 		ARG 1 packet
+	METHOD a handleTeleportEntity (Lgb;)V
+		ARG 1 packet
 	METHOD a handleTileDestruction (Lgc;)V
 		ARG 1 packet
 	METHOD a handleTileEditorOpen (Lgd;)V
 	METHOD a (Lge;)V
 		ARG 1 packet
 	METHOD a handleTileEvent (Lgf;)V
+		ARG 1 packet
+	METHOD a handleTileUpdate (Lgg;)V
 		ARG 1 packet
 	METHOD a handleUpdateAttributes (Lgh;)V
 		ARG 1 packet

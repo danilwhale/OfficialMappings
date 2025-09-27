@@ -1,6 +1,27 @@
 CLASS bcw net/minecraft/client/multiplayer/ClientConnection
+	FIELD a message Ljava/lang/String;
+	FIELD e random Ljava/util/Random;
+	FIELD f done Z
+	FIELD g connection Lcm;
 	FIELD h minecraft Latv;
+	FIELD i level Lbdd;
+	FIELD j started Z
 	FIELD k playerInfoMap Ljava/util/Map;
+	FIELD l callbackScreen Lawe;
+	METHOD <init> (Latv;Lbkz;)V
+		ARG 1 minecraft
+		ARG 2 server
+	METHOD <init> (Latv;Ljava/lang/String;I)V
+		ARG 1 minecraft
+		ARG 2 ip
+		ARG 3 port
+	METHOD <init> (Latv;Ljava/lang/String;ILawe;)V
+		ARG 1 minecraft
+		ARG 2 ip
+		ARG 3 port
+		ARG 4 callbackScreen
+	METHOD a getEntity (I)Lnn;
 	METHOD c send (Ley;)V
+	METHOD d close ()V
 	METHOD e tick ()V
 	METHOD g getConnection ()Lcm;

@@ -1,3 +1,30 @@
 CLASS bdi net/minecraft/client/multiplayer/MultiplayerLocalPlayer
 	FIELD a connection Lbcw;
+	FIELD bP xLast D
+	FIELD bQ yLast1 D
+	FIELD bR yLast2 D
+	FIELD bS zLast D
+	FIELD bT yRotLast F
+	FIELD bU xRotLast F
+	FIELD bV lastOnGround Z
+	FIELD bW wasTryingToSneak Z
+	FIELD bX wasSprinting Z
+	FIELD bY noSendTime I
+	FIELD cd flashOnSetHealth Z
+	FIELD ce serverBrand Ljava/lang/String;
+	METHOD <init> (Latv;Labw;Laus;Lbcw;)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 user
+		ARG 4 connection
+	METHOD b chat (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD b awardStatFromServer (Lku;I)V
+		ARG 1 stat
+		ARG 2 amount
+	METHOD c setServerBrand (Ljava/lang/String;)V
+		ARG 1 serverBrand
+	METHOD d sendPosition ()V
+	METHOD g clientSideCloseContainer ()V
 	METHOD j sendOpenInventory ()V
+	METHOD k getServerBrand ()Ljava/lang/String;

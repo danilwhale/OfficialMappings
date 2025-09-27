@@ -1,1 +1,2 @@
 CLASS ff net/minecraft/network/packet/RemoveEntityPacket
+	FIELD a entityIds [I

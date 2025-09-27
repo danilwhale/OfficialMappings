@@ -1,1 +1,7 @@
 CLASS bey net/minecraft/client/player/RemotePlayer
+	FIELD c lSteps I
+	FIELD d lx D
+	FIELD e ly D
+	FIELD f lz D
+	FIELD g lyr D
+	FIELD h lxr D
