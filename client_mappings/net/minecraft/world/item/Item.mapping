@@ -223,6 +223,8 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 instance
 		ARG 2 level
 		ARG 3 entity
+		ARG 4 i
+		ARG 5 selected
 	METHOD a use (Lye;Labw;Luf;)Lye;
 		ARG 1 instance
 		ARG 2 level
@@ -231,6 +233,7 @@ CLASS yc net/minecraft/world/item/Item
 		ARG 1 instance
 		ARG 2 level
 		ARG 3 player
+		ARG 4 time
 	METHOD a getDestroySpeed (Lye;Laqz;)F
 		ARG 1 instance
 		ARG 2 tile
@@ -301,11 +304,11 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD h getDefaultAttributeModifiers ()Lcom/google/common/collect/Multimap;
 	METHOD h getIcon (Lye;)Lms;
 		ARG 1 instance
-	METHOD i (Lye;)Ljava/lang/String;
+	METHOD i getName (Lye;)Ljava/lang/String;
 		ARG 1 instance
-	METHOD j (Lye;)Z
+	METHOD j shouldMoveCraftingResultToInventory (Lye;)Z
 		ARG 1 instance
-	METHOD k (Lye;)Ljava/lang/String;
+	METHOD k getDescription (Lye;)Ljava/lang/String;
 		ARG 1 item
 	METHOD l getIconType ()I
 	METHOD l getHoverName (Lye;)Ljava/lang/String;
@@ -320,6 +323,8 @@ CLASS yc net/minecraft/world/item/Item
 	METHOD s shouldOverrideMultiplayerNBT ()Z
 	METHOD t getCraftingRemainingItem ()Lyc;
 	METHOD u hasCraftingRemainingItem ()Z
+	METHOD v getDescription ()Ljava/lang/String;
 	METHOD w getPotionBrewingFormula ()Ljava/lang/String;
 	METHOD x hasPotionBrewingFormula ()Z
 	METHOD y getItemCategory ()Lww;
+	METHOD z mayBePlacedInAdventureMode ()Z
