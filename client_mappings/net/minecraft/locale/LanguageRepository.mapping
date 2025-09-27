@@ -1,6 +1,7 @@
 CLASS bv net/minecraft/locale/LanguageRepository
 	COMMENT LanguageRepository???
 	FIELD a UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
+	FIELD b SPLITTER Lcom/google/common/base/Splitter;
 	FIELD c singleton Lbv;
 	FIELD d storage Ljava/util/Map;
 	METHOD a getInstance ()Lbv;

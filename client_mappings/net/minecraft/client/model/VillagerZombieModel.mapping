@@ -2,4 +2,5 @@ CLASS bci net/minecraft/client/model/VillagerZombieModel
 	METHOD <init> (FFZ)V
 		ARG 1 g
 		ARG 2 yOffset
+		ARG 3 lean
 	METHOD a version ()I
