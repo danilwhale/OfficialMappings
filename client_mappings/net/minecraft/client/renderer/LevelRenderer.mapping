@@ -1,12 +1,111 @@
 CLASS bfl net/minecraft/client/renderer/LevelRenderer
+	FIELD A darkList I
+	FIELD B xMinChunk I
+	FIELD C yMinChunk I
+	FIELD D zMinChunk I
+	FIELD E xMaxChunk I
+	FIELD F yMaxChunk I
+	FIELD G zMaxChunk I
+	FIELD H destroyingBlocks Ljava/util/Map;
+	FIELD I breakingTextures [Lms;
+	FIELD J lastViewDistance I
+	FIELD K noEntityRenderFrames I
+	FIELD L totalEntities I
+	FIELD M renderedEntities I
+	FIELD N culledEntities I
+	FIELD O totalChunks I
+	FIELD P offscreenChunks I
+	FIELD Q occludedChunks I
+	FIELD R renderedChunks I
+	FIELD S emptyChunks I
+	FIELD U chunkFixOffs I
+	FIELD V renderChunks Ljava/util/List;
+	FIELD W renderLists [Lbfo;
+	FIELD a renderableTileEntities Ljava/util/List;
+	FIELD b resultBuffer Ljava/nio/IntBuffer;
+	FIELD c xOld D
+	FIELD d yOld D
+	FIELD e zOld D
+	FIELD f cullStep I
+	FIELD g MOON_LOCATION Lbjo;
+	FIELD h SUN_LOCATION Lbjo;
+	FIELD i CLOUDS_LOCATION Lbjo;
+	FIELD j END_SKY_LOCATION Lbjo;
+	FIELD k level Lbdd;
+	FIELD l textures Lbim;
+	FIELD m dirtyChunks Ljava/util/List;
+	FIELD n sortedChunks [Lbfa;
+	FIELD o chunks [Lbfa;
+	FIELD p xChunks I
+	FIELD q yChunks I
+	FIELD r zChunks I
+	FIELD s chunkLists I
+	FIELD t mc Latv;
+	FIELD u tileRenderer Lbfr;
+	FIELD v occlusionCheckIds Ljava/nio/IntBuffer;
+	FIELD w occlusionCheck Z
+	FIELD x ticks I
+	FIELD y starList I
+	FIELD z skyList I
+	METHOD <init> (Latv;)V
+		ARG 1 mc
 	METHOD a allChanged ()V
+	METHOD a isInCloud (DDDF)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 alpha
 	METHOD a renderSky (F)V
+		ARG 1 alpha
+	METHOD a renderSameAsLast (ID)V
+		ARG 1 layer
+		ARG 2 alpha
+	METHOD a checkQueryResults (II)V
+		ARG 1 from
+		ARG 2 to
+	METHOD a renderChunks (IIID)I
+		ARG 1 from
+		ARG 2 to
+		ARG 3 layer
+		ARG 4 alpha
+	METHOD a render (Lasx;)V
+		ARG 1 b
 	METHOD a renderEntities (Latc;Lbft;F)V
+		ARG 1 cam
+		ARG 2 culler
+		ARG 3 a
+	METHOD a setLevel (Lbdd;)V
+		ARG 1 level
 	METHOD a renderHit (Lbfq;Luf;F)V
-	METHOD a setupRender (Lbft;F)V
+		ARG 1 t
+		ARG 2 player
+		ARG 3 a
+	METHOD a cull (Lbft;F)V
+		ARG 1 culler
+		ARG 2 a
+	METHOD a registerTextures (Lmt;)V
+		ARG 1 icons
 	METHOD a render (Lof;ID)I
+		ARG 1 player
+		ARG 2 layer
+		ARG 3 alpha
+	METHOD a updateDirtyChunks (Lof;Z)Z
+		ARG 1 player
+		ARG 2 force
 	METHOD a renderHitOutline (Luf;Lata;IF)V
+		ARG 1 player
+		ARG 2 h
+		ARG 3 mode
+		ARG 4 a
 	METHOD b renderClouds (F)V
+		ARG 1 alpha
+	METHOD b setDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
 	METHOD b addParticleInternal (Ljava/lang/String;DDDDDD)Lbeg;
 		ARG 1 name
 		ARG 2 x
@@ -15,5 +114,14 @@ CLASS bfl net/minecraft/client/renderer/LevelRenderer
 		ARG 8 xa
 		ARG 10 ya
 		ARG 12 za
+	METHOD c gatherStats1 ()Ljava/lang/String;
+	METHOD c renderAdvancedClouds (F)V
+		ARG 1 alpha
+	METHOD c resortChunks (III)V
+		ARG 1 xc
+		ARG 2 yc
+		ARG 3 zc
+	METHOD d gatherStats2 ()Ljava/lang/String;
 	METHOD e tick ()V
 	METHOD f clear ()V
+	METHOD g renderStars ()V
