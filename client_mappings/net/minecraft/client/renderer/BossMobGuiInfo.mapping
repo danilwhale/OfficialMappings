@@ -1,9 +1,9 @@
-CLASS bez net/minecraft/client/renderer/BossHealthOverlay
+CLASS bez net/minecraft/client/renderer/BossMobGuiInfo
 	COMMENT names taken from net.minecraft.world.BossEvent (1.14)
 	FIELD a percent F
 	FIELD b setTime I
 	FIELD c name Ljava/lang/String;
 	FIELD d darkenScreen Z
-	METHOD a update (Lsg;Z)V
+	METHOD a setBossHealth (Lsg;Z)V
 		ARG 0 boss
 		ARG 1 darkenScreen

@@ -1,4 +1,4 @@
-CLASS sg net/minecraft/world/entity/boss/Boss
+CLASS sg net/minecraft/world/entity/boss/MobBoss
 	COMMENT guessed
 	METHOD aN getHealth ()F
 	METHOD aT getMaxHealth ()F
