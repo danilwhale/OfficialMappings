@@ -41,7 +41,7 @@ CLASS agf net/minecraft/world/level/levelgen/structure/BoundingBox
 		ARG 6 x2
 		ARG 7 y2
 		ARG 8 z2
-		ARG 9 dir
+		ARG 9 orientation
 	METHOD a intersects (Lagf;)Z
 		ARG 1 box
 	METHOD a createTag (Ljava/lang/String;)Lce;
