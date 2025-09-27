@@ -46,10 +46,17 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 3 z
 		ARG 4 face
 		ARG 5 item
+	METHOD a startEnchanting (IIILjava/lang/String;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 name
 	METHOD a openTrading (Labk;Ljava/lang/String;)V
 		ARG 1 mechant
 		ARG 2 name
 	METHOD a checkBedValidRespawnPosition (Labw;Lt;Z)Lt;
+		ARG 0 level
+		ARG 1 pos
 	METHOD a setGameMode (Lace;)V
 		ARG 1 gameMode
 	METHOD a canDestroy (Laqz;)Z
@@ -68,6 +75,8 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 1 hopper
 	METHOD a openTextEdit (Lasp;)V
 		ARG 1 sign
+	METHOD a sendMessage (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD a awardStat (Lku;)V
 		ARG 1 stat
 	METHOD a awardStat (Lku;I)V
@@ -99,6 +108,13 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD a drop (Z)Lss;
 		ARG 1 dropAll
 	METHOD a stopSleepInBed (ZZZ)V
+	METHOD b startCrafting (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setPlayerFlag (IZ)V
+		ARG 1 i
+		ARG 2 flag
 	METHOD b crit (Lnn;)V
 		ARG 1 entity
 	METHOD b drop (Lye;)Lss;
@@ -128,6 +144,10 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD bz removeSelectedItem ()V
 	METHOD c setScore (I)V
 		ARG 1 score
+	METHOD c startRepairing (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD c magicCrit (Lnn;)V
 		ARG 1 entity
 	METHOD c openItemInstanceGui (Lye;)V
@@ -135,7 +155,7 @@ CLASS uf net/minecraft/world/entity/player/Player
 	METHOD c spawnEatParticles (Lye;I)V
 		ARG 1 item
 		ARG 2 count
-	METHOD d (III)Z
+	METHOD d mayDestroyBlockAt (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -161,6 +181,8 @@ CLASS uf net/minecraft/world/entity/player/Player
 		ARG 1 entity
 	METHOD q attack (Lnn;)V
 		ARG 1 entity
+	METHOD r getPlayerFlag (I)Z
+		ARG 1 i
 	METHOD r touch (Lnn;)V
 		ARG 1 entity
 	METHOD s giveExperiencePoints (I)V

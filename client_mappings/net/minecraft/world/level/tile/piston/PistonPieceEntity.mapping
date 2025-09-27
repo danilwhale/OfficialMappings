@@ -15,6 +15,9 @@ CLASS asw net/minecraft/world/level/tile/piston/PistonPieceEntity
 	METHOD a getId ()I
 	METHOD a getProgress (F)F
 		ARG 1 a
+	METHOD a moveCollidedEntities (FF)V
+		ARG 1 a
+		ARG 2 power
 	METHOD b isExtending ()Z
 	METHOD b getXOff (F)F
 		ARG 1 a

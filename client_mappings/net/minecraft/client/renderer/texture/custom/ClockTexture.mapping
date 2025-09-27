@@ -1,0 +1,3 @@
+CLASS bis net/minecraft/client/renderer/texture/custom/ClockTexture
+	FIELD i rot D
+	FIELD j rota D

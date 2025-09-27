@@ -26,8 +26,11 @@ CLASS sk net/minecraft/world/entity/boss/enderdragon/EnderDragon
 		ARG 2 a
 	METHOD b hurt (Ljava/util/List;)V
 		ARG 1 entities
-	METHOD bJ restoreLeashFromSave ()V
+	METHOD bJ checkCrystals ()V
 	METHOD bK findNewTarget ()V
+	METHOD c spawnExitPortal (II)V
+		ARG 1 x
+		ARG 2 z
 	METHOD e reallyHurt (Lnb;F)Z
 		ARG 1 source
 		ARG 2 damage

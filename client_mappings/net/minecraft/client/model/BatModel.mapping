@@ -5,5 +5,4 @@ CLASS baz net/minecraft/client/model/BatModel
 	FIELD d leftWing Lbcu;
 	FIELD e rightWingTip Lbcu;
 	FIELD f leftWingTip Lbcu;
-	METHOD a ()I
-		COMMENT model version
+	METHOD a modelVersion ()I

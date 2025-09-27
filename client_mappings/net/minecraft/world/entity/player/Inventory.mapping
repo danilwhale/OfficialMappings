@@ -40,7 +40,7 @@ CLASS ud net/minecraft/world/entity/player/Inventory
 		ARG 1 item
 	METHOD d removeResource (I)Z
 		ARG 1 resource
-	METHOD d findSlotMatchingItem (II)I
+	METHOD d getSlot (II)I
 		ARG 1 item
 		ARG 2 auxValue
 	METHOD d getSlotWithRemainingSpace (Lye;)I

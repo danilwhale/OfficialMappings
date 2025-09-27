@@ -250,7 +250,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 newTile
-	METHOD a getPlacementDataValue (Labw;IIIIFFFI)I
+	METHOD a getPlacedOnFaceDataValue (Labw;IIIIFFFI)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -459,6 +459,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 dir
 	METHOD b_ getTexture (Lacf;IIII)Lms;
 		ARG 1 level
 		ARG 2 x
@@ -507,7 +508,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 	METHOD d getRenderShape ()I
-	METHOD d getCloneItemInstance (Labw;III)I
+	METHOD d cloneTileId (Labw;III)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -527,7 +528,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD f (Lacf;III)F
+	METHOD f getBrightness (Lacf;III)F
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -545,6 +546,11 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 data
 	METHOD h getPistonPushReaction ()I
+	METHOD h cloneTileData (Labw;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD i isMatching (I)Z
 		ARG 1 tile
 	METHOD i getShadeBrightness (Lacf;III)F
@@ -560,14 +566,26 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 value
 	METHOD k setLightBlock (I)Laqz;
 		ARG 1 lightBlock
+	METHOD k finalizePlacement (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD l canInstantlyTick ()Z
-	METHOD l isSolidBlockingCubeAndNotSignalSource (I)Z
+	METHOD l isSolidBlocking (I)Z
 		ARG 0 id
 	METHOD l getDestroySpeed (Labw;III)F
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD l onRemoving (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD m mayPick ()Z
 	METHOD m getTexture (I)Lms;
 		ARG 1 face

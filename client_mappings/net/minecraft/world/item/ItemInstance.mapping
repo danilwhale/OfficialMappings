@@ -129,3 +129,4 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD w getRarity ()Lyq;
 	METHOD x isEnchantable ()Z
 	METHOD y isEnchanted ()Z
+	METHOD z mayBePlacedInAdventureMode ()Z

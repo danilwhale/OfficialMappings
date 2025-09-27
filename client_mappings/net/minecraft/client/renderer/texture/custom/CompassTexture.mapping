@@ -1,4 +1,4 @@
-CLASS bit net/minecraft/client/renderer/texture/custom/CompassAtlasSprite
+CLASS bit net/minecraft/client/renderer/texture/custom/CompassTexture
 	FIELD i rot D
 	FIELD j rota D
 	METHOD a updateFromPosition (Labw;DDDZZ)V

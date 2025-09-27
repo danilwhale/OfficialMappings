@@ -1,20 +1,29 @@
 CLASS ub net/minecraft/world/entity/npc/Villager
 	FIELD bB MIN_MAX_PRICES Ljava/util/Map;
 	FIELD bC MIN_MAX_VALUES Ljava/util/Map;
+	FIELD br inLove Z
+	FIELD bs chasing Z
 	FIELD bt tradingPlayer Luf;
 	FIELD bu offers Labm;
 	FIELD bv updateMerchantTimer I
 	FIELD bw increaseProfessionLevelOnUpdate Z
 	FIELD bx riches I
 	FIELD by lastTradedPlayer Ljava/lang/String;
+	FIELD bz rewardPlayersInVillage Z
 	METHOD <init> (Labw;I)V
 		ARG 1 level
 		ARG 2 profession
+	METHOD a getItemTradeInValue (ILjava/util/Random;)Lye;
+		ARG 0 item
+		ARG 1 random
 	METHOD a addItemForTradeIn (Labm;ILjava/util/Random;F)V
 		ARG 0 list
 		ARG 1 item
 		ARG 2 random
 		ARG 3 luck
+	METHOD b getTradeInValue (ILjava/util/Random;)I
+		ARG 0 item
+		ARG 1 random
 	METHOD b addItemForPurchase (Labm;ILjava/util/Random;F)V
 		ARG 0 list
 		ARG 1 item
@@ -23,8 +32,18 @@ CLASS ub net/minecraft/world/entity/npc/Villager
 	METHOD b addParticleAroundSelf (Ljava/lang/String;)V
 		ARG 1 name
 	METHOD bT getProfession ()I
+	METHOD bU isInLove ()Z
+	METHOD bV isChasing ()Z
 	METHOD bW isTrading ()Z
+	METHOD bX setRewardPlayersInVillage ()V
+	METHOD c getPurchaseCost (ILjava/util/Random;)I
+		ARG 0 item
+		ARG 1 random
 	METHOD h getCurrentSwingDuration ()I
+	METHOD i setInLove (Z)V
+		ARG 1 inLove
+	METHOD j setChasing (Z)V
+		ARG 1 chasing
 	METHOD p getRecipeChance (F)F
 		ARG 1 luck
 	METHOD p setProfession (I)V
