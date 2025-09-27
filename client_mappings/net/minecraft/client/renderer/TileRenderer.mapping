@@ -1,6 +1,220 @@
 CLASS bfr net/minecraft/client/renderer/TileRenderer
 	COMMENT close enough, welcome back Main.cs
+	FIELD a level Lacf;
 	FIELD b fancyGraphics Z
+	FIELD d fixedTexture Lms;
+	FIELD e xFlipTexture Z
+	FIELD f noCulling Z
+	METHOD <init> (Lacf;)V
+		ARG 1 level
+	METHOD a clearFixedTexture ()V
+	METHOD a setShape (DDDDDD)V
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD a renderPistonArmUpDown (DDDDDDFD)V
+		ARG 1 x0
+		ARG 3 x1
+		ARG 5 y0
+		ARG 7 y1
+		ARG 9 z0
+		ARG 11 z1
+		ARG 13 br
+		ARG 14 u
 	METHOD a canRender (I)Z
+		ARG 0 shape
+	METHOD a blend (IIII)I
+	METHOD a getLightColor (IIIIDDDD)I
+	METHOD a getWaterHeight (IIILakc;)F
+	METHOD a tesselateAnvilInWorld (Lamv;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateAnvilInWorld (Lamv;IIII)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD a tesselateAnvilPiece (Lamv;IIIIFFFFZZI)F
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 num
+		ARG 12 data
+	METHOD a tesselateAnvilInWorld (Lamv;IIIIZ)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD a tesselateRailInWorld (Lamy;III)Z
+	METHOD a tesselateBeaconInWorld (Lana;III)Z
+	METHOD a tesselateBrewingStandInWorld (Land;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateCauldronInWorld (Lanj;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateCocoaInWorld (Lanm;III)Z
+	METHOD a tesselateComparatorInWorld (Lanp;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateDiodeInWorld (Lanv;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateDiodeInWorld (Lanv;IIII)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateEggInWorld (Laob;III)Z
+	METHOD a tesselateFenceGateInWorld (Laog;III)Z
+	METHOD a tesselateFenceInWorld (Laoh;III)Z
+	METHOD a tesselateFireInWorld (Laoi;III)Z
+	METHOD a tesselateFlowerPotInWorld (Laoj;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateHopperInWorld (Laot;III)Z
+	METHOD a tesselateHopperInWorld (Laot;IIIIZ)Z
+	METHOD a tesselateRepeaterInWorld (Laqf;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateStairsInWorld (Laqp;III)Z
+	METHOD a tesselateStemTexture (Laqq;IIDDDD)V
+	METHOD a tesselateAirPortalFrameInWorld (Laqx;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateThinFenceInWorld (Laqy;III)Z
+	METHOD a setShape (Laqz;)V
+		ARG 1 tile
+	METHOD a tesselateTorch (Laqz;DDDDDI)V
+	METHOD a renderFaceDown (Laqz;DDDLms;)V
+	METHOD a getTexture (Laqz;I)Lms;
+		ARG 1 tile
+		ARG 2 data
+	METHOD a tesselateRowTexture (Laqz;IDDD)V
+	METHOD a tesselateStemTexture (Laqz;IDDDD)V
+	METHOD a tesselateCrossTexture (Laqz;IDDDF)V
 	METHOD a renderTile (Laqz;IF)V
+		ARG 1 tile
+	METHOD a getTexture (Laqz;II)Lms;
+		ARG 1 tile
+		ARG 2 data
+		ARG 3 face
+	METHOD a tesselateInWorldNoCulling (Laqz;III)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateInWorldFixedTexture (Laqz;IIILms;)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 fixedTexture
+	METHOD a tesselatePistonArmNoCulling (Laqz;IIIZ)V
+	METHOD a tesselateBlockInWorld (Laqz;Labw;IIII)V
+	METHOD a getTexture (Laqz;Lacf;IIII)Lms;
+		ARG 1 tile
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 face
+	METHOD a tesselateWallInWorld (Larn;III)Z
+	METHOD a setFixedTexture (Lms;)V
+		ARG 1 fixedTexture
+	METHOD b hasFixedTexture ()Z
+	METHOD b setFixedShape (DDDDDD)V
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD b renderPistonArmNorthSouth (DDDDDDFD)V
+		ARG 1 x0
+		ARG 3 x1
+		ARG 5 y0
+		ARG 7 y1
+		ARG 9 z0
+		ARG 11 z1
+		ARG 13 br
+		ARG 14 u
+	METHOD b getTexture (Laqz;)Lms;
+		ARG 1 tile
+	METHOD b renderFaceUp (Laqz;DDDLms;)V
 	METHOD b tesselateInWorld (Laqz;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b tesselateBlockInWorldWithAmbienceOcclusionTexLighting (Laqz;IIIFFF)Z
+	METHOD b tesselatePistonBaseInWorld (Laqz;IIIZ)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 extended
+	METHOD b getTextureOrMissing (Lms;)Lms;
+		ARG 1 texture
+	METHOD c clearFixedShape ()V
+	METHOD c renderPistonArmEastWest (DDDDDDFD)V
+	METHOD c renderNorth (Laqz;DDDLms;)V
+	METHOD c tesselateTorchInWorld (Laqz;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c tesselatePistonExtensionInWorld (Laqz;IIIZ)Z
+	METHOD d renderSouth (Laqz;DDDLms;)V
+	METHOD d tesselatePistonBaseForceExtended (Laqz;III)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD d tesselateBlockInWorld (Laqz;IIIFFF)Z
+	METHOD e renderWest (Laqz;DDDLms;)V
+	METHOD e tesselateLeverInWorld (Laqz;III)Z
+	METHOD e tesselateCactusInWorld (Laqz;IIIFFF)Z
+	METHOD f renderEast (Laqz;DDDLms;)V
+	METHOD f tesselateTripwireSourceInWorld (Laqz;III)Z
+	METHOD g tesselateTripwireInWorld (Laqz;III)Z
+	METHOD h tesselateDustInWorld (Laqz;III)Z
+	METHOD i tesselateLadderInWorld (Laqz;III)Z
+	METHOD j tesselateVineInWorld (Laqz;III)Z
+	METHOD k tesselateCrossInWorld (Laqz;III)Z
+	METHOD l tesselateStemInWorld (Laqz;III)Z
+	METHOD m tesselateRowTexture (Laqz;III)Z
+	METHOD n tesselateLilypadInWorld (Laqz;III)Z
+	METHOD o tesselateWaterInWorld (Laqz;III)Z
+	METHOD p tesselateBlockInWorld (Laqz;III)Z
+	METHOD q tesselateTreeInWorld (Laqz;III)Z
+	METHOD r tesselateQuartzInWorld (Laqz;III)Z
+	METHOD s tesselateCactusInWorld (Laqz;III)Z
+	METHOD t tesselateDoorInWorld (Laqz;III)Z
+	METHOD u tesselateBedInWorld (Laqz;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
