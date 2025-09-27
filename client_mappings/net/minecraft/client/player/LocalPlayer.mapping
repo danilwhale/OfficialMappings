@@ -1,4 +1,6 @@
 CLASS bex net/minecraft/client/player/LocalPlayer
 	FIELD bN portalTime F
 	FIELD bO oPortalTime F
+	METHOD bN getJumpRidingScale ()F
 	METHOD t getFieldOfViewModifier ()F
+	METHOD u isRidingJumpable ()Z
