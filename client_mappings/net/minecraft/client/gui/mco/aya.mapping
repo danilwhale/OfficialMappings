@@ -1,1 +1,13 @@
 CLASS aya net/minecraft/client/gui/mco/aya
+	METHOD a access$000 (Laya;)Latv;
+	METHOD a access$800 (Laya;I)I
+	METHOD a access$100 (Laya;Ljava/util/List;)Ljava/util/List;
+	METHOD b access$200 (Laya;)J
+	METHOD c access$300 (Laya;)Latv;
+	METHOD d access$400 (Laya;)Layf;
+	METHOD e access$500 (Laya;)Latv;
+	METHOD f access$600 (Laya;)Latv;
+	METHOD g access$700 (Laya;)Ljava/util/List;
+	METHOD h access$900 (Laya;)I
+	METHOD i access$1000 (Laya;)Lavi;
+	METHOD j access$1100 (Laya;)Lavi;

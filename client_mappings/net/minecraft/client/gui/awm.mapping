@@ -1,1 +1,3 @@
 CLASS awm net/minecraft/client/gui/awm
+	METHOD a access$000 (Lawm;)Ljava/util/List;
+	METHOD b access$100 (Lawm;)Ljava/util/List;

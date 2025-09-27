@@ -1,0 +1,3 @@
+CLASS azc net/minecraft/client/gui/mco/RealmsMainScreen$azb$1
+	FIELD a val$a Lbak;
+	FIELD b this$0 Lazb;
