@@ -1,6 +1,39 @@
 CLASS ajm net/minecraft/world/level/levelgen/structure/VillagePieces$VillagePiece
+	FIELD a villagerCount I
 	FIELD b isDesert Z
 	FIELD k heightPosition I
 	METHOD <init> (Lajj;I)V
-		ARG 1 p
-		ARG 2 i
+		ARG 1 piece
+		ARG 2 genDepth
+	METHOD a spawnVillagers (Labw;Lagf;IIII)V
+		ARG 1 level
+		ARG 2 box
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 count
+	METHOD a isOkBox (Lagf;)Z
+		ARG 0 box
+	METHOD a generateHouseNorthernLeft (Lajj;Ljava/util/List;Ljava/util/Random;II)Lait;
+		ARG 1 start
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 yr
+		ARG 5 xr
+	METHOD b getVillagerProfession (I)I
+		ARG 1 i
+	METHOD b getAverageGroundHeight (Labw;Lagf;)I
+		ARG 1 level
+		ARG 2 box
+	METHOD b generateHouseNorthernRight (Lajj;Ljava/util/List;Ljava/util/Random;II)Lait;
+		ARG 1 start
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 yr
+		ARG 5 xr
+	METHOD d biomeBlock (II)I
+		ARG 1 block
+		ARG 2 data
+	METHOD e biomeData (II)I
+		ARG 1 block
+		ARG 2 data

@@ -1,2 +1,8 @@
 CLASS aix net/minecraft/world/level/levelgen/feature/VillageFeature$VillageStart
 	FIELD c valid Z
+	METHOD <init> (Labw;Ljava/util/Random;III)V
+		ARG 1 level
+		ARG 2 random
+		ARG 3 cx
+		ARG 4 cz
+		ARG 5 size

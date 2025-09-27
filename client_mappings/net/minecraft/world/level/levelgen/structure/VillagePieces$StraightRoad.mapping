@@ -6,3 +6,11 @@ CLASS ajk net/minecraft/world/level/levelgen/structure/VillagePieces$StraightRoa
 		ARG 3 random
 		ARG 4 bb
 		ARG 5 orientation
+	METHOD a findPieceBox (Lajj;Ljava/util/List;Ljava/util/Random;IIII)Lagf;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
