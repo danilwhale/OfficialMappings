@@ -141,7 +141,12 @@ CLASS atv net/minecraft/client/Minecraft
 	METHOD i pauseGame ()V
 	METHOD j toggleFullscreen ()V
 	METHOD k tick ()V
+	METHOD l gatherStats1 ()Ljava/lang/String;
+	METHOD m gatherStats2 ()Ljava/lang/String;
+	METHOD n gatherStats3 ()Ljava/lang/String;
+	METHOD o gatherStats4 ()Ljava/lang/String;
 	METHOD p isDemo ()Z
 	METHOD r renderNames ()Z
+	METHOD s useFancyGraphics ()Z
 	METHOD w getInstance ()Latv;
 	METHOD y maxSupportedTextureSize ()I
