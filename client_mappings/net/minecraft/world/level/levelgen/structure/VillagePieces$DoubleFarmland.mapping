@@ -3,5 +3,6 @@ CLASS aja net/minecraft/world/level/levelgen/structure/VillagePieces$DoubleFarml
 	FIELD b cropsB I
 	FIELD c cropsC I
 	FIELD d cropsD I
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Laja;
 	METHOD a selectCrops (Ljava/util/Random;)I
 		ARG 1 random

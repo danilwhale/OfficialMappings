@@ -5,6 +5,8 @@ CLASS alg net/minecraft/world/level/pathfinder/PathFinder
 	FIELD d neighbors [Lale;
 	METHOD a getNode (III)Lale;
 	METHOD a reconstruct_path (Lale;Lale;)Lalf;
+		ARG 1 node1
+		ARG 2 node2
 	METHOD a findPath (Lnn;DDDF)Lalf;
 	METHOD a findPath (Lnn;IIIF)Lalf;
 	METHOD a isFree (Lnn;IIILale;)I

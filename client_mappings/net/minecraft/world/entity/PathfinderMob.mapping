@@ -3,6 +3,8 @@ CLASS on net/minecraft/world/entity/PathfinderMob
 	FIELD bp path Lalf;
 	FIELD bq restrictCenter Lt;
 	FIELD br restrictRadius F
+	FIELD h SPEED_MODIFIER_FLEEING_UUID Ljava/util/UUID;
+	FIELD i SPEED_MODIFIER_FLEEING Lot;
 	FIELD j attackTarget Lnn;
 	METHOD a getWalkTargetValue (III)F
 		ARG 1 x

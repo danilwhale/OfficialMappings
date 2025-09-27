@@ -1,1 +1,2 @@
 CLASS ajh net/minecraft/world/level/levelgen/structure/VillagePieces$SmallTemple
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lajh;

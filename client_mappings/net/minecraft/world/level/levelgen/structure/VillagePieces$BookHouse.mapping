@@ -1,1 +1,2 @@
 CLASS aiz net/minecraft/world/level/levelgen/structure/VillagePieces$BookHouse
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Laiz;

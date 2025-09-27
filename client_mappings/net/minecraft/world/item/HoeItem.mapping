@@ -1,1 +1,5 @@
 CLASS yb net/minecraft/world/item/HoeItem
+	FIELD a tier Lyd;
+	METHOD <init> (ILyd;)V
+		ARG 1 id
+		ARG 2 tier

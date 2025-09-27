@@ -6,3 +6,5 @@ CLASS nr net/minecraft/world/entity/Entity$Size
 	FIELD d SIZE_4 Lnr;
 	FIELD e SIZE_5 Lnr;
 	FIELD f SIZE_6 Lnr;
+	METHOD a size (D)I
+		ARG 1 s

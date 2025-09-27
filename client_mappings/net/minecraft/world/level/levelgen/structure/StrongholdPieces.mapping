@@ -11,7 +11,20 @@ CLASS ahs net/minecraft/world/level/levelgen/structure/StrongholdPieces
 		ARG 0 factory
 		ARG 1 pieces
 		ARG 2 random
+		ARG 3 a
+		ARG 4 b
+		ARG 5 c
 		ARG 6 dir
+		ARG 7 d
 	METHOD b resetPieces ()V
+	METHOD b generatePieceFromSmallDoor (Laii;Ljava/util/List;Ljava/util/Random;IIIII)Lail;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 e
+		ARG 5 f
+		ARG 6 g
+		ARG 7 h
 	METHOD c access$200 ()Laig;
 	METHOD d updatePieceWeight ()Z

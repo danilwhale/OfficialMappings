@@ -1,1 +1,2 @@
 CLASS ajf net/minecraft/world/level/levelgen/structure/VillagePieces$SimpleHouse
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lajf;

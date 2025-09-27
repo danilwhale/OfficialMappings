@@ -16,4 +16,5 @@ CLASS re net/minecraft/world/entity/ai/goal/target/TargetGoal
 		ARG 1 target
 	METHOD a canAttack (Lof;Z)Z
 		ARG 1 target
+		ARG 2 bl
 	METHOD f getFollowDistance ()D

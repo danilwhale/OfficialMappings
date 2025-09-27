@@ -1,1 +1,2 @@
 CLASS ajg net/minecraft/world/level/levelgen/structure/VillagePieces$SmallHut
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lajg;

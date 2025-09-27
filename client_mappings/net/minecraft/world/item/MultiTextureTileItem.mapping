@@ -1,4 +1,6 @@
 CLASS yl net/minecraft/world/item/MultiTextureTileItem
+	FIELD a tile Laqz;
+	FIELD b textures [Ljava/lang/String;
 	METHOD <init> (ILaqz;[Ljava/lang/String;)V
 		ARG 1 id
 		ARG 2 tile

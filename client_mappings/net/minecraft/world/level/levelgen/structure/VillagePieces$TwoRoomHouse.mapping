@@ -1,1 +1,2 @@
 CLASS ajl net/minecraft/world/level/levelgen/structure/VillagePieces$TwoRoomHouse
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lajl;

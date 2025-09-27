@@ -1,3 +1,4 @@
 CLASS aji net/minecraft/world/level/levelgen/structure/VillagePieces$Smithy
 	FIELD a lootTable [Lmk;
 	FIELD b placedChest Z
+	METHOD a createPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Laji;
