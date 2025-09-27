@@ -1,1 +1,14 @@
 CLASS ahx net/minecraft/world/level/levelgen/structure/StrongholdPieces$FillerCorridor
+	FIELD a steps I
+	METHOD <init> (ILjava/util/Random;Lagf;I)V
+		ARG 1 genDepth
+		ARG 2 random
+		ARG 3 boundingBox
+		ARG 4 orientation
+	METHOD a findPieceBox (Ljava/util/List;Ljava/util/Random;IIII)Lagf;
+		ARG 0 pieces
+		ARG 1 random
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 orientation

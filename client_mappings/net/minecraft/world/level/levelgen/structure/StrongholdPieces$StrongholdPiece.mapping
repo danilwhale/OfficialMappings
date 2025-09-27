@@ -1,4 +1,32 @@
 CLASS ail net/minecraft/world/level/levelgen/structure/StrongholdPieces$StrongholdPiece
 	FIELD d entryDoor Laim;
 	METHOD a generateSmallDoor (Labw;Ljava/util/Random;Lagf;Laim;III)V
+		ARG 1 level
+		ARG 2 random
+		ARG 3 boundingBox
+		ARG 4 doorType
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
+	METHOD a isOkBox (Lagf;)Z
+		ARG 0 box
+	METHOD a generateSmallDoorChildForward (Laii;Ljava/util/List;Ljava/util/Random;II)Lait;
+		ARG 1 start
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 xr
+		ARG 5 yr
 	METHOD a randomSmallDoor (Ljava/util/Random;)Laim;
+		ARG 1 random
+	METHOD b generateSmallDoorChildLeft (Laii;Ljava/util/List;Ljava/util/Random;II)Lait;
+		ARG 1 start
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 yr
+		ARG 5 xr
+	METHOD c generateSmallDoorChildRight (Laii;Ljava/util/List;Ljava/util/Random;II)Lait;
+		ARG 1 start
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 yr
+		ARG 5 xr
