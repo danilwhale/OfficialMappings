@@ -7,3 +7,5 @@ CLASS ej net/minecraft/network/packet/BlockRegionUpdatePacket
 	FIELD h size I
 	METHOD <init> (Ladr;ZI)V
 		ARG 1 chunk
+	METHOD a extractChunkData (Ladr;ZI)Lek;
+		ARG 1 fullChunk
