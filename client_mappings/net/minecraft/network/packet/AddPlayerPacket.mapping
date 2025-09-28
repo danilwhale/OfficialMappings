@@ -7,4 +7,8 @@ CLASS di net/minecraft/network/packet/AddPlayerPacket
 	FIELD f yRot B
 	FIELD g xRot B
 	FIELD h carriedItem I
+	FIELD i entityData Loo;
+	FIELD j unpack Ljava/util/List;
+	METHOD <init> (Luf;)V
+		ARG 1 player
 	METHOD c getUnpackedData ()Ljava/util/List;

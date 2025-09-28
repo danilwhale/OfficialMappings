@@ -4,3 +4,5 @@ CLASS de net/minecraft/network/packet/AddExperienceOrbPacket
 	FIELD c y I
 	FIELD d z I
 	FIELD e value I
+	METHOD <init> (Loa;)V
+		ARG 1 orb

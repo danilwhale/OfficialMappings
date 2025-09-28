@@ -1,1 +1,7 @@
 CLASS ej net/minecraft/network/packet/BlockRegionUpdatePacket
+	FIELD a cx I
+	FIELD b cz I
+	FIELD f buffer [B
+	FIELD h size I
+	METHOD <init> (Ladr;ZI)V
+		ARG 1 chunk

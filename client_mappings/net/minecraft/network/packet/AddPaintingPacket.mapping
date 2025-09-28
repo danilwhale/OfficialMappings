@@ -5,3 +5,5 @@ CLASS dh net/minecraft/network/packet/AddPaintingPacket
 	FIELD d z I
 	FIELD e dir I
 	FIELD f motive Ljava/lang/String;
+	METHOD <init> (Lol;)V
+		ARG 1 painting

@@ -16,13 +16,17 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleAwardStat (Ldk;)V
 		ARG 1 packet
+	METHOD a handleCustomCommandSuggestions (Ldl;)V
+		ARG 1 packet
 	METHOD a handleChat (Ldm;)V
 		ARG 1 packet
 	METHOD a handleChunkTilesUpdate (Ldn;)V
 		ARG 1 packet
+	METHOD a handleClientCommand (Ldo;)V
+		ARG 1 packet
 	METHOD a handleClientInformation (Ldp;)V
 		ARG 1 packet
-	METHOD a handlePreLogin (Ldq;)V
+	METHOD a handleIntention (Ldq;)V
 		ARG 1 packet
 	METHOD a handleComplexItemData (Ldr;)V
 		ARG 1 packet
@@ -48,7 +52,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleEntityActionAtPosition (Lec;)V
 		ARG 1 packet
-	METHOD a (Led;)V
+	METHOD a handleEntityEvent (Led;)V
 		ARG 1 packet
 	METHOD a handleExplosion (Lee;)V
 		ARG 1 packet
@@ -67,6 +71,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleParticleEvent (Len;)V
 		ARG 1 packet
 	METHOD a handleSoundEvent (Leo;)V
+		ARG 1 packet
 	METHOD a handleLogin (Lep;)V
 		ARG 1 packet
 	METHOD a handleMoveEntity (Leq;)V
@@ -74,6 +79,10 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleMovePlayer (Leu;)V
 		ARG 1 packet
 	METHOD a onUnhandledPacket (Ley;)V
+		ARG 1 packet
+	METHOD a handlePlayerAbilities (Lfa;)V
+		ARG 1 packet
+	METHOD a handlePlayerAction (Lfb;)V
 		ARG 1 packet
 	METHOD a handlePlayerCommand (Lfc;)V
 		ARG 1 packet
@@ -95,9 +104,11 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetCreativeModeSlot (Lfl;)V
 		ARG 1 packet
+	METHOD a handleSetDisplayObjective (Lfm;)V
+		ARG 1 packet
 	METHOD a handleSetEntityData (Lfn;)V
 		ARG 1 packet
-	METHOD a (Lfo;)V
+	METHOD a handleRidePacket (Lfo;)V
 		ARG 1 packet
 	METHOD a handleSetEntityMotion (Lfp;)V
 		ARG 1 packet
@@ -107,7 +118,11 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetHealth (Lfs;)V
 		ARG 1 packet
+	METHOD a handleSetObjective (Lft;)V
+		ARG 1 packet
 	METHOD a handleSetPlayerTeamPacket (Lfu;)V
+		ARG 1 packet
+	METHOD a handleSetScore (Lfv;)V
 		ARG 1 packet
 	METHOD a handleSetSpawn (Lfw;)V
 		ARG 1 packet
@@ -124,7 +139,8 @@ CLASS ez net/minecraft/network/packet/PacketListener
 	METHOD a handleTileDestruction (Lgc;)V
 		ARG 1 packet
 	METHOD a handleTileEditorOpen (Lgd;)V
-	METHOD a (Lge;)V
+		ARG 1 packet
+	METHOD a handleTileEntityData (Lge;)V
 		ARG 1 packet
 	METHOD a handleTileEvent (Lgf;)V
 		ARG 1 packet

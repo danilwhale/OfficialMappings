@@ -3,3 +3,9 @@ CLASS dn net/minecraft/network/packet/ChunkTilesUpdatePacket
 	FIELD b zc I
 	FIELD c update [B
 	FIELD d count I
+	METHOD <init> (II[SILabw;)V
+		ARG 1 xc
+		ARG 2 zc
+		ARG 3 buffer
+		ARG 4 count
+		ARG 5 level
