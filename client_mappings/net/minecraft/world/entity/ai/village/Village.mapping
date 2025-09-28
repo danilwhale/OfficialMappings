@@ -14,6 +14,7 @@ CLASS rj net/minecraft/world/entity/ai/village/Village
 		ARG 1 level
 	METHOD a getCenter ()Lt;
 	METHOD a tick (I)V
+		ARG 1 i
 	METHOD a isInside (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -40,6 +41,7 @@ CLASS rj net/minecraft/world/entity/ai/village/Village
 		ARG 1 doorInfo
 	METHOD b getRadius ()I
 	METHOD b rewardAllPlayers (I)V
+		ARG 1 standing
 	METHOD b getClosestDoorInfo (III)Lri;
 		ARG 1 x
 		ARG 2 y
@@ -56,12 +58,20 @@ CLASS rj net/minecraft/world/entity/ai/village/Village
 	METHOD b getClosestAggressor (Lof;)Lof;
 		ARG 1 entity
 	METHOD c getDoorCount ()I
+	METHOD c getBestDoorInfo (III)Lri;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD c getClosestBadStandingPlayer (Lof;)Luf;
 		ARG 1 entity
 	METHOD d getStableAge ()I
-	METHOD d (Ljava/lang/String;)Z
+	METHOD d isBadStanding (Ljava/lang/String;)Z
 		ARG 1 name
 	METHOD e getPopulationSize ()I
+	METHOD e getDoorInfo (III)Lri;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD f getDoorInfos ()Ljava/util/List;
 	METHOD f isDoor (III)Z
 		ARG 1 x
@@ -72,3 +82,6 @@ CLASS rj net/minecraft/world/entity/ai/village/Village
 	METHOD i isBreedTimerOk ()Z
 	METHOD j countGolem ()V
 	METHOD k countPopulation ()V
+	METHOD l updateAggressors ()V
+	METHOD m updateDoors ()V
+	METHOD n calcInfo ()V

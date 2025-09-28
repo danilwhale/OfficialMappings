@@ -3,14 +3,70 @@ CLASS alg net/minecraft/world/level/pathfinder/PathFinder
 	FIELD b openSet Lald;
 	FIELD c nodes Llm;
 	FIELD d neighbors [Lale;
+	FIELD e canPassDoors Z
+	FIELD f canOpenDoors Z
+	FIELD g avoidWater Z
+	FIELD h canFloat Z
+	METHOD <init> (Lacf;ZZZZ)V
+		ARG 1 level
+		ARG 2 canPassDoors
+		ARG 3 canOpenDoors
+		ARG 4 avoidWater
+		ARG 5 canFloat
 	METHOD a getNode (III)Lale;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD a reconstruct_path (Lale;Lale;)Lalf;
 		ARG 1 node1
 		ARG 2 node2
 	METHOD a findPath (Lnn;DDDF)Lalf;
+		ARG 1 e
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 maxDist
 	METHOD a findPath (Lnn;IIIF)Lalf;
+		ARG 1 e
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 maxDist
 	METHOD a isFree (Lnn;IIILale;)I
+		ARG 1 e
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 limit
 	METHOD a getNode (Lnn;IIILale;I)Lale;
+		ARG 1 e
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 limit
+		ARG 6 height
+	METHOD a isFree (Lnn;IIILale;ZZZ)I
+		ARG 0 e
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 limit
+		ARG 5 avoidWater
+		ARG 6 canOpenDoors
+		ARG 7 canPassDoors
 	METHOD a findPath (Lnn;Lale;Lale;Lale;F)Lalf;
+		ARG 1 e
+		ARG 2 node1
+		ARG 3 node2
+		ARG 4 limit
+		ARG 5 maxDist
 	METHOD a findPath (Lnn;Lnn;F)Lalf;
+		ARG 1 from
+		ARG 2 to
+		ARG 3 maxDist
 	METHOD b getNeighbors (Lnn;Lale;Lale;Lale;F)I
+		ARG 1 e
+		ARG 2 node1
+		ARG 3 node2
+		ARG 4 limit
+		ARG 5 maxDist

@@ -1,8 +1,20 @@
 CLASS rh net/minecraft/world/entity/ai/util/RandomPos
-	FIELD a ZERO Latc;
 	METHOD a getPos (Lon;II)Latc;
 		ARG 0 mob
+		ARG 1 width
+		ARG 2 height
 	METHOD a getPosTowards (Lon;IILatc;)Latc;
+		ARG 0 mob
+		ARG 1 width
+		ARG 2 height
+		ARG 3 target
+	METHOD b getPosAvoid (Lon;IILatc;)Latc;
+		ARG 0 mob
+		ARG 1 width
+		ARG 2 heght
+		ARG 3 target
 	METHOD c generateRandomPos (Lon;IILatc;)Latc;
 		ARG 0 mob
-		ARG 1 a
+		ARG 1 width
+		ARG 2 height
+		ARG 3 target

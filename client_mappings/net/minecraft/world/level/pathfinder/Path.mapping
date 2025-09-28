@@ -9,7 +9,7 @@ CLASS alf net/minecraft/world/level/pathfinder/Path
 		ARG 1 i
 	METHOD a sameAs (Lalf;)Z
 		ARG 1 p
-	METHOD a current (Lnn;)Latc;
+	METHOD a currentPos (Lnn;)Latc;
 		ARG 1 e
 	METHOD a getPos (Lnn;I)Latc;
 		ARG 1 e

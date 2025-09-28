@@ -6,6 +6,8 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 	FIELD e dist Los;
 	FIELD f avoidSun Z
 	FIELD g tick I
+	FIELD h lastStuckCheck I
+	FIELD i lastStuckCheckPos Latc;
 	FIELD j canPassDoors Z
 	FIELD k canOpenDoors Z
 	FIELD l avoidWater Z
@@ -25,9 +27,25 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 		ARG 3 y
 		ARG 5 z
 		ARG 7 speedModifier
+	METHOD a canWalkOn (IIIIIILatc;DD)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+		ARG 6 d
+		ARG 7 pos
+		ARG 8 dx
+		ARG 10 dz
 	METHOD a moveTo (Lalf;D)Z
 		ARG 1 path
 		ARG 2 speedModifier
+	METHOD a canMoveDirectly (Latc;Latc;III)Z
+		ARG 1 from
+		ARG 2 to
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD a createPath (Lnn;)Lalf;
 		ARG 1 entity
 	METHOD a moveTo (Lnn;D)Z
@@ -35,6 +53,16 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 		ARG 2 speedModifier
 	METHOD a setAvoidWater (Z)V
 		ARG 1 avoidWater
+	METHOD b canWalkAbove (IIIIIILatc;DD)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+		ARG 5 h
+		ARG 6 d
+		ARG 7 pos
+		ARG 8 dx
+		ARG 10 dz
 	METHOD b setCanOpenDoors (Z)V
 		ARG 1 canOpenDoors
 	METHOD c canOpenDoors ()Z
@@ -52,3 +80,6 @@ CLASS rf net/minecraft/world/entity/ai/navigation/PathNavigation
 	METHOD i recomputePath ()V
 	METHOD j getTempMobPos ()Latc;
 	METHOD k getSurfaceY ()I
+	METHOD l canUpdatePath ()Z
+	METHOD m isInLiquid ()Z
+	METHOD n trimPathFromSun ()V

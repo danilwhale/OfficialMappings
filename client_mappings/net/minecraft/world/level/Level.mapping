@@ -302,7 +302,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 distance
+		ARG 5 maxDist
+		ARG 6 canPassDoors
+		ARG 7 canOpenDoors
+		ARG 8 avoidWater
+		ARG 9 canFloat
 	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 bb
@@ -318,7 +322,11 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a findPath (Lnn;Lnn;FZZZZ)Lalf;
 		ARG 1 from
 		ARG 2 to
-		ARG 3 distance
+		ARG 3 maxDist
+		ARG 4 canPassDoors
+		ARG 5 canOpenDoors
+		ARG 6 avoidWater
+		ARG 7 canFloat
 	METHOD a tick (Lnn;Z)V
 		ARG 1 e
 		ARG 2 force

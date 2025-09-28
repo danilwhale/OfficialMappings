@@ -13,13 +13,13 @@ CLASS t net/minecraft/Pos
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 		ARG 1 o
-	METHOD e distanceToSqr (III)F
+	METHOD e distSqr (III)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD e distanceToSqr (Lt;)F
+	METHOD e distSqr (Lt;)F
 		ARG 1 pos
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
