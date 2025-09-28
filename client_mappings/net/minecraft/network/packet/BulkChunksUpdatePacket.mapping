@@ -1,5 +1,5 @@
 CLASS el net/minecraft/network/packet/BulkChunksUpdatePacket
 	COMMENT PLEASE I GIVE UP I DONT KNOW WHAT THE FUCK THIS IS HELP
-	FIELD g size I
+	FIELD g availableSections I
 	METHOD <init> (Ljava/util/List;)V
 		ARG 1 chunks
