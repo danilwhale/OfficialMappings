@@ -52,11 +52,22 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 5 profiler
 		ARG 6 logger
 	METHOD A updateSkyBrightness ()V
+	METHOD A checkLight (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD B toggleDownfall ()V
 	METHOD B getDirectSignalTo (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD C buildAndPrepareChunksToPoll ()V
 	METHOD C hasNeighborSignal (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD D getEntities ()Ljava/util/List;
+	METHOD D getBestNeighborSignal (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -80,7 +91,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 	METHOD I getGameTime ()J
-	METHOD I getCurrentDifficultyAt (III)F
+	METHOD I getDifficulty (III)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -129,6 +140,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 a
 	METHOD a getEntity (I)Lnn;
 		ARG 1 id
+	METHOD a isTileToBeTickedAt (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
 	METHOD a addToTickNextTick (IIIII)V
 		ARG 1 x
 		ARG 2 y
@@ -143,7 +159,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 5 delay
 		ARG 6 priorityTilt
 	METHOD a mayPlace (IIIIZILnn;Lye;)Z
-		ARG 1 id
+		ARG 1 tid
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -151,6 +167,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 6 i
 		ARG 7 entity
 		ARG 8 item
+	METHOD a getExpectedLight (IIILach;)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 layer
 	METHOD a setTileEntity (IIILasp;)V
 		ARG 1 x
 		ARG 2 y
@@ -161,20 +182,29 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 spawnResources
+	METHOD a tickClientSideTiles (IILadr;)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 chunk
 	METHOD a setGameTime (J)V
 		ARG 1 gt
 	METHOD a addListener (Lacb;)V
 		ARG 1 listener
 	METHOD a initializeLevel (Lacd;)V
 		ARG 1 settings
-	METHOD a (Lach;III)I
+	METHOD a getBrightnessPropagate (Lach;III)I
 		ARG 1 layer
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a fetchTicksInChunk (Ladr;Z)Ljava/util/List;
+		ARG 1 chunk
+		ARG 2 removeTicks
 	METHOD a isTopSolidBlocking (Laqz;I)Z
 		ARG 1 tile
 		ARG 2 data
+	METHOD a markForRemoval (Lasp;)V
+		ARG 1 e
 	METHOD a getCubes (Lasx;)Ljava/util/List;
 		ARG 1 bb
 	METHOD a containsMaterial (Lasx;Lakc;)Z
@@ -206,8 +236,16 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a countInstanceOf (Ljava/lang/Class;)I
 		ARG 1 c
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;)Ljava/util/List;
-	METHOD a getNearestLoadedEntity (Ljava/lang/Class;Lasx;Lnn;)Lnn;
+		ARG 1 klazz
+		ARG 2 bb
+	METHOD a getClosestEntityOfClass (Ljava/lang/Class;Lasx;Lnn;)Lnn;
+		ARG 1 klazz
+		ARG 2 bb
+		ARG 3 entity
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Lasx;Lnw;)Ljava/util/List;
+		ARG 1 klazz
+		ARG 2 bb
+		ARG 3 selector
 	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lall;
 		ARG 1 klass
 		ARG 2 name
@@ -260,16 +298,27 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 entity
 		ARG 2 a
 	METHOD a findPath (Lnn;IIIFZZZZ)Lalf;
+		ARG 1 from
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 distance
 	METHOD a getCubes (Lnn;Lasx;)Ljava/util/List;
 		ARG 1 entity
 		ARG 2 bb
 	METHOD a getEntities (Lnn;Lasx;Lnw;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 bb
+		ARG 3 selector
 	METHOD a playSoundToAllPlayers (Lnn;Ljava/lang/String;FF)V
 		ARG 1 entity
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
 	METHOD a findPath (Lnn;Lnn;FZZZZ)Lalf;
+		ARG 1 from
+		ARG 2 to
+		ARG 3 distance
 	METHOD a tick (Lnn;Z)V
 		ARG 1 e
 		ARG 2 force
@@ -293,7 +342,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 y
 		ARG 5 z
 		ARG 6 data
-	METHOD a playSound (Luf;Ljava/lang/String;FF)V
+	METHOD a playPlayerSound (Luf;Ljava/lang/String;FF)V
 		ARG 1 player
 		ARG 2 name
 		ARG 3 volume
@@ -304,7 +353,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 spawnEnemies
 		ARG 2 spawnFriendlies
 	METHOD b tick ()V
-	METHOD b (DDD)F
+	METHOD b getDifficulty (DDD)F
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -329,7 +378,13 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 data
 		ARG 5 flags
-	METHOD b FAKE_addToTickNextTick2 (IIIIII)V
+	METHOD b forceAddTileTick (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 delay
+		ARG 6 priorityTilt
 	METHOD b tileEntityChanged (IIILasp;)V
 		ARG 1 x
 		ARG 2 y
@@ -339,6 +394,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 propagate
 	METHOD b setDayTime (J)V
 		ARG 1 dt
 	METHOD b removeListener (Lacb;)V
@@ -374,6 +430,8 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 entity
 		ARG 2 d
 	METHOD b getEntities (Lnn;Lasx;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 bb
 	METHOD c updateSleepingPlayerList ()V
 	METHOD c getTimeOfDay (F)F
 		ARG 1 a
@@ -391,6 +449,16 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 tile
 		ARG 5 facing
+	METHOD c isSolidBlockingTileInLoadedChunk (IIIZ)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 def
+	METHOD c checkLight (Lach;III)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD c containsAnyBlocks (Lasx;)Z
 		ARG 1 box
 	METHOD c addGlobalEntity (Lnn;)Z
@@ -400,7 +468,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD d getChunkAt (II)Ladr;
 		ARG 1 x
 		ARG 2 z
-	METHOD d (III)Z
+	METHOD d isEntityTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -422,6 +490,11 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 4 id
 		ARG 5 id0
 		ARG 6 id1
+	METHOD d shouldFreeze (IIIZ)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 checkNeighbors
 	METHOD d containsAnyLiquid (Lasx;)Z
 		ARG 1 bb
 	METHOD d addEntity (Lnn;)Z
@@ -490,7 +563,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD g tickTiles ()V
 	METHOD g getStarBrightness (F)F
 		ARG 1 a
-	METHOD g (II)I
+	METHOD g getLowestHeightmap (II)I
 		ARG 1 x
 		ARG 2 z
 	METHOD g neighborChanged (IIII)V
@@ -509,14 +582,14 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 e
 	METHOD h tickEntities ()V
 	METHOD h getThunderLevel (F)F
-		ARG 1 f
-	METHOD h getTopRainTilePos (II)I
+		ARG 1 a
+	METHOD h getTopRainBlock (II)I
 		ARG 1 x
 		ARG 2 z
 	METHOD h ensureAdded (Lnn;)V
 		ARG 1 entity
 	METHOD i getRainLevel (F)F
-		ARG 1 f
+		ARG 1 a
 	METHOD i getTopSolidBlock (II)I
 		ARG 1 x
 		ARG 2 z
@@ -526,7 +599,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 	METHOD j createChunkSource ()Lado;
 	METHOD j setRainLevel (F)V
-		ARG 1 rl
+		ARG 1 rainLevel
 	METHOD j sendTileUpdated (III)V
 		ARG 1 x
 		ARG 2 y
@@ -545,7 +618,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 dir
-	METHOD m (III)I
+	METHOD m getDaytimeRawBrightness (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -569,7 +642,23 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 3 z
 	METHOD u getBiomeSource ()Lacv;
 	METHOD v isDay ()Z
+	METHOD v isFullAABBTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD w getMoonPhase ()I
 	METHOD x getMoonBrightness ()F
+	METHOD x shouldFreezeIgnoreNeighbors (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD y gatherStats ()Ljava/lang/String;
+	METHOD y shouldFreeze (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD z gatherChunkSourceStats ()Ljava/lang/String;
+	METHOD z shouldSnow (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
