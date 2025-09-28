@@ -3,4 +3,3 @@ CLASS qk net/minecraft/world/entity/ai/goal/PlayGoal
 	FIELD b mob Lof;
 	METHOD <init> (Lub;D)V
 		ARG 1 villager
-		ARG 2 goal
