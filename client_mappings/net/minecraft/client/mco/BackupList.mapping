@@ -1,0 +1,4 @@
+CLASS bah net/minecraft/client/mco/BackupList
+	FIELD a backups Ljava/util/List;
+	METHOD a parse (Ljava/lang/String;)Lbah;
+		ARG 0 s

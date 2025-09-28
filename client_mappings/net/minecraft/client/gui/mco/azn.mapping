@@ -1,1 +1,5 @@
 CLASS azn net/minecraft/client/gui/mco/azn
+	METHOD a access$000 (Lazn;)Lawe;
+	METHOD b access$001 (Lazn;)Latv;
+	METHOD c access$002 (Lazn;)Latv;
+	METHOD d access$003 (Lazn;)Latv;

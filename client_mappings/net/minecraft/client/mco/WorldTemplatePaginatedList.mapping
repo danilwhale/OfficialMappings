@@ -1,0 +1,4 @@
+CLASS bau net/minecraft/client/mco/WorldTemplatePaginatedList
+	FIELD a templates Ljava/util/List;
+	METHOD a parse (Ljava/lang/String;)Lbau;
+		ARG 0 s

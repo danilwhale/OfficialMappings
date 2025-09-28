@@ -1,0 +1,3 @@
+CLASS bas net/minecraft/client/mco/ValueObject
+	METHOD a isStatic (Ljava/lang/reflect/Field;)Z
+		ARG 0 f

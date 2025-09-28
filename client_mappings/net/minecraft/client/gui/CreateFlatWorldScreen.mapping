@@ -1,10 +1,13 @@
 CLASS auz net/minecraft/client/gui/CreateFlatWorldScreen
+	FIELD a itemRenderer Lbgw;
 	FIELD b parent Lavb;
 	FIELD c generator Lagc;
 	FIELD d title Ljava/lang/String;
 	FIELD e columnType Ljava/lang/String;
 	FIELD p columnHeight Ljava/lang/String;
 	FIELD q list Lava;
+	FIELD r addLayerButton Laut;
+	FIELD s editLayerButton Laut;
 	FIELD t deleteLayerButton Laut;
 	METHOD <init> (Lavb;Ljava/lang/String;)V
 		ARG 1 parent
