@@ -8,7 +8,7 @@ CLASS acv net/minecraft/world/level/biome/BiomeSource
 		ARG 3 generatorType
 	METHOD <init> (Labw;)V
 		ARG 1 level
-	METHOD a getBiome (II)Lacq;
+	METHOD a getBiomeId (II)Lacq;
 		ARG 1 x
 		ARG 2 z
 	METHOD a containsOnly (IIILjava/util/List;)Z

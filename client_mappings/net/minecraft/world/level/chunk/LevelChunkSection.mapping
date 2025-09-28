@@ -1,8 +1,30 @@
 CLASS ads net/minecraft/world/level/chunk/LevelChunkSection
 	FIELD a bottomBlockY I
+	FIELD b nonEmptyBlockCount I
+	FIELD c tickingBlockCount I
+	FIELD e blocks Ladp;
+	FIELD f data Ladp;
 	METHOD <init> (IZ)V
 		ARG 1 y
-	METHOD a (III)I
+	METHOD a isEmpty ()Z
+	METHOD a getTile (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a setTile (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD b isRandomlyTicking ()Z
+	METHOD b getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
+	METHOD d bottomBlockY ()I
+	METHOD e recalcBlockCounts ()V

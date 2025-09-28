@@ -1,2 +1,0 @@
-CLASS ek net/minecraft/network/packet/BlockRegionUpdatePacket$BlockRegion
-	FIELD a buffer [B

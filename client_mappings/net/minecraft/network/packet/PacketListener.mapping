@@ -110,7 +110,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetEntityData (Lfn;)V
 		ARG 1 packet
-	METHOD a handleRidePacket (Lfo;)V
+	METHOD a handleEntityLinkPacket (Lfo;)V
 		ARG 1 packet
 	METHOD a handleSetEntityMotion (Lfp;)V
 		ARG 1 packet
