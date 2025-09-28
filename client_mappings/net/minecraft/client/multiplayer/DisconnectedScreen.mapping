@@ -1,3 +1,11 @@
 CLASS bda net/minecraft/client/multiplayer/DisconnectedScreen
 	FIELD a title Ljava/lang/String;
 	FIELD b reason Ljava/lang/String;
+	FIELD c reasonObjects [Ljava/lang/Object;
+	FIELD d lines Ljava/util/List;
+	FIELD e parent Lawe;
+	METHOD <init> (Lawe;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 parent
+		ARG 2 title
+		ARG 3 reason
+		ARG 4 reasonObjects

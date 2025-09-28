@@ -1,1 +1,5 @@
 CLASS bla net/minecraft/client/server/IntegratedServer$1
+	FIELD a this$0 Lbkz;
+	METHOD <init> (Lbkz;)V
+		ARG 1 this$0
+	METHOD call call ()Ljava/lang/Object;

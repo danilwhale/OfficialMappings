@@ -10,3 +10,4 @@ CLASS avi net/minecraft/client/gui/Font
 	METHOD a drawShadow (Ljava/lang/String;III)I
 	METHOD a drawWordWrap (Ljava/lang/String;IIII)V
 	METHOD b draw (Ljava/lang/String;III)I
+	METHOD c split (Ljava/lang/String;I)Ljava/util/List;
