@@ -1,0 +1,27 @@
+CLASS bjz net/minecraft/client/resources/TexturePackSelectScreen
+	FIELD a lastScreen Lawe;
+	FIELD b updateIn I
+	METHOD <init> (Lawe;Laul;)V
+		ARG 1 lastScreen
+	METHOD a access$000 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD b access$100 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD c access$200 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD d access$300 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD e access$400 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD f access$500 (Lbjz;)Latv;
+		ARG 0 this$0
+	METHOD g access$600 (Lbjz;)Lavi;
+		ARG 0 this$0
+	METHOD h access$700 (Lbjz;)Lavi;
+		ARG 0 this$0
+	METHOD i access$800 (Lbjz;)Lavi;
+		ARG 0 this$0
+	METHOD j access$900 (Lbjz;)Lavi;
+		ARG 0 this$0
+	METHOD k access$1000 (Lbjz;)Lavi;
+		ARG 0 this$0

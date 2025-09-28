@@ -1,0 +1,2 @@
+CLASS bjl net/minecraft/client/resources/GrassColorReloadListener
+	FIELD a LOCATION Lbjo;
