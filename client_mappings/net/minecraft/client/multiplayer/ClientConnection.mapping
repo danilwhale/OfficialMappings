@@ -21,6 +21,8 @@ CLASS bcw net/minecraft/client/multiplayer/ClientConnection
 		ARG 3 port
 		ARG 4 callbackScreen
 	METHOD a getEntity (I)Lnn;
+	METHOD a url (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 s
 	METHOD b sendAndDisconnect (Ley;)V
 		ARG 1 packet
 	METHOD c send (Ley;)V

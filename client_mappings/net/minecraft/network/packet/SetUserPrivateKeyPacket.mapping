@@ -1,4 +1,5 @@
-CLASS fy net/minecraft/network/packet/KeyPacket
+CLASS fy net/minecraft/network/packet/SetUserPrivateKeyPacket
+	COMMENT WHAT THE FUCK IS THIS
 	FIELD a keybytes [B
 	FIELD b nonce [B
 	METHOD <init> (Ljavax/crypto/SecretKey;Ljava/security/PublicKey;[B)V
