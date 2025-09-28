@@ -1,1 +1,2 @@
 CLASS dq net/minecraft/network/packet/ClientIntentionPacket
+	METHOD d getProtocolVersion ()I

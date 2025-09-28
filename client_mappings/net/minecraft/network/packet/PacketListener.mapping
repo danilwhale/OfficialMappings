@@ -128,7 +128,7 @@ CLASS ez net/minecraft/network/packet/PacketListener
 		ARG 1 packet
 	METHOD a handleSetTime (Lfx;)V
 		ARG 1 packet
-	METHOD a (Lfy;)V
+	METHOD a handleKey (Lfy;)V
 		ARG 1 packet
 	METHOD a handleSignUpdate (Lfz;)V
 		ARG 1 packet

@@ -1,3 +1,17 @@
 CLASS blh net/minecraft/client/server/LanServerPinger
+	FIELD a motd Ljava/lang/String;
+	FIELD b socket Ljava/net/DatagramSocket;
+	FIELD c isRunning Z
+	FIELD d serverAddress Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 motd
+		ARG 2 serverAddress
 	METHOD a parseMotd (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 pingStr
+	METHOD a createPingString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 motd
+		ARG 1 address
 	METHOD b parseAddress (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 pingStr
+	METHOD interrupt interrupt ()V
+	METHOD run run ()V

@@ -117,7 +117,14 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 7 name
 		ARG 8 volume
 		ARG 9 pitch
-	METHOD a playSound (DDDLjava/lang/String;FFZ)V
+	METHOD a playLocalSound (DDDLjava/lang/String;FFZ)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 name
+		ARG 8 volume
+		ARG 9 pitch
+		ARG 10 delay
 	METHOD a getOldSkyDarken (F)I
 		ARG 1 a
 	METHOD a getEntity (I)Lnn;
@@ -227,7 +234,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD a addEntities (Ljava/util/List;)V
 		ARG 1 entities
 	METHOD a entityAdded (Lnn;)V
-		ARG 1 entity
+		ARG 1 e
 	METHOD a broadcastEntityEvent (Lnn;B)V
 		ARG 1 entity
 		ARG 2 event
@@ -362,7 +369,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD b removeEntities (Ljava/util/List;)V
 		ARG 1 entities
 	METHOD b entityRemoved (Lnn;)V
-		ARG 1 entity
+		ARG 1 e
 	METHOD b getNearestAttackablePlayer (Lnn;D)Luf;
 		ARG 1 entity
 		ARG 2 d
@@ -418,7 +425,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD d containsAnyLiquid (Lasx;)Z
 		ARG 1 bb
 	METHOD d addEntity (Lnn;)Z
-		ARG 1 entity
+		ARG 1 e
 	METHOD e getCloudColor (F)Latc;
 		ARG 1 a
 	METHOD e getChunk (II)Ladr;
@@ -449,7 +456,7 @@ CLASS abw net/minecraft/world/level/Level
 	METHOD e containsFireTile (Lasx;)Z
 		ARG 1 bb
 	METHOD e removeEntity (Lnn;)V
-		ARG 1 entity
+		ARG 1 e
 	METHOD f validateSpawn ()V
 	METHOD f getFogColor (F)Latc;
 		ARG 1 a
