@@ -1,5 +1,5 @@
 CLASS aji net/minecraft/world/level/levelgen/structure/VillagePieces$Smithy
-	FIELD a lootTable [Lmk;
+	FIELD a VILLAGE_SMITHY [Lmk;
 	FIELD b hasPlacedChest Z
 	METHOD <init> (Lajj;ILjava/util/Random;Lagf;I)V
 		ARG 1 start

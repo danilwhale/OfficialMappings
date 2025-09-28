@@ -11,11 +11,14 @@ CLASS afe net/minecraft/world/level/levelgen/feature/Feature
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 tile
 	METHOD a setTileAndData (Labw;IIIII)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 tile
+		ARG 6 data
 	METHOD a place (Labw;Ljava/util/Random;III)Z
 		ARG 1 level
 		ARG 2 random

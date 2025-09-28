@@ -1,4 +1,6 @@
 CLASS ajg net/minecraft/world/level/levelgen/structure/VillagePieces$SmallHut
+	FIELD a c Z
+	FIELD b t I
 	METHOD <init> (Lajj;ILjava/util/Random;Lagf;I)V
 		ARG 1 start
 		ARG 2 genDepth

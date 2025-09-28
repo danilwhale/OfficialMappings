@@ -1,4 +1,5 @@
 CLASS ahc net/minecraft/world/level/levelgen/structure/NetherBridgePieces$NetherBridgePiece
+	FIELD a NETHER_BRIDGE [Lmk;
 	METHOD a isOkBox (Lagf;)Z
 		ARG 0 box
 	METHOD a generatePiece (Lahg;Ljava/util/List;Ljava/util/List;Ljava/util/Random;IIIII)Lahc;

@@ -1,0 +1,2 @@
+CLASS afo net/minecraft/world/level/levelgen/feature/MegaJungleTreeFeature
+	METHOD a createCrown (Labw;IIIILjava/util/Random;)V

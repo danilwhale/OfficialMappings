@@ -1,5 +1,6 @@
 CLASS aif net/minecraft/world/level/levelgen/structure/StrongholdPieces$RoomCrossing
 	FIELD a type I
+	FIELD b STRONGHOLD_CROSSING [Lmk;
 	METHOD <init> (ILjava/util/Random;Lagf;I)V
 		ARG 1 genDepth
 		ARG 2 random

@@ -1,4 +1,4 @@
-CLASS acu net/minecraft/world/level/levelgen/BiomeDecorator
+CLASS acu net/minecraft/world/level/biome/BiomeDecorator
 	COMMENT the triple underscore fields are placeholders cuz obf shit
 	FIELD a level Labw;
 	FIELD b random Ljava/util/Random;
