@@ -1,4 +1,30 @@
 CLASS agh net/minecraft/world/level/levelgen/structure/MineShaftPieces
+	FIELD a ABANDONED_MINESHAFT [Lmk;
 	METHOD a loadStatic ()V
 	METHOD a access$000 (Lait;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 e
+		ARG 5 f
+		ARG 6 g
+		ARG 7 h
+	METHOD a createRandomShaftPiece (Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 e
+		ARG 5 f
+		ARG 6 g
 	METHOD b access$100 ()[Lmk;
+	METHOD b generateAndAddPiece (Lait;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 e
+		ARG 5 f
+		ARG 6 g
+		ARG 7 h

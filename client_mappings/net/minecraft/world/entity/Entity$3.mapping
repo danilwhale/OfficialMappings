@@ -1,0 +1,2 @@
+CLASS nq net/minecraft/world/entity/Entity$3
+	FIELD a $VALUES [I

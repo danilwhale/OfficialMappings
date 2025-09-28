@@ -1,1 +1,10 @@
-CLASS aqm net/minecraft/world/level/tile/TopSnowTile
+CLASS arf net/minecraft/world/level/tile/TopSnowTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD d updateShape (I)V
+		ARG 1 data
+	METHOD m checkCanSurvive (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

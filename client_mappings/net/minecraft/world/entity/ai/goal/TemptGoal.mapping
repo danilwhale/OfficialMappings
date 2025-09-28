@@ -11,6 +11,7 @@ CLASS qu net/minecraft/world/entity/ai/goal/TemptGoal
 	FIELD j isRunning Z
 	FIELD k item I
 	FIELD l canScare Z
+	FIELD m avoidWater Z
 	METHOD <init> (Lon;DIZ)V
 		ARG 1 mob
 		ARG 2 speedModifier

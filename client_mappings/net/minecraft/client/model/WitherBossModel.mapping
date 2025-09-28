@@ -1,5 +1,4 @@
 CLASS bck net/minecraft/client/model/WitherBossModel
 	FIELD a upperBodyParts [Lbcu;
 	FIELD b heads [Lbcu;
-	METHOD a ()I
-		COMMENT model version
+	METHOD a modelVersion ()I

@@ -1,0 +1,2 @@
+CLASS blv net/minecraft/client/stats/StatsIO
+	COMMENT yeah i dont know, order at least makes a bit sense this is blv, statsyncher is blw

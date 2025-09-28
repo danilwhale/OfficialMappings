@@ -1,5 +1,58 @@
 CLASS cv net/minecraft/network/chat/Component
 	FIELD a GSON Lcom/google/gson/Gson;
+	FIELD b color La;
+	FIELD c bold Ljava/lang/Boolean;
+	FIELD d italic Ljava/lang/Boolean;
+	FIELD e underlined Ljava/lang/Boolean;
+	FIELD f obfuscated Ljava/lang/Boolean;
+	FIELD g text Ljava/lang/String;
+	FIELD h key Ljava/lang/String;
+	FIELD i args Ljava/util/List;
+	METHOD <init> (Lcv;)V
+		ARG 1 component
+	METHOD a getColor ()La;
+	METHOD a setColor (La;)Lcv;
+		ARG 1 color
+	METHOD a (Lcv;)Lcv;
+		ARG 1 component
+	METHOD a setBold (Ljava/lang/Boolean;)Lcv;
+		ARG 1 bold
+	METHOD a (Ljava/lang/String;)Lcv;
+		ARG 1 text
+	METHOD a (Ljava/lang/String;[Ljava/lang/Object;)Lcv;
+		ARG 1 key
+		ARG 2 args
+	METHOD a getString (Z)Ljava/lang/String;
+		ARG 1 colored
+	METHOD a getString (ZLa;ZZZZ)Ljava/lang/String;
+		ARG 1 colored
+		ARG 2 color
+		ARG 3 bold
+		ARG 4 italic
+		ARG 5 underlined
+		ARG 6 obfuscated
+	METHOD b isBold ()Ljava/lang/Boolean;
+	METHOD b setItalic (Ljava/lang/Boolean;)Lcv;
+		ARG 1 italic
+	METHOD b (Ljava/lang/String;)Lcv;
+		ARG 1 key
+	METHOD b (Ljava/lang/String;[Ljava/lang/Object;)Lcv;
+		ARG 0 key
+		ARG 1 args
+	METHOD c isItalic ()Ljava/lang/Boolean;
+	METHOD c setUnderlined (Ljava/lang/Boolean;)Lcv;
+		ARG 1 underlined
 	METHOD c fromJson (Ljava/lang/String;)Lcv;
 		ARG 0 json
+	METHOD d isUnderlined ()Ljava/lang/Boolean;
+	METHOD d setObfuscated (Ljava/lang/Boolean;)Lcv;
+		ARG 1 obfuscated
+	METHOD d (Ljava/lang/String;)Lcv;
+		ARG 0 text
+	METHOD e isObfuscated ()Ljava/lang/Boolean;
+	METHOD e (Ljava/lang/String;)Lcv;
+		ARG 0 key
+	METHOD f getText ()Ljava/lang/String;
+	METHOD g getKey ()Ljava/lang/String;
+	METHOD h getArgs ()Ljava/util/List;
 	METHOD i toJson ()Ljava/lang/String;

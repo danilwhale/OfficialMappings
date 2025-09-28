@@ -7,6 +7,10 @@ CLASS ali net/minecraft/world/level/saveddata/MapItemSavedData
 	FIELD f carriedBy Ljava/util/List;
 	FIELD g decorations Ljava/util/Map;
 	FIELD i carriedByPlayers Ljava/util/Map;
+	METHOD a setDirty (III)V
+		ARG 1 i
+		ARG 2 y0
+		ARG 3 y1
 	METHOD a addDecoration (ILabw;Ljava/lang/String;DDD)V
 		ARG 1 type
 		ARG 2 level
@@ -23,3 +27,5 @@ CLASS ali net/minecraft/world/level/saveddata/MapItemSavedData
 		ARG 1 item
 		ARG 2 level
 		ARG 3 player
+	METHOD a handleComplexItemData ([B)V
+		ARG 1 data

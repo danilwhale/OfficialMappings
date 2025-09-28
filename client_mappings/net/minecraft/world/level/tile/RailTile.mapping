@@ -1,1 +1,3 @@
 CLASS aqa net/minecraft/world/level/tile/RailTile
+	METHOD <init> (I)V
+		ARG 1 id

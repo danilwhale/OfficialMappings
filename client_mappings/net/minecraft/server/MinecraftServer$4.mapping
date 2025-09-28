@@ -1,2 +1,4 @@
 CLASS hk net/minecraft/server/MinecraftServer$4
 	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 this$0

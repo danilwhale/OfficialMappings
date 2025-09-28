@@ -7,6 +7,7 @@ CLASS pq net/minecraft/world/entity/ai/goal/FollowOwnerGoal
 	FIELD f speedModifier D
 	FIELD g navigation Lrf;
 	FIELD h timeToRecalcPath I
+	FIELD i avoidWater Z
 	METHOD <init> (Loq;DFF)V
 		ARG 1 tamable
 		ARG 2 speedModifier

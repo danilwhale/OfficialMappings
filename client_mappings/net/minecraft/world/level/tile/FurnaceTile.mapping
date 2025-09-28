@@ -1,2 +1,17 @@
 CLASS aok net/minecraft/world/level/tile/FurnaceTile
+	FIELD b lit Z
+	FIELD c noDrop Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 lit
 	METHOD a setLit (ZLabw;III)V
+		ARG 0 lit
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD k recalcLockDir (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

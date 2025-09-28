@@ -1,3 +1,5 @@
 CLASS qo net/minecraft/world/entity/ai/goal/RestrictOpenDoorGoal
+	FIELD a mob Lon;
+	FIELD b doorInfo Lri;
 	METHOD <init> (Lon;)V
 		ARG 1 mob

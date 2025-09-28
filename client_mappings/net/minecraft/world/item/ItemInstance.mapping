@@ -35,6 +35,12 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD a getDescriptionId ()Ljava/lang/String;
 	METHOD a split (I)Lye;
 		ARG 1 count
+	METHOD a hurt (ILjava/util/Random;)Z
+		ARG 1 damage
+		ARG 2 random
+	METHOD a hurtAndBreak (ILof;)V
+		ARG 1 damage
+		ARG 2 source
 	METHOD a enchant (Laau;I)V
 		ARG 1 enchantment
 		ARG 2 level
@@ -48,12 +54,15 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD a inventoryTick (Labw;Lnn;IZ)V
 		ARG 1 level
 		ARG 2 entity
+		ARG 3 i
+		ARG 4 selected
 	METHOD a use (Labw;Luf;)Lye;
 		ARG 1 level
 		ARG 2 player
 	METHOD a onCraftedBy (Labw;Luf;I)V
 		ARG 1 level
 		ARG 2 player
+		ARG 3 count
 	METHOD a getDestroySpeed (Laqz;)F
 		ARG 1 tile
 	METHOD a of (Lby;)Lye;
@@ -69,6 +78,13 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD a useOn (Luf;Labw;IIIIFFF)Z
 		ARG 1 player
 		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 face
+		ARG 7 xa
+		ARG 8 ya
+		ARG 9 za
 	METHOD a interactEnemy (Luf;Lof;)Z
 		ARG 1 player
 		ARG 2 enemy
@@ -89,6 +105,7 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD b releaseUsing (Labw;Luf;I)V
 		ARG 1 level
 		ARG 2 player
+		ARG 3 time
 	METHOD b canDestroySpecial (Laqz;)Z
 		ARG 1 tile
 	METHOD b save (Lby;)Lby;
@@ -105,11 +122,13 @@ CLASS ye net/minecraft/world/item/ItemInstance
 		ARG 1 tag
 	METHOD c setHoverName (Ljava/lang/String;)V
 		ARG 1 hoverName
+	METHOD d getIconType ()I
 	METHOD d setTag (Lby;)V
 		ARG 1 tag
 	METHOD d matches (Lye;)Z
 		ARG 1 other
 	METHOD e getMaxStackSize ()I
+	METHOD f isStackable ()Z
 	METHOD g isDamageableItem ()Z
 	METHOD h isStackedByData ()Z
 	METHOD i isDamaged ()Z
@@ -129,3 +148,4 @@ CLASS ye net/minecraft/world/item/ItemInstance
 	METHOD w getRarity ()Lyq;
 	METHOD x isEnchantable ()Z
 	METHOD y isEnchanted ()Z
+	METHOD z mayBePlacedInAdventureMode ()Z

@@ -1,1 +1,19 @@
 CLASS dd net/minecraft/network/packet/AddEntityPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e xa I
+	FIELD f ya I
+	FIELD g za I
+	FIELD h xRot I
+	FIELD i yRot I
+	FIELD j type I
+	FIELD k data I
+	METHOD <init> (Lnn;I)V
+		ARG 1 entity
+		ARG 2 type
+	METHOD <init> (Lnn;II)V
+		ARG 1 entity
+		ARG 2 type
+		ARG 3 data

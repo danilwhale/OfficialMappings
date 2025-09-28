@@ -1,4 +1,8 @@
 CLASS xk net/minecraft/world/item/DoorItem
+	FIELD a material Lakc;
+	METHOD <init> (ILakc;)V
+		ARG 1 id
+		ARG 2 material
 	METHOD a place (Labw;IIIILaqz;)V
 		ARG 0 level
 		ARG 1 x

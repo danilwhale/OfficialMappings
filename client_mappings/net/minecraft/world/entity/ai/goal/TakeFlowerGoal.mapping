@@ -1,3 +1,8 @@
 CLASS qt net/minecraft/world/entity/ai/goal/TakeFlowerGoal
+	COMMENT fields inferred from ctx
+	FIELD a villager Lub;
+	FIELD b villagerGolem Lsd;
+	FIELD c offerFlowerTime I
+	FIELD d offeredFlower Z
 	METHOD <init> (Lub;)V
 		ARG 1 villager

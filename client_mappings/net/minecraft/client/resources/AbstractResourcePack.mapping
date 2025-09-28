@@ -1,0 +1,17 @@
+CLASS bjf net/minecraft/client/resources/AbstractResourcePack
+	FIELD a LOGGER Llp;
+	FIELD b file Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD a getMetadataFromStream (Lbki;Ljava/io/InputStream;Ljava/lang/String;)Lbkg;
+		ARG 1 stream
+		ARG 2 sectionName
+	METHOD a getRelativePath (Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
+	METHOD a getResource (Ljava/lang/String;)Ljava/io/InputStream;
+		ARG 1 path
+	METHOD b hasResource (Ljava/lang/String;)Z
+		ARG 1 path
+	METHOD c getPathFromLocation (Lbjo;)Ljava/lang/String;
+		ARG 0 location
+	METHOD c logWarning (Ljava/lang/String;)V
+		ARG 1 namespace

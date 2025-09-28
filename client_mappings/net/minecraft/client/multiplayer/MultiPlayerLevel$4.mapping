@@ -1,1 +1,4 @@
 CLASS bdh net/minecraft/client/multiplayer/MultiPlayerLevel$4
+	FIELD a this$0 Lbdd;
+	METHOD <init> (Lbdd;)V
+		ARG 1 this$0

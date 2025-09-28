@@ -1,4 +1,27 @@
 CLASS sq net/minecraft/world/entity/item/Boat
+	FIELD a doLerp Z
+	FIELD au lzd D
+	FIELD c lSteps I
+	FIELD d lx D
+	FIELD e ly D
+	FIELD f lz D
+	FIELD g lyr D
+	FIELD h lxr D
+	FIELD i lxd D
+	FIELD j lyd D
+	METHOD <init> (Labw;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD a setDamage (F)V
+		ARG 1 damage
+	METHOD a setHurtTime (I)V
+		ARG 1 hurtTime
+	METHOD a setDoLerp (Z)V
+		ARG 1 doLerp
+	METHOD c setHurtDir (I)V
+		ARG 1 hurtDir
 	METHOD d getDamage ()F
 	METHOD e getHurtTime ()I
 	METHOD h getHurtDir ()I

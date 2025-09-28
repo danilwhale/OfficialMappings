@@ -1,2 +1,12 @@
 CLASS sd net/minecraft/world/entity/animal/VillagerGolem
+	FIELD bp village Lrj;
+	FIELD br attackAnimationTick I
+	FIELD bs offerFlowerTick I
 	METHOD a offerFlower (Z)V
+		ARG 1 offerFlower
+	METHOD bT getVillage ()Lrj;
+	METHOD bU getAttackAnimationTick ()I
+	METHOD bV getOfferFlowerTick ()I
+	METHOD bW isPlayerCreated ()Z
+	METHOD i setPlayerCreated (Z)V
+		ARG 1 playerCreated

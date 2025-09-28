@@ -1,1 +1,6 @@
 CLASS aey net/minecraft/world/level/levelgen/feature/BonusChestFeature
+	FIELD a treasure [Lmk;
+	FIELD b count I
+	METHOD <init> ([Lmk;I)V
+		ARG 1 treasure
+		ARG 2 count

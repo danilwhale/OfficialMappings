@@ -1,5 +1,7 @@
 CLASS aiw net/minecraft/world/level/levelgen/feature/VillageFeature
+	FIELD e VALID_BIOMES Ljava/util/List;
 	FIELD f size I
 	FIELD g distance I
+	FIELD h spread I
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 config

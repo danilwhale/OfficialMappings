@@ -1,1 +1,16 @@
 CLASS ox net/minecraft/world/entity/ai/attributes/ModifiableAttributeInstance
+	FIELD a attributeMap Lov;
+	FIELD b attribute Lor;
+	FIELD c modifiers Ljava/util/Map;
+	FIELD d modifiersByName Ljava/util/Map;
+	FIELD e modifierById Ljava/util/Map;
+	FIELD f baseValue D
+	FIELD g dirty Z
+	FIELD h cachedValue D
+	METHOD <init> (Lov;Lor;)V
+		ARG 1 map
+		ARG 2 attribute
+	METHOD a getModifiers (I)Ljava/util/Collection;
+		ARG 1 op
+	METHOD f setDirty ()V
+	METHOD g calculateValue ()D

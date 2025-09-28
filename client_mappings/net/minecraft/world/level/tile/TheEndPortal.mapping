@@ -1,1 +1,2 @@
 CLASS aqw net/minecraft/world/level/tile/TheEndPortal
+	FIELD a allowAnywhere Z

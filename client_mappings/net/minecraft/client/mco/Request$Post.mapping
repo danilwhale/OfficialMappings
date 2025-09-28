@@ -1,1 +1,7 @@
 CLASS bae net/minecraft/client/mco/Request$Post
+	FIELD c content [B
+	METHOD <init> (Ljava/lang/String;[BII)V
+		ARG 1 url
+		ARG 2 content
+		ARG 3 connectTimeout
+		ARG 4 readTimeout

@@ -39,6 +39,7 @@ CLASS avf net/minecraft/client/gui/EditBox
 	METHOD a getWordPosition (IIZ)I
 		ARG 1 start
 		ARG 2 end
+		ARG 3 lean
 	METHOD a setValue (Ljava/lang/String;)V
 		ARG 1 value
 	METHOD a setBordered (Z)V
@@ -83,5 +84,6 @@ CLASS avf net/minecraft/client/gui/EditBox
 	METHOD i setHighlightPos (I)V
 		ARG 1 highlightPos
 	METHOD l isFocused ()Z
+	METHOD n getHighlightPos ()I
 	METHOD o getInnerWidth ()I
 	METHOD q isVisible ()Z

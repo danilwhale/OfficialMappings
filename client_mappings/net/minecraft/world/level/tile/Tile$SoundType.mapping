@@ -2,6 +2,10 @@ CLASS ard net/minecraft/world/level/tile/Tile$SoundType
 	FIELD a name Ljava/lang/String;
 	FIELD b volume F
 	FIELD c pitch F
+	METHOD <init> (Ljava/lang/String;FF)V
+		ARG 1 name
+		ARG 2 volume
+		ARG 3 pitch
 	METHOD a getBreakSound ()Ljava/lang/String;
 	METHOD b getPlaceSound ()Ljava/lang/String;
 	METHOD c getVolume ()F

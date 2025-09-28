@@ -1,7 +1,9 @@
 CLASS ej net/minecraft/network/packet/BlockRegionUpdatePacket
-	FIELD a x I
-	FIELD b z I
+	FIELD a cx I
+	FIELD b cz I
 	FIELD d availableSections I
 	FIELD e fullChunk Z
-	METHOD a extractChunkData (Ladr;ZI)Lek;
-		ARG 1 fullChunk
+	FIELD f buffer [B
+	FIELD h size I
+	METHOD <init> (Ladr;ZI)V
+		ARG 1 chunk

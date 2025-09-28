@@ -1,1 +1,7 @@
 CLASS aqs net/minecraft/world/level/tile/StoneMonsterTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD d isCompatibleHostBlock (I)Z
+		ARG 0 tile
+	METHOD e getDataForHostBlock (I)I
+		ARG 0 tile

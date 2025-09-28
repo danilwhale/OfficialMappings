@@ -10,6 +10,7 @@ CLASS ey net/minecraft/network/packet/Packet
 	FIELD p estimatedRead J
 	FIELD q packetsWritten J
 	FIELD r estimatedWritten J
+	FIELD s shouldDelay Z
 	METHOD a getEstimatedSize ()I
 	METHOD a map (IZZLjava/lang/Class;)V
 		ARG 0 id

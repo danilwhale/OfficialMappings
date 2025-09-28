@@ -1,0 +1,5 @@
+CLASS bar net/minecraft/client/mco/Subscription
+	FIELD a startDate J
+	FIELD b daysLeft I
+	METHOD a parse (Ljava/lang/String;)Lbar;
+		ARG 0 s

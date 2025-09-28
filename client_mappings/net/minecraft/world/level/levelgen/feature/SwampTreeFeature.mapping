@@ -4,3 +4,4 @@ CLASS afy net/minecraft/world/level/levelgen/feature/SwampTreeFeature
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 d

@@ -1,0 +1,5 @@
+CLASS blu net/minecraft/client/title/TitleScreen$1
+	FIELD a this$0 Lblt;
+	METHOD <init> (Lblt;)V
+		ARG 1 this$0
+	METHOD run run ()V

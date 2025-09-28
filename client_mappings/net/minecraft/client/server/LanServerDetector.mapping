@@ -1,1 +1,7 @@
 CLASS blf net/minecraft/client/server/LanServerDetector
+	FIELD a serverList Lblg;
+	FIELD b pingGroup Ljava/net/InetAddress;
+	FIELD c socket Ljava/net/MulticastSocket;
+	METHOD <init> (Lblg;)V
+		ARG 1 serverList
+	METHOD run run ()V

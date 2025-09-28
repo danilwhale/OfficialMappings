@@ -1,0 +1,2 @@
+CLASS azi net/minecraft/client/gui/mco/aze$azi
+	FIELD a this$0 Laze;

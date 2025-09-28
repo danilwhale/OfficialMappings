@@ -1,1 +1,4 @@
 CLASS aii net/minecraft/world/level/levelgen/structure/StrongholdPieces$StartPiece
+	FIELD a previousPiece Laib;
+	FIELD b portalRoomPiece Laic;
+	FIELD c pendingChildren Ljava/util/List;

@@ -1,4 +1,5 @@
 CLASS cm net/minecraft/network/Connection
+	METHOD a flush ()V
 	METHOD a send (Ley;)V
 		ARG 1 packet
 	METHOD a setListener (Lez;)V

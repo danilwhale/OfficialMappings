@@ -1,5 +1,6 @@
 CLASS y net/minecraft/commands/AdminLogCommand
 	METHOD a logAdminAction (Lad;ILjava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 sender
+		ARG 2 type
 		ARG 3 format
 		ARG 4 objects

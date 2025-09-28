@@ -73,6 +73,10 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 4 predicate
 	METHOD a shouldSave (Z)Z
 		ARG 1 force
+	METHOD a replaceWithPacketData ([BIIZ)V
+		ARG 1 data
+		ARG 3 availableSections
+		ARG 4 fullChunk
 	METHOD b recalcHeightmap ()V
 	METHOD b getHeightmap (II)I
 		ARG 1 x
@@ -119,6 +123,7 @@ CLASS adr net/minecraft/world/level/chunk/LevelChunk
 		ARG 2 y
 		ARG 3 z
 	METHOD g isEmpty ()Z
+	METHOD h recalcHeight (III)V
 	METHOD i getSections ()[Lads;
 	METHOD l getPos ()Labp;
 	METHOD q recheckGaps ()V

@@ -1,1 +1,7 @@
 CLASS aqg net/minecraft/world/level/tile/RotatedPillarTile
+	METHOD c getTypeTexture (I)Lms;
+		ARG 1 dir
+	METHOD d getTopTexture (I)Lms;
+		ARG 1 dir
+	METHOD e getType (I)I
+		ARG 1 data

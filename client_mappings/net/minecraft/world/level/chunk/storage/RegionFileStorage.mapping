@@ -1,4 +1,0 @@
-CLASS aee net/minecraft/world/level/chunk/storage/RegionFileStorage
-	FIELD d folder Ljava/io/File;
-	METHOD <init> (Ljava/io/File;)V
-		ARG 1 folder

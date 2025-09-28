@@ -1,0 +1,2 @@
+CLASS blp net/minecraft/client/sound/SoundEngine$ScheduledSound
+	FIELD g delay I

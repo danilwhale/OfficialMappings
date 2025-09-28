@@ -14,6 +14,7 @@ CLASS bdc net/minecraft/client/multiplayer/MultiPlayerGameMode
 	METHOD <init> (Latv;Lbcw;)V
 		ARG 1 minecraft
 		ARG 2 connection
+	METHOD a isCutScene ()Z
 	METHOD a handleInventoryButtonClick (II)V
 		ARG 1 containerId
 		ARG 2 buttonId

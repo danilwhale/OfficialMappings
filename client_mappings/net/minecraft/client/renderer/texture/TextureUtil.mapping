@@ -1,0 +1,61 @@
+CLASS bip net/minecraft/client/renderer/texture/TextureUtil
+	FIELD a MISSING_TEXTURE Lbib;
+	FIELD b MISSING_TEXTURE_PIXELS [I
+	FIELD c BUFFER Ljava/nio/IntBuffer;
+	METHOD a generateTextureId ()I
+	METHOD a prepareImage (III)V
+		ARG 0 texture
+		ARG 1 width
+		ARG 2 height
+	METHOD a uploadImage (ILjava/awt/image/BufferedImage;)I
+		ARG 0 texture
+		ARG 1 image
+	METHOD a uploadImage (ILjava/awt/image/BufferedImage;IIZZ)I
+		ARG 0 texture
+		ARG 1 image
+		ARG 2 x
+		ARG 3 y
+		ARG 4 filter
+		ARG 5 clamp
+	METHOD a uploadImage (ILjava/awt/image/BufferedImage;ZZ)I
+		ARG 0 texture
+		ARG 1 image
+		ARG 2 filter
+		ARG 3 clamp
+	METHOD a uploadImage (I[III)V
+		ARG 0 texture
+		ARG 1 pixels
+		ARG 2 width
+		ARG 3 height
+	METHOD a getPixels (Lbjp;Lbjo;)[I
+		ARG 0 manager
+		ARG 1 location
+	METHOD a uploadImageChunked (Ljava/awt/image/BufferedImage;IIZZ)V
+		ARG 0 image
+		ARG 1 x
+		ARG 2 y
+		ARG 3 filter
+		ARG 4 clamp
+	METHOD a setClamp (Z)V
+		ARG 0 clamp
+	METHOD a anaglyph ([I)[I
+		ARG 0 pixels
+	METHOD a copyToBuffer ([II)V
+		ARG 0 pixels
+		ARG 1 length
+	METHOD a copyToBuffer ([III)V
+		ARG 0 pixels
+		ARG 1 offset
+		ARG 2 length
+	METHOD a uploadImageChunked ([IIIIIZZ)V
+		ARG 0 pixels
+		ARG 1 width
+		ARG 2 height
+		ARG 3 x
+		ARG 4 y
+		ARG 5 filter
+		ARG 6 clamp
+	METHOD b bind (I)V
+		ARG 0 texture
+	METHOD b setFilter (Z)V
+		ARG 0 filter

@@ -1,1 +1,4 @@
 CLASS tt net/minecraft/world/entity/monster/Spider
+	METHOD a setClimbing (Z)V
+		ARG 1 climbing
+	METHOD bT isClimbing ()Z

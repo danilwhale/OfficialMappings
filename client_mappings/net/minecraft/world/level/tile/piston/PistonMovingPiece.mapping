@@ -1,13 +1,21 @@
 CLASS asv net/minecraft/world/level/tile/piston/PistonMovingPiece
 	METHOD <init> (I)V
 		ARG 1 id
-	METHOD a newMovingTileEntity (IIIZZ)Lasp;
+	METHOD a newMovingPieceEntity (IIIZZ)Lasp;
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
 		ARG 3 extending
 		ARG 4 isSourcePiston
-	METHOD d getTileEntity (Lacf;III)Lasw;
+	METHOD b getAABB (Labw;IIIIFI)Lasx;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tile
+		ARG 6 progress
+		ARG 7 facing
+	METHOD d getEntity (Lacf;III)Lasw;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

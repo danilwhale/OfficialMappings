@@ -37,6 +37,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD aJ door_wood Laqz;
 	FIELD aK ladder Laqz;
 	FIELD aL rail Laqz;
+	FIELD a category Lww;
 	FIELD aM stairs_stone Laqz;
 	FIELD aN wallSign Laqz;
 	FIELD aO lever Laqz;
@@ -77,10 +78,28 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD ay stairs_wood Laqz;
 	FIELD az chest Lank;
 	FIELD bA fenceGate Laqz;
+	FIELD bB stairs_brick Laqz;
+	FIELD bC stairs_stoneBrickSmooth Laqz;
+	FIELD bD mycelium Lapk;
 	FIELD bE waterlily Laqz;
+	FIELD bF netherBrick Laqz;
+	FIELD bG netherFence Laqz;
+	FIELD bH stairs_netherBricks Laqz;
+	FIELD bI netherWart Laqz;
+	FIELD bJ enchantingTable Laqz;
+	FIELD bK brewing_stand Laqz;
+	FIELD bL cauldron Lanj;
+	FIELD b descriptionId Ljava/lang/String;
+	FIELD bM endPortal Laqz;
+	FIELD bN endPortalFrame Laqz;
 	FIELD bO whiteStone Laqz;
 	FIELD bP dragonEgg Laqz;
+	FIELD bS woodSlabHalf Laop;
+	FIELD bT woodSlab Laop;
 	FIELD bU cocoa Laqz;
+	FIELD bV stairs_sandStone Laqz;
+	FIELD bW emeraldOre Laqz;
+	FIELD bX enderChest Laqz;
 	FIELD bY tripWireSource Lark;
 	FIELD bZ tripWire Laqz;
 	FIELD ba cactus Laqz;
@@ -118,6 +137,10 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD cF id I
 	FIELD cG destroySpeed F
 	FIELD cH explosionResistance F
+	FIELD cI hasCollision Z
+	FIELD cJ isCollectStatistics Z
+	FIELD cK isTicking Z
+	FIELD cL isEntityTile Z
 	FIELD cM xx0 D
 	FIELD cN yy0 D
 	FIELD cO zz0 D
@@ -129,11 +152,17 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD cU material Lakc;
 	FIELD cV friction F
 	FIELD cW icon Lms;
+	FIELD ca emeraldBlock Laqz;
+	FIELD cb stairsWoodSpruce Laqz;
+	FIELD cc stairsWoodBirch Laqz;
+	FIELD cd stairsWoodJungle Laqz;
 	FIELD ce commandBlock Laqz;
 	FIELD cf beacon Lana;
+	FIELD cg cobbleWall Laqz;
 	FIELD ch flowerPot Laqz;
 	FIELD ci carrots Laqz;
 	FIELD cj potatoes Laqz;
+	FIELD ck woodButton Laqz;
 	FIELD cl skull Laqz;
 	FIELD cm anvil Laqz;
 	FIELD cn trapChest Laqz;
@@ -149,6 +178,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	FIELD cx stairs_quartz Laqz;
 	FIELD cy activatorRail Laqz;
 	FIELD cz dropper Laqz;
+	FIELD f iconName Ljava/lang/String;
 	FIELD g SOUND_NORMAL Lard;
 	FIELD h SOUND_WOOD Lard;
 	FIELD i SOUND_GRAVEL Lard;
@@ -171,6 +201,12 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD <init> (ILakc;)V
 		ARG 1 id
 		ARG 2 material
+	METHOD A getName ()Ljava/lang/String;
+	METHOD B isCollectStatistics ()Z
+	METHOD C setNotCollectStatistics ()Laqz;
+	METHOD D getItemCategory ()Lww;
+	METHOD E getIconName ()Ljava/lang/String;
+	METHOD a getDescriptionId ()Ljava/lang/String;
 	METHOD a setLightEmission (F)Laqz;
 		ARG 1 lightEmission
 	METHOD a setShape (FFFFFF)V
@@ -186,14 +222,21 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 1 face
 		ARG 2 data
 	METHOD a getResourceCount (ILjava/util/Random;)I
+		ARG 1 fortune
 		ARG 2 random
 	METHOD a getResource (ILjava/util/Random;I)I
 		ARG 1 data
 		ARG 2 random
+		ARG 3 fortune
+	METHOD a fillItemCategory (ILww;Ljava/util/List;)V
+		ARG 1 tile
+		ARG 2 category
+		ARG 3 items
 	METHOD a mayPick (IZ)Z
 		ARG 1 data
 		ARG 2 allowLiquid
 	METHOD a dropFromExplosion (Labr;)Z
+		ARG 1 explosion
 	METHOD a getTickDelay (Labw;)I
 		ARG 1 level
 	METHOD a onPlace (Labw;III)V
@@ -207,7 +250,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 newTile
-	METHOD a getPlacementDataValue (Labw;IIIIFFFI)I
+	METHOD a getPlacedOnFaceDataValue (Labw;IIIIFFFI)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -224,6 +267,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 data
 		ARG 6 luck
+		ARG 7 fortune
 	METHOD a onRemove (Labw;IIIII)V
 		ARG 1 level
 		ARG 2 x
@@ -238,6 +282,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 data
 		ARG 6 player
+	METHOD a mayPlace (Labw;IIIILye;)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+		ARG 6 item
 	METHOD a wasExploded (Labw;IIILabr;)V
 		ARG 1 level
 		ARG 2 x
@@ -271,6 +322,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
+	METHOD a fallOn (Labw;IIILnn;F)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 distance
 	METHOD a handleEntityInside (Labw;IIILnn;Latc;)V
 		ARG 1 level
 		ARG 2 x
@@ -335,11 +393,22 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+	METHOD a setItemCategory (Lww;)Laqz;
+		ARG 1 category
+	METHOD a_ isSolidFace (Lacf;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD b isCubeShaped ()Z
 	METHOD b setExplodeable (F)Laqz;
 		ARG 1 explodeable
 	METHOD b getColor (I)I
 		ARG 1 data
+	METHOD b isMatching (II)Z
+		ARG 0 a
+		ARG 1 b
 	METHOD b getAABB (Labw;III)Lasx;
 		ARG 1 level
 		ARG 2 x
@@ -390,6 +459,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 dir
 	METHOD b_ getTexture (Lacf;IIII)Lms;
 		ARG 1 level
 		ARG 2 x
@@ -416,6 +486,7 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 data
+		ARG 6 fortune
 	METHOD c getColor (Lacf;III)I
 		ARG 1 level
 		ARG 2 x
@@ -429,27 +500,64 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 dir
 	METHOD c containsZ (Latc;)Z
 		ARG 1 v
+	METHOD c setDescriptionId (Ljava/lang/String;)Laqz;
+		ARG 1 descriptionId
 	METHOD c_ getTileAABB (Labw;III)Lasx;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD d getRenderShape ()I
-	METHOD d asItemInstance (Labw;III)I
+	METHOD d cloneTileId (Labw;III)I
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD d setIconName (Ljava/lang/String;)Laqz;
+		ARG 1 iconName
 	METHOD d_ getSilkTouchItemInstance (I)Lye;
 		ARG 1 data
+	METHOD e getLightColor (Lacf;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD f isSignalSource ()Z
 	METHOD f canSurvive (Labw;III)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD f getBrightness (Lacf;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD g updateDefaultShape ()V
+	METHOD g handleRain (Labw;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g destroy (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD h getPistonPushReaction ()I
+	METHOD h cloneTileData (Labw;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i isMatching (I)Z
+		ARG 1 tile
+	METHOD i getShadeBrightness (Lacf;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD j popExperience (Labw;IIII)V
 		ARG 1 level
 		ARG 2 x
@@ -458,13 +566,26 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 		ARG 5 value
 	METHOD k setLightBlock (I)Laqz;
 		ARG 1 lightBlock
-	METHOD l isSolidBlockingCubeAndNotSignalSource (I)Z
+	METHOD k finalizePlacement (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD l canInstantlyTick ()Z
+	METHOD l isSolidBlocking (I)Z
 		ARG 0 id
 	METHOD l getDestroySpeed (Labw;III)F
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD l onRemoving (Labw;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD m mayPick ()Z
 	METHOD m getTexture (I)Lms;
 		ARG 1 face
@@ -472,10 +593,13 @@ CLASS aqz net/minecraft/world/level/tile/Tile
 	METHOD o getColor ()I
 	METHOD q_ hasAnalogOutputSignal ()Z
 	METHOD r setIndestrucible ()Laqz;
+	METHOD r_ isSilkTouchable ()Z
 	METHOD s isTicking ()Z
 	METHOD s_ init ()V
 	METHOD t isEntityTile ()Z
+	METHOD t_ useOwnCloneData ()Z
 	METHOD u getShapeX0 ()D
+	METHOD u_ getTileItemIconName ()Ljava/lang/String;
 	METHOD v getShapeX1 ()D
 	METHOD w getShapeY0 ()D
 	METHOD x getShapeY1 ()D

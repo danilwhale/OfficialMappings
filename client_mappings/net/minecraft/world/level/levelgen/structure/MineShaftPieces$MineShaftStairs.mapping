@@ -1,1 +1,13 @@
 CLASS agl net/minecraft/world/level/levelgen/structure/MineShaftPieces$MineShaftStairs
+	METHOD <init> (ILjava/util/Random;Lagf;I)V
+		ARG 1 a
+		ARG 2 r
+		ARG 3 bb
+		ARG 4 o
+	METHOD a findStairs (Ljava/util/List;Ljava/util/Random;IIII)Lagf;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 e
+		ARG 5 f

@@ -1,1 +1,5 @@
 CLASS aon net/minecraft/world/level/tile/GrassTile
+	FIELD c sideTextureOverlay Lms;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD p getSideTextureOverlay ()Lms;

@@ -1,0 +1,2 @@
+CLASS avs net/minecraft/client/gui/LanguageSelectScreen$LanguageSelectionList
+	FIELD a this$0 Lavr;

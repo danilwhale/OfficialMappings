@@ -1,1 +1,34 @@
 CLASS acl net/minecraft/world/level/Region
+	FIELD a xc1 I
+	FIELD b zc1 I
+	FIELD c chunks [[Ladr;
+	FIELD d isAllEmpty Z
+	FIELD e level Labw;
+	METHOD <init> (Labw;IIIIIII)V
+		ARG 1 level
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+		ARG 8 r
+	METHOD a getRawBrightness (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 propagate
+	METHOD a getBrightnessPropagate (Lach;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b getBrightness (Lach;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

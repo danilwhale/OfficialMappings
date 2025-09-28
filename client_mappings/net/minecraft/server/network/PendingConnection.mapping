@@ -1,6 +1,17 @@
 CLASS jy net/minecraft/server/network/PendingConnection
+	FIELD a connection Lco;
 	FIELD b done Z
+	FIELD d nonce [B
+	FIELD e server Lnet/minecraft/server/MinecraftServer;
+	FIELD f tickCount I
+	FIELD g userName Ljava/lang/String;
+	FIELD k secretKey Ljavax/crypto/SecretKey;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
+		ARG 1 server
+		ARG 2 socket
+		ARG 3 connectionName
 	METHOD a disconnect (Ljava/lang/String;)V
+		ARG 1 reason
 	METHOD a access$000 (Ljy;)Ljava/lang/String;
 		ARG 0 this$0
 	METHOD a access$400 (Ljy;Z)Z
@@ -13,3 +24,5 @@ CLASS jy net/minecraft/server/network/PendingConnection
 	METHOD d login ()V
 	METHOD d access$300 (Ljy;)Ljava/lang/String;
 		ARG 0 this$0
+	METHOD e handleAcceptedLogin ()V
+	METHOD f getUserName ()Ljava/lang/String;

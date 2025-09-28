@@ -1,1 +1,5 @@
 CLASS apy net/minecraft/world/level/tile/PumpkinTile
+	FIELD a lit Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 lit

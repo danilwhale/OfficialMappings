@@ -1,1 +1,2 @@
 CLASS ze net/minecraft/world/item/SpawnEggItem
+	FIELD a ircon Lms;

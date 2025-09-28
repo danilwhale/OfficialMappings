@@ -1,0 +1,3 @@
+CLASS bjv net/minecraft/client/resources/ResourcePackRepository$bjv
+	METHOD a bindIcon (Lbim;)V
+		ARG 1 textures

@@ -1,1 +1,25 @@
 CLASS tg net/minecraft/world/entity/monster/EnderMan
+	FIELD bp SPEED_MODIFIER_ATTACKING_UUID Ljava/util/UUID;
+	FIELD bq SPEED_MODIFIER_ATTACKING Lot;
+	FIELD br mayTake [Z
+	FIELD bs teleportTime I
+	FIELD bt aggroTime I
+	FIELD bu pendingTarget Lnn;
+	METHOD a setCarryingTile (I)V
+		ARG 1 carryingTile
+	METHOD a setCreepy (Z)V
+		ARG 1 creepy
+	METHOD bT teleport ()Z
+	METHOD bV getCarryingTile ()I
+	METHOD bW getCarryingData ()I
+	METHOD bX isCreepy ()Z
+	METHOD c setCarryingData (I)V
+		ARG 1 carryingData
+	METHOD c teleportTowards (Lnn;)Z
+		ARG 1 entity
+	METHOD f isLoookingAtMe (Luf;)Z
+		ARG 1 player
+	METHOD j teleport (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

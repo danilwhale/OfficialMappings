@@ -1,0 +1,3 @@
+CLASS ju net/minecraft/server/level/ServerLevel$BlockEventList
+	METHOD <init> (Ljt;)V
+		ARG 1 shit

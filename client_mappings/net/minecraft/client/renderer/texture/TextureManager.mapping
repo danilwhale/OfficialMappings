@@ -1,0 +1,24 @@
+CLASS bim net/minecraft/client/renderer/texture/TextureManager
+	FIELD a byPath Ljava/util/Map;
+	FIELD c tickableTextures Ljava/util/List;
+	FIELD e resourceManager Lbjp;
+	METHOD <init> (Lbjp;)V
+		ARG 1 resourceManager
+	METHOD a getTextureLocation (I)Lbjo;
+		ARG 1 id
+	METHOD a bind (Lbjo;)V
+		ARG 1 resource
+	METHOD a register (Lbjo;Lbik;)Z
+		ARG 1 location
+		ARG 2 atlas
+	METHOD a register (Lbjo;Lbio;)Z
+		ARG 1 location
+		ARG 2 texture
+	METHOD a register (Lbjo;Lbir;)Z
+		ARG 1 location
+		ARG 2 texture
+	METHOD a registerName (Ljava/lang/String;Lbib;)Lbjo;
+		ARG 1 name
+		ARG 2 texture
+	METHOD b getTexture (Lbjo;)Lbio;
+		ARG 1 path

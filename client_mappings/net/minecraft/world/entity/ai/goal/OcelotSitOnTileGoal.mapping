@@ -1,8 +1,12 @@
 CLASS qg net/minecraft/world/entity/ai/goal/OcelotSitOnTileGoal
 	FIELD a ocelot Lrx;
 	FIELD b speedModifier D
+	FIELD c nextStartTick I
 	FIELD d tryTicks I
 	FIELD e maxStayTicks I
+	FIELD f x I
+	FIELD g y I
+	FIELD h z I
 	METHOD <init> (Lrx;D)V
 		ARG 1 ocelot
 		ARG 2 speedModifier

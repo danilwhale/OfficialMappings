@@ -1,3 +1,0 @@
-CLASS ok
-	METHOD d getOwner ()Lnn;
-	METHOD h_ getOwnerUUID ()Ljava/lang/String;

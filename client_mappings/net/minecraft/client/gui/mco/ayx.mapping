@@ -1,0 +1,4 @@
+CLASS ayx net/minecraft/client/gui/mco/ayx
+	METHOD a access$56875 (Layx;)Lawe;
+	METHOD a acess$89457 (Layx;Lbcw;)Lbcw;
+	METHOD b access$6587 (Layx;)Lbcw;

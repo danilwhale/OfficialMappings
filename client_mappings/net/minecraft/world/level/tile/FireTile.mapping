@@ -1,1 +1,40 @@
 CLASS aoi net/minecraft/world/level/tile/FireTile
+	FIELD a flameOdds [I
+	FIELD b burnOdds [I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a setFlammable (III)V
+		ARG 1 tile
+		ARG 2 flameOdd
+		ARG 3 burnOdd
+	METHOD a checkBurn (Labw;IIIILjava/util/Random;I)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 odd
+		ARG 6 random
+		ARG 7 data
+	METHOD c getTextureLayer (I)Lms;
+		ARG 1 layer
+	METHOD d getFlammability (Labw;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 min
+	METHOD d canBurn (Lacf;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD k isValidFireLocation (Labw;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD m getFireOdds (Labw;III)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

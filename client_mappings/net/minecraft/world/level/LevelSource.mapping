@@ -48,11 +48,11 @@ CLASS acf net/minecraft/world/level/LevelSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD u isSolidBlockingCubeAndNotSignalSource (III)Z
+	METHOD u isSolidBlockingTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD w isSolidBlockingTile (III)Z
+	METHOD w isTopSolidBlocking (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

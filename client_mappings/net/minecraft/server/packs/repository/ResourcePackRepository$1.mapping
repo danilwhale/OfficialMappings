@@ -1,3 +1,0 @@
-CLASS bju net/minecraft/server/packs/repository/ResourcePackRepository$1
-	METHOD accept accept (Ljava/io/File;)Z
-		ARG 1 file

@@ -1,8 +1,12 @@
 CLASS nt net/minecraft/world/entity/EntityIO
+	FIELD a info Ljava/util/HashMap;
 	FIELD b idClassMap Ljava/util/Map;
 	FIELD c classIdMap Ljava/util/Map;
 	FIELD d numClassMap Ljava/util/Map;
 	FIELD e classNumMap Ljava/util/Map;
+	FIELD f encodeIdMap Ljava/util/Map;
+	METHOD a getClass (I)Ljava/lang/Class;
+		ARG 0 id
 	METHOD a newById (ILabw;)Lnn;
 		ARG 0 id
 		ARG 1 level

@@ -1,2 +1,6 @@
 CLASS apw net/minecraft/world/level/tile/PressurePlateTile
 	FIELD a sensitivity Lapx;
+	METHOD <init> (ILjava/lang/String;Lakc;Lapx;)V
+		ARG 1 id
+		ARG 3 material
+		ARG 4 sensitivity

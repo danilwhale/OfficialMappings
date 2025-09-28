@@ -1,6 +1,0 @@
-CLASS bll net/minecraft/client/resources/sounds/MinecartSoundInstance
-	FIELD b minecart Lst;
-	METHOD <init> (Lbln;Lst;Lbex;)V
-		ARG 1 engine
-		ARG 2 minecart
-		ARG 3 player

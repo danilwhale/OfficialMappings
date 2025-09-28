@@ -1,6 +1,0 @@
-CLASS bls net/minecraft/client/sounds/SoundRepository$1$1
-	FIELD a this$0 Lblq;
-	FIELD b rl Lbjo;
-	METHOD <init> (Lblq;Ljava/net/URL;)V
-		ARG 1 this$0
-		ARG 2 uRL

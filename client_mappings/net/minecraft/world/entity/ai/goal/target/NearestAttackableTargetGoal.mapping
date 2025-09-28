@@ -1,6 +1,7 @@
 CLASS qy net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal
 	FIELD a targetType Ljava/lang/Class;
 	FIELD b randomInterval I
+	FIELD e comp Lra;
 	FIELD f targetConditions Lnw;
 	FIELD g target Lof;
 	METHOD <init> (Lon;Ljava/lang/Class;IZ)V

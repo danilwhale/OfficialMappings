@@ -1,0 +1,2 @@
+CLASS ayd net/minecraft/client/gui/mco/aya$ayd
+	FIELD a this$0 Laya;

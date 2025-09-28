@@ -1,1 +1,11 @@
 CLASS afq net/minecraft/world/level/levelgen/feature/OreFeature
+	FIELD a tile I
+	FIELD b count I
+	FIELD c rock I
+	METHOD <init> (II)V
+		ARG 1 tile
+		ARG 2 count
+	METHOD <init> (III)V
+		ARG 1 tile
+		ARG 2 count
+		ARG 3 rock

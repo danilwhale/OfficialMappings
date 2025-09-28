@@ -1,1 +1,3 @@
 CLASS aov net/minecraft/world/level/tile/IceTile
+	METHOD <init> (I)V
+		ARG 1 id

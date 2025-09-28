@@ -1,0 +1,5 @@
+CLASS blo net/minecraft/client/sound/SoundEngine$1
+	FIELD a this$0 Lbln;
+	METHOD <init> (Lbln;)V
+		ARG 1 this$0
+	METHOD run run ()V

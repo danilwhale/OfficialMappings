@@ -1,1 +1,3 @@
 CLASS aqr net/minecraft/world/level/tile/StoneButtonTile
+	METHOD <init> (I)V
+		ARG 1 id

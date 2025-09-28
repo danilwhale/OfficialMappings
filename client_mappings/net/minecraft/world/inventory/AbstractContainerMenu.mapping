@@ -19,6 +19,7 @@ CLASS uy net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD a clicked (IIZLuf;)V
 		ARG 1 slot
 		ARG 2 buttonNum
+		ARG 3 lean
 		ARG 4 player
 	METHOD a setItem (ILye;)V
 		ARG 1 slot
@@ -50,10 +51,12 @@ CLASS uy net/minecraft/world/inventory/AbstractContainerMenu
 	METHOD a canItemQuickReplace (Lwe;Lye;Z)Z
 		ARG 0 slot
 		ARG 1 item
+		ARG 2 lean
 	METHOD a moveItemStackTo (Lye;IIZ)Z
 		ARG 1 item
 		ARG 2 min
 		ARG 3 max
+		ARG 4 lean
 	METHOD a canTakeItemForPickAll (Lye;Lwe;)Z
 		ARG 1 item
 		ARG 2 slot

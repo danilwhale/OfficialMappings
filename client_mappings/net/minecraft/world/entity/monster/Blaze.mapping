@@ -1,1 +1,7 @@
 CLASS td net/minecraft/world/entity/monster/Blaze
+	FIELD bp allowedHeightOffset F
+	FIELD bq nextHeightOffsetChangeTick I
+	FIELD br attackStep I
+	METHOD a setCharged (Z)V
+		ARG 1 charged
+	METHOD bT isCharged ()Z

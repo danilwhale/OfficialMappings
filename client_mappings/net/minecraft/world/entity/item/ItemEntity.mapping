@@ -3,4 +3,21 @@ CLASS ss net/minecraft/world/entity/item/ItemEntity
 	FIELD b throwTime I
 	FIELD c bobOffs F
 	FIELD d health I
+	METHOD <init> (Labw;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Labw;DDDLye;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 item
+	METHOD a merge (Lss;)Z
+		ARG 1 itemEntity
+	METHOD a setItem (Lye;)V
+		ARG 1 item
+	METHOD c setShortLifeTime ()V
 	METHOD d getItem ()Lye;
+	METHOD e mergeWithNeighbours ()V

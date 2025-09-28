@@ -1,0 +1,4 @@
+CLASS sg net/minecraft/world/entity/boss/BossMob
+	METHOD aN getHealth ()F
+	METHOD aT getMaxHealth ()F
+	METHOD an getAName ()Ljava/lang/String;

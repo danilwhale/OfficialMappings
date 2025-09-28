@@ -1,1 +1,7 @@
 CLASS arq net/minecraft/world/level/tile/WeightedPressurePlateTile
+	FIELD a maxWeight I
+	METHOD <init> (ILjava/lang/String;Lakc;I)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 material
+		ARG 4 maxWeight

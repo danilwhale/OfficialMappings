@@ -1,0 +1,6 @@
+CLASS ban net/minecraft/client/mco/PendingInvite
+	FIELD a invitationId Ljava/lang/String;
+	FIELD b worldName Ljava/lang/String;
+	FIELD c worldOwnerName Ljava/lang/String;
+	METHOD a parse (Largo/jdom/JsonNode;)Lban;
+		ARG 0 j

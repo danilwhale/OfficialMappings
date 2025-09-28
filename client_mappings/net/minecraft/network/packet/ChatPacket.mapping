@@ -1,10 +1,14 @@
 CLASS dm net/minecraft/network/packet/ChatPacket
 	FIELD a message Ljava/lang/String;
+	FIELD b isSystem Z
 	METHOD <init> (Lcv;)V
 		ARG 1 component
 	METHOD <init> (Lcv;Z)V
 		ARG 1 component
+		ARG 2 isSystem
 	METHOD <init> (Ljava/lang/String;)V
 		ARG 1 message
 	METHOD <init> (Ljava/lang/String;Z)V
 		ARG 1 message
+		ARG 2 isSystem
+	METHOD d isSystem ()Z

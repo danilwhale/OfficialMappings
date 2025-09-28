@@ -1,8 +1,62 @@
 CLASS aiy net/minecraft/world/level/levelgen/structure/VillagePieces
 	METHOD a loadStatic ()V
 	METHOD a findAndCreatePieceFactory (Lajj;Lajd;Ljava/util/List;Ljava/util/Random;IIIII)Lajm;
+		ARG 0 start
+		ARG 1 weight
+		ARG 2 pieces
+		ARG 3 random
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 orientation
+		ARG 8 genDepth
 	METHOD a access$000 (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
+		ARG 7 genDepth
+	METHOD a updatePieceWeight (Ljava/util/List;)I
+		ARG 0 pieces
 	METHOD a createPieceSet (Ljava/util/Random;I)Ljava/util/List;
 		ARG 0 random
-		ARG 1 i
+		ARG 1 size
 	METHOD b access$100 (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
+		ARG 7 genDepth
+	METHOD c generatePieceFromSmallDoor (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lajm;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
+		ARG 7 genDepth
+	METHOD d generateAndAddPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
+		ARG 7 genDepth
+	METHOD e generateAndAddRoadPiece (Lajj;Ljava/util/List;Ljava/util/Random;IIIII)Lait;
+		ARG 0 start
+		ARG 1 pieces
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 orientation
+		ARG 7 genDepth

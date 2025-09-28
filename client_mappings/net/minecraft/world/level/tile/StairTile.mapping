@@ -1,1 +1,17 @@
 CLASS aqp net/minecraft/world/level/tile/StairTile
+	FIELD a DEAD_SPACES [[I
+	FIELD b base Laqz;
+	FIELD c baseData I
+	METHOD <init> (ILaqz;I)V
+		ARG 1 id
+		ARG 2 base
+		ARG 3 baseData
+	METHOD d isStairs (I)Z
+		ARG 0 tile
+	METHOD d setBaseShape (Lacf;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g setStepShape (Lacf;III)Z
+	METHOD h setInnerPieceShape (Lacf;III)Z

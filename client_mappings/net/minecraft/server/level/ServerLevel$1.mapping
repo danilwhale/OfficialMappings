@@ -1,3 +1,0 @@
-CLASS ju net/minecraft/server/level/ServerLevel$1
-	METHOD <init> (Ljt;)V
-		ARG 1 shit

@@ -1,0 +1,8 @@
+CLASS blc net/minecraft/client/server/IntegratedServerConnection
+	FIELD d userName Ljava/lang/String;
+	FIELD f listenThread Liy;
+	METHOD <init> (Lbkz;)V
+		ARG 1 server
+	METHOD a (Lcn;Ljava/lang/String;)V
+		ARG 2 userName
+	METHOD c startTcpServerListener ()Ljava/lang/String;

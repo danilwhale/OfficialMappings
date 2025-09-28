@@ -1,6 +1,16 @@
 CLASS bcy net/minecraft/client/multiplayer/ConnectScreen
+	FIELD a connection Lbcw;
 	FIELD b aborted Z
 	FIELD c parent Lawe;
+	METHOD <init> (Lawe;Latv;Lbdm;)V
+		ARG 1 parent
+		ARG 2 minecraft
+		ARG 3 server
+	METHOD <init> (Lawe;Latv;Ljava/lang/String;I)V
+		ARG 1 parent
+		ARG 2 minecraft
+		ARG 3 ip
+		ARG 4 port
 	METHOD a access$100 (Lbcy;)Latv;
 	METHOD a access$000 (Lbcy;Lbcw;)Lbcw;
 	METHOD a connect (Ljava/lang/String;I)V

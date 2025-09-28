@@ -1,2 +1,0 @@
-CLASS bkh net/minecraft/server/packs/metadata/MetadataSectionSerializer
-	METHOD a getMetadataSectionName ()Ljava/lang/String;
