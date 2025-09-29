@@ -1,1 +1,3 @@
 CLASS bly net/minecraft/client/stats/StatsSyncher$2
+	FIELD a val$a Ljava/util/Map;
+	FIELD b this$0 Lblw;
