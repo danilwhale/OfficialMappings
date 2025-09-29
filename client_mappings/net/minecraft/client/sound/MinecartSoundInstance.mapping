@@ -1,5 +1,15 @@
 CLASS bll net/minecraft/client/sound/MinecartSoundInstance
+	FIELD a soundEngine Lbln;
 	FIELD b minecart Lst;
+	FIELD c player Lbex;
+	FIELD d looping Z
+	FIELD e removed Z
+	FIELD f priority Z
+	FIELD g relative Z
+	FIELD h x F
+	FIELD i y F
+	FIELD j z F
+	FIELD k distance D
 	METHOD <init> (Lbln;Lst;Lbex;)V
 		ARG 1 engine
 		ARG 2 minecart

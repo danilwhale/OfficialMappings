@@ -4,3 +4,9 @@ CLASS bls net/minecraft/client/sound/SoundRepository$1$1
 	METHOD <init> (Lblq;Ljava/net/URL;)V
 		ARG 1 this$0
 		ARG 2 uRL
+	METHOD <init> (Lblq;Ljava/net/URL;Lblr;)V
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+	METHOD connect connect ()V
+	METHOD getInputStream getInputStream ()Ljava/io/InputStream;

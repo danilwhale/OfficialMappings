@@ -7,6 +7,7 @@ CLASS aur net/minecraft/client/Timer
 	FIELD f lastTime D
 	FIELD g lastMs J
 	FIELD h lastMsSysTime J
+	FIELD i lastMsSysTimeMsSysTimeMsSysTimeMsSysTime J
 	FIELD j adjustTime D
 	METHOD <init> (F)V
 		ARG 1 ticksPerSecond

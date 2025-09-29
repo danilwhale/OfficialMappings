@@ -7,6 +7,8 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD F lastTime J
 	FIELD G frames I
 	FIELD H lastTimer J
+	FIELD I MAJONG_LOGO Lbjo;
+	FIELD J MAC_DISPLAY_BULLSHIT Ljava/util/List;
 	FIELD K logger Llp;
 	FIELD L resourcePackDirectory Ljava/io/File;
 	FIELD M currentServer Lbdm;
@@ -38,6 +40,7 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD am isLocalServer Z
 	FIELD an debugCrashKeyReportedTime J
 	FIELD ao resourceManager Lbjm;
+	FIELD ap bullshitBki Lbki;
 	FIELD ar vanillaPack Lbjg;
 	FIELD as resourcePackRepository Lbjt;
 	FIELD at languageManager Lbkd;
@@ -53,7 +56,7 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD j crosshairPickEntity Lof;
 	FIELD k particleEngine Lbeh;
 	FIELD l font Lavi;
-	FIELD m Lavi;
+	FIELD m altFont Lavi;
 		COMMENT standard galactic alphabet font, 1.14 uses ALT_FONT static for it
 	FIELD n screen Lawe;
 	FIELD o progressRenderer Lauo;
@@ -66,6 +69,7 @@ CLASS atv net/minecraft/client/Minecraft
 	FIELD v soundEngine Lbln;
 	FIELD w mouseHandler Lauj;
 	FIELD x gameDirectory Ljava/io/File;
+	FIELD y statBullshitIO Lblv;
 	FIELD z wasDown Z
 	METHOD <init> (Laus;IIZZLjava/io/File;Ljava/io/File;Ljava/io/File;Ljava/net/Proxy;Ljava/lang/String;)V
 		ARG 1 user
@@ -116,6 +120,8 @@ CLASS atv net/minecraft/client/Minecraft
 		ARG 1 level
 	METHOD a setCurrentServer (Lbdm;)V
 		ARG 1 currentServer
+	METHOD a loadIcon (Ljava/io/File;)Ljava/nio/ByteBuffer;
+		ARG 1 location
 	METHOD a connectTo (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port
