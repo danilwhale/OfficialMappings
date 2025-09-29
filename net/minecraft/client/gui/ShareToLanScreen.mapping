@@ -1,0 +1,9 @@
+CLASS awj net/minecraft/client/gui/ShareToLanScreen
+	FIELD a lastScreen Lawe;
+	FIELD b commandsButton Laut;
+	FIELD c modeButton Laut;
+	FIELD d gameModeName Ljava/lang/String;
+	FIELD e commands Z
+	METHOD <init> (Lawe;)V
+		ARG 1 lastScreen
+	METHOD g updateSelectionStrings ()V

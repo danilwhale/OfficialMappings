@@ -1,0 +1,47 @@
+CLASS awh net/minecraft/client/gui/SelectWorldScreen
+	FIELD a lastScreen Lawe;
+	FIELD b title Ljava/lang/String;
+	FIELD c DATE_FORMAT Ljava/text/DateFormat;
+	FIELD e selectedWorld I
+	FIELD p levelList Ljava/util/List;
+	FIELD q worldSelectionList Lawi;
+	FIELD r worldLang Ljava/lang/String;
+	FIELD s conversionLang Ljava/lang/String;
+	FIELD t gameModesLang [Ljava/lang/String;
+	FIELD v deleteButton Laut;
+	FIELD w selectButton Laut;
+	FIELD x renameButton Laut;
+	FIELD y copyButton Laut;
+	METHOD <init> (Lawe;)V
+		ARG 1 lastScreen
+	METHOD a getWorldId (I)Ljava/lang/String;
+		ARG 1 i
+	METHOD a access$000 (Lawh;)Ljava/util/List;
+		ARG 0 this$0
+	METHOD a access$100 (Lawh;I)I
+		ARG 0 this$0
+		ARG 1 selectedWorld
+	METHOD b access$200 (Lawh;)I
+		ARG 0 this$0
+	METHOD c access$300 (Lawh;)Laut;
+		ARG 0 this$0
+	METHOD d getWorldName (I)Ljava/lang/String;
+		ARG 1 i
+	METHOD d access$400 (Lawh;)Laut;
+		ARG 0 this$0
+	METHOD e worldSelected (I)V
+		ARG 1 i
+	METHOD e access$500 (Lawh;)Laut;
+		ARG 0 this$0
+	METHOD f access$600 (Lawh;)Laut;
+		ARG 0 this$0
+	METHOD g postInit ()V
+	METHOD g access$700 (Lawh;)Ljava/lang/String;
+		ARG 0 this$0
+	METHOD h loadLevelList ()V
+	METHOD h access$800 (Lawh;)Ljava/text/DateFormat;
+		ARG 0 this$0
+	METHOD i access$900 (Lawh;)Ljava/lang/String;
+		ARG 0 this$0
+	METHOD j access$1000 (Lawh;)[Ljava/lang/String;
+		ARG 0 this$0

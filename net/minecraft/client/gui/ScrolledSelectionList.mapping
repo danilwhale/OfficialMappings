@@ -1,0 +1,76 @@
+CLASS awg net/minecraft/client/gui/ScrolledSelectionList
+	FIELD a minecraft Latv;
+	FIELD b width I
+	FIELD c y0 I
+	FIELD d y1 I
+	FIELD e itemHeight I
+	FIELD h height I
+	FIELD i x1 I
+	FIELD j x0 I
+	FIELD m yDrag F
+	FIELD o yo F
+	FIELD p updateIn I
+	FIELD r renderSelection Z
+	FIELD s renderHeader Z
+	FIELD t headerHeight I
+	METHOD <init> (Latv;IIIII)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+		ARG 4 y0
+		ARG 5 y1
+		ARG 6 itemHeight
+	METHOD a getNumberOfItems ()I
+	METHOD a isSelectedItem (I)Z
+		ARG 1 i
+	METHOD a clickedHeader (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD a render (IIF)V
+		ARG 1 xm
+		ARG 2 ym
+		ARG 3 a
+	METHOD a updateSize (IIII)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 y0
+		ARG 4 y1
+	METHOD a render (IIIILbfq;)V
+		ARG 1 i
+		ARG 2 x
+		ARG 3 y
+		ARG 4 height
+		ARG 5 t
+	METHOD a renderHeader (IILbfq;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 t
+	METHOD a setSelected (IZ)V
+		ARG 1 i
+		ARG 2 selected
+	METHOD a buttonClicked (Laut;)V
+		ARG 1 button
+	METHOD a setRenderSelection (Z)V
+		ARG 1 renderSelection
+	METHOD a setRenderHeader (ZI)V
+		ARG 1 renderHeader
+		ARG 2 renderHeight
+	METHOD b renderBackground ()V
+	METHOD b scroll (I)V
+		ARG 1 i
+	METHOD b renderDecorations (II)V
+		ARG 1 xm
+		ARG 2 ym
+	METHOD b renderHoleBackground (IIII)V
+		ARG 1 y0
+		ARG 2 y1
+		ARG 3 a0
+		ARG 4 a1
+	METHOD c getScrollbarPosition ()I
+	METHOD c getItemAtPosition (II)I
+		ARG 1 x
+		ARG 2 y
+	METHOD d getMaxPosition ()I
+	METHOD d init (II)V
+	METHOD e getScrollBottom ()I
+	METHOD h capYPosition ()V

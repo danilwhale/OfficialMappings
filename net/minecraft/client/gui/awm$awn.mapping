@@ -1,0 +1,4 @@
+CLASS awn net/minecraft/client/gui/awm$awn
+	FIELD a this$0 Lawm;
+	METHOD <init> (Lawm;)V
+		ARG 1 this$0

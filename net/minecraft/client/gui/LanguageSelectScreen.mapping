@@ -1,0 +1,10 @@
+CLASS avr net/minecraft/client/gui/LanguageSelectScreen
+	FIELD a lastScreen Lawe;
+	FIELD b packSelectionList Lavs;
+	FIELD c options Laul;
+	FIELD d languageManager Lbkd;
+	FIELD e doneButton Lawl;
+	METHOD <init> (Lawe;Laul;Lbkd;)V
+		ARG 1 lastScreen
+		ARG 2 options
+		ARG 3 languageManager
