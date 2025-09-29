@@ -8,6 +8,8 @@ CLASS ho net/minecraft/server/ServerInterface
 	METHOD a getProperty (Ljava/lang/String;I)I
 		ARG 1 str
 		ARG 2 def
+	METHOD a setProperty (Ljava/lang/String;Ljava/lang/Object;)V
+	METHOD a getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD b_ getSettingsFile ()Ljava/lang/String;
 	METHOD e info (Ljava/lang/String;)V
 	METHOD f warn (Ljava/lang/String;)V

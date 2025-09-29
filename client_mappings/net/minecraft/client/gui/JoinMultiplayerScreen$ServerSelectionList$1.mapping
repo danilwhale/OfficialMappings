@@ -1,1 +1,2 @@
 CLASS avp net/minecraft/client/gui/JoinMultiplayerScreen$ServerSelectionList$1
+	FIELD b this$0 Lavo;

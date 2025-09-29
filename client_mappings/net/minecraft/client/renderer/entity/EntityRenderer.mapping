@@ -29,6 +29,8 @@ CLASS bgm net/minecraft/client/renderer/entity/EntityRenderer
 		ARG 1 entityRenderDispatcher
 	METHOD a bindTexture (Lbjo;)V
 		ARG 1 resourceName
+	METHOD a registerIcons (Lmt;)V
+		ARG 1 ir
 	METHOD a getTextureLocation (Lnn;)Lbjo;
 		ARG 1 entity
 	METHOD a renderFlame (Lnn;DDDF)V

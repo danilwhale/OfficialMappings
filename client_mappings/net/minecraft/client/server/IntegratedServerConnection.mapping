@@ -6,3 +6,4 @@ CLASS blc net/minecraft/client/server/IntegratedServerConnection
 	METHOD a (Lcn;Ljava/lang/String;)V
 		ARG 2 userName
 	METHOD c startTcpServerListener ()Ljava/lang/String;
+	METHOD f isPaused ()Z

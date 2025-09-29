@@ -18,6 +18,7 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD V forceGameType Z
 	FIELD a profiler Llv;
 	FIELD b levels [Ljs;
+	FIELD c proxy Ljava/net/Proxy;
 	FIELD d progressStage Ljava/lang/String;
 	FIELD e progressStagePercentage I
 	FIELD f sentPacketCount [J

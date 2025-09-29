@@ -7,5 +7,20 @@ CLASS avn net/minecraft/client/gui/JoinMultiplayerScreen
 	FIELD x toolTip Ljava/lang/String;
 	FIELD y editingServer Lbdm;
 	FIELD z lanServerList Lblg;
+	METHOD a access$59 (Lavn;)Lbdn;
+	METHOD a access$0 (Lavn;I)I
+	METHOD a access$30 (Lavn;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a access$37 (Lbdm;)V
 	METHOD a renderTooltip (Ljava/lang/String;II)V
+	METHOD b access$45 (Lavn;)Ljava/util/List;
+	METHOD b access$7 (Lavn;I)V
+	METHOD c access$6 (Lavn;)I
 	METHOD c pingServer (Lbdm;)V
+	METHOD d access$1 (Lavn;)Laut;
+	METHOD e access$344 (Lavn;)Laut;
+	METHOD f access$10 (Lavn;)Laut;
+	METHOD g access$390 (Lavn;)I
+	METHOD h access$20 ()Ljava/lang/Object;
+	METHOD i access$569 ()I
+	METHOD j access$73 ()I
+	METHOD k access$009 ()I

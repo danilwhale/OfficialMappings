@@ -1,2 +1,3 @@
 CLASS bga net/minecraft/client/renderer/entity/BatRenderer
 	FIELD a BAT_LOCATION Lbjo;
+	FIELD f modelVersion I

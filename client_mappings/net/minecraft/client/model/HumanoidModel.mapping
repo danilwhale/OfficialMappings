@@ -11,7 +11,7 @@ CLASS bbj net/minecraft/client/model/HumanoidModel
 	FIELD l leftArmPose I
 	FIELD m rightArmPose I
 	FIELD n sneaking Z
-	FIELD o Z
+	FIELD o isShooting_FAKE Z
 		COMMENT seems to indicate whether mob is shooting with a bow
 	METHOD <init> (F)V
 		ARG 1 g

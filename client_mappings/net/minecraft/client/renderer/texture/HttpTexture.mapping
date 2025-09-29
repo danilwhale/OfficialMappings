@@ -9,6 +9,7 @@ CLASS bic net/minecraft/client/renderer/texture/HttpTexture
 		ARG 1 urlString
 		ARG 2 location
 		ARG 3 processor
+	METHOD a isUploaded ()Z
 	METHOD a access$000 (Lbic;)Ljava/lang/String;
 		ARG 0 this$0
 	METHOD a loadCallback (Ljava/awt/image/BufferedImage;)V

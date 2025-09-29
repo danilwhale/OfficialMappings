@@ -1,5 +1,7 @@
 CLASS beu net/minecraft/client/player/AbstractClientPlayer
+	FIELD a skin Lbic;
 	FIELD b STEVE_SKIN_LOCATION Lbjo;
+	FIELD c cloak Lbic;
 	FIELD d skinTextureLocation Lbjo;
 	FIELD e cloakTextureLocation Lbjo;
 	METHOD a registerSkinTexture (Lbjo;Ljava/lang/String;Lbjo;Lbfi;)Lbic;

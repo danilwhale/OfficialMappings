@@ -1,5 +1,6 @@
 CLASS bcw net/minecraft/client/multiplayer/ClientConnection
 	FIELD a message Ljava/lang/String;
+	FIELD b savedDataStorage Lamr;
 	FIELD e random Ljava/util/Random;
 	FIELD f done Z
 	FIELD g connection Lcm;

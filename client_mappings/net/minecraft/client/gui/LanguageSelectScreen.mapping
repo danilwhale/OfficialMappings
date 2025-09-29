@@ -4,3 +4,6 @@ CLASS avr net/minecraft/client/gui/LanguageSelectScreen
 	FIELD c options Laul;
 	FIELD d languageManager Lbkd;
 	FIELD e doneButton Lawl;
+	METHOD a access$1 (Lavr;)Lbkd;
+	METHOD b access$2 (Lavr;)Laul;
+	METHOD c access$3 (Lavr;)Lawl;

@@ -1,4 +1,5 @@
 CLASS bfj net/minecraft/client/renderer/ItemInHandRenderer
+	FIELD a minimap Lavv;
 	FIELD c MAP_BACKGROUND_LOCATION Lbjo;
 	FIELD d UNDERWATER_LOCATION Lbjo;
 	FIELD e mc Latv;

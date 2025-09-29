@@ -2,6 +2,7 @@ CLASS bdd net/minecraft/client/multiplayer/MultiPlayerLevel
 	FIELD J forced Ljava/util/Set;
 	FIELD K reEntries Ljava/util/Set;
 	FIELD L minecraft Latv;
+	FIELD M cunksToPoll Ljava/util/Set;
 	FIELD a connection Lbcw;
 	FIELD b chunkCache Lbdb;
 	FIELD c entitiesById Llm;
@@ -16,6 +17,8 @@ CLASS bdd net/minecraft/client/multiplayer/MultiPlayerLevel
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a AAAAAAAAAA_removePendingEntityRemovals ()V
+		COMMENT WHY IS THIS OVERRIDE
 	METHOD a setChunkVisible (IIZ)V
 		ARG 1 x
 		ARG 2 z

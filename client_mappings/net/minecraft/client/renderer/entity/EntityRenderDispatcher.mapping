@@ -34,6 +34,8 @@ CLASS bgl net/minecraft/client/renderer/entity/EntityRenderDispatcher
 		ARG 7 a
 	METHOD a getRenderer (Ljava/lang/Class;)Lbgm;
 		ARG 1 e
+	METHOD a registerIcons (Lmt;)V
+		ARG 1 ir
 	METHOD a getRenderer (Lnn;)Lbgm;
 		ARG 1 e
 	METHOD a render (Lnn;DDDFF)V
