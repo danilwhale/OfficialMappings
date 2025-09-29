@@ -1,0 +1,23 @@
+CLASS blw net/minecraft/client/stats/StatsSyncher
+	METHOD a access$000 (Lblw;)Ljava/util/Map;
+		ARG 0 this$0
+	METHOD a access$600 (Lblw;Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map;
+		ARG 0 this$0
+	METHOD a access$500 (Lblw;Ljava/util/Map;)Ljava/util/Map;
+		ARG 0 this$0
+	METHOD a access$400 (Lblw;Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+		ARG 0 this$0
+	METHOD a access$700 (Lblw;Z)Z
+		ARG 0 this$0
+	METHOD b access$100 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
+	METHOD c access$200 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
+	METHOD d access$300 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
+	METHOD e access$800 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
+	METHOD f access$900 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
+	METHOD g access$1000 (Lblw;)Ljava/io/File;
+		ARG 0 this$0
