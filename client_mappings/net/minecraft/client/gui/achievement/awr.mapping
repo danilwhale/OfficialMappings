@@ -5,7 +5,7 @@ CLASS awr net/minecraft/client/gui/achievement/awr
 	METHOD a access$13 (Lawr;IIIIII)V
 	METHOD b access$2 (Lawr;)Lavi;
 	METHOD b access$16 (Lawr;IIIIII)V
-	METHOD c access$2 (Lawr;)Lblv;
+	METHOD c access$222 (Lawr;)Lblv;
 	METHOD d access$3 (Lawr;)Lavi;
 	METHOD e access$4 (Lawr;)Lavi;
 	METHOD f access$5 (Lawr;)Latv;
