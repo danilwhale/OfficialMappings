@@ -16,7 +16,7 @@ CLASS og net/minecraft/world/entity/Mob
 	FIELD d targetSelector Lpt;
 	FIELD e equipmentDropChances [F
 	FIELD f defaultLookAngle F
-	FIELD g yRotA I
+	FIELD g yRotA_FAKE I
 	FIELD h lookControl Lpe;
 	FIELD i moveControl Lpf;
 	FIELD j jumpControl Lpd;
