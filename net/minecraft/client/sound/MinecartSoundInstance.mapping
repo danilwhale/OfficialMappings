@@ -1,0 +1,10 @@
+CLASS bll net/minecraft/client/sound/MinecartSoundInstance
+	FIELD b minecart Lst;
+	FIELD c player Lbex;
+	FIELD e stopped Z
+	FIELD h pitch F
+	FIELD i volume F
+	METHOD <init> (Lbln;Lst;Lbex;)V
+		ARG 1 engine
+		ARG 2 minecart
+		ARG 3 player

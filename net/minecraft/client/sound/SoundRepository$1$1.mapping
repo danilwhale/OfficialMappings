@@ -1,0 +1,12 @@
+CLASS bls net/minecraft/client/sound/SoundRepository$1$1
+	FIELD a this$0 Lblq;
+	FIELD b location Lbjo;
+	METHOD <init> (Lblq;Ljava/net/URL;)V
+		ARG 1 this$0
+		ARG 2 url
+	METHOD <init> (Lblq;Ljava/net/URL;Lblr;)V
+		ARG 1 this$0
+		ARG 2 url
+		ARG 3 handler
+	METHOD connect connect ()V
+	METHOD getInputStream getInputStream ()Ljava/io/InputStream;

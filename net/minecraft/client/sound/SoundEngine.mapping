@@ -1,0 +1,81 @@
+CLASS bln net/minecraft/client/sound/SoundEngine
+	FIELD b soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD c loaded Z
+	FIELD d sounds Lblq;
+	FIELD e streamingSounds Lblq;
+	FIELD f songs Lblq;
+	FIELD g idCounter I
+	FIELD h options Laul;
+	FIELD j channels Ljava/util/Set;
+	FIELD k queuedSounds Ljava/util/List;
+	FIELD l random Ljava/util/Random;
+	FIELD m noMusicDelay I
+	METHOD <init> (Lbjp;Laul;Ljava/io/File;)V
+		ARG 1 resourceManager
+		ARG 2 options
+	METHOD a updateOptions ()V
+	METHOD a access$000 (Lbln;Lpaulscode/sound/SoundSystem;)Lpaulscode/sound/SoundSystem;
+		ARG 0 this$0
+		ARG 1 soundSystem
+	METHOD a access$100 (Lbln;Z)Z
+		ARG 0 this$0
+		ARG 1 loaded
+	METHOD a requestPreload (Ljava/io/File;)V
+		ARG 1 file
+	METHOD a add (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD a playUI (Ljava/lang/String;FF)V
+		ARG 1 name
+		ARG 2 volume
+		ARG 3 pitch
+	METHOD a playStreaming (Ljava/lang/String;FFF)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a play (Ljava/lang/String;FFFFF)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
+	METHOD a schedule (Ljava/lang/String;FFFFFI)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
+		ARG 7 delay
+	METHOD a play (Ljava/lang/String;Lnn;FFZ)V
+		ARG 1 name
+		ARG 2 entity
+		ARG 3 volume
+		ARG 4 pitch
+		ARG 5 priority
+	METHOD a setVolume (Lnn;F)V
+		ARG 1 source
+		ARG 2 volume
+	METHOD a update (Lof;F)V
+		ARG 1 player
+		ARG 2 a
+	METHOD b destroy ()V
+	METHOD b addStreaming (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD b isPlaying (Lnn;)Z
+		ARG 1 source
+	METHOD b setPitch (Lnn;F)V
+		ARG 1 source
+		ARG 2 pitch
+	METHOD c playMusicTick ()V
+	METHOD c addMusic (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD c stop (Lnn;)V
+		ARG 1 source
+	METHOD d shutdown ()V
+	METHOD e pause ()V
+	METHOD f resume ()V
+	METHOD g tick ()V
+	METHOD h preload ()V
+	METHOD i loadLibrary ()V

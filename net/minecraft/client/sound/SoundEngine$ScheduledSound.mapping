@@ -1,0 +1,16 @@
+CLASS blp net/minecraft/client/sound/SoundEngine$ScheduledSound
+	FIELD a name Ljava/lang/String;
+	FIELD b x F
+	FIELD c y F
+	FIELD d z F
+	FIELD e volume F
+	FIELD f pitch F
+	FIELD g delay I
+	METHOD <init> (Ljava/lang/String;FFFFFI)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
+		ARG 7 delay
