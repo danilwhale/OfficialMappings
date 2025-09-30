@@ -11,6 +11,7 @@ CLASS auu net/minecraft/client/gui/ChatComponent
 	METHOD a getWidth (F)I
 		ARG 0 scale
 	METHOD a render (I)V
+		ARG 1 time
 	METHOD a getClickedComponentAt (II)Lavl;
 		ARG 1 x
 		ARG 2 y

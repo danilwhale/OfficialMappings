@@ -1,5 +1,0 @@
-CLASS blx net/minecraft/client/stats/StatsSyncher$1
-	FIELD a this$0 Lblw;
-	METHOD <init> (Lblw;)V
-		ARG 1 this$0
-	METHOD run run ()V

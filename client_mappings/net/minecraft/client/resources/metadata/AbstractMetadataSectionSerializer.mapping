@@ -1,1 +1,23 @@
 CLASS bkf net/minecraft/client/resources/metadata/AbstractMetadataSectionSerializer
+	METHOD a convertToBoolean (Lcom/google/gson/JsonElement;Ljava/lang/String;Ljava/lang/Boolean;)Z
+		ARG 1 json
+		ARG 2 location
+		ARG 3 def
+	METHOD a convertToFloat (Lcom/google/gson/JsonElement;Ljava/lang/String;Ljava/lang/Float;FF)F
+		ARG 1 json
+		ARG 2 location
+		ARG 3 def
+		ARG 4 min
+		ARG 5 max
+	METHOD a convertToInt (Lcom/google/gson/JsonElement;Ljava/lang/String;Ljava/lang/Integer;II)I
+		ARG 1 json
+		ARG 2 location
+		ARG 3 def
+		ARG 4 min
+		ARG 5 max
+	METHOD a convertToString (Lcom/google/gson/JsonElement;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
+		ARG 1 json
+		ARG 2 location
+		ARG 3 def
+		ARG 4 minLength
+		ARG 5 maxLength

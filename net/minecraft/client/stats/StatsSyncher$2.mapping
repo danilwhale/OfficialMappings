@@ -1,4 +1,0 @@
-CLASS bly net/minecraft/client/stats/StatsSyncher$2
-	FIELD b this$0 Lblw;
-	METHOD <init> (Lblw;Ljava/util/Map;)V
-		ARG 1 this$0

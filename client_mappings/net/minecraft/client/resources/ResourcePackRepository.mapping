@@ -1,6 +1,16 @@
 CLASS bjt net/minecraft/client/resources/ResourcePackRepository
 	FIELD a RESOURCEPACK_FILTER Ljava/io/FileFilter;
-	FIELD d folder Ljava/io/File;
+	FIELD b defaultResourcePack Lbjr;
+	FIELD d workDir Ljava/io/File;
+	FIELD e available Ljava/util/List;
+	FIELD f selected Ljava/util/List;
 	METHOD <init> (Ljava/io/File;Lbjr;Lbki;Laul;)V
-		ARG 1 folder
-	METHOD e getFolder ()Ljava/io/File;
+		ARG 1 workingDirectory
+		ARG 2 defaultResourcePack
+		ARG 4 options
+	METHOD a updateList ()V
+	METHOD a setSelected ([Lbjv;)V
+		ARG 1 packs
+	METHOD b getAvailable ()Ljava/util/List;
+	METHOD c getSelected ()Ljava/util/List;
+	METHOD e getWorkDir ()Ljava/io/File;

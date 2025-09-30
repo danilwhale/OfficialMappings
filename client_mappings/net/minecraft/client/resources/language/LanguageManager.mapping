@@ -4,6 +4,8 @@ CLASS bkd net/minecraft/client/resources/language/LanguageManager
 	FIELD d languages Ljava/util/Map;
 	METHOD <init> (Lbki;Ljava/lang/String;)V
 		ARG 2 currentCode
+	METHOD a ()Z
+		COMMENT whether selected locale forces unicode sheet
 	METHOD a setSelected (Lbkc;)V
 		ARG 1 language
 	METHOD a reload (Ljava/util/List;)V

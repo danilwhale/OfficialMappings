@@ -1,1 +1,6 @@
 CLASS bjx net/minecraft/client/resources/SimpleReloadableResourceManager$1
+	FIELD a this$0 Lbjw;
+	METHOD <init> (Lbjw;)V
+		ARG 1 this$0
+	METHOD apply apply (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 input

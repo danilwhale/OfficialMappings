@@ -8,3 +8,5 @@ CLASS bjy net/minecraft/client/resources/SimpleResource
 		ARG 1 location
 		ARG 2 resourceStream
 		ARG 3 metadataStream
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o

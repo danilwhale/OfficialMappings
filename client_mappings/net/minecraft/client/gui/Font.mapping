@@ -1,13 +1,102 @@
 CLASS avi net/minecraft/client/gui/Font
+	FIELD a lineHeight I
 	FIELD b random Ljava/util/Random;
+	FIELD c unicodeTexID [Lbjo;
+	FIELD d basicWidth [I
+	FIELD e unicodeWidth [B
+	FIELD f colors [I
+	FIELD h textureManager Lbim;
+	FIELD i xPos F
+	FIELD j yPos F
+	FIELD k enforceUnicodeSheet Z
+	FIELD l bidirectional Z
 	METHOD <init> (Laul;Lbjo;Lbim;Z)V
-	METHOD a (I)Lbjo;
+		ARG 1 options
+		ARG 3 textureManager
+		ARG 4 enforceUnicodeSheet
+	METHOD a charWidth (C)I
+		ARG 1 c
+	METHOD a renderUnicodeCharacter (CZ)F
+		ARG 1 c
+	METHOD a loadUnicodePage (I)Lbjo;
 		ARG 1 page
-	METHOD a (IZ)F
+	METHOD a renderCharacter (ICZ)F
 		ARG 1 id
-	METHOD a drawShadow (Ljava/lang/String;)I
+		ARG 2 c
+	METHOD a renderBasicCharacter (IZ)F
+		ARG 1 id
+	METHOD a width (Ljava/lang/String;)I
+		ARG 1 str
 	METHOD a substrByWidth (Ljava/lang/String;I)Ljava/lang/String;
+		ARG 1 str
+		ARG 2 end
 	METHOD a drawShadow (Ljava/lang/String;III)I
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 col
 	METHOD a drawWordWrap (Ljava/lang/String;IIII)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 col
+	METHOD a drawInternal (Ljava/lang/String;IIIIZ)I
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 start
+		ARG 5 col
+		ARG 6 shadow
+	METHOD a draw (Ljava/lang/String;IIIZ)I
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 col
+		ARG 5 shadow
+	METHOD a substrByWidth (Ljava/lang/String;IZ)Ljava/lang/String;
+		ARG 1 str
+		ARG 2 end
+		ARG 3 reverse
+	METHOD a renderText (Ljava/lang/String;Z)V
+		ARG 1 str
+		ARG 2 shadow
+	METHOD a setEnforceUnicodeSheet (Z)V
+		ARG 1 enforceUnicodeSheet
+	METHOD b isBidirectional ()Z
+	METHOD b wordWrapHeight (Ljava/lang/String;I)I
+		ARG 1 str
+		ARG 2 start
 	METHOD b draw (Ljava/lang/String;III)I
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 col
+	METHOD b drawInternal (Ljava/lang/String;IIIZ)I
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 col
+		ARG 5 shadow
+	METHOD b setBidirectional (Z)V
+		ARG 1 bidirectional
+	METHOD c reorderBidi (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 str
 	METHOD c split (Ljava/lang/String;I)Ljava/util/List;
+		ARG 1 str
+		ARG 2 start
+	METHOD c drawWordWrapInternal (Ljava/lang/String;IIIZ)V
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 start
+		ARG 5 shadow
+	METHOD d eraseTrailingNewLines (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 str
+	METHOD d insertLineBreaks (Ljava/lang/String;I)Ljava/lang/String;
+		ARG 1 str
+		ARG 2 start
+	METHOD e getLastColors (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 str
+	METHOD e indexAtWidth (Ljava/lang/String;I)I
+		ARG 1 str
+		ARG 2 start

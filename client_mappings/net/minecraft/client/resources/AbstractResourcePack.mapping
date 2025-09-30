@@ -7,6 +7,8 @@ CLASS bjf net/minecraft/client/resources/AbstractResourcePack
 		ARG 1 stream
 		ARG 2 sectionName
 	METHOD a getRelativePath (Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
+		ARG 0 dir
+		ARG 1 file
 	METHOD a getResource (Ljava/lang/String;)Ljava/io/InputStream;
 		ARG 1 path
 	METHOD b hasResource (Ljava/lang/String;)Z

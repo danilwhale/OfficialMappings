@@ -1,2 +1,7 @@
 CLASS avp net/minecraft/client/gui/JoinMultiplayerScreen$ServerSelectionList$1
+	FIELD a val$server Lbdm;
 	FIELD b this$0 Lavo;
+	METHOD <init> (Lavo;Lbdm;)V
+		ARG 1 this$0
+		ARG 2 val$server
+	METHOD run run ()V

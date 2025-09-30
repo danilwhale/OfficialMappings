@@ -1,2 +1,4 @@
 CLASS avo net/minecraft/client/gui/JoinMultiplayerScreen$ServerSelectionList
 	FIELD a this$0 Lavn;
+	METHOD <init> (Lavn;)V
+		ARG 1 this$0

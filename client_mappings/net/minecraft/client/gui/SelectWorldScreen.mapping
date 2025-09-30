@@ -14,6 +14,8 @@ CLASS awh net/minecraft/client/gui/SelectWorldScreen
 	FIELD y copyButton Laut;
 	METHOD <init> (Lawe;)V
 		ARG 1 lastScreen
+	METHOD a getWorldId (I)Ljava/lang/String;
+		ARG 1 i
 	METHOD a access$000 (Lawh;)Ljava/util/List;
 		ARG 0 this$0
 	METHOD a access$100 (Lawh;I)I
@@ -23,8 +25,12 @@ CLASS awh net/minecraft/client/gui/SelectWorldScreen
 		ARG 0 this$0
 	METHOD c access$300 (Lawh;)Laut;
 		ARG 0 this$0
+	METHOD d getWorldName (I)Ljava/lang/String;
+		ARG 1 i
 	METHOD d access$400 (Lawh;)Laut;
 		ARG 0 this$0
+	METHOD e worldSelected (I)V
+		ARG 1 i
 	METHOD e access$500 (Lawh;)Laut;
 		ARG 0 this$0
 	METHOD f access$600 (Lawh;)Laut;

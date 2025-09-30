@@ -1,1 +1,2 @@
 CLASS avm net/minecraft/client/gui/InBedChatScreen
+	METHOD g sendWakeUp ()V

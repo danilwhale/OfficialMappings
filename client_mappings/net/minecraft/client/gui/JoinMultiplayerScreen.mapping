@@ -7,20 +7,38 @@ CLASS avn net/minecraft/client/gui/JoinMultiplayerScreen
 	FIELD x toolTip Ljava/lang/String;
 	FIELD y editingServer Lbdm;
 	FIELD z lanServerList Lblg;
-	METHOD a access$59 (Lavn;)Lbdn;
-	METHOD a access$0 (Lavn;I)I
-	METHOD a access$30 (Lavn;Ljava/lang/String;)Ljava/lang/String;
-	METHOD a access$37 (Lbdm;)V
+	METHOD <init> (Lawe;)V
+		ARG 1 lastScreen
+	METHOD a access$000 (Lavn;)Lbdn;
+		ARG 0 this$0
+	METHOD a access$300 (Lavn;I)I
+		ARG 0 this$0
+	METHOD a access$1400 (Lavn;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 this$0
+		ARG 1 toolTip
+	METHOD a access$1200 (Lbdm;)V
+		ARG 0 server
 	METHOD a renderTooltip (Ljava/lang/String;II)V
-	METHOD b access$45 (Lavn;)Ljava/util/List;
-	METHOD b access$7 (Lavn;I)V
-	METHOD c access$6 (Lavn;)I
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+	METHOD b access$100 (Lavn;)Ljava/util/List;
+		ARG 0 this$0
+	METHOD b access$700 (Lavn;I)V
+		ARG 0 this$0
+	METHOD c access$200 (Lavn;)I
+		ARG 0 this$0
 	METHOD c pingServer (Lbdm;)V
-	METHOD d access$1 (Lavn;)Laut;
-	METHOD e access$344 (Lavn;)Laut;
-	METHOD f access$10 (Lavn;)Laut;
-	METHOD g access$390 (Lavn;)I
-	METHOD h access$20 ()Ljava/lang/Object;
-	METHOD i access$569 ()I
-	METHOD j access$73 ()I
-	METHOD k access$009 ()I
+		ARG 0 server
+	METHOD d access$400 (Lavn;)Laut;
+		ARG 0 this$0
+	METHOD e access$500 (Lavn;)Laut;
+		ARG 0 this$0
+	METHOD f access$600 (Lavn;)Laut;
+		ARG 0 this$0
+	METHOD g access$800 (Lavn;)I
+		ARG 0 this$0
+	METHOD h access$900 ()Ljava/lang/Object;
+	METHOD i access$1000 ()I
+	METHOD j access$1100 ()I
+	METHOD k access$1300 ()I

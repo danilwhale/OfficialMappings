@@ -1,4 +1,5 @@
 CLASS awo net/minecraft/client/gui/VideoSettingsScreen
+	FIELD a title Ljava/lang/String;
 	FIELD b lastScreen Lawe;
 	FIELD c options Laul;
 	FIELD e OPTIONS [Laun;

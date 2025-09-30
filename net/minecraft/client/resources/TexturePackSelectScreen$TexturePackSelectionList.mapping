@@ -1,6 +1,0 @@
-CLASS bka net/minecraft/client/resources/TexturePackSelectScreen$TexturePackSelectionList
-	FIELD a this$0 Lbjz;
-	METHOD <init> (Lbjz;Lbjt;)V
-		ARG 1 this$0
-	METHOD a access$000 (Lbka;)Lbjt;
-		ARG 0 this$0

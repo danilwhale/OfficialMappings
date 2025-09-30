@@ -8,3 +8,4 @@ CLASS awf net/minecraft/client/gui/ScreenSizeCalculator
 		ARG 3 height
 	METHOD a getWidth ()I
 	METHOD b getHeight ()I
+	METHOD e getScale ()I

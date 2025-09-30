@@ -1,6 +1,8 @@
 CLASS bke net/minecraft/client/resources/language/Locale
 	FIELD a storage Ljava/util/Map;
 	FIELD c UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
+	METHOD a ()Z
+		COMMENT whether locale requires unicode sheet
 	METHOD a loadFrom (Lbjp;Ljava/util/List;)V
 		ARG 1 manager
 		ARG 2 languageInfos

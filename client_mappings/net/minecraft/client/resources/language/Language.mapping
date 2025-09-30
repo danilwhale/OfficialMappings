@@ -10,3 +10,7 @@ CLASS bkc net/minecraft/client/resources/language/Language
 		ARG 4 bidirectional
 	METHOD a getCode ()Ljava/lang/String;
 	METHOD b isBidirectional ()Z
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 o
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
