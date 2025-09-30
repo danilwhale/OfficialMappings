@@ -1,1 +1,2 @@
 CLASS yk net/minecraft/world/item/MinecartItem$1
+	FIELD b defaultDispenseItemBehavior Lbh;

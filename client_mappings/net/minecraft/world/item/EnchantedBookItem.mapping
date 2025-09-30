@@ -1,2 +1,18 @@
 CLASS xo net/minecraft/world/item/EnchantedBookItem
+	METHOD a createForEnchantment (Laau;Ljava/util/List;)V
+		ARG 1 enchantment
+		ARG 2 items
+	METHOD a createForEnchantment (Labb;)Lye;
+		ARG 1 enchantment
+	METHOD a createForRandomTreasure (Ljava/util/Random;III)Lmk;
+		ARG 1 random
+		ARG 2 min
+		ARG 3 max
+		ARG 4 weight
 	METHOD a addEnchantment (Lye;Labb;)V
+		ARG 1 item
+		ARG 2 enchantment
+	METHOD b createForRandomTreasure (Ljava/util/Random;)Lmk;
+		ARG 1 random
+	METHOD g getEnchantments (Lye;)Lcg;
+		ARG 1 item

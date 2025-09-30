@@ -1,2 +1,6 @@
 CLASS yj net/minecraft/world/item/MinecartItem
+	FIELD a type I
 	FIELD b DISPENSE_ITEM_BEHAVIOR Lbj;
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 type

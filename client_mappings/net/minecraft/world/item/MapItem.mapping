@@ -6,3 +6,6 @@ CLASS yh net/minecraft/world/item/MapItem
 	METHOD a getSavedData (Lye;Labw;)Lali;
 		ARG 1 instance
 		ARG 2 level
+	METHOD a getSavedData (SLabw;)Lali;
+		ARG 0 i
+		ARG 1 level

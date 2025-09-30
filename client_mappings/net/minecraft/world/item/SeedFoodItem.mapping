@@ -1,1 +1,5 @@
 CLASS yv net/minecraft/world/item/SeedFoodItem
+	METHOD <init> (IIFII)V
+		ARG 1 id
+		ARG 2 nutrition
+		ARG 3 saturationModifier

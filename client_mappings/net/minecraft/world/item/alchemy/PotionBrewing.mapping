@@ -1,3 +1,5 @@
 CLASS zp net/minecraft/world/item/alchemy/PotionBrewing
+	METHOD a getColorValue (IZ)I
 	METHOD a getColor (Ljava/util/Collection;)I
 		ARG 0 list
+	METHOD b getEffects (IZ)Ljava/util/List;

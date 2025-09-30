@@ -3,3 +3,4 @@ CLASS yb net/minecraft/world/item/HoeItem
 	METHOD <init> (ILyd;)V
 		ARG 1 id
 		ARG 2 tier
+	METHOD g getTier ()Ljava/lang/String;
