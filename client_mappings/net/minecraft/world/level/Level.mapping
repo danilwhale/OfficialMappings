@@ -66,7 +66,7 @@ CLASS abw net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD D getEntities ()Ljava/util/List;
+	METHOD D getAllEntities ()Ljava/util/List;
 	METHOD D getBestNeighborSignal (III)I
 		ARG 1 x
 		ARG 2 y
