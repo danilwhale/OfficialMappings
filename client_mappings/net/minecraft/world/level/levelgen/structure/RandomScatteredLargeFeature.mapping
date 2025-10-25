@@ -1,4 +1,4 @@
-CLASS ahh net/minecraft/world/level/levelgen/feature/RandomScatteredLargeFeature
+CLASS ahh net/minecraft/world/level/levelgen/structure/RandomScatteredLargeFeature
 	FIELD e biomes Ljava/util/List;
 	FIELD f swamphutEnemies Ljava/util/List;
 	FIELD g distance I
