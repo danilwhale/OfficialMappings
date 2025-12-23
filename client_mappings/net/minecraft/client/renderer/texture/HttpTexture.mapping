@@ -1,0 +1,20 @@
+CLASS bpj net/minecraft/client/renderer/texture/HttpTexture
+	FIELD c LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD d UNIQUE_THREAD_ID Ljava/util/concurrent/atomic/AtomicInteger;
+	FIELD e urlString Ljava/lang/String;
+	FIELD f processor Lblp;
+	FIELD g loadedImage Ljava/awt/image/BufferedImage;
+	FIELD h thread Ljava/lang/Thread;
+	FIELD i uploaded Z
+	METHOD <init> (Ljava/lang/String;Lbqo;Lblp;)V
+		ARG 1 urlString
+		ARG 2 textureId
+		ARG 3 processor
+	METHOD a access$000 (Lbpj;)Ljava/lang/String;
+		ARG 0 this$0
+	METHOD a loadCallback (Ljava/awt/image/BufferedImage;)V
+		ARG 1 loadedImage
+	METHOD b access$100 (Lbpj;)Lblp;
+		ARG 0 this$0
+	METHOD d access$200 ()Lorg/apache/logging/log4j/Logger;
+	METHOD e uploadImage ()V

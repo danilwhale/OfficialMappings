@@ -1,0 +1,19 @@
+CLASS bpp net/minecraft/client/renderer/texture/Stitcher$Slot
+	FIELD a originX I
+	FIELD b originY I
+	FIELD c width I
+	FIELD d height I
+	FIELD e subSlots Ljava/util/List;
+	FIELD f holder Lbpo;
+	METHOD <init> (IIII)V
+		ARG 1 originX
+		ARG 2 originY
+		ARG 3 width
+		ARG 4 height
+	METHOD a getHolder ()Lbpo;
+	METHOD a add (Lbpo;)Z
+		ARG 1 holder
+	METHOD a collectAssignments (Ljava/util/List;)V
+		ARG 1 assignments
+	METHOD b getX ()I
+	METHOD c getY ()I

@@ -2,4 +2,17 @@ CLASS bpr net/minecraft/client/renderer/texture/TextureAtlas
 	FIELD b LOCATION_BLOCKS Lbqo;
 	FIELD c LOCATION_ITEMS Lbqo;
 	FIELD d LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD e animatedTextures Ljava/util/List;
+	FIELD f sprites Ljava/util/Map;
+	FIELD g texturesByName Ljava/util/Map;
+	FIELD i path Ljava/lang/String;
+	FIELD j maxMipLevel I
 	FIELD l missingSprite Lbpv;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 2 path
+	METHOD a getResourceLocation (Lbqo;I)Lbqo;
+		ARG 1 location
+		ARG 2 mipLevel
+	METHOD b stitch (Lbqp;)V
+		ARG 1 resourceManager
+	METHOD d cycleAnimationFrames ()V

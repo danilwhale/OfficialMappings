@@ -1,4 +1,4 @@
-CLASS ps
+CLASS ps net/minecraft/core/Icon
 	METHOD a getWidth ()I
 	METHOD a getU (D)F
 		ARG 1 offset

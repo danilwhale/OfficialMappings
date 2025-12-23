@@ -1,0 +1,3 @@
+CLASS ou net/minecraft/util/Mth
+	METHOD b smallestEncompassingPowerOfTwo (I)I
+	METHOD c log2 (I)I

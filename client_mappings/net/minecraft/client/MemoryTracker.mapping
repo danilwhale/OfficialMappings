@@ -1,0 +1,14 @@
+CLASS azc net/minecraft/client/MemoryTracker
+	FIELD a lists Ljava/util/Map;
+	FIELD b textures Ljava/util/List;
+	METHOD a release ()V
+	METHOD a genLists (I)I
+		ARG 0 count
+	METHOD b releaseLists (I)V
+		ARG 0 lists
+	METHOD c createByteBuffer (I)Ljava/nio/ByteBuffer;
+		ARG 0 size
+	METHOD f createIntBuffer (I)Ljava/nio/IntBuffer;
+		ARG 0 size
+	METHOD h createFloatBuffer (I)Ljava/nio/FloatBuffer;
+		ARG 0 size

@@ -1,0 +1,5 @@
+CLASS bpm net/minecraft/client/renderer/texture/SimpleTexture
+	FIELD b location Lbqo;
+	FIELD c LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD <init> (Lbqo;)V
+		ARG 1 location

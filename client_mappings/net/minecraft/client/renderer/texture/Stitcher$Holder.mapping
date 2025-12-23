@@ -1,0 +1,17 @@
+CLASS bpo net/minecraft/client/renderer/texture/Stitcher$Holder
+	FIELD a sprite Lbpv;
+	FIELD b width I
+	FIELD c height I
+	FIELD e rotated Z
+	FIELD f forcedScale F
+	METHOD <init> (Lbpv;I)V
+		ARG 1 sprite
+	METHOD a getTexture ()Lbpv;
+	METHOD a setForcedScale (I)V
+		ARG 1 forcedScale
+	METHOD b getWidth ()I
+	METHOD c getHeight ()I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 o
+	METHOD d rotate ()V
+	METHOD e isRotated ()Z

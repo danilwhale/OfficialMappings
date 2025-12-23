@@ -1,0 +1,6 @@
+CLASS ayk net/minecraft/world/phys/Vec3
+	FIELD c x D
+	FIELD d y D
+	FIELD e z D
+	METHOD a normalize ()Layk;
+	METHOD a newTemp (DDD)Layk;

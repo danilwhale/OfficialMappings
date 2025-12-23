@@ -1,0 +1,56 @@
+CLASS bqa net/minecraft/client/renderer/texture/TextureUtil
+	FIELD c LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD a generateTextureId ()I
+	METHOD a releaseTextureId (I)V
+		ARG 0 textureId
+	METHOD a prepareImage (IIIIF)V
+	METHOD a alphaBlend (IIIII)I
+		ARG 0 color1
+		ARG 1 color2
+		ARG 2 color3
+		ARG 3 color4
+		ARG 4 shift
+	METHOD a alphaBlend (IIIIZ)I
+		ARG 0 color1
+		ARG 1 color2
+		ARG 2 color3
+		ARG 3 color4
+	METHOD a generateMipLevels (II[[I)[[I
+		ARG 0 width
+		ARG 1 height
+	METHOD a uploadImage (ILjava/awt/image/BufferedImage;)I
+		ARG 0 textureId
+		ARG 1 image
+	METHOD a uploadImage (ILjava/awt/image/BufferedImage;ZZ)I
+		ARG 0 textureId
+		ARG 1 image
+	METHOD a uploadImage (I[III)V
+		ARG 0 textureId
+		ARG 1 image
+		ARG 2 width
+		ARG 3 height
+	METHOD a uploadImageChunked (I[IIIIIZZZ)V
+		ARG 0 texture
+		ARG 1 image
+	METHOD a getPixels (Lbqp;Lbqo;)[I
+		ARG 0 resourceManager
+		ARG 1 location
+	METHOD a setFilter (Z)V
+		ARG 0 clamp
+	METHOD a anaglyph ([I)[I
+		ARG 0 image
+	METHOD a copyToBuffer ([II)V
+		ARG 0 image
+		ARG 1 width
+	METHOD a flipVertical ([III)V
+		ARG 0 image
+		ARG 1 width
+		ARG 2 height
+	METHOD a uploadImageChunked ([[IIIIIZZ)V
+		ARG 0 image
+	METHOD b bind (I)V
+		ARG 0 textureId
+	METHOD b copyToBuffer ([III)V
+		ARG 0 image
+		ARG 1 offset
+		ARG 2 width

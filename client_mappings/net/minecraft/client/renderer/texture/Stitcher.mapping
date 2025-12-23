@@ -1,0 +1,28 @@
+CLASS bpn net/minecraft/client/renderer/texture/Stitcher
+	FIELD a mipLevel I
+	FIELD b texturesToBeStitched Ljava/util/Set;
+	FIELD c storage Ljava/util/List;
+	FIELD d storageX I
+	FIELD e storageY I
+	FIELD f maxWidth I
+	FIELD g maxHeight I
+	METHOD <init> (IIZII)V
+		ARG 1 maxWidth
+		ARG 2 maxHeight
+		ARG 5 mipLevel
+	METHOD a getWidth ()I
+	METHOD a access$000 (II)I
+		ARG 0 input
+		ARG 1 maxMipLevel
+	METHOD a addToStorage (Lbpo;)Z
+		ARG 1 holder
+	METHOD a registerSprite (Lbpv;)V
+		ARG 1 sprite
+	METHOD b getHeight ()I
+	METHOD b smallestFittingMinTexel (II)I
+		ARG 0 input
+		ARG 1 maxMipLevel
+	METHOD b expand (Lbpo;)Z
+		ARG 1 holder
+	METHOD c stitch ()V
+	METHOD d gatherSprites ()Ljava/util/List;

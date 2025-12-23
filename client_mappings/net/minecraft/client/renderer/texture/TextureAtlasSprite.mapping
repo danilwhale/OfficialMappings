@@ -17,7 +17,21 @@ CLASS bpv net/minecraft/client/renderer/texture/TextureAtlasSprite
 		ARG 1 name
 	METHOD a getFrame (I)[[I
 		ARG 1 index
+	METHOD a init (IIIIZ)V
+		ARG 1 atlasWidth
+		ARG 2 atlasHeight
+		ARG 3 x
+		ARG 4 y
+		ARG 5 rotated
+	METHOD a replaceWith (Lbpv;)V
+		ARG 1 sprite
+	METHOD a ([Ljava/awt/image/BufferedImage;Lbrn;Z)V
+		ARG 1 frames
+		ARG 2 metadata
+	METHOD d applyMipmapping (I)V
+		ARG 1 maxMipLevel
 	METHOD h getX ()I
 	METHOD i getY ()I
 	METHOD j cycleFrames ()V
 	METHOD k getFrameCount ()I
+	METHOD m isAnimation ()Z

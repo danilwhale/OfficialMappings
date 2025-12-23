@@ -1,0 +1,17 @@
+CLASS azb net/minecraft/client/Lighting
+	FIELD a lb Ljava/nio/FloatBuffer;
+	FIELD b LIGHT_0 Layk;
+	FIELD c LIGHT_1 Layk;
+	METHOD a turnOff ()V
+	METHOD a createBuffer (DDDD)Ljava/nio/FloatBuffer;
+		ARG 0 a
+		ARG 2 b
+		ARG 4 c
+		ARG 6 d
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+	METHOD b turnOn ()V
+	METHOD c turnOnGui ()V

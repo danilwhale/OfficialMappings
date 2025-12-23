@@ -1,0 +1,4 @@
+CLASS ayj net/minecraft/world/phys/HitResult$Type
+	FIELD a MISS Layj;
+	FIELD b BLOCK Layj;
+	FIELD c ENTITY Layj;

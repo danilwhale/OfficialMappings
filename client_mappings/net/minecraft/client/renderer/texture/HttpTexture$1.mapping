@@ -1,0 +1,6 @@
+CLASS bpk net/minecraft/client/renderer/texture/HttpTexture$1
+	FIELD a this$0 Lbpj;
+	METHOD <init> (Lbpj;Ljava/lang/String;)V
+		ARG 1 this$0
+		ARG 2 name
+	METHOD run run ()V

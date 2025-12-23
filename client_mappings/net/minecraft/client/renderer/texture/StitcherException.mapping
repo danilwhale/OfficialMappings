@@ -1,0 +1,4 @@
+CLASS bpq net/minecraft/client/renderer/texture/StitcherException
+	METHOD <init> (Lbpo;Ljava/lang/String;)V
+		ARG 1 sprite
+		ARG 2 message
