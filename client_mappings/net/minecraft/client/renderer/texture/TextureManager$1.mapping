@@ -1,1 +1,7 @@
 CLASS bpy net/minecraft/client/renderer/texture/TextureManager$1
+	FIELD a val$texture Lbpz;
+	FIELD b this$0 Lbpx;
+	METHOD <init> (Lbpx;Lbpz;)V
+		ARG 1 this$0
+		ARG 2 val$texture
+	METHOD call call ()Ljava/lang/Object;

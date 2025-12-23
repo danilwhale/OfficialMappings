@@ -1,6 +1,8 @@
 CLASS bpx net/minecraft/client/renderer/texture/TextureManager
 	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD b byPath Ljava/util/Map;
 	FIELD d tickableTextures Ljava/util/List;
+	FIELD e prefixRegister Ljava/util/Map;
 	FIELD f resourceManager Lbqp;
 	METHOD <init> (Lbqp;)V
 		ARG 1 resourceManager
@@ -12,3 +14,10 @@ CLASS bpx net/minecraft/client/renderer/texture/TextureManager
 	METHOD a register (Lbqo;Lbqc;)Z
 		ARG 1 location
 		ARG 2 tickableTexture
+	METHOD a register (Ljava/lang/String;Lbpi;)Lbqo;
+		ARG 1 location
+		ARG 2 dynamicTexture
+	METHOD b getTexture (Lbqo;)Lbpz;
+		ARG 1 location
+	METHOD c release (Lbqo;)V
+		ARG 1 location

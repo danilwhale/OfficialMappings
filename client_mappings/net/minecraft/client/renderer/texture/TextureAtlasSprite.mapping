@@ -25,10 +25,10 @@ CLASS bpv net/minecraft/client/renderer/texture/TextureAtlasSprite
 		ARG 5 rotated
 	METHOD a replaceWith (Lbpv;)V
 		ARG 1 sprite
-	METHOD a ([Ljava/awt/image/BufferedImage;Lbrn;Z)V
+	METHOD a loadData ([Ljava/awt/image/BufferedImage;Lbrn;Z)V
 		ARG 1 frames
 		ARG 2 metadata
-	METHOD d applyMipmapping (I)V
+	METHOD d generateMipLevels (I)V
 		ARG 1 maxMipLevel
 	METHOD h getX ()I
 	METHOD i getY ()I

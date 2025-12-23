@@ -3,7 +3,13 @@ CLASS bqa net/minecraft/client/renderer/texture/TextureUtil
 	METHOD a generateTextureId ()I
 	METHOD a releaseTextureId (I)V
 		ARG 0 textureId
+	METHOD a prepareImage (III)V
 	METHOD a prepareImage (IIIIF)V
+		ARG 0 textureId
+		ARG 1 maxMipLevels
+		ARG 2 width
+		ARG 3 height
+		ARG 4 maxAnisotropy
 	METHOD a alphaBlend (IIIII)I
 		ARG 0 color1
 		ARG 1 color2
@@ -18,6 +24,7 @@ CLASS bqa net/minecraft/client/renderer/texture/TextureUtil
 	METHOD a generateMipLevels (II[[I)[[I
 		ARG 0 width
 		ARG 1 height
+		ARG 2 frames
 	METHOD a uploadImage (ILjava/awt/image/BufferedImage;)I
 		ARG 0 textureId
 		ARG 1 image
@@ -30,12 +37,19 @@ CLASS bqa net/minecraft/client/renderer/texture/TextureUtil
 		ARG 2 width
 		ARG 3 height
 	METHOD a uploadImageChunked (I[IIIIIZZZ)V
-		ARG 0 texture
+		ARG 0 mipLevel
 		ARG 1 image
+		ARG 2 width
+		ARG 3 height
+		ARG 4 x
+		ARG 5 y
+		ARG 6 filter
+		ARG 7 clamp
+		ARG 8 mipmaps
 	METHOD a getPixels (Lbqp;Lbqo;)[I
 		ARG 0 resourceManager
 		ARG 1 location
-	METHOD a setFilter (Z)V
+	METHOD a setClamp (Z)V
 		ARG 0 clamp
 	METHOD a anaglyph ([I)[I
 		ARG 0 image
@@ -48,8 +62,19 @@ CLASS bqa net/minecraft/client/renderer/texture/TextureUtil
 		ARG 2 height
 	METHOD a uploadImageChunked ([[IIIIIZZ)V
 		ARG 0 image
+		ARG 1 width
+		ARG 2 height
+		ARG 3 x
+		ARG 4 y
+		ARG 5 filter
+		ARG 6 clamp
 	METHOD b bind (I)V
 		ARG 0 textureId
+	METHOD b setFilter (Z)V
+		ARG 0 filter
+	METHOD b setFilter (ZZ)V
+		ARG 0 filter
+		ARG 1 mipmaps
 	METHOD b copyToBuffer ([III)V
 		ARG 0 image
 		ARG 1 offset

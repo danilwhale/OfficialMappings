@@ -1,1 +1,7 @@
 CLASS bpw net/minecraft/client/renderer/texture/TextureAtlasSprite$1
+	FIELD a val$frames [[I
+	FIELD b this$0 Lbpv;
+	METHOD <init> (Lbpv;[[I)V
+		ARG 1 this$0
+		ARG 2 val$frames
+	METHOD call call ()Ljava/lang/Object;

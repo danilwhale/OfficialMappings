@@ -1,1 +1,7 @@
 CLASS bpt net/minecraft/client/renderer/texture/TextureAtlas$2
+	FIELD a val$sprite Lbpv;
+	FIELD b this$0 Lbpr;
+	METHOD <init> (Lbpr;Lbpv;)V
+		ARG 1 this$0
+		ARG 2 val$sprite
+	METHOD call call ()Ljava/lang/Object;
