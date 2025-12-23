@@ -1,0 +1,6 @@
+CLASS bqy net/minecraft/client/resources/SimpleReloadableResourceManager$1
+	FIELD a this$0 Lbqx;
+	METHOD <init> (Lbqx;)V
+		ARG 1 this$0
+	METHOD apply apply (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 input

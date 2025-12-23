@@ -1,0 +1,18 @@
+CLASS dd net/minecraft/locale/Language
+	FIELD a UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
+	FIELD c instance Ldd;
+	FIELD d storage Ljava/util/Map;
+	FIELD e lastUpdateTime J
+	METHOD a getInstance ()Ldd;
+	METHOD a getElement (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 elementId
+	METHOD a getElement (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 elementId
+		ARG 2 objects
+	METHOD a forceData (Ljava/util/Map;)V
+		ARG 0 data
+	METHOD b exists (Ljava/lang/String;)Z
+		ARG 1 elementId
+	METHOD c getLastUpdateTime ()J
+	METHOD c getProperty (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 elementId

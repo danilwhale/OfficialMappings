@@ -1,0 +1,2 @@
+CLASS brg net/minecraft/client/resources/metadata/MetadataSectionSerializer
+	METHOD a getMetadataSectionName ()Ljava/lang/String;

@@ -1,0 +1,12 @@
+CLASS ps
+	METHOD a getWidth ()I
+	METHOD a getU (D)F
+		ARG 1 offset
+	METHOD b getHeight ()I
+	METHOD b getV (D)F
+		ARG 1 offset
+	METHOD c getU0 ()F
+	METHOD d getU1 ()F
+	METHOD e getV0 ()F
+	METHOD f getV1 ()F
+	METHOD g getName ()Ljava/lang/String;

@@ -1,0 +1,4 @@
+CLASS brj net/minecraft/client/resources/metadata/MetadataSerializer$Registration
+	FIELD c this$0 Lbrh;
+	METHOD <init> (Lbrh;Lbrg;Ljava/lang/Class;)V
+		ARG 1 this$0

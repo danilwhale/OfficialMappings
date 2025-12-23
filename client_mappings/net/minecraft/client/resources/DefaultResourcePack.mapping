@@ -1,0 +1,2 @@
+CLASS bqg net/minecraft/client/resources/DefaultResourcePack
+	FIELD a namespaces Ljava/util/Set;

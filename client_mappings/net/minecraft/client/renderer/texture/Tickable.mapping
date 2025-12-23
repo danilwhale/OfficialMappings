@@ -1,0 +1,2 @@
+CLASS bqb net/minecraft/client/renderer/texture/Tickable
+	METHOD e tick ()V

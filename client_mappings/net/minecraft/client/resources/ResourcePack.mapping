@@ -1,0 +1,10 @@
+CLASS bqr net/minecraft/client/resources/ResourcePack
+	METHOD a getResource (Lbqo;)Ljava/io/InputStream;
+		ARG 1 location
+	METHOD a getMetadataSection (Lbrh;Ljava/lang/String;)Lbrf;
+		ARG 1 serializer
+		ARG 2 sectionName
+	METHOD b getName ()Ljava/lang/String;
+	METHOD b hasResource (Lbqo;)Z
+		ARG 1 location
+	METHOD c getNamespaces ()Ljava/util/Set;

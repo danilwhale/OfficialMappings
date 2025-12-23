@@ -1,0 +1,15 @@
+CLASS brd net/minecraft/client/resources/language/Locale
+	FIELD a storage Ljava/util/Map;
+	FIELD c UNSUPPORTED_FORMAT_PATTERN Ljava/util/regex/Pattern;
+	METHOD a loadFrom (Lbqp;Ljava/util/List;)V
+		ARG 1 resourceManager
+		ARG 2 languages
+	METHOD a appendFrom (Ljava/io/InputStream;)V
+		ARG 1 stream
+	METHOD a get (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 elementId
+		ARG 2 objects
+	METHOD a appendFrom (Ljava/util/List;)V
+		ARG 1 resources
+	METHOD b getOrDefault (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 elementId

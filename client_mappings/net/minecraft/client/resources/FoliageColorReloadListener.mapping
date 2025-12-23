@@ -1,0 +1,2 @@
+CLASS bqk net/minecraft/client/resources/FoliageColorReloadListener
+	FIELD a LOCATION Lbqo;

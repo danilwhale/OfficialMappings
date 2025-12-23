@@ -1,0 +1,4 @@
+CLASS azd net/minecraft/client/Minecraft
+	FIELD G LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD b reserve [B
+	METHOD e run ()V

@@ -1,0 +1,6 @@
+CLASS bqw net/minecraft/client/resources/ResourcePackRepository$Entry
+	FIELD a this$0 Lbqt;
+	FIELD f iconLocation Lbqo;
+	METHOD <init> (Lbqt;Ljava/io/File;)V
+		ARG 1 this$0
+	METHOD a bindIcon (Lbpx;)V

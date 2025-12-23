@@ -1,0 +1,3 @@
+CLASS bph net/minecraft/client/renderer/texture/AbstractTexture
+	FIELD a id I
+	METHOD c releaseId ()V

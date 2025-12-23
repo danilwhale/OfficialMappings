@@ -1,0 +1,11 @@
+CLASS bqz net/minecraft/client/resources/SimpleResource
+	FIELD b location Lbqo;
+	FIELD c resourceStream Ljava/io/InputStream;
+	FIELD d metadataStream Ljava/io/InputStream;
+	FIELD f triedMetadata Z
+	FIELD g metadata Lcom/google/gson/JsonObject;
+	METHOD <init> (Lbqo;Ljava/io/InputStream;Ljava/io/InputStream;Lbrh;)V
+		ARG 1 location
+		ARG 2 resourceStream
+		ARG 3 metadataStream
+		ARG 4 serializer

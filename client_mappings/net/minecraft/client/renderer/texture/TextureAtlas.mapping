@@ -1,0 +1,5 @@
+CLASS bpr net/minecraft/client/renderer/texture/TextureAtlas
+	FIELD b LOCATION_BLOCKS Lbqo;
+	FIELD c LOCATION_ITEMS Lbqo;
+	FIELD d LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD l missingSprite Lbpv;

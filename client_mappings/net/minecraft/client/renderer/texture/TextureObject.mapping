@@ -1,0 +1,4 @@
+CLASS bpz net/minecraft/client/renderer/texture/TextureObject
+	METHOD a load (Lbqp;)V
+		ARG 1 resourceManager
+	METHOD b getId ()I

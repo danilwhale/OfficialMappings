@@ -1,0 +1,7 @@
+CLASS bra net/minecraft/client/resources/language/I18n
+	FIELD a locale Lbrd;
+	METHOD a setLocale (Lbrd;)V
+		ARG 0 locale
+	METHOD a get (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 0 id
+		ARG 1 args

@@ -1,0 +1,5 @@
+CLASS brr net/minecraft/client/resources/metadata/language/LanguageMetadataSection
+	FIELD a languages Ljava/util/Collection;
+	METHOD <init> (Ljava/util/Collection;)V
+		ARG 1 languages
+	METHOD a getLanguages ()Ljava/util/Collection;

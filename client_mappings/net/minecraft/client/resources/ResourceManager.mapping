@@ -1,0 +1,6 @@
+CLASS bqp net/minecraft/client/resources/ResourceManager
+	METHOD a getNamespaces ()Ljava/util/Set;
+	METHOD a getResource (Lbqo;)Lbqn;
+		ARG 1 location
+	METHOD b getResources (Lbqo;)Ljava/util/List;
+		ARG 1 location

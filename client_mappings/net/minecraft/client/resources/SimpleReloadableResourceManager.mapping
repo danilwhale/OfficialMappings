@@ -1,0 +1,10 @@
+CLASS bqx net/minecraft/client/resources/SimpleReloadableResourceManager
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD c namespacedPacks Ljava/util/Map;
+	FIELD d listeners Ljava/util/List;
+	FIELD e namespaces Ljava/util/Set;
+	METHOD <init> (Lbrh;)V
+		ARG 1 serializer
+	METHOD a add (Lbqr;)V
+		ARG 1 pack
+	METHOD b clear ()V

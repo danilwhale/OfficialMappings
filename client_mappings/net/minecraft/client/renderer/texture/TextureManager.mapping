@@ -1,0 +1,7 @@
+CLASS bpx net/minecraft/client/renderer/texture/TextureManager
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD f resourceManager Lbqp;
+	METHOD <init> (Lbqp;)V
+		ARG 1 resourceManager
+	METHOD a bind (Lbqo;)V
+		ARG 1 textureId

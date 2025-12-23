@@ -1,0 +1,15 @@
+CLASS brc net/minecraft/client/resources/language/LanguageManager
+	FIELD a LOCALE Lbrd;
+	FIELD b LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD d currentCode Ljava/lang/String;
+	FIELD e languages Ljava/util/Map;
+	METHOD <init> (Lbrh;Ljava/lang/String;)V
+		ARG 1 serializer
+		ARG 2 languageCode
+	METHOD a setSelected (Lbrb;)V
+		ARG 1 code
+	METHOD a reload (Ljava/util/List;)V
+		ARG 1 packs
+	METHOD b isBidirectional ()Z
+	METHOD c getSelected ()Lbrb;
+	METHOD d getLanguages ()Ljava/util/SortedSet;

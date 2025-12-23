@@ -1,0 +1,8 @@
+CLASS bqh net/minecraft/client/resources/FallbackResourceManager
+	FIELD a fallbacks Ljava/util/List;
+	METHOD <init> (Lbrh;)V
+		ARG 1 serializer
+	METHOD a add (Lbqr;)V
+		ARG 1 pack
+	METHOD c getMetadataLocation (Lbqo;)Lbqo;
+		ARG 0 location

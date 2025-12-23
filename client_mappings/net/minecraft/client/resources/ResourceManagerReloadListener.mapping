@@ -1,0 +1,3 @@
+CLASS bqq net/minecraft/client/resources/ResourceManagerReloadListener
+	METHOD a onResourceManagerReload (Lbqp;)V
+		ARG 1 resourceManager

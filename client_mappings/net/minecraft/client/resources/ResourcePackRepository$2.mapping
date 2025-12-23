@@ -1,0 +1,4 @@
+CLASS bqv net/minecraft/client/resources/ResourcePackRepository$2
+	FIELD a this$0 Lbqt;
+	METHOD <init> (Lbqt;)V
+		ARG 1 this$0
