@@ -1,0 +1,21 @@
+CLASS om net/minecraft/util/InsensitiveStringMap
+	FIELD a map Ljava/util/Map;
+	METHOD clear clear ()V
+	METHOD containsKey containsKey (Ljava/lang/Object;)Z
+		ARG 1 key
+	METHOD containsValue containsValue (Ljava/lang/Object;)Z
+		ARG 1 value
+	METHOD entrySet entrySet ()Ljava/util/Set;
+	METHOD get get (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 key
+	METHOD isEmpty isEmpty ()Z
+	METHOD keySet keySet ()Ljava/util/Set;
+	METHOD put put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 key
+		ARG 2 value
+	METHOD putAll putAll (Ljava/util/Map;)V
+		ARG 1 m
+	METHOD remove remove (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 key
+	METHOD size size ()I
+	METHOD values values ()Ljava/util/Collection;

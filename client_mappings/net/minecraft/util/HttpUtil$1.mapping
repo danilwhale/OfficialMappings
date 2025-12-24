@@ -1,0 +1,15 @@
+CLASS ok net/minecraft/util/HttpUtil$1
+	FIELD a val$listener Lox;
+	FIELD b val$url Ljava/lang/String;
+	FIELD c val$proxy Ljava/net/Proxy;
+	FIELD d val$headers Ljava/util/Map;
+	FIELD e val$targetDir Ljava/io/File;
+	FIELD g val$maxSize I
+	METHOD <init> (Lox;Ljava/lang/String;Ljava/net/Proxy;Ljava/util/Map;Ljava/io/File;Lol;I)V
+		ARG 1 val$listener
+		ARG 2 val$url
+		ARG 3 val$proxy
+		ARG 4 val$headers
+		ARG 5 val$targetDir
+		ARG 7 val$maxSize
+	METHOD run run ()V

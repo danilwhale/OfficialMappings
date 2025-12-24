@@ -1,0 +1,9 @@
+CLASS os net/minecraft/util/LowerCaseEnumTypeAdapterFactory
+	METHOD a toLowercase (Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 value
+	METHOD a access$000 (Los;Ljava/lang/Object;)Ljava/lang/String;
+		ARG 0 this$0
+		ARG 1 value
+	METHOD create create (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
+		ARG 1 gson
+		ARG 2 type

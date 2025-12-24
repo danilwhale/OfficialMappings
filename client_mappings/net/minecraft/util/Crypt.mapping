@@ -1,0 +1,32 @@
+CLASS oh net/minecraft/util/Crypt
+	METHOD a generateSecretKey ()Ljavax/crypto/SecretKey;
+	METHOD a setupCipher (ILjava/lang/String;Ljava/security/Key;)Ljavax/crypto/Cipher;
+		ARG 0 cipherOpMode
+		ARG 1 algorithm
+		ARG 2 key
+	METHOD a getCipher (ILjava/security/Key;)Ljavax/crypto/Cipher;
+		ARG 0 opMode
+		ARG 1 key
+	METHOD a cipherData (ILjava/security/Key;[B)[B
+		ARG 0 cipherOpMode
+		ARG 1 key
+		ARG 2 input
+	METHOD a digestData (Ljava/lang/String;Ljava/security/PublicKey;Ljavax/crypto/SecretKey;)[B
+		ARG 0 serverId
+		ARG 1 publicKey
+		ARG 2 sharedKey
+	METHOD a digestData (Ljava/lang/String;[[B)[B
+		ARG 0 algorithm
+		ARG 1 inputs
+	METHOD a encryptUsingKey (Ljava/security/Key;[B)[B
+		ARG 0 key
+		ARG 1 input
+	METHOD a decryptByteToSecretKey (Ljava/security/PrivateKey;[B)Ljavax/crypto/SecretKey;
+		ARG 0 privateKey
+		ARG 1 keyData
+	METHOD a byteToPublicKey ([B)Ljava/security/PublicKey;
+		ARG 0 keyData
+	METHOD b generateKeyPair ()Ljava/security/KeyPair;
+	METHOD b decryptUsingKey (Ljava/security/Key;[B)[B
+		ARG 0 key
+		ARG 1 input

@@ -1,0 +1,12 @@
+CLASS or net/minecraft/util/LongHashMap$Entry
+	FIELD a key J
+	FIELD b value Ljava/lang/Object;
+	FIELD c next Lor;
+	FIELD d hash I
+	METHOD <init> (IJLjava/lang/Object;Lor;)V
+		ARG 1 h
+		ARG 2 k
+		ARG 4 v
+		ARG 5 n
+	METHOD a getKey ()J
+	METHOD b getValue ()Ljava/lang/Object;

@@ -1,0 +1,11 @@
+CLASS oj net/minecraft/util/HttpUtil
+	FIELD b LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD a getAvailablePort ()I
+	METHOD a downloadTo (Ljava/io/File;Ljava/lang/String;Lol;Ljava/util/Map;ILox;Ljava/net/Proxy;)V
+		ARG 0 targetDir
+		ARG 1 url
+		ARG 3 headers
+		ARG 4 maxSize
+		ARG 5 listener
+		ARG 6 proxy
+	METHOD b access$000 ()Lorg/apache/logging/log4j/Logger;

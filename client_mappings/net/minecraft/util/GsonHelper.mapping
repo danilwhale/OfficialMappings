@@ -1,1 +1,74 @@
 CLASS oi net/minecraft/util/GsonHelper
+	METHOD a isStringValue (Lcom/google/gson/JsonElement;)Z
+		ARG 0 node
+	METHOD a convertToString (Lcom/google/gson/JsonElement;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 element
+		ARG 1 name
+	METHOD a isStringValue (Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+		ARG 0 node
+		ARG 1 name
+	METHOD a getAsFloat (Lcom/google/gson/JsonObject;Ljava/lang/String;F)F
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD a getAsInt (Lcom/google/gson/JsonObject;Ljava/lang/String;I)I
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD a getAsJsonArray (Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD a getAsJsonObject (Lcom/google/gson/JsonObject;Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD a getAsString (Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD a getAsBoolean (Lcom/google/gson/JsonObject;Ljava/lang/String;Z)Z
+		ARG 0 object
+		ARG 1 name
+		ARG 2 def
+	METHOD b convertToBoolean (Lcom/google/gson/JsonElement;Ljava/lang/String;)Z
+		ARG 0 element
+		ARG 1 name
+	METHOD d getType (Lcom/google/gson/JsonElement;)Ljava/lang/String;
+		ARG 0 name
+	METHOD d convertToFloat (Lcom/google/gson/JsonElement;Ljava/lang/String;)F
+		ARG 0 element
+		ARG 1 name
+	METHOD d isArrayNode (Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+		ARG 0 node
+		ARG 1 name
+	METHOD f convertToInt (Lcom/google/gson/JsonElement;Ljava/lang/String;)I
+		ARG 0 element
+		ARG 1 name
+	METHOD f isValidPrimitive (Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+		ARG 0 node
+		ARG 1 name
+	METHOD g isValidNode (Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+		ARG 0 node
+		ARG 1 name
+	METHOD h getAsString (Lcom/google/gson/JsonObject;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 object
+		ARG 1 name
+	METHOD i getAsBoolean (Lcom/google/gson/JsonObject;Ljava/lang/String;)Z
+		ARG 0 object
+		ARG 1 name
+	METHOD k getAsFloat (Lcom/google/gson/JsonObject;Ljava/lang/String;)F
+		ARG 0 object
+		ARG 1 name
+	METHOD l convertToJsonObject (Lcom/google/gson/JsonElement;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+		ARG 0 element
+		ARG 1 name
+	METHOD m convertToJsonArray (Lcom/google/gson/JsonElement;Ljava/lang/String;)Lcom/google/gson/JsonArray;
+		ARG 0 element
+		ARG 1 name
+	METHOD m getAsInt (Lcom/google/gson/JsonObject;Ljava/lang/String;)I
+		ARG 0 object
+		ARG 1 name
+	METHOD t getAsJsonArray (Lcom/google/gson/JsonObject;Ljava/lang/String;)Lcom/google/gson/JsonArray;
+		ARG 0 object
+		ARG 1 name

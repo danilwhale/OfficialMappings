@@ -1,0 +1,38 @@
+CLASS oq net/minecraft/util/LongHashMap
+	FIELD a table [Lor;
+	FIELD b size I
+	FIELD c threshold I
+	FIELD d loadFactor F
+	FIELD e modCount I
+	METHOD a size ()I
+	METHOD a hash (I)I
+		ARG 0 h
+	METHOD a indexFor (II)I
+		ARG 0 h
+		ARG 1 length
+	METHOD a addEntry (IJLjava/lang/Object;I)V
+		ARG 1 hash
+		ARG 2 key
+		ARG 4 value
+		ARG 5 bucketIndex
+	METHOD a get (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD a put (JLjava/lang/Object;)V
+		ARG 1 key
+		ARG 3 value
+	METHOD a transfer ([Lor;)V
+		ARG 1 newTable
+	METHOD b resize (I)V
+		ARG 1 newCapacity
+	METHOD b containsKey (J)Z
+		ARG 1 key
+	METHOD c getEntry (J)Lor;
+		ARG 1 key
+	METHOD d remove (J)Ljava/lang/Object;
+		ARG 1 key
+	METHOD e removeEntryForKey (J)Lor;
+		ARG 1 key
+	METHOD f access$000 (J)I
+		ARG 0 h
+	METHOD g hash (J)I
+		ARG 0 h

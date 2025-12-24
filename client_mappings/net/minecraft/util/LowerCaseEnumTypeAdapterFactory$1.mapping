@@ -1,0 +1,11 @@
+CLASS ot net/minecraft/util/LowerCaseEnumTypeAdapterFactory$1
+	FIELD a val$enums Ljava/util/Map;
+	FIELD b this$0 Los;
+	METHOD <init> (Los;Ljava/util/Map;)V
+		ARG 1 this$0
+		ARG 2 val$enums
+	METHOD read read (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
+		ARG 1 reader
+	METHOD write write (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
+		ARG 1 writer
+		ARG 2 value
