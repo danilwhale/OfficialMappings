@@ -1,1 +1,77 @@
 CLASS ayf net/minecraft/world/phys/AABB
+	COMMENT axis aligned boundry box
+	FIELD a x0 D
+	FIELD b y0 D
+	FIELD c z0 D
+	FIELD d x1 D
+	FIELD e y1 D
+	FIELD f z1 D
+	METHOD <init> (DDDDDD)V
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD a expand (DDD)Layf;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD a newPermanent (DDDDDD)Layf;
+		ARG 0 x0
+		ARG 2 y0
+		ARG 4 z0
+		ARG 6 x1
+		ARG 8 y1
+		ARG 10 z1
+	METHOD a minmax (Layf;)Layf;
+		ARG 1 other
+	METHOD a clipXCollide (Layf;D)D
+		ARG 1 c
+		ARG 2 xa
+	METHOD a contains (Layk;)Z
+		ARG 1 vec
+	METHOD a clip (Layk;Layk;)Layi;
+		ARG 1 from
+		ARG 2 to
+	METHOD b getSize ()D
+	METHOD b grow (DDD)Layf;
+		ARG 1 xAdd
+		ARG 3 yAdd
+		ARG 5 zAdd
+	METHOD b set (DDDDDD)Layf;
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD b intersects (Layf;)Z
+		ARG 1 c
+	METHOD b clipYCollide (Layf;D)D
+		ARG 1 c
+		ARG 2 ya
+	METHOD b containsX (Layk;)Z
+		ARG 1 vec
+	METHOD c copy ()Layf;
+	METHOD c cloneMove (DDD)Layf;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD c clipZCollide (Layf;D)D
+		ARG 1 c
+		ARG 2 za
+	METHOD c containsY (Layk;)Z
+		ARG 1 vec
+	METHOD d move (DDD)Layf;
+		ARG 1 xa
+		ARG 3 ya
+		ARG 5 za
+	METHOD d set (Layf;)V
+		ARG 1 other
+	METHOD d containsZ (Layk;)Z
+		ARG 1 vec
+	METHOD e shrink (DDD)Layf;
+		ARG 1 xSubtract
+		ARG 3 ySubtract
+		ARG 5 zSubtract

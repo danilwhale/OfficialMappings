@@ -1,0 +1,2 @@
+CLASS ayg net/minecraft/world/phys/AABB$1
+	METHOD initialValue initialValue ()Ljava/lang/Object;

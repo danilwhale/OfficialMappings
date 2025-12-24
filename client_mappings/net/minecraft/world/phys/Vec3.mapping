@@ -2,5 +2,50 @@ CLASS ayk net/minecraft/world/phys/Vec3
 	FIELD c x D
 	FIELD d y D
 	FIELD e z D
+	METHOD <init> (Layl;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
 	METHOD a normalize ()Layk;
-	METHOD a newTemp (DDD)Layk;
+	METHOD a newPermanent (DDD)Layk;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD a xRot (F)V
+		ARG 1 radians
+	METHOD a vectorTo (Layk;)Layk;
+		ARG 1 vec
+	METHOD b length ()D
+	METHOD b set (DDD)Layk;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b yRot (F)V
+		ARG 1 radians
+	METHOD b dot (Layk;)D
+		ARG 1 vec
+	METHOD b clipX (Layk;D)Layk;
+		ARG 1 vec
+		ARG 2 x
+	METHOD c add (DDD)Layk;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD c zRot (F)V
+		ARG 1 radians
+	METHOD c cross (Layk;)Layk;
+		ARG 1 vec
+	METHOD c clipY (Layk;D)Layk;
+		ARG 1 vec
+		ARG 2 y
+	METHOD d distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD d distanceTo (Layk;)D
+		ARG 1 vec
+	METHOD d clipZ (Layk;D)Layk;
+		ARG 1 vec
+		ARG 2 z
+	METHOD e distanceToSqr (Layk;)D
+		ARG 1 vec
