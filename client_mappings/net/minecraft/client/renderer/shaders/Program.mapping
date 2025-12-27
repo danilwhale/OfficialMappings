@@ -1,0 +1,18 @@
+CLASS bpd net/minecraft/client/renderer/shaders/Program
+	FIELD a type Lbpe;
+	FIELD b name Ljava/lang/String;
+	FIELD c id I
+	FIELD d references I
+	METHOD <init> (Lbpe;ILjava/lang/String;)V
+		ARG 1 type
+		ARG 2 id
+		ARG 3 name
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a attachToEffect (Lbpa;)V
+		ARG 1 effect
+	METHOD a getOrCreate (Lbqp;Lbpe;Ljava/lang/String;)Lbpd;
+		ARG 0 resourceManager
+		ARG 1 type
+		ARG 2 name
+	METHOD b close (Lbpa;)V
+		ARG 1 effect

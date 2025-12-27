@@ -1,1 +1,22 @@
 CLASS bul net/minecraft/client/util/GLX
+	FIELD a isOpenGl21 Z
+	FIELD b GL_TEXTURE0 I
+	FIELD c GL_TEXTURE1 I
+	FIELD f useFbo Z
+	FIELD g usePostProcess Z
+	FIELD h useMultitextureArb Z
+	METHOD a init ()V
+	METHOD a glActiveTexture (I)V
+		ARG 0 texture
+	METHOD a glMultiTexCoord2f (IFF)V
+		ARG 0 texture
+		ARG 1 u
+		ARG 2 v
+	METHOD a glBlendFuncSeparate (IIII)V
+		ARG 0 srcRgb
+		ARG 1 dstRgb
+		ARG 2 srcAlpha
+		ARG 3 dstAlpha
+	METHOD b isUsingFBOs ()Z
+	METHOD b glClientActiveTexture (I)V
+		ARG 0 texture

@@ -1,0 +1,4 @@
+CLASS bll net/minecraft/client/renderer/GameRenderer
+	FIELD q LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD r RAIN_LOCATION Lbqo;
+	FIELD s SUN_LOCATION Lbqo;

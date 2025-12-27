@@ -1,0 +1,10 @@
+CLASS bmk net/minecraft/client/renderer/blockentity/SkullBlockRenderer
+	FIELD b instance Lbmk;
+	METHOD a renderSkull (FFFIFILjava/lang/String;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+		ARG 5 rot
+		ARG 6 type
+		ARG 7 name

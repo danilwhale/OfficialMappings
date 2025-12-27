@@ -1,0 +1,10 @@
+CLASS bml net/minecraft/client/renderer/blockentity/TheEndPortalRenderer
+	FIELD b buffer Ljava/nio/FloatBuffer;
+	FIELD c END_SKY_LOCATION Lbqo;
+	FIELD d END_PORTAL_LOCATION Lbqo;
+	FIELD e RANDOM Ljava/util/Random;
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d

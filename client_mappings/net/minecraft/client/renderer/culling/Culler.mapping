@@ -1,0 +1,7 @@
+CLASS bmn net/minecraft/client/renderer/culling/Culler
+	METHOD a prepare (DDD)V
+		ARG 1 camX
+		ARG 3 camY
+		ARG 5 camZ
+	METHOD a isVisible (Layf;)Z
+		ARG 1 bb

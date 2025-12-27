@@ -1,0 +1,38 @@
+CLASS bly net/minecraft/client/renderer/RenderTarget
+	FIELD a width I
+	FIELD b height I
+	FIELD c viewWidth I
+	FIELD d viewHeight I
+	FIELD e useDepth Z
+	FIELD f frameBufferId I
+	FIELD g colorTextureId I
+	FIELD h depthBufferId I
+	FIELD i clearChannels [F
+	FIELD j filterMode I
+	METHOD <init> (IIZ)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 useDepth
+	METHOD a destroyBuffers ()V
+	METHOD a setClearColor (FFFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
+	METHOD a setFilterMode (I)V
+		ARG 1 filterMode
+	METHOD a resize (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD a bindWrite (Z)V
+	METHOD b checkStatus ()V
+	METHOD b createBuffers (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD c bindRead ()V
+	METHOD c blitToScreen (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD d unbindRead ()V
+	METHOD e unbindWrite ()V
+	METHOD f clear ()V

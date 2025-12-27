@@ -1,0 +1,42 @@
+CLASS bpa net/minecraft/client/renderer/shaders/Effect
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD b DUMMY_UNIFORM Lboz;
+	FIELD c lastAppliedEffect Lbpa;
+	FIELD d lastProgramId I
+	FIELD f samplerMap Ljava/util/Map;
+	FIELD g samplerNames Ljava/util/List;
+	FIELD h samplerLocations Ljava/util/List;
+	FIELD i uniforms Ljava/util/List;
+	FIELD j uniformLocations Ljava/util/List;
+	FIELD k uniformMap Ljava/util/Map;
+	FIELD l programId I
+	FIELD m name Ljava/lang/String;
+	FIELD n cull Z
+	FIELD o dirty Z
+	FIELD p blend Lboy;
+	FIELD q attributes Ljava/util/List;
+	FIELD r attributeNames Ljava/util/List;
+	FIELD s vertexProgram Lbpd;
+	FIELD t fragmentProgram Lbpd;
+	METHOD <init> (Lbqp;Ljava/lang/String;)V
+		ARG 1 resourceManager
+		ARG 2 name
+	METHOD a close ()V
+	METHOD a parseSamplerNode (Lcom/google/gson/JsonElement;)V
+		ARG 1 node
+	METHOD a getUniform (Ljava/lang/String;)Lbpg;
+		ARG 1 name
+	METHOD a setSampler (Ljava/lang/String;Ljava/lang/Object;)V
+		ARG 1 name
+		ARG 2 value
+	METHOD b clear ()V
+	METHOD b parseUniformNode (Lcom/google/gson/JsonElement;)V
+		ARG 1 node
+	METHOD b safeGetUniform (Ljava/lang/String;)Lbpg;
+		ARG 1 name
+	METHOD c apply ()V
+	METHOD d markDirty ()V
+	METHOD e getVertexProgram ()Lbpd;
+	METHOD f getFragmentProgram ()Lbpd;
+	METHOD h getId ()I
+	METHOD i uploadLocations ()V

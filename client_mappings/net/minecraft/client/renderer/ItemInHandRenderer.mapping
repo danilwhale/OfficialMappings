@@ -1,0 +1,38 @@
+CLASS blq net/minecraft/client/renderer/ItemInHandRenderer
+	FIELD b MAP_BACKGROUND_LOCATION Lbqo;
+	FIELD c UNDERWATER_LOCATION Lbqo;
+	FIELD d mc Lazd;
+	FIELD e selectedItem Labp;
+	FIELD f height F
+	FIELD g oHeight F
+	FIELD h tileRenderer Lble;
+	FIELD i lastSlot I
+	METHOD <init> (Lazd;)V
+		ARG 1 mc
+	METHOD a tick ()V
+	METHOD a render (F)V
+		ARG 1 a
+	METHOD a renderTex (FLps;)V
+		ARG 1 a
+		ARG 2 tex
+	METHOD a renderItem3D (Lblz;FFFFIIF)V
+		ARG 0 t
+		ARG 1 u0
+		ARG 2 v0
+		ARG 3 u1
+		ARG 4 v1
+		ARG 5 width
+		ARG 6 height
+		ARG 7 depth
+	METHOD a renderItem (Lrh;Labp;I)V
+		ARG 1 player
+		ARG 2 item
+		ARG 3 type
+	METHOD b itemPlaced ()V
+	METHOD b renderScreenEffects (F)V
+		ARG 1 a
+	METHOD c itemUsed ()V
+	METHOD c renderWater (F)V
+		ARG 1 a
+	METHOD d renderFire (F)V
+		ARG 1 a

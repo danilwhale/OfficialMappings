@@ -1,0 +1,7 @@
+CLASS bmh net/minecraft/client/renderer/blockentity/MobSpawnerRenderer
+	METHOD a render (Lafc;DDDF)V
+		ARG 0 spawner
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 a

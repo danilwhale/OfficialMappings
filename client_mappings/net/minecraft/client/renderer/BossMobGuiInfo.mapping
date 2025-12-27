@@ -1,0 +1,4 @@
+CLASS blf net/minecraft/client/renderer/BossMobGuiInfo
+	METHOD a setBossHealth (Lvi;Z)V
+		ARG 0 boss
+		ARG 1 visible

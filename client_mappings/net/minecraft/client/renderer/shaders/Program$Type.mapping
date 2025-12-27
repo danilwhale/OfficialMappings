@@ -1,0 +1,15 @@
+CLASS bpe net/minecraft/client/renderer/shaders/Program$Type
+	FIELD a VERTEX Lbpe;
+	FIELD b FRAGMENT Lbpe;
+	FIELD c name Ljava/lang/String;
+	FIELD d extension Ljava/lang/String;
+	FIELD e glType I
+	FIELD f programs Ljava/util/Map;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
+		ARG 3 name
+		ARG 4 extension
+		ARG 5 glType
+	METHOD a getName ()Ljava/lang/String;
+	METHOD b getExtension ()Ljava/lang/String;
+	METHOD c getGlType ()I
+	METHOD d getPrograms ()Ljava/util/Map;

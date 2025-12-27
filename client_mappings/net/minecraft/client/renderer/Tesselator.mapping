@@ -1,0 +1,88 @@
+CLASS blz net/minecraft/client/renderer/Tesselator
+	FIELD a instance Lblz;
+	FIELD b buffer Ljava/nio/ByteBuffer;
+	FIELD c ib Ljava/nio/IntBuffer;
+	FIELD d fb Ljava/nio/FloatBuffer;
+	FIELD e sb Ljava/nio/ShortBuffer;
+	FIELD f array [I
+	FIELD g vertices I
+	FIELD h u D
+	FIELD i v D
+	FIELD j tex2 I
+	FIELD k col I
+	FIELD l hasColor Z
+	FIELD m hasTexture Z
+	FIELD n hasTexture2 Z
+	FIELD o hasNormal Z
+	FIELD p p I
+	FIELD q count I
+	FIELD r noColor Z
+	FIELD s mode I
+	FIELD t xo D
+	FIELD u yo D
+	FIELD v zo D
+	FIELD w normal I
+	FIELD x tesselating Z
+	FIELD y size I
+	METHOD <init> (I)V
+		ARG 1 size
+	METHOD a end ()I
+	METHOD a tex (DD)V
+		ARG 1 u
+		ARG 3 v
+	METHOD a vertex (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a vertexUV (DDDDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 u
+		ARG 9 v
+	METHOD a sortQuads (FFF)Lbma;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a color (FFFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
+	METHOD a begin (I)V
+		ARG 1 mode
+	METHOD a color (II)V
+		ARG 1 c
+		ARG 2 alpha
+	METHOD a color (III)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD a color (IIII)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
+	METHOD b begin ()V
+	METHOD b offset (DDD)V
+		ARG 1 xo
+		ARG 3 yo
+		ARG 5 zo
+	METHOD b color (FFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD b tex2 (I)V
+		ARG 1 uv
+	METHOD c noColor ()V
+	METHOD c normal (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c color (I)V
+		ARG 1 c
+	METHOD d clear ()V
+	METHOD d addOffset (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

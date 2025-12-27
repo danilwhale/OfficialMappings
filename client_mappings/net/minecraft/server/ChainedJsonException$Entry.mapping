@@ -1,0 +1,12 @@
+CLASS kt net/minecraft/server/ChainedJsonException$Entry
+	FIELD a filename Ljava/lang/String;
+	FIELD b jsonKeys Ljava/util/List;
+	METHOD a addJsonKey (Ljava/lang/String;)V
+		ARG 1 key
+	METHOD a access$000 (Lkt;Ljava/lang/String;)V
+		ARG 0 this$0
+		ARG 1 jsonKey
+	METHOD b getJsonKeys ()Ljava/lang/String;
+	METHOD b access$100 (Lkt;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 this$0
+		ARG 1 filename

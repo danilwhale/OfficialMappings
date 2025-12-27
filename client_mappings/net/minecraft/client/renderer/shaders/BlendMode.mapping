@@ -1,0 +1,35 @@
+CLASS boy net/minecraft/client/renderer/shaders/BlendMode
+	FIELD a lastApplied Lboy;
+	FIELD b srcColorFactor I
+	FIELD c srcAlphaFactor I
+	FIELD d dstColorFactor I
+	FIELD e dstAlphaFactor I
+	FIELD f blendFunc I
+	FIELD g separateBlend Z
+	FIELD h opaque Z
+	METHOD <init> (III)V
+		ARG 1 srcFactor
+		ARG 2 dstFactor
+		ARG 3 blendFunc
+	METHOD <init> (IIIII)V
+		ARG 1 srcColorFactor
+		ARG 2 dstColorFactor
+		ARG 3 srcAlphaFactor
+		ARG 4 dstAlphaFactor
+		ARG 5 blendFunc
+	METHOD <init> (ZZIIIII)V
+		ARG 1 separateBlend
+		ARG 2 opaque
+		ARG 3 srcColorFactor
+		ARG 4 dstColorFactor
+		ARG 5 srcAlphaFactor
+		ARG 6 dstAlphaFactor
+		ARG 7 blendFunc
+	METHOD a apply ()V
+	METHOD a parseBlendNode (Lcom/google/gson/JsonObject;)Lboy;
+		ARG 0 node
+	METHOD a stringToBlendFunc (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD b isOpaque ()Z
+	METHOD b stringToBlendFactor (Ljava/lang/String;)I
+		ARG 0 string

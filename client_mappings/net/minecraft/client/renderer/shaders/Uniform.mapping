@@ -1,0 +1,53 @@
+CLASS bpg net/minecraft/client/renderer/shaders/Uniform
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD b location I
+	FIELD c count I
+	FIELD d type I
+	FIELD e intValues Ljava/nio/IntBuffer;
+	FIELD f floatValues Ljava/nio/FloatBuffer;
+	FIELD g name Ljava/lang/String;
+	FIELD h dirty Z
+	FIELD i parent Lbpa;
+	METHOD <init> (Ljava/lang/String;IILbpa;)V
+		ARG 1 name
+		ARG 2 type
+		ARG 3 count
+		ARG 4 parent
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a set (F)V
+		ARG 1 value
+	METHOD a set (FF)V
+		ARG 1 x
+		ARG 2 y
+	METHOD a set (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a set (FFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+	METHOD a setSafe (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+	METHOD a getTypeFromString (Ljava/lang/String;)I
+		ARG 0 string
+	METHOD a set (Ljavax/vecmath/Matrix4f;)V
+		ARG 1 matrix
+	METHOD a set ([F)V
+		ARG 1 matrix
+	METHOD b upload ()V
+	METHOD b setSafe (FFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 w
+	METHOD b setLocation (I)V
+		ARG 1 location
+	METHOD h markDirty ()V
+	METHOD i uploadAsInteger ()V
+	METHOD j uploadAsFloat ()V
+	METHOD k uploadAsMatrix ()V

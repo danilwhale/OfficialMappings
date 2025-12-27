@@ -1,0 +1,15 @@
+CLASS bmd net/minecraft/client/renderer/blockentity/BlockEntityRenderer
+	FIELD a blockEntityRenderDispatcher Lbmc;
+	METHOD a onNewLevel (Lafn;)V
+		ARG 1 level
+	METHOD a render (Land;DDDF)V
+		ARG 1 blockEntity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 a
+	METHOD a init (Lbmc;)V
+		ARG 1 blockEntityRenderDispatcher
+	METHOD a bindTexture (Lbqo;)V
+		ARG 1 location
+	METHOD b getFont ()Lbag;

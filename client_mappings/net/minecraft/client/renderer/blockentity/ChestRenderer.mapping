@@ -1,0 +1,10 @@
+CLASS bme net/minecraft/client/renderer/blockentity/ChestRenderer
+	FIELD b CHEST_LARGE_TRAP_LOCATION Lbqo;
+	FIELD c CHEST_LARGE_XMAS_LOCATION Lbqo;
+	FIELD d CHEST_LARGE_LOCATION Lbqo;
+	FIELD e CHEST_TRAP_LOCATION Lbqo;
+	FIELD f CHEST_XMAS_LOCATION Lbqo;
+	FIELD g CHEST_LOCATION Lbqo;
+	FIELD h chestModel Lbha;
+	FIELD i largeChestModel Lbha;
+	FIELD j xmasTextures Z

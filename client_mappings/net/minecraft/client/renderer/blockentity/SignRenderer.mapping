@@ -1,0 +1,2 @@
+CLASS bmj net/minecraft/client/renderer/blockentity/SignRenderer
+	FIELD c signModel Lbht;

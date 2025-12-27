@@ -1,0 +1,10 @@
+CLASS bpf net/minecraft/client/renderer/shaders/ProgramManager
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD b instance Lbpf;
+	METHOD a createInstance ()V
+	METHOD a releaseProgram (Lbpa;)V
+		ARG 1 effect
+	METHOD b getInstance ()Lbpf;
+	METHOD b linkProgram (Lbpa;)V
+		ARG 1 effect
+	METHOD c createProgram ()I

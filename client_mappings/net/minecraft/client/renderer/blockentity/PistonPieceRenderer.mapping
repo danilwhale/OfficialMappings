@@ -1,0 +1,2 @@
+CLASS bmi net/minecraft/client/renderer/blockentity/PistonPieceRenderer
+	FIELD b blockRenderer Lble;

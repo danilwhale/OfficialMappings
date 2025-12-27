@@ -1,0 +1,3 @@
+CLASS bmf net/minecraft/client/renderer/blockentity/EnchantTableRenderer
+	FIELD b BOOK_LOCATION Lbqo;
+	FIELD c bookModel Lbgz;

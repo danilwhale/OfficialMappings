@@ -1,0 +1,26 @@
+CLASS bpc net/minecraft/client/renderer/shaders/PostPass
+	FIELD a inTarget Lbly;
+	FIELD b outTarget Lbly;
+	FIELD c effect Lbpa;
+	FIELD d auxAssets Ljava/util/List;
+	FIELD e auxNames Ljava/util/List;
+	FIELD f auxWidths Ljava/util/List;
+	FIELD g auxHeights Ljava/util/List;
+	FIELD h shaderOrthoMatrix Ljavax/vecmath/Matrix4f;
+	METHOD <init> (Lbqp;Ljava/lang/String;Lbly;Lbly;)V
+		ARG 1 resourceManager
+		ARG 2 effectName
+		ARG 3 inTarget
+		ARG 4 outTarget
+	METHOD a process (F)V
+		ARG 1 partialTicks
+	METHOD a addAuxAsset (Ljava/lang/String;Ljava/lang/Object;II)V
+		ARG 1 name
+		ARG 2 asset
+		ARG 3 width
+		ARG 4 height
+	METHOD a setOrthoMatrix (Ljavax/vecmath/Matrix4f;)V
+		ARG 1 orthoMatrix
+	METHOD b close ()V
+	METHOD c getEffect ()Lbpa;
+	METHOD d prepareState ()V
