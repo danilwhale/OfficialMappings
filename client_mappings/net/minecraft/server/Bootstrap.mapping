@@ -1,0 +1,2 @@
+CLASS kb net/minecraft/server/Bootstrap
+	METHOD b bootStrap ()V

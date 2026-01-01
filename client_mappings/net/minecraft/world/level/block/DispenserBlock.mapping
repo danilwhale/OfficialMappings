@@ -1,0 +1,2 @@
+CLASS aiy net/minecraft/world/level/block/DispenserBlock
+	FIELD a DISPENSER_REGISTRY Lcy;

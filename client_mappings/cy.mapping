@@ -1,0 +1,2 @@
+CLASS cy
+	METHOD a add (Ljava/lang/Object;Ljava/lang/Object;)V
