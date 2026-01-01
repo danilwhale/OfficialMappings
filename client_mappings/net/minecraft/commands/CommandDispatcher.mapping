@@ -1,0 +1,3 @@
+CLASS z net/minecraft/commands/CommandDispatcher
+	METHOD a addCommand (Laa;)Laa;
+		ARG 1 command

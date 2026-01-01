@@ -1,0 +1,7 @@
+CLASS l net/minecraft/CrashReportCategory$1
+	FIELD a val$id I
+	FIELD b val$block Lahu;
+	METHOD <init> (ILahu;)V
+		ARG 1 val$id
+		ARG 2 val$block
+	METHOD call call ()Ljava/lang/Object;

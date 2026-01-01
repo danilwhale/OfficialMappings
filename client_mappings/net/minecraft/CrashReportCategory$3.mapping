@@ -1,0 +1,9 @@
+CLASS n net/minecraft/CrashReportCategory$3
+	FIELD a val$x I
+	FIELD b val$y I
+	FIELD c val$z I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD call call ()Ljava/lang/Object;

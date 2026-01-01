@@ -1,0 +1,22 @@
+CLASS r net/minecraft/Pos
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD <init> (Lr;)V
+		ARG 1 pos
+	METHOD b set (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 o
+	METHOD e distSqr (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e distSqr (Lr;)F
+		ARG 1 pos

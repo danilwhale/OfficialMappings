@@ -1,0 +1,6 @@
+CLASS t net/minecraft/SharedConstants
+	FIELD a ILLEGAL_FILE_CHARACTERS [C
+	METHOD a isAllowedChatCharacter (C)Z
+		ARG 0 character
+	METHOD a filterText (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 input

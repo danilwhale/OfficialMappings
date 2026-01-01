@@ -1,0 +1,5 @@
+CLASS j net/minecraft/CrashReport$8
+	FIELD a this$0 Lb;
+	METHOD <init> (Lb;)V
+		ARG 1 this$0
+	METHOD call call ()Ljava/lang/Object;

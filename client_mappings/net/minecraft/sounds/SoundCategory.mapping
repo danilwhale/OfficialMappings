@@ -1,0 +1,15 @@
+CLASS w net/minecraft/sounds/SoundCategory
+	FIELD a MASTER Lw;
+	FIELD b MUSIC Lw;
+	FIELD c RECORDS Lw;
+	FIELD d WEATHER Lw;
+	FIELD e BLOCKS Lw;
+	FIELD f MOBS Lw;
+	FIELD g ANIMALS Lw;
+	FIELD h PLAYERS Lw;
+	FIELD i AMBIENT Lw;
+	FIELD j BY_NAME Ljava/util/Map;
+	FIELD l name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
+		ARG 3 name
+	METHOD a getName ()Ljava/lang/String;

@@ -1,0 +1,4 @@
+CLASS ab
+	METHOD a performCommand (Lac;Ljava/lang/String;)I
+		ARG 1 sender
+		ARG 2 input

@@ -1,0 +1,6 @@
+CLASS v net/minecraft/Util$OS
+	FIELD a LINUX Lv;
+	FIELD b SOLARIS Lv;
+	FIELD c WINDOWS Lv;
+	FIELD d MACOS Lv;
+	FIELD e UNKNOWN Lv;
