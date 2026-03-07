@@ -1,4 +1,0 @@
-CLASS ask net/minecraft/world/level/tile/entity/MobSpawnerTileEntity$1
-	FIELD a this$0 Lasj;
-	METHOD <init> (Lasj;)V
-		ARG 1 this$0

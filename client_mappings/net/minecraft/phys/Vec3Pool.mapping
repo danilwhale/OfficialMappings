@@ -1,0 +1,11 @@
+CLASS ajd net/minecraft/phys/Vec3Pool
+	FIELD c pool Ljava/util/List;
+	FIELD d poolPointer I
+	METHOD a reset ()V
+	METHOD a newTemp (DDD)Lajb;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b clear ()V
+	METHOD c size ()I
+	METHOD d getPointer ()I

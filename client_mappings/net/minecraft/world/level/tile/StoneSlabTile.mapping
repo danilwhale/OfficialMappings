@@ -1,5 +1,0 @@
-CLASS aqt net/minecraft/world/level/tile/StoneSlabTile
-	FIELD b SLAB_NAMES [Ljava/lang/String;
-	METHOD <init> (IZ)V
-		ARG 1 id
-		ARG 2 fullSize

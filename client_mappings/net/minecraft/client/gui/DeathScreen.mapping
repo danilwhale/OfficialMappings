@@ -1,2 +1,0 @@
-CLASS avc net/minecraft/client/gui/DeathScreen
-	FIELD a delayTicker I

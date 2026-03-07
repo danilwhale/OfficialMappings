@@ -1,27 +1,3 @@
-CLASS afe net/minecraft/world/level/levelgen/feature/Feature
-	FIELD a doUpdate Z
-	METHOD <init> (Z)V
-		ARG 1 doUpdate
+CLASS xh net/minecraft/world/level/levelgen/feature/Feature
 	METHOD a init (DDD)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-	METHOD a setTile (Labw;IIII)V
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 tile
-	METHOD a setTileAndData (Labw;IIIII)V
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 tile
-		ARG 6 data
-	METHOD a place (Labw;Ljava/util/Random;III)Z
-		ARG 1 level
-		ARG 2 random
-		ARG 3 x
-		ARG 4 y
-		ARG 5 z
+	METHOD a place (Lty;Ljava/util/Random;III)Z

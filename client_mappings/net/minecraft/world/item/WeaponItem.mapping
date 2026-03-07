@@ -1,7 +1,0 @@
-CLASS zl net/minecraft/world/item/WeaponItem
-	FIELD a damage F
-	FIELD b tier Lyd;
-	METHOD <init> (ILyd;)V
-		ARG 1 id
-		ARG 2 tier
-	METHOD i getTier ()Ljava/lang/String;

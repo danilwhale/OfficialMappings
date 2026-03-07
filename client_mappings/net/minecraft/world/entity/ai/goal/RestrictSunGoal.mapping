@@ -1,4 +1,0 @@
-CLASS qp net/minecraft/world/entity/ai/goal/RestrictSunGoal
-	FIELD a mob Lon;
-	METHOD <init> (Lon;)V
-		ARG 1 mob

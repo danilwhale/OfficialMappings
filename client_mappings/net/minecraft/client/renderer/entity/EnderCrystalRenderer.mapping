@@ -1,4 +1,0 @@
-CLASS bgi net/minecraft/client/renderer/entity/EnderCrystalRenderer
-	FIELD a ENDER_CRYSTAL_LOCATION Lbjo;
-		COMMENT END_CRYSTAL_LOCATION
-	FIELD f model Lbbo;

@@ -1,9 +1,0 @@
-CLASS vv net/minecraft/world/inventory/InventoryMenu
-	FIELD a craftSlots Lvk;
-	FIELD f resultSlots Lmo;
-	FIELD g active Z
-	FIELD h owner Luf;
-	METHOD <init> (Lud;ZLuf;)V
-		ARG 1 inventory
-		ARG 2 active
-		ARG 3 owner

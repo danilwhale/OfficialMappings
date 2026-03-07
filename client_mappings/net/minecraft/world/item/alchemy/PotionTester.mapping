@@ -1,0 +1,40 @@
+CLASS sb net/minecraft/world/item/alchemy/PotionTester
+	FIELD a unknown_f_a [Z
+	FIELD b unknown_f_b [Ljavax/swing/JButton;
+	FIELD c unknown_f_c Ljavax/swing/JLabel;
+	FIELD d unknown_f_d Ljavax/swing/JLabel;
+	FIELD e unknown_f_e [Ljavax/swing/JLabel;
+	FIELD f unknown_f_f Ljavax/swing/JPanel;
+	FIELD g unknown_f_g Ljava/util/HashMap;
+	FIELD h unknown_f_h Ljava/util/HashMap;
+	FIELD i unknown_f_i Ljava/util/HashMap;
+	FIELD j unknown_f_j Ljava/util/List;
+	METHOD a unknown_m_a ()I
+	METHOD a unknown_m_a (I)V
+		ARG 1 brew
+	METHOD a access$100 (Lsb;)[Z
+		ARG 0 this$0
+	METHOD a access$400 (Lsb;I)V
+		ARG 0 this$0
+		ARG 1 i
+	METHOD a unknown_m_a (Lsf;III)Ljava/util/LinkedList;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD b unknown_m_b ()V
+	METHOD b unknown_m_b (I)Ljava/util/List;
+		ARG 1 i
+	METHOD b access$200 (Lsb;)V
+		ARG 0 this$0
+	METHOD b access$500 (Lsb;I)Ljava/util/List;
+		ARG 0 this$0
+		ARG 1 i
+	METHOD c unknown_m_c (I)Ljava/util/List;
+		ARG 1 i
+	METHOD c access$300 (Lsb;)I
+		ARG 0 this$0
+	METHOD d unknown_m_d (I)V
+		ARG 1 i

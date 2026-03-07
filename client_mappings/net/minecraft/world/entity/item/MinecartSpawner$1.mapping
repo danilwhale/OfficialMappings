@@ -1,4 +1,0 @@
-CLASS ta net/minecraft/world/entity/item/MinecartSpawner$1
-	FIELD a this$0 Lsz;
-	METHOD <init> (Lsz;)V
-		ARG 1 this$0

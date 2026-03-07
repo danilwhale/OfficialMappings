@@ -1,2 +1,5 @@
-CLASS aa net/minecraft/commands/CommandDispatcher
-	METHOD a addCommnd (Lab;)Lab;
+CLASS o net/minecraft/commands/CommandDispatcher
+	FIELD a commandsById Ljava/util/Map;
+	FIELD b commands Ljava/util/Set;
+	METHOD a addCommand (Lp;)Lp;
+		ARG 1 command

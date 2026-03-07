@@ -1,5 +1,0 @@
-CLASS aoy net/minecraft/world/level/tile/LadderTile
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD c setShape (I)V
-		ARG 1 data

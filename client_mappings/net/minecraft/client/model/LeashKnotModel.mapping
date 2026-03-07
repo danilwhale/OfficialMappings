@@ -1,7 +1,0 @@
-CLASS bbm net/minecraft/client/model/LeashKnotModel
-	FIELD a knot Lbcu;
-	METHOD <init> (IIII)V
-		ARG 1 xTexOffs
-		ARG 2 yTexOffs
-		ARG 3 texWidth
-		ARG 4 texHeight

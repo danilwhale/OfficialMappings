@@ -1,8 +1,0 @@
-CLASS ze net/minecraft/world/item/SpawnEggItem
-	FIELD a ircon Lms;
-	METHOD a spawnMobAt (Labw;IDDD)Lnn;
-		ARG 0 level
-		ARG 1 id
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z

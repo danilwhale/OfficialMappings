@@ -1,4 +1,0 @@
-CLASS bbw net/minecraft/client/model/SignModel
-	FIELD a cube Lbcu;
-	FIELD b cube2 Lbcu;
-	METHOD a render ()V

@@ -1,2 +1,1 @@
-CLASS wh net/minecraft/world/item/ArmorItem
-	FIELD cD DISPENSE_ITEM_BEHAVIOR Lbj;
+CLASS pc net/minecraft/world/item/ArmorItem

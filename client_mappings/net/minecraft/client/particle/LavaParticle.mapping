@@ -1,2 +1,0 @@
-CLASS bee net/minecraft/client/particle/LavaParticle
-	FIELD a oSize F

@@ -1,6 +1,0 @@
-CLASS arh net/minecraft/world/level/tile/TransparentTile
-	FIELD d allowSame Z
-	METHOD <init> (ILakc;Z)V
-		ARG 1 id
-		ARG 2 material
-		ARG 3 allowSame

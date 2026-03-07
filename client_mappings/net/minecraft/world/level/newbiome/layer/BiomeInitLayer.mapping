@@ -1,3 +1,0 @@
-CLASS akj net/minecraft/world/level/newbiome/layer/BiomeInitLayer
-	METHOD <init> (JLakq;Lacg;)V
-		ARG 1 seed

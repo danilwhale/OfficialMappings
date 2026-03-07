@@ -1,6 +1,0 @@
-CLASS tz net/minecraft/world/entity/npc/ClientSideMerchant
-	FIELD a container Lvy;
-	FIELD b source Luf;
-	FIELD c offers Labm;
-	METHOD <init> (Luf;)V
-		ARG 1 source

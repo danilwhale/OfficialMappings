@@ -1,2 +1,0 @@
-CLASS aga net/minecraft/world/level/levelgen/feature/JungleTreeFeature
-	METHOD b placeVine (Labw;IIII)V

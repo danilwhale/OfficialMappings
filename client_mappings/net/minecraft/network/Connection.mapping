@@ -1,13 +1,1 @@
-CLASS cm net/minecraft/network/Connection
-	METHOD a flush ()V
-	METHOD a send (Ley;)V
-		ARG 1 packet
-	METHOD a setListener (Lez;)V
-		ARG 1 listener
-	METHOD a close (Ljava/lang/String;[Ljava/lang/Object;)V
-		ARG 1 reason
-		ARG 2 args
-	METHOD b tick ()V
-	METHOD c getAddress ()Ljava/net/SocketAddress;
-	METHOD d sendAndQuit ()V
-	METHOD e countDelayedPackets ()I
+CLASS az net/minecraft/network/Connection

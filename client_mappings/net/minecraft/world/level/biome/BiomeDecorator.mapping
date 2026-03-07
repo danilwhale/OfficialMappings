@@ -1,29 +1,60 @@
-CLASS acu net/minecraft/world/level/biome/BiomeDecorator
-	COMMENT the triple underscore fields are placeholders cuz obf shit
-	FIELD a level Labw;
+CLASS ux net/minecraft/world/level/biome/BiomeDecorator
+	FIELD A flowerCount I
+	FIELD B grassCount I
+	FIELD C deadBushFeature I
+	FIELD D mushroomCount I
+	FIELD E reedsCount I
+	FIELD F cactusCount I
+	FIELD G gravelCount I
+	FIELD H sandCount I
+	FIELD I clayCount I
+	FIELD J hugeMushrooms I
+	FIELD K liquids Z
+	FIELD a level Lty;
 	FIELD b random Ljava/util/Random;
-	FIELD c x I
-	FIELD d z I
-	FIELD e biome Lacq;
-	FIELD x ___x Lafe;
-	FIELD y ___y I
-	FIELD z ___z I
-	METHOD <init> (Lacq;)V
+	FIELD c xo I
+	FIELD d zo I
+	FIELD e biome Lut;
+	FIELD f clayFeature Lxh;
+	FIELD g sandFeature Lxh;
+	FIELD h gravelFeature Lxh;
+	FIELD i dirtOreFeature Lxh;
+	FIELD j gravelOreFeature Lxh;
+	FIELD k coalOreFeature Lxh;
+	FIELD l ironOreFeature Lxh;
+	FIELD m goldOreFeature Lxh;
+	FIELD n redStoneOreFeature Lxh;
+	FIELD o diamondOreFeature Lxh;
+	FIELD p lapisOreFeature Lxh;
+	FIELD q yellowFlowerFeature Lxh;
+	FIELD r roseFlowerFeature Lxh;
+	FIELD s brownMushroomFeature Lxh;
+	FIELD t redMushroomFeature Lxh;
+	FIELD u hugeMushroomFeature Lxh;
+	FIELD v reedsFeature Lxh;
+	FIELD w cactusFeature Lxh;
+	FIELD x waterlilyFeature Lxh;
+	FIELD y waterlilyCount I
+	FIELD z treeCount I
+	METHOD <init> (Lut;)V
 		ARG 1 biome
 	METHOD a decorate ()V
-	METHOD a decorateDepthAverage (ILafe;II)V
+	METHOD a decorate (ILxh;)V
 		ARG 1 count
 		ARG 2 feature
-		ARG 3 a
-		ARG 4 b
-	METHOD a decorate (Labw;Ljava/util/Random;II)V
+	METHOD a decorateDepthSpan (ILxh;II)V
+		ARG 1 count
+		ARG 2 feature
+		ARG 3 y0
+		ARG 4 y1
+	METHOD a decorate (Lty;Ljava/util/Random;II)V
 		ARG 1 level
 		ARG 2 random
-		ARG 3 x
-		ARG 4 z
+		ARG 3 xo
+		ARG 4 zo
 	METHOD b decorateOres ()V
-	METHOD b decorateDepthSpan (ILafe;II)V
+	METHOD b decorateDepthAverage (ILxh;II)V
 		ARG 1 count
 		ARG 2 feature
-		ARG 3 a
-		ARG 4 b
+		ARG 3 yMid
+		ARG 4 ySpan

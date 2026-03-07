@@ -1,3 +1,0 @@
-CLASS aem net/minecraft/world/level/levelgen/CanyonFeature
-	FIELD d rs [F
-	METHOD a genCanyon (JII[BDDDFFFIID)V

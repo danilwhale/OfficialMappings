@@ -1,7 +1,0 @@
-CLASS pn net/minecraft/world/entity/ai/goal/EatBlockGoal
-	FIELD a eatAnimationTick I
-	FIELD b mob Log;
-	FIELD c level Labw;
-	METHOD <init> (Log;)V
-		ARG 1 mob
-	METHOD f getEatAnimationTick ()I

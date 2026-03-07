@@ -1,5 +1,0 @@
-CLASS bj net/minecraft/core/DispenseItemBehavior
-	FIELD a NOOP Lbj;
-	METHOD a dispense (Lbf;Lye;)Lye;
-		ARG 1 block
-		ARG 2 item

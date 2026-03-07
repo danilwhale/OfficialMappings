@@ -1,8 +1,0 @@
-CLASS axk net/minecraft/client/gui/inventory/CraftingScreen
-	FIELD t CRAFTING_TABLE_LOCATION Lbjo;
-	METHOD <init> (Lud;Labw;III)V
-		ARG 1 inventory
-		ARG 2 level
-		ARG 3 x
-		ARG 4 y
-		ARG 5 z

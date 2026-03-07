@@ -1,21 +1,21 @@
-CLASS ake net/minecraft/world/level/material/MaterialColor
-	FIELD a MATERIAL_COLORS [Lake;
-	FIELD b NONE Lake;
-	FIELD c GRASS Lake;
-	FIELD d SAND Lake;
-	FIELD e WOOL Lake;
-	FIELD f FIRE Lake;
-	FIELD g ICE Lake;
-	FIELD h METAL Lake;
-	FIELD i PLANT Lake;
-	FIELD j SNOW Lake;
-	FIELD k CLAY Lake;
-	FIELD l DIRT Lake;
-	FIELD m STONE Lake;
-	FIELD n WATER Lake;
-	FIELD o WOOD Lake;
-	FIELD p col I
-	FIELD q id I
+CLASS abz net/minecraft/world/level/material/MaterialColor
+	FIELD a colors [Labz;
+	FIELD b none Labz;
+	FIELD c grass Labz;
+	FIELD d sand Labz;
+	FIELD e cloth Labz;
+	FIELD f fire Labz;
+	FIELD g ice Labz;
+	FIELD h metal Labz;
+	FIELD i plant Labz;
+	FIELD j snow Labz;
+	FIELD k clay Labz;
+	FIELD l dirt Labz;
+	FIELD m stone Labz;
+	FIELD n water Labz;
+	FIELD o wood Labz;
+	FIELD p id I
+	FIELD q col I
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 col

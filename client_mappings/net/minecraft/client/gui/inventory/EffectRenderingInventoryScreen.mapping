@@ -1,3 +1,0 @@
-CLASS axp net/minecraft/client/gui/inventory/EffectRenderingInventoryScreen
-	FIELD t doRenderEffects Z
-	METHOD g renderEffects ()V

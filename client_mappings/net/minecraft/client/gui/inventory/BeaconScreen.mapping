@@ -1,8 +1,0 @@
-CLASS axa net/minecraft/client/gui/inventory/BeaconScreen
-	FIELD t BEACON_LOCATION Lbjo;
-	FIELD v confirmButton Laxc;
-	FIELD w initPowerButtons Z
-	METHOD <init> (Lud;Larw;)V
-		ARG 1 inventory
-		ARG 2 beacon
-	METHOD g access$000 ()Lbjo;

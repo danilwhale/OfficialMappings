@@ -1,0 +1,3 @@
+CLASS aws net/minecraft/client/stats/StatsCounter
+	FIELD c requiresSave Z
+	FIELD d statsSyncher Lawt;

@@ -1,0 +1,11 @@
+CLASS aiw net/minecraft/phys/AABB
+	FIELD a x0 D
+	FIELD b y0 D
+	FIELD c z0 D
+	FIELD d x1 D
+	FIELD e y1 D
+	FIELD f z1 D
+	FIELD g pool Ljava/lang/ThreadLocal;
+	METHOD a getPool ()Laiy;
+	METHOD a newPermanent (DDDDDD)Laiw;
+	METHOD b set (DDDDDD)Laiw;

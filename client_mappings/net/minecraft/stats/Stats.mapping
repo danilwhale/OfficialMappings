@@ -1,7 +1,24 @@
-CLASS la net/minecraft/stats/Stats
-	METHOD a init ()V
-	METHOD a get (I)Lku;
-		ARG 0 id
-	METHOD a buildBlockStats (Ljava/lang/String;I)[Lku;
-	METHOD a buildItemStats ([Lku;Ljava/lang/String;III)[Lku;
-	METHOD d buildCraftableStats ()V
+CLASS hd net/minecraft/stats/Stats
+	FIELD A playerKills Lgy;
+	FIELD B fishCaught Lgy;
+	FIELD f startGame Lgy;
+	FIELD g createWorld Lgy;
+	FIELD h loadWorld Lgy;
+	FIELD i joinMultiplayer Lgy;
+	FIELD j leaveGame Lgy;
+	FIELD k playOneMinute Lgy;
+	FIELD l walkOneCm Lgy;
+	FIELD m swimOneCm Lgy;
+	FIELD n fallOneCm Lgy;
+	FIELD o climbOneCm Lgy;
+	FIELD p flyOneCm Lgy;
+	FIELD q diveOneCm Lgy;
+	FIELD r minecartOneCm Lgy;
+	FIELD s boatOneCm Lgy;
+	FIELD t pigOneCm Lgy;
+	FIELD u jump Lgy;
+	FIELD v drop Lgy;
+	FIELD w damageDealt Lgy;
+	FIELD x damageTaken Lgy;
+	FIELD y deaths Lgy;
+	FIELD z mobKills Lgy;

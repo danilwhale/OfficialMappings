@@ -1,4 +1,0 @@
-CLASS aoe net/minecraft/world/level/tile/EntityTile
-	COMMENT WHY IS THIS AN INTERFACE WHAT THE FUCK IS WRONG WITH YOU
-	METHOD b newTileEntity (Labw;)Lasp;
-		ARG 1 level

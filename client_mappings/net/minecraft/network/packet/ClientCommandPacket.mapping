@@ -1,4 +1,0 @@
-CLASS do net/minecraft/network/packet/ClientCommandPacket
-	FIELD a action I
-	METHOD <init> (I)V
-		ARG 1 action

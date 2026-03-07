@@ -1,6 +1,0 @@
-CLASS afj net/minecraft/world/level/levelgen/feature/HellSpringFeature
-	FIELD a tile I
-	FIELD b placed Z
-	METHOD <init> (IZ)V
-		ARG 1 tile
-		ARG 2 placed

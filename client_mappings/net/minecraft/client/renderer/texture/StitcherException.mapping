@@ -1,5 +1,0 @@
-CLASS bij net/minecraft/client/renderer/texture/StitcherException
-	FIELD a holder Lbih;
-	METHOD <init> (Lbih;Ljava/lang/String;)V
-		ARG 1 holder
-		ARG 2 message

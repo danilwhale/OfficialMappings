@@ -1,3 +1,0 @@
-CLASS aku net/minecraft/world/level/newbiome/layer/OceanMixerLayer
-	METHOD <init> (JLakq;Lakq;)V
-		ARG 1 seed

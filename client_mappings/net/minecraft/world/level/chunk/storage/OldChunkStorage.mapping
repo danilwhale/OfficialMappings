@@ -1,7 +1,0 @@
-CLASS adz net/minecraft/world/level/chunk/storage/OldChunkStorage
-	METHOD a convertToAnvilFormat (Laea;Lby;Lacv;)V
-		ARG 0 data
-		ARG 1 tag
-		ARG 2 biomeSource
-	METHOD a load (Lby;)Laea;
-		ARG 0 tag

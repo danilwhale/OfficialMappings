@@ -1,4 +1,1 @@
-CLASS aub net/minecraft/client/Minecraft$9
-	FIELD a this$0 Latv;
-	METHOD <init> (Latv;)V
-		ARG 1 this$0
+CLASS net/minecraft/client/u net/minecraft/client/Minecraft$9

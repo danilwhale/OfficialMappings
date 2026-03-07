@@ -1,6 +1,0 @@
-CLASS qx net/minecraft/world/entity/ai/goal/target/HurtByTargetGoal
-	FIELD a alertSameType Z
-	FIELD b timestamp I
-	METHOD <init> (Lon;Z)V
-		ARG 1 mob
-		ARG 2 alertSameType

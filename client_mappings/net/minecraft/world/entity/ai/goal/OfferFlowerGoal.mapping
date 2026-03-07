@@ -1,6 +1,0 @@
-CLASS qh net/minecraft/world/entity/ai/goal/OfferFlowerGoal
-	FIELD a golem Lsd;
-	FIELD b villager Lub;
-	FIELD c tick I
-	METHOD <init> (Lsd;)V
-		ARG 1 golem

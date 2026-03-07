@@ -1,5 +1,0 @@
-CLASS bbd net/minecraft/client/model/ChestModel
-	FIELD a lid Lbcu;
-	FIELD b bottom Lbcu;
-	FIELD c lock Lbcu;
-	METHOD a render ()V

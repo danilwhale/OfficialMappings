@@ -1,0 +1,15 @@
+CLASS ul net/minecraft/world/level/MobSpawner
+	FIELD a bedEnemies [Ljava/lang/Class;
+	FIELD b chunksToPoll Ljava/util/HashMap;
+	METHOD a tick (Lga;ZZ)I
+		ARG 0 level
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
+	METHOD a getRandomPosWithin (Lty;II)Luq;
+		ARG 0 level
+		ARG 1 cx
+		ARG 2 cz
+	METHOD a attackSleepingPlayers (Lty;Ljava/util/List;)Z
+		ARG 0 level
+		ARG 1 players
+	METHOD a postProcessSpawnMobs (Lty;Lut;IIIILjava/util/Random;)V

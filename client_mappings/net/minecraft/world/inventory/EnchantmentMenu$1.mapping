@@ -1,6 +1,0 @@
-CLASS vn net/minecraft/world/inventory/EnchantmentMenu$1
-	FIELD a this$0 Lvm;
-	METHOD <init> (Lvm;Ljava/lang/String;ZI)V
-		ARG 1 this$1
-		ARG 2 name
-		ARG 4 size

@@ -1,6 +1,0 @@
-CLASS as net/minecraft/commands/SpreadplayersCommand
-	METHOD a spreadPlayers (Lad;Ljava/util/List;Lat;DDLabw;Z)V
-	METHOD a spreadPositions (Lat;DLabw;Ljava/util/Random;DDDD[Lat;Z)I
-	METHOD a getNumberOfTeams (Ljava/util/List;)I
-	METHOD a setPlayerPositions (Ljava/util/List;Labw;[Lat;Z)D
-	METHOD a createInitialPositions (Ljava/util/Random;IDDDD)[Lat;

@@ -1,2 +1,0 @@
-CLASS bhs net/minecraft/client/renderer/entity/TntRenderer
-	FIELD a tileRenderer Lbfr;

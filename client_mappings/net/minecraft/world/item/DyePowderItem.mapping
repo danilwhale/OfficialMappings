@@ -1,5 +1,0 @@
-CLASS xl net/minecraft/world/item/DyePowderItem
-	FIELD a COLOR_DESCS_MIXED_CASE [Ljava/lang/String;
-	FIELD b COLOR_DESCS [Ljava/lang/String;
-	FIELD c COLOR_RGB [I
-	FIELD d icons [Lms;

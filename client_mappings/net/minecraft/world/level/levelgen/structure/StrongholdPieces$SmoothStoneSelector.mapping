@@ -1,3 +1,0 @@
-CLASS aig net/minecraft/world/level/levelgen/structure/StrongholdPieces$SmoothStoneSelector
-	METHOD <init> (Laht;)V
-		ARG 1 _null

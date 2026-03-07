@@ -1,21 +1,12 @@
-CLASS ace net/minecraft/world/level/LevelSettings$GameType
-	FIELD a NOT_SET Lace;
-	FIELD b SURVIVAL Lace;
-	FIELD c CREATIVE Lace;
-	FIELD d ADVENTURE Lace;
+CLASS uh net/minecraft/world/level/LevelSettings$GameType
+	FIELD a NOT_SET Luh;
+	FIELD b SURVIVAL Luh;
+	FIELD c CREATIVE Luh;
+	FIELD d ADVENTURE Luh;
 	FIELD e id I
 	FIELD f name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
 		ARG 3 id
 		ARG 4 name
 	METHOD a getId ()I
-	METHOD a byId (I)Lace;
-		ARG 0 id
-	METHOD a byName (Ljava/lang/String;)Lace;
-		ARG 0 name
-	METHOD a updatePlayerAbilitiies (Luc;)V
-		ARG 1 abilities
 	METHOD b getName ()Ljava/lang/String;
-	METHOD c isBlockPlacingRestricted ()Z
-	METHOD d isCreative ()Z
-	METHOD e isSurvival ()Z

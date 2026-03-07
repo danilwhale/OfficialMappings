@@ -1,2 +1,0 @@
-CLASS kb net/minecraft/server/network/PlayerConnection$1
-	FIELD b this$0 Lka;

@@ -1,8 +1,0 @@
-CLASS p net/minecraft/CrashReportCategory$3
-	FIELD a val$x I
-	FIELD b val$y I
-	FIELD c val$z I
-	METHOD <init> (III)V
-		ARG 1 val$x
-		ARG 2 val$y
-		ARG 3 val$z

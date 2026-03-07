@@ -1,26 +1,3 @@
-CLASS ku net/minecraft/stats/Stat
-	FIELD a name Ljava/lang/String;
-	FIELD b formatter Lkz;
-	FIELD c NUMBER_FORMAT Ljava/text/NumberFormat;
-	FIELD d DECIMAL_FORMAT Ljava/text/DecimalFormat;
-	FIELD e id I
-	FIELD f awardLocallyOnly Z
-	FIELD h DEFAULT_FORMATTER Lkz;
-	FIELD i TIME_FORMATTER Lkz;
-	FIELD j DISTANCE_FORMATTER Lkz;
-	FIELD k DIVIDE_BY_TEN_FORMATTER Lkz;
-	METHOD <init> (ILjava/lang/String;)V
-		ARG 1 id
-		ARG 2 name
-	METHOD <init> (ILjava/lang/String;Lkz;)V
-		ARG 1 id
-		ARG 2 name
-		ARG 3 formatter
-	METHOD a format (I)Ljava/lang/String;
-		ARG 1 value
-	METHOD d isAchievement ()Z
-	METHOD g postConstruct ()Lku;
-	METHOD h setAwardLocallyOnly ()Lku;
-	METHOD i getName ()Ljava/lang/String;
-	METHOD j access$000 ()Ljava/text/NumberFormat;
-	METHOD k access$100 ()Ljava/text/DecimalFormat;
+CLASS gy net/minecraft/stats/Stat
+	METHOD g postConstruct ()Lgy;
+	METHOD h setAwardLocallyOnly ()Lgy;

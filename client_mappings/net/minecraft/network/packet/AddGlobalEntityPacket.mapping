@@ -1,8 +1,0 @@
-CLASS df net/minecraft/network/packet/AddGlobalEntityPacket
-	FIELD a id I
-	FIELD b x I
-	FIELD c y I
-	FIELD d z I
-	FIELD e type I
-	METHOD <init> (Lnn;)V
-		ARG 1 entity

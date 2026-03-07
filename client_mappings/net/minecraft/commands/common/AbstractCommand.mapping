@@ -1,0 +1,3 @@
+CLASS n net/minecraft/commands/common/AbstractCommand
+	METHOD a setLogger (Lm;)V
+	METHOD a logAdminAction (Lr;Ljava/lang/String;[Ljava/lang/Object;)V

@@ -1,3 +1,0 @@
-CLASS anw net/minecraft/world/level/tile/DirectionalTile
-	METHOD j getDirection (I)I
-		ARG 0 data

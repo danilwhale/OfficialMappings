@@ -1,4 +1,0 @@
-CLASS bao net/minecraft/client/mco/PendingInvitesList
-	FIELD a pendingInvites Ljava/util/List;
-	METHOD a parse (Ljava/lang/String;)Lbao;
-		ARG 0 s

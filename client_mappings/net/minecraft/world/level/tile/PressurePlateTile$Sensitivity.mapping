@@ -1,4 +1,0 @@
-CLASS apx net/minecraft/world/level/tile/PressurePlateTile$Sensitivity
-	FIELD a everything Lapx;
-	FIELD b mobs Lapx;
-	FIELD c players Lapx;

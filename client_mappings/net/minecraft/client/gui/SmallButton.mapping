@@ -1,9 +1,0 @@
-CLASS awl net/minecraft/client/gui/SmallButton
-	FIELD o option Laun;
-	METHOD <init> (IIILaun;Ljava/lang/String;)V
-		ARG 1 id
-		ARG 2 x
-		ARG 3 y
-		ARG 4 item
-		ARG 5 msg
-	METHOD b getOption ()Laun;

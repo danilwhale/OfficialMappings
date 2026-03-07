@@ -1,7 +1,0 @@
-CLASS yg net/minecraft/world/item/LeashItem
-	METHOD a bindPlayerMobs (Luf;Labw;III)Z
-		ARG 0 player
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

@@ -1,1 +1,1 @@
-CLASS auq net/minecraft/client/StopGameException
+CLASS net/minecraft/client/ag net/minecraft/client/StopGameException

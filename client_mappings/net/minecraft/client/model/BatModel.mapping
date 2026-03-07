@@ -1,8 +1,0 @@
-CLASS baz net/minecraft/client/model/BatModel
-	FIELD a head Lbcu;
-	FIELD b body Lbcu;
-	FIELD c rightWing Lbcu;
-	FIELD d leftWing Lbcu;
-	FIELD e rightWingTip Lbcu;
-	FIELD f leftWingTip Lbcu;
-	METHOD a modelVersion ()I

@@ -1,7 +1,0 @@
-CLASS wu net/minecraft/world/item/ColoredTileItem
-	FIELD b descriptionPostfixes [Ljava/lang/String;
-	METHOD <init> (IZ)V
-		ARG 1 id
-		ARG 2 stack
-	METHOD a setDescriptionPostfixes ([Ljava/lang/String;)Lwu;
-		ARG 1 descriptionPostfixes

@@ -1,2 +1,2 @@
-CLASS auk net/minecraft/client/OpenGLCapabilities
+CLASS net/minecraft/client/aa net/minecraft/client/OpenGLCapabilities
 	METHOD a hasOcclusionChecks ()Z

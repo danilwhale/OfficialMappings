@@ -1,7 +1,0 @@
-CLASS axb net/minecraft/client/gui/inventory/BeaconScreen$BeaconCancelButton
-	FIELD o this$0 Laxa;
-	METHOD <init> (Laxa;III)V
-		ARG 1 this$0
-		ARG 2 id
-		ARG 3 x
-		ARG 4 y

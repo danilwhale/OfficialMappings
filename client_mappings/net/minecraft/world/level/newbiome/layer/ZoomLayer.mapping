@@ -1,4 +1,16 @@
-CLASS alc net/minecraft/world/level/newbiome/layer/ZoomLayer
-	METHOD <init> (JLakq;)V
+CLASS acx net/minecraft/world/level/newbiome/layer/ZoomLayer
+	METHOD <init> (JLacl;)V
 		ARG 1 seed
-	METHOD a zoom (JLakq;I)Lakq;
+		ARG 3 parent
+	METHOD a random (II)I
+		ARG 1 a
+		ARG 2 b
+	METHOD a zoom (JLacl;I)Lacl;
+		ARG 0 seed
+		ARG 2 sup
+		ARG 3 count
+	METHOD b random (IIII)I
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d

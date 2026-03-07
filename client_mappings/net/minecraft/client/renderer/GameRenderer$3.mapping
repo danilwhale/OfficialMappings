@@ -1,6 +1,0 @@
-CLASS bfh net/minecraft/client/renderer/GameRenderer$3
-	FIELD a val$ssc Lawf;
-	FIELD b this$0 Lbfe;
-	METHOD <init> (Lbfe;Lawf;)V
-		ARG 1 this$0
-		ARG 2 val$ssc

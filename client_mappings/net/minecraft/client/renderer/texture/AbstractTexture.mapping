@@ -1,2 +1,0 @@
-CLASS bia net/minecraft/client/renderer/texture/AbstractTexture
-	FIELD a id I

@@ -1,4 +1,0 @@
-CLASS aao net/minecraft/world/item/enchantment/ArrowFireEnchantment
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 rarity

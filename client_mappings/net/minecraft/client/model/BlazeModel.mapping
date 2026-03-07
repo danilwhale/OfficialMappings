@@ -1,4 +1,0 @@
-CLASS bba net/minecraft/client/model/BlazeModel
-	FIELD a upperBodyParts [Lbcu;
-	FIELD b head Lbcu;
-	METHOD a modelVersion ()I

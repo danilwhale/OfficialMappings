@@ -1,5 +1,0 @@
-CLASS bej net/minecraft/client/particle/PortalParticle
-	FIELD aB xStart D
-	FIELD aC yStart D
-	FIELD aD zStart D
-	FIELD a oSize F

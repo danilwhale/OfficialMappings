@@ -1,5 +1,0 @@
-CLASS wf net/minecraft/world/inventory/TrapMenu
-	FIELD a dispenser Lasc;
-	METHOD <init> (Lmo;Lasc;)V
-		ARG 1 container
-		ARG 2 dispenser

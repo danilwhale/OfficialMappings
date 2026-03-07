@@ -1,9 +1,0 @@
-CLASS ou net/minecraft/world/entity/ai/attributes/BaseAttribute
-	FIELD a name Ljava/lang/String;
-	FIELD b defaultValue D
-	FIELD c syncable Z
-	METHOD <init> (Ljava/lang/String;D)V
-		ARG 1 name
-		ARG 2 defaultValue
-	METHOD a setSyncable (Z)Lou;
-		ARG 1 syncable

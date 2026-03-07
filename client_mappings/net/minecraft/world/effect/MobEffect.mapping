@@ -1,83 +1,61 @@
-CLASS ni net/minecraft/world/effect/MobEffect
+CLASS ir net/minecraft/world/effect/MobEffect
+	FIELD A reserved_25 Lir;
+	FIELD B reserved_26 Lir;
+	FIELD C reserved_27 Lir;
+	FIELD D reserved_28 Lir;
+	FIELD E reserved_29 Lir;
+	FIELD F reserved_30 Lir;
+	FIELD G reserved_31 Lir;
 	FIELD H id I
-	FIELD I attributeModifiers Ljava/util/Map;
-	FIELD J harmful Z
-	FIELD K color I
-	FIELD L descriptionId Ljava/lang/String;
-	FIELD M icon I
-	FIELD N durationModifier D
-	FIELD O disabled Z
-	FIELD a mobEffects [Lni;
-	FIELD c MOVEMENT_SPEED Lni;
-	FIELD d MOVEMENT_SLOWDOWN Lni;
-	FIELD e DIG_SPEED Lni;
-	FIELD f DIG_SLOWDOWN Lni;
-	FIELD g DAMAGE_BOOST Lni;
-	FIELD h HEAL Lni;
-	FIELD i HARM Lni;
-	FIELD j JUMP Lni;
-	FIELD k CONFUSION Lni;
-	FIELD l REGENERATION Lni;
-	FIELD m DAMAGE_RESISTANCE Lni;
-	FIELD n FIRE_RESISTANCE Lni;
-	FIELD o WATER_BREATHING Lni;
-	FIELD p INVISIBILITY Lni;
-	FIELD q BLINDNESS Lni;
-	FIELD r NIGHT_VISION Lni;
-	FIELD s HUNGER Lni;
-	FIELD t WEAKNESS Lni;
-	FIELD u POISON Lni;
-	FIELD v WITHER Lni;
-	FIELD w HEALTH_BOOST Lni;
-	FIELD x ABSORPTION Lni;
-	FIELD y SATURATION Lni;
+	FIELD I descriptionId Ljava/lang/String;
+	FIELD J icon I
+	FIELD K isHarmful Z
+	FIELD L durationModifier D
+	FIELD M isDisabled Z
+	FIELD N color I
+	FIELD a effects [Lir;
+	FIELD b voidEffect Lir;
+	FIELD c movementSpeed Lir;
+	FIELD d movementSlowdown Lir;
+	FIELD e digSpeed Lir;
+	FIELD f digSlowdown Lir;
+	FIELD g damageBoost Lir;
+	FIELD h heal Lir;
+	FIELD i harm Lir;
+	FIELD j jump Lir;
+	FIELD k confusion Lir;
+	FIELD l regeneration Lir;
+	FIELD m damageResistance Lir;
+	FIELD n fireResistance Lir;
+	FIELD o waterBreathing Lir;
+	FIELD p invisibility Lir;
+	FIELD q blindness Lir;
+	FIELD r nightVision Lir;
+	FIELD s hunger Lir;
+	FIELD t weakness Lir;
+	FIELD u poison Lir;
+	FIELD v reserved_20 Lir;
+	FIELD w reserved_21 Lir;
+	FIELD x reserved_22 Lir;
+	FIELD y reserved_23 Lir;
+	FIELD z reserved_24 Lir;
 	METHOD <init> (IZI)V
 		ARG 1 id
-		ARG 2 harmful
+		ARG 2 isHarmful
 		ARG 3 color
-	METHOD a getDescriptionId ()Ljava/lang/String;
-	METHOD a getDurationModifier (D)Lni;
+	METHOD a setDurationModifier (D)Lir;
 		ARG 1 durationModifier
-	METHOD a isDurationEffectTick (II)Z
-		ARG 1 duration
-		ARG 2 amplifier
-	METHOD a getAttributeModifierValue (ILot;)D
-		ARG 1 count
-		ARG 2 modifier
-	METHOD a formatDuration (Lnj;)Ljava/lang/String;
-		ARG 0 effect
-	METHOD a applyEffectTick (Lof;I)V
-		ARG 1 mob
-		ARG 2 i
-	METHOD a applyInstantenousEffect (Lof;Lof;ID)V
-		ARG 1 mob
-		ARG 2 target
-		ARG 3 id
-		ARG 4 amplifier
-	METHOD a removeAttributeModifiers (Lof;Lov;I)V
-		ARG 1 mob
-		ARG 2 map
-		ARG 3 i
-	METHOD a addAttributeModifier (Lor;Ljava/lang/String;DI)Lni;
-		ARG 1 attrib
-		ARG 2 uuid
-		ARG 3 d
-		ARG 5 i
-	METHOD b isInstantenous ()Z
-	METHOD b setIcon (II)Lni;
-		ARG 1 x
-		ARG 2 y
-	METHOD b setDescriptionId (Ljava/lang/String;)Lni;
-		ARG 1 id
-	METHOD b addAttributeModifiers (Lof;Lov;I)V
-		ARG 1 mob
-		ARG 2 map
-		ARG 3 i
+	METHOD a formatDuration (Lis;)Ljava/lang/String;
+		ARG 0 instance
+	METHOD b isInstantaneous ()Z
+	METHOD b setIcon (II)Lir;
+		ARG 1 xPos
+		ARG 2 yPos
 	METHOD c getId ()I
 	METHOD d hasIcon ()Z
 	METHOD e getIcon ()I
 	METHOD f isHarmful ()Z
 	METHOD g getDurationModifier ()D
+	METHOD h setDisabled ()Lir;
 	METHOD i isDisabled ()Z
 	METHOD j getColor ()I
-	METHOD k getAttributeModifiers ()Ljava/util/Map;

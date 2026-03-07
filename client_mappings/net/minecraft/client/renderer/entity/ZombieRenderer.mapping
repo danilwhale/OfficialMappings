@@ -1,8 +1,0 @@
-CLASS bhz net/minecraft/client/renderer/entity/ZombieRenderer
-	FIELD o ZOMBIE_PIGMAN_LOCATION Lbjo;
-	FIELD p ZOMBIE_LOCATION Lbjo;
-	FIELD q ZOMBIE_VILLAGER_LOCATION Lbjo;
-	FIELD r humanoidmodel Lbbj;
-	FIELD s villagerzombiemodel Lbci;
-	METHOD b swapArmor (Ltw;)V
-		ARG 1 zombie

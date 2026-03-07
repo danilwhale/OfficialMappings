@@ -1,6 +1,0 @@
-CLASS blr net/minecraft/client/sound/SoundRepository$1
-	FIELD a this$0 Lblq;
-	METHOD <init> (Lblq;)V
-		ARG 1 this$0
-	METHOD openConnection openConnection (Ljava/net/URL;)Ljava/net/URLConnection;
-		ARG 1 url

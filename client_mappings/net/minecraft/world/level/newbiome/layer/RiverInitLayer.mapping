@@ -1,3 +1,0 @@
-CLASS aks net/minecraft/world/level/newbiome/layer/RiverInitLayer
-	METHOD <init> (JLakq;)V
-		ARG 1 seed

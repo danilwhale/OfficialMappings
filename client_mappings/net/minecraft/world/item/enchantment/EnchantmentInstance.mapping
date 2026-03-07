@@ -1,9 +1,0 @@
-CLASS abb net/minecraft/world/item/enchantment/EnchantmentInstance
-	FIELD b enchantment Laau;
-	FIELD c level I
-	METHOD <init> (II)V
-		ARG 1 enchantment
-		ARG 2 level
-	METHOD <init> (Laau;I)V
-		ARG 1 enchantment
-		ARG 2 level

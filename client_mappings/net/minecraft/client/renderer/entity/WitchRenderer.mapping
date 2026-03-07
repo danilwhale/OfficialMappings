@@ -1,3 +1,0 @@
-CLASS bhv net/minecraft/client/renderer/entity/WitchRenderer
-	FIELD a WITCH_LOCATION Lbjo;
-	FIELD f witchmodel Lbcj;

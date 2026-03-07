@@ -1,3 +1,4 @@
-CLASS akt net/minecraft/world/level/newbiome/layer/RiverLayer
-	METHOD <init> (JLakq;)V
+CLASS aco net/minecraft/world/level/newbiome/layer/RiverLayer
+	METHOD <init> (JLacl;)V
 		ARG 1 seed
+		ARG 3 parent

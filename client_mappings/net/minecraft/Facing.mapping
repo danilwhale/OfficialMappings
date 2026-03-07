@@ -1,6 +1,5 @@
-CLASS s net/minecraft/Facing
+CLASS i net/minecraft/Facing
 	FIELD a OPPOSITE_FACING [I
 	FIELD b STEP_X [I
 	FIELD c STEP_Y [I
 	FIELD d STEP_Z [I
-	FIELD e FACING_NAMES [Ljava/lang/String;

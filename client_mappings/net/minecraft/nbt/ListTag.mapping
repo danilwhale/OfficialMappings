@@ -1,10 +1,1 @@
-CLASS cg net/minecraft/nbt/ListTag
-	FIELD a list Ljava/util/List;
-	FIELD c type B
-	METHOD a remove (I)Lcl;
-		ARG 1 index
-	METHOD a add (Lcl;)V
-		ARG 1 tag
-	METHOD b get (I)Lcl;
-		ARG 1 index
-	METHOD c size ()I
+CLASS at net/minecraft/nbt/ListTag

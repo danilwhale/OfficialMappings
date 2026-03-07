@@ -1,4 +1,0 @@
-CLASS ben net/minecraft/client/particle/SpellParticle
-	FIELD a baseTex I
-	METHOD a setBaseTex (I)V
-		ARG 1 baseTex

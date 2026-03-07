@@ -1,0 +1,4 @@
+CLASS acb net/minecraft/world/level/newbiome/layer/acb
+	METHOD <init> (JLacl;)V
+		ARG 1 seed
+		ARG 3 parent

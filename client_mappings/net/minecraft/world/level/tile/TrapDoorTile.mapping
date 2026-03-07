@@ -1,13 +1,1 @@
-CLASS ari net/minecraft/world/level/tile/TrapDoorTile
-	METHOD a playSound (Labw;IIIZ)V
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 open
-	METHOD d setShape (I)V
-		ARG 1 data
-	METHOD f isUpsideDown (I)Z
-		ARG 0 data
-	METHOD g attachesTo (I)Z
-		ARG 0 tile
+CLASS ahx net/minecraft/world/level/tile/TrapDoorTile

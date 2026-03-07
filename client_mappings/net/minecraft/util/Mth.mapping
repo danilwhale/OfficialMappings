@@ -1,70 +1,58 @@
-CLASS ls net/minecraft/util/Mth
-	FIELD a SIN [F
+CLASS hq net/minecraft/util/Mth
+	FIELD a sin [F
 	METHOD a sqrt (D)F
-		ARG 0 value
-	METHOD a absMax (DD)D
 		ARG 0 x
-		ARG 2 y
+	METHOD a asbMax (DD)D
+		ARG 0 a
+		ARG 2 b
 	METHOD a sin (F)F
-		ARG 0 x
+		ARG 0 i
 	METHOD a clamp (FFF)F
 		ARG 0 value
 		ARG 1 min
 		ARG 2 max
 	METHOD a abs (I)I
-		ARG 0 value
+		ARG 0 v
 	METHOD a intFloorDiv (II)I
-		ARG 0 x
-		ARG 1 y
+		ARG 0 a
+		ARG 1 b
 	METHOD a clamp (III)I
 		ARG 0 value
 		ARG 1 min
 		ARG 2 max
 	METHOD a isEmpty (Ljava/lang/String;)Z
-		ARG 0 str
-	METHOD a getDouble (Ljava/lang/String;D)D
-		ARG 0 str
-		ARG 1 defaultValue
-	METHOD a getDouble (Ljava/lang/String;DD)D
-		ARG 0 str
-		ARG 1 defaultValue
-		ARG 3 minValue
-	METHOD a getInt (Ljava/lang/String;I)I
-		ARG 0 str
-		ARG 1 defaultValue
-	METHOD a getInt (Ljava/lang/String;II)I
-		ARG 0 str
-		ARG 1 defaultValue
-		ARG 2 minValue
-	METHOD a nextDouble (Ljava/util/Random;DD)D
-		ARG 0 random
-		ARG 1 min
-		ARG 3 max
+		ARG 0 string
+	METHOD a openLink (Ljava/net/URI;)V
+		ARG 0 link
 	METHOD a nextInt (Ljava/util/Random;II)I
 		ARG 0 random
-		ARG 1 min
-		ARG 2 max
+		ARG 1 defaultValue
+		ARG 2 min
 	METHOD a average ([J)D
-		ARG 0 values
+		ARG 0 s
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
 	METHOD b fastFloor (D)I
-		ARG 0 value
-	METHOD b cos (F)F
 		ARG 0 x
+	METHOD b cos (F)F
+		ARG 0 i
 	METHOD c floor (D)I
-		ARG 0 value
+		ARG 0 v
 	METHOD c sqrt (F)F
-		ARG 0 value
+		ARG 0 x
 	METHOD d lfloor (D)J
-		ARG 0 value
+		ARG 0 v
 	METHOD d floor (F)I
-		ARG 0 value
+		ARG 0 v
+	METHOD e absFloor (D)I
+		ARG 0 v
 	METHOD e abs (F)F
-		ARG 0 value
+		ARG 0 v
 	METHOD f ceil (D)I
-		ARG 0 value
+		ARG 0 v
 	METHOD f ceil (F)I
-		ARG 0 value
+		ARG 0 v
 	METHOD g wrapDegrees (D)D
-		ARG 0 angle
+		ARG 0 degrees
 	METHOD g wrapDegrees (F)F
-		ARG 0 angle
+		ARG 0 degrees

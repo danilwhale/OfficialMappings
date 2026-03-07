@@ -1,9 +1,0 @@
-CLASS asu net/minecraft/world/level/tile/piston/PistonExtensionTile
-	FIELD a overrideTopTexture Lms;
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD a setOverrideTopTexture (Lms;)V
-		ARG 1 overrideTopTexture
-	METHOD d getFacing (I)I
-		ARG 0 data
-	METHOD q clearOverrideTopTexture ()V

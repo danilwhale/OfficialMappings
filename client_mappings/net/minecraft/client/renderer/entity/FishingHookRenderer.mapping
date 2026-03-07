@@ -1,2 +1,0 @@
-CLASS bgq net/minecraft/client/renderer/entity/FishingHookRenderer
-	FIELD a TEXTURE_LOCATION Lbjo;

@@ -1,3 +1,0 @@
-CLASS aoc net/minecraft/world/level/tile/EnchantmentTableTile
-	METHOD <init> (I)V
-		ARG 1 id

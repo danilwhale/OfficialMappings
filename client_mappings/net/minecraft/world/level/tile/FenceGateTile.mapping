@@ -1,5 +1,0 @@
-CLASS aog net/minecraft/world/level/tile/FenceGateTile
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD m_ isOpen (I)Z
-		ARG 0 data

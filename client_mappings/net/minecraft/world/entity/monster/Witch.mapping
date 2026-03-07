@@ -1,9 +1,0 @@
-CLASS tv net/minecraft/world/entity/monster/Witch
-	FIELD bp SPEED_MODIFIER_DRINKING_UUID Ljava/util/UUID;
-	FIELD bq SPEED_MODIFIER_DRINKING Lot;
-	FIELD br deathLoot [I
-	FIELD bs usingTime I
-	METHOD a setUsingItem (Z)V
-		ARG 1 usingItem
-	METHOD bT isUsingItem ()Z
-	METHOD h getCurrentSwingDuration ()I

@@ -1,2 +1,0 @@
-CLASS cs net/minecraft/network/NetworkConnection$4
-	FIELD a this$0 Lco;

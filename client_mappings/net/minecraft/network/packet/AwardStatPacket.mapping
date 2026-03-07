@@ -1,6 +1,0 @@
-CLASS dk net/minecraft/network/packet/AwardStatPacket
-	FIELD a id I
-	FIELD b value I
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 amount

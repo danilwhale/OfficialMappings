@@ -1,5 +1,0 @@
-CLASS wv net/minecraft/world/item/ComplexItem
-	METHOD c getUpdatePacket (Lye;Labw;Luf;)Ley;
-		ARG 1 instance
-		ARG 2 level
-		ARG 3 player

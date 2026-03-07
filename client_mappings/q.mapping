@@ -1,0 +1,4 @@
+CLASS q
+	METHOD a performCommand (Lr;Ljava/lang/String;)V
+		ARG 1 sender
+		ARG 2 command

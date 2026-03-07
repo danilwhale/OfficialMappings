@@ -1,7 +1,0 @@
-CLASS un net/minecraft/world/entity/projectile/Projectile
-	METHOD c shoot (DDDFF)V
-		ARG 1 xa
-		ARG 3 ya
-		ARG 5 za
-		ARG 7 power
-		ARG 8 uncertainity

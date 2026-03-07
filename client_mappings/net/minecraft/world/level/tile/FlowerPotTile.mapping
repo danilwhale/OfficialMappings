@@ -1,3 +1,0 @@
-CLASS aoj net/minecraft/world/level/tile/FlowerPotTile
-	METHOD <init> (I)V
-		ARG 1 id

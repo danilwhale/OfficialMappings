@@ -1,35 +1,4 @@
-CLASS lm net/minecraft/util/IntHashMap
-	FIELD a table [Lln;
-	FIELD b size I
-	FIELD c threshold I
-	FIELD d loadFactor F
-	FIELD e modCount I
-	FIELD f keys Ljava/util/Set;
+CLASS hl net/minecraft/util/IntHashMap
 	METHOD a get (I)Ljava/lang/Object;
-		ARG 1 key
-	METHOD a indexFor (II)I
-		ARG 0 h
-		ARG 1 length
-	METHOD a addEntry (IILjava/lang/Object;I)V
-		ARG 1 hash
-		ARG 2 key
-		ARG 3 value
-		ARG 4 bucketIndex
 	METHOD a put (ILjava/lang/Object;)V
-		ARG 1 key
-		ARG 2 value
-	METHOD a transfer ([Lln;)V
-		ARG 1 newTable
 	METHOD b containsKey (I)Z
-		ARG 1 key
-	METHOD c clear ()V
-	METHOD c getEntry (I)Lln;
-		ARG 1 key
-	METHOD d remove (I)Ljava/lang/Object;
-		ARG 1 key
-	METHOD e removeEntryForKey (I)Lln;
-		ARG 1 key
-	METHOD g hash (I)I
-		ARG 0 h
-	METHOD h resize (I)V
-		ARG 1 newCapacity

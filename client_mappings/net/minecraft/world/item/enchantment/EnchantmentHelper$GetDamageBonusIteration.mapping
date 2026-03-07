@@ -1,5 +1,0 @@
-CLASS aaz net/minecraft/world/item/enchantment/EnchantmentHelper$GetDamageBonusIteration
-	FIELD a bonus F
-	FIELD b mob Lof;
-	METHOD <init> (Laax;)V
-		ARG 1 this$0

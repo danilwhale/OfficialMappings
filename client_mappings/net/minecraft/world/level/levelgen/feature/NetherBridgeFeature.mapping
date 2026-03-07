@@ -1,3 +1,0 @@
-CLASS agn net/minecraft/world/level/levelgen/feature/NetherBridgeFeature
-	FIELD e fortressEnemies Ljava/util/List;
-	METHOD b getSpecialEnemies ()Ljava/util/List;

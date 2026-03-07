@@ -1,5 +1,0 @@
-CLASS bhg net/minecraft/client/renderer/entity/OcelotRenderer
-	FIELD a CAT_BLACK_LOCATION Lbjo;
-	FIELD f CAT_OCELOT_LOCATION Lbjo;
-	FIELD g CAT_RED_LOCATION Lbjo;
-	FIELD h CAT_SIAMESE_LOCATION Lbjo;

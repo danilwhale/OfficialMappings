@@ -1,7 +1,0 @@
-CLASS agk net/minecraft/world/level/levelgen/structure/MineShaftPieces$MineShaftRoom
-	FIELD a childEntranceBoxes Ljava/util/List;
-	METHOD <init> (ILjava/util/Random;II)V
-		ARG 1 a
-		ARG 2 b
-		ARG 3 c
-		ARG 4 d

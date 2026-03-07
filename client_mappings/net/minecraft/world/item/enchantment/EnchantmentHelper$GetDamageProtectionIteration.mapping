@@ -1,5 +1,0 @@
-CLASS aba net/minecraft/world/item/enchantment/EnchantmentHelper$GetDamageProtectionIteration
-	FIELD a protection I
-	FIELD b source Lnb;
-	METHOD <init> (Laax;)V
-		ARG 1 this$0

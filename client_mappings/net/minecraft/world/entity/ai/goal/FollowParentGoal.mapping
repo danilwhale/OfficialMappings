@@ -1,8 +1,0 @@
-CLASS pr net/minecraft/world/entity/ai/goal/FollowParentGoal
-	FIELD a animal Lrp;
-	FIELD b parent Lrp;
-	FIELD c speedModifier D
-	FIELD d timeToRecalcPath I
-	METHOD <init> (Lrp;D)V
-		ARG 1 animal
-		ARG 2 speedModifier

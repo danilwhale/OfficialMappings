@@ -1,6 +1,0 @@
-CLASS ma net/minecraft/util/StringUtil
-	FIELD a STRIP_COLOR_PATTERN Ljava/util/regex/Pattern;
-	METHOD a formatTickDuration (I)Ljava/lang/String;
-		ARG 0 i
-	METHOD a stripColor (Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 s

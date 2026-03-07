@@ -1,12 +1,1 @@
-CLASS auo net/minecraft/client/ProgressRenderer
-	FIELD a status Ljava/lang/String;
-	FIELD b minecraft Latv;
-	FIELD c title Ljava/lang/String;
-	FIELD d lastTime J
-	FIELD e noAbort Z
-	METHOD <init> (Latv;)V
-		ARG 1 minecraft
-	METHOD b progressStart (Ljava/lang/String;)V
-		ARG 1 title
-	METHOD d _progressStart (Ljava/lang/String;)V
-		ARG 1 title
+CLASS net/minecraft/client/ae net/minecraft/client/ProgressRenderer

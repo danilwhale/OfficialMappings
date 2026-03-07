@@ -1,9 +1,0 @@
-CLASS bjr net/minecraft/client/resources/ResourcePack
-	METHOD a getResource (Lbjo;)Ljava/io/InputStream;
-		ARG 1 location
-	METHOD a getMetadataSection (Lbki;Ljava/lang/String;)Lbkg;
-		ARG 2 sectionName
-	METHOD b getName ()Ljava/lang/String;
-	METHOD b hasResource (Lbjo;)Z
-		ARG 1 location
-	METHOD c getNamespaces ()Ljava/util/Set;

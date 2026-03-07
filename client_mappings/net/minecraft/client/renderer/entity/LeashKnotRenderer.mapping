@@ -1,3 +1,0 @@
-CLASS bgz net/minecraft/client/renderer/entity/LeashKnotRenderer
-	FIELD a KNOT_LOCATION Lbjo;
-	FIELD f model Lbbm;

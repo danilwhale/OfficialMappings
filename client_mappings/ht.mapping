@@ -1,0 +1,4 @@
+CLASS ht
+	METHOD a push (Ljava/lang/String;)V
+	METHOD b pop ()V
+	METHOD c popPush (Ljava/lang/String;)V

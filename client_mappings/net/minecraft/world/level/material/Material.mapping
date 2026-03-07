@@ -1,60 +1,19 @@
-CLASS akc net/minecraft/world/level/material/Material
-	FIELD A clay Lakc;
-	FIELD B vegetable Lakc;
-	FIELD C egg Lakc;
-	FIELD D portal Lakc;
-	FIELD E cake Lakc;
-	FIELD F web Lakc;
-	FIELD G piston Lakc;
-	FIELD H color Lake;
-	FIELD I flammable Z
-	FIELD J replaceable Z
-	FIELD K notSolidBlocking Z
-	FIELD L alwaysDestroyable Z
-	FIELD M pushReaction I
-	FIELD N destroyedByHand Z
-	FIELD a air Lakc;
-	FIELD b grass Lakc;
-	FIELD c dirt Lakc;
-	FIELD d wood Lakc;
-	FIELD e stone Lakc;
-	FIELD f metal Lakc;
-	FIELD g heavyMetal Lakc;
-	FIELD h water Lakc;
-	FIELD i lava Lakc;
-	FIELD j leaves Lakc;
-	FIELD k plant Lakc;
-	FIELD l replaceable_plant Lakc;
-	FIELD m sponge Lakc;
-	FIELD n bed Lakc;
-	FIELD o fire Lakc;
-	FIELD p sand Lakc;
-	FIELD q decoration Lakc;
-	FIELD r cloth Lakc;
-	FIELD s glass Lakc;
-	FIELD t buildableGlass Lakc;
-	FIELD u explosive Lakc;
-	FIELD v coral Lakc;
-	FIELD w ice Lakc;
-	FIELD x topSnow Lakc;
-	FIELD y snow Lakc;
-	FIELD z cactus Lakc;
-	METHOD <init> (Lake;)V
+CLASS abx net/minecraft/world/level/material/Material
+	FIELD F color Labz;
+	FIELD K pushReaction I
+	FIELD a air Labx;
+	FIELD b grass Labx;
+	FIELD c dirt Labx;
+	FIELD d wood Labx;
+	FIELD e stone Labx;
+	FIELD f metal Labx;
+	FIELD g water Labx;
+	FIELD h lava Labx;
+	FIELD i leaves Labx;
+	FIELD q glass Labx;
+	METHOD <init> (Labz;)V
 		ARG 1 color
 	METHOD a isSolid ()Z
 	METHOD b blocksLight ()Z
 	METHOD c blocksMotion ()Z
-	METHOD d isLiquid ()Z
-	METHOD f notAlwaysDestroyable ()Lakc;
-	METHOD g flammable ()Lakc;
-	METHOD h isFlammable ()Z
-	METHOD i replaceable ()Lakc;
-	METHOD j isReplaceable ()Z
 	METHOD k isSolidBlocking ()Z
-	METHOD l isAlwaysDestroyable ()Z
-	METHOD m getPushReaction ()I
-	METHOD n destroyOnPush ()Lakc;
-	METHOD o notPushable ()Lakc;
-	METHOD p makeDestroyedByHand ()Lakc;
-	METHOD q isDestroyedByHand ()Z
-	METHOD r notSolidBlocking ()Lakc;

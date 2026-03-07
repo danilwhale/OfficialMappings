@@ -1,5 +1,0 @@
-CLASS bde net/minecraft/client/multiplayer/MultiPlayerLevel$1
-	FIELD a this$0 Lbdd;
-	METHOD <init> (Lbdd;)V
-		ARG 1 this$0
-	METHOD call call ()Ljava/lang/Object;

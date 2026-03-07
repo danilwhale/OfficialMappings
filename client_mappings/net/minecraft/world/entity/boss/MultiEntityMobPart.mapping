@@ -1,8 +1,0 @@
-CLASS si net/minecraft/world/entity/boss/MultiEntityMobPart
-	FIELD a parentMob Lsh;
-	FIELD b name Ljava/lang/String;
-	METHOD <init> (Lsh;Ljava/lang/String;FF)V
-		ARG 1 parentMob
-		ARG 2 name
-		ARG 3 width
-		ARG 4 height

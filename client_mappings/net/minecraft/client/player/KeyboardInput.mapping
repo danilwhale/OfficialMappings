@@ -1,4 +1,0 @@
-CLASS bew net/minecraft/client/player/KeyboardInput
-	FIELD e options Laul;
-	METHOD <init> (Laul;)V
-		ARG 1 options

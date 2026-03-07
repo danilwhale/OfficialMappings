@@ -1,5 +1,0 @@
-CLASS bgk net/minecraft/client/renderer/entity/EndermanRenderer
-	FIELD a ENDERMAN_EYES_LOCATION Lbjo;
-	FIELD f ENDERMAN_LOCATION Lbjo;
-	FIELD g endermanModel Lbbh;
-	FIELD h random Ljava/util/Random;

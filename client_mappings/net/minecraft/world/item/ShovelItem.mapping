@@ -1,5 +1,0 @@
-CLASS yy net/minecraft/world/item/ShovelItem
-	FIELD c diggables [Laqz;
-	METHOD <init> (ILyd;)V
-		ARG 1 id
-		ARG 2 tier

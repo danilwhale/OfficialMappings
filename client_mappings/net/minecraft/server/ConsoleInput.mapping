@@ -1,6 +1,7 @@
-CLASS go net/minecraft/server/ConsoleInput
+CLASS net/minecraft/server/c net/minecraft/server/ConsoleInput
 	FIELD a msg Ljava/lang/String;
-	FIELD b source Lad;
-	METHOD <init> (Ljava/lang/String;Lad;)V
+	FIELD b source Lr;
+		COMMENT originally ConsoleInputSource
+	METHOD <init> (Ljava/lang/String;Lr;)V
 		ARG 1 msg
 		ARG 2 source

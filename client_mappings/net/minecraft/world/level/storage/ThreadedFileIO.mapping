@@ -1,4 +1,0 @@
-CLASS ams net/minecraft/world/level/storage/ThreadedFileIO
-	COMMENT guessed name but it comes after SavedDataStorage fghjkdhgk
-	FIELD a instance Lams;
-	METHOD run run ()V

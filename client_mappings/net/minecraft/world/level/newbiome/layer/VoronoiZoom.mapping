@@ -1,3 +1,12 @@
-CLASS alb net/minecraft/world/level/newbiome/layer/VoronoiZoom
-	METHOD <init> (JLakq;)V
+CLASS acw net/minecraft/world/level/newbiome/layer/VoronoiZoom
+	METHOD <init> (JLacl;)V
 		ARG 1 seed
+		ARG 3 parent
+	METHOD a random (II)I
+		ARG 1 a
+		ARG 2 b
+	METHOD b random (IIII)I
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d

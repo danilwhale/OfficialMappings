@@ -1,44 +1,5 @@
-CLASS nj net/minecraft/world/effect/MobEffectInstance
-	FIELD a id I
-	FIELD b duration I
-	FIELD c amplifier I
-	FIELD d splash Z
-	FIELD e ambient Z
-	FIELD f noCounter Z
-	METHOD <init> (II)V
-		ARG 1 effect
-		ARG 2 duration
-	METHOD <init> (III)V
-		ARG 1 effect
-		ARG 2 duration
-		ARG 3 amplifier
-	METHOD <init> (IIIZ)V
-		ARG 1 effect
-		ARG 2 duration
-		ARG 3 amplifier
-		ARG 4 ambient
-	METHOD <init> (Lnj;)V
-		ARG 1 effect
+CLASS is net/minecraft/world/effect/MobEffectInstance
 	METHOD a getId ()I
-	METHOD a save (Lby;)Lby;
-		ARG 1 tag
-	METHOD a update (Lnj;)V
-		ARG 1 effect
-	METHOD a applyEffect (Lof;)Z
-		ARG 1 mob
-	METHOD a setSplash (Z)V
-		ARG 1 splash
 	METHOD b getDuration ()I
-	METHOD b load (Lby;)Lnj;
-		ARG 0 tag
-	METHOD b tick (Lof;)V
-		ARG 1 mob
-	METHOD b setNoCounter (Z)V
-		ARG 1 nc
 	METHOD c getAmplifier ()I
-	METHOD e isAmbient ()Z
-	METHOD equals (Ljava/lang/Object;)Z
-		ARG 1 o
-	METHOD f getDescriptionId ()Ljava/lang/String;
-	METHOD g isNoCounter ()Z
-	METHOD h tickDownDuration ()I
+	METHOD d getDescriptionId ()Ljava/lang/String;

@@ -1,7 +1,3 @@
-CLASS lx net/minecraft/util/ProgressListener
+CLASS hv net/minecraft/util/ProgressListener
 	METHOD a progressStagePercentage (I)V
 		ARG 1 i
-	METHOD a progressStartNoAbort (Ljava/lang/String;)V
-		ARG 1 title
-	METHOD c progressStage (Ljava/lang/String;)V
-		ARG 1 status

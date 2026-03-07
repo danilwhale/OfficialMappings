@@ -1,0 +1,4 @@
+CLASS uw net/minecraft/world/level/biome/BiomeCache$Block
+	FIELD a temps [F
+	FIELD b downfall [F
+	FIELD c biomes [Lut;

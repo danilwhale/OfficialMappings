@@ -1,2 +1,0 @@
-CLASS biz net/minecraft/client/renderer/tileentity/PistonPieceRenderer
-	FIELD a tileRenderer Lbfr;

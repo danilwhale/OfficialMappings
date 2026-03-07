@@ -1,0 +1,3 @@
+CLASS net/minecraft/server/e net/minecraft/server/LogConfigurator
+	FIELD a logger Ljava/util/logging/Logger;
+	METHOD a initLogger ()V

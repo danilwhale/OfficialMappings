@@ -1,7 +1,0 @@
-CLASS kc net/minecraft/server/network/PlayerConnection$2
-	FIELD a val$packet Ley;
-	FIELD b this$0 Lka;
-	METHOD <init> (Lka;Ley;)V
-		ARG 1 this$0
-		ARG 2 val$packet
-	METHOD call call ()Ljava/lang/Object;

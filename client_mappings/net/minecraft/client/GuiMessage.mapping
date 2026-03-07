@@ -1,11 +1,1 @@
-CLASS atr net/minecraft/client/GuiMessage
-	FIELD a addedTime I
-	FIELD b message Ljava/lang/String;
-	FIELD c id I
-	METHOD <init> (ILjava/lang/String;I)V
-		ARG 1 addedTime
-		ARG 2 message
-		ARG 3 id
-	METHOD a getMessage ()Ljava/lang/String;
-	METHOD b getAddedTime ()I
-	METHOD c getId ()I
+CLASS net/minecraft/client/h net/minecraft/client/GuiMessage

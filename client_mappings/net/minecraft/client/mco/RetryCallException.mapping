@@ -1,4 +1,0 @@
-CLASS baq net/minecraft/client/mco/RetryCallException
-	FIELD d delaySeconds I
-	METHOD <init> (I)V
-		ARG 1 delaySeconds

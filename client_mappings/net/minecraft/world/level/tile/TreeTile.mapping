@@ -1,5 +1,1 @@
-CLASS arj net/minecraft/world/level/tile/TreeTile
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD f getWoodType (I)I
-		ARG 0 data
+CLASS ahy net/minecraft/world/level/tile/TreeTile

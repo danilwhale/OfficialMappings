@@ -1,3 +1,0 @@
-CLASS jl net/minecraft/server/level/DerivedServerLevel
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lamc;Ljava/lang/String;ILacd;Ljs;Llv;Llp;)V
-		ARG 6 DerivedLevelData

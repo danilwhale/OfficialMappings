@@ -1,9 +1,0 @@
-CLASS bhy net/minecraft/client/renderer/entity/WolfRenderer
-	FIELD a WOLF_LOCATION Lbjo;
-	FIELD f WOLF_TAME_LOCATION Lbjo;
-	FIELD g WOLF_ANGRY_LOCATION Lbjo;
-	FIELD h WOLF_COLLAR_LOCATION Lbjo;
-	METHOD <init> (Lbbo;Lbbo;F)V
-		ARG 1 model
-		ARG 2 armor
-		ARG 3 shadow

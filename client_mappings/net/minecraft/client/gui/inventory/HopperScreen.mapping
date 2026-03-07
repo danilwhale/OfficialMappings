@@ -1,6 +1,0 @@
-CLASS axt net/minecraft/client/gui/inventory/HopperScreen
-	FIELD t HOPPER_LOCATION Lbjo;
-	FIELD u inventory Lmo;
-	METHOD <init> (Lud;Lmo;)V
-		ARG 1 inventory
-		ARG 2 container

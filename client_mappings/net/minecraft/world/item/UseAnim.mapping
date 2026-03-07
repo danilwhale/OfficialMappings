@@ -1,6 +1,0 @@
-CLASS zj net/minecraft/world/item/UseAnim
-	FIELD a none Lzj;
-	FIELD b eat Lzj;
-	FIELD c drink Lzj;
-	FIELD d block Lzj;
-	FIELD e bow Lzj;

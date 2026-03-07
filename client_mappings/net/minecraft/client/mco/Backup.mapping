@@ -1,6 +1,0 @@
-CLASS bag net/minecraft/client/mco/Backup
-	FIELD a backupId Ljava/lang/String;
-	FIELD b lastModifiedDate Ljava/util/Date;
-	FIELD c size J
-	METHOD a parse (Largo/jdom/JsonNode;)Lbag;
-		ARG 0 j

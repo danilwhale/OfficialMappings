@@ -1,8 +1,0 @@
-CLASS aag net/minecraft/world/item/crafting/Recipes$1
-	FIELD a this$0 Laaf;
-	METHOD <init> (Laaf;)V
-		ARG 1 this$0
-	METHOD a compare (Laah;Laah;)I
-	METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
-		ARG 1 r0
-		ARG 2 r1

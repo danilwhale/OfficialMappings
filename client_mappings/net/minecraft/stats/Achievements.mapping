@@ -1,2 +1,34 @@
-CLASS kp net/minecraft/stats/Achievements
+CLASS gu net/minecraft/stats/Achievements
+	FIELD A potion Lgt;
+	FIELD B theEnd Lgt;
+	FIELD C winGame Lgt;
+	FIELD D enchantments Lgt;
+	FIELD E overkill Lgt;
+	FIELD F bookcase Lgt;
+	FIELD a xMin I
+	FIELD b yMin I
+	FIELD c xMax I
+	FIELD d yMax I
+	FIELD e achievements Ljava/util/List;
+	FIELD f openInventory Lgt;
+	FIELD g mineWood Lgt;
+	FIELD h buildWorkBench Lgt;
+	FIELD i buildPickaxe Lgt;
+	FIELD j buildFurnace Lgt;
+	FIELD k acquireIron Lgt;
+	FIELD l buildHoe Lgt;
+	FIELD m makeBread Lgt;
+	FIELD n bakeCake Lgt;
+	FIELD o buildBetterPickaxe Lgt;
+	FIELD p cookFish Lgt;
+	FIELD q onARail Lgt;
+	FIELD r buildSword Lgt;
+	FIELD s killEnemy Lgt;
+	FIELD t killCow Lgt;
+	FIELD u flyPig Lgt;
+	FIELD v snipeSkeleton Lgt;
+	FIELD w diamonds Lgt;
+	FIELD x portal Lgt;
+	FIELD y ghast Lgt;
+	FIELD z blazeRod Lgt;
 	METHOD a init ()V

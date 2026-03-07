@@ -1,6 +1,0 @@
-CLASS qz net/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal$1
-	FIELD c val$pred Lnw;
-	FIELD d this$0 Lqy;
-	METHOD <init> (Lqy;Lnw;)V
-		ARG 1 this$0
-		ARG 2 val$pred

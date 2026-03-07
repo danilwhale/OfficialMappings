@@ -1,4 +1,0 @@
-CLASS ph net/minecraft/world/entity/ai/goal/AvoidPlayerGoal$1
-	FIELD c this$0 Lpg;
-	METHOD <init> (Lpg;)V
-		ARG 1 this$0

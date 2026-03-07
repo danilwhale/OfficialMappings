@@ -1,9 +1,0 @@
-CLASS vh net/minecraft/world/inventory/BrewingStandMenu$PotionSlot
-	METHOD <init> (Luf;Lmo;III)V
-		ARG 1 player
-		ARG 2 container
-		ARG 3 slot
-		ARG 4 x
-		ARG 5 y
-	METHOD b_ mayPlaceItem (Lye;)Z
-		ARG 0 item

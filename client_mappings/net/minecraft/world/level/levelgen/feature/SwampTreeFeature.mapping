@@ -1,7 +1,1 @@
-CLASS afy net/minecraft/world/level/levelgen/feature/SwampTreeFeature
-	METHOD b addVine (Labw;IIII)V
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 d
+CLASS yb net/minecraft/world/level/levelgen/feature/SwampTreeFeature

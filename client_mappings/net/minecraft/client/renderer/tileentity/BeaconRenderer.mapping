@@ -1,2 +1,0 @@
-CLASS biu net/minecraft/client/renderer/tileentity/BeaconRenderer
-	FIELD a BEAM_LOCATION Lbjo;

@@ -1,5 +1,0 @@
-CLASS zi net/minecraft/world/item/TilePlanterItem
-	FIELD a tileId I
-	METHOD <init> (ILaqz;)V
-		ARG 1 id
-		ARG 2 tile

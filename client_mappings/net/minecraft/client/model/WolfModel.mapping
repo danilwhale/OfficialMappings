@@ -1,9 +1,0 @@
-CLASS bcl net/minecraft/client/model/WolfModel
-	FIELD a head Lbcu;
-	FIELD b body Lbcu;
-	FIELD c leg0 Lbcu;
-	FIELD d leg1 Lbcu;
-	FIELD e leg2 Lbcu;
-	FIELD f leg3 Lbcu;
-	FIELD g tail Lbcu;
-	FIELD h upperBody Lbcu;

@@ -1,58 +1,58 @@
-CLASS acf net/minecraft/world/level/LevelSource
-	METHOD R getMaxBuildHeight ()I
-	METHOD T isAllEmpty ()Z
-	METHOD V getVec3Pool ()Latd;
-	METHOD a getBiome (II)Lacq;
+CLASS ui net/minecraft/world/level/LevelSource
+	METHOD K getMaxBuildHeight ()I
+	METHOD N isAllEmpty ()Z
+	METHOD a getBiome (II)Lut;
 		ARG 1 x
 		ARG 2 z
 	METHOD a getTile (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD b getBrightness (Luk;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD c isEmptyTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD g getMaterial (III)Lakc;
+	METHOD f getMaterial (III)Labx;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD h getData (III)I
+	METHOD g getData (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD h getLightColor (IIII)I
+	METHOD i getLightColor (IIII)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 minBrightness
-	METHOD i getBrightness (IIII)F
+		ARG 4 emitt
+	METHOD j getBrightness (IIII)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 min
-	METHOD j getDirectSignal (IIII)I
+		ARG 4 emitt
+	METHOD o getBrightness (III)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 dir
-	METHOD q getBrightness (III)F
+	METHOD p getTileEntity (III)Lair;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD r getTileEntity (III)Lasp;
+	METHOD q getBiomeSource ()Luy;
+	METHOD r isSolidRenderTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD t isSolidRenderTile (III)Z
+	METHOD s isSolidBlockingTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD u isSolidBlockingTile (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD w isTopSolidBlocking (III)Z
+	METHOD t isTopSolidBlocking (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

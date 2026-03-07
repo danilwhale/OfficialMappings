@@ -1,5 +1,0 @@
-CLASS vr net/minecraft/world/inventory/HopperMenu
-	FIELD a hopper Lmo;
-	METHOD <init> (Lud;Lmo;)V
-		ARG 1 inventory
-		ARG 2 hopper

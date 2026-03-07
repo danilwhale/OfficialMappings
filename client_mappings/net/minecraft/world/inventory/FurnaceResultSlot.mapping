@@ -1,9 +1,0 @@
-CLASS vq net/minecraft/world/inventory/FurnaceResultSlot
-	FIELD a player Luf;
-	FIELD b removeCount I
-	METHOD <init> (Luf;Lmo;III)V
-		ARG 1 player
-		ARG 2 container
-		ARG 3 slot
-		ARG 4 x
-		ARG 5 y

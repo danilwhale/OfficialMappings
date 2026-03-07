@@ -1,7 +1,0 @@
-CLASS anm net/minecraft/world/level/tile/CocoaTile
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD c getAge (I)I
-		ARG 0 data
-	METHOD i_ getTextureForAge (I)Lms;
-		ARG 1 stage

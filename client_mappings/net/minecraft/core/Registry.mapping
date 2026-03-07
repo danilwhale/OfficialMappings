@@ -1,6 +1,0 @@
-CLASS bq net/minecraft/core/Registry
-	METHOD a get (Ljava/lang/Object;)Ljava/lang/Object;
-		ARG 1 key
-	METHOD a add (Ljava/lang/Object;Ljava/lang/Object;)V
-		ARG 1 key
-		ARG 2 value

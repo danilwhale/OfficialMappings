@@ -1,0 +1,6 @@
+CLASS ai net/minecraft/locale/Descriptive
+	COMMENT Descriptive T
+	METHOD a getDescriptionId ()Ljava/lang/String;
+	METHOD a setDescriptionId (Ljava/lang/String;)Ljava/lang/Object;
+		COMMENT returns T
+		ARG 1 id

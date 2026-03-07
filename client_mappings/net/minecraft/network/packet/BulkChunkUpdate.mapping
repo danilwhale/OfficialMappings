@@ -1,2 +1,0 @@
-CLASS ek net/minecraft/network/packet/BulkChunkUpdate
-	FIELD a buffer [B

@@ -1,0 +1,6 @@
+CLASS se net/minecraft/world/item/alchemy/PotionTester$3
+	FIELD a this$0 Lsb;
+	METHOD <init> (Lsb;)V
+		ARG 1 this$0
+	METHOD actionPerformed actionPerformed (Ljava/awt/event/ActionEvent;)V
+		ARG 1 e

@@ -1,3 +1,0 @@
-CLASS bhu net/minecraft/client/renderer/entity/VillagerRenderer
-	FIELD a villagermodel Lbch;
-	FIELD f VILLAGER_BASE_SKIN Lbjo;

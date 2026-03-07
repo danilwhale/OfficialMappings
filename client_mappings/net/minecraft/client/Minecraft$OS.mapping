@@ -1,0 +1,6 @@
+CLASS net/minecraft/client/w net/minecraft/client/Minecraft$OS
+	FIELD a LINUX Lnet/minecraft/client/w;
+	FIELD b SOLARIS Lnet/minecraft/client/w;
+	FIELD c WINDOWS Lnet/minecraft/client/w;
+	FIELD d MACOS Lnet/minecraft/client/w;
+	FIELD e UNKNOWN Lnet/minecraft/client/w;

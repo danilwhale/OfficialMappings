@@ -1,8 +1,0 @@
-CLASS ir net/minecraft/server/dedicated/DedicatedPlayerList
-	FIELD d opsFile Ljava/io/File;
-	METHOD <init> (Lis;)V
-		ARG 1 server
-	METHOD t loadOps ()V
-	METHOD u saveOps ()V
-	METHOD v loadWhiteList ()V
-	METHOD w saveWhiteList ()V

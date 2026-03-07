@@ -1,2 +1,0 @@
-CLASS bn net/minecraft/core/Location
-	METHOD k getLevel ()Labw;

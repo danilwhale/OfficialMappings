@@ -1,8 +1,0 @@
-CLASS bhj net/minecraft/client/renderer/entity/PlayerRenderer
-	FIELD a STEVE_SKIN_LOCATION Lbjo;
-		COMMENT DefaultPlayerSkin.STEVE_SKIN_LOCATION
-	FIELD f humanoidModel Lbbj;
-	FIELD g armorParts1 Lbbj;
-	FIELD h armorParts2 Lbbj;
-	METHOD a renderHand (Luf;)V
-		ARG 1 player

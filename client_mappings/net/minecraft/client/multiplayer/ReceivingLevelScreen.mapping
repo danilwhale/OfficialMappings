@@ -1,5 +1,0 @@
-CLASS bdk net/minecraft/client/multiplayer/ReceivingLevelScreen
-	FIELD a connection Lbcw;
-	FIELD b tickCount I
-	METHOD <init> (Lbcw;)V
-		ARG 1 connection

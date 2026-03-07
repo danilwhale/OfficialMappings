@@ -1,3 +1,0 @@
-CLASS avu net/minecraft/client/gui/mco/avu
-	METHOD a openLink (Ljava/lang/String;)V
-		ARG 1 s

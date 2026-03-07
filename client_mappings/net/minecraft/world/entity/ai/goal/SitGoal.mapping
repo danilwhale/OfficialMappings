@@ -1,7 +1,0 @@
-CLASS qr net/minecraft/world/entity/ai/goal/SitGoal
-	FIELD a mob Loq;
-	FIELD b wantToSit Z
-	METHOD <init> (Loq;)V
-		ARG 1 mob
-	METHOD a wantToSit (Z)V
-		ARG 1 wantToSit

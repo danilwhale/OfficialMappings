@@ -1,0 +1,2 @@
+CLASS u net/minecraft/commands/common/GameModeCommand
+	METHOD b getModeForString (Lr;Ljava/lang/String;)Luh;

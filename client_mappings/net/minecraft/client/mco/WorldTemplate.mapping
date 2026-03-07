@@ -1,7 +1,0 @@
-CLASS bat net/minecraft/client/mco/WorldTemplate
-	FIELD a id Ljava/lang/String;
-	FIELD b name Ljava/lang/String;
-	FIELD c version Ljava/lang/String;
-	FIELD d author Ljava/lang/String;
-	METHOD a parse (Largo/jdom/JsonNode;)Lbat;
-		ARG 0 j

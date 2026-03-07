@@ -1,4 +1,0 @@
-CLASS bif net/minecraft/client/renderer/texture/SimpleTexture
-	FIELD b location Lbjo;
-	METHOD <init> (Lbjo;)V
-		ARG 1 location

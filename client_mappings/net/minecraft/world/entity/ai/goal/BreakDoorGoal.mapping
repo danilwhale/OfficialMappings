@@ -1,3 +1,0 @@
-CLASS pj net/minecraft/world/entity/ai/goal/BreakDoorGoal
-	FIELD i breakTime I
-	FIELD j lastBreakProgress I

@@ -1,2 +1,0 @@
-CLASS avd net/minecraft/client/gui/DemoIntroScreen
-	FIELD a DEMO_BACKGROUND_LOCATION Lbjo;

@@ -1,9 +1,0 @@
-CLASS qj net/minecraft/world/entity/ai/goal/PanicGoal
-	FIELD a mob Lon;
-	FIELD b speedModifier D
-	FIELD c posX D
-	FIELD d posY D
-	FIELD e posZ D
-	METHOD <init> (Lon;D)V
-		ARG 1 mob
-		ARG 2 speedModifier

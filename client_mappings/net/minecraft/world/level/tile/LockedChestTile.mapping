@@ -1,3 +1,1 @@
-CLASS apf net/minecraft/world/level/tile/LockedChestTile
-	METHOD <init> (I)V
-		ARG 1 id
+CLASS aga net/minecraft/world/level/tile/LockedChestTile

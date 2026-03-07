@@ -1,7 +1,0 @@
-CLASS qf net/minecraft/world/entity/ai/goal/OcelotAttackGoal
-	FIELD a level Labw;
-	FIELD b mob Log;
-	FIELD c target Lof;
-	FIELD d attackTime I
-	METHOD <init> (Log;)V
-		ARG 1 mob

@@ -1,2 +1,0 @@
-CLASS bgf net/minecraft/client/renderer/entity/CowRenderer
-	FIELD a COW_LOCATION Lbjo;

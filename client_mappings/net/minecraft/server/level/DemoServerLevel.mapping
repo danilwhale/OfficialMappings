@@ -1,3 +1,2 @@
-CLASS jj net/minecraft/server/level/DemoServerLevel
-	FIELD J seed J
-	FIELD a settings Lacd;
+CLASS fs net/minecraft/server/level/DemoServerLevel
+	FIELD L seed J

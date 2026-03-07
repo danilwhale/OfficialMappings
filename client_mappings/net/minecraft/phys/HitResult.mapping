@@ -1,0 +1,8 @@
+CLASS aiz net/minecraft/phys/HitResult
+	FIELD a type Laja;
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e f I
+	FIELD f pos Lajb;
+	FIELD g entity Liw;

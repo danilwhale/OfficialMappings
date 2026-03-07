@@ -1,7 +1,0 @@
-CLASS ue net/minecraft/world/entity/player/Inventory$1
-	FIELD a val$item Lye;
-	FIELD b this$0 Lud;
-	METHOD <init> (Lud;Lye;)V
-		ARG 1 this$0
-		ARG 2 val$item
-	METHOD call call ()Ljava/lang/Object;

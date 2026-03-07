@@ -1,5 +1,0 @@
-CLASS axz net/minecraft/client/gui/inventory/TrapScreen
-	FIELD u CONTAINER_LOCATION Lbjo;
-	METHOD <init> (Lud;Lasc;)V
-		ARG 1 inventory
-		ARG 2 dispenser

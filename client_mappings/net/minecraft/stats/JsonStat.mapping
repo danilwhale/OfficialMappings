@@ -1,4 +1,0 @@
-CLASS kt net/minecraft/stats/JsonStat
-	COMMENT coughed up fake name, but would kind of make sense when it comes after ItemStat and is parsed from JSON in the blv class
-	METHOD <init> (I)V
-		ARG 1 id

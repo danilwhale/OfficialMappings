@@ -1,8 +1,0 @@
-CLASS bhc net/minecraft/client/renderer/entity/MinecartRenderer
-	FIELD a model Lbbo;
-	FIELD g MINECART_LOCATION Lbjo;
-	METHOD a renderMinecartContents (Lst;FLaqz;I)V
-		ARG 1 minecart
-		ARG 2 a
-		ARG 3 tile
-		ARG 4 data

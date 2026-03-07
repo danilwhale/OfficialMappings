@@ -1,6 +1,0 @@
-CLASS ca net/minecraft/nbt/CompoundTag$2
-	FIELD a val$1 I
-	FIELD b this$0 Lby;
-	METHOD <init> (Lby;I)V
-		ARG 1 this$0
-		ARG 2 val$i

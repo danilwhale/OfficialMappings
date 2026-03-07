@@ -1,2 +1,2 @@
-CLASS aum net/minecraft/client/Options$1
+CLASS net/minecraft/client/ac net/minecraft/client/Options$1
 	FIELD a $VALUES [I

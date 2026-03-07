@@ -1,7 +1,18 @@
-CLASS wj net/minecraft/world/item/ArmorItem$ArmorMaterial
-	FIELD a CLOTH Lwj;
-	FIELD b CHAIN Lwj;
-	FIELD c IRON Lwj;
-	FIELD d GOLD Lwj;
-	FIELD e DIAMOND Lwj;
-	METHOD b getTierItemId ()I
+CLASS pd net/minecraft/world/item/ArmorItem$ArmorMaterial
+	FIELD a CLOTH Lpd;
+	FIELD b CHAIN Lpd;
+	FIELD c IRON Lpd;
+	FIELD d GOLD Lpd;
+	FIELD e DIAMOND Lpd;
+	FIELD f durabilityMultiplier I
+	FIELD g slotProtections [I
+	FIELD h enchantmentValue I
+	METHOD <init> (Ljava/lang/String;II[II)V
+		ARG 3 durabilityMultiplier
+		ARG 4 slotProtections
+		ARG 5 enchantmentValue
+	METHOD a getEnchantmentValue ()I
+	METHOD a getHealthPerSlot (I)I
+		ARG 1 slot
+	METHOD b getDefenseForSlot (I)I
+		ARG 1 slot

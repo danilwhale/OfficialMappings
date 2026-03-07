@@ -1,3 +1,0 @@
-CLASS zy net/minecraft/world/item/crafting/ClothDyeRecipes
-	METHOD a addRecipes (Laaf;)V
-		ARG 1 recipes

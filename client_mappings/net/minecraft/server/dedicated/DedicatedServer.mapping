@@ -1,11 +1,1 @@
-CLASS is net/minecraft/server/dedicated/DedicatedServer
-	FIELD l consoleInput Ljava/util/List;
-	FIELD m logger Llp;
-	FIELD n queryThreadGs4 Lkj;
-	FIELD o rconThread Lkn;
-	FIELD p settings Lhq;
-	FIELD q generateStructures Z
-	FIELD r gameType Lace;
-	FIELD s connection Lkd;
-	METHOD a handleConsoleInput (Ljava/lang/String;Lad;)V
-	METHOD as handleConsoleInputs ()V
+CLASS fc net/minecraft/server/dedicated/DedicatedServer

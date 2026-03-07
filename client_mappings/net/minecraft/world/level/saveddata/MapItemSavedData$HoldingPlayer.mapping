@@ -1,8 +1,0 @@
-CLASS alj net/minecraft/world/level/saveddata/MapItemSavedData$HoldingPlayer
-	FIELD a player Luf;
-	FIELD e this$0 Lali;
-	METHOD <init> (Lali;Luf;)V
-		ARG 1 this$0
-		ARG 2 player
-	METHOD a nextUpdatePacket (Lye;)[B
-		ARG 1 item

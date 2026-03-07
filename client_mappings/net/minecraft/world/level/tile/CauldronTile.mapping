@@ -1,5 +1,0 @@
-CLASS anj net/minecraft/world/level/tile/CauldronTile
-	METHOD <init> (I)V
-		ARG 1 id
-	METHOD b getTexture (Ljava/lang/String;)Lms;
-		ARG 0 name

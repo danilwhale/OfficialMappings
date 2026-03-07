@@ -1,4 +1,0 @@
-CLASS qv net/minecraft/world/entity/ai/goal/TradeWithPlayerGoal
-	FIELD a mob Lub;
-	METHOD <init> (Lub;)V
-		ARG 1 mob

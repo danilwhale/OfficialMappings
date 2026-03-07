@@ -1,0 +1,4 @@
+CLASS ib net/minecraft/util/WeightedRandom$WeightedRandomItem
+	FIELD a randomWeight I
+	METHOD <init> (I)V
+		ARG 1 randomWeight

@@ -1,5 +1,0 @@
-CLASS asa net/minecraft/world/level/tile/entity/ComparatorTileEntity
-	FIELD a outputSignal I
-	METHOD a getOutputSignal ()I
-	METHOD a setOutputSignal (I)V
-		ARG 1 outputSignal

@@ -1,6 +1,0 @@
-CLASS bfc net/minecraft/client/renderer/DistanceChunkSorter
-	METHOD <init> (Lnn;)V
-		ARG 1 player
-	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
-		ARG 1 c0
-		ARG 2 c1

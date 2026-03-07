@@ -1,4 +1,0 @@
-CLASS bal net/minecraft/client/mco/RealmsServerAddress
-	FIELD a address Ljava/lang/String;
-	METHOD a parse (Ljava/lang/String;)Lbal;
-		ARG 0 s

@@ -1,14 +1,1 @@
-CLASS aur net/minecraft/client/Timer
-	FIELD a ticksPerSecond F
-	FIELD b ticks I
-	FIELD c a F
-	FIELD d timeScale F
-	FIELD e passedTime F
-	FIELD f lastTime D
-	FIELD g lastMs J
-	FIELD h lastMsSysTime J
-	FIELD i lastMsSysTimeMsSysTimeMsSysTimeMsSysTime J
-	FIELD j adjustTime D
-	METHOD <init> (F)V
-		ARG 1 ticksPerSecond
-	METHOD a advanceTime ()V
+CLASS net/minecraft/client/ah net/minecraft/client/Timer

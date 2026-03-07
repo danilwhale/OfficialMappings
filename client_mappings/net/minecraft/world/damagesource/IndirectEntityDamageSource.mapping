@@ -1,6 +1,0 @@
-CLASS nd net/minecraft/world/damagesource/IndirectEntityDamageSource
-	FIELD q owner Lnn;
-	METHOD <init> (Ljava/lang/String;Lnn;Lnn;)V
-		ARG 1 msgId
-		ARG 2 entity
-		ARG 3 owner

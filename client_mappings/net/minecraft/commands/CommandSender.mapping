@@ -1,9 +1,7 @@
-CLASS ad net/minecraft/commands/CommandSender
-	METHOD a hasPermission (ILjava/lang/String;)Z
-		ARG 1 i
-		ARG 2 s
-	METHOD a sendMessage (Lcv;)V
+CLASS r net/minecraft/commands/CommandSender
+	METHOD a sendMessage (Ljava/lang/String;)V
 		ARG 1 message
-	METHOD b getCommandSenderBlockPosition ()Lt;
+	METHOD a localize (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 message
+		ARG 2 args
 	METHOD c_ getName ()Ljava/lang/String;
-	METHOD f_ getCommandSenderWorld ()Labw;

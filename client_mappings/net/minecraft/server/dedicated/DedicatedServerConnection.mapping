@@ -1,6 +1,0 @@
-CLASS ix net/minecraft/server/dedicated/DedicatedServerConnection
-	FIELD b listenThread Liy;
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V
-		ARG 1 server
-		ARG 2 address
-		ARG 3 port

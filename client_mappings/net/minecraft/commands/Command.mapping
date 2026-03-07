@@ -1,21 +1,8 @@
-CLASS z net/minecraft/commands/Command
-	FIELD a logger Ly;
-	METHOD a getPermissionLevel ()I
-	METHOD a logAdminAction (Lad;ILjava/lang/String;[Ljava/lang/Object;)V
-		ARG 0 sender
-		ARG 2 format
-		ARG 3 objects
-	METHOD a logAdminAction (Lad;Ljava/lang/String;[Ljava/lang/Object;)V
-		ARG 0 sender
-		ARG 1 format
-		ARG 2 objects
-	METHOD a setLogger (Ly;)V
-		ARG 0 logger
-	METHOD b convertSourceToPlayer (Lad;)Ljv;
-		ARG 0 sender
-	METHOD d convertToPlayer (Lad;Ljava/lang/String;)Ljv;
-		ARG 0 sender
-		ARG 1 name
-	METHOD e convertToPlayerName (Lad;Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 sender
-		ARG 1 name
+CLASS p net/minecraft/commands/Command
+	METHOD a (Lr;)Ljava/lang/String;
+		ARG 1 source
+	METHOD b getId ()Ljava/lang/String;
+	METHOD b canExecute (Lr;)Z
+	METHOD b execute (Lr;[Ljava/lang/String;)V
+		ARG 1 source
+		ARG 2 args

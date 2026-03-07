@@ -1,3 +1,0 @@
-CLASS akw net/minecraft/world/level/newbiome/layer/SmoothLayer
-	METHOD <init> (JLakq;)V
-		ARG 1 seed

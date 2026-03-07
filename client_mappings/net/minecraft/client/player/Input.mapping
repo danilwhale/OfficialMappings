@@ -1,6 +1,0 @@
-CLASS bev net/minecraft/client/player/Input
-	FIELD a xa F
-	FIELD b ya F
-	FIELD c jumping Z
-	FIELD d sneaking Z
-	METHOD a tick ()V

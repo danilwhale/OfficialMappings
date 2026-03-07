@@ -1,7 +1,0 @@
-CLASS awd net/minecraft/client/gui/NameEntryScreen
-	FIELD a lastScreen Lawe;
-	FIELD b nameEdit Lavf;
-	FIELD c levelId Ljava/lang/String;
-	METHOD <init> (Lawe;Ljava/lang/String;)V
-		ARG 1 lastScreen
-		ARG 2 levelId

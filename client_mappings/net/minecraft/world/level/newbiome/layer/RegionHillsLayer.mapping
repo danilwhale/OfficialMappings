@@ -1,3 +1,4 @@
-CLASS akr net/minecraft/world/level/newbiome/layer/RegionHillsLayer
-	METHOD <init> (JLakq;)V
+CLASS acm net/minecraft/world/level/newbiome/layer/RegionHillsLayer
+	METHOD <init> (JLacl;)V
 		ARG 1 seed
+		ARG 3 parent

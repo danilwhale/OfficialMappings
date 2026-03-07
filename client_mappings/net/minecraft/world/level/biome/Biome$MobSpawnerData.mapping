@@ -1,9 +1,1 @@
-CLASS acr net/minecraft/world/level/biome/Biome$MobSpawnerData
-	FIELD b type Ljava/lang/Class;
-	FIELD c minCount I
-	FIELD d maxCount I
-	METHOD <init> (Ljava/lang/Class;III)V
-		ARG 1 type
-		ARG 2 weight
-		ARG 3 minCount
-		ARG 4 maxCount
+CLASS uu net/minecraft/world/level/biome/Biome$MobSpawnerData

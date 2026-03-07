@@ -1,4 +1,0 @@
-CLASS o net/minecraft/CrashReportCategory$2
-	FIELD a val$data I
-	METHOD <init> (I)V
-		ARG 1 val$data

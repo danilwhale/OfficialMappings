@@ -1,4 +1,0 @@
-CLASS c net/minecraft/CrashReport$1
-	FIELD a this$0 Lb;
-	METHOD <init> (Lb;)V
-		ARG 1 this$0

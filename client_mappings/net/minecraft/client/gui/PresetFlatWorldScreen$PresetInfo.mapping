@@ -1,4 +1,0 @@
-CLASS awa net/minecraft/client/gui/PresetFlatWorldScreen$PresetInfo
-	FIELD a icon I
-	FIELD b name Ljava/lang/String;
-	FIELD c value Ljava/lang/String;

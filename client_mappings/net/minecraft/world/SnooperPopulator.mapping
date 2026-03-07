@@ -1,4 +1,0 @@
-CLASS mx net/minecraft/world/SnooperPopulator
-	METHOD a populateSnooper (Lmv;)V
-		ARG 1 snooper
-	METHOD an getLogger ()Llp;

@@ -1,5 +1,0 @@
-CLASS mr net/minecraft/FlippedIcon
-	METHOD <init> (Lms;ZZ)V
-		ARG 1 icon
-		ARG 2 flipX
-		ARG 3 flipY

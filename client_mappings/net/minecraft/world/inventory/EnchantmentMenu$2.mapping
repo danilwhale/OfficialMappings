@@ -1,8 +1,0 @@
-CLASS vo net/minecraft/world/inventory/EnchantmentMenu$2
-	FIELD a this$0 Lvm;
-	METHOD <init> (Lvm;Lmo;III)V
-		ARG 1 this$0
-		ARG 2 container
-		ARG 3 slot
-		ARG 4 x
-		ARG 5 y

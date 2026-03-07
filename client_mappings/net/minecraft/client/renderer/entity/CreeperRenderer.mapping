@@ -1,4 +1,0 @@
-CLASS bgg net/minecraft/client/renderer/entity/CreeperRenderer
-	FIELD a POWER_LOCATION Lbjo;
-	FIELD f CREEPER_LOCATION Lbjo;
-	FIELD g model Lbbo;

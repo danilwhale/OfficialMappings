@@ -1,2 +1,0 @@
-CLASS asy net/minecraft/world/phys/AABB$1
-	METHOD a initialValue ()Lasz;

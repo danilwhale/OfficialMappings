@@ -1,0 +1,14 @@
+CLASS aiy net/minecraft/phys/AABBPool
+	FIELD c pool Ljava/util/List;
+	FIELD d poolPointer I
+	METHOD a reset ()V
+	METHOD a newTemp (DDDDDD)Laiw;
+		ARG 1 x0
+		ARG 3 y0
+		ARG 5 z0
+		ARG 7 x1
+		ARG 9 y1
+		ARG 11 z1
+	METHOD b clear ()V
+	METHOD c size ()I
+	METHOD d getPointer ()I

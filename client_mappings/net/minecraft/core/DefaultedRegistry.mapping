@@ -1,4 +1,0 @@
-CLASS bi net/minecraft/core/DefaultedRegistry
-	FIELD b defaultValue Ljava/lang/Object;
-	METHOD <init> (Ljava/lang/Object;)V
-		ARG 1 defaultValue

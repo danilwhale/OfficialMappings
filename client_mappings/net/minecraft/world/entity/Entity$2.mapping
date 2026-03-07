@@ -1,5 +1,0 @@
-CLASS np net/minecraft/world/entity/Entity$2
-	FIELD a this$0 Lnn;
-	METHOD <init> (Lnn;)V
-		ARG 1 this$0
-	METHOD call call ()Ljava/lang/Object;

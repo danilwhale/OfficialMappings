@@ -1,3 +1,0 @@
-CLASS bhw net/minecraft/client/renderer/entity/WitherBossRenderer
-	FIELD a WITHER_INVULNERABLE_LOCATION Lbjo;
-	FIELD f WITHER_LOCATION Lbjo;

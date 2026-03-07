@@ -1,6 +1,7 @@
-CLASS amq net/minecraft/world/level/storage/PlayerIO
-	METHOD a save (Luf;)V
+CLASS aea net/minecraft/world/level/storage/PlayerIO
+	METHOD a loadPlayerDataTag (Ljava/lang/String;)Lan;
+		ARG 1 name
+	METHOD a save (Lnp;)V
 		ARG 1 player
-	METHOD b load (Luf;)Lby;
+	METHOD b load (Lnp;)V
 		ARG 1 player
-	METHOD f getSeenPlayers ()[Ljava/lang/String;

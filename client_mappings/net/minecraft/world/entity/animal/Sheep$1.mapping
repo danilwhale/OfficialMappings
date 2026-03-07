@@ -1,4 +1,0 @@
-CLASS sa net/minecraft/world/entity/animal/Sheep$1
-	FIELD a this$0 Lrz;
-	METHOD <init> (Lrz;)V
-		ARG 1 this$0

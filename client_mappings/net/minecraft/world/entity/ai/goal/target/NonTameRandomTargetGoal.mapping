@@ -1,7 +1,0 @@
-CLASS rb net/minecraft/world/entity/ai/goal/target/NonTameRandomTargetGoal
-	FIELD a tamableMob Loq;
-	METHOD <init> (Loq;Ljava/lang/Class;IZ)V
-		ARG 1 tamableMob
-		ARG 2 targetType
-		ARG 3 randomInterval
-		ARG 4 mustSee

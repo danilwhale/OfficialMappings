@@ -1,5 +1,0 @@
-CLASS bjm net/minecraft/client/resources/ReloadableResourceManager
-	METHOD a registerReloadListener (Lbjq;)V
-		ARG 1 listener
-	METHOD a createFullReload (Ljava/util/List;)V
-		ARG 1 packs

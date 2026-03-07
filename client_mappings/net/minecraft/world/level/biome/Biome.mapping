@@ -1,73 +1,54 @@
-CLASS acq net/minecraft/world/level/biome/Biome
-	FIELD A topMaterial B
-	FIELD B material B
-	FIELD C leafColor I
+CLASS ut net/minecraft/world/level/biome/Biome
 	FIELD D depth F
 	FIELD E scale F
 	FIELD F temperature F
 	FIELD G downfall F
+	FIELD I decorator Lux;
 	FIELD J enemies Ljava/util/List;
 	FIELD K friendlies Ljava/util/List;
 	FIELD L waterFriendlies Ljava/util/List;
-	FIELD N id I
-	FIELD a biomes [Lacq;
-	FIELD b ocean Lacq;
-	FIELD c plains Lacq;
-	FIELD d desert Lacq;
-	FIELD e extremeHills Lacq;
-	FIELD f forest Lacq;
-	FIELD g taiga Lacq;
-	FIELD h swampland Lacq;
-	FIELD i river Lacq;
-	FIELD j hell Lacq;
-	FIELD k sky Lacq;
-	FIELD l frozenOcean Lacq;
-	FIELD m frozenRiver Lacq;
-	FIELD n iceFlats Lacq;
-	FIELD o iceHills Lacq;
-	FIELD p mushroomIsland Lacq;
-	FIELD q mushroomIslandShore Lacq;
-	FIELD r beaches Lacq;
-	FIELD s desertHills Lacq;
-	FIELD t forestHills Lacq;
-	FIELD u taigaHills Lacq;
-	FIELD v extremeHillsEdge Lacq;
-	FIELD w jungle Lacq;
-	FIELD x jungleHills Lacq;
-	FIELD y name Ljava/lang/String;
-	FIELD z color I
+	FIELD M id I
+	FIELD N normalTree Lyd;
+	FIELD O fancyTree Lwz;
+	FIELD P birchTree Lxa;
+	FIELD Q swampTree Lyb;
+	FIELD a biomes [Lut;
+	FIELD b ocean Lut;
+	FIELD c plains Lut;
+	FIELD d desert Lut;
+	FIELD e extremeHills Lut;
+	FIELD f forest Lut;
+	FIELD g taiga Lut;
+	FIELD h swampland Lut;
+	FIELD i river Lut;
+	FIELD j hell Lut;
+	FIELD k sky Lut;
+	FIELD l frozenOcean Lut;
+	FIELD m frozenRiver Lut;
+	FIELD n iceFlats Lut;
+	FIELD o iceMountains Lut;
+	FIELD p mushroomIsland Lut;
+	FIELD q mushroomIslandShore Lut;
+	FIELD r beaches Lut;
+	FIELD s desertHills Lut;
+	FIELD t forestHills Lut;
+	FIELD u taigaHills Lut;
+	FIELD v smallerExtremeHills Lut;
+	FIELD w jungle Lut;
+	FIELD x jungleHills Lut;
 	METHOD <init> (I)V
 		ARG 1 id
-	METHOD a createDecorator ()Lacu;
-	METHOD a getSkyColor (F)I
-	METHOD a setTemperatureAndDownfall (FF)Lacq;
-		ARG 1 temperature
+	METHOD a createDecorator ()Lux;
+	METHOD a setTemperatureAndDownfall (FF)Lut;
+		ARG 1 temp
 		ARG 2 downfall
-	METHOD a setLeafColor (I)Lacq;
-		ARG 1 leafColor
-	METHOD a decorate (Labw;Ljava/util/Random;II)V
-		ARG 1 level
-		ARG 2 random
-		ARG 3 x
-		ARG 4 z
-	METHOD a setName (Ljava/lang/String;)Lacq;
-		ARG 1 name
-	METHOD a getTreeFeature (Ljava/util/Random;)Lafe;
-		ARG 1 random
-	METHOD a getMobs (Loh;)Ljava/util/List;
-		ARG 1 category
-	METHOD b setSnowCovered ()Lacq;
-	METHOD b setDepthAndScale (FF)Lacq;
-		COMMENT not sure, just guessed this name
+	METHOD a setLeafColor (I)Lut;
+	METHOD a setName (Ljava/lang/String;)Lut;
+	METHOD a getTreeFeature (Ljava/util/Random;)Lxh;
+	METHOD b setSnowCovered ()Lut;
+	METHOD b setDepthAndScale (FF)Lut;
 		ARG 1 depth
 		ARG 2 scale
-	METHOD b setColor (I)Lacq;
-		ARG 1 color
-	METHOD b (Ljava/util/Random;)Lafe;
-		ARG 1 random
-	METHOD e isHumid ()Z
-	METHOD f getCreatureProbability ()F
-	METHOD i getDownfall ()F
-	METHOD j getTemperature ()F
-	METHOD k getGrassColor ()I
-	METHOD l getFoliageColor ()I
+	METHOD b setColor (I)Lut;
+	METHOD b getGrassFeature (Ljava/util/Random;)Lxh;
+	METHOD m setNoRain ()Lut;

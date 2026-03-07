@@ -1,2 +1,0 @@
-CLASS jz net/minecraft/server/network/PendingConnection$1
-	FIELD a this$0 Ljy;

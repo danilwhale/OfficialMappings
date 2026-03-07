@@ -1,3 +1,0 @@
-CLASS apk net/minecraft/world/level/tile/MycelTile
-	METHOD <init> (I)V
-		ARG 1 id

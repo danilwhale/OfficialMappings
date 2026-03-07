@@ -1,23 +1,6 @@
-CLASS yd net/minecraft/world/item/Item$Tier
-	FIELD a WOOD Lyd;
-	FIELD b STONE Lyd;
-	FIELD c IRON Lyd;
-	FIELD d DIAMOND Lyd;
-	FIELD e GOLD Lyd;
-	FIELD f level I
-	FIELD g uses I
-	FIELD h speed F
-	FIELD i enchantmentValue F
-	FIELD j damage I
-	METHOD <init> (Ljava/lang/String;IIIFFI)V
-		ARG 3 level
-		ARG 4 uses
-		ARG 5 speed
-		ARG 6 enchantmentValue
-		ARG 7 damage
-	METHOD a getUses ()I
-	METHOD b getSpeed ()F
-	METHOD c getEnchantmentValue ()F
-	METHOD d getLevel ()I
-	METHOD e getAttackDamageBonus ()I
-	METHOD f getTierItemId ()I
+CLASS qr net/minecraft/world/item/Item$Tier
+	FIELD a WOOD Lqr;
+	FIELD b STONE Lqr;
+	FIELD c IRON Lqr;
+	FIELD d EMERALD Lqr;
+	FIELD e GOLD Lqr;

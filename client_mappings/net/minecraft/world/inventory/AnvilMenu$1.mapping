@@ -1,6 +1,0 @@
-CLASS vb net/minecraft/world/inventory/AnvilMenu$1
-	FIELD a this$0 Lva;
-	METHOD <init> (Lva;Ljava/lang/String;ZI)V
-		ARG 1 this$0
-		ARG 2 name
-		ARG 4 size

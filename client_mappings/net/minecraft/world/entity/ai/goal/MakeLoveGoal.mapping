@@ -1,7 +1,0 @@
-CLASS pz net/minecraft/world/entity/ai/goal/MakeLoveGoal
-	FIELD a village Lrj;
-	FIELD d level Labw;
-	METHOD <init> (Lub;)V
-		ARG 1 villager
-	METHOD f villageNeedsMoreVillagers ()Z
-	METHOD g breed ()V

@@ -1,3 +1,0 @@
-CLASS bed net/minecraft/client/particle/HugeExplosionSeedParticle
-	FIELD aB lifeTime I
-	FIELD a life I

@@ -1,3 +1,0 @@
-CLASS kq net/minecraft/stats/DescFormatter
-	METHOD a format (Ljava/lang/String;)Ljava/lang/String;
-		ARG 1 value

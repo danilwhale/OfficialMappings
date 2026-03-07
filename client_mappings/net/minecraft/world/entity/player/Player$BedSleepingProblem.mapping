@@ -1,7 +1,0 @@
-CLASS ug net/minecraft/world/entity/player/Player$BedSleepingProblem
-	FIELD a OK Lug;
-	FIELD b NOT_POSSIBLE_HERE Lug;
-	FIELD c NOT_POSSIBLE_NOW Lug;
-	FIELD d TOO_FAR_AWAY Lug;
-	FIELD e OTHER_PROBLEM Lug;
-	FIELD f NOT_SAFE Lug;

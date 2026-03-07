@@ -1,6 +1,0 @@
-CLASS axs net/minecraft/client/gui/inventory/FurnaceScreen
-	FIELD t TEXTURE Lbjo;
-	FIELD u furnace Lasg;
-	METHOD <init> (Lud;Lasg;)V
-		ARG 1 inventory
-		ARG 2 furnace

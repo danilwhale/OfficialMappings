@@ -1,9 +1,0 @@
-CLASS bea net/minecraft/client/particle/FootstepParticle
-	FIELD aB life I
-	FIELD aC lifeTime I
-	METHOD <init> (Lbim;Labw;DDD)V
-		ARG 1 textures
-		ARG 2 level
-		ARG 3 x
-		ARG 5 y
-		ARG 7 z

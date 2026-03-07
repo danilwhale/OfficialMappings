@@ -1,9 +1,0 @@
-CLASS asc net/minecraft/world/level/tile/entity/DispenserTileEntity
-	FIELD a customName Ljava/lang/String;
-	FIELD b items [Lye;
-	FIELD c random Ljava/util/Random;
-	METHOD a setCustomName (Ljava/lang/String;)V
-		ARG 1 customName
-	METHOD a addItem (Lye;)I
-		ARG 1 item
-	METHOD j getRandomSlot ()I

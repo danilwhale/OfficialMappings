@@ -1,10 +1,7 @@
-CLASS nr net/minecraft/world/entity/Entity$Size
-	COMMENT WHAT THE ACTUAL FUCK IS THIS
-	FIELD a SIZE_1 Lnr;
-	FIELD b SIZE_2 Lnr;
-	FIELD c SIZE_3 Lnr;
-	FIELD d SIZE_4 Lnr;
-	FIELD e SIZE_5 Lnr;
-	FIELD f SIZE_6 Lnr;
-	METHOD a size (D)I
-		ARG 1 s
+CLASS iy net/minecraft/world/entity/Entity$Size
+	FIELD a SIZE_1 Liy;
+	FIELD b SIZE_2 Liy;
+	FIELD c SIZE_3 Liy;
+	FIELD d SIZE_4 Liy;
+	FIELD e SIZE_5 Liy;
+	FIELD f SIZE_6 Liy;

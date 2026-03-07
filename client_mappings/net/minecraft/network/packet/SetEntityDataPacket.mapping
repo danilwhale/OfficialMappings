@@ -1,3 +1,0 @@
-CLASS fn net/minecraft/network/packet/SetEntityDataPacket
-	FIELD a id I
-	METHOD d getUnpackedData ()Ljava/util/List;

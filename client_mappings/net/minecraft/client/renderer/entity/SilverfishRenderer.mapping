@@ -1,2 +1,0 @@
-CLASS bhl net/minecraft/client/renderer/entity/SilverfishRenderer
-	FIELD a SILVERFISH_LOCATION Lbjo;

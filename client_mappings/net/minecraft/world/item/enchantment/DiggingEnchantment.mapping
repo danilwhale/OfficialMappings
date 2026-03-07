@@ -1,4 +1,0 @@
-CLASS aat net/minecraft/world/item/enchantment/DiggingEnchantment
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 rarity

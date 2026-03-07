@@ -1,3 +1,1 @@
-CLASS anx net/minecraft/world/level/tile/DirtTile
-	METHOD <init> (I)V
-		ARG 1 id
+CLASS aex net/minecraft/world/level/tile/DirtTile

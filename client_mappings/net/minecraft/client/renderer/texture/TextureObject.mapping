@@ -1,4 +1,0 @@
-CLASS bio net/minecraft/client/renderer/texture/TextureObject
-	METHOD a load (Lbjp;)V
-		ARG 1 manager
-	METHOD b getId ()I

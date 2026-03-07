@@ -1,5 +1,0 @@
-CLASS bjn net/minecraft/client/resources/Resource
-	METHOD a getMetadata (Ljava/lang/String;)Lbkg;
-		ARG 1 sectionName
-	METHOD b getInputStream ()Ljava/io/InputStream;
-	METHOD c hasMetadata ()Z

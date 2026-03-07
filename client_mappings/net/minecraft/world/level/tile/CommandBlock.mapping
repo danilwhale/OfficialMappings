@@ -1,3 +1,0 @@
-CLASS ano net/minecraft/world/level/tile/CommandBlock
-	METHOD <init> (I)V
-		ARG 1 id

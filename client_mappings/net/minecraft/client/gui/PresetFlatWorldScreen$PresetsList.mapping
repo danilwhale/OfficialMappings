@@ -1,5 +1,0 @@
-CLASS awb net/minecraft/client/gui/PresetFlatWorldScreen$PresetsList
-	FIELD b this$0 Lavz;
-	METHOD a blitSlot (III)V
-	METHOD b blitSlotBg (IIII)V
-	METHOD e blitSlotBg (II)V

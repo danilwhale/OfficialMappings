@@ -1,3 +1,0 @@
-CLASS aqn net/minecraft/world/level/tile/SoulSandTile
-	METHOD <init> (I)V
-		ARG 1 id

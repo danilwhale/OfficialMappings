@@ -1,2 +1,0 @@
-CLASS ke net/minecraft/server/network/ServerConnection$1
-	FIELD b this$0 Lkd;

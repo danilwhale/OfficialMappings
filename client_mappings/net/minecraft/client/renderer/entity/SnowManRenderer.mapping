@@ -1,2 +1,0 @@
-CLASS bho net/minecraft/client/renderer/entity/SnowManRenderer
-	FIELD f snowmanmodel Lbcc;

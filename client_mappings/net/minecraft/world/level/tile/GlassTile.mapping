@@ -1,5 +1,0 @@
-CLASS aol net/minecraft/world/level/tile/GlassTile
-	METHOD <init> (ILakc;Z)V
-		ARG 1 id
-		ARG 2 material
-		ARG 3 allowSame

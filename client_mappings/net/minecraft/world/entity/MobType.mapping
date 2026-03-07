@@ -1,4 +1,0 @@
-CLASS oj net/minecraft/world/entity/MobType
-	FIELD a UNDEFINED Loj;
-	FIELD b UNDEAD Loj;
-	FIELD c ARTHROPOD Loj;

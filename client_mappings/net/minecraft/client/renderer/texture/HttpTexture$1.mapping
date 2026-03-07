@@ -1,5 +1,0 @@
-CLASS bid net/minecraft/client/renderer/texture/HttpTexture$1
-	FIELD a this$0 Lbic;
-	METHOD <init> (Lbic;)V
-		ARG 1 this$0
-	METHOD run run ()V

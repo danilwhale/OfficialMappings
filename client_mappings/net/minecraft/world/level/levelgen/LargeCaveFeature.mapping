@@ -1,3 +1,0 @@
-CLASS aeq net/minecraft/world/level/levelgen/LargeCaveFeature
-	METHOD a addRoom (JII[BDDD)V
-	METHOD a addTunnel (JII[BDDDFFFIID)V

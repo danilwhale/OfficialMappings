@@ -1,6 +1,1 @@
-CLASS afu net/minecraft/world/level/levelgen/feature/SandFeature
-	FIELD a tile I
-	FIELD b count I
-	METHOD <init> (II)V
-		ARG 1 tile
-		ARG 2 count
+CLASS xx net/minecraft/world/level/levelgen/feature/SandFeature

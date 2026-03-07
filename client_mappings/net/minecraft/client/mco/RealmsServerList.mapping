@@ -1,4 +1,0 @@
-CLASS bam net/minecraft/client/mco/RealmsServerList
-	FIELD a servers Ljava/util/List;
-	METHOD a parse (Ljava/lang/String;)Lbam;
-		ARG 0 s

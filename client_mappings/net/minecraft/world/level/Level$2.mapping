@@ -1,4 +1,0 @@
-CLASS abz net/minecraft/world/level/Level$2
-	FIELD a this$0 Labw;
-	METHOD <init> (Labw;)V
-		ARG 1 this$0

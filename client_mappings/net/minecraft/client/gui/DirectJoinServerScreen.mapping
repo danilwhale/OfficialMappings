@@ -1,7 +1,0 @@
-CLASS ave net/minecraft/client/gui/DirectJoinServerScreen
-	FIELD a selectButton Lawe;
-	FIELD b serverData Lbdm;
-	FIELD c ipEdit Lavf;
-	METHOD <init> (Lawe;Lbdm;)V
-		ARG 1 lastScreen
-		ARG 2 serverData

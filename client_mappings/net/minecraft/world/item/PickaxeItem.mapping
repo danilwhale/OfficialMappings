@@ -1,5 +1,0 @@
-CLASS yn net/minecraft/world/item/PickaxeItem
-	FIELD c diggables [Laqz;
-	METHOD <init> (ILyd;)V
-		ARG 1 id
-		ARG 2 tier

@@ -1,8 +1,0 @@
-CLASS axj net/minecraft/client/gui/inventory/ContainerScreen
-	FIELD t CONTAINER_BACKGROUND Lbjo;
-	FIELD u inventory Lmo;
-	FIELD v container Lmo;
-	FIELD w containerRows I
-	METHOD <init> (Lmo;Lmo;)V
-		ARG 1 inventory
-		ARG 2 container

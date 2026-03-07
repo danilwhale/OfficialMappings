@@ -1,4 +1,0 @@
-CLASS agg net/minecraft/world/level/levelgen/feature/MineshaftFeature
-	FIELD e chance D
-	METHOD <init> (Ljava/util/Map;)V
-		ARG 1 config

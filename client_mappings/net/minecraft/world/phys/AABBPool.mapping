@@ -1,4 +1,0 @@
-CLASS asz net/minecraft/world/phys/AABBPool
-	METHOD a reset ()V
-		COMMENT AABB.resetPool
-	METHOD a set (DDDDDD)Lasx;

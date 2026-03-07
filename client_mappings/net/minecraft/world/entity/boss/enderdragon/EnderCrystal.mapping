@@ -1,8 +1,0 @@
-CLASS sj net/minecraft/world/entity/boss/enderdragon/EnderCrystal
-	FIELD a time I
-	FIELD b health I
-	METHOD <init> (Labw;DDD)V
-		ARG 1 level
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z

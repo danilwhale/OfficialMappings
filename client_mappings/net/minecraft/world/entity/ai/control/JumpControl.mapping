@@ -1,7 +1,0 @@
-CLASS pd net/minecraft/world/entity/ai/control/JumpControl
-	FIELD a mob Log;
-	FIELD b jump Z
-	METHOD <init> (Log;)V
-		ARG 1 mob
-	METHOD a jump ()V
-	METHOD b tick ()V

@@ -1,5 +1,0 @@
-CLASS aox net/minecraft/world/level/tile/JukeboxTile$Entity
-	FIELD a record Lye;
-	METHOD a getRecord ()Lye;
-	METHOD a setRecord (Lye;)V
-		ARG 1 record

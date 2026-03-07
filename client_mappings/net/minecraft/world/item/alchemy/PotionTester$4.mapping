@@ -1,0 +1,6 @@
+CLASS sg net/minecraft/world/item/alchemy/PotionTester$4
+	FIELD a this$0 Lsb;
+	METHOD <init> (Lsb;)V
+		ARG 1 this$0
+	METHOD paintComponent paintComponent (Ljava/awt/Graphics;)V
+		ARG 1 g

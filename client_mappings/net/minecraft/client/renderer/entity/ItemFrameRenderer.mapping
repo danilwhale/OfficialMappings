@@ -1,6 +1,0 @@
-CLASS bgv net/minecraft/client/renderer/entity/ItemFrameRenderer
-	FIELD a MAP_BACKGROUND_LOCATION Lbjo;
-	METHOD b drawFrame (Lod;)V
-		ARG 1 itemFrame
-	METHOD c drawItem (Lod;)V
-		ARG 1 itemFrame

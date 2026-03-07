@@ -1,8 +1,1 @@
-CLASS acy net/minecraft/world/level/biome/FixedBiomeSource
-	FIELD d biome Lacq;
-	FIELD e temperature F
-	FIELD f downfall F
-	METHOD <init> (Lacq;FF)V
-		ARG 1 biome
-		ARG 2 temperature
-		ARG 3 downfall
+CLASS vb net/minecraft/world/level/biome/FixedBiomeSource

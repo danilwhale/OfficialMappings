@@ -1,5 +1,0 @@
-CLASS net/minecraft/client/main/Main net/minecraft/client/main/Main
-	METHOD a stringHasValue (Ljava/lang/String;)Z
-		ARG 0 str
-	METHOD main main ([Ljava/lang/String;)V
-		ARG 0 args

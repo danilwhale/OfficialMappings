@@ -1,22 +1,35 @@
-CLASS ho net/minecraft/server/ServerInterface
-	METHOD A getPlayerCount ()I
-	METHOD B getMaxPlayers ()I
-	METHOD C getPlayerNames ()[Ljava/lang/String;
-	METHOD D getPluginNames ()Ljava/lang/String;
-	METHOD E isDebugging ()Z
-	METHOD L getLevelIdName ()Ljava/lang/String;
-	METHOD a getProperty (Ljava/lang/String;I)I
-		ARG 1 str
-		ARG 2 def
+CLASS net/minecraft/server/n net/minecraft/server/ServerInterface
+	METHOD A getPluginNames ()Ljava/lang/String;
+	METHOD B isDebugging ()Z
+	METHOD I getWorldNmes ()Ljava/lang/String;
+	METHOD a configSave ()V
+	METHOD a getConfigInt (Ljava/lang/String;I)I
+		ARG 1 name
+		ARG 2 defaultValue
 	METHOD a setProperty (Ljava/lang/String;Ljava/lang/Object;)V
-	METHOD a getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-	METHOD b_ getSettingsFile ()Ljava/lang/String;
-	METHOD e info (Ljava/lang/String;)V
-	METHOD f warn (Ljava/lang/String;)V
-	METHOD g runCommand (Ljava/lang/String;)Ljava/lang/String;
-	METHOD h error (Ljava/lang/String;)V
-	METHOD i debug (Ljava/lang/String;)V
-	METHOD w getServerIp ()Ljava/lang/String;
-	METHOD x getServerPort ()I
-	METHOD y getServerName ()Ljava/lang/String;
-	METHOD z getServerVersion ()Ljava/lang/String;
+		ARG 1 propertyName
+		ARG 2 value
+	METHOD a getConfigString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 name
+		ARG 2 defaultValue
+	METHOD a getConfigBoolean (Ljava/lang/String;Z)Z
+		ARG 1 name
+		ARG 2 defaultValue
+	METHOD c getConfigPath ()Ljava/lang/String;
+	METHOD g info (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD h warn (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD i runCommand (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 command
+	METHOD j error (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD k debug (Ljava/lang/String;)V
+		ARG 1 string
+	METHOD t getServerIp ()Ljava/lang/String;
+	METHOD u getServerPort ()I
+	METHOD v getServerName ()Ljava/lang/String;
+	METHOD w getServerVersion ()Ljava/lang/String;
+	METHOD x getPlayerCount ()I
+	METHOD y getMaxPlayers ()I
+	METHOD z getPlayerNames ()[Ljava/lang/String;

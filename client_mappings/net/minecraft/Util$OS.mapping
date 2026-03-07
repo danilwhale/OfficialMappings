@@ -1,7 +1,0 @@
-CLASS x net/minecraft/Util$OS
-	FIELD a LINUX Lx;
-	FIELD b SOLARIS Lx;
-		COMMENT as if you were able to run this on solaris in the first place, this has to be ripped from some tutorial
-	FIELD c WINDOWS Lx;
-	FIELD d MACOS Lx;
-	FIELD e UNKNOWN Lx;

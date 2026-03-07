@@ -1,6 +1,0 @@
-CLASS dt net/minecraft/network/packet/ContainerButtonClickPacket
-	FIELD a containerId I
-	FIELD b buttonId I
-	METHOD <init> (II)V
-		ARG 1 containerId
-		ARG 2 buttonId

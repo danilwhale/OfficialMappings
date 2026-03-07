@@ -1,2 +1,0 @@
-CLASS bgd net/minecraft/client/renderer/entity/CaveSpiderRenderer
-	FIELD a CAVE_SPIDER_LOCATION Lbjo;

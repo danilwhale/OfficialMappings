@@ -1,5 +1,93 @@
-CLASS zp net/minecraft/world/item/alchemy/PotionBrewing
+CLASS sa net/minecraft/world/item/alchemy/PotionBrewing
+	FIELD a MOD_WATER Ljava/lang/String;
+	FIELD b MOD_SUGAR Ljava/lang/String;
+	FIELD c MOD_GHASTTEARS Ljava/lang/String;
+	FIELD d MOD_SPIDEREYE Ljava/lang/String;
+	FIELD e MOD_FERMENTEDEYE Ljava/lang/String;
+	FIELD f MOD_SPECKLEDMELON Ljava/lang/String;
+	FIELD g MOD_BLAZEPOWDER Ljava/lang/String;
+	FIELD h MOD_MAGMACREAM Ljava/lang/String;
+	FIELD i MOD_REDSTONE Ljava/lang/String;
+	FIELD j MOD_GLOWSTONE Ljava/lang/String;
+	FIELD k MOD_GUNPOWDER Ljava/lang/String;
+	FIELD l potionEffectDuration Ljava/util/HashMap;
+	FIELD m potionEffectAmplifier Ljava/util/HashMap;
+	FIELD n cachedColors Ljava/util/HashMap;
+	FIELD o DEFAULT_APPEARANCES [Ljava/lang/String;
+	METHOD a getAppearanceValue (I)I
+		ARG 0 brew
+	METHOD a isLit (II)Z
+		ARG 0 brew
+		ARG 1 position
+	METHOD a valueOf (IIIII)I
+		ARG 0 brew
+		ARG 1 p1
+		ARG 2 p2
+		ARG 3 p3
+		ARG 4 p4
+	METHOD a valueOf (IIIIII)I
+		ARG 0 brew
+		ARG 1 p1
+		ARG 2 p2
+		ARG 3 p3
+		ARG 4 p4
+		ARG 5 p5
+	METHOD a setBit (IIZ)I
+		ARG 0 brew
+		ARG 1 position
+		ARG 2 onOff
+	METHOD a applyBrewBit (IIZZZ)I
+		ARG 0 currentBrew
+		ARG 1 bit
+		ARG 2 isNeg
+		ARG 3 isNot
+		ARG 4 isRequired
+	METHOD a applyBrew (ILjava/lang/String;)I
+		ARG 0 currentBrew
+		ARG 1 formula
 	METHOD a getColorValue (IZ)I
-	METHOD a getColor (Ljava/util/Collection;)I
-		ARG 0 list
+		ARG 0 brew
+		ARG 1 includeDisabledEffects
+	METHOD a parseEffectFormulaValue (Ljava/lang/String;III)I
+		ARG 0 definition
+		ARG 1 start
+		ARG 2 end
+		ARG 3 brew
+	METHOD a getColorValue (Ljava/util/Collection;)I
+		ARG 0 effects
+	METHOD a constructParsedValue (ZZZIIII)I
+		ARG 0 isNot
+		ARG 1 hasMultiplier
+		ARG 2 isNeg
+		ARG 3 countCompare
+		ARG 4 valuePart
+		ARG 5 multiplierPart
+		ARG 6 brew
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD b getSmellValue (I)I
+		ARG 0 brew
+	METHOD b isWrappedLit (II)Z
+		ARG 0 brew
+		ARG 1 position
 	METHOD b getEffects (IZ)Ljava/util/List;
+		ARG 0 brew
+		ARG 1 includeDisabledEffects
+	METHOD c getAppearanceName (I)Ljava/lang/String;
+		ARG 0 brew
+	METHOD c isBit (II)I
+		ARG 0 brew
+		ARG 1 position
+	METHOD d boil (I)I
+		ARG 0 brew
+	METHOD d isNotBit (II)I
+		ARG 0 brew
+		ARG 1 position
+	METHOD e shake (I)I
+		ARG 0 brew
+	METHOD f stirr (I)I
+		ARG 0 brew
+	METHOD g toString (I)Ljava/lang/String;
+		ARG 0 brew
+	METHOD h countOnes (I)I
+		ARG 0 brew

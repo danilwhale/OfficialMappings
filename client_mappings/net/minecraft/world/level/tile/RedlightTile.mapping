@@ -1,5 +1,0 @@
-CLASS aqd net/minecraft/world/level/tile/RedlightTile
-	FIELD a lit Z
-	METHOD <init> (IZ)V
-		ARG 1 id
-		ARG 2 lit

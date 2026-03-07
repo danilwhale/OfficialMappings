@@ -1,9 +1,0 @@
-CLASS blg net/minecraft/client/server/LanServerList
-	FIELD a isDirty Z
-	FIELD b servers Ljava/util/ArrayList;
-	METHOD a isDirty ()Z
-	METHOD a addServer (Ljava/lang/String;Ljava/net/InetAddress;)V
-		ARG 1 pingStr
-		ARG 2 serverGroup
-	METHOD b markClean ()V
-	METHOD c getServers ()Ljava/util/List;

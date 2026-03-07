@@ -1,6 +1,0 @@
-CLASS afg net/minecraft/world/level/levelgen/feature/GroundBushFeature
-	FIELD a leaf I
-	FIELD b trunk I
-	METHOD <init> (II)V
-		ARG 1 leaf
-		ARG 2 trunk

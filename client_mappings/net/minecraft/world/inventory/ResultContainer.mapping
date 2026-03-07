@@ -1,2 +1,0 @@
-CLASS wc net/minecraft/world/inventory/ResultContainer
-	FIELD a items [Lye;

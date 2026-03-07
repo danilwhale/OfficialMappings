@@ -1,3 +1,0 @@
-CLASS bgr net/minecraft/client/renderer/entity/GhastRenderer
-	FIELD a GHAST_LOCATION Lbjo;
-	FIELD f GHAST_SHOOTING_LOCATION Lbjo;

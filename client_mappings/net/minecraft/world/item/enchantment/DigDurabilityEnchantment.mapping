@@ -1,8 +1,0 @@
-CLASS aas net/minecraft/world/item/enchantment/DigDurabilityEnchantment
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 rarity
-	METHOD a shouldIgnoreDurabilityDrop (Lye;ILjava/util/Random;)Z
-		ARG 0 item
-		ARG 1 level
-		ARG 2 random

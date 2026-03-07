@@ -1,3 +1,0 @@
-CLASS bht net/minecraft/client/renderer/entity/VillagerGolemRenderer
-	FIELD a GOLEM_LOCATION Lbjo;
-	FIELD f villagergolemmodel Lbcg;

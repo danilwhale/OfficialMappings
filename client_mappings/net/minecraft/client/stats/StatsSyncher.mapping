@@ -1,12 +1,86 @@
-CLASS blw net/minecraft/client/stats/StatsSyncher
-	METHOD a access$1 (Lblw;)Ljava/util/Map;
-	METHOD a access$7 (Lblw;Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map;
-	METHOD a access$6 (Lblw;Ljava/util/Map;)Ljava/util/Map;
-	METHOD a access$5 (Lblw;Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
-	METHOD a access$8 (Lblw;Z)Z
-	METHOD b access$2 (Lblw;)Ljava/io/File;
-	METHOD c access$3 (Lblw;)Ljava/io/File;
-	METHOD d access$4 (Lblw;)Ljava/io/File;
-	METHOD e access$9 (Lblw;)Ljava/io/File;
-	METHOD f access$10 (Lblw;)Ljava/io/File;
-	METHOD g access$11 (Lblw;)Ljava/io/File;
+CLASS awt net/minecraft/client/stats/StatsSyncher
+	FIELD a busy Z
+	FIELD b serverStats Ljava/util/Map;
+	FIELD c failedSentStats Ljava/util/Map;
+	FIELD d statsCounter Laws;
+	FIELD e unsentFile Ljava/io/File;
+	FIELD f lastServerFile Ljava/io/File;
+	FIELD g unsentFileTmp Ljava/io/File;
+	FIELD h lastServerFileTmp Ljava/io/File;
+	FIELD i unsentFileOld Ljava/io/File;
+	FIELD j lastServerFileOld Ljava/io/File;
+	FIELD k user Lnet/minecraft/client/ai;
+	FIELD l noSaveIn I
+	FIELD m noSendIn I
+	METHOD <init> (Lnet/minecraft/client/ai;Laws;Ljava/io/File;)V
+		ARG 1 user
+		ARG 2 statsCounter
+		ARG 3 dir
+	METHOD a doGetStats ()Ljava/util/Map;
+	METHOD a access$100 (Lawt;)Ljava/util/Map;
+		ARG 0 arg0
+	METHOD a access$800 (Lawt;Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map;
+		ARG 0 arg0
+		ARG 1 arg1
+		ARG 2 arg2
+		ARG 3 arg3
+	METHOD a access$600 (Lawt;Ljava/util/Map;)Ljava/util/Map;
+		ARG 0 arg0
+		ARG 1 arg1
+	METHOD a access$500 (Lawt;Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+		ARG 0 arg0
+		ARG 1 arg1
+		ARG 2 arg2
+		ARG 3 arg3
+		ARG 4 arg4
+	METHOD a access$700 (Lawt;Z)Z
+		ARG 0 arg0
+		ARG 1 arg1
+	METHOD a loadStatsFromDisk (Ljava/io/File;)Ljava/util/Map;
+		ARG 1 stats
+	METHOD a loadStatsFromDisk (Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map;
+		ARG 1 file
+		ARG 2 tmp
+		ARG 3 old
+	METHOD a attemptRename (Ljava/io/File;Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 dir
+		ARG 2 name
+		ARG 3 to
+	METHOD a saveUnsent (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD a doSave (Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+		ARG 1 stats
+		ARG 2 file
+		ARG 3 tmp
+		ARG 4 old
+	METHOD a sendUnsent (Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 stats
+		ARG 2 fullStats
+	METHOD b getStatsFromServer ()V
+	METHOD b access$200 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
+	METHOD b access$930 (Lawt;Ljava/util/Map;)V
+		ARG 0 arg0
+		ARG 1 arg1
+	METHOD b forceSendUnsent (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD c maySave ()Z
+	METHOD c access$300 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
+	METHOD c access$940 (Lawt;Ljava/util/Map;)Ljava/util/Map;
+		ARG 0 arg0
+		ARG 1 arg1
+	METHOD c forceSaveUnsent (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD d maySend ()Z
+	METHOD d access$400 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
+	METHOD d doSend (Ljava/util/Map;)V
+		ARG 1 stats
+	METHOD e tick ()V
+	METHOD e access$900 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
+	METHOD f access$910 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
+	METHOD g access$920 (Lawt;)Ljava/io/File;
+		ARG 0 arg0
