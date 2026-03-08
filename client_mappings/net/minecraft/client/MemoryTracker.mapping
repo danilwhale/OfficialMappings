@@ -1,1 +1,2 @@
 CLASS net/minecraft/client/k net/minecraft/client/MemoryTracker
+	METHOD a genLists (I)I

@@ -1,1 +1,7 @@
 CLASS awv net/minecraft/client/stats/StatsSyncher$2
+	FIELD a val$map Ljava/util/Map;
+	FIELD b this$0 Lawt;
+	METHOD <init> (Lawt;Ljava/util/Map;)V
+		ARG 1 this$0
+		ARG 2 val$map
+	METHOD run run ()V

@@ -1,0 +1,15 @@
+CLASS ann net/minecraft/client/gui/ScreenSizeCalculator
+	FIELD a w I
+	FIELD b h I
+	FIELD c rawWidth D
+	FIELD d rawHeight D
+	FIELD e scale I
+	METHOD <init> (Lnet/minecraft/client/ab;II)V
+		ARG 1 options
+		ARG 2 w
+		ARG 3 h
+	METHOD a getWidth ()I
+	METHOD b getHeight ()I
+	METHOD c getRawWidth ()D
+	METHOD d getRawHeight ()D
+	METHOD e getScale ()I

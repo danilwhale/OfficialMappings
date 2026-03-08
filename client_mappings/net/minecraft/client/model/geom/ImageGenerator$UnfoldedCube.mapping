@@ -1,0 +1,20 @@
+CLASS aqr net/minecraft/client/model/geom/ImageGenerator$UnfoldedCube
+	FIELD a x I
+	FIELD b y I
+	FIELD c cubeRegions [Laqq;
+	FIELD d id Ljava/lang/String;
+	FIELD e width I
+	FIELD f height I
+	FIELD g cube Laqn;
+	FIELD h this$0 Laqo;
+	METHOD <init> (Laqo;Laqn;)V
+		ARG 1 this$0
+		ARG 2 cube
+	METHOD a fits (II)Z
+		ARG 1 x
+		ARG 2 y
+	METHOD a render (Ljava/awt/Graphics;)V
+		ARG 1 g
+	METHOD b place (II)V
+		ARG 1 x
+		ARG 2 y

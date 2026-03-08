@@ -1,0 +1,14 @@
+CLASS apc net/minecraft/client/map/Map$1
+	FIELD a this$0 Lapb;
+	METHOD <init> (Lapb;)V
+		ARG 1 this$0
+	METHOD mouseClicked mouseClicked (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e
+	METHOD mouseEntered mouseEntered (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e
+	METHOD mouseExited mouseExited (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e
+	METHOD mousePressed mousePressed (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e
+	METHOD mouseReleased mouseReleased (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e

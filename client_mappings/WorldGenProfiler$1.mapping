@@ -1,0 +1,2 @@
+CLASS ie WorldGenProfiler$1
+	FIELD a this$0 Lid;

@@ -1,0 +1,2 @@
+CLASS aps net/minecraft/client/model/geom/Model
+	FIELD r cubes Ljava/util/List;

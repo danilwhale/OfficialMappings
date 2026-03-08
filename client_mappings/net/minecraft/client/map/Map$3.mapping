@@ -1,0 +1,4 @@
+CLASS ape net/minecraft/client/map/Map$3
+	FIELD a this$0 Lapb;
+	METHOD <init> (Lapb;Ladn;Ljava/lang/String;Lwl;Lug;Lht;)V
+		ARG 1 this$0

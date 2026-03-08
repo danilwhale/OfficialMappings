@@ -1,3 +1,4 @@
 CLASS gy net/minecraft/stats/Stat
 	METHOD g postConstruct ()Lgy;
 	METHOD h setAwardLocallyOnly ()Lgy;
+	METHOD i getName ()Ljava/lang/String;

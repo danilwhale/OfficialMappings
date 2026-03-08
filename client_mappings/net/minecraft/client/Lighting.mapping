@@ -1,1 +1,4 @@
 CLASS net/minecraft/client/j net/minecraft/client/Lighting
+	METHOD a turnOff ()V
+	METHOD b turnOn ()V
+	METHOD c turnOnGui ()V

@@ -1,0 +1,34 @@
+CLASS apb net/minecraft/client/map/Map
+	FIELD a xCam I
+	FIELD b yCam I
+	FIELD c hovered Ljava/lang/String;
+	FIELD d img Ljava/awt/image/BufferedImage;
+	FIELD e pixels [I
+	FIELD f w I
+	FIELD g h I
+	FIELD h s I
+	FIELD i xMouse I
+	FIELD j yMouse I
+	METHOD <init> (III)V
+		ARG 1 w
+		ARG 2 h
+		ARG 3 s
+	METHOD a buildMapImage (II)V
+		ARG 1 x
+		ARG 2 z
+	METHOD a access$100 (Lapb;)I
+		ARG 0 this$0
+	METHOD a access$000 (Lapb;I)I
+		ARG 0 this$0
+		ARG 1 x
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD b access$300 (Lapb;)I
+		ARG 0 this$0
+	METHOD b access$200 (Lapb;I)I
+		ARG 0 this$0
+		ARG 1 y
+	METHOD c access$400 (Lapb;)I
+		ARG 0 this$0
+	METHOD paint paint (Ljava/awt/Graphics;)V
+		ARG 1 g

@@ -1,8 +1,14 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD c width I
+	FIELD d height I
 	FIELD j user Lnet/minecraft/client/ai;
 	FIELD k serverDomain Ljava/lang/String;
 	FIELD m standalone Z
 	FIELD n pause Z
+	FIELD o textures Late;
+	FIELD p font Lamu;
+	FIELD y options Lnet/minecraft/client/ab;
+	METHOD F currentTimeMillis ()J
 	METHOD a connectTo (Ljava/lang/String;I)V
 	METHOD a fileDownloaded (Ljava/lang/String;Ljava/io/File;)V
 	METHOD d checkGlError (Ljava/lang/String;)V

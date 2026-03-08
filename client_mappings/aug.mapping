@@ -1,0 +1,2 @@
+CLASS aug
+	METHOD a renderGuiItem (Lamu;Late;Lqs;II)V

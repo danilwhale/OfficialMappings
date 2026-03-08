@@ -1,0 +1,6 @@
+CLASS aqt net/minecraft/client/model/geom/TexOffs
+	FIELD a x I
+	FIELD b y I
+	METHOD <init> (II)V
+		ARG 1 x
+		ARG 2 y

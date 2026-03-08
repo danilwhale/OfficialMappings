@@ -1,0 +1,8 @@
+CLASS atd net/minecraft/client/renderer/Tesselator
+	FIELD a instance Latd;
+	FIELD z tesselating Z
+	METHOD a end ()I
+	METHOD a getUniqueInstance (I)Latd;
+	METHOD b begin ()V
+	METHOD b begin (I)V
+		ARG 1 mode

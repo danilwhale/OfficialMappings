@@ -1,0 +1,15 @@
+CLASS akf org/bouncycastle/jce/provider/BouncyCastleProvider
+	FIELD a PROVIDER_NAME Ljava/lang/String;
+	FIELD b CONFIGURATION Lakc;
+	FIELD c info Ljava/lang/String;
+	FIELD d keyInfoConverters Ljava/util/Map;
+	FIELD e SYMMETRIC_CIPHERS [Ljava/lang/String;
+	FIELD f ASYMMETRIC_GENERIC [Ljava/lang/String;
+	FIELD g ASYMMETRIC_CIPHERS [Ljava/lang/String;
+	FIELD h DIGESTS [Ljava/lang/String;
+	METHOD a access$000 (Lakf;)V
+		ARG 0 a
+	METHOD a loadAlgorithms (Ljava/lang/String;[Ljava/lang/String;)V
+		ARG 1 a
+		ARG 2 b
+	METHOD b addMacAlgorithms ()V

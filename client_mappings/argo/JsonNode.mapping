@@ -1,0 +1,5 @@
+CLASS ala argo/JsonNode
+	METHOD a getStringValue ([Ljava/lang/Object;)Ljava/lang/String;
+	METHOD b getArrayNode ([Ljava/lang/Object;)Ljava/util/List;
+	METHOD c getText ()Ljava/lang/String;
+	METHOD d getFields ()Ljava/util/Map;

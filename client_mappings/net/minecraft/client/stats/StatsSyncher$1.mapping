@@ -1,1 +1,5 @@
 CLASS awu net/minecraft/client/stats/StatsSyncher$1
+	FIELD a this$0 Lawt;
+	METHOD <init> (Lawt;)V
+		ARG 1 this$0
+	METHOD run run ()V

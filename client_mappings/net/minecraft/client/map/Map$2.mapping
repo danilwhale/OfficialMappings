@@ -1,0 +1,8 @@
+CLASS apd net/minecraft/client/map/Map$2
+	FIELD a this$0 Lapb;
+	METHOD <init> (Lapb;)V
+		ARG 1 this$0
+	METHOD mouseDragged mouseDragged (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e
+	METHOD mouseMoved mouseMoved (Ljava/awt/event/MouseEvent;)V
+		ARG 1 e

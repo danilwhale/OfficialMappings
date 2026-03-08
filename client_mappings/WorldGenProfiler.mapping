@@ -1,0 +1,8 @@
+CLASS id WorldGenProfiler
+	FIELD a level Lty;
+	FIELD b workDir Ljava/io/File;
+	METHOD a run ()V
+	METHOD a selectLevel (Ljava/lang/String;)V
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD b prepareLevel ()V

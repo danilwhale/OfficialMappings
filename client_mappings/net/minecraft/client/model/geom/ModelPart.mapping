@@ -1,0 +1,26 @@
+CLASS aqs net/minecraft/client/model/geom/ModelPart
+	FIELD a xTexSize F
+	FIELD b yTexSize F
+	FIELD c x F
+	FIELD d y F
+	FIELD e z F
+	FIELD f xRot F
+	FIELD g yRot F
+	FIELD h zRot F
+	FIELD l cubes Ljava/util/List;
+	FIELD m children Ljava/util/List;
+	FIELD n id Ljava/lang/String;
+	FIELD q compiled Z
+	FIELD r list I
+	FIELD s model Laps;
+	METHOD a setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setTexSize (II)Laqs;
+		ARG 1 xs
+		ARG 2 ys
+	METHOD b mimic (Laqs;)V
+		ARG 1 o
+	METHOD d compile (F)V
+		ARG 1 scale

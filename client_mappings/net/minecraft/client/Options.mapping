@@ -1,1 +1,2 @@
 CLASS net/minecraft/client/ab net/minecraft/client/Options
+	FIELD Z guiScale I

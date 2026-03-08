@@ -1,0 +1,2 @@
+CLASS amw net/minecraft/client/gui/GuiComponent
+	METHOD b blit (IIIIII)V

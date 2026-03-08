@@ -1,0 +1,2 @@
+CLASS aj net/minecraft/locale/I18n
+	METHOD a get (Ljava/lang/String;)Ljava/lang/String;

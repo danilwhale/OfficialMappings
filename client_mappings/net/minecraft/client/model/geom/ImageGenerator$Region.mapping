@@ -1,0 +1,21 @@
+CLASS aqq net/minecraft/client/model/geom/ImageGenerator$Region
+	FIELD a x1 I
+	FIELD b y1 I
+	FIELD c x2 I
+	FIELD d y2 I
+	FIELD e this$0 Laqo;
+	METHOD <init> (Laqo;IIII)V
+		ARG 1 this$0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 x2
+		ARG 5 y2
+	METHOD a move (II)V
+		ARG 1 xo
+		ARG 2 yo
+	METHOD a overlaps (Laqq;II)Z
+		ARG 1 region
+		ARG 2 xo
+		ARG 3 yo
+	METHOD a render (Ljava/awt/Graphics;)V
+		ARG 1 g

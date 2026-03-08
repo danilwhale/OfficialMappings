@@ -1,3 +1,17 @@
 CLASS aws net/minecraft/client/stats/StatsCounter
+	FIELD a stats Ljava/util/Map;
 	FIELD c requiresSave Z
 	FIELD d statsSyncher Lawt;
+	METHOD <init> (Lnet/minecraft/client/ai;Ljava/io/File;)V
+		ARG 1 user
+		ARG 2 dir
+	METHOD a hasTaken (Lgt;)Z
+		ARG 1 ach
+	METHOD a getValue (Lgy;)I
+		ARG 1 stat
+	METHOD a award (Lgy;I)V
+		ARG 1 stat
+		ARG 2 count
+	METHOD b canTake (Lgt;)Z
+		ARG 1 ach
+	METHOD e tick ()V

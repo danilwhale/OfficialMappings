@@ -1,0 +1,7 @@
+CLASS aqp net/minecraft/client/model/geom/ImageGenerator$1
+	FIELD a this$0 Laqo;
+	METHOD <init> (Laqo;)V
+		ARG 1 this$0
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 c0
+		ARG 2 c1

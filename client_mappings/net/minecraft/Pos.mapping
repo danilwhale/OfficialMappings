@@ -1,0 +1,4 @@
+CLASS j net/minecraft/Pos
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I

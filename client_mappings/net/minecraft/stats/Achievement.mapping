@@ -1,2 +1,4 @@
 CLASS gt net/minecraft/stats/Achievement
+	FIELD d icon Lqs;
 	METHOD b setGolden ()Lgt;
+	METHOD e getDescription ()Ljava/lang/String;

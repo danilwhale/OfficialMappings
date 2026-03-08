@@ -1,0 +1,11 @@
+CLASS aqn net/minecraft/client/model/geom/Cube
+	FIELD a x0 F
+	FIELD b y0 F
+	FIELD c z0 F
+	FIELD d x1 F
+	FIELD e y1 F
+	FIELD f z1 F
+	FIELD g id Ljava/lang/String;
+	FIELD h vertices [Laqg;
+	FIELD i polygons [Lapv;
+	METHOD a render (Latd;F)V

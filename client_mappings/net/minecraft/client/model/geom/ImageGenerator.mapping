@@ -1,0 +1,20 @@
+CLASS aqo net/minecraft/client/model/geom/ImageGenerator
+	FIELD a occupiedRegions Ljava/util/List;
+	METHOD a access$100 (Laqo;)Ljava/util/List;
+		ARG 0 this$0
+	METHOD a access$000 (Laqo;Laqq;II)Z
+		ARG 0 this$0
+		ARG 1 region
+		ARG 2 xo
+		ARG 3 yo
+	METHOD a isFree (Laqq;II)Z
+		ARG 1 region
+		ARG 2 xo
+		ARG 3 yo
+	METHOD a getCubes (Laqs;Ljava/util/List;)V
+		ARG 1 mp
+		ARG 2 cubeList
+	METHOD a generateImage (Ljava/util/List;)V
+		ARG 1 parts
+	METHOD a main ([Ljava/lang/String;)V
+		ARG 0 args
