@@ -1,1 +1,2 @@
 CLASS afx net/minecraft/world/level/tile/LiquidTile
+	METHOD d getHeight (I)F

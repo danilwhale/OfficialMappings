@@ -3,3 +3,4 @@ CLASS ajb net/minecraft/phys/Vec3
 	FIELD b y D
 	FIELD c z D
 	FIELD d pool Ljava/lang/ThreadLocal;
+	METHOD a getPool ()Lajd;

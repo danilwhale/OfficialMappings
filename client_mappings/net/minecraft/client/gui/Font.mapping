@@ -1,0 +1,44 @@
+CLASS amu net/minecraft/client/gui/Font
+	FIELD a fontTexture I
+	FIELD b _b I
+	FIELD c random Ljava/util/Random;
+	FIELD d charWidths [I
+	FIELD e unicodeWidth [B
+	FIELD f unicodeTexID [I
+	FIELD g colors [I
+	FIELD h lastBoundUnicodeTexID I
+	FIELD i textures Late;
+	FIELD j xPos F
+	FIELD k yPos F
+	FIELD l enforceUnicodeSheet Z
+	FIELD m bidirectional Z
+	FIELD n r F
+	FIELD o g F
+	FIELD p b F
+	FIELD q a F
+	FIELD r _r I
+	METHOD <init> (Lnet/minecraft/client/ab;Ljava/lang/String;Late;Z)V
+		ARG 1 options
+		ARG 2 name
+		ARG 3 textures
+		ARG 4 enforceUnicode
+	METHOD a sanitize (C)I
+	METHOD a renderBasicCharacter (CZ)F
+	METHOD a loadUnicodePage (I)V
+		ARG 1 page
+	METHOD a renderUnicodeCharacter (IZ)F
+		ARG 1 page
+	METHOD a width (Ljava/lang/String;)I
+		ARG 1 str
+	METHOD a drawShadow (Ljava/lang/String;III)I
+	METHOD a draw (Ljava/lang/String;Z)V
+		ARG 1 str
+		ARG 2 dropShadow
+	METHOD a setEnforceUnicodeSheet (Z)V
+		ARG 1 enforceUnicodeSheet
+	METHOD b draw (Ljava/lang/String;III)V
+	METHOD b drawWordWrap (Ljava/lang/String;IIII)V
+	METHOD b setBidirectional (Z)V
+		ARG 1 bidirectional
+	METHOD c reorderBidi (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 str

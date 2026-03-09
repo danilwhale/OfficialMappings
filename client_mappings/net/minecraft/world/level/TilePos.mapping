@@ -1,1 +1,4 @@
 CLASS uq net/minecraft/world/level/TilePos
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I

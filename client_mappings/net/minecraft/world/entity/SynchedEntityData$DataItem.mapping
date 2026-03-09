@@ -1,0 +1,4 @@
+CLASS jm net/minecraft/world/entity/SynchedEntityData$DataItem
+	METHOD a access$000 (Ljm;Z)Z
+		ARG 0 this$0
+		ARG 1 d

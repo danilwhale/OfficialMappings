@@ -16,4 +16,5 @@ CLASS abx net/minecraft/world/level/material/Material
 	METHOD a isSolid ()Z
 	METHOD b blocksLight ()Z
 	METHOD c blocksMotion ()Z
+	METHOD d isLiquid ()Z
 	METHOD k isSolidBlocking ()Z

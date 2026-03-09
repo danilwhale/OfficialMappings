@@ -1,6 +1,8 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD A soundEngine Lawp;
 	FIELD c width I
 	FIELD d height I
+	FIELD e level Larc;
 	FIELD j user Lnet/minecraft/client/ai;
 	FIELD k serverDomain Ljava/lang/String;
 	FIELD m standalone Z
@@ -9,10 +11,14 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD p font Lamu;
 	FIELD y options Lnet/minecraft/client/ab;
 	METHOD F currentTimeMillis ()J
+	METHOD a setScreen (Lanm;)V
 	METHOD a connectTo (Ljava/lang/String;I)V
 	METHOD a fileDownloaded (Ljava/lang/String;Ljava/io/File;)V
+	METHOD c getOS ()Lnet/minecraft/client/w;
 	METHOD d checkGlError (Ljava/lang/String;)V
 	METHOD e destroy ()V
 	METHOD g stop ()V
+	METHOD h grabMouse ()V
+	METHOD k toggleFullScreen ()V
 	METHOD main main ([Ljava/lang/String;)V
 		ARG 0 args

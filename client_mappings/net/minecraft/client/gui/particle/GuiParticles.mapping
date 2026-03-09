@@ -1,0 +1,10 @@
+CLASS aoz net/minecraft/client/gui/particle/GuiParticles
+	FIELD a particles Ljava/util/List;
+	FIELD b mc Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 mc
+	METHOD a tick ()V
+	METHOD a render (F)V
+		ARG 1 a
+	METHOD a add (Laoy;)V
+		ARG 1 guiParticle

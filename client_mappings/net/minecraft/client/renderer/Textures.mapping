@@ -1,0 +1,25 @@
+CLASS ate net/minecraft/client/renderer/Textures
+	FIELD a clamp Z
+	FIELD b blur Z
+	FIELD c idMap Ljava/util/HashMap;
+	FIELD d pixelsMap Ljava/util/HashMap;
+	FIELD e loadedImages Lhl;
+	FIELD f ib Ljava/nio/IntBuffer;
+	FIELD g pixels Ljava/nio/ByteBuffer;
+	FIELD h dynamicTextures Ljava/util/List;
+	FIELD i httpTextures Ljava/util/Map;
+	FIELD j options Lnet/minecraft/client/ab;
+	FIELD k skins Lawi;
+	METHOD <init> (Lawi;Lnet/minecraft/client/ab;)V
+		ARG 1 skins
+		ARG 2 options
+	METHOD a loadTexturePixels (Ljava/awt/image/BufferedImage;[I)[I
+		ARG 1 img
+		ARG 2 pixels
+	METHOD a loadTexturePixels (Ljava/lang/String;)[I
+		ARG 1 resourceName
+	METHOD b bindTexture (I)V
+	METHOD b loadTexturePixels (Ljava/awt/image/BufferedImage;)[I
+		ARG 1 img
+	METHOD b loadTexture (Ljava/lang/String;)I
+		ARG 1 resourceNAme

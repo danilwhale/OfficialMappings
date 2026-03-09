@@ -1,0 +1,2 @@
+CLASS awi net/minecraft/client/skins/TexturePackRepository
+	METHOD e getSelected ()Lawh;

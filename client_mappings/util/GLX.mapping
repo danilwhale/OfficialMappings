@@ -1,0 +1,13 @@
+CLASS awx util/GLX
+	FIELD a GL_TEXTURE0 I
+	FIELD b GL_TEXTURE1 I
+	FIELD c useMultitextureArb Z
+	METHOD a init ()V
+	METHOD a glActiveTexture (I)V
+		ARG 0 tex
+	METHOD a glMultiTexCoord2f (IFF)V
+		ARG 0 tex
+		ARG 1 x
+		ARG 2 y
+	METHOD b glClientActiveTexture (I)V
+		ARG 0 tex

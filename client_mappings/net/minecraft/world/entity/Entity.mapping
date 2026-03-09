@@ -1,10 +1,28 @@
 CLASS iw net/minecraft/world/entity/Entity
+	FIELD A xRot F
+	FIELD B yRotO F
+	FIELD C xRotO F
+	FIELD D bb Laiw;
 	FIELD N bbWidth F
 	FIELD O bbHeight F
+	FIELD a entityCounter I
 	FIELD am size Liy;
+	FIELD k entityId I
+	FIELD l viewScale D
+	FIELD m blocksBuilding Z
 	FIELD n rider Liw;
 	FIELD o riding Liw;
 	FIELD p level Lty;
+	FIELD q xo D
+	FIELD r yo D
+	FIELD s zo D
+	FIELD t x D
+	FIELD u y D
+	FIELD v z D
+	FIELD w xd D
+	FIELD x yd D
+	FIELD y zd D
+	FIELD z yRot F
 	METHOD <init> (Lty;)V
 		ARG 1 level
 	METHOD a setSize (FF)V
@@ -12,3 +30,4 @@ CLASS iw net/minecraft/world/entity/Entity
 		ARG 2 h
 	METHOD a hurt (Lin;I)Z
 	METHOD ak getAName ()Ljava/lang/String;
+	METHOD e getHeadHeight ()F

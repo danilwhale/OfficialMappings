@@ -1,1 +1,26 @@
 CLASS net/minecraft/client/b net/minecraft/client/Camera
+	FIELD a xPlayerOffs F
+	FIELD b yPlayerOffs F
+	FIELD c zPlayerOffs F
+	FIELD d xa F
+	FIELD e ya F
+	FIELD f za F
+	FIELD g xa2 F
+	FIELD h za2 F
+	FIELD i viewport Ljava/nio/IntBuffer;
+	FIELD j modelview Ljava/nio/FloatBuffer;
+	FIELD k projection Ljava/nio/FloatBuffer;
+	FIELD l position Ljava/nio/FloatBuffer;
+	METHOD a getCameraTilePos (Ljf;D)Luq;
+		ARG 0 player
+		ARG 1 alpha
+	METHOD a prepare (Lnp;Z)V
+		ARG 0 player
+		ARG 1 mirror
+	METHOD a getBlockAt (Lty;Ljf;F)I
+		ARG 0 level
+		ARG 1 player
+		ARG 2 alpha
+	METHOD b getCameraPos (Ljf;D)Lajb;
+		ARG 0 player
+		ARG 1 alpha

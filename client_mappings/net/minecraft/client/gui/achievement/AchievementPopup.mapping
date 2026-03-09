@@ -1,4 +1,4 @@
-CLASS anx net/minecraft/gui/achievement/AchievementPopup
+CLASS anx net/minecraft/client/gui/achievement/AchievementPopup
 	FIELD a mc Lnet/minecraft/client/Minecraft;
 	FIELD b width I
 	FIELD c height I

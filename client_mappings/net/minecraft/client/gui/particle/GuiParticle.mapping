@@ -1,0 +1,29 @@
+CLASS aoy net/minecraft/client/gui/particle/GuiParticle
+	FIELD a x D
+	FIELD b y D
+	FIELD c xo D
+	FIELD d yo D
+	FIELD e xa D
+	FIELD f ya D
+	FIELD g sdfsfsdf D
+	FIELD h removed Z
+	FIELD i life I
+	FIELD j lifeTime I
+	FIELD k r D
+	FIELD l g D
+	FIELD m b D
+	FIELD n a D
+	FIELD o or D
+	FIELD p og D
+	FIELD q ob D
+	FIELD r oa D
+	FIELD s random Ljava/util/Random;
+	METHOD <init> (DDDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 xa
+		ARG 7 ya
+	METHOD a preTick ()V
+	METHOD a tick (Laoz;)V
+		ARG 1 guiParticles
+	METHOD b remove ()V
