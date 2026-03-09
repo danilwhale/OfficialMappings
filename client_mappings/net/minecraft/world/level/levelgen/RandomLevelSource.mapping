@@ -1,1 +1,16 @@
 CLASS ww net/minecraft/world/level/levelgen/RandomLevelSource
+	FIELD j waterDepths [[I
+	FIELD k random Ljava/util/Random;
+	FIELD p level Lty;
+	FIELD q generateStructures Z
+	FIELD t caveFeature Lwu;
+	FIELD u strongholdFeature Lzq;
+	FIELD v villageFeature Laar;
+	FIELD w mineShaftFeature Lyh;
+	FIELD x scatteredFeature Lzi;
+	FIELD y canyonFeature Lwu;
+	FIELD z biomes [Lut;
+	METHOD <init> (Lty;JZ)V
+		ARG 1 level
+		ARG 2 seed
+		ARG 4 generateStructures

@@ -1,0 +1,7 @@
+CLASS abt net/minecraft/world/level/levelgen/synth/Synth
+	METHOD a getValue (DD)D
+		ARG 1 x
+		ARG 3 y
+	METHOD a create (II)[D
+		ARG 1 width
+		ARG 2 height

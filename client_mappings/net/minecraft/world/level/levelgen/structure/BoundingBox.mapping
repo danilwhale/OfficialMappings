@@ -1,0 +1,65 @@
+CLASS yg net/minecraft/world/level/levelgen/structure/BoundingBox
+	FIELD a x0 I
+	FIELD b y0 I
+	FIELD c z0 I
+	FIELD d x1 I
+	FIELD e y1 I
+	FIELD f z1 I
+	METHOD <init> (IIII)V
+		ARG 1 x0
+		ARG 2 z0
+		ARG 3 x1
+		ARG 4 z1
+	METHOD <init> (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD <init> (Lyg;)V
+		ARG 1 other
+	METHOD a getUnknownBox ()Lyg;
+	METHOD a move (III)V
+		ARG 1 dx
+		ARG 2 dy
+		ARG 3 dz
+	METHOD a intersects (IIII)Z
+		ARG 1 x0
+		ARG 2 z0
+		ARG 3 x1
+		ARG 4 z1
+	METHOD a intersects (IIIIII)Z
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a orientBox (IIIIIIIIII)Lyg;
+		ARG 0 footX
+		ARG 1 footY
+		ARG 2 footZ
+		ARG 3 offX
+		ARG 4 offY
+		ARG 5 offZ
+		ARG 6 width
+		ARG 7 height
+		ARG 8 depth
+		ARG 9 orientation
+	METHOD a intersects (Lyg;)Z
+		ARG 1 other
+	METHOD b getXSpan ()I
+	METHOD b isInside (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b expand (Lyg;)V
+		ARG 1 other
+	METHOD c getYSpan ()I
+	METHOD c getIntersection (Lyg;)Lyg;
+		ARG 1 other
+	METHOD d getZSpan ()I
+	METHOD e getXCenter ()I
+	METHOD f getYCenter ()I
+	METHOD g getZCenter ()I

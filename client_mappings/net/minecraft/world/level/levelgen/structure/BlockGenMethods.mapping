@@ -1,0 +1,45 @@
+CLASS yf net/minecraft/world/level/levelgen/structure/BlockGenMethods
+	METHOD a generateLine (Lty;[BIIIIIIB)V
+		ARG 0 level
+		ARG 1 blocks
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 ex
+		ARG 6 ey
+		ARG 7 ez
+		ARG 8 block
+	METHOD a generateBox (Lty;[BIIIIIIBB)V
+		ARG 0 level
+		ARG 1 blocks
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 ex
+		ARG 6 ey
+		ARG 7 ez
+		ARG 8 edge
+		ARG 9 filling
+	METHOD a generateDirectionLine (Lty;[BIIIIIIIIB)V
+		ARG 0 level
+		ARG 1 blocks
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 ex
+		ARG 6 ey
+		ARG 7 ez
+		ARG 8 startDirection
+		ARG 9 endDirection
+		ARG 10 block
+	METHOD b generateFrame (Lty;[BIIIIIIBB)V
+		ARG 0 levle
+		ARG 1 blocks
+		ARG 2 sx
+		ARG 3 sy
+		ARG 4 sz
+		ARG 5 ex
+		ARG 6 ey
+		ARG 7 ez
+		ARG 8 edge
+		ARG 9 filling

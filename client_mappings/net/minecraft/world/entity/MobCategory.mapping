@@ -1,0 +1,4 @@
+CLASS jg net/minecraft/world/entity/MobCategory
+	FIELD a monster Ljg;
+	FIELD b creature Ljg;
+	FIELD c waterCreature Ljg;

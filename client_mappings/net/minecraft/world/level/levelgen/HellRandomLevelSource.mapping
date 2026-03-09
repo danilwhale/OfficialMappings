@@ -1,0 +1,5 @@
+CLASS ws net/minecraft/world/level/levelgen/HellRandomLevelSource
+	FIELD c netherBridgeFeature Lyo;
+	FIELD i random Ljava/util/Random;
+	FIELD o level Lty;
+	FIELD t caveFeature Lwu;

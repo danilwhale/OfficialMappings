@@ -1,0 +1,7 @@
+CLASS abq net/minecraft/world/level/levelgen/synth/Rotate
+	FIELD a synth Labt;
+	FIELD b sin D
+	FIELD c cos D
+	METHOD <init> (Labt;F)V
+		ARG 1 synth
+		ARG 2 angle

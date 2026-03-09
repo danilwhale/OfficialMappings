@@ -1,2 +1,0 @@
-CLASS vr
-	METHOD d gatherStats ()Ljava/lang/String;

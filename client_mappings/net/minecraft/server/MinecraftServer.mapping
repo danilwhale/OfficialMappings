@@ -5,6 +5,7 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD I getWorldNmes ()Ljava/lang/String;
 	METHOD S isDedicatedServer ()Z
 	METHOD g info (Ljava/lang/String;)V
+	METHOD getServerModName getServerModName ()Ljava/lang/String;
 	METHOD h warn (Ljava/lang/String;)V
 	METHOD i runCommand (Ljava/lang/String;)Ljava/lang/String;
 	METHOD j error (Ljava/lang/String;)V

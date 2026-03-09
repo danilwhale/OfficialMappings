@@ -1,0 +1,32 @@
+CLASS vr net/minecraft/world/level/chunk/ChunkSource
+	METHOD a hasChunk (II)Z
+		ARG 1 x
+		ARG 2 y
+	METHOD a getMobsAt (Ljg;III)Ljava/util/List;
+		ARG 1 mobCategory
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a findNearestMapFeature (Lty;Ljava/lang/String;III)Luq;
+		ARG 1 level
+		ARG 2 featureName
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD a postProcess (Lvr;II)V
+		ARG 1 parent
+		ARG 2 x
+		ARG 3 z
+	METHOD a save (ZLhv;)Z
+		ARG 1 force
+		ARG 2 progressListener
+	METHOD b tick ()Z
+	METHOD c shouldSave ()Z
+	METHOD c create (II)Lvu;
+		ARG 1 x
+		ARG 2 z
+	METHOD d gatherStats ()Ljava/lang/String;
+	METHOD d getChunk (II)Lvu;
+		ARG 1 x
+		ARG 2 z
+	METHOD e getLoadedChunksCount ()I

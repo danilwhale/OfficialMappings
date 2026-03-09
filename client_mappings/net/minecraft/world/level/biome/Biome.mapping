@@ -45,6 +45,7 @@ CLASS ut net/minecraft/world/level/biome/Biome
 	METHOD a setLeafColor (I)Lut;
 	METHOD a setName (Ljava/lang/String;)Lut;
 	METHOD a getTreeFeature (Ljava/util/Random;)Lxh;
+	METHOD a getMobs (Ljg;)Ljava/util/List;
 	METHOD b setSnowCovered ()Lut;
 	METHOD b setDepthAndScale (FF)Lut;
 		ARG 1 depth

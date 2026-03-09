@@ -1,0 +1,4 @@
+CLASS abl net/minecraft/world/level/levelgen/synth/Emboss
+	FIELD a synth Labt;
+	METHOD <init> (Labt;)V
+		ARG 1 synth

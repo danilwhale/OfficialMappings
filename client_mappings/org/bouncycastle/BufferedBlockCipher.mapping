@@ -1,0 +1,2 @@
+CLASS ajm org/bouncycastle/BufferedBlockCipher
+	METHOD a init (ZLajo;)V

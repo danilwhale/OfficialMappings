@@ -1,0 +1,8 @@
+CLASS abr net/minecraft/world/level/levelgen/synth/Scale
+	FIELD a synth Labt;
+	FIELD b xScale D
+	FIELD c yScale D
+	METHOD <init> (Labt;DD)V
+		ARG 1 synth
+		ARG 2 xScale
+		ARG 4 yScale

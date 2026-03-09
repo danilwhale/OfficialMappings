@@ -1,0 +1,6 @@
+CLASS abk net/minecraft/world/level/levelgen/synth/Distort
+	FIELD a source Labt;
+	FIELD b distort Labt;
+	METHOD <init> (Labt;Labt;)V
+		ARG 1 source
+		ARG 2 distort
