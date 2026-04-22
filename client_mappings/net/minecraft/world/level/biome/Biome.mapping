@@ -12,6 +12,8 @@ CLASS ut net/minecraft/world/level/biome/Biome
 	FIELD O fancyTree Lwz;
 	FIELD P birchTree Lxa;
 	FIELD Q swampTree Lyb;
+	FIELD R hasSnow Z
+	FIELD S hasRain Z
 	FIELD a biomes [Lut;
 	FIELD b ocean Lut;
 	FIELD c plains Lut;
@@ -36,10 +38,12 @@ CLASS ut net/minecraft/world/level/biome/Biome
 	FIELD v smallerExtremeHills Lut;
 	FIELD w jungle Lut;
 	FIELD x jungleHills Lut;
+	FIELD z color I
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD a createDecorator ()Lux;
 	METHOD a getSkyColor (F)I
+		ARG 1 temp
 	METHOD a setTemperatureAndDownfall (FF)Lut;
 		ARG 1 temp
 		ARG 2 downfall
@@ -47,12 +51,27 @@ CLASS ut net/minecraft/world/level/biome/Biome
 	METHOD a setName (Ljava/lang/String;)Lut;
 	METHOD a getTreeFeature (Ljava/util/Random;)Lxh;
 	METHOD a getMobs (Ljg;)Ljava/util/List;
+		ARG 1 category
+	METHOD a decorate (Lty;Ljava/util/Random;II)V
+		ARG 1 level
+		ARG 2 random
+		ARG 3 xo
+		ARG 4 zo
 	METHOD b setSnowCovered ()Lut;
 	METHOD b setDepthAndScale (FF)Lut;
 		ARG 1 depth
 		ARG 2 scale
 	METHOD b setColor (I)Lut;
+		ARG 1 color
 	METHOD b getGrassFeature (Ljava/util/Random;)Lxh;
+	METHOD c hasSnow ()Z
+	METHOD d hasRain ()Z
 	METHOD e isHumid ()Z
+	METHOD f getCreatureProbability ()F
+	METHOD g getDownfallInt ()I
+	METHOD h getTemperatureInt ()I
+	METHOD i getDownfall ()F
 	METHOD j getTemperature ()F
+	METHOD k getGrassColor ()I
+	METHOD l getFolageColor ()I
 	METHOD m setNoRain ()Lut;

@@ -8,4 +8,6 @@ CLASS aiw net/minecraft/phys/AABB
 	FIELD g pool Ljava/lang/ThreadLocal;
 	METHOD a getPool ()Laiy;
 	METHOD a newPermanent (DDDDDD)Laiw;
+	METHOD a intersects (Laiw;)Z
+	METHOD b grow (DDD)Laiw;
 	METHOD b set (DDDDDD)Laiw;

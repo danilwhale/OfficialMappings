@@ -34,6 +34,7 @@ CLASS iw net/minecraft/world/entity/Entity
 	FIELD z yRot F
 	METHOD <init> (Lty;)V
 		ARG 1 level
+	METHOD E getCollideBox ()Laiw;
 	METHOD U rideTick ()V
 	METHOD a setSize (FF)V
 		ARG 1 w
@@ -44,5 +45,6 @@ CLASS iw net/minecraft/world/entity/Entity
 	METHOD e getHeadHeight ()F
 	METHOD e distanceToSqr (DDD)D
 	METHOD e distanceToSqr (Liw;)D
+	METHOD g getCollideAgainstBox (Liw;)Laiw;
 	METHOD h_ tick ()V
 	METHOD y remove ()V

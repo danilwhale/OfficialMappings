@@ -1,7 +1,12 @@
 CLASS wl net/minecraft/world/level/dimension/Dimension
+	FIELD a level Lty;
+	FIELD b levelType Luj;
 	FIELD c biomeSource Luy;
+	FIELD d ultraWarm Z
 	FIELD e hasCeiling Z
 	FIELD f brightnessRamp [F
+	FIELD g id I
+	FIELD h sunriseCol [F
 	METHOD a getTimeOfDay (JF)F
 	METHOD a init (Lty;)V
 	METHOD b getFogColor (FF)Lajb;

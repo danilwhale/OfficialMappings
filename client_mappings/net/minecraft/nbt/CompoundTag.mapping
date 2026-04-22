@@ -1,5 +1,9 @@
 CLASS an net/minecraft/nbt/CompoundTag
+	METHOD a putInt (Ljava/lang/String;I)V
 	METHOD a putCompound (Ljava/lang/String;Lan;)V
+	METHOD a putString (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD a putShort (Ljava/lang/String;S)V
 	METHOD c getAllTags ()Ljava/util/Collection;
+	METHOD e getInt (Ljava/lang/String;)I
+	METHOD i getString (Ljava/lang/String;)Ljava/lang/String;
 	METHOD l getCompound (Ljava/lang/String;)Lan;

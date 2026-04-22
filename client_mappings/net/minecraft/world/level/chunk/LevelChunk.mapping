@@ -1,5 +1,8 @@
 CLASS vu net/minecraft/world/level/chunk/LevelChunk
+	FIELD o seenByPlayer Z
 	METHOD a getTile (III)I
+	METHOD a setTile (IIII)Z
+	METHOD a setTileAndData (IIIII)Z
 	METHOD a setTileEntity (IIILair;)V
 	METHOD a getBiome (IILuy;)Lut;
 	METHOD a addEntity (Liw;)V
@@ -7,6 +10,7 @@ CLASS vu net/minecraft/world/level/chunk/LevelChunk
 	METHOD a getEntities (Liw;Laiw;Ljava/util/List;)V
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Laiw;Ljava/util/List;)V
 	METHOD a getBrightness (Luk;III)I
+	METHOD a setBrightness (Luk;IIII)V
 	METHOD b getHeightmap (II)I
 	METHOD b getTileLightBlock (III)I
 	METHOD b setData (IIII)Z

@@ -115,6 +115,13 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 4 z
 		ARG 5 ct
 		ARG 6 block
+	METHOD a setTileAndDataNoUpdate (IIIIIZ)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+		ARG 6 informClients
 	METHOD a mayPlace (IIIIZILiw;)Z
 		ARG 1 tileId
 		ARG 2 x
@@ -139,6 +146,8 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 3 lc
 	METHOD a markForRemoval (Lair;)V
 		ARG 1 entity
+	METHOD a getTileCubes (Laiw;)Ljava/util/List;
+		ARG 1 bb
 	METHOD a containsMaterial (Laiw;Labx;)Z
 		ARG 1 box
 		ARG 2 material
@@ -233,6 +242,14 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 2 id
 	METHOD a getPlayerByName (Ljava/lang/String;)Lnp;
 		ARG 1 name
+	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 id
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xd
+		ARG 10 yd
+		ARG 12 zd
 	METHOD a playStreamingMusic (Ljava/lang/String;III)V
 		ARG 1 name
 		ARG 2 x
@@ -309,6 +326,10 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 	METHOD b setTileNoUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD b forceAddTileTick (IIIII)V
 		ARG 1 x
 		ARG 2 y
@@ -359,16 +380,28 @@ CLASS ty net/minecraft/world/level/Level
 	METHOD b removeListener (Lue;)V
 		ARG 1 listener
 	METHOD b setBrightness (Luk;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 brightness
 	METHOD c updateSleepingPlayerList ()V
 	METHOD c getTimeOfDay (F)F
 		ARG 1 a
 	METHOD c hasChunk (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD c setData (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 data
 	METHOD c setTileAndDataNoUpdate (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
 	METHOD c hasChunksAt (IIIIII)Z
 		ARG 1 x0
 		ARG 2 y0
@@ -393,6 +426,8 @@ CLASS ty net/minecraft/world/level/Level
 	METHOD d getMoonPhase (F)I
 		ARG 1 a
 	METHOD d getChunkAt (II)Lvu;
+		ARG 1 x
+		ARG 2 z
 	METHOD d isEntityTile (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -422,6 +457,8 @@ CLASS ty net/minecraft/world/level/Level
 	METHOD e getSunAngle (F)F
 		ARG 1 a
 	METHOD e getChunk (II)Lvu;
+		ARG 1 x
+		ARG 2 z
 	METHOD e hasChunkAt (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -549,6 +586,10 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 type
+	METHOD n setTileBrightnessChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD q removeTileEntity (III)V
 		ARG 1 x
 		ARG 2 y

@@ -1,0 +1,2 @@
+CLASS tx net/minecraft/world/level/GrassColor
+	METHOD a get (DD)I
