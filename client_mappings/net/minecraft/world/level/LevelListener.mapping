@@ -1,0 +1,7 @@
+CLASS ue net/minecraft/world/level/LevelListener
+	METHOD a tileChanged (III)V
+	METHOD a setTilesDirty (IIIIII)V
+	METHOD a entityAdded (Liw;)V
+	METHOD a playSound (Ljava/lang/String;DDDFF)V
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+	METHOD b entityRemoved (Liw;)V

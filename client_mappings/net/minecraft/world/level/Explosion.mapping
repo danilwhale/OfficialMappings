@@ -1,0 +1,4 @@
+CLASS tv net/minecraft/world/level/Explosion
+	FIELD a fire Z
+	METHOD a explode ()V
+	METHOD a finalizeExplosion (Z)V

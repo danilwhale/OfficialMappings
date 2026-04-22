@@ -1,1 +1,6 @@
 CLASS air net/minecraft/world/level/tile/entity/TileEntity
+	FIELD l x I
+	FIELD m y I
+	FIELD n z I
+	METHOD j setRemoved ()V
+	METHOD p isRemoved ()Z

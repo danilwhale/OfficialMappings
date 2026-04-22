@@ -1,1 +1,7 @@
 CLASS wl net/minecraft/world/level/dimension/Dimension
+	FIELD c biomeSource Luy;
+	FIELD e hasCeiling Z
+	FIELD f brightnessRamp [F
+	METHOD a getTimeOfDay (JF)F
+	METHOD b getFogColor (FF)Lajb;
+	METHOD b getMoonPhase (JF)I

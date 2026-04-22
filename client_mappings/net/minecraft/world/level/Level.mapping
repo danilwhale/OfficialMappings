@@ -1,5 +1,306 @@
 CLASS ty net/minecraft/world/level/Level
+	FIELD A levelData Ladm;
+	FIELD G spawnEnemies Z
+	FIELD H spawnFriendlies Z
+	FIELD K isClientSide Z
+	FIELD L updatingTileEntities Z
+	FIELD a pendingTileEntities Ljava/util/List;
+	FIELD b tileEntitiesToUnload Ljava/util/List;
+	FIELD c cloudColor J
+	FIELD d boxes Ljava/util/ArrayList;
+	FIELD f entities Ljava/util/List;
+	FIELD g entitiesToRemove Ljava/util/List;
+	FIELD h tileEntityList Ljava/util/List;
+	FIELD i players Ljava/util/List;
+	FIELD j globalEntities Ljava/util/List;
+	FIELD k skyDarken I
+	FIELD s thunderLevel I
+	FIELD t noNeighborUpdate Z
+	FIELD w dimension Lwl;
+	FIELD x listeners Ljava/util/List;
+	FIELD y chunkSource Lvr;
 	METHOD C getSeed ()J
+	METHOD a prepareWeather ()V
+	METHOD a playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 sound
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD a getOldSkyDarken (F)I
+		ARG 1 a
+	METHOD a addToTickNextTick (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 tickDelay
+	METHOD a setTileEntity (IIILair;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileEntity
+	METHOD a getRawBrightness (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 propagate
+	METHOD a markForRemoval (Lair;)V
+		ARG 1 entity
+	METHOD a containsMaterial (Laiw;Labx;)Z
+		ARG 1 box
+		ARG 2 material
+	METHOD a checkAndHandleWater (Laiw;Labx;Liw;)Z
+		ARG 1 box
+		ARG 2 material
+		ARG 3 e
+	METHOD a isUnobstructed (Laiw;Liw;)Z
+		ARG 1 aabb
+		ARG 2 ignore
+	METHOD a getSeenPercent (Lajb;Laiw;)F
+		ARG 1 center
+		ARG 2 bb
+	METHOD a clip (Lajb;Lajb;)Laiz;
+		ARG 1 a
+		ARG 2 b
+	METHOD a clip (Lajb;Lajb;Z)Laiz;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 liquid
+	METHOD a clip (Lajb;Lajb;ZZ)Laiz;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 liquid
+		ARG 4 solidOnly
+	METHOD a entityAdded (Liw;)V
+		ARG 1 e
+	METHOD a explode (Liw;DDDF)Ltv;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+	METHOD a explode (Liw;DDDFZ)Ltv;
+		ARG 1 source
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 r
+		ARG 9 fire
+	METHOD a getSkyColor (Liw;F)Lajb;
+		ARG 1 source
+		ARG 2 a
+	METHOD a getCubes (Liw;Laiw;)Ljava/util/List;
+		ARG 1 source
+		ARG 2 box
+	METHOD a playSound (Liw;Ljava/lang/String;FF)V
+		ARG 1 entity
+		ARG 2 sound
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD a tick (Liw;Z)V
+		ARG 1 e
+		ARG 2 actual
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a addAllPendingTileEntities (Ljava/util/Collection;)V
+		ARG 1 entities
+	METHOD a extinguishFire (Lnp;IIII)Z
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD a levelEvent (Lnp;IIIII)V
+	METHOD a addListener (Lue;)V
+		ARG 1 listener
+	METHOD a getBrightnessPropagate (Luk;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a updateLightIfOtherThan (Luk;IIII)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 expected
+	METHOD a setSpawnSettings (ZZ)V
+		ARG 1 spawnEnemies
+		ARG 2 spawnFriendlies
+	METHOD b tick ()V
+	METHOD b playLocalSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 sound
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD b getSkyDarken (F)F
+		ARG 1 a
+	METHOD b setTileNoUpdate (IIII)Z
+	METHOD b forceAddTileTick (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 tickDelay
+	METHOD b isSolidBlockingTileInLoadedChunk (IIIZ)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 valueIfNotLoaded
+	METHOD b isUnobstructed (Laiw;)Z
+		ARG 1 aabb
+	METHOD b containsLiquid (Laiw;Labx;)Z
+		ARG 1 bix
+		ARG 2 material
+	METHOD b entityRemoved (Liw;)V
+		ARG 1 e
+	METHOD b getEntities (Liw;Laiw;)Ljava/util/List;
+	METHOD b removeListener (Lue;)V
+		ARG 1 listener
+	METHOD b setBrightness (Luk;IIII)V
+	METHOD c updateSleepingPlayerList ()V
+	METHOD c getTimeOfDay (F)F
+		ARG 1 a
+	METHOD c hasChunk (II)Z
+	METHOD c setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
+	METHOD c setTileAndDataNoUpdate (IIIII)Z
+	METHOD c hasChunksAt (IIIIII)Z
+	METHOD c containsAnyBlocks (Laiw;)Z
+		ARG 1 box
+	METHOD c addGlobalEntity (Liw;)Z
+		ARG 1 e
+	METHOD c checkLight (Luk;III)V
+	METHOD d getMoonPhase (F)I
+		ARG 1 a
+	METHOD d getChunkAt (II)Lvu;
+	METHOD d setDataNoUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
+	METHOD d setTileAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data
+	METHOD d setTilesDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD d containsAnyLiquid (Laiw;)Z
+		ARG 1 box
+	METHOD d addEntity (Liw;)Z
+		ARG 1 entity
+	METHOD e getSunAngle (F)F
+		ARG 1 a
 	METHOD e getChunk (II)Lvu;
+	METHOD e hasChunkAt (III)Z
+	METHOD e setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD e swap (IIIIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
+	METHOD e containsFireTile (Laiw;)Z
+		ARG 1 box
+	METHOD e removeEntity (Liw;)V
+		ARG 1 e
+	METHOD f getCloudColor (F)Lajb;
+		ARG 1 a
 	METHOD f getHeightmap (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD f tileUpdated (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD f removeEntityImmediately (Liw;)V
+		ARG 1 e
+	METHOD g getFogColor (F)Lajb;
+		ARG 1 a
+	METHOD g getTopRainBlock (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD g lightColumnChanged (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y0
+		ARG 4 y1
+	METHOD g tick (Liw;)V
+		ARG 1 e
+	METHOD h getStarBrightness (F)F
+		ARG 1 a
 	METHOD h getTopSolidBlock (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD h sendTileUpdated (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD h updateNeighborsAt (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD i getThunderLevel (F)F
+	METHOD i getLightDepth (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD i setTileDirty (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD j getRainLevel (F)F
+	METHOD j canSeeSky (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD k getDaytimeRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD l tickWeather ()V
+	METHOD l getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD m isSkyLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD m neighborChanged (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 type
+	METHOD q removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD r isDay ()Z
+	METHOD s tickEntities ()V
+	METHOD t gatherStats ()Ljava/lang/String;
+	METHOD u gatherChunkSourceStats ()Ljava/lang/String;
+	METHOD v updateSkyBrightness ()V

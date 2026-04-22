@@ -3,9 +3,18 @@ CLASS iw net/minecraft/world/entity/Entity
 	FIELD B yRotO F
 	FIELD C xRotO F
 	FIELD D bb Laiw;
+	FIELD L removed Z
+	FIELD M heightOffset F
 	FIELD N bbWidth F
 	FIELD O bbHeight F
+	FIELD S xOld D
+	FIELD T yOld D
+	FIELD U zOld D
 	FIELD a entityCounter I
+	FIELD ag inChunk Z
+	FIELD ah xChunk I
+	FIELD ai yChunk I
+	FIELD aj zChunk I
 	FIELD am size Liy;
 	FIELD k entityId I
 	FIELD l viewScale D
@@ -25,9 +34,13 @@ CLASS iw net/minecraft/world/entity/Entity
 	FIELD z yRot F
 	METHOD <init> (Lty;)V
 		ARG 1 level
+	METHOD U rideTick ()V
 	METHOD a setSize (FF)V
 		ARG 1 w
 		ARG 2 h
 	METHOD a hurt (Lin;I)Z
+	METHOD a ride (Liw;)V
 	METHOD ak getAName ()Ljava/lang/String;
 	METHOD e getHeadHeight ()F
+	METHOD h_ tick ()V
+	METHOD y remove ()V

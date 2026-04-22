@@ -12,22 +12,28 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	FIELD K leaves Laft;
 	FIELD N lapisOre Lahp;
 	FIELD Y deadBush Laet;
+	FIELD aA farmland Lahp;
 	FIELD aC furnace_lit Lahp;
 	FIELD aE door_wood Lahp;
 	FIELD aG rail Lahp;
+	FIELD aH stairs_stone Lahp;
 	FIELD aL door_iron Lahp;
 	FIELD aN redStoneOre Lahp;
 	FIELD ad flower Laei;
 	FIELD ae rose Laei;
 	FIELD af mushroom1 Laei;
 	FIELD ag mushroom2 Laei;
+	FIELD ak stoneSlabHalf Lafm;
 	FIELD am tnt Lahp;
 	FIELD aq torch Lahp;
+	FIELD ar fire Lafh;
+	FIELD at stairs_wood Lahp;
 	FIELD aw diamondOre Lahp;
 	FIELD ay workBench Lahp;
 	FIELD bE enchantTable Lahp;
 	FIELD bK dragonEgg Lahp;
 	FIELD b descriptionId Ljava/lang/String;
+	FIELD bO woodSlabHalf Lafm;
 	FIELD bZ tex I
 	FIELD bh diode_off Lahp;
 	FIELD bi diode_on Lahp;
@@ -97,9 +103,13 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	METHOD a getTexture (II)I
 		ARG 1 face
 		ARG 2 data
+	METHOD a mayPick (IZ)Z
 	METHOD a setSoundType (Lahs;)Lahp;
 		ARG 1 soundType
+	METHOD a neighborChanged (Lty;IIII)V
 	METHOD a addAABBs (Lty;IIILaiw;Ljava/util/List;Liw;)V
+	METHOD a clip (Lty;IIILajb;Lajb;)Laiz;
+	METHOD a handleEntityInside (Lty;IIILiw;Lajb;)V
 	METHOD a_ getTileAABB (Lty;III)Laiw;
 	METHOD b getRenderShape ()I
 	METHOD b setExplodable (F)Lahp;

@@ -1,1 +1,2 @@
 CLASS uy net/minecraft/world/level/biome/BiomeSource
+	METHOD a getBiome (II)Lut;

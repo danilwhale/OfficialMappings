@@ -1,1 +1,17 @@
 CLASS vu net/minecraft/world/level/chunk/LevelChunk
+	METHOD a getTile (III)I
+	METHOD a setTileEntity (IIILair;)V
+	METHOD a getBiome (IILuy;)Lut;
+	METHOD a addEntity (Liw;)V
+	METHOD a removeEntity (Liw;I)V
+	METHOD b getHeightmap (II)I
+	METHOD b setData (IIII)Z
+	METHOD b removeEntity (Liw;)V
+	METHOD c getData (III)I
+	METHOD c getRawBrightness (IIII)I
+	METHOD d getTopRainBlock (II)I
+	METHOD d isSkyLit (III)Z
+	METHOD e getTileEntity (III)Lair;
+	METHOD f removeTileEntity (III)V
+	METHOD g isEmpty ()Z
+	METHOD h getHighestSectionPosition ()I
