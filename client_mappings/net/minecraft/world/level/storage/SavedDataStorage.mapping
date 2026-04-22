@@ -1,1 +1,19 @@
-CLASS adf net/minecraft/world/level/storage/SavedDataStorage
+CLASS aeb net/minecraft/world/level/storage/SavedDataStorage
+	FIELD a levelStorage Ladn;
+	FIELD b cache Ljava/util/Map;
+	FIELD c savedDatas Ljava/util/List;
+	FIELD d usedAuxIds Ljava/util/Map;
+	METHOD <init> (Ladn;)V
+		ARG 1 levelStorage
+	METHOD a save ()V
+	METHOD a save (Ladf;)V
+		ARG 1 data
+	METHOD a get (Ljava/lang/Class;Ljava/lang/String;)Ladf;
+		ARG 1 clazz
+		ARG 2 id
+	METHOD a getFreeAuxValueFor (Ljava/lang/String;)I
+		ARG 1 id
+	METHOD a set (Ljava/lang/String;Ladf;)V
+		ARG 1 id
+		ARG 2 data
+	METHOD b loadAuxValues ()V

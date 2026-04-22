@@ -1,5 +1,19 @@
 CLASS uj net/minecraft/world/level/LevelType
+	FIELD a levelTypes [Luj;
 	FIELD b normal Luj;
 	FIELD c flat Luj;
 	FIELD d largeBiomes Luj;
 	FIELD e normal_1_1 Luj;
+	FIELD f generatorName Ljava/lang/String;
+	FIELD g version I
+	FIELD h selectable Z
+	FIELD i replacement Z
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 generatorName
+	METHOD <init> (ILjava/lang/String;I)V
+		ARG 1 id
+		ARG 2 generatorName
+		ARG 3 version
+	METHOD a setSelectableByUser (Z)Luj;
+	METHOD f setHasReplacement ()Luj;

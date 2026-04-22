@@ -6,10 +6,12 @@ CLASS vu net/minecraft/world/level/chunk/LevelChunk
 	METHOD a removeEntity (Liw;I)V
 	METHOD a getEntities (Liw;Laiw;Ljava/util/List;)V
 	METHOD a getEntitiesOfClass (Ljava/lang/Class;Laiw;Ljava/util/List;)V
+	METHOD a getBrightness (Luk;III)I
 	METHOD b getHeightmap (II)I
 	METHOD b getTileLightBlock (III)I
 	METHOD b setData (IIII)Z
 	METHOD b removeEntity (Liw;)V
+	METHOD c isYSpaceEmpty (II)Z
 	METHOD c getData (III)I
 	METHOD c getRawBrightness (IIII)I
 	METHOD d getTopRainBlock (II)I

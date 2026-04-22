@@ -1,0 +1,5 @@
+CLASS av net/minecraft/nbt/NbtIo
+	METHOD a write (Lan;Ljava/io/DataOutput;)V
+	METHOD a writeCompressed (Lan;Ljava/io/OutputStream;)V
+	METHOD a read (Ljava/io/DataInput;)Lan;
+	METHOD a readCompressed (Ljava/io/InputStream;)Lan;

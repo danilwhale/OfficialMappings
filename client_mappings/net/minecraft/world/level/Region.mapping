@@ -1,1 +1,28 @@
 CLASS un net/minecraft/world/level/Region
+	FIELD a xc1 I
+	FIELD b zc1 I
+	FIELD c chunks [[Lvu;
+	FIELD d allEmpty Z
+	FIELD e level Lty;
+	METHOD <init> (Lty;IIIIII)V
+		ARG 1 level
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 z1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z2
+	METHOD a getRawBrightness (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 propagate
+	METHOD a getBrightnessPropagate (Luk;III)I
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

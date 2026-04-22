@@ -1,1 +1,2 @@
 CLASS ay net/minecraft/nbt/Tag
+	METHOD e getName ()Ljava/lang/String;

@@ -2,3 +2,9 @@ CLASS j net/minecraft/Pos
 	FIELD a x I
 	FIELD b y I
 	FIELD c z I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD <init> (Lj;)V
+		ARG 1 pos

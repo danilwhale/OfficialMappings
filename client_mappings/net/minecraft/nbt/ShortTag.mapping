@@ -1,1 +1,2 @@
 CLASS aw net/minecraft/nbt/ShortTag
+	FIELD a data S

@@ -1,4 +1,0 @@
-CLASS aeb
-	METHOD a get (Ljava/lang/Class;Ljava/lang/String;)Ladf;
-	METHOD a getFreeAuxValueFor (Ljava/lang/String;)I
-	METHOD a set (Ljava/lang/String;Ladf;)V
