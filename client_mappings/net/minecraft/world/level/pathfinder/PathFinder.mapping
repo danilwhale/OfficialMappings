@@ -1,0 +1,3 @@
+CLASS adb net/minecraft/world/level/pathfinder/PathFinder
+	METHOD a findPath (Liw;IIIF)Lada;
+	METHOD a findPath (Liw;Liw;F)Lada;

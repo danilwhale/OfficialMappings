@@ -42,5 +42,7 @@ CLASS iw net/minecraft/world/entity/Entity
 	METHOD a ride (Liw;)V
 	METHOD ak getAName ()Ljava/lang/String;
 	METHOD e getHeadHeight ()F
+	METHOD e distanceToSqr (DDD)D
+	METHOD e distanceToSqr (Liw;)D
 	METHOD h_ tick ()V
 	METHOD y remove ()V

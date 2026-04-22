@@ -53,5 +53,6 @@ CLASS ut net/minecraft/world/level/biome/Biome
 		ARG 2 scale
 	METHOD b setColor (I)Lut;
 	METHOD b getGrassFeature (Ljava/util/Random;)Lxh;
+	METHOD e isHumid ()Z
 	METHOD j getTemperature ()F
 	METHOD m setNoRain ()Lut;

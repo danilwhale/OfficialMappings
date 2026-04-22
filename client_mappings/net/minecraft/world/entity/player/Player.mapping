@@ -1,1 +1,3 @@
 CLASS np net/minecraft/world/entity/player/Player
+	FIELD bJ name Ljava/lang/String;
+	FIELD bZ abilities Lnn;

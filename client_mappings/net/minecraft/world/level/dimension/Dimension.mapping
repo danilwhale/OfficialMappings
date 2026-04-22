@@ -3,5 +3,6 @@ CLASS wl net/minecraft/world/level/dimension/Dimension
 	FIELD e hasCeiling Z
 	FIELD f brightnessRamp [F
 	METHOD a getTimeOfDay (JF)F
+	METHOD a init (Lty;)V
 	METHOD b getFogColor (FF)Lajb;
 	METHOD b getMoonPhase (JF)I

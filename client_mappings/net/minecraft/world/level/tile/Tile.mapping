@@ -19,6 +19,8 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	FIELD aH stairs_stone Lahp;
 	FIELD aL door_iron Lahp;
 	FIELD aN redStoneOre Lahp;
+	FIELD aS topSnow Lahp;
+	FIELD aT ice Lahp;
 	FIELD ad flower Laei;
 	FIELD ae rose Laei;
 	FIELD af mushroom1 Laei;
@@ -110,10 +112,14 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	METHOD a addAABBs (Lty;IIILaiw;Ljava/util/List;Liw;)V
 	METHOD a clip (Lty;IIILajb;Lajb;)Laiz;
 	METHOD a handleEntityInside (Lty;IIILiw;Lajb;)V
+	METHOD a getSignal (Lui;IIII)Z
 	METHOD a_ getTileAABB (Lty;III)Laiw;
+	METHOD a_ mayPlace (Lty;IIII)Z
 	METHOD b getRenderShape ()I
 	METHOD b setExplodable (F)Lahp;
 		ARG 1 explosionResistance
+	METHOD b mayPlace (Lty;III)Z
+	METHOD b triggerEvent (Lty;IIIII)V
 	METHOD b getTexture (Lui;IIII)I
 		ARG 1 level
 		ARG 2 x
@@ -125,6 +131,7 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	METHOD c isCubeShaped ()Z
 	METHOD c setDestroyTime (F)Lahp;
 		ARG 1 destroySpeed
+	METHOD c getDirectSignal (Lty;IIII)Z
 	METHOD c isPathfindable (Lui;III)Z
 		ARG 1 level
 		ARG 2 x
@@ -177,3 +184,4 @@ CLASS ahp net/minecraft/world/level/tile/Tile
 	METHOD q setIndestructible ()Lahp;
 	METHOD r isTicking ()Z
 	METHOD r_ init ()V
+	METHOD s isEntityTile ()Z

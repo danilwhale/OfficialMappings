@@ -1,1 +1,2 @@
 CLASS nn net/minecraft/world/entity/player/Abilities
+	FIELD a invulnerable Z

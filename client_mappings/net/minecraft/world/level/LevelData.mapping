@@ -1,0 +1,18 @@
+CLASS adm net/minecraft/world/level/LevelData
+	METHOD a setSpawn (III)V
+	METHOD a setThundering (Z)V
+	METHOD b getSeed ()J
+	METHOD b setTime (J)V
+	METHOD b setRaining (Z)V
+	METHOD c getXSpawn ()I
+	METHOD d getYSpawn ()I
+	METHOD d setInitialized (Z)V
+	METHOD e getZSpawn ()I
+	METHOD f getTime ()J
+	METHOD f setThunderTime (I)V
+	METHOD g setRainTime (I)V
+	METHOD m isThundering ()Z
+	METHOD n getThunderTime ()I
+	METHOD o isRaining ()Z
+	METHOD p getRainTime ()I
+	METHOD t getGenerator ()Luj;
