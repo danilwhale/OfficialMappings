@@ -1,2 +1,3 @@
 CLASS akp argo/JdomParser
+	METHOD a parse (Ljava/io/Reader;)Lalx;
 	METHOD a parse (Ljava/lang/String;)Lalx;

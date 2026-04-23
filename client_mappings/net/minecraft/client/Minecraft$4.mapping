@@ -1,1 +1,11 @@
 CLASS net/minecraft/client/n net/minecraft/client/Minecraft$4
+	FIELD a val$parameters Ljava/util/Map;
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 val$parameters
+	METHOD appletResize appletResize (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD getDocumentBase getDocumentBase ()Ljava/net/URL;
+	METHOD getParameter getParameter (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+	METHOD isActive isActive ()Z
