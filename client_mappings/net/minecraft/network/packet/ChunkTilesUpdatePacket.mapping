@@ -1,0 +1,10 @@
+CLASS br net/minecraft/network/packet/ChunkTilesUpdatePacket
+	FIELD a xc I
+	FIELD b zc I
+	FIELD d count I
+	METHOD <init> (II[SILty;)V
+		ARG 1 xc
+		ARG 2 zc
+		ARG 3 positions
+		ARG 4 count
+		ARG 5 level

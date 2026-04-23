@@ -1,6 +1,10 @@
 CLASS ty net/minecraft/world/level/Level
 	FIELD A levelData Ladm;
+	FIELD B isFindingSpawn Z
 	FIELD C savedDataStorage Laeb;
+	FIELD D villages Llv;
+	FIELD E villageSiege Llu;
+	FIELD F profiler Lht;
 	FIELD G spawnEnemies Z
 	FIELD H spawnFriendlies Z
 	FIELD I chunksToPoll Ljava/util/Set;
@@ -26,7 +30,9 @@ CLASS ty net/minecraft/world/level/Level
 	FIELD p oThunderLevel F
 	FIELD q thunderLevel F
 	FIELD r lightningTime I
+	FIELD s lightningBoltTime I
 	FIELD t noNeighborUpdate Z
+	FIELD u difficulty I
 	FIELD v random Ljava/util/Random;
 	FIELD w dimension Lwl;
 	FIELD x listeners Ljava/util/List;
@@ -36,19 +42,23 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 1 levelStorage
 		ARG 2 name
 		ARG 3 levelSettings
+		ARG 4 profiler
 	METHOD <init> (Ladn;Ljava/lang/String;Lug;Lwl;Lht;)V
 		ARG 1 levelStorage
 		ARG 2 levelName
 		ARG 3 levelSettings
 		ARG 4 fixedDimension
+		ARG 5 profiler
 	METHOD <init> (Ladn;Ljava/lang/String;Lwl;Lug;Lht;)V
 		ARG 1 levelStorage
 		ARG 2 levelNAme
 		ARG 3 dimension
 		ARG 4 levelSettings
+		ARG 5 profiler
 	METHOD <init> (Lty;Lwl;Lht;)V
 		ARG 1 level
 		ARG 2 dimension
+		ARG 3 profiler
 	METHOD A disconnect ()V
 	METHOD A setSpawnPos (III)V
 		ARG 1 x
@@ -144,6 +154,8 @@ CLASS ty net/minecraft/world/level/Level
 		ARG 1 xo
 		ARG 2 zo
 		ARG 3 lc
+	METHOD a fillReportDetails (La;)La;
+		ARG 1 cr
 	METHOD a markForRemoval (Lair;)V
 		ARG 1 entity
 	METHOD a getTileCubes (Laiw;)Ljava/util/List;

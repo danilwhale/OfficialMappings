@@ -1,0 +1,2 @@
+CLASS bq net/minecraft/network/packet/ChatPacket
+	FIELD a MAX_LENGTH I

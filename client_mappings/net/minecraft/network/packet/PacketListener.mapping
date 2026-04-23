@@ -1,1 +1,6 @@
 CLASS dc net/minecraft/network/packet/PacketListener
+	METHOD a handleChatAutoComplete (Lbp;)V
+	METHOD a handleClientCommand (Lbs;)V
+	METHOD a handleClientInformation (Lbt;)V
+	METHOD a handleServerAuthData (Ldm;)V
+	METHOD a handleSharedKey (Ldx;)V

@@ -1,4 +1,4 @@
-CLASS ht
+CLASS ht net/minecraft/util/Profiler
 	METHOD a push (Ljava/lang/String;)V
 	METHOD b pop ()V
 	METHOD c popPush (Ljava/lang/String;)V

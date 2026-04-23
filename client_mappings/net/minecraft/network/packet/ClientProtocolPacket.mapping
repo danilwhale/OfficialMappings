@@ -1,0 +1,5 @@
+CLASS bu net/minecraft/network/packet/ClientProtocolPacket
+	FIELD a protocolVersion I
+	FIELD b userName Ljava/lang/String;
+	FIELD c hostName Ljava/lang/String;
+	FIELD d port I

@@ -5,11 +5,26 @@ CLASS db net/minecraft/network/packet/Packet
 	FIELD l idToClassMap Lhl;
 	FIELD m createTime J
 	FIELD r shouldDelay Z
+	METHOD a getEstimatedSize ()I
 	METHOD a map (IZZLjava/lang/Class;)V
 		ARG 0 id
 		ARG 1 receiveOnClient
 		ARG 2 receiveOnServer
 		ARG 3 clazz
+	METHOD a isInvalidatedBy (Ldb;)Z
+		ARG 1 packet
+	METHOD a handle (Ldc;)V
+		ARG 1 listener
+	METHOD a read (Ljava/io/DataInputStream;)V
+		ARG 1 dis
+	METHOD a readUtf (Ljava/io/DataInputStream;I)Ljava/lang/String;
+	METHOD a write (Ljava/io/DataOutputStream;)V
+		ARG 1 dos
+	METHOD a writeBytes (Ljava/io/DataOutputStream;[B)V
+	METHOD a writeUtf (Ljava/lang/String;Ljava/io/DataOutputStream;)V
+	METHOD b getDebugInfo ()Ljava/lang/String;
+	METHOD b readBytes (Ljava/io/DataInputStream;)[B
 	METHOD d getPacket (I)Ldb;
 		ARG 0 id
+	METHOD e canBeInvalidated ()Z
 	METHOD k getId ()I

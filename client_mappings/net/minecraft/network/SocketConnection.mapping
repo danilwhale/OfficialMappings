@@ -1,0 +1,20 @@
+CLASS bb net/minecraft/network/SocketConnection
+	FIELD c readSizes [I
+	FIELD d writeSizes [I
+	FIELD k dis Ljava/io/DataInputStream;
+	FIELD l dos Ljava/io/DataOutputStream;
+	FIELD o incoming Ljava/util/List;
+	FIELD p outgoing Ljava/util/List;
+	FIELD q outgoing_slow Ljava/util/List;
+	FIELD r packetListener Ldc;
+	METHOD a access$1 (Lbb;)Z
+	METHOD a access$7 (Lbb;Ljava/lang/Exception;)V
+	METHOD a handleException (Ljava/lang/Exception;)V
+		ARG 1 e
+	METHOD b access$2 (Lbb;)Z
+	METHOD c access$3 (Lbb;)Z
+	METHOD d access$4 (Lbb;)Z
+	METHOD e access$5 (Lbb;)Ljava/io/DataOutputStream;
+	METHOD f access$6 (Lbb;)Z
+	METHOD g access$8 (Lbb;)Ljava/lang/Thread;
+	METHOD h access$9 (Lbb;)Ljava/lang/Thread;

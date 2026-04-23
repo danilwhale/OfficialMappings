@@ -1,1 +1,5 @@
 CLASS az net/minecraft/network/Connection
+	METHOD a close (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 ärgs
+	METHOD e countDelayedPackets ()I

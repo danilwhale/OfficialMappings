@@ -1,0 +1,11 @@
+CLASS cn net/minecraft/network/packet/LevelChunkPacket
+	FIELD a x I
+	FIELD b z I
+	FIELD c sections I
+	FIELD d add I
+	FIELD e full Z
+	FIELD h size I
+	FIELD i buffer [B
+	METHOD <init> (Lvu;ZI)V
+		ARG 1 chunk
+		ARG 2 full
